@@ -9,6 +9,9 @@ tags:
   - asa
   - portfolio-e
   - paper-245
+layout: default
+parent: Papers
+nav_order: 245
 has_code: false
 status: published
 ---

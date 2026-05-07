@@ -9,6 +9,9 @@ tags:
   - asa
   - portfolio-c
   - paper-217
+layout: default
+parent: Papers
+nav_order: 217
 has_code: false
 status: published
 ---

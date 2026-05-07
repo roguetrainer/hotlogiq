@@ -9,6 +9,9 @@ tags:
   - asa
   - portfolio-a
   - paper-211
+layout: default
+parent: Papers
+nav_order: 211
 has_code: false
 status: published
 ---

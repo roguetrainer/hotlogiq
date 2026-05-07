@@ -3,3 +3,7 @@
 *.pyc
 __pycache__/
 .obsidian/workspace
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock

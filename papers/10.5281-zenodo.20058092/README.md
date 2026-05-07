@@ -9,6 +9,9 @@ tags:
   - asa
   - portfolio-f
   - paper-270
+layout: default
+parent: Papers
+nav_order: 270
 has_code: true
 status: published
 ---

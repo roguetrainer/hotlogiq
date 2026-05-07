@@ -9,6 +9,9 @@ tags:
   - asa
   - portfolio-e
   - paper-240
+layout: default
+parent: Papers
+nav_order: 240
 has_code: false
 status: published
 ---

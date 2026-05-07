@@ -9,6 +9,9 @@ tags:
   - asa
   - portfolio-f
   - paper-269
+layout: default
+parent: Papers
+nav_order: 269
 has_code: true
 status: published
 ---

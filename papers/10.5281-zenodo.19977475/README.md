@@ -9,6 +9,9 @@ tags:
   - asa
   - portfolio-intro
   - paper-000
+layout: default
+parent: Papers
+nav_order: 0
 has_code: false
 status: published
 ---
