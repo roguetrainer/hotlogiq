@@ -11,7 +11,7 @@ nav_order: 1
 Non-associative computing across the R-C-H-O division algebra ladder. Working papers, experiment code, and numerical results.
 
 [Browse all papers on Zenodo](https://zenodo.org/communities/asa-research/records){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View on GitHub](https://github.com/ianbuckley/adelic-simplicial-architecture){: .btn .fs-5 .mb-4 .mb-md-0 }
+[View on GitHub](https://github.com/roguetrainer/adelic-simplicial-architecture){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
