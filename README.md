@@ -9,7 +9,7 @@ tags:
 
 **Author:** Ian R. C. Buckley  
 **ORCID:** [0009-0004-9287-2902](https://orcid.org/0009-0004-9287-2902)  
-**Zenodo community:** [asa-research](https://zenodo.org](https://zenodo.org/communities/asa-research/records?q=&l=list&p=1&s=10&sort=newest)
+**Zenodo community:** [asa-research](https://zenodo.org/communities/asa-research/records?q=&l=list&p=1&s=10&sort=newest)
 
 Non-associative computing across the R-C-H-O division algebra ladder.  
 Working papers, code, and experiments.
