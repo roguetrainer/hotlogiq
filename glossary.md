@@ -213,21 +213,33 @@ The "731" label is deliberately reminiscent of a product code or chip number —
 
 The quaternions $\mathbb{H}$ have 3 imaginary basis elements $\{i, j, k\}$ with $ij = k$, $jk = i$, $ki = j$ — a 3-element "Fano line" that is fully associative ($\|\mathcal{A}\| = 0$ identically). The "331" label encodes the quaternionic rung of the division algebra ladder: 3 imaginary units, cross product in 3D, 1 (trivial) associator. The **Quaternionic Virtual Machine (Q-VM)** (Paper 199) operates at this rung — it is the 331 machine, the step below the 731 RPU on the division algebra hierarchy.
 
-### V31 — The Non-Fano Alphabet
+### V31 — The Division Algebra Umbrella
 
-**V = "non-Fano" (complement), 3 points per triple, 1 associator test.**
+**V = variable dimension $v \in \{3, 7\}$, 3 elements per algebraic triple, 1 associator test.**
 
-The complement of the 7 Fano lines in $\mathrm{PG}(2,2)$ consists of the **non-collinear triples** — those with $\|\mathcal{A}\| = 2$. There are $\binom{7}{3} - 7 = 28$ non-Fano triples, but the ones relevant to cryptography are the **V31 triples**: the 31 ordered triples (including degenerate ones) that produce a detectable associator signature. "V" stands for the logical complement (like a Boolean NOT applied to the Fano incidence relation).
+**V31 is the umbrella label** for the entire family of ASA constructions that operate at either the quaternionic ($v = 3$) or octonionic ($v = 7$) rung of the division algebra ladder. The "3" encodes the operand width — every algebraic triple has 3 elements — and the "1" encodes the single binary associator predicate $\|\mathcal{A}\| \in \{0, 2\}$ that determines Fano compatibility. The variable $v$ indexes which rung is active:
 
-- **V31-QKD** (Paper 208): a quantum key distribution protocol whose alphabet is the 31 non-Fano triple signatures. Eavesdropping is detected because any measurement disturbing a V31 state leaves a characteristic $\|\mathcal{A}\| = 2$ fingerprint.
+- $v = 3$: the quaternionic rung $\mathbb{H}$, with 3 imaginary basis elements — this is 331.
+- $v = 7$: the octonionic rung $\mathbb{O}$, with 7 Fano-plane points — this is 731.
+
+The complex rung ($v = 1$, a single imaginary unit $i$, no non-trivial associator) is **excluded** from the V31 family: with only one imaginary direction there is no triple to test, and the associator is trivially zero everywhere. The complex level is the base case below the hierarchy, not a member of it.
+
+V31 therefore spans the *non-trivial* part of the Hurwitz hierarchy — the rungs at which topology, non-commutativity ($v=3$) and non-associativity ($v=7$) first appear. Every V31 construction has two concrete instantiations, one at each rung:
+
+| V31 instance | $v$ | Rung | Associator | Construction |
+|---|---|---|---|---|
+| 331 | 3 | $\mathbb{H}$ | $\|\mathcal{A}\| = 0$ always | Q-VM (Paper 199) |
+| 731 | 7 | $\mathbb{O}$ | $\|\mathcal{A}\| \in \{0,2\}$ | RPU, 731-Calculus, Origami ISA (Papers 205, 207, 258) |
+
+- **V31-QKD** (Paper 208) operates at both rungs: the $v=3$ layer handles spinorial polarisation routing (Q-VM level); the $v=7$ layer handles the Fano associator signature detection. Eavesdropping is detectable because any measurement disturbing a Fano-line state leaves a $\|\mathcal{A}\| = 2$ fingerprint at the $v=7$ level.
 
 ### Summary
 
-| Code | Geometry | Associator | Primary paper |
-|------|----------|------------|---------------|
-| 731 | Fano plane $\mathrm{PG}(2,2)$: 7 pts, 3 per line | $\|\mathcal{A}\| \in \{0,2\}$ | Papers 207, 258 |
-| 331 | Quaternionic triple $\{i,j,k\}$: 3 units, 3D cross product | $\|\mathcal{A}\| = 0$ always | Paper 199 |
-| V31 | Non-Fano complement: 31 associator-active triples | $\|\mathcal{A}\| = 2$ always | Paper 208 |
+| Code | Role | $v$ | Primary paper |
+|------|------|-----|---------------|
+| V31 | Umbrella: quaternionic + octonionic family | $v \in \{3,7\}$ | Papers 199–258 family |
+| 331 | Quaternionic instance | $v = 3$ | Paper 199 (Q-VM) |
+| 731 | Octonionic instance | $v = 7$ | Papers 207, 258 |
 
 *Central to:* [Paper 207 (731-Calculus)](papers/10.5281-zenodo.19713350/), [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916429/), [Paper 199 (Q-VM)](papers/10.5281-zenodo.20060303/), [Paper 208 (Magmoidal Cipher)](papers/10.5281-zenodo.19826357/)
 
