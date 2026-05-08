@@ -25,13 +25,25 @@ The Adelic Simplicial Architecture is a research programme organised around a si
 
 $$\mathbb{R} \subset \mathbb{C} \subset \mathbb{H} \subset \mathbb{O}$$
 
-form a natural computational hierarchy. Each step drops one algebraic property — commutativity at $\mathbb{H}$, then associativity at $\mathbb{O}$ — and each dropped property unlocks a new computational regime.
+form a natural computational hierarchy. Each step drops one algebraic property — commutativity at $\mathbb{H}$, then associativity at $\mathbb{O}$ — and each dropped property unlocks a new computational regime. The word **adelic** refers to the simultaneous use of real ($\mathbb{R}$) and $p$-adic number fields to describe the same object: the real component flows continuously (like a gradient), while the $p$-adic component crystallises discretely (like a logic gate). The word **simplicial** refers to the Fano plane $\mathrm{PG}(2,2)$ — a 7-point, 7-line combinatorial simplex — whose incidence geometry governs the multiplication table of the octonions $\mathbb{O}$.
 
-The octonion associator
+The central object is the **octonion associator**
 
-$$\mathcal{A}(e_i, e_j, e_k) = (e_i e_j)e_k - e_i(e_j e_k)$$
+$$\mathcal{A}(x, y, z) = (xy)z - x(yz),$$
 
-vanishes on the seven lines of the Fano plane $\mathrm{PG}(2,2)$ and equals 2 elsewhere. This binary distinction — Fano / non-Fano — is the geometric engine behind entanglement monogamy, Hardy's paradox, fault-tolerant quantum gates, and hallucination-free RAG retrieval.
+which vanishes on the seven Fano lines and equals $\pm 2$ elsewhere. This binary distinction — Fano / non-Fano — is the geometric engine behind entanglement monogamy, Hardy's paradox, fault-tolerant quantum gates, hallucination-free RAG retrieval, and stale-gradient routing in distributed AI.
+
+The two core operators that make the architecture run are:
+
+- **The Maslov-Gibbs Einsum (MGE)** — a thermodynamic routing operator $\pi_k \propto \exp(-\beta E_k)$ that weights candidates by their geometric energy $E_k$. As the inverse temperature $\beta$ rises, the system undergoes a phase transition analogous to simulated annealing, but with *topological guarantees*: the Boltzmann weights are derived from the Fano-Fisher metric on $G_2$, so only Fano-compatible states survive the freeze-out. This replaces heuristic learning-rate schedules with a parameter-free auto-annealer grounded in non-associative information geometry.
+
+- **Topological Resonance Synthesis (TRS)** — the full computational engine built on the MGE. TRS treats the parameter space of a neural network as a non-associative manifold, uses holomorphic relaxation (complex-analytic gradient flow) to explore the bulk, and extracts discrete logical outputs via the Fano geometry at the boundary. The "resonance" is the phase-locking between the continuous bulk dynamics and the discrete Fano vacuum: when a trajectory aligns with a Fano line, energy vanishes and the system crystallises. TRS is the information-geometric analogue of parallel transport on $G_2$ — it does not descend a loss surface; it flows to the nearest topologically consistent state.
+
+See the [Glossary](glossary/) for definitions of all key terms.
+
+---
+
+## Paper Index
 
 ---
 
@@ -50,6 +62,8 @@ vanishes on the seven lines of the Fano plane $\mathrm{PG}(2,2)$ and equals 2 el
 | [208](papers/10.5281-zenodo.19826357/) | Sequence-Dependent Cryptography (Magmoidal Cipher) | D |
 | [210](papers/10.5281-zenodo.19929360/) | Geometric Interpretation of Code Switching | C |
 | [211](papers/10.5281-zenodo.20025384/) | Non-Associative Calculus | A |
+| [218](papers/10.5281-zenodo.20077198/) | Thermodynamic Routing of Stale Gradients via NAIG | C (AI) |
+| [221](papers/10.5281-zenodo.20076498/) | Non-Associative Information Geometry: Fano-Fisher Decomposition Theorem | C (AI) |
 | [213](papers/10.5281-zenodo.20059019/) | Volume of Thought (VoT) | C |
 | [214](papers/10.5281-zenodo.20060285/) | Non-Associative Knowledge Hypergraphs (Fano-RAG) | C |
 | [217](papers/10.5281-zenodo.19922441/) | Fibrational Lattice Surgery (LS2.0) | C |
