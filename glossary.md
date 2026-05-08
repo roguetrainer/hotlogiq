@@ -215,6 +215,8 @@ The quaternions $\mathbb{H}$ have 3 imaginary basis elements $\{i, j, k\}$ with 
 
 ### V31 — The Division Algebra Umbrella
 
+**V31 is the ASA's sharper refinement of "hypercomplex":** it is the intersection of *hypercomplex* (any algebra extending $\mathbb{R}$ with extra square roots of $-1$) and *normed division algebra* (Hurwitz's theorem: only $\mathbb{R}, \mathbb{C}, \mathbb{H}, \mathbb{O}$), further restricted to rungs above the complex baseline where a non-trivial 3-element triple and associator predicate exist. Sedenions and other non-division hypercomplex algebras are excluded; $\mathbb{C}$ is excluded; $\mathbb{H}$ and $\mathbb{O}$ remain.
+
 **V = variable dimension $v \in \{3, 7\}$, 3 elements per algebraic triple, 1 associator test.**
 
 **V31 is the umbrella label** for the entire family of ASA constructions that operate at either the quaternionic ($v = 3$) or octonionic ($v = 7$) rung of the division algebra ladder. The "3" encodes the operand width — every algebraic triple has 3 elements — and the "1" encodes the single binary associator predicate $\|\mathcal{A}\| \in \{0, 2\}$ that determines Fano compatibility. The variable $v$ indexes which rung is active:
