@@ -49,14 +49,14 @@ The **$[[7,1,3]]$ Steane code** — the smallest topological quantum error corre
 | --- | --- |
 | [199](../papers/10.5281-zenodo.20060303/) | The Quaternionic Virtual Machine (Q-VM) |
 | [203](../papers/10.5281-zenodo.20086746/) | The Unitary Resonance Network (URN) |
-| 212 | Fano Resonance Networks (Fano-RNs) — Associator Correction Tensor and Non-Associative Backpropagation |
+| [212](../papers/10.5281-zenodo.20088805/) | Fano Resonance Networks (Fano-RNs) — Associator Correction Tensor and Non-Associative Backpropagation |
 | [205](../papers/10.5281-zenodo.19743800/) | The Resonance Processing Unit (RPU) |
 | [206](../papers/10.5281-zenodo.19821692/) | Fibrational Tensor Codes (FTCs) |
 | [210](../papers/10.5281-zenodo.19929360/) | Geometric Interpretation of Code Switching |
 | [213](../papers/10.5281-zenodo.20059019/) | Volume of Thought (VoT) |
 | [214](../papers/10.5281-zenodo.20060285/) | Non-Associative Knowledge Hypergraphs (Fano-RAG) |
 | [217](../papers/10.5281-zenodo.19922441/) | Fibrational Lattice Surgery (LS2.0) |
-| 257 | Non-Associative Quantum Error Correction (NA-QEC) — Exceptional Jordan Algebra as Fault-Tolerant Code Space |
+| [257](../papers/10.5281-zenodo.20088536/) | Non-Associative Quantum Error Correction (NA-QEC) — Exceptional Jordan Algebra as Fault-Tolerant Code Space |
 | [218](../papers/10.5281-zenodo.20077198/) | Thermodynamic Routing of Stale Gradients via NAIG |
 | [221](../papers/10.5281-zenodo.20076498/) | Non-Associative Information Geometry: Fano-Fisher Decomposition Theorem |
 | [258](../papers/10.5281-zenodo.19916429/) | The 731 Instruction Set Architecture (Origami ISA) |
