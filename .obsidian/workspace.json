@@ -185,6 +185,10 @@
   },
   "active": "d5811222c91b0eff",
   "lastOpenFiles": [
+    "papers/10.5281-zenodo.20031913/code/g2_apery_valuation_audit.py",
+    "papers/10.5281-zenodo.20031913/code/apery_ore_guessing.sage",
+    "papers/10.5281-zenodo.20031913/code/ab_initio_wz_v3.sage",
+    "papers/10.5281-zenodo.20031913/code",
     "_data/papers.json",
     "_data",
     "explainers.md",
@@ -216,11 +220,7 @@
     "code/10.5281-zenodo.20101634",
     "papers/paper-271-g2-self-duality/paper-271-draft.md",
     "papers/paper-271-g2-self-duality/README.md",
-    "papers/paper-271-g2-self-duality",
-    "papers/paper-271-placeholder",
     "papers/10.5281-zenodo.20100531/README.md",
-    "papers/10.5281-zenodo.20100531",
-    "papers/10.5281-zenodo.20088536",
     "assets/images/asa-logo.png"
   ]
 }
