@@ -178,5 +178,14 @@
     "portfolios": ["A"],
     "tags": ["core-engine", "geometry", "noether", "g2"],
     "explainer": true
+  },
+  {
+    "number": 289,
+    "title": "The Temperature of Rationality: Maslov-Gibbs Ensemble as a Foundation for Heterogeneous-Agent Economics",
+    "doi": "10.5281/zenodo.20234841",
+    "slug": "10.5281-zenodo.20234841",
+    "portfolios": ["G"],
+    "tags": ["economics", "thermodynamics", "agent-based-models", "ai-ml"],
+    "explainer": true
   }
 ]

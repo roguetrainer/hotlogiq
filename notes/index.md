@@ -13,3 +13,4 @@ Short technical notes, clarifications, and worked arguments that are too focused
 | --- | --- |
 | [N01](note-n01-hardy-axioms/) | Does the ASA Violate Hardy's Axioms? |
 | [N02](note-n02-lohmiller-slotine/) | Lohmiller-Slotine, Vattay, and the MGE: Classical Paths, the Quantum Potential, and Maslov Dequantisation |
+| [N03](note-n03-fano-closed-walks/) | Closed Walks on the Fano Plane and OEIS A274975 |

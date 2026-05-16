@@ -16,6 +16,7 @@ Plain-language guides to every paper — no prior mathematics required. Filter b
   <button class="asa-btn" data-filter="portfolio" data-value="D">D — Protocols</button>
   <button class="asa-btn" data-filter="portfolio" data-value="E">E — Grand Challenges</button>
   <button class="asa-btn" data-filter="portfolio" data-value="F">F — Quantum Foundations</button>
+  <button class="asa-btn" data-filter="portfolio" data-value="G">G — Economics &amp; Complex Systems</button>
 </div>
 
 <div id="asa-filter-bar-tags" style="margin: 0 0 1.5rem;">
@@ -32,6 +33,9 @@ Plain-language guides to every paper — no prior mathematics required. Filter b
   <button class="asa-btn" data-filter="tag" data-value="optimisation">Optimisation</button>
   <button class="asa-btn" data-filter="tag" data-value="qec">QEC</button>
   <button class="asa-btn" data-filter="tag" data-value="quantum-foundations">Quantum Foundations</button>
+  <button class="asa-btn" data-filter="tag" data-value="economics">Economics</button>
+  <button class="asa-btn" data-filter="tag" data-value="thermodynamics">Thermodynamics</button>
+  <button class="asa-btn" data-filter="tag" data-value="agent-based-models">Agent-Based Models</button>
 </div>
 
 <p id="asa-count" style="font-size: 0.8rem; color: #666; margin-bottom: 1rem;"></p>
@@ -105,7 +109,8 @@ Plain-language guides to every paper — no prior mathematics required. Filter b
     "C": "C — Hardware & AI",
     "D": "D — Protocols",
     "E": "E — Grand Challenges",
-    "F": "F — Quantum Foundations"
+    "F": "F — Quantum Foundations",
+    "G": "G — Economics & Complex Systems"
   };
 
   function baseurl(path) {
