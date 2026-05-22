@@ -49,15 +49,15 @@ This single hypothesis addresses all three anomalies simultaneously:
 
 Remarkably, the frontier molecular orbitals of N₂ — the seven quantum states most directly involved in bonding — also realise a copy of the Fano plane:
 
-$$\sigma,\; \pi_x,\; \pi_y,\; \pi^*_x,\; \pi^*_y,\; \sigma^*,\; \mathrm{N_2}$$
+$$\sigma,\; \pi_x,\; \pi_y,\; \pi^{*}_x,\; \pi^{*}_y,\; \sigma^*,\; \mathrm{N_2}$$
 
-Five of the seven Fano lines in this orbital Fano plane couple bonding orbitals to antibonding orbitals. These five lines encode the Dewar–Chatt–Duncanson (DCD) mechanism — the standard chemical explanation for how transition metals activate N₂, via $\sigma$-donation and $\pi^*$-backdonation — as a *geometric identity* of the Fano plane rather than a perturbative approximation. The DCD mechanism is not an approximation that happens to work: it is exact, because it is a consequence of the incidence geometry.
+Five of the seven Fano lines in this orbital Fano plane couple bonding orbitals to antibonding orbitals. These five lines encode the Dewar–Chatt–Duncanson (DCD) mechanism — the standard chemical explanation for how transition metals activate N₂, via $\sigma$-donation and $\pi^{*}$-backdonation — as a *geometric identity* of the Fano plane rather than a perturbative approximation. The DCD mechanism is not an approximation that happens to work: it is exact, because it is a consequence of the incidence geometry.
 
 ## Bond breaking as non-associative geometry
 
-When N₂ binds to the FeMo-cofactor at the E4H4 state, the two Fano planes — the Fe₆C Fano and the N₂ orbital Fano — are glued together by a *lattice surgery* operation, creating a twelve-node junction. The iron atoms Fe2 and Fe6 play the roles of $\sigma$-donation and $\pi^*$-backdonation respectively.
+When N₂ binds to the FeMo-cofactor at the E4H4 state, the two Fano planes — the Fe₆C Fano and the N₂ orbital Fano — are glued together by a *lattice surgery* operation, creating a twelve-node junction. The iron atoms Fe2 and Fe6 play the roles of $\sigma$-donation and $\pi^{*}$-backdonation respectively.
 
-Bond cleavage — the breaking of the N≡N triple bond — is identified with the **Fano-Line Closure operation**: a mathematical transformation that acts on the Fano line $(\sigma, \pi_x, \pi^*_x)$ and simultaneously annihilates both the bonding $\sigma$ amplitude and the antibonding $\pi^*_x$ amplitude in a single step. This operation is *non-associative*: it cannot be factored into a sequence of ordinary (associative) steps. This is why it is so hard to reproduce computationally and why it requires unusual catalytic machinery. Non-associativity is not a complication to be managed — it is the mechanism.
+Bond cleavage — the breaking of the N≡N triple bond — is identified with the **Fano-Line Closure operation**: a mathematical transformation that acts on the Fano line $(\sigma, \pi_x, \pi^{*}_x)$ and simultaneously annihilates both the bonding $\sigma$ amplitude and the antibonding $\pi^{*}_x$ amplitude in a single step. This operation is *non-associative*: it cannot be factored into a sequence of ordinary (associative) steps. This is why it is so hard to reproduce computationally and why it requires unusual catalytic machinery. Non-associativity is not a complication to be managed — it is the mechanism.
 
 ## The full catalytic cycle as a computer program
 
