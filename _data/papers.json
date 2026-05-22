@@ -691,11 +691,11 @@
   },
   {
     "number": 267,
-    "title": "Hardy's Paradox and the Fano Associator: A Geometric Diagnosis of Quantum Contextuality",
-    "doi": "10.5281/zenodo.20058083",
-    "slug": "10.5281-zenodo.20058083",
-    "portfolios": ["F"],
-    "tags": ["quantum-foundations", "fano", "contextuality"],
+    "title": "The Fano-SYK Model: Bruhat-Tits Buildings, Non-Associative Fermionic Couplings, and the Geometric Impedance of Pre-Thermal Scrambling",
+    "doi": "10.5281/zenodo.20057808",
+    "slug": "10.5281-zenodo.20057808",
+    "portfolios": ["B", "F"],
+    "tags": ["quantum-foundations", "fano", "g2", "number-theory"],
     "explainer": false
   },
   {
@@ -709,11 +709,11 @@
   },
   {
     "number": 269,
-    "title": "The Fano-SYK Model: Bruhat-Tits Buildings, Non-Associative Fermionic Couplings, and the Geometric Impedance of Pre-Thermal Scrambling",
-    "doi": "10.5281/zenodo.20057808",
-    "slug": "10.5281-zenodo.20057808",
-    "portfolios": ["B", "F"],
-    "tags": ["quantum-foundations", "fano", "g2", "number-theory"],
+    "title": "Hardy's Paradox and the Fano Associator: A Geometric Diagnosis of Quantum Contextuality",
+    "doi": "10.5281/zenodo.20058083",
+    "slug": "10.5281-zenodo.20058083",
+    "portfolios": ["F"],
+    "tags": ["quantum-foundations", "fano", "contextuality"],
     "explainer": false
   },
   {
