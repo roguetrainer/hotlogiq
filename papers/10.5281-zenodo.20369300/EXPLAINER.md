@@ -149,22 +149,27 @@ if their XOR equals zero:
 
 ```text
 Mountain ⊕ Water  ⊕ Thunder = 001 ⊕ 010 ⊕ 011 = 000  ✓  Fano line
-Wind     ⊕ Fire   ⊕ Earth*  = 100 ⊕ 101 ⊕ 001 = 000  ✓  Fano line
+Wind     ⊕ Fire   ⊕ Mountain = 100 ⊕ 101 ⊕ 001 = 000  ✓  Fano line
+Lake     ⊕ Heaven ⊕ Thunder  = 110 ⊕ 111 ⊕ 011 = 000  ✓  Fano line
 ```
 
-The I Ching encoded this XOR structure in its trigrams 2,500 years before the
-Fano plane was named. The seven lines of the Fano plane are the seven triples
-{a, b, a⊕b} for distinct non-zero trigrams a, b — readable directly from the
-hexagram table of the I Ching.
+All seven Fano lines correspond to seven such XOR-zero triples of trigrams.
+
+The I Ching's primary combination is **pairs** — two trigrams stacked to form
+a hexagram, giving 8×8=64 combinations. The XOR-triple structure is implicit
+in the binary arithmetic of the trigrams, not an explicit part of the
+tradition. It is a hidden geometry: the Fano plane was always there in the
+trigrams' binary encoding, 2,500 years before Fano named it.
 
 **The connection to orbits**: the braid word (Ab)^{3k} traces the same
-combinatorial pattern as the Fano lines. The orbit family is labelled by the
-I Ching's geometric substructure.
+combinatorial pattern as the Fano lines. The orbit family is labelled by this
+hidden XOR-triple structure of the trigrams.
 
 Guo Shoujing (郭守敬, 1281) computed planetary periods of the Sun-Earth-Moon
 three-body system using the trigram binary structure as an astronomical tool.
-We use their projective geometry to find periodic orbits in the equal-mass
-three-body problem. The mathematics is 2,500 years old. The orbits are new.
+We use the projective geometry hidden inside those same trigrams to find
+periodic orbits in the equal-mass three-body problem. The mathematics is
+2,500 years old. The orbits are new.
 
 ---
 
