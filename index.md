@@ -10,69 +10,136 @@ nav_order: 1
 
 **Author:** Ian R. C. Buckley — [ORCID 0009-0004-9287-2902](https://orcid.org/0009-0004-9287-2902)
 
-Non-associative computing across the R-C-H-O division algebra ladder. Working papers, experiment code, and numerical results.
+One instruction set. Twenty orders of magnitude. From nuclear spectroscopy to GPU matrix multiplication.
 
 [Browse all papers on Zenodo](https://zenodo.org/communities/asa-research/records){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[Paradigm Comparison Table](paradigm-comparison/){: .btn .btn-outline .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [View on GitHub](https://github.com/roguetrainer/adelic-simplicial-architecture){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
 ## What is the ASA?
 
-The Adelic Simplicial Architecture is a research programme organised around a single observation: the four normed division algebras
+The **Adelic Simplicial Architecture** is a unified computational framework built around a five-opcode instruction set — the **Origami ISA** — whose operations correspond exactly to the primitives of Čech cohomology on a sheaf.
+
+The same five opcodes appear across twenty orders of magnitude in physical scale:
+
+| System | H⁰ (bilateral) | H¹ (triangular) | Pentagon = |
+|--------|----------------|-----------------|------------|
+| Nuclear spectroscopy | Selection rules | Racah 6j symbol | Biedenharn–Elliott |
+| FMO light harvesting | Site energies | Transfer efficiency η | Carnot bound |
+| Quantum computing | Pauli syndromes | Magic valence | Pentagon identity |
+| Three-body orbits | Kepler solutions | Choreographic solutions | KZ equations |
+| Interest rates | Bilateral prices | Convexity (HJM) | No-arbitrage |
+| Systemic risk | Bilateral stress | Triangular risk | H² = 0 stability |
+| GPU matrix multiply | Tile results | H¹ error certificate | d² = 0 |
+
+This is not analogy. It is the same theorem — the 6j symbol is H¹ of the relevant sheaf — instantiated for different sheaves over different interaction diagrams.
+
+---
+
+## The five opcodes
+
+| Opcode | Move | Role | Instance |
+|--------|------|------|----------|
+| `SPLIT` | 1→4 Pachner | δ⁰ coboundary: local → triangular | Bilateral spread → CVA; qubit → 4 amplitudes |
+| `SPLAT` | 4→1 Pachner | ∫_fibre: triangular → price | XVA; spectroscopic intensity; conditional expectation |
+| `TWIST` | — | Gauge transformation | Numeraire change; phase gate; measure change |
+| `FLIP` | 1→3 | Sheaf dualisation | Time reversal; asset → liability |
+| `FLOP` | 3→1 | Trace / Born rule | Discounting; probability; expectation |
+
+The **Pentagon identity** — SPLAT ∘ SPLIT = 0, i.e. d² = 0 — is simultaneously the HJM no-arbitrage condition, the Biedenharn–Elliott identity for angular momentum recoupling, the MIP\* verifier constraint, and the H² = 0 stability condition for financial cascades. One equation, four theorems.
+
+---
+
+## The four S-words
+
+The **S** in ASA stands for four things at once:
+
+- **Simplicial** — every computation is a Čech complex. Tiles, triangles, tetrahedra. H⁰/H¹/H² classify bilateral, triangular, and systemic structure.
+- **Symplectic** — the Maslov–Gibbs Einsum is a symplectic integrator. Gibbs annealing is parallel transport on an e-geodesic. KAM theory = stabiliser theory.
+- **Spider** — the opcodes are ZX-calculus spiders: SPLIT is Frobenius comultiplication, SPLAT is the counit. Spiders for nuclei, quarkonium, molecules, finance.
+- **Spectral** — the 6j symbol is H¹ of the representation sheaf. Spectroscopic circuits are small (3–21 qubits). The sheaf Laplacian governs both nuclear line intensities and XVA pricing.
+
+---
+
+## Origin: the division algebra ladder
+
+The framework grew from a simpler observation: the four normed division algebras
 
 $$\mathbb{R} \subset \mathbb{C} \subset \mathbb{H} \subset \mathbb{O}$$
 
-form a natural computational hierarchy. Each step drops one algebraic property — commutativity at $\mathbb{H}$, then associativity at $\mathbb{O}$ — and each dropped property unlocks a new computational regime. The word **adelic** refers to the simultaneous use of real ($\mathbb{R}$) and $p$-adic number fields to describe the same object: the real component flows continuously (like a gradient), while the $p$-adic component crystallises discretely (like a logic gate). The word **simplicial** refers to the Fano plane $\mathrm{PG}(2,2)$ — a 7-point, 7-line combinatorial simplex — whose incidence geometry governs the multiplication table of the octonions $\mathbb{O}$.
+form a natural computational hierarchy. Each step drops one algebraic property — commutativity at ℍ, associativity at 𝕆 — and each dropped property unlocks a new regime. The Fano plane PG(2,2) encodes the octonion multiplication table; the octonion associator
 
-The central object is the **octonion associator**
+$$\mathcal{A}(x, y, z) = (xy)z - x(yz)$$
 
-$$\mathcal{A}(x, y, z) = (xy)z - x(yz),$$
+vanishes on the seven Fano lines and equals ±2 elsewhere.
 
-which vanishes on the seven Fano lines and equals $\pm 2$ elsewhere. This binary distinction — Fano / non-Fano — is the geometric engine behind entanglement monogamy, Hardy's paradox, fault-tolerant quantum gates, hallucination-free RAG retrieval, and stale-gradient routing in distributed AI.
-
-The two core operators that make the architecture run are:
-
-- **The Maslov-Gibbs Einsum (MGE)** — a thermodynamic routing operator $\pi_k \propto \exp(-\beta E_k)$ that weights candidates by their geometric energy $E_k$. As the inverse temperature $\beta$ rises, the system undergoes a phase transition analogous to simulated annealing, but with *topological guarantees*: the Boltzmann weights are derived from the Fano-Fisher metric on $G_2$, so only Fano-compatible states survive the freeze-out. This replaces heuristic learning-rate schedules with a parameter-free auto-annealer grounded in non-associative information geometry.
-
-- **Topological Resonance Synthesis (TRS)** — the full computational engine built on the MGE. TRS treats the parameter space of a neural network as a non-associative manifold, uses holomorphic relaxation (complex-analytic gradient flow) to explore the bulk, and extracts discrete logical outputs via the Fano geometry at the boundary. The "resonance" is the phase-locking between the continuous bulk dynamics and the discrete Fano vacuum: when a trajectory aligns with a Fano line, energy vanishes and the system crystallises. TRS is the information-geometric analogue of parallel transport on $G_2$ — it does not descend a loss surface; it flows to the nearest topologically consistent state.
-
-See the [Glossary](glossary/) for definitions of all key terms.
+The associative sector (regime 2 of the ISA) now dominates the application papers — the Origami ISA, spectroscopic circuits, cohomological risk — but the non-associative residual remains an active frontier: the 0.32% of nuclear three-body forces that lives in the G₂ sector, the F₄ conjecture on J³(𝕆), the octonion calculus.
 
 ---
 
 ## Paper Index
 
-| # | Title | Portfolio |
-| --- | --- | --- |
-| [000](papers/10.5281-zenodo.19977475/) | An Adelic Invitation | Intro |
-| [199](papers/10.5281-zenodo.20060303/) | The Quaternionic Virtual Machine (Q-VM) | C |
-| [200](papers/10.5281-zenodo.19869263/) | The Fano-Foam Manifold and the Excluded Volume Principle | B |
-| [201](papers/10.5281-zenodo.17981393/) | The Maslov-Gibbs Einsum (MGE) | A |
-| [202](papers/10.5281-zenodo.19858021/) | Topological Resonance Synthesis (TRS) | A |
-| [205](papers/10.5281-zenodo.19743800/) | The Resonance Processing Unit (RPU) | C |
-| [206](papers/10.5281-zenodo.19821692/) | Fibrational Tensor Codes (FTCs) | C |
-| [207](papers/10.5281-zenodo.19713350/) | The 731-Calculus | B |
-| [208](papers/10.5281-zenodo.19826357/) | Sequence-Dependent Cryptography (Magmoidal Cipher) | D |
-| [210](papers/10.5281-zenodo.19929360/) | Geometric Interpretation of Code Switching | C |
-| [211](papers/10.5281-zenodo.20025384/) | Non-Associative Calculus | A |
-| [203](papers/10.5281-zenodo.20086746/) | The Unitary Resonance Network (URN) | C (AI) |
-| [218](papers/10.5281-zenodo.20077198/) | Thermodynamic Routing of Stale Gradients via NAIG | C (AI) |
-| [221](papers/10.5281-zenodo.20076498/) | Non-Associative Information Geometry: Fano-Fisher Decomposition Theorem | C (AI) |
-| [213](papers/10.5281-zenodo.20059019/) | Volume of Thought (VoT) | C |
-| [214](papers/10.5281-zenodo.20060285/) | Non-Associative Knowledge Hypergraphs (Fano-RAG) | C |
-| [217](papers/10.5281-zenodo.19922441/) | Fibrational Lattice Surgery (LS2.0) | C |
-| [240](papers/10.5281-zenodo.19824028/) | Structural Observations on J³(𝕆) | E |
-| [245](papers/10.5281-zenodo.19960385/) | Nuclear Magic Numbers and Exceptional Lie Algebras | E |
-| [246](papers/10.5281-zenodo.19964651/) | Electron Shell Structure and Exceptional Lie Algebras | E |
-| [235](papers/10.5281-zenodo.20100531/) | The Non-Associative No-Cloning Theorem and the Fano-Token | D |
-| [257](papers/10.5281-zenodo.20088536/) | Non-Associative Quantum Error Correction (NA-QEC) | C |
-| [258](papers/10.5281-zenodo.19916429/) | The 731 Instruction Set Architecture (Origami ISA) | C |
-| [263](papers/10.5281-zenodo.19928880/) | The Architecture of Inevitability (Magic Square) | B |
-| [265](papers/10.5281-zenodo.20029647/) | The ζ(21) Apéry Generalization | E |
-| [266](papers/10.5281-zenodo.20031913/) | Geometric Shadows in Apéry's Polynomial | E |
-| [267](papers/10.5281-zenodo.20057808/) | The Fano-SYK Model | A |
-| [268](papers/10.5281-zenodo.20058013/) | The Spacelike Associator Paradox | F |
-| [269](papers/10.5281-zenodo.20058083/) | Hardy's Paradox and the Fano Associator | F |
-| [270](papers/10.5281-zenodo.20058092/) | The Fano Monogamy Paradox | F |
+Papers are grouped by portfolio. The full index is in [README.md](README.md).
+
+**Foundations (A–B)**
+
+| # | Title | DOI |
+|---|-------|-----|
+| 000 | [An Adelic Invitation](papers/10.5281-zenodo.19977475/) | [19977475](https://zenodo.org/records/19977475) |
+| 201 | [The Maslov-Gibbs Einsum (MGE)](papers/10.5281-zenodo.17981393/) | [17981393](https://zenodo.org/records/17981393) |
+| 202 | [Topological Resonance Synthesis (TRS)](papers/10.5281-zenodo.19858021/) | [19858021](https://zenodo.org/records/19858021) |
+| 207 | [The 731-Calculus](papers/10.5281-zenodo.19713350/) | [19713350](https://zenodo.org/records/19713350) |
+| 211 | [Non-Associative Calculus](papers/10.5281-zenodo.20025384/) | [20025384](https://zenodo.org/records/20025384) |
+| 258 | [The Origami ISA](papers/10.5281-zenodo.19916429/) | [19916429](https://zenodo.org/records/19916429) |
+| 370 | [The Origami ISA as Nature's Universal Computer](papers/10.5281-zenodo.20543454/) | [20543454](https://zenodo.org/records/20543454) |
+| 393 | [Projective Geometry as the Mother Tongue of QM](papers/10.5281-zenodo.20634729/) | [20634729](https://zenodo.org/records/20634729) |
+| 396 | [The 6j Symbol as H¹](papers/10.5281-zenodo.20635479/) | [20635479](https://zenodo.org/records/20635479) |
+
+**Quantum Hardware & AI (C)**
+
+| # | Title | DOI |
+|---|-------|-----|
+| 199 | [The Quaternionic Virtual Machine (Q-VM)](papers/10.5281-zenodo.20060303/) | [20060303](https://zenodo.org/records/20060303) |
+| 205 | [The Resonance Processing Unit (RPU)](papers/10.5281-zenodo.19743800/) | [19743800](https://zenodo.org/records/19743800) |
+| 213 | [Volume of Thought (VoT)](papers/10.5281-zenodo.20059019/) | [20059019](https://zenodo.org/records/20059019) |
+| 303 | [Pacioli Combinator Library (PCL)](https://zenodo.org/records/20262070) | [20262070](https://zenodo.org/records/20262070) |
+| 385 | [SQU TriQ and SevenQ: Standard Registers](papers/10.5281-zenodo.20581486/) | [20581486](https://zenodo.org/records/20581486) |
+
+**Quantum Foundations (F)**
+
+| # | Title | DOI |
+|---|-------|-----|
+| 268 | [The Spacelike Associator Paradox](papers/10.5281-zenodo.20058013/) | [20058013](https://zenodo.org/records/20058013) |
+| 361 | [Fano Orbit Decomposition of Magic](papers/10.5281-zenodo.20541583/) | [20541583](https://zenodo.org/records/20541583) |
+| 366 | [A Valence Theory of Quantum Magic](https://zenodo.org/records/20541665) | [20541665](https://zenodo.org/records/20541665) |
+| 393 | [Projective Geometry as Mother Tongue of QM](papers/10.5281-zenodo.20634729/) | [20634729](https://zenodo.org/records/20634729) |
+
+**Spectroscopy & Physics (B\|E)**
+
+| # | Title | DOI |
+|---|-------|-----|
+| 324 | [The Decoding Engine (Ribosome A-site)](https://zenodo.org/records/20400652) | [20400652](https://zenodo.org/records/20400652) |
+| 325 | [The Topological Heat Engine (FMO)](https://zenodo.org/records/20400638) | [20400638](https://zenodo.org/records/20400638) |
+| 347 | [Spiders for Spectroscopy](https://zenodo.org/records/20490046) | [20490046](https://zenodo.org/records/20490046) |
+| 370 | [The Origami ISA: 20 Orders of Magnitude](papers/10.5281-zenodo.20543454/) | [20543454](https://zenodo.org/records/20543454) |
+| 374 | [Spectroscopic Circuits Are Small](https://zenodo.org/records/20584560) | [20584560](https://zenodo.org/records/20584560) |
+
+**Finance & Economics (G)**
+
+| # | Title | DOI |
+|---|-------|-----|
+| 291 | [Pacioli Homology](https://zenodo.org/records/20234853) | [20234853](https://zenodo.org/records/20234853) |
+| 299 | [XVA as Gauge Curvature](https://zenodo.org/records/20257724) | [20257724](https://zenodo.org/records/20257724) |
+| 396 | [The 6j Symbol as H¹ *(finance bridge)*](papers/10.5281-zenodo.20635479/) | [20635479](https://zenodo.org/records/20635479) |
+| 397 | [Systemic Risk as H²](papers/10.5281-zenodo.20642908/) | [20642908](https://zenodo.org/records/20642908) |
+| 398 | [The Topology of Risk: A Primer](papers/10.5281-zenodo.20642983/) | [20642983](https://zenodo.org/records/20642983) |
+| 399 | [The Origami ISA as Financial Middleware](papers/10.5281-zenodo.20645695/) | [20645695](https://zenodo.org/records/20645695) |
+
+**Grand Challenges (E)**
+
+| # | Title | DOI |
+|---|-------|-----|
+| 240 | [Structural Observations on J³(𝕆)](papers/10.5281-zenodo.19824028/) | [19824028](https://zenodo.org/records/19824028) |
+| 245 | [Nuclear Magic Numbers and Exceptional Lie Algebras](papers/10.5281-zenodo.19960385/) | [19960385](https://zenodo.org/records/19960385) |
+| 265 | [The ζ(21) Apéry Generalisation](papers/10.5281-zenodo.20029647/) | [20029647](https://zenodo.org/records/20029647) |
