@@ -67,10 +67,11 @@ The $H^1$ class of the pricing sheaf lives on the faces, not the edges. It is in
 
 This gives a precise mathematical definition of what *complex derivative* means:
 
-| Instrument | Cohomological class | Examples |
-|-----------|--------------------|---------||
-| Simple | $H^0$ (local section) | Forwards, futures, swaps |
-| Complex | $H^1$ (non-trivial cocycle) | Options, swaptions, CDOs |
+| Risk type | Class | Instruments | Examples |
+| --- | --- | --- | --- |
+| **Bilateral risk** | $H^0$ | Forwards, futures, swaps | Delta, DV01 |
+| **Triangular risk** | $H^1$ | Options, swaptions, CDOs | Convexity, basis, smile, XVA |
+| **Systemic risk** | $H^2$ | CCPs, central banks | Contagion, cascade, SIFI |
 
 Options exist because $H^1 \neq 0$. They are the instruments designed to cover triangular risk that bilateral contracts structurally cannot reach. This is not a practical limitation about market incompleteness — it is a topological theorem.
 
@@ -83,7 +84,7 @@ Options exist because $H^1 \neq 0$. They are the instruments designed to cover t
 The same theorem appears in five different fields, because all five have the same mathematical structure:
 
 | Field | What $H^0$ is | What $H^1$ is | What $H^2 = 0$ means |
-|-------|--------------|--------------|----------------------|
+| --- | --- | --- | --- |
 | Nuclear spectroscopy | Selection rules (Clebsch-Gordan) | Spectral line intensities (Racah 6j) | Biedenharn–Elliott identity |
 | Quantum computing | Pauli syndromes | Magic valence (orbit label) | Pentagon identity |
 | Quantum gravity | Vertex amplitudes | Ponzano–Regge 6j | Pachner move invariance |
