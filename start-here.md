@@ -112,6 +112,8 @@ The core claim: every molecular machine that processes angular momentum — a ri
 
 - [Associamancy](https://doi.org/10.5281/zenodo.20667174) (Paper 407) — Frobenius-Schur indicators; q ≡ 3 (mod 4) criterion; Freudenthal magic square
 - [Non-Abelian StateHSP](https://doi.org/10.5281/zenodo.20667170) (Paper 405) — proof that i√7/2 requires non-associative hardware; Gauss sum identity
+- [The 731-Calculus Part 1](https://doi.org/10.5281/zenodo.19713350) (Paper 207) — the magmoidal category; frog vertex (BIND opcode); non-associative string diagrams; the diagrammatic language underlying associamancy
+- [The 731 Frog Calculus Part 2](https://doi.org/10.5281/zenodo.20139448) (Paper 281) — G₂ spin foams; octonion diagram rewriting rules; the non-associative Pachner moves
 
 ---
 
