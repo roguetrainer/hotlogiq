@@ -410,6 +410,26 @@ where $\mathrm{PSL}(2,7) = \mathrm{Aut}(\mathrm{PG}(2,2))$ is the automorphism g
 
 ---
 
+## Triality-Complete
+
+A gate set or instruction set is **triality-complete** if it contains the SPIN opcode — the generator of the order-3 outer automorphism of $\mathrm{Spin}(8)$ restricted to $G_2 = \mathrm{Fix}(\text{triality})$ — giving access to all three 8-dimensional representations of $\mathrm{Spin}(8)$ on equal footing.
+
+**The 731 ISA is triality-complete. The Origami ISA (regime 2) is not.**
+
+Triality-completeness is to the 731 ISA what universality is to standard gate sets: it names the property that distinguishes the more powerful system from the less powerful one. A gate set is universal if it can approximate any unitary; it is triality-complete if it can implement the triality outer automorphism exactly (or to arbitrary precision via the SPIN opcode).
+
+The distinction matters because:
+
+- Any gate set built from $\mathrm{SU}(2)$ or $\mathrm{SL}(2,\mathbb{C})$ is triality-*blind*: it privileges the vector representation $8_v$ of $\mathrm{Spin}(8)$ and cannot access the half-spinor representations $8_s$ and $8_c$ symmetrically.
+- A triality-complete gate set can solve problems (e.g.\ the non-abelian StateHSP for $\mathrm{PSL}(2,7)$) that require the genuinely complex $\chi_3$ representation, whose character involves $i\sqrt{7}/2$ — a phase inaccessible to any cyclotomic gate set.
+- $G_2$ holonomic gates (Berry phases in the discrete Weyl group $W(G_2) \cong D_6$, order 12) are topologically protected; holonomic gates from triality-blind sets are not.
+
+**Relationship to associamancy.** A gate set reaches Level 2 (associamancy) if and only if it is triality-complete. The Schur boundary — the set of representations with Frobenius-Schur indicator $\nu_2 = 0$ — is exactly the boundary between triality-blind and triality-complete operation. See [→ Associamancy](#associamancy), [→ Schur Boundary](#schur-boundary), [→ Triality](#triality).
+
+*Defined:* [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667174/), [Paper 408 (Fano Primer)](papers/10.5281-zenodo.20667176/), [Paper 411 (Pulse Sequences)](papers/10.5281-zenodo.20680609/), [Paper 412 (Typed DSL)](papers/10.5281-zenodo.20681513/)
+
+---
+
 ## Tropical Limit / Crystallisation
 
 As $\beta \to \infty$ in the MGE, the softmax collapses to the **tropical** $(\max,+)$ semiring: the BOIL phase explores continuously; the SNAP phase crystallises to a discrete logical output.
