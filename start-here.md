@@ -67,6 +67,29 @@ The founding thesis: why the division algebra ladder **ℝ → ℂ → ℍ → �
 
 ---
 
+## For biologists and biochemists
+
+*Prerequisite: familiarity with molecular biology, structural biochemistry, or biophysics. No quantum mechanics or representation theory required.*
+
+The core claim: every molecular machine that processes angular momentum — a ribosome decoding a codon, the FMO photosynthetic complex funnelling energy, nitrogenase breaking the N≡N triple bond — is running an Origami ISA programme. The same five opcodes that describe quantum circuits describe these biological systems, at the same level of mathematical precision.
+
+1. **[The Decoding Engine](https://doi.org/10.5281/zenodo.20400652)** (Paper 324)
+   The ribosome reads the genetic code as an Origami ISA programme. The 6j symbol — the core object of angular momentum theory — is the codon-anticodon recognition step: it evaluates whether the anticodon wavefunction and the mRNA codon wavefunction are compatible. Mismatches produce a non-trivial 6j output (rejection); cognate pairs produce the trivial output (acceptance). Start here.
+
+2. **[The Topological Heat Engine](https://doi.org/10.5281/zenodo.20400638)** (Paper 325)
+   The FMO (Fenna-Matthews-Olson) photosynthetic complex achieves η ≈ 18.25% energy transfer efficiency. This paper proves the efficiency is topological: it arises from a broken Fano symmetry in the BChl coupling network (6 of 7 Fano lines at full coupling; 1 line weakened). The efficiency η = 1 − r where r ≈ 0.18 is the coupling ratio — fixed by the geometry, not by fine-tuning. The same broken-Fano architecture appears in the ribosomal A-site and in nitrogenase.
+
+3. **[Virtual Monopoles in the FeMo-Cofactor](https://doi.org/10.5281/zenodo.20346650)** (Paper 318)
+   Nitrogenase breaks the N≡N triple bond using the [7Fe-9S-Mo] FeMo-cofactor cluster. This paper shows the cluster is a 7-site Fano-plane register running a 731 ISA programme: the seven iron atoms correspond to the seven imaginary octonion directions, the bond-breaking step is a SPIN opcode (G₂ triality), and the virtual monopoles are the topological defects that catalyse the reaction. For structural biologists and enzymologists.
+
+**Then, for spectroscopists:**
+
+- [Spiders for Spectra](https://doi.org/10.5281/zenodo.20458996) (Paper 347) — atomic spectra as Origami ISA circuits; diagrammatic angular-momentum calculus for any atom
+- [Spiders for Nuclei](https://doi.org/10.5281/zenodo.20490046) (Paper 348) — nuclear spectroscopy; the Pandya transform is the FLIP opcode; ISA programs for shell-model transitions
+- [Spectroscopic Circuits Are Small](https://doi.org/10.5281/zenodo.20584560) (Paper 374) — 3–21 qubits suffice to simulate all known nuclear and atomic spectra; ISA circuit sizes for H through Cf
+
+---
+
 ## For mathematicians
 
 *Prerequisite: comfortable with representation theory or category theory.*
