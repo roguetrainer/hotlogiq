@@ -1173,6 +1173,27 @@
     "explainer": true
   },
   {
+    "number": 363,
+    "title": "Fano Geometry as a Unifying Language for Quantum Error Correction",
+    "doi": "10.5281/zenodo.20541595",
+    "slug": "10.5281-zenodo.20541595",
+    "portfolios": [
+      "C",
+      "F"
+    ],
+    "tags": [
+      "fano",
+      "qec",
+      "steane-code",
+      "ghz",
+      "hamming",
+      "origami-isa",
+      "stabiliser",
+      "self-test"
+    ],
+    "explainer": true
+  },
+  {
     "number": 365,
     "title": "The Fano Magic State Factory: Orbit-Valence Post-Selection Dominates Total-Negativity Post-Selection for Coherent Gate Errors",
     "doi": "10.5281/zenodo.PENDING",
@@ -1498,6 +1519,153 @@
       "financial-middleware",
       "econiac",
       "sheaf-cohomology"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 403,
+    "title": "Tipping Points Are Topological: Sheaf Cohomology of the Climate System and the H1-Corrected Social Cost of Carbon",
+    "doi": "10.5281/zenodo.20653285",
+    "slug": "10.5281-zenodo.20653285",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "climate",
+      "tipping-points",
+      "sheaf-cohomology",
+      "social-cost-carbon",
+      "h1",
+      "econiac",
+      "economics",
+      "thermodynamics"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 404,
+    "title": "The Origami ISA and the State Hidden Subgroup Problem: SPLAT as Fourier Sampling",
+    "doi": "10.5281/zenodo.20667167",
+    "slug": "10.5281-zenodo.20667167",
+    "portfolios": [
+      "F",
+      "C"
+    ],
+    "tags": [
+      "origami-isa",
+      "statehsp",
+      "splat",
+      "fourier-sampling",
+      "hidden-subgroup",
+      "quantum-foundations",
+      "fano"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 405,
+    "title": "Non-Associative Hardware is Necessary for the Non-Abelian StateHSP: PSL(2,7) via the 731 ISA and the SevenQ Register",
+    "doi": "10.5281/zenodo.20667170",
+    "slug": "10.5281-zenodo.20667170",
+    "portfolios": [
+      "F",
+      "C"
+    ],
+    "tags": [
+      "origami-isa",
+      "statehsp",
+      "psl27",
+      "sevenq",
+      "non-associative",
+      "g2",
+      "associamancy",
+      "quantum-foundations",
+      "fano"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 406,
+    "title": "Origami MBQC: The Origami ISA as a Measurement-Based Instruction Set",
+    "doi": "10.5281/zenodo.20667729",
+    "slug": "10.5281-zenodo.20667729",
+    "portfolios": [
+      "C",
+      "F"
+    ],
+    "tags": [
+      "origami-isa",
+      "mbqc",
+      "measurement-based",
+      "fano",
+      "cluster-state",
+      "hardware"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 407,
+    "title": "Associamancy: A Resource Theory of Non-Associative Quantum Magic",
+    "doi": "10.5281/zenodo.20667174",
+    "slug": "10.5281-zenodo.20667174",
+    "portfolios": [
+      "F",
+      "B"
+    ],
+    "tags": [
+      "associamancy",
+      "schur-boundary",
+      "frobenius-schur",
+      "g2",
+      "triality",
+      "magic-states",
+      "resource-theory",
+      "quantum-foundations",
+      "fano",
+      "origami-isa"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 408,
+    "title": "The Fano Plane is the Right Way to Think About Qubits: A Practitioner Primer",
+    "doi": "10.5281/zenodo.20667176",
+    "slug": "10.5281-zenodo.20667176",
+    "portfolios": [
+      "F",
+      "C"
+    ],
+    "tags": [
+      "fano",
+      "origami-isa",
+      "associamancy",
+      "magic-states",
+      "qec",
+      "stabiliser",
+      "sevenq",
+      "hardware",
+      "primer"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 409,
+    "title": "EconIAC: A Differentiable Economics Engine \u2014 Overview, Mathematical Foundations, and Reading Guide",
+    "doi": "10.5281/zenodo.20679006",
+    "slug": "10.5281-zenodo.20679006",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "econiac",
+      "economics",
+      "gauge-theory",
+      "sheaf-cohomology",
+      "h0",
+      "h1",
+      "h2",
+      "pacioli",
+      "overview"
     ],
     "explainer": true
   },
