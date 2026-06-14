@@ -128,17 +128,20 @@ transition α*=1, consistent with β*(ρ)→∞ at the critical point).
 
 ## Three conjectures (unproved)
 
-**(1) Spectral gap conjecture:** $\beta^*(\rho) = 1/\lambda_1(M_P, \rho)$
-(inverse spectral gap of the Hodge Laplacian on $M_P$). Supported by heuristic
-derivation for elastic hashing ($M_P = S^1$) recovering the empirical formula
-$\beta^* = \frac{3}{8}\ln(1/(1-\rho))$.
+**(1) Spectral gap conjecture:** The critical temperature equals the inverse
+spectral gap of the Hodge Laplacian on the algorithm's state manifold M_P:
+
+$$\beta^*(\rho) = \frac{1}{\lambda_1(M_P,\, \rho)}$$
+
+Supported by heuristic derivation for elastic hashing (M_P = S¹) recovering
+the empirical formula β\* = (3/8) ln(1/(1−ρ)).
 
 **(2) Complexity conjecture:** The number of FLOP corrections required is
-bounded by $\dim H^1(M_P)$, computable from the Euler characteristic via
+bounded by dim H¹(M_P), computable from the Euler characteristic via
 Poincaré-Hopf.
 
-**(3) Geodesic SLAM:** On-manifold pose updates on $\mathrm{SE}(3)$ should
-outperform Euclidean composition (applies to left-invariant metrics).
+**(3) Geodesic SLAM:** On-manifold pose updates on SE(3) should outperform
+Euclidean composition (applies to left-invariant metrics).
 
 ---
 
