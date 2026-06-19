@@ -85,6 +85,49 @@ This is a genuine new prediction, differing from the $\mathrm{SU}(2)$ value by a
 
 ---
 
+## BKT Transition / TWIST Failure
+
+The **Berezinskii-Kosterlitz-Thouless (BKT) transition** is the universal phase boundary of the Gibbs ISA at inverse temperature $\beta^* = \tfrac{1}{2}$.
+
+**Physical origin.** In the XXZ spin chain and 2D XY model, the BKT transition marks the unbinding of vortex-antivortex pairs. The partition function acquires a topological contribution from winding-number sectors; at $\beta = \beta^*$, the smallest nontrivial quantum dimension $d_{1/2}(\beta) = 2\cos(\pi\beta)$ vanishes:
+
+$$d_{1/2}(\beta^*) = 2\cos\!\left(\tfrac{\pi}{2}\right) = 0.$$
+
+**ISA interpretation.** In the Origami ISA the BKT transition is **TWIST failure**: the TWIST opcode has amplitude $d_{1/2}(\beta)$, which is exactly zero at $\beta = \beta^* = \tfrac{1}{2}$. The system can no longer commit to a preferred direction of computation — it sits at the boundary between ordered (topological) and disordered phases. Equivalently, the quantum group deformation parameter $q = e^{i\pi\beta}$ reaches $q = i$ at $\beta^* = \tfrac{1}{2}$, the point where $\mathrm{SU}(2)_q$ becomes maximally non-classical.
+
+**Information-geometric interpretation.** The BKT transition coincides with the point $\alpha = 0$ of the Amari $\alpha$-connection family:
+
+$$\Gamma^{(\alpha)} = \tfrac{1+\alpha}{2}\,\Gamma^{(e)} + \tfrac{1-\alpha}{2}\,\Gamma^{(m)}, \qquad \beta_{\rm deform} = \tfrac{1-\alpha}{2}.$$
+
+At $\alpha = 0$ (i.e.\ $\beta = \tfrac{1}{2}$) the connection is the Levi-Civita connection on the statistical manifold — neither $e$-flat nor $m$-flat. The curvature of the $\alpha$-connection,
+
+$$R^{(\alpha)} \propto (1-\alpha^2),$$
+
+is **maximised** at $\alpha = 0$ ($\beta = \tfrac{1}{2}$). Maximum curvature = maximum Berry phase accumulation = TWIST failure. The BKT transition is the information-geometric curvature maximum.
+
+**The $\beta$-ladder (universal phase diagram).** The ISA $\beta$ interpolates between regimes:
+
+| $\beta$ | $\alpha$ | Geometry | Phase | ISA state |
+|---------|---------|----------|-------|-----------|
+| $0$ | $+1$ | $e$-flat (tropical) | Classical / committed | SNAP: deterministic |
+| $\tfrac{1}{4}$ | $+\tfrac{1}{2}$ | partly curved | Ising / toric code | H¹ Islands edge |
+| $\tfrac{1}{2}$ | $0$ | LC-curved (S³ maximal) | **BKT / TWIST failure** | Critical: backtrack risk |
+| $1$ | $-1$ | $m$-flat (quantum) | Superfluid / non-Abelian | BOIL: exploratory |
+
+**Universality.** The same $\beta^* = \tfrac{1}{2}$ critical point appears across:
+
+- **Statistical physics:** BKT vortex unbinding in 2D XY / XXZ models (Papers 446)
+- **Quantum information:** Ising $\to$ non-Abelian topological order in $\mathrm{SU}(2)_k$ string-nets (Paper 446)
+- **Active inference / FEP:** exploration-exploitation crossover in Bayesian agents (Paper 448)
+- **Transcription:** RNAP pause sites — TWIST failure of the translocation ratchet (Paper 449)
+- **Information geometry:** Levi-Civita curvature maximum on the nucleotide 3-simplex (Paper 450)
+
+This universality is not coincidental: all of these systems process information subject to an $\mathrm{SU}(2)$ (or $\mathrm{SU}(2)_q$) symmetry, and $\beta^* = \tfrac{1}{2}$ is the unique point where the quantum group deformation $q = e^{i\pi\beta}$ reaches $q = i$ — the degeneration point of $\mathrm{SU}(2)_q$.
+
+*Defined:* [Paper 446 (XXZ and the β-Ladder)](papers/) · *Information geometry:* [Paper 450 (Parallel Transport on the Nucleotide Simplex)](papers/) · *See also:* [→ Maslov-Gibbs Einsum](#maslov-gibbs-einsum-mge), [→ TWIST opcode (Origami ISA)](#origami-isa-origami-instruction-set-architecture), [→ Auto-Annealing](#auto-annealing)
+
+---
+
 ## BCH Obstruction
 
 The **Baker-Campbell-Hausdorff (BCH) obstruction** arises when attempting to aggregate updates directly on a non-commutative manifold such as $G_2$: $\exp(X_i + X_j) \neq \exp(X_i)\exp(X_j)$. The ASA resolves this via Dual-Space Routing — evaluation in the flat tangent space $\mathfrak{g}_2$ (Control Plane) separated from Euclidean execution (Data Plane).
