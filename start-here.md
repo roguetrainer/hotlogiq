@@ -15,7 +15,10 @@ The ASA project spans quantum computing, financial risk, spectroscopy, climate e
 
 ## For everyone first
 
-These two papers require no specialist background. Start with one of them regardless of your field.
+These papers require no specialist background. Start with one of them regardless of your field.
+
+**[Planck's Constant in Disguise](https://doi.org/10.5281/zenodo.20752384)** (Paper 443)
+Six famous equations from six different fields — Schrödinger, Black-Scholes, Sinkhorn optimal transport, Viterbi, Cole-Hopf, and quantum groups — are all the same equation, controlled by the same algebraic parameter. The ML engineer's softmax temperature, the physicist's Planck's constant, and the quant's volatility are all the same object. No prior knowledge of the TRS framework required; every reader will find their own field in the table.
 
 **[In Praise of Tetrahedra](https://doi.org/10.5281/zenodo.20581484)** (Paper 386)
 The simplest possible non-trivial simplex — four objects, six edges, four faces — encodes the Ponzano–Regge amplitude, the 6j symbol, the Wigner tetrahedron, and the fundamental unit of the Origami ISA. This is the geometric seed from which everything else grows.
@@ -106,10 +109,13 @@ The core claim: every molecular machine that processes angular momentum — a ri
 
 *Prerequisite: comfortable with representation theory or category theory.*
 
-1. **[The Origami Calculus](https://doi.org/10.5281/zenodo.20474914)** (Paper 349)
+1. **[Eight Derivations of a Universal Instruction Set](https://doi.org/10.5281/zenodo.20774076)** (Paper 455)
+   Eight independent routes — Pachner moves, Wigner-Racah, Mac Lane Pentagon, compact closed categories, Frobenius algebras, Fisher information geometry, Hodge decomposition, quantum gate sets — all forced to the same five generators. Shum's theorem (1994) explains why: the free ribbon pivotal category on one self-dual object has exactly five generators, forced by the topology of framed tangles. Closes an 80-year fragmentation between spectroscopy (Racah 1942), categorical QM (Abramsky-Coecke 2004), and quantum computing (Boykin 1999).
+
+2. **[The Origami Calculus](https://doi.org/10.5281/zenodo.20474914)** (Paper 349)
    A diagrammatic framework for the representation theory of compact groups, grounded in the Ponzano–Regge tetrahedron. The mathematical foundation for all ISA opcodes.
 
-2. **[In Praise of Qudits](https://doi.org/10.5281/zenodo.20269991)** (Paper 310)
+3. **[In Praise of Qudits](https://doi.org/10.5281/zenodo.20269991)** (Paper 310)
    Why d > 2 quantum systems are natural: the TriQ (d=3) and SevenQ (d=7) registers as the minimal hardware for qudit stabiliser learning and PSL(2,7) Fourier sampling.
 
 3. **[The Unhedgeability Theorem](https://doi.org/10.5281/zenodo.20635479)** (Paper 396)
