@@ -62,7 +62,7 @@ number,title,doi,zenodo_id,slug,portfolios,tags,explainer,status,notes
 321,Evolutionary Quantum Programming: The 731 ISA as a Rosetta Stone for Directed Energy Transfer in Biology,10.5281/zenodo.20393465,20393465,10.5281-zenodo.20393465,B,fano|biophysics|origami-isa|evolution,False,published,
 323,Fano-Guided Search for High-Winding Equal-Mass Three-Body Choreographies,10.5281/zenodo.20369300,20369300,10.5281-zenodo.20369300,B|E,fano|three-body|choreography|ai-for-science,True,published,
 324,The Decoding Engine: How the Ribosome Reads the Genetic Code as a Topological Error-Correcting Computation,10.5281/zenodo.20400652,20400652,10.5281-zenodo.20400652,B,fano|biophysics|qec|origami-isa,False,published,
-325,The Topological Heat Engine: The 6-7 Architecture as a Thermodynamic Diode,10.5281/zenodo.20400638,20400638,10.5281-zenodo.20400638,B|F,fano|thermodynamics|biophysics|quantum-foundations,False,published,
+325,The Topological Heat Engine: The 6-7 Architecture as a Thermodynamic Diode,10.5281/zenodo.20400638,20400638,10.5281-zenodo.20400638,A,fano|thermodynamics|biophysics|quantum-foundations,True,published,
 329,Three-Body Choreographies as Chladni Resonances on a G₂ Hyperdrum,10.5281/zenodo.20625170,20625170,10.5281-zenodo.20625170,B|E,fano|g2|three-body|choreography,False,published,
 347,Spiders for Spectra: An Associative Diagrammatic Calculus for Atomic Structure with the Boundary at the G₂ Wall,10.5281/zenodo.20458996,20458996,10.5281-zenodo.20458996,B,fano|g2|spectroscopy|origami-isa,False,published,
 348,Spiders for Nuclei: An Associative Diagrammatic Calculus for Nuclear Spectroscopy with the G₂ Wall at the 1g9/2 Shell,10.5281/zenodo.20490046,20490046,10.5281-zenodo.20490046,B,fano|spectroscopy|origami-isa|nuclear-physics,False,published,
