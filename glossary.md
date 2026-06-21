@@ -144,7 +144,7 @@ $$\mathbb{R} \subset \mathbb{C} \subset \mathbb{H} \subset \mathbb{O}$$
 
 (reals, complex, quaternions, octonions) form a hierarchy in which each extension drops one algebraic property: $\mathbb{H}$ is non-commutative; $\mathbb{O}$ is additionally non-associative. By Hurwitz's theorem, no further division algebras exist. The ASA uses each rung as a distinct computational regime, and the Origami ISA opcodes organise quantum computation across all four rungs.
 
-*Framework:* [Paper 219 (Adelic Invitation)](papers/10.5281-zenodo.19977475/), [Paper 263 (Magic Square Architecture)](papers/10.5281-zenodo.19928880/)
+*Framework:* [Paper 219 (Adelic Invitation)](papers/10.5281-zenodo.19977475/), [Paper 263 (Magic Square Architecture)](papers/10.5281-zenodo.19928880/) · *Full explainer:* [The Non-Associative Frontier](non-associative-frontier.md)
 
 ---
 
@@ -203,7 +203,7 @@ Key appearances in the ASA:
 - **LQG extension:** extending LQG from $\mathrm{SU}(2)$ to $G_2$ gives a $G_2$-extended area spectrum and may fix the Barbero-Immirzi parameter
 - **Associamancy:** $G_2$ is the first rung of the Freudenthal magic square that exhibits associamancy
 
-*Central to:* [Paper 221 (Fano-Fisher)](papers/10.5281-zenodo.20076498/), [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667174/), [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680634/)
+*Central to:* [Paper 221 (Fano-Fisher)](papers/10.5281-zenodo.20076498/), [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667174/), [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680634/) · *See also:* [The Non-Associative Frontier](non-associative-frontier.md)
 
 ---
 

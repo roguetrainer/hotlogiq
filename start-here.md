@@ -128,6 +128,8 @@ The core claim: every molecular machine that processes angular momentum — a ri
 - [The 731-Calculus Part 1](https://doi.org/10.5281/zenodo.19713350) (Paper 207) — the magmoidal category; frog vertex (BIND opcode); non-associative string diagrams; the diagrammatic language underlying associamancy
 - [The 731 Frog Calculus Part 2](https://doi.org/10.5281/zenodo.20139448) (Paper 281) — G₂ spin foams; octonion diagram rewriting rules; the non-associative Pachner moves
 
+**Or start with the overview:** [The Non-Associative Frontier](non-associative-frontier.md) — a single page covering the division algebra ladder (ℝ→ℂ→ℍ→𝕆), the Freudenthal-Tits magic square, and how the 731-ISA is the computational realisation of the E₈ cell.
+
 **If you know complex analysis:** the Cauchy-Riemann conditions are the oldest instance of the H¹=0 pattern in the ASA programme.
 The condition $\bar\partial f = 0$ is the Pentagon identity SPLAT∘SPLIT = 0 for the $\bar\partial$ operator.
 The three-level ladder — $H^1(\mathbb{C},\mathcal{O})=0$ (Mittag-Leffler), $H^1(\mathbb{C}\setminus\{0\},\mathcal{O})=\mathbb{R}$ (residue theorem), $H^1(\text{genus-}g,\mathcal{O})=\mathbb{C}^g$ (Riemann-Roch) — is the clearest illustration of how $\dim H^1$ counts the number of FLOP corrections needed.
