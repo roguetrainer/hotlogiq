@@ -415,9 +415,23 @@ This generating relationship (proved in [Paper 363](papers/10.5281-zenodo.205415
 
 ## Topological Resonance Synthesis (TRS)
 
-**TRS** combines holomorphic relaxation in the bulk, MGE thermodynamic routing at the boundary, and adelic crystallisation, to flow a computation toward the nearest topologically consistent state on the $G_2$ manifold. The "resonance" is the phase-locking between continuous bulk dynamics and discrete Fano geometry.
+**TRS** is the β-deformation computational framework built on the MGE. It uses Lie groups as the "tape" of a generalised Turing machine: the Chladni resonance patterns on the group manifold encode the computational state, and the topology of those nodal lines — their H⁰/H¹/H² structure — is the skeleton of the calculation. The MGE makes that skeleton differentiable: discrete combinatorial models become smooth functions of the temperature parameter β.
 
-*Defined:* [Paper 202 (TRS)](papers/10.5281-zenodo.19858021/)
+- **Topological** — the H⁰/H¹/H² Betti structure of the resonance nodal lines
+- **Resonance** — the Chladni eigenmodes on the Lie group manifold; also Wigner-Racah angular momentum resonances
+- **Synthesis** — the ISA as a compiler that synthesises across the classical/statistical/quantum regimes via β
+
+TRS is one layer of the ASA. The full hierarchy is:
+
+| Layer | Name | What it is |
+|-------|------|-----------|
+| 1 | **MGE** | The core operation — the Maslov-Gibbs Einsum |
+| 2 | **TRS** | The β-deformation framework built on MGE |
+| 3 | **ISA trilogy** | Origami (β→∞) / Forge (0<β<∞) / Meld (β=it) — the compiler layer |
+| 4 | **H^k ladder** | H⁰/H¹/H² complexity and cohomology classification of what the ISAs compute |
+| 5 | **ASA** | The full research programme: all of the above plus all applications |
+
+*Defined:* [Paper 202 (TRS)](papers/10.5281-zenodo.19858021/) · *See also:* [→ MGE](#maslov-gibbs-einsum-mge), [→ Origami ISA](#origami-isa-origami-instruction-set-architecture)
 
 ---
 
