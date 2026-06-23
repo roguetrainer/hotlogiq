@@ -331,7 +331,7 @@ assignment is a LABEL.
 
 **BIND theorem** (*The Opcode Rosetta Stone*, Paper 447): A gapped topological phase
 has **non-Abelian anyonic order if and only if** its minimal ISA programme contains
-BIND. Abelian phases are BIND-free; non-Abelian phases require BIND.
+BIND. Associative phases are BIND-free; non-associative phases require BIND.
 
 **BIND and the division algebra ladder:**
 - No BIND: associative computation — $\mathbb{R}$, $\mathbb{C}$, or $\mathbb{H}$ rung
@@ -344,11 +344,11 @@ FLOP+BIND programme ($\mathbb{O}$-rung) collapses the integer winding-number
 classification to $\mathbb{Z}_8$, because $8$ is the Cayley-Dickson period at
 the octonion rung.
 
-**Key role:** BIND is the *non-Abelian / non-associative* opcode. Its presence
-or absence is a syntactic, computable test for non-Abelian order — no modular
-tensor category computation required. It is the hardest opcode to implement and
-the most powerful: systems with BIND can encode computations that BIND-free
-(Abelian) systems cannot.
+**Key role:** BIND is the *non-associative* opcode. Its presence or absence is
+a syntactic, computable test for non-Abelian anyonic order — no modular tensor
+category computation required. It is the hardest opcode to implement and the
+most powerful: systems with BIND can encode computations that BIND-free
+(associative) systems cannot.
 
 ---
 
