@@ -14,7 +14,22 @@ portfolio: B
 computing, the Langlands programme, and more — from classical Turing machines to the
 full Meld.*
 
-**Legend:** 🕷️ present in ZX calculus · 🕷️* partial (ZX has a related construct but not the full ISA semantics) · 🐸 present in the 731 Frog Calculus · unmarked = ISA-native
+**Graphical calculus legend:** 🕷️ present in ZX calculus · 🕷️\* partial (ZX has a related construct but not the full ISA semantics) · 🐸 present in the 731 Frog Calculus · unmarked = ISA-native
+
+**Opcode symbols** (used in the LaTeX papers): the symbols follow a strict logic — *filled = creation operator, hollow = annihilation operator; 4-sided = stellar Pachner move, 3-sided = bistellar Pachner move.*
+
+| Opcode | Symbol | Mnemonic |
+|--------|--------|----------|
+| SPLIT | ■ (filled square) | 4-sided, creation: one tetrahedron → four |
+| SPLAT | ◇ (hollow diamond) | 4-sided, annihilation: four → one |
+| FLIP | ▲ (filled triangle) | 3-sided, creation: one triangle → three |
+| FLOP | △ rotated −90° | 3-sided, annihilation: three → one |
+| TWIST | ↻ (clockwise arrow) | Phase rotation |
+| SPIN | ⊛ (circled asterisk) | Triality gauge: V → S⁺ → S⁻ → V |
+| LABEL | (projector box) | Idempotent sector selection |
+| BIND | (trivalent vertex) | Non-associative fusion |
+
+The dagger map σ swaps creation ↔ annihilation within each family: σ(■) = ◇ and σ(▲) = △. The Frobenius identities become ◇∘■ = △∘▲ = id.
 
 ---
 
@@ -446,9 +461,20 @@ different hardware.
 
 ## Further reading
 
-- **The opcodes defined:** [Paper 258 — The Magmoidal Origami ISA](papers/10.5281-zenodo.19916429/)
-- **The opcodes across 12 models:** [Paper 447 — The Opcode Rosetta Stone](papers/) *(upload pending)*
-- **AZ tenfold way as ISA opcode patterns:** [Paper 457 — The Thermal AZ Table](papers/) *(upload pending)*
-- **BIND at the octonion rung:** [The Non-Associative Frontier](non-associative-frontier.md)
-- **TWIST failure in depth:** [BKT Transition / TWIST Failure](glossary.md#bkt-transition--twist-failure)
-- **The Langlands opcode map:** Paper 461 — *Langlands as ISA Programme* *(in preparation)*
+**The ISA foundations:**
+
+- **[The Origami ISA: Eight Derivations of a Universal Instruction Set](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — eight independent routes all forced to the same opcodes; why this gate set is universal at a deeper level than Solovay-Kitaev
+- **[The Origami Calculus](https://doi.org/10.5281/zenodo.20474914)** (Paper 349) — the diagrammatic framework grounded in the Ponzano–Regge tetrahedron; the mathematical home of the opcode symbols ■ ◇ ▲ △ ↻
+- **[The Magmoidal Origami ISA](https://doi.org/10.5281/zenodo.19916429)** (Paper 258) — original definition; FLIP/FLOP/SPLIT/SPLAT/TWIST/SPIN; the symbol logic (filled = creation, hollow = annihilation; 4-sided = stellar move, 3-sided = bistellar move)
+- **[The Opcode Rosetta Stone](https://doi.org/10.5281/zenodo.20761260)** (Paper 447) — the same seven opcodes identified across twelve exactly-solvable models (Ising, Heisenberg, Kitaev, XXZ, Hubbard, Bethe ansatz, ...); universal ISA dictionary
+
+**The graphical calculi:**
+
+- **[The 731 Frog Calculus, Part 1](https://doi.org/10.5281/zenodo.19713350)** (Paper 207) — three-dimensional spin foams, magmoidal category theory, non-associative topology
+- **[The 731 Frog Calculus, Part 2](https://doi.org/10.5281/zenodo.20139448)** (Paper 281) — two-dimensional frog diagrams, ribbon-leg syntax, $G_2$ rewriting rules
+
+**The H^k computational tower:**
+
+- **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰ classical / H¹ Clifford / H² magic; TWIST failure as phase boundary; β* snap threshold
+- **[BIND at the octonion rung](non-associative-frontier.md)** — the Non-Associative Frontier page; division algebra ladder ℝ→ℂ→ℍ→𝕆
+- **[BKT Transition / TWIST Failure](glossary.md#bkt-transition--twist-failure)** — TWIST in depth; quantum dimension, $d_{1/2}(\beta)=0$ at $\beta=1/2$
