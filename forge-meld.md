@@ -10,10 +10,11 @@ portfolio: B
 # The Forge and Meld ISAs
 {: .no_toc }
 
-*The Origami ISA runs at β → ∞ (classical logic). Turn down the temperature and you
-get the Forge ISA — statistical, thermodynamic computation. Rotate β into the complex
-plane and you get the Meld ISA — quantum mechanics. The same twelve opcodes run in all
-three regimes; only the arithmetic changes.*
+*The Origami ISA runs at β → ∞ (zero temperature, classical logic). Turn up the
+temperature — lower β — and you get the Forge ISA: statistical, thermodynamic
+computation. Rotate β into the complex plane and you get the Meld ISA — quantum
+mechanics. The same twelve opcodes run in all three regimes; only the arithmetic
+changes.*
 {: .fs-5 .fw-300 }
 
 ---
