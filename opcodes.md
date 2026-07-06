@@ -438,23 +438,28 @@ run over, and in the value of the inverse-temperature parameter $\beta$:
 |-----|---------|-----------|-----------------|---------------|-----------|
 | Origami | $\beta \to \infty$ | Tropical $(\max,+)$ | $1$ (GOE) | Time-reversal symmetric | AI, BDI, D, CI, DIII |
 | Forge | $0 < \beta < \infty$ | Real Gibbs | $2$ (GUE) | No time reversal | A, AIII |
-| Meld | $\beta = it$ | Complex amplitudes ($\hbar$) | $4$ (GSE) | Kramers-degenerate | AII, CII, C, CI |
+| Meld | $\beta = it$ | Complex amplitudes | $4$ (GSE) | Kramers-degenerate | AII, CII, C, CI |
 
 The opcodes are the same in all three; only the number system and $\beta$ change.
 As $\beta \to \infty$ the Gibbs softmax collapses to a tropical argmax — discrete,
 classical computation. At finite $\beta$ it is a smooth Gibbs distribution — the
-Forge ISA, the statistical/thermodynamic regime. The Wick rotation $\beta \to it$
-turns real Boltzmann weights into complex amplitudes — that is quantum mechanics,
-the Meld ISA. The snap threshold $\beta^*$ marks where the Forge ISA transitions
-from exploratory (H¹) to crystallised (H⁰) behaviour.
+Forge ISA. The Wick rotation $\beta \to it$ turns real Boltzmann weights into
+complex amplitudes — quantum mechanics, the Meld ISA.
+
+Behind all three sits **the Ambient** — the smooth $\beta \to 0$ limit in which the
+Gibbs measure is uniform, every path equally weighted, no decisions made. The Ambient
+is not an ISA; it is the smooth containing manifold from which the three ISAs are
+carved: the Origami is the tropical crystal precipitated from it as $\beta \to \infty$,
+the Forge is the thermodynamic engine between the Ambient and the crystal, and the
+Meld is a Wick slice through it.
 
 This is Baez's threefold way (2013): exactly three associative normed division
 algebras (Hurwitz's theorem), exactly three consistent quantum-mechanical
 inner-product structures, exactly three Dyson $\beta\_D$ values, exactly three ISA
 columns.
 
-**For a full treatment of $\beta$, the snap threshold, and how Forge and Meld work
-in detail:** see [The Forge and Meld ISAs](forge-meld.md).
+**For a full treatment of $\beta$, the snap threshold, the Wick rotation, and the
+Ambient:** see [The Forge and Meld ISAs](forge-meld.md).
 
 The **731-ISA** extends beyond all three to the $\mathbb{O}$ (octonion) rung,
 adding BIND and SPIN. See [The Non-Associative Frontier](non-associative-frontier.md).
