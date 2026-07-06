@@ -58,7 +58,8 @@ The same abstract opcode appears with different in/out counts depending on the d
 ## Why twelve opcodes, and why these twelve?
 
 The Origami ISA is not an arbitrary instruction set. It is the **minimal magmoidal
-extension of the free traced symmetric monoidal category (TSMC)** — the smallest
+extension of the free traced symmetric monoidal category (TSMC — a monoidal category
+with a trace operation closing loops in the string diagram)** — the smallest
 opcode set that is both TSMC-complete and magmoidal-complete. Every opcode except BIND
 is a named morphism in the TSMC + Frobenius structure (the "spider calculus"). BIND is
 the unique opcode that requires a magmoidal extension: it encodes a non-trivial
