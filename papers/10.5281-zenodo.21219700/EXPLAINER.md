@@ -79,4 +79,16 @@ A quantum compiler that audits circuits in the three-tier framework will never w
 
 ---
 
+## What this paper does not claim
+
+**Not a better synthesis algorithm.** TV is a certification criterion, not a synthesis procedure. Adding TV as a second convergence check in distillation costs nothing computationally but does not change how resource states are produced or how many T gates they require.
+
+**Not a replacement for mana in all contexts.** $\mathcal{N}$ (mana) remains valid for many purposes. The claim is that mana is *incomplete* as a sole convergence criterion for distillation: it cannot distinguish genuine magic (TV > 1) from dark magic (TV = 1, $\mathcal{N} > 0$). TV subsumes mana; it does not contradict it.
+
+**The dark magic failure mode requires intermediate noise.** A factory operating at very low noise produces genuine magic and mana certifies it correctly. A factory at very high noise produces stabiliser states and mana correctly reads zero. The failure mode — silent convergence to dark magic — occurs at intermediate noise levels where $\mathcal{N} \to 0$ but TV stays below 1. Whether this regime is practically relevant depends on the specific hardware and noise model.
+
+**The backwards workflow largely sidesteps this.** If you identify the desired gate, derive its resource state analytically, and build your factory to target that specific state by fidelity to a known target, you verify against a concrete state rather than a scalar threshold. The dark magic failure mode is most relevant when the sole certification metric is $\mathcal{N} > 0$ convergence.
+
+---
+
 *See also:* [doi:10.5281/zenodo.21219698](https://doi.org/10.5281/zenodo.21219698) (Nine Normal Forms — dark magic as rewrite-to-identity) · [doi:10.5281/zenodo.21219702](https://doi.org/10.5281/zenodo.21219702) (Wigner Defect Conservation — TV is N-independent) · [doi:10.5281/zenodo.21158943](https://doi.org/10.5281/zenodo.21158943) (Clifford Hierarchy as Group Cohomology)

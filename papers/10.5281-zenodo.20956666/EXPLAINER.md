@@ -127,6 +127,20 @@ The orbit label is the Origami ISA's built-in spectrometer for the SPLIT and SPL
 
 ---
 
+## What this paper does not claim
+
+**Not a better synthesis algorithm.** The orbit label is a diagnostic, not a synthesis procedure. It tells you whether the resource state your factory produced matches the gate teleportation gadget you are about to feed it into. It does not give you a faster or cheaper way to produce that state.
+
+**Not relevant to single-qubit rotation synthesis.** If your workflow is sequential T-gate injection to approximate single-qubit rotations (Solovay-Kitaev), this paper is silent. That protocol works correctly; the orbit structure of 3-qubit phase space does not enter.
+
+**Not a challenge to Clifford+T universality.** Any multi-qubit unitary can be synthesized using Clifford+T. The orbit mismatch pathology arises inside that framework — specifically when a multi-qubit resource state consumed by a gate teleportation gadget is the wrong orbital species — not as a limitation of the gate set.
+
+**Not relevant if you design backwards from the target gate.** If you identify the desired non-Clifford gate, derive its resource state analytically, and build your factory specifically for that state, you know the target orbit by construction. The failure mode the orbit label catches is most relevant when certifying the output of an existing factory against a scalar threshold (mana $> 0$), not when building a factory from scratch around a known target.
+
+**Three qubits only.** The Fano structure is specific to 3-qubit phase space ($4^3 - 1 = 63 = 7 + 56$). Extension to $n > 3$ qubits requires a separate analysis of the Clifford group action on $PG(2n-1, 2)$ and is an open problem.
+
+---
+
 *See also:*
 - [Magic Orbits](https://doi.org/10.5281/zenodo.21219712) (#467) — T-gate dressing extends the classification to genuine magic states; 9 SWAP-classes
 - [Hot Logic: A Complete Magic Resource Theory](https://doi.org/10.5281/zenodo.21219700) (#470) — why TV (not $\mathcal{N}$) is the correct discriminant for genuine vs dark magic
