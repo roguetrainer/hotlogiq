@@ -15,7 +15,7 @@ portfolio: B
 
 ## The central idea in one sentence
 
-Classical computation, Clifford quantum computation, and magic quantum computation are not three separate things — they are three different windows onto a single mathematical object called the Meld, obtained by restricting which phases that object is allowed to use, and the restriction that matters most is not magic but the simpler question of whether paths can cancel at all.
+Classical computation, Clifford quantum computation, and magic quantum computation are not three separate things — they are three different phase restrictions of a single operative ISA called the Meld (β = it), which is itself one window onto the Ambient, the smooth containing manifold from which all ISAs precipitate as β rises from zero. The restriction that matters most between classical and quantum is not magic but the simpler question of whether paths can cancel at all.
 
 ---
 
