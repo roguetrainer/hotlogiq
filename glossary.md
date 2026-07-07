@@ -215,6 +215,39 @@ A Riemannian manifold has **$G_2$ holonomy** if parallel transport around any cl
 
 ---
 
+## Instruction Set Architecture (ISA)
+
+An **Instruction Set Architecture (ISA)**, in the TRS framework, is a semiring
+together with a canonical set of opcodes — closed under composition — that defines
+a complete model of computation at a given energy scale β. ISAs divide into two
+kinds:
+
+**Operative ISAs** execute programmes by *sequential composition of local opcodes*
+over a finite-dimensional state space. β is a fixed parameter that selects the
+arithmetic:
+
+| ISA | β | Semiring | Execution |
+| --- | --- | --- | --- |
+| Origami | β → ∞ | Tropical $(\max,+)$ | Argmax; discrete logic |
+| Forge | $0 < \beta < \infty$ | Gibbs $(\mathbb{R}_{>0})$ | Boltzmann weighting; snap at β* |
+| Meld | β = it | Complex $(\mathbb{C})$ | Unitary evolution; interference |
+| p-adic | $\beta \in \mathbb{Q}_p$ | p-adic $(\mathbb{Z}_p)$ | NTT; Hensel lifting |
+
+**The Harmonic ISA** (β → 0) computes by *global relaxation to harmonic
+representatives* on the smooth manifold. Opcodes are differential operators ($d$,
+$d^*$, $\Delta$, $\star$, $\wedge$) acting on infinite-dimensional function space.
+It does not step through a programme; it finds the unique harmonic element of each
+cohomology class. The Harmonic ISA is the smooth containing structure from which
+the operative ISAs precipitate as β rises from zero.
+
+The key distinction: operative ISAs make *local decisions* (each opcode acts on a
+finite neighbourhood); the Harmonic ISA makes *global decisions* (the Hodge
+Laplacian acts on the whole manifold simultaneously).
+
+*See:* [The Operative and Harmonic ISAs](forge-meld.md) · [The Opcodes](opcodes.md) · [Origami ISA](#origami-isa-origami-instruction-set-architecture)
+
+---
+
 ## Langlands Program
 
 The **Langlands Program** is a vast network connecting number theory, representation theory, and geometry via a deep reciprocity between automorphic forms and Galois representations. The natural setting is the adele ring $\mathbb{A}$; the $G_2$ case of geometric Langlands is directly relevant to the ASA. Paper 240 identifies the Bruhat-Tits building of $G_2$ as a candidate for a proof of the Riemann Hypothesis via automorphic methods.

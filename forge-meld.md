@@ -1,20 +1,21 @@
 ---
 layout: default
-title: "The Forge and Meld ISAs"
+title: "The Operative and Harmonic ISAs"
 nav_order: 5
-description: "How β interpolates between the Origami ISA (β → ∞), the Forge ISA (finite β), and the Meld ISA (β = it) — the snap threshold β*, and the Ambient (β → 0) that contains them all."
-tags: [isa, forge, meld, ambient, beta, snap, mge, gibbs, wick-rotation, tropical, complexity]
+description: "The four ISA regimes of the TRS framework: Origami (β → ∞), Forge (finite β), Meld (β = it), and the Harmonic ISA (β → 0, Hodge) — plus the p-adic and adèlic extensions."
+tags: [isa, forge, meld, ambient, harmonic, hodge, beta, snap, mge, gibbs, wick-rotation, tropical, complexity]
 portfolio: B
 ---
 
-# The Forge and Meld ISAs
+# The Operative and Harmonic ISAs
 {: .no_toc }
 
-*The Origami ISA runs at β → ∞: frozen, tropical, classical. The Forge ISA runs at
-finite real β: thermodynamic, exploratory, statistical. The Meld ISA is the Wick
-rotation β = it: complex amplitudes, interference, quantum. All three precipitate
-from a single smooth containing structure — the Ambient — which is not itself an ISA
-but the manifold in which all three live.*
+*The TRS framework has four ISA regimes. Three are **operative**: they run
+programmes by composing local opcodes over a finite state space — Origami
+(β → ∞, tropical), Forge (finite β, thermodynamic), and Meld (β = it, quantum).
+The fourth is the **Harmonic ISA** (β → 0): it computes by global relaxation to
+harmonic representatives on the smooth manifold from which all three operative
+ISAs are carved.*
 {: .fs-5 .fw-300 }
 
 ---
@@ -43,7 +44,7 @@ has two natural extensions from the real positive axis:
 | $\beta \to \infty$ | Tropical $(\max,+)$ | Origami | Frozen; classical; discrete logic |
 | $0 < \beta < \infty$ | Real Gibbs ($\mathbb{R}_{>0}$) | Forge | Statistical; thermodynamic; snap at $\beta^*$ |
 | $\beta = it$ | Complex ($\mathbb{C}$) | Meld | Quantum; interference; unitary |
-| $\beta \to 0$ | Uniform; smooth Hodge | *The Ambient* | Containing manifold; not an ISA |
+| $\beta \to 0$ | Uniform; smooth Hodge | *The Ambient* | Hodge decomposition; harmonic representatives |
 
 The three ISAs are not three different instruction sets — they are the same opcodes
 evaluated over three different semirings. The Ambient is not an ISA at all; it is
@@ -173,49 +174,75 @@ The 731-ISA reaches the second level. Standard Meld ISA suffices for the first.
 
 ---
 
-## The Ambient: β → 0
+## The Harmonic ISA: β → 0
 
-The Ambient is not an ISA. It is the **smooth containing manifold** from which
-all three ISAs are carved — the Platonic original of which Origami, Forge, and
-Meld are shadows cast in different directions.
+The **Harmonic ISA** is the β → 0 limit of the MGE — the smooth, maximum-entropy
+manifold from which all three operative ISAs are carved. Unlike the operative ISAs,
+it does not execute programmes by composing local opcodes. Instead it computes by
+**global relaxation to harmonic representatives**: given a differential form, find
+the unique element of its cohomology class that satisfies $\Delta \omega = 0$.
+This is a definite computation with definite outputs — it is an ISA, but of a
+different kind.
 
-As β → 0 the Gibbs weights become uniform: every path has equal weight, no
-preference, maximum entropy. This is not a computational regime you *inhabit* —
-you cannot run programmes at β = 0 because no decisions are ever made. But it is
-the structure that gives the trilogy its geometry.
+**The Harmonic ISA opcodes:**
 
-**Why it matters:**
+| Opcode | Harmonic (β → 0) incarnation |
+| --- | --- |
+| SPLIT | Hodge decomposition: $\omega = d\alpha + d^{*}\beta + \gamma$ |
+| SPLAT | Projection onto harmonic subspace ($\ker \Delta$) |
+| TWIST | Exterior derivative $d$ (raises form degree) |
+| FLIP | Hodge star $\star$ (degree reversal; discrete ↔ smooth duality) |
+| BIND | Wedge product $\wedge$ (associative cup product in cohomology) |
 
-- The Origami ISA is the **tropical crystal precipitated from the Ambient** as
-  β → ∞ freezes the smooth measure to an argmax. Every discrete algorithm is the
-  degeneration of a smooth problem that lives naturally in the Ambient.
-- The Forge ISA is the **thermodynamic engine between the Ambient and the crystal**
-  — the regime where the transition from smooth to discrete can be controlled and
-  exploited via β.
-- The Meld ISA is a **Wick slice through the Ambient** — rotating β into the
-  complex plane picks out the quantum-mechanical structure latent in the smooth
-  manifold.
+The output of a Harmonic ISA programme is always a **harmonic form** — the
+canonical, unique representative of a cohomology class. The H^k cohomology
+groups that the operative ISAs traverse as a complexity ladder are *defined* by
+the Harmonic ISA: H^k = ker(d) / im(d), and the Harmonic ISA selects the
+distinguished element of each class.
 
-**What lives in the Ambient:**
+**What makes it different from the operative ISAs:**
 
-- Hodge theory — the smooth H^k cohomology of which the Forge/Origami ladder is
-  the discretisation
-- Optimal transport and Sinkhorn scaling — Forge programmes that approach the
-  Ambient as regularisation → 0
-- Diffusion models and score matching — operate at β → 0 and sharpen iteratively
-  toward discrete outputs
-- Continuous relaxations of combinatorial problems — LP and SDP relaxations are
-  Ambient-level approaches to Origami problems
+The three operative ISAs share an execution model: local opcodes, sequential
+composition, finite-dimensional state, β as a fixed parameter. The Harmonic ISA
+breaks each of these:
 
-The Ambient does not yet have a dedicated paper. It is named and defined here for
-the first time as the smooth β → 0 limit of the MGE, the containing manifold of
-the ISA trilogy.
+- Opcodes act *globally* on the whole manifold (differential operators, not gates)
+- Execution is *relaxation*, not sequential composition
+- State space is infinite-dimensional (smooth function space)
+- β is not a parameter — it is zero; the continuum limit has been taken
+
+This is why the Harmonic ISA feels different: it is the *physics* from which the
+operative ISAs emerge as discrete shadows, not a programme you step through.
+
+**Why the three operative ISAs need it:**
+
+- The Origami ISA is the **tropical crystal precipitated from the Harmonic ISA**:
+  β → ∞ freezes the smooth harmonic measure to a tropical argmax.
+- The Forge ISA is the **thermodynamic engine between harmonic and crystalline**:
+  finite β interpolates between the two.
+- The Meld ISA is a **Wick slice through the Harmonic ISA**: β = it picks out the
+  quantum-mechanical structure latent in the smooth manifold.
+
+**What computes in the Harmonic regime:**
+
+- Hodge theory — the H^k cohomology of which the Forge/Origami ladder is the
+  discretisation
+- Optimal transport and Sinkhorn scaling — Forge programmes approaching the
+  Harmonic ISA as regularisation → 0
+- Diffusion models and score matching — operate near β → 0, sharpening
+  iteratively toward discrete outputs
+- LP and SDP relaxations — Harmonic-level continuous relaxations of Origami
+  (discrete) problems
+
+The Harmonic ISA does not yet have a dedicated paper. It is named and defined
+here as the smooth β → 0 limit of the MGE and the fourth member of the ISA
+family — distinct in kind from the operative three, but an ISA nonetheless.
 
 ---
 
 ## The full picture
 
-The three ISAs and the Ambient live in the **complex β-plane** — a single
+The four ISAs live in the **complex β-plane** — a single
 structure indexed by β ∈ ℂ ([Paper 543](https://doi.org/10.5281/zenodo.17981393)):
 
 ```
@@ -241,20 +268,28 @@ Each prime p adds a **p-adic axis** into the β-plane, carrying the p-adic ISA
 | $\beta \to \infty$ | Tropical $(\max,+)$ | Origami | Argmax; discrete logic |
 | $0 < \beta < \infty$ | Gibbs ($\mathbb{R}_{>0}$) | Forge | Snap at $\beta^*$; annealing |
 | $\beta = it$ | Complex ($\mathbb{C}$) | Meld | Unitary; T-gate; interference |
-| $\beta \to 0$ | Uniform; Hodge | *The Ambient* | Containing manifold; not an ISA |
+| $\beta \to 0$ | Uniform; Hodge | *Harmonic ISA* | Hodge decomposition; harmonic representatives |
 | $\beta \in \mathbb{Q}_p$ | p-adic ($\mathbb{Z}_p$) | U-MGE / p-adic ISA | NTT = QFT; Hensel = VQE |
 | $\beta \in \mathbb{A}_\mathbb{Q}$ | Adèlic ($\mathbb{A}$) | Adèlic ISA | All primes simultaneously |
 
 **Which ISA should I use?**
+
+*Operative ISAs* (local opcodes, sequential composition, finite state):
 
 - **Origami** — discrete, combinatorial, zero temperature. Protein structure
   (Ramachandran), nuclear spectroscopy, classical algorithms.
 - **Forge** — probabilistic, thermodynamic, finite temperature. Annealing,
   belief propagation, kinetic proofreading. Snap at β* separates H¹ from H⁰.
 - **Meld** — quantum, unitary. QFT, anyons, Shor's algorithm, magic state
-  distillation. Requires BIND for universality (T-gate).
+  distillation. T-gate for universality; 731-ISA for topological QC.
 - **p-adic ISA** — exact integer arithmetic, ultrametric geometry. Lattice-based
   cryptography (NTT), p-adic VQE (Hensel lifting), p-adic Grover.
+
+*Harmonic ISA* (global relaxation, infinite-dimensional state):
+
+- **Harmonic** — continuous optimisation, smooth geometry. Hodge decomposition,
+  diffusion models, optimal transport, LP/SDP relaxations. The manifold from
+  which the operative ISAs precipitate.
 
 The 731-ISA extends the diagram along a third axis — *associativity* — adding
 the BIND opcode and reaching the 𝕆-rung. See
@@ -269,7 +304,7 @@ is no other place for β to live.
 
 ## Where each regime appears
 
-| Domain | Origami (β → ∞) | Forge (0 < β < ∞) | Meld (β = it) | The Ambient (β → 0) |
+| Domain | Origami (β → ∞) | Forge (0 < β < ∞) | Meld (β = it) | Harmonic (β → 0) |
 |--------|----------------|------------------|---------------|---------------------|
 | Computation | Classical logic; discrete optimisation | Probabilistic inference; annealing | Quantum circuits; BQP | Continuous optimisation; gradient flow |
 | Physics | Spectroscopy; nuclear structure | Statistical mechanics; phase transitions | QFT; anyons; Berry phase | Hodge theory; smooth field theory |
