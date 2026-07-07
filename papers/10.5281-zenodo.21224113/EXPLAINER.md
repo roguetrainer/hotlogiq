@@ -61,15 +61,23 @@ Tanabe-Sugano drew these diagrams in 1954 without the language of tropical geome
 
 ---
 
-## The three-tier picture
+## The β-deformation and the H^k ladder: two separate axes
 
-The Maslov-Gibbs Einsum (MGE) framework interpolates between the two regimes by varying $\beta$:
+It is worth being precise about two things that look similar but are not the same.
 
-- **$H^0$ (tropical, $\beta \to \infty$):** G-Walk chemistry — orbit occupancy vectors, discrete labels, exact at $\varepsilon \to 0$
-- **$H^1$ (intermediate, finite $\beta$):** linear response and perturbation theory — first corrections beyond the tropical ground state
-- **$H^2$ (standard ring, $\beta \to 0$):** full DFT and quantum chemistry — continuous electron density, all correlations included
+**The β-deformation** is the one-parameter interpolation between the tropical semiring ($\beta \to \infty$, G-Walk) and the standard semiring ($\beta \to 0$, DFT). β controls which *arithmetic* you use — winner-take-all tropical selection versus smooth quantum superposition. This is a single continuous axis.
 
-The systematic corrections developed empirically — including the Racah C parameter and Jahn-Teller quenching for rigid chelates — correspond to perturbations of the tropical variety: shifts of Newton polytope vertices and expansions of tropical edges. Each correction improves accuracy from 82% to 85% to 88.5% on a 61-compound benchmark, matching CASPT2 results at a fraction of the computational cost. This is the empirical evidence that G-Walk chemistry is not a heuristic but the correct tropical degeneration of the DFT energy functional.
+**The H^k cohomological ladder** is a different classification: it describes the *topological complexity* of the solution. H⁰ = no cycles, no holonomy; H¹ = one-dimensional loops, interference, Berry phase; H² = two-dimensional topological obstruction; H³ and beyond = higher topological structure (WZW terms, higher gauge theory, the associator obstruction of non-associative geometry). The H^k ladder does not terminate at H² — it continues, and H³+ appears in quantum gravity and non-associative contexts that the current ISA framework is approaching but has not yet fully mapped.
+
+The two axes are related but not identical. At a given β, the system can access cohomological structure up to the degree that the semiring at that β supports: the tropical semiring ($\beta \to \infty$) only resolves H⁰ structure; the Gibbs semiring (finite β) resolves H⁰ and H¹; the complex Meld semiring resolves H⁰, H¹, and H². But β does not *label* cohomological degree — it controls *which semiring* the computation runs over, and each semiring has a maximum cohomological resolution.
+
+For G-Walk chemistry specifically:
+
+- **Tropical limit ($\beta \to \infty$):** orbit occupancy vectors, discrete labels — this is the H⁰ component of the DFT solution. Exact where the crystal-field splitting dominates thermal fluctuations.
+- **Linear response (finite large β):** first corrections beyond the tropical ground state — Racah C parameter, Jahn-Teller quenching — these are perturbations of the tropical variety, approximating the H¹ corrections that DFT includes smoothly.
+- **Full DFT ($\beta \to 0$):** continuous electron density, all correlations — H⁰ + H¹ + H² structure all included, but at enormous computational cost and with approximation errors near tropical singularities.
+
+The systematic corrections from 82% to 85% to 88.5% accuracy on the 61-compound benchmark correspond to including more of the H¹ linear-response corrections to the tropical ground state. This is the empirical evidence that G-Walk chemistry is not a heuristic but the correct tropical degeneration of the DFT energy functional — and that the β-deformation is the right bridge between them.
 
 ---
 
