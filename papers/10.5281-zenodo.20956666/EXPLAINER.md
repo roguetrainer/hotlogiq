@@ -105,7 +105,7 @@ Different orbit labels. The spectrometer distinguishes them instantly; the lumin
 
 ## What this means for circuit verification
 
-The most important application is catching **CZ routing bugs** — a class of hardware error where the wrong CZ gate fires. On superconducting processors with fixed coupling maps, $\mathrm{CZ}_{01}$, $\mathrm{CZ}_{02}$, and $\mathrm{CZ}_{12}$ are physically distinct operations. A routing miscalibration can apply the wrong one.
+The most important application is catching **CZ routing bugs** — a class of hardware error where the wrong CZ gate fires. On superconducting processors with fixed coupling maps, CZ₀₁, CZ₀₂, and CZ₁₂ are physically distinct operations. A routing miscalibration can apply the wrong one.
 
 Standard benchmarking — randomised benchmarking, cross-entropy benchmarking, process fidelity — measures *total gate error rate*. It cannot detect a gate that works perfectly but is the wrong gate. The orbit label can, at **zero additional experimental cost**: the 56 Pauli inner products needed to compute it are already present in standard process tomography data. No new experiments required.
 
