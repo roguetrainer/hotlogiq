@@ -30,12 +30,12 @@ But consider two states produced by running a Hadamard gate followed by a CZ gat
 
 Run every standard diagnostic on these two states:
 
-| Diagnostic | $\lvert\psi_1\rangle$ | $\lvert\psi_3\rangle$ |
+| Diagnostic | ψ₁ | ψ₃ |
 |---|---|---|
 | Wigner negativity $\mathcal{N}$ | $1/8$ | $1/8$ |
 | Stabiliser Rényi entropy | equal | equal |
 | Schmidt spectrum | equal | equal |
-| Fidelity $\lvert\langle\psi_1\lvert\psi_3\rangle\rvert^2$ | — | $1/4$ |
+| Fidelity between ψ₁ and ψ₃ | — | $1/4$ |
 
 Every green light. Standard process tomography calls them equivalent. But they are *not* the same state — one was produced by $\mathrm{CZ}_{01}$, the other by $\mathrm{CZ}_{12}$. If your downstream circuit was designed expecting $\lvert\psi_1\rangle$ and receives $\lvert\psi_3\rangle$ instead, every two-qubit entangling operation it subsequently applies will be wrong — with $3/4$ error rate per use site. The scalar $\mathcal{N}$ cannot catch this.
 
