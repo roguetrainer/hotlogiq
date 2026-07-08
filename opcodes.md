@@ -81,6 +81,14 @@ computing, loop quantum gravity, financial XVA, the geometric Langlands programm
 protein folding, and the ribosome. They are not analogies. They are the same
 categorical morphisms, running on different physical hardware.
 
+**How precise are the ISA mappings across domains?** The mappings range from exact
+algebraic theorems (Tier A: Fano commutation structure, Casimir identity, Wigner
+vertex theorem) to quantitative predictions verified by experiment (Tier B: MCMC
+optimal acceptance rates, GEV shape parameter, Shor mana = 0) to useful
+organisational language for hierarchies the field already knew were hierarchical
+(Tier C: Pearl's causal ladder, fairness taxonomies). The programme does not claim
+all mappings are equally strong — [see the full precision taxonomy](core-ideas/stratification-principle.md).
+
 ---
 
 ## The ISA is semiring-polymorphic
