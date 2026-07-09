@@ -81,6 +81,12 @@ Eight independent mathematical communities have each, working separately, been f
 
 *→ Papers [258](https://zenodo.org/records/19916429), [419](https://doi.org/10.5281/zenodo.20694527), [454](https://doi.org/10.5281/zenodo.20773563), [455](https://doi.org/10.5281/zenodo.20774076)*
 
+### The chain complex: H^k is genuine cohomology
+
+The H^k tiers are not merely a grading — they form a genuine chain complex. The boundary map ∂: C^k → C^{k+1} is assembled from the SPLIT and SPLAT opcodes with Koszul signs; it satisfies ∂² = 0 as a direct consequence of the Frobenius algebra axiom (SPLAT∘SPLIT = id). This is the same condition as the Pentagon identity, the MIP*=RE self-test, and Khovanov's categorification of the Jones polynomial. The ORBIT count is the Euler characteristic of the complex; the full Poincaré polynomial is a strictly stronger invariant. At the H² level, BIND = the Kuperberg G₂ spider vertex (CMP 1996) — the complete diagrammatic axiomatisation of non-Abelian holonomy in the ISA.
+
+*→ Papers [357](https://doi.org/10.5281/zenodo.20516899) (Pentagon/MIP*), [571](https://doi.org/10.5281/zenodo.21278536) (chain complex), [572](https://doi.org/10.5281/zenodo.21278538) (G₂ spider = BIND)*
+
 ### The 731-ISA: beyond the Pentagon
 
 The three-ISA trilogy operates within the **associative** world — the Pentagon identity SPLAT∘SPLIT = 0 holds throughout. There is a fourth ISA that breaks this:
@@ -127,6 +133,7 @@ The full research programme: all five layers plus their applications across quan
 | [A — Core Engine](/adelic-simplicial-architecture/portfolios/portfolio-a) | MGE, TRS, non-associative calculus |
 | [B — Foundations](/adelic-simplicial-architecture/portfolios/portfolio-b) | Algebra, topology, category theory |
 | [C — Hardware & AI](/adelic-simplicial-architecture/portfolios/portfolio-c) | ISA trilogy, registers, QEC |
+| [E — Chemistry & Physics](/adelic-simplicial-architecture/portfolios/portfolio-e) | Bonding theory, nuclear, amplituhedron |
 | [F — Quantum Foundations](/adelic-simplicial-architecture/portfolios/portfolio-f) | Magic, self-tests, paradoxes |
 | [G — Finance & Economics](/adelic-simplicial-architecture/portfolios/portfolio-g) | EconIAC, gauge theory, risk |
 
