@@ -37,9 +37,16 @@ three tiers:
    classically. These are the states that actually fuel universal quantum
    computation.
 
-The existence of dark magic — a class of states that are Wigner-negative but
-*not* computationally magic — is, as far as we know, unrecorded in the prior
-literature.
+The existence of states that are Wigner-negative but non-resource was noted by
+Veitch et al. (2012), who called them **bound magic states** by analogy with
+bound entanglement. What was not recorded is what to *do* with them: the mana
+monotone (Veitch 2014) is blind to bound magic because it enforces the
+normalisation axiom Σ W(u) = 1, which makes mana = 0 for the entire class.
+Our contribution is the **TV discriminant** — lifting that axiom and using the
+unnormalised total variation TV = Σ\|W(u)\| as the resource measure. This
+separates bound magic (TV = 1, mana = 0, but Wigner-negative) from genuine
+magic (TV > 1, mana > 0) and from stabiliser states (TV = 1, Wigner-positive).
+The Wigner mass cos²(π/8) and its N-independence are also unrecorded.
 
 **Magic has orbits.** Under the Clifford group (the natural symmetry group of
 stabiliser quantum mechanics), the space of two-qubit unitaries breaks into
@@ -102,6 +109,54 @@ magic), the identification of cos²(π/8) as the Wigner mass, and the
 N-independence of the classification are, as far as we know, unrecorded in the
 prior literature as of June 2026. The relevant prior work to cite as background
 is Veitch (2012), Gross (2006), Bravyi-Kitaev (2005), and Veitch (2014).
+
+---
+
+## The Grassmannian picture
+
+The orbit/TV classification above is **discrete**: states are sorted into nine
+orbits by their Clifford-group equivalence class, and the TV threshold is a
+sharp binary cut. A complementary **continuous** picture emerged from the
+Grassmannian arc (Papers 563, 568, 570, 574, 577, 578, July 2026).
+
+Every quantum state defines a subspace of occupied modes — a point on the
+Grassmannian Gr(2^k, 2^n). The **Grassmannian angle**
+
+$$
+\theta_G = \arccos(\sigma_0)
+$$
+
+measures the geodesic distance from that point to the nearest stabiliser
+reference (the leading Schmidt singular value σ₀). It is a continuous,
+basis-independent complexity metric.
+
+**The β\* snap at θ_G ≈ 20°** is the continuous analogue of the TV > 1
+threshold. Below it, a single dominant stabiliser configuration accounts for
+more than 88% of the state weight (σ₀² > 0.88) and classical simulation is
+efficient. Above it, no single stabiliser configuration dominates and the state
+requires genuine multi-reference treatment — it is computationally magic in the
+resource-theory sense.
+
+This gives a unified two-axis picture:
+
+| Property | Stabiliser | Dark magic | Genuine magic |
+| --- | --- | --- | --- |
+| TV, θ_G | TV = 1, θ_G ≈ 0 | TV = 1, θ_G < 20° | TV > 1, θ_G > 20° |
+| Wigner function | Non-negative | Negative | Negative |
+| Classically simulable | Yes | Yes | No |
+| Geometry | Stabiliser fixed point | Inside β\* ball | Outside β\* ball |
+
+The nine Clifford orbits map onto this geometry: inter-orbit fidelity = 1/2 is
+a statement about Fubini-Study distance on the Grassmannian. Dark magic orbits
+(six of the nine) lie inside the β\* snap radius; the two genuine magic orbits
+lie outside it.
+
+The Grassmannian picture also explains **why distillation works**: magic state
+distillation is gradient descent on the Grassmannian toward the genuine magic
+region (θ_G > 20°). Dark magic states — sitting inside the β\* ball —
+cannot be distilled into genuine magic by Clifford operations alone, because
+they are geodesically closer to the stabiliser fixed point than to the genuine
+magic region.
 
 ---
 
