@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "S00 — The Tetrahedron"
-parent: Stories
+parent: Books
 nav_order: 0
 ---
 

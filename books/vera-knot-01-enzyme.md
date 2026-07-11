@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "S01 — Professor Knot Visits the Enzyme"
-parent: Stories
+parent: Books
 nav_order: 1
 ---
 
