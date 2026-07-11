@@ -140,4 +140,4 @@ From experiment x594a (FCI/STO-3G):
 
 ---
 
-*Next: [Chapter 2 — The Double Bond: Ethylene](ct-chemistry-02-ethylene/)*
+*Next: [Chapter 2 — The Double Bond: Ethylene](ct-chemistry-02-ethylene)*

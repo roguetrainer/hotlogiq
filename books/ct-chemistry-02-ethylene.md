@@ -151,5 +151,5 @@ The φ = 90° values are exact by symmetry: the D₂ point group at perpendicula
 
 ---
 
-*Previous: [Chapter 1 — The Single Bond: H₂](ct-chemistry-01-h2/)*  
-*Next: [Chapter 3 — Aromaticity: Benzene](ct-chemistry-03-benzene/)*
+*Previous: [Chapter 1 — The Single Bond: H₂](ct-chemistry-01-h2)*  
+*Next: [Chapter 3 — Aromaticity: Benzene](ct-chemistry-03-benzene)*
