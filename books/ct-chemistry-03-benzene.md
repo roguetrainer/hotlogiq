@@ -62,7 +62,7 @@ From SA-CASSCF(6e,6o) calculation (experiment x570b):
 | Kekulé overlap S | ~0.23 |
 | Correction factor (1−S)⁻¹ | ~1.30 |
 
-The agreement is within 5% using only the CASSCF wavefunction — no empirical parameters. The BIND opcode is the resonance integral H₀₁ = ⟨Kekulé₁|H|Kekulé₂⟩.
+The agreement is within 5% using only the CASSCF wavefunction — no empirical parameters. The BIND opcode is the resonance integral H₀₁ = ⟨Kekulé₁\|H\|Kekulé₂⟩.
 
 ---
 
