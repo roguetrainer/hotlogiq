@@ -44,6 +44,9 @@ G01,Yang-Mills instantons,Gauge Theory,SU(2) Yang-Mills on S4,SU(2),H2,Meld,vali
 D07,Burgers equation and shock formation,Dynamical Systems,Viscous Burgers on R (nu to 0),R,H0,Origami,validated,ORBIT TWIST LABEL,512 543,,d07-burgers-shocks,true
 G02,Amplituhedron (N=4 SYM scattering),Gauge Theory,Positive Grassmannian Gr+(k n) in twistor space,GL(k),H2,Meld,validated,ORBIT TWIST BIND,574 520,,g02-amplituhedron,true
 G03,Higgs mechanism and electroweak symmetry breaking,Gauge Theory,SU(2) x U(1) scalar field with Mexican hat potential,SU(2) x U(1),H1,Forge,validated,ORBIT TWIST SPLIT SPLAT LABEL,536 543,,g03-higgs-mechanism,true
+PT01,PT-symmetric non-Hermitian system,Non-Hermitian Physics,Gain-loss balanced optical waveguide pair,PT,H1,Forge,validated,ORBIT TWIST LABEL,543 460,,pt01-pt-symmetric,true
+CM01,Hubbard model Mott transition,Condensed Matter,Hubbard model at half-filling,SU(2),H1,Forge,validated,ORBIT TWIST BIND LABEL,563,,cm01-hubbard-mott,true
+N03,Hoyle resonance and triple-alpha process,Nuclear Physics,Three alpha particles near 7.65 MeV,SU(4),H1,Forge,validated,ORBIT TWIST BIND LABEL,575 548,,n03-hoyle-resonance,true
 QH01,Trapped-ion MS gate circuit,Quantum Hardware,IonQ / Quantinuum ion crystal,U(1) x SU(2),H2,Meld,validated,ORBIT TWIST BIND,385 421,,qh01-trapped-ion-ms,true
 QH02,Superconducting transmon cross-resonance gate,Quantum Hardware,IBM transmon qubit pair,SU(2),H2,Meld,validated,ORBIT TWIST BIND,385 421,,qh02-transmon-cr,false
 CP01,3-SAT phase transition at alpha*,Computational Complexity,Random 3-SAT near clause density 4.267,Z2,H1,Forge,validated,ORBIT TWIST LABEL,420,,cp01-3sat-phase,false
