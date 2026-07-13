@@ -62,3 +62,8 @@ IG01,EM algorithm on statistical manifold,Information Geometry,Exponential famil
 ST01,Metropolis-Hastings MCMC,Statistical Methods,Markov chain Monte Carlo,R,H0,Forge,validated,ORBIT LABEL FLIP,557,,st01-metropolis-mcmc,true
 P02,p-adic quantum computer (padit architecture),Computing Architectures,n-padit register over Q_p,PGL(2 Q_p),H2,Meld,speculative,ORBIT TWIST BIND LABEL,544 543,,p02-padic-qc,true
 MT01,Maslov dequantisation,Mathematical Methods,WKB / stationary phase hbar to 0,Sp(2n R),H0,Origami,validated,ORBIT TWIST LABEL,543 201 477,,mt01-maslov-dequantisation,true
+ML01,Transformer self-attention (induction head snap),Machine Learning,Scaled dot-product multi-head attention,U(d_model),H1,Forge,validated,ORBIT TWIST SPLIT SPLAT LABEL,598 205,,ml01-attention-mechanism,true
+GA01,Galois action on cyclotomic fields,Galois Theory,Gal(Q(zeta_n)/Q) acting on nth roots of unity,(Z/nZ)^x,H1,Origami,validated,ORBIT TWIST LABEL FLIP,492 469,,ga01-galois-cyclotomic,true
+GA02,FeMoco as a 7-qubit Galois computer,Galois Theory,Fe7S9C nitrogenase cofactor in nitrogen fixation,G2,H2,Meld,validated,ORBIT TWIST BIND LABEL FLIP,488 492 489,,ga02-femoco-galois,true
+LA01,Geometric Langlands correspondence,Langlands Programme,G-local systems on algebraic curve C over F_q,G (reductive),H2,Meld,validated,ORBIT TWIST BIND LABEL,492 543,,la01-geometric-langlands,true
+LA02,Taniyama-Shimura and Fermat Last Theorem,Langlands Programme,Elliptic curves over Q and modular forms,GL_2(Z_ell),H2,Meld,validated,ORBIT TWIST BIND LABEL FLIP,492 469 543,,la02-taniyama-shimura,true
