@@ -79,3 +79,4 @@ B07,RNA polymerase transcription and proofreading,Biology,RNAP II elongation com
 B08,T-cell receptor activation and clonal selection,Biology,TCR-pMHC interface and downstream signalling,SU(2),H1,Forge,validated,ORBIT TWIST LABEL FLIP,,,b08-tcr-activation,false
 S06,LHCII plant antenna complex,Spectroscopy,14-chlorophyll LHCII in higher plants,G2,H1,Forge,validated,ORBIT TWIST BIND,319,,s06-lhcii-antenna,false
 B09,Glycolysis (Embden-Meyerhof-Parnas),Biology,Glucose to pyruvate in cytoplasm,Z2,H0,Origami,validated,ORBIT SPLIT SPLAT LABEL,509,,b09-glycolysis,false
+B10,Protein folding and Levinthal paradox resolution,Biology,Globular protein on Ramachandran phi-psi torus,SO(2) x SO(2),H1,Forge,validated,ORBIT TWIST BIND LABEL,515 510 490,,b10-protein-folding,true
