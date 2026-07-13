@@ -33,3 +33,5 @@ SC02,Abrikosov vortex lattice,Condensed Matter,Type II SC mixed phase,U(1),H2,Fo
 FE01,Dy3+ single-molecule magnet,f-Element Chemistry,4f SMM axial CF,SU(2),H1,Origami,validated,FLOP ORBIT TWIST,527,,fe01-dy-smm,false
 FE04,Dieke diagram benchmark,f-Element Chemistry,12 Ln3+ ions,SU(2),H0,Origami,validated,FLOP SPLIT SPLAT ORBIT,527,,fe04-dieke,false
 C06,C/T skeleton active-space pre-screening,Chemistry,Any molecule with MP2 natural orbitals,U(n),H0,Forge,validated,ORBIT TWIST BIND LABEL,588 596,10.5281/zenodo.21300668,c06-ct-skeleton,true
+D01,Figure-eight 3-body choreography,Dynamical Systems,Equal-mass 3-body in R2,D6,H0,Origami,validated,ORBIT LABEL,552,,d01-figure-eight,true
+D02,G2 7-body choreography in R7,Dynamical Systems,Equal-mass 7-body in R7,G2,H2,Meld,conjectured,ORBIT TWIST BIND,552,,d02-g2-choreography,true
