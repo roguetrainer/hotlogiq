@@ -3,6 +3,7 @@ layout: default
 title: "Q03 — Steane 7-qubit Code"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Boolean
 ---
 
 # Q03 — Steane 7-qubit Code

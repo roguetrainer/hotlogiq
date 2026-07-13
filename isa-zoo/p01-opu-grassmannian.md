@@ -3,6 +3,7 @@ layout: default
 title: "P01 — Orbit Processing Unit (OPU)"
 parent: ISA Zoo
 nav_exclude: true
+semiring: tropical
 ---
 
 # P01 — Orbit Processing Unit (OPU)

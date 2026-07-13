@@ -3,6 +3,7 @@ layout: default
 title: "D04 — Lorenz Strange Attractor"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # D04 — Lorenz Strange Attractor

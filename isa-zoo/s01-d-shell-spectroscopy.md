@@ -3,6 +3,7 @@ layout: default
 title: "S01 — Electronic Spectroscopy (d-shell)"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Boolean
 ---
 
 # S01 — Electronic Spectroscopy (d-shell)

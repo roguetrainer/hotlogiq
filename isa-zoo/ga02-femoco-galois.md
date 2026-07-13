@@ -3,6 +3,7 @@ layout: default
 title: "GA02 — FeMoco as a 7-Qubit Galois Computer"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Clifford
 ---
 
 # GA02 — FeMoco as a 7-Qubit Galois Computer

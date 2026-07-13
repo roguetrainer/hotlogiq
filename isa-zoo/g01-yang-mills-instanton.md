@@ -3,6 +3,7 @@ layout: default
 title: "G01 — Yang-Mills Instantons"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Clifford
 ---
 
 # G01 — Yang-Mills Instantons

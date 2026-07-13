@@ -3,6 +3,7 @@ layout: default
 title: "G03 — Higgs Mechanism and Electroweak Symmetry Breaking"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # G03 — Higgs Mechanism and Electroweak Symmetry Breaking

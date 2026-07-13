@@ -3,6 +3,7 @@ layout: default
 title: "G02 — Amplituhedron (N=4 SYM Scattering)"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Clifford
 ---
 
 # G02 — Amplituhedron (N=4 SYM Scattering)

@@ -3,6 +3,7 @@ layout: default
 title: "S04 — FMO Exciton Dynamics"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # S04 — FMO Exciton Dynamics

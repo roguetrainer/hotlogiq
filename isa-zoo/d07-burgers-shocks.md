@@ -3,6 +3,7 @@ layout: default
 title: "D07 — Burgers Equation and Shock Formation"
 parent: ISA Zoo
 nav_exclude: true
+semiring: tropical
 ---
 
 # D07 — Burgers Equation and Shock Formation

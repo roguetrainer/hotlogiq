@@ -3,6 +3,7 @@ layout: default
 title: "D05 — KAM Tori and Chaos Onset"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # D05 — KAM Tori and Chaos Onset

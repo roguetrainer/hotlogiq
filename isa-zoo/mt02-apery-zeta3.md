@@ -3,6 +3,7 @@ layout: default
 title: "MT02 — Apéry's Proof: ζ(3) is Irrational"
 parent: ISA Zoo
 nav_exclude: true
+semiring: integer
 ---
 
 # MT02 — Apéry's Proof: ζ(3) is Irrational

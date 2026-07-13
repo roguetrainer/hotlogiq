@@ -3,6 +3,7 @@ layout: default
 title: "Q07 — CHSH Game and Bell Inequality Violation"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Clifford
 ---
 
 # Q07 — CHSH Game and Bell Inequality Violation

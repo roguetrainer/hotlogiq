@@ -3,6 +3,7 @@ layout: default
 title: "C02 — Fe(II) Spin Crossover"
 parent: ISA Zoo
 nav_exclude: true
+semiring: tropical
 ---
 
 # C02 — Fe(II) Spin Crossover

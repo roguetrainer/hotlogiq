@@ -3,6 +3,7 @@ layout: default
 title: "N03 — Hoyle Resonance and Triple-Alpha Process"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # N03 — Hoyle Resonance and Triple-Alpha Process

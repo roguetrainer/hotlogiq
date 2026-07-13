@@ -3,6 +3,7 @@ layout: default
 title: "CA01 — Cauchy Integral Theorem and Cauchy-Riemann Equations"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # CA01 — Cauchy Integral Theorem and Cauchy-Riemann Equations

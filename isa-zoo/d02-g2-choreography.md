@@ -3,6 +3,7 @@ layout: default
 title: "D02 — G₂ 7-Body Choreography in ℝ⁷"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Clifford
 ---
 
 # D02 — G₂ 7-Body Choreography in ℝ⁷

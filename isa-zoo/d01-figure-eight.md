@@ -3,6 +3,7 @@ layout: default
 title: "D01 — Figure-Eight 3-Body Choreography"
 parent: ISA Zoo
 nav_exclude: true
+semiring: tropical
 ---
 
 # D01 — Figure-Eight 3-Body Choreography

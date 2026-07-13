@@ -3,6 +3,7 @@ layout: default
 title: "GS01 — MIMO Wireless Capacity"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # GS01 — MIMO Wireless Capacity

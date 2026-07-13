@@ -3,6 +3,7 @@ layout: default
 title: "Q05 — Quantum Teleportation"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Boolean
 ---
 
 # Q05 — Quantum Teleportation

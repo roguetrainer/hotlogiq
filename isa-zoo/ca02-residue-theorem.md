@@ -3,6 +3,7 @@ layout: default
 title: "CA02 — Residue Theorem and Laurent Poles"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Clifford
 ---
 
 # CA02 — Residue Theorem and Laurent Poles

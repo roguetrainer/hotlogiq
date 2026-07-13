@@ -3,6 +3,7 @@ layout: default
 title: "GS03 — Topological Insulators and Chern Bands"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Clifford
 ---
 
 # GS03 — Topological Insulators and Chern Bands

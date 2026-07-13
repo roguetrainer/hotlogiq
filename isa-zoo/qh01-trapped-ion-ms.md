@@ -3,6 +3,7 @@ layout: default
 title: "QH01 — Trapped-Ion MS Gate Circuit"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Clifford
 ---
 
 # QH01 — Trapped-Ion MS Gate Circuit

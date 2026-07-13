@@ -3,6 +3,7 @@ layout: default
 title: "Q01 — Shor's Algorithm"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Boolean
 ---
 
 # Q01 — Shor's Algorithm

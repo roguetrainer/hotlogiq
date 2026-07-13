@@ -3,6 +3,7 @@ layout: default
 title: "B10 — Protein Folding and Levinthal Paradox Resolution"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # B10 — Protein Folding and Levinthal Paradox Resolution

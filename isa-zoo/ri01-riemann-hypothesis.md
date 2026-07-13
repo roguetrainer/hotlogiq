@@ -3,6 +3,7 @@ layout: default
 title: "RI01 — Riemann Hypothesis"
 parent: ISA Zoo
 nav_exclude: true
+semiring: adelic
 ---
 
 # RI01 — Riemann Hypothesis

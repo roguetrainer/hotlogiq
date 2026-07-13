@@ -3,6 +3,7 @@ layout: default
 title: "Q04 — Toric Code"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Boolean
 ---
 
 # Q04 — Toric Code

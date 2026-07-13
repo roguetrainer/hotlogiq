@@ -3,6 +3,7 @@ layout: default
 title: "Q06 — Superdense Coding"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Boolean
 ---
 
 # Q06 — Superdense Coding

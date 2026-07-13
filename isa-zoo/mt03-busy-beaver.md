@@ -3,6 +3,7 @@ layout: default
 title: "MT03 — Busy Beaver and Gödel Incompleteness"
 parent: ISA Zoo
 nav_exclude: true
+semiring: integer
 ---
 
 # MT03 — Busy Beaver and Gödel Incompleteness

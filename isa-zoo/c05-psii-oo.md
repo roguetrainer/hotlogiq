@@ -3,6 +3,7 @@ layout: default
 title: "C05 — PSII O–O Bond Formation"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # C05 — PSII O–O Bond Formation

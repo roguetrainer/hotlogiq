@@ -3,6 +3,7 @@ layout: default
 title: "P02 — p-adic Quantum Computer (Padit Architecture)"
 parent: ISA Zoo
 nav_exclude: true
+semiring: p-adic
 ---
 
 # P02 — p-adic Quantum Computer (Padit Architecture)

@@ -3,6 +3,7 @@ layout: default
 title: "YM01 — Yang-Mills Mass Gap"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Clifford
 ---
 
 # YM01 — Yang-Mills Mass Gap

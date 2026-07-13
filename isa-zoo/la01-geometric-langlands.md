@@ -3,6 +3,7 @@ layout: default
 title: "LA01 — Geometric Langlands Correspondence"
 parent: ISA Zoo
 nav_exclude: true
+semiring: adelic
 ---
 
 # LA01 — Geometric Langlands Correspondence

@@ -3,6 +3,7 @@ layout: default
 title: "ML01 — Transformer Self-Attention"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # ML01 — Transformer Self-Attention

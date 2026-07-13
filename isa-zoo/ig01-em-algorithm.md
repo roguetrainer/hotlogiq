@@ -3,6 +3,7 @@ layout: default
 title: "IG01 — EM Algorithm on Statistical Manifold"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # IG01 — EM Algorithm on Statistical Manifold

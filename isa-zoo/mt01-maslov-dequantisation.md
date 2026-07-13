@@ -3,6 +3,7 @@ layout: default
 title: "MT01 — Maslov Dequantisation"
 parent: ISA Zoo
 nav_exclude: true
+semiring: tropical
 ---
 
 # MT01 — Maslov Dequantisation

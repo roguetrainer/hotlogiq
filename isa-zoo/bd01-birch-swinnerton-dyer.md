@@ -3,6 +3,7 @@ layout: default
 title: "BD01 — Birch–Swinnerton-Dyer Conjecture"
 parent: ISA Zoo
 nav_exclude: true
+semiring: adelic
 ---
 
 # BD01 — Birch–Swinnerton-Dyer Conjecture

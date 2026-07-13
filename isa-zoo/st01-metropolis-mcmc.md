@@ -3,6 +3,7 @@ layout: default
 title: "ST01 — Metropolis-Hastings MCMC"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # ST01 — Metropolis-Hastings MCMC

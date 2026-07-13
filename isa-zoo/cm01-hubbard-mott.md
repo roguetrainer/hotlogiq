@@ -3,6 +3,7 @@ layout: default
 title: "CM01 — Hubbard Model Mott Transition"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # CM01 — Hubbard Model Mott Transition

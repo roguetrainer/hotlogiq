@@ -3,6 +3,7 @@ layout: default
 title: "GA01 — Galois Action on Cyclotomic Fields"
 parent: ISA Zoo
 nav_exclude: true
+semiring: Boolean
 ---
 
 # GA01 — Galois Action on Cyclotomic Fields

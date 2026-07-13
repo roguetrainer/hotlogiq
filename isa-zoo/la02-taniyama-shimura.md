@@ -3,6 +3,7 @@ layout: default
 title: "LA02 — Taniyama-Shimura and Fermat's Last Theorem"
 parent: ISA Zoo
 nav_exclude: true
+semiring: adelic
 ---
 
 # LA02 — Taniyama-Shimura and Fermat's Last Theorem

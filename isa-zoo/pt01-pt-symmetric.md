@@ -3,6 +3,7 @@ layout: default
 title: "PT01 — PT-Symmetric Non-Hermitian System"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # PT01 — PT-Symmetric Non-Hermitian System

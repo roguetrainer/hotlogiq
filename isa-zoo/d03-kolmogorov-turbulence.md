@@ -3,6 +3,7 @@ layout: default
 title: "D03 — Kolmogorov Turbulence Cascade"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # D03 — Kolmogorov Turbulence Cascade

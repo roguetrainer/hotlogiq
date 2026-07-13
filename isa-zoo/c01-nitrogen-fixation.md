@@ -3,6 +3,7 @@ layout: default
 title: "C01 — Nitrogen Fixation E-state cycle"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # C01 — Nitrogen Fixation E-state cycle

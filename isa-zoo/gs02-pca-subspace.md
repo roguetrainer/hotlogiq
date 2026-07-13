@@ -3,6 +3,7 @@ layout: default
 title: "GS02 — PCA and Subspace Tracking"
 parent: ISA Zoo
 nav_exclude: true
+semiring: tropical
 ---
 
 # GS02 — PCA and Subspace Tracking

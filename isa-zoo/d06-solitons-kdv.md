@@ -3,6 +3,7 @@ layout: default
 title: "D06 — Solitons and KdV Inverse Scattering"
 parent: ISA Zoo
 nav_exclude: true
+semiring: tropical
 ---
 
 # D06 — Solitons and KdV Inverse Scattering

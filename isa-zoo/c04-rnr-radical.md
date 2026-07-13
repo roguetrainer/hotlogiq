@@ -3,6 +3,7 @@ layout: default
 title: "C04 — RNR Radical Transfer"
 parent: ISA Zoo
 nav_exclude: true
+semiring: probabilistic
 ---
 
 # C04 — RNR Radical Transfer
