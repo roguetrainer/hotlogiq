@@ -1,34 +1,34 @@
-id,name,domain,system,group,tier,trilogy,status,opcodes,papers,doi,slug
-C01,Nitrogen fixation E-state cycle,Chemistry,FeMo-cofactor Fe7S9C,G2,H1,Forge,validated,ORBIT TWIST BIND,488,10.5281/zenodo.21219712,c01-nitrogen-fixation
-C02,Fe(II) spin crossover,Chemistry,Fe(L)4(NCS)2 class,SU(2),H0,Forge,validated,ORBIT LABEL,488,10.5281/zenodo.21219712,c02-spin-crossover
-C03,SCO gate engineering,Chemistry,Any Fe(II) SCO complex,SU(2),H0,Forge,validated,ORBIT LABEL,488,10.5281/zenodo.21219712,c03-sco-gate
-C04,RNR radical transfer,Biology,Ribonucleotide reductase,SU(2),H1,Forge,validated,ORBIT TWIST,490,10.5281/zenodo.21219720,c04-rnr-radical
-C05,PSII O-O bond formation,Biology,Mn4CaO5 OEC,G2,H1,Forge,validated,ORBIT TWIST BIND,490,10.5281/zenodo.21219720,c05-psii-oo
-S01,Electronic spectroscopy (d-shell),Spectroscopy,Any TM complex,SU(2),H0,Origami,validated,FLOP SPLIT SPLAT ORBIT,487,10.5281/zenodo.21219702,s01-d-shell-spectroscopy
-S02,Tanabe-Sugano diagrams,Spectroscopy,d^n in Oh,SU(2),H0,Origami,validated,FLOP ORBIT,491,10.5281/zenodo.21219700,s02-tanabe-sugano
-S03,EPR of FeMoco,Spectroscopy,Fe7S9C S=3/2,SU(2),H1,Origami,validated,FLOP TWIST ORBIT,318,,s03-femoco-epr
-S04,FMO exciton dynamics,Spectroscopy,7-BChl Fano complex,G2,H1,Forge,validated,ORBIT TWIST BIND,319,10.5281/zenodo.21249153,s04-fmo-exciton
-S05,Nuclear gamma spectroscopy,Spectroscopy,28Si and 48Ca,SU(2),H0,Origami,validated,FLOP SPLIT SPLAT ORBIT,348,,s05-nuclear-gamma
-Q01,Shor's algorithm,Quantum Computing,Period-finding in Z_N,GL(1),H1,Origami,validated,ORBIT TWIST FLIP FLOP,472,10.5281/zenodo.21219704,q01-shor
-Q02,Grover's algorithm,Quantum Computing,Unstructured search,SU(2),H1,Origami,validated,ORBIT TWIST FLIP,473,10.5281/zenodo.21219706,q02-grover
-Q03,Steane 7-qubit code,Quantum Computing,7-qubit Hamming QEC,PSL(2.7),H1,Origami,validated,ORBIT TWIST BIND,325,,q03-steane
-Q04,Toric code,Quantum Computing,2D surface code,Z2 x Z2,H1,Origami,validated,ORBIT TWIST,446,,q04-toric-code
-F05,Pacioli double-entry bookkeeping,Finance,Balance sheet algebra,Z,H0,Origami,validated,ORBIT SPLIT SPLAT,396,10.5281/zenodo.21158947,f05-pacioli
-M01,Pentagon identity,Mathematics,Rep(G) associator,Any,H1,Origami,validated,FLOP SPLIT SPLAT,357,,m01-pentagon
-M02,Frobenius axiom,Mathematics,Frobenius algebra,Any,H0,Origami,validated,SPLIT SPLAT,357,,m02-frobenius
-M03,Fano plane GHZ correlations,Mathematics,PG(2.2),PSL(2.7),H1,Origami,validated,ORBIT TWIST BIND,357,,m03-fano-ghz
-M04,G2 excluded volume,Mathematics,Non-associative sector,G2,H2,Meld,validated,BIND,357,,m04-g2-excluded
-N01,Nuclear magic numbers,Nuclear Physics,Shell model Mayer-Jensen,SU(2),H0,Origami,validated,ORBIT SPLIT SPLAT,340,,n01-magic-numbers
-N02,Nuclear shape phase transitions,Nuclear Physics,134Ba and 152Sm region,SU(1.1),H1,Forge,validated,ORBIT TWIST,522,,n02-shape-transitions
-N04,Pandya transformation,Nuclear Physics,1g9/2 seniority sector,SU(2),H1,Origami,validated,FLIP FLOP,348,,n04-pandya
-B04,Ribosomal decoding,Biology,70S A-site,SU(2),H1,Forge,validated,ORBIT TWIST,324,,b04-ribosome
-L01,SU(3) Wilson plaquette,Lattice Gauge Theory,QCD lattice,SU(3),H1,Forge,validated,ORBIT TWIST,523,,l01-wilson-plaquette
-L02,Deconfinement transition,Lattice Gauge Theory,Polyakov loop,SU(3),H1,Forge,validated,ORBIT TWIST,523,,l02-deconfinement
-L05,Schwinger model,Lattice Gauge Theory,U(1) in 1+1D,U(1),H1,Origami,validated,ORBIT TWIST,523,,l05-schwinger
-K01,RSA-2048 encryption,Cryptography,Z_N* period-finding,GL(1),H1,Origami,validated,ORBIT TWIST FLIP FLOP,525,,k01-rsa
-K03,SHA-3 / Keccak hash,Cryptography,F2^1600 sponge,F2,H0,Origami,validated,ORBIT SPLIT SPLAT,525,,k03-sha3
-K04,ECDSA / EdDSA,Cryptography,E(Fp) elliptic curve DL,GL(1),H1,Origami,validated,ORBIT TWIST,525,,k04-ecdsa
-SC01,BCS superconductor,Condensed Matter,3D metal Cooper pairs,U(1),H1,Forge,validated,ORBIT TWIST SPLIT SPLAT,526,,sc01-bcs
-SC02,Abrikosov vortex lattice,Condensed Matter,Type II SC mixed phase,U(1),H2,Forge,validated,ORBIT TWIST BIND,526,,sc02-abrikosov
-FE01,Dy3+ single-molecule magnet,f-Element Chemistry,4f SMM axial CF,SU(2),H1,Origami,validated,FLOP ORBIT TWIST,527,,fe01-dy-smm
-FE04,Dieke diagram benchmark,f-Element Chemistry,12 Ln3+ ions,SU(2),H0,Origami,validated,FLOP SPLIT SPLAT ORBIT,527,,fe04-dieke
+id,name,domain,system,group,tier,trilogy,status,opcodes,papers,doi,slug,has_page
+C01,Nitrogen fixation E-state cycle,Chemistry,FeMo-cofactor Fe7S9C,G2,H1,Forge,validated,ORBIT TWIST BIND,488,10.5281/zenodo.21219712,c01-nitrogen-fixation,true
+C02,Fe(II) spin crossover,Chemistry,Fe(L)4(NCS)2 class,SU(2),H0,Forge,validated,ORBIT LABEL,488,10.5281/zenodo.21219712,c02-spin-crossover,true
+C03,SCO gate engineering,Chemistry,Any Fe(II) SCO complex,SU(2),H0,Forge,validated,ORBIT LABEL,488,10.5281/zenodo.21219712,c03-sco-gate,false
+C04,RNR radical transfer,Biology,Ribonucleotide reductase,SU(2),H1,Forge,validated,ORBIT TWIST,490,10.5281/zenodo.21219720,c04-rnr-radical,true
+C05,PSII O-O bond formation,Biology,Mn4CaO5 OEC,G2,H1,Forge,validated,ORBIT TWIST BIND,490,10.5281/zenodo.21219720,c05-psii-oo,true
+S01,Electronic spectroscopy (d-shell),Spectroscopy,Any TM complex,SU(2),H0,Origami,validated,FLOP SPLIT SPLAT ORBIT,487,10.5281/zenodo.21219702,s01-d-shell-spectroscopy,true
+S02,Tanabe-Sugano diagrams,Spectroscopy,d^n in Oh,SU(2),H0,Origami,validated,FLOP ORBIT,491,10.5281/zenodo.21219700,s02-tanabe-sugano,false
+S03,EPR of FeMoco,Spectroscopy,Fe7S9C S=3/2,SU(2),H1,Origami,validated,FLOP TWIST ORBIT,318,,s03-femoco-epr,false
+S04,FMO exciton dynamics,Spectroscopy,7-BChl Fano complex,G2,H1,Forge,validated,ORBIT TWIST BIND,319,10.5281/zenodo.21249153,s04-fmo-exciton,true
+S05,Nuclear gamma spectroscopy,Spectroscopy,28Si and 48Ca,SU(2),H0,Origami,validated,FLOP SPLIT SPLAT ORBIT,348,,s05-nuclear-gamma,false
+Q01,Shor's algorithm,Quantum Computing,Period-finding in Z_N,GL(1),H1,Origami,validated,ORBIT TWIST FLIP FLOP,472,10.5281/zenodo.21219704,q01-shor,true
+Q02,Grover's algorithm,Quantum Computing,Unstructured search,SU(2),H1,Origami,validated,ORBIT TWIST FLIP,473,10.5281/zenodo.21219706,q02-grover,false
+Q03,Steane 7-qubit code,Quantum Computing,7-qubit Hamming QEC,PSL(2.7),H1,Origami,validated,ORBIT TWIST BIND,325,,q03-steane,false
+Q04,Toric code,Quantum Computing,2D surface code,Z2 x Z2,H1,Origami,validated,ORBIT TWIST,446,,q04-toric-code,false
+F05,Pacioli double-entry bookkeeping,Finance,Balance sheet algebra,Z,H0,Origami,validated,ORBIT SPLIT SPLAT,396,10.5281/zenodo.21158947,f05-pacioli,false
+M01,Pentagon identity,Mathematics,Rep(G) associator,Any,H1,Origami,validated,FLOP SPLIT SPLAT,357,,m01-pentagon,false
+M02,Frobenius axiom,Mathematics,Frobenius algebra,Any,H0,Origami,validated,SPLIT SPLAT,357,,m02-frobenius,false
+M03,Fano plane GHZ correlations,Mathematics,PG(2.2),PSL(2.7),H1,Origami,validated,ORBIT TWIST BIND,357,,m03-fano-ghz,false
+M04,G2 excluded volume,Mathematics,Non-associative sector,G2,H2,Meld,validated,BIND,357,,m04-g2-excluded,false
+N01,Nuclear magic numbers,Nuclear Physics,Shell model Mayer-Jensen,SU(2),H0,Origami,validated,ORBIT SPLIT SPLAT,340,,n01-magic-numbers,false
+N02,Nuclear shape phase transitions,Nuclear Physics,134Ba and 152Sm region,SU(1.1),H1,Forge,validated,ORBIT TWIST,522,,n02-shape-transitions,false
+N04,Pandya transformation,Nuclear Physics,1g9/2 seniority sector,SU(2),H1,Origami,validated,FLIP FLOP,348,,n04-pandya,false
+B04,Ribosomal decoding,Biology,70S A-site,SU(2),H1,Forge,validated,ORBIT TWIST,324,,b04-ribosome,false
+L01,SU(3) Wilson plaquette,Lattice Gauge Theory,QCD lattice,SU(3),H1,Forge,validated,ORBIT TWIST,523,,l01-wilson-plaquette,false
+L02,Deconfinement transition,Lattice Gauge Theory,Polyakov loop,SU(3),H1,Forge,validated,ORBIT TWIST,523,,l02-deconfinement,false
+L05,Schwinger model,Lattice Gauge Theory,U(1) in 1+1D,U(1),H1,Origami,validated,ORBIT TWIST,523,,l05-schwinger,false
+K01,RSA-2048 encryption,Cryptography,Z_N* period-finding,GL(1),H1,Origami,validated,ORBIT TWIST FLIP FLOP,525,,k01-rsa,false
+K03,SHA-3 / Keccak hash,Cryptography,F2^1600 sponge,F2,H0,Origami,validated,ORBIT SPLIT SPLAT,525,,k03-sha3,false
+K04,ECDSA / EdDSA,Cryptography,E(Fp) elliptic curve DL,GL(1),H1,Origami,validated,ORBIT TWIST,525,,k04-ecdsa,false
+SC01,BCS superconductor,Condensed Matter,3D metal Cooper pairs,U(1),H1,Forge,validated,ORBIT TWIST SPLIT SPLAT,526,,sc01-bcs,false
+SC02,Abrikosov vortex lattice,Condensed Matter,Type II SC mixed phase,U(1),H2,Forge,validated,ORBIT TWIST BIND,526,,sc02-abrikosov,false
+FE01,Dy3+ single-molecule magnet,f-Element Chemistry,4f SMM axial CF,SU(2),H1,Origami,validated,FLOP ORBIT TWIST,527,,fe01-dy-smm,false
+FE04,Dieke diagram benchmark,f-Element Chemistry,12 Ln3+ ions,SU(2),H0,Origami,validated,FLOP SPLIT SPLAT ORBIT,527,,fe04-dieke,false

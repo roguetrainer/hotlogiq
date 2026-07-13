@@ -34,9 +34,12 @@ function zooRender() {
     var href = BASEURL + "/isa-zoo/" + e.slug;
     var tierCls = "zoo-tier zoo-tier-" + e.tier;
     var stCls   = "zoo-status zoo-status-" + e.status;
+    var nameCell = e.has_page === "true"
+      ? "<a href='" + href + "'>" + e.name + "</a>"
+      : e.name;
     rows += "<tr>"
       + "<td><code>" + e.id + "</code></td>"
-      + "<td><a href='" + href + "'>" + e.name + "</a></td>"
+      + "<td>" + nameCell + "</td>"
       + "<td>" + e.domain + "</td>"
       + "<td><code>" + e.group + "</code></td>"
       + "<td><span class='" + tierCls + "'>" + tierLabel(e.tier) + "</span></td>"
