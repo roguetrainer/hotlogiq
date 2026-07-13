@@ -43,6 +43,8 @@ P01,Orbit Processing Unit (OPU),Computing Architectures,"RPU with tape Gr(k,n)",
 G01,Yang-Mills instantons,Gauge Theory,SU(2) Yang-Mills on S4,SU(2),H2,Meld,validated,ORBIT TWIST BIND,536 523,,g01-yang-mills-instanton,true
 D07,Burgers equation and shock formation,Dynamical Systems,Viscous Burgers on R (nu to 0),R,H0,Origami,validated,ORBIT TWIST LABEL,512 543,,d07-burgers-shocks,true
 G02,Amplituhedron (N=4 SYM scattering),Gauge Theory,Positive Grassmannian Gr+(k n) in twistor space,GL(k),H2,Meld,validated,ORBIT TWIST BIND,574 520,,g02-amplituhedron,true
+CA01,Cauchy integral theorem and C-R equations,Complex Analysis,Holomorphic functions on C,U(1),H1,Origami,validated,ORBIT TWIST LABEL,543 477,,ca01-cauchy-cr,true
+CA02,Residue theorem and Laurent poles,Complex Analysis,Meromorphic functions on C,U(1),H2,Meld,validated,ORBIT TWIST BIND,543 477,,ca02-residue-theorem,true
 GS01,MIMO wireless capacity,Grassmannian Systems,k transmit beams in n-antenna channel,U(n),H1,Forge,validated,ORBIT TWIST LABEL,574,,gs01-mimo-wireless,true
 GS02,PCA and subspace tracking,Grassmannian Systems,Top-k eigenspace of n x n data matrix,U(n),H0,Origami,validated,ORBIT SPLIT SPLAT LABEL,574 596,,gs02-pca-subspace,true
 GS03,Topological insulators and Chern bands,Grassmannian Systems,Occupied band subspace over Brillouin zone,U(k),H2,Forge,validated,ORBIT TWIST BIND,574,,gs03-topological-insulators,true
