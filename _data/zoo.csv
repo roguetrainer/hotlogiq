@@ -67,3 +67,9 @@ GA01,Galois action on cyclotomic fields,Galois Theory,Gal(Q(zeta_n)/Q) acting on
 GA02,FeMoco as a 7-qubit Galois computer,Galois Theory,Fe7S9C nitrogenase cofactor in nitrogen fixation,G2,H2,Meld,validated,ORBIT TWIST BIND LABEL FLIP,488 492 489,,ga02-femoco-galois,true
 LA01,Geometric Langlands correspondence,Langlands Programme,G-local systems on algebraic curve C over F_q,G (reductive),H2,Meld,validated,ORBIT TWIST BIND LABEL,492 543,,la01-geometric-langlands,true
 LA02,Taniyama-Shimura and Fermat Last Theorem,Langlands Programme,Elliptic curves over Q and modular forms,GL_2(Z_ell),H2,Meld,validated,ORBIT TWIST BIND LABEL FLIP,492 469 543,,la02-taniyama-shimura,true
+RI01,Riemann Hypothesis,Millennium Problems,Riemann zeta function on C,GL_1(A_Q),H2,Meld,conjectured,ORBIT TWIST BIND LABEL,551 543 553,,ri01-riemann-hypothesis,true
+BD01,Birch-Swinnerton-Dyer conjecture,Millennium Problems,Elliptic curve L-function at s=1,GL_2(A_Q),H2,Meld,conjectured,ORBIT TWIST BIND LABEL,492 543 551,,bd01-birch-swinnerton-dyer,true
+YM01,Yang-Mills mass gap,Millennium Problems,Pure SU(N) Yang-Mills in 4 dimensions,SU(N),H2,Meld,conjectured,ORBIT TWIST BIND LABEL,536 523 543,,ym01-yang-mills-mass-gap,true
+Q05,Quantum teleportation,Quantum Computing,Bell pair + 2-qubit measurement + Pauli correction,SU(2) x SU(2),H1,Forge,validated,ORBIT TWIST BIND LABEL FLIP FLOP,421 325,,q05-quantum-teleportation,true
+Q06,Superdense coding,Quantum Computing,Shared Bell pair + single-qubit Pauli encoding,SU(2),H1,Forge,validated,ORBIT TWIST BIND LABEL FLIP FLOP,421 469,,q06-superdense-coding,true
+Q07,CHSH game and Bell inequality violation,Quantum Computing,Two-party cooperative game with shared entanglement,SU(2) x SU(2),H2,Meld,validated,ORBIT TWIST BIND LABEL,421 469 325,,q07-chsh-game,true
