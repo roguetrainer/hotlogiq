@@ -168,6 +168,7 @@ experiment or established theory.
 
   function render() {
     var visible = entries.filter(function(e) {
+      if (!e || !e.id) return false;
       return (active.domain  === "all" || e.domain  === active.domain)
           && (active.tier    === "all" || e.tier    === active.tier)
           && (active.trilogy === "all" || e.trilogy === active.trilogy)
