@@ -1,4 +1,4 @@
-id,name,domain,system,group,tier,trilogy,status,opcodes,papers,doi,slug,has_page,semiring,tags
+id,name,domain,system,group,tier,trilogy,status,opcodes,papers,doi,slug,has_page,semiring,tags,backends
 C01,Nitrogen fixation E-state cycle,Chemistry,FeMo-cofactor Fe7S9C,G2,H1,Forge,validated,ORBIT TWIST BIND,488,10.5281/zenodo.21219712,c01-nitrogen-fixation,true,probabilistic
 C02,Fe(II) spin crossover,Chemistry,Fe(L)4(NCS)2 class,SU(2),H0,Forge,validated,ORBIT LABEL,488,10.5281/zenodo.21219712,c02-spin-crossover,true,tropical
 C03,SCO gate engineering,Chemistry,Any Fe(II) SCO complex,SU(2),H0,Forge,validated,ORBIT LABEL,488,10.5281/zenodo.21219712,c03-sco-gate,false,tropical
@@ -80,4 +80,6 @@ B08,T-cell receptor activation and clonal selection,Biology,TCR-pMHC interface a
 S06,LHCII plant antenna complex,Spectroscopy,14-chlorophyll LHCII in higher plants,G2,H1,Forge,validated,ORBIT TWIST BIND,319,,s06-lhcii-antenna,false,probabilistic
 B09,Glycolysis (Embden-Meyerhof-Parnas),Biology,Glucose to pyruvate in cytoplasm,Z2,H0,Origami,validated,ORBIT SPLIT SPLAT LABEL,509,,b09-glycolysis,false,tropical
 B10,Protein folding and Levinthal paradox resolution,Biology,Globular protein on Ramachandran phi-psi torus,SO(2) x SO(2),H1,Forge,validated,ORBIT TWIST BIND LABEL,515 510 490,,b10-protein-folding,true,probabilistic,
-QT01,Bell state preparation,Quantum Computing,2-qubit register,SU(2) x SU(2),H2,Meld,validated,FLIP BIND LABEL,604 605,,qt01-bell-state,true,Clifford,tutorial rosetta qc-circuit
+QT01,Bell state preparation,Quantum Computing,2-qubit register,SU(2) x SU(2),H2,Meld,validated,FLIP BIND LABEL,604 605,,qt01-bell-state,true,Clifford,tutorial rosetta qc-circuit,ionq ibm neutral-atom
+QT02,GHZ state (n qubits),Quantum Computing,n-qubit register,SU(2)^n,H2,Meld,validated,FLIP BIND LABEL,604 605,,qt02-ghz-state,true,Clifford,tutorial qc-circuit,ionq ibm neutral-atom
+QT03,Quantum Fourier Transform,Quantum Computing,n-qubit period register,GL(1),H1,Origami,validated,FLIP TWIST FLOP,472 605,,qt03-qft,true,Boolean,tutorial qc-circuit rosetta,ionq ibm neutral-atom

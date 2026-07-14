@@ -1,4 +1,4 @@
-var active = { domain: "all", tier: "all", trilogy: "all", status: "all", tags: "all" };
+var active = { domain: "all", tier: "all", trilogy: "all", status: "all", tags: "all", backends: "all" };
 var sortCol = "id";
 var sortDir = 1;
 var BASEURL = "/adelic-simplicial-architecture";
@@ -14,11 +14,14 @@ function zooRender() {
     if (!e || !e.id) return false;
     var tagsMatch = active.tags === "all"
       || (e.tags || "").split(/[\s,]+/).indexOf(active.tags) !== -1;
+    var backendsMatch = active.backends === "all"
+      || (e.backends || "").split(/[\s,]+/).indexOf(active.backends) !== -1;
     return (active.domain  === "all" || e.domain  === active.domain)
         && (active.tier    === "all" || e.tier    === active.tier)
         && (active.trilogy === "all" || e.trilogy === active.trilogy)
         && (active.status  === "all" || e.status  === active.status)
-        && tagsMatch;
+        && tagsMatch
+        && backendsMatch;
   });
   visible.sort(function(a, b) {
     var av = String(a[sortCol] || "").toLowerCase();
@@ -54,7 +57,7 @@ function zooRender() {
 }
 
 function zooInit() {
-  var bars = ["zoo-filters","zoo-filters-tier","zoo-filters-trilogy","zoo-filters-status","zoo-filters-tags"];
+  var bars = ["zoo-filters","zoo-filters-tier","zoo-filters-trilogy","zoo-filters-status","zoo-filters-tags","zoo-filters-backends"];
   bars.forEach(function(barId) {
     var bar = document.getElementById(barId);
     if (!bar) return;
