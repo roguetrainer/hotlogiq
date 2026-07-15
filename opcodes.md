@@ -88,19 +88,23 @@ The dagger map σ swaps creation ↔ annihilation: σ(■) = ◇, σ(▲) = △,
 ## Opcode incarnations across domains
 
 The same abstract opcode appears with different in/out counts depending on the
-domain. The Pachner move is the 3-manifold instance; spectroscopy, quantum
-information, chemistry, and finance each have their own realisation.
+domain. Each row below is a physical domain; each column is one opcode. Read
+across a row to see how that domain implements the full ISA. Read down a column
+to see how many completely different fields are doing the same abstract operation.
 
-| Opcode | 3-manifold (Pachner) | Spectroscopy / rep theory | Quantum information | Chemistry / bonding | Finance |
-|--------|---------------------|--------------------------|---------------------|---------------------|---------|
-| SPLIT | 1 tet → 4 tets | 1 rep → CG sum of irreps | 1 qubit → entangled register | CASSCF orbital diagonalisation; NOON decomposition | 1 exposure → risk factor legs |
-| SPLAT | 4 tets → 1 tet | CG sum → 1 rep (6j evaluation) | many states → 1 measurement outcome | 6j evaluation; wavefunction projection to electron density | risk factor legs → net P&L |
-| FLIP | 1 tri → 3 tris | coupling ↑ by one j (raising) | dagger / time-reversal | time-reversal; particle-hole in electron correlation; raising operator | long ↔ short position |
-| FLOP | 3 tris → 1 tri | coupling ↓ by one j (lowering) | cup / partial trace | trace over environment; Born rule for electron density; lowering operator | born rule on exposure |
-| TWIST | Dehn twist | Clebsch–Gordan phase $(-1)^{j}$ | Berry phase / ribbon element | Berry phase along reaction path; Maslov index at conical intersection; spin-orbit coupling phase | convexity correction; drift |
-| BIND | non-Pachner; obstruction | Racah recoupling ($6j \to 9j$) | $F$-matrix; non-Abelian anyon | tensor-force coupling; strongly-correlated bond; FeMoco active site; DFT failure (H² obstruction) | H² snap event (systemic crisis) |
-| ORBIT | closed triangulation loop | closed G-orbit on weight lattice | feedback in quantum circuit | G-walk / Galois chemistry step; CASSCF macro-iteration; closed reaction cycle | closed risk cycle (H¹ feedback loop) |
-| LABEL | face/edge colouring | quantum number assignment | stabiliser projection | orbital symmetry label ($\sigma$/$\pi$/δ); spin-state selection; point-group irrep | scenario / regime selection |
+| Domain | SPLIT | SPLAT | FLIP | FLOP | TWIST | BIND | ORBIT | LABEL |
+| ------ | ----- | ----- | ---- | ---- | ----- | ---- | ----- | ----- |
+| **3-manifold** | 1 tet → 4 tets | 4 tets → 1 tet | 1 tri → 3 tris | 3 tris → 1 tri | Dehn twist | non-Pachner obstruction | closed triangulation loop | face/edge colouring |
+| **Spectroscopy** | 1 rep → CG irreps | CG sum → 1 rep (6j) | raising operator $J_+$ | lowering operator $J_-$ | CG phase $(-1)^j$ | Racah recoupling (6j→9j) | closed G-orbit on weight lattice | quantum number assignment |
+| **Quantum info** | 1 qubit → register | many states → 1 outcome | dagger / time-reversal | cup / partial trace | Berry phase / ribbon | $F$-matrix; non-Abelian anyon | feedback in quantum circuit | stabiliser projection |
+| **Chemistry** | CASSCF diagonalisation; NOON decomposition | 6j evaluation; projection to density | time-reversal; particle-hole; raising | Born rule for density; lowering | Berry phase on reaction path; Maslov index at conical intersection | tensor force; strongly-correlated bond; FeMoco; DFT failure | G-walk / Galois step; CASSCF macro-iteration | orbital symmetry label; spin-state; point-group irrep |
+| **Nuclear** | shell-model diagonalisation; Nilsson basis | 9j evaluation; nuclear matrix element | time-reversal; parity doubling | particle-hole in shell model | spin-orbit coupling (strong; mandatory); nuclear CG phase | **tensor force $S_{12}$ = (TWIST)²; mandatory in every nucleus** | closed shell (magic number); Nilsson orbit | $J$, $T$, parity quantum numbers |
+| **Finance** | 1 exposure → risk factor legs | risk factor legs → net P&L | long ↔ short position | Born rule on exposure | convexity correction; drift | H² snap event (systemic crisis) | closed risk cycle | scenario / regime selection |
+
+**Nuclear note:** unlike every other domain, nuclear systems are H² *by default*.
+BIND (the tensor force $S_{12}$) is mandatory even for the deuteron — the simplest
+nucleus. There is no H⁰ or H¹ nuclear bond. Chemistry reaches H² only in hard
+cases (FeMoco, bond-breaking); nuclear physics starts there and never leaves.
 
 ---
 
