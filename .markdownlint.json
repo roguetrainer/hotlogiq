@@ -1,4 +1,7 @@
 {
   "MD033": false,
-  "MD013": { "line_length": 120, "tables": false }
+  "MD025": false,
+  "MD040": false,
+  "MD013": { "line_length": 120, "tables": false },
+  "MD060": { "style": "compact" }
 }

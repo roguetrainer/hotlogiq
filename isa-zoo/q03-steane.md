@@ -69,13 +69,29 @@ DECODE:  SPLAT[|ψ⟩]               -- recover logical qubit
   non-zero, which is why it is the first code with a transversal T-gate
   (via the H² → magic resource connection in Paper 595).
 
+## G₂ snap threshold
+
+The Steane code sits at the **β = 1/7 G₂ snap point** (Paper 572, Zoo entry G2-QEC).
+When the quantum dimension [7]\_β = sin(7πβ)/sin(πβ) = 0, the full Fano orbit loop
+evaluates to zero: a weight-7 logical error wrapping the entire Fano plane becomes
+degenerate (invisible). This is the topological protection threshold in G₂ spider
+language.
+
+The transversal gate group PSL(2,7) ≅ GL(3,𝔽₂) is exactly the discrete symmetry that
+crystallises from the continuous G₂ at the β=1/7 snap — the snap IS the threshold,
+and PSL(2,7) IS the surviving symmetry (Zoo entry G2-SSM). This explains why the
+Steane code has a transversal T-gate: T implements an element of order 7 in PSL(2,7),
+which becomes available precisely at the snap.
+
 ## Validation
 
 - Syndrome lookup table exact for all 21 single-qubit Pauli errors (x3 × 7 qubits).
 - Fano incidence: each stabiliser generator is a line in PG(2,2); BIND
   closure = ∂²=0 condition confirmed analytically in Paper 571 (x571a, SHA 214297a).
-- Bredon χ cascade: χ_Bredon = 0 at 3-qubit level → Steane is the topological
+- Bredon χ cascade: χ\_Bredon = 0 at 3-qubit level → Steane is the topological
   jump (Paper 595).
+- G₂ snap at β=1/7: predicted threshold from Paper 572 β-deformation; PSL(2,7)
+  transversal group identified as snap crystallisation (Paper 572 §7, Zoo G2-SSM).
 
 ---
 
