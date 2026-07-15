@@ -92,8 +92,8 @@ domain. Each row below is a physical domain; each column is one opcode. Read
 across a row to see how that domain implements the full ISA. Read down a column
 to see how many completely different fields are doing the same abstract operation.
 
-| Domain | SPLIT | SPLAT | FLIP | FLOP | TWIST | BIND | ORBIT | LABEL |
-| ------ | ----- | ----- | ---- | ---- | ----- | ---- | ----- | ----- |
+| Domain | SPLIT 🕷️ | SPLAT 🕷️ | FLIP 🕷️ | FLOP 🕷️* | TWIST 🕷️* | BIND 🐸 | ORBIT | LABEL 🕷️ |
+| ------ | --------- | --------- | -------- | --------- | ---------- | ------- | ----- | --------- |
 | **3-manifold** | 1 tet → 4 tets | 4 tets → 1 tet | 1 tri → 3 tris | 3 tris → 1 tri | Dehn twist | non-Pachner obstruction | closed triangulation loop | face/edge colouring |
 | **Spectroscopy** | 1 rep → CG irreps | CG sum → 1 rep (6j) | raising operator $J_+$ | lowering operator $J_-$ | CG phase $(-1)^j$ | Racah recoupling (6j→9j) | closed G-orbit on weight lattice | quantum number assignment |
 | **Quantum info** | 1 qubit → register | many states → 1 outcome | dagger / time-reversal | cup / partial trace | Berry phase / ribbon | $F$-matrix; non-Abelian anyon | feedback in quantum circuit | stabiliser projection |
