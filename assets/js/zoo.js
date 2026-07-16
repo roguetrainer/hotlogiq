@@ -1,4 +1,4 @@
-var active = { domain: "all", tier: "all", trilogy: "all", status: "all", tags: "all", backends: "all", confidence: "all" };
+var active = { domain: "all", tier: "all", trilogy: "all", status: "all", tags: "all", backends: "all", confidence: "all", ec_class: "all", cofactor: "all", rate_limit: "all" };
 var sortCol = "id";
 var sortDir = 1;
 var BASEURL = "/adelic-simplicial-architecture";
@@ -45,13 +45,22 @@ function zooRender() {
       || (e.backends || "").split(/[\s,]+/).indexOf(active.backends) !== -1;
     var confidenceMatch = active.confidence === "all"
       || (e.confidence || "T1") === active.confidence;
+    var ecMatch = active.ec_class === "all"
+      || (e.ec_class || "").split(/[\s,]+/).indexOf(active.ec_class) !== -1;
+    var cofactorMatch = active.cofactor === "all"
+      || (e.cofactor || "").split(/[\s,]+/).indexOf(active.cofactor) !== -1;
+    var rateLimitMatch = active.rate_limit === "all"
+      || (e.rate_limit || "") === active.rate_limit;
     return (active.domain  === "all" || e.domain  === active.domain)
         && (active.tier    === "all" || e.tier    === active.tier)
         && (active.trilogy === "all" || e.trilogy === active.trilogy)
         && (active.status  === "all" || e.status  === active.status)
         && tagsMatch
         && backendsMatch
-        && confidenceMatch;
+        && confidenceMatch
+        && ecMatch
+        && cofactorMatch
+        && rateLimitMatch;
   });
   visible.sort(function(a, b) {
     var av = String(a[sortCol] || "").toLowerCase();
@@ -97,7 +106,7 @@ function syncActiveButtons() {
 
 function zooInit() {
   parseUrlFilters();
-  var bars = ["zoo-filters","zoo-filters-tier","zoo-filters-trilogy","zoo-filters-status","zoo-filters-tags","zoo-filters-backends","zoo-filters-confidence"];
+  var bars = ["zoo-filters","zoo-filters-tier","zoo-filters-trilogy","zoo-filters-status","zoo-filters-tags","zoo-filters-backends","zoo-filters-confidence","zoo-filters-ec","zoo-filters-cofactor","zoo-filters-ratelimit"];
   bars.forEach(function(barId) {
     var bar = document.getElementById(barId);
     if (!bar) return;
