@@ -113,7 +113,7 @@ The ZX-calculus — the strongest existing diagrammatic framework for quantum ci
 
 > **Shor's algorithm: BIND 💎 without magic?**
 >
-> Shor's factoring algorithm uses BIND 💎 — the quantum Fourier transform (QFT, *not* quantum field theory) entangles the period-finding register in a way that has no classical analogue. But Shor is remarkably T-gate lean in its logical structure: the QFT phase gates are roots of unity (multiples of π/2^k), not the 45° T-gate angle that triggers *magic* in the resource-theoretic sense. The quantum advantage in Shor comes from BIND-mediated interference, not from magic-state injection.
+> Shor's factoring algorithm uses BIND 💎 — the quantum Fourier transform (QFT) entangles the period-finding register in a way that has no classical analogue. But Shor is remarkably T-gate lean in its logical structure: the QFT phase gates are roots of unity (multiples of π/2^k), not the 45° T-gate angle that triggers *magic* in the resource-theoretic sense. The quantum advantage in Shor comes from BIND-mediated interference, not from magic-state injection.
 >
 > This is subtle: Shor is H² (needs a quantum computer) but low-magic (the logical circuit has near-zero T-count before fault-tolerant compilation). The T-gate cost only appears when you compile the QFT for a surface-code machine — a hardware tax, not an algorithmic one. See [Paper 472](https://doi.org/10.5281/zenodo.21219704) for the precise statement: the D_N hidden-shift subproblem fires TWIST with mana > 0, but the dominant structure is BIND-without-magic throughout.
 
