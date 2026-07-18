@@ -35,7 +35,7 @@ Origami has exactly five opcodes — the minimal set sufficient for universal qu
 | **ORBIT** 𝒪 🔄 | `𝒪` | Apply a symmetry / permutation | SWAP, bit permutation |
 | **TWIST** ∮ 🌀 | `∮` | Apply a continuous phase rotation | No direct analogue |
 | **BIND** ⋈ 💎 | `⋈` | Entangle two registers | **No classical analogue** |
-| **FLIP** ⌁ 🎲 | `⌁` | Measure; apply classical feedback | Read register |
+| **FLIP** ⌁ 👁️ | `⌁` | Measure; apply classical feedback | Read register |
 
 The five opcodes are not arbitrary. They are the generators of the categorical hierarchy that underlies all of quantum mechanics: LABEL and ORBIT generate classical reversible computation; TWIST adds quantum phase (the Berry phase, the ribbon element of a monoidal category); BIND adds genuine entanglement (the non-trivial associator, the F-matrix of a fusion category); FLIP collapses quantum information back to classical. This derivation is carried out in eight independent ways in [Paper 455](https://doi.org/10.5281/zenodo.20774076) — every route leads to the same five opcodes.
 
@@ -48,7 +48,7 @@ The most important feature of Origami is not the opcode names. It is what the st
 The five opcodes split into three tiers based on which cohomological degree (H⁰, H¹, H²) they require:
 
 ```
-H⁰  —  LABEL 🏷️  +  ORBIT 🔄  +  FLIP 🎲
+H⁰  —  LABEL 🏷️  +  ORBIT 🔄  +  FLIP 👁️
         Classical reversible computation.
         Every classical boolean circuit is an Origami H⁰ programme.
 
@@ -78,7 +78,7 @@ This is the key message for the quantum-classical hybrid industry.
 Your classical code is already an Origami programme — it just never calls BIND 💎. The quantum co-processor is the BIND 💎 execution unit. The compiler decides which subroutines need BIND 💎 and routes them to quantum hardware; everything else stays on classical silicon running H⁰/H¹ opcodes.
 
 ```
-H⁰ only  (LABEL 🏷️ + ORBIT 🔄 + FLIP 🎲):  classical boolean circuit
+H⁰ only  (LABEL 🏷️ + ORBIT 🔄 + FLIP 👁️):  classical boolean circuit
 H¹       (add TWIST 🌀):                    Clifford circuit — still classical simulation
 H²       (add BIND 💎):                     quantum subroutine — route to QPU
 ```
@@ -110,6 +110,12 @@ An Origami compiler targeting any of these platforms emits the same five opcodes
 **More is unnecessary.** The Toffoli gate (three-qubit) compiles to BIND 💎 + TWIST 🌀 + ORBIT 🔄 in a fixed decomposition. The CNOT gate is BIND 💎 with local ORBIT 🔄 dressing. The T gate is TWIST 🌀 applied after BIND 💎-mediated magic state injection. Everything in standard quantum computing decomposes into five.
 
 The ZX-calculus — the strongest existing diagrammatic framework for quantum circuits — is exactly the H¹ fragment of Origami (LABEL + ORBIT + TWIST + FLIP). Origami subsumes ZX by adding BIND at H². Adopting Origami is backwards-compatible with ZX investments.
+
+> **Shor's algorithm: BIND 💎 without magic?**
+>
+> Shor's factoring algorithm uses BIND 💎 — the quantum Fourier transform (QFT, *not* quantum field theory) entangles the period-finding register in a way that has no classical analogue. But Shor is remarkably T-gate lean in its logical structure: the QFT phase gates are roots of unity (multiples of π/2^k), not the 45° T-gate angle that triggers *magic* in the resource-theoretic sense. The quantum advantage in Shor comes from BIND-mediated interference, not from magic-state injection.
+>
+> This is subtle: Shor is H² (needs a quantum computer) but low-magic (the logical circuit has near-zero T-count before fault-tolerant compilation). The T-gate cost only appears when you compile the QFT for a surface-code machine — a hardware tax, not an algorithmic one. See [Paper 472](https://doi.org/10.5281/zenodo.21219704) for the precise statement: the D_N hidden-shift subproblem fires TWIST with mana > 0, but the dominant structure is BIND-without-magic throughout.
 
 ---
 
