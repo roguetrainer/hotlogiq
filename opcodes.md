@@ -81,7 +81,7 @@ with no interior vertex. Neither calculus assigns ORBIT a node: ORBIT *closes* a
 | SPIN | ⊛ | $\mathbb{Z}_3$ gauge automorphism; triality $V \to S^+ \to S^- \to V$ | order-3 cycling; triality gauge |
 | LABEL | ▪ | Unit morphism $\eta: \mathbf{1} \to A$ (Frobenius algebra unit); state preparation | sector selection; initial state creation |
 | BIND | ⋈ | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | non-associative fusion; recoupling |
-| ORBIT | ○ | Trace of ribbon twist $\mathrm{tr}(\theta_A): \mathbf{1} \to \mathbf{1}$; scalar closed-loop evaluation | feedback loop; G-set walk; closed orbit |
+| ORBIT (**𝒪** 🔄) | ○ | Trace of ribbon twist $\mathrm{tr}(\theta_A): \mathbf{1} \to \mathbf{1}$; scalar closed-loop evaluation | feedback loop; G-set walk; closed orbit |
 | MELD | ● | Handle operator in TQFT; filled circle = topological class creation | deepest fusion; handle attachment |
 | FORK | ⑂ | Copairing / comonoid comultiplication $\delta: A \to A \otimes A$ (asymmetric) | directed 1-to-2 branching; coboundary |
 | SUPERPOSE | ⊕ | Biproduct $A \oplus B$; direct sum in Ab-enriched category | linear superposition; direct sum |
@@ -410,9 +410,11 @@ condition in finance, and the topological invariance of Ponzano-Regge amplitudes
 
 ---
 
-### TWIST 🕷️*
+### TWIST 🕷️*  ∮ 🌀
 
 **A wire acquires a phase** (a curl or loop in the diagram).
+
+**Symbols (Origami ISA):** formal ∮ (closed-loop integral — phase accumulated around a circuit) · outreach 🌀
 
 ```
     │
@@ -449,9 +451,11 @@ for the full treatment.
 
 ---
 
-### FLIP 🕷️
+### FLIP 🕷️  ⌁ 🎲
 
 **A wire reverses orientation** (arrow pointing down instead of up).
+
+**Symbols (Origami ISA):** formal ⌁ (lightning/discharge — irreversible collapse to classical outcome) · outreach 🎲
 
 ```
     ↑         ↓
@@ -529,9 +533,11 @@ deepest structural label in the AZ tenfold way — the distinction between Major
 
 ---
 
-### LABEL 🕷️
+### LABEL 🕷️  ⊢ 🏷️
 
 **A wire passes through a projector** (sector selection).
+
+**Symbols (Origami ISA):** formal ⊢ (sequent turnstile — "this context proves/prepares this state") · outreach 🏷️
 
 ```
     │
@@ -572,9 +578,11 @@ assignment is a LABEL.
 
 ---
 
-### BIND 🐸
+### BIND 🐸  ⋈ 🔗
 
 **Three wires enter a vertex** (non-Abelian fusion; associator).
+
+**Symbols (Origami ISA):** formal ⋈ (natural join / bowtie — two registers fused into an entangled pair) · outreach 🔗
 
 *A naming note:* BIND is the one opcode that lives exclusively in the 🐸 Frog
 Calculus — the trivalent vertex, the non-associative fusion, the G₂ structure
