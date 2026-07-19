@@ -3,6 +3,7 @@ layout: default
 title: "Portfolio A — Core Engine"
 parent: Portfolios
 nav_order: 1
+nav_exclude: true
 ---
 
 **Primary audience:** AI engineers, ML researchers, optimisation theorists

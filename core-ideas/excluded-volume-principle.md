@@ -3,6 +3,7 @@ layout: default
 title: "The Pauli exclusion principle is a theorem"
 parent: "Core Ideas"
 nav_order: 10
+nav_exclude: true
 description: "Fermion antisymmetry is not a postulate. It follows from a single geometric fact: non-isotropic pairs in a symplectic polar space cannot share an isotropic flat. This is the Excluded Volume Principle."
 tags: [evp, pauli, exclusion, symplectic, fano, periodic-table, nuclear-shell, geometry, gpep, chladni, heusler]
 portfolio: E

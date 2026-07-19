@@ -3,6 +3,7 @@ layout: default
 title: "Every molecule is running a programme"
 parent: "Core Ideas"
 nav_order: 2
+nav_exclude: true
 description: "Enzyme catalysis, nitrogen fixation, spin-crossover, and protein design are ISA programmes readable in the group-orbit language — G-step chemistry."
 tags: [chemistry, biology, galois, orbits, isa, fano, nitrogen-fixation, spin-crossover, protein-design]
 portfolio: E

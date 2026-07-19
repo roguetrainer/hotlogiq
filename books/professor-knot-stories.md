@@ -1,5 +1,6 @@
 ---
 layout: default
+nav_exclude: true
 title: Professor Knot Stories
 parent: Books
 nav_order: 10

@@ -1,5 +1,6 @@
 ---
 layout: default
+nav_exclude: true
 title: "N02 — Lohmiller-Slotine, Vattay, and the MGE"
 parent: Notes
 nav_order: 2

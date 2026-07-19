@@ -3,6 +3,7 @@ layout: default
 title: "Portfolio D — Protocols"
 parent: Portfolios
 nav_order: 4
+nav_exclude: true
 ---
 
 **Primary audience:** Cryptographers, security engineers, quantum networking researchers

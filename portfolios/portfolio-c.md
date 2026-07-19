@@ -3,6 +3,7 @@ layout: default
 title: "Portfolio C — Hardware & AI"
 parent: Portfolios
 nav_order: 3
+nav_exclude: true
 ---
 
 **Primary audience:** Quantum hardware engineers, quantum error correction researchers, AI/ML engineers, distributed systems engineers

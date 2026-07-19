@@ -1,5 +1,6 @@
 ---
 layout: default
+nav_exclude: true
 title: Notation and Concepts
 parent: CT Chemistry Primer
 grand_parent: Books

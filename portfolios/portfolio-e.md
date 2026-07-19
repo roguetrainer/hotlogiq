@@ -3,6 +3,7 @@ layout: default
 title: "Portfolio E — Chemistry & Physics"
 parent: Portfolios
 nav_order: 5
+nav_exclude: true
 ---
 
 **Primary audience:** Chemists, physicists, nuclear physicists, spectroscopists, materials scientists

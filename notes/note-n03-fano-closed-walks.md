@@ -1,5 +1,6 @@
 ---
 layout: default
+nav_exclude: true
 title: "N03 — Closed Walks on the Fano Plane and OEIS A274975"
 parent: Notes
 nav_order: 3

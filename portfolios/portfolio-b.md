@@ -3,6 +3,7 @@ layout: default
 title: "Portfolio B — Foundations"
 parent: Portfolios
 nav_order: 2
+nav_exclude: true
 ---
 
 **Primary audience:** Mathematicians — algebraic geometry, category theory, exceptional Lie theory, combinatorics

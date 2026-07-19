@@ -3,6 +3,7 @@ layout: default
 title: "Biology runs quantum error correction"
 parent: "Core Ideas"
 nav_order: 5
+nav_exclude: true
 description: "Kinetic proofreading, protein chaperones, and the ribosome implement H⁰ × H¹ × H² QEC — the same three-tier structure as fault-tolerant quantum computing."
 tags: [biology, qec, error-correction, proofreading, ribosome, chaperones, protein-folding, h0, h1, h2, fidelity]
 portfolio: E

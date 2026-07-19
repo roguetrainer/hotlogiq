@@ -3,6 +3,7 @@ layout: default
 title: "Portfolio F — Quantum Foundations"
 parent: Portfolios
 nav_order: 6
+nav_exclude: true
 ---
 
 **Primary audience:** Quantum information theorists, quantum foundations researchers, quantum logicians

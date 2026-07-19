@@ -3,6 +3,7 @@ layout: default
 title: "Portfolio G — Economics & Complex Systems"
 parent: Portfolios
 nav_order: 7
+nav_exclude: true
 ---
 
 **Primary audience:** Economists, policy modellers, complexity scientists, agent-based modellers

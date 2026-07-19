@@ -1,5 +1,6 @@
 ---
 layout: default
+nav_exclude: true
 title: "N01 — Does the ASA Violate Hardy's Axioms?"
 parent: Notes
 nav_order: 1

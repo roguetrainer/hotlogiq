@@ -1,5 +1,6 @@
 ---
 layout: default
+nav_exclude: true
 title: "Ch 3 — Aromaticity: Benzene"
 parent: CT Chemistry Primer
 grand_parent: Books

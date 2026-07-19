@@ -1,5 +1,6 @@
 ---
 layout: default
+nav_exclude: true
 title: CT Chemistry Primer
 parent: Books
 nav_order: 20
