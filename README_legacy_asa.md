@@ -1,5 +1,6 @@
 ---
 title: Adelic Simplicial Architecture (ASA)
+nav_exclude: true
 tags:
   - asa
   - index
