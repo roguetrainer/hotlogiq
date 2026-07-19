@@ -2,15 +2,15 @@
 layout: default
 title: "The ISA Opcodes"
 nav_order: 4
-description: "The twelve opcodes of the Origami/Forge/Meld ISA: what each one does, its string diagram, its Pachner move, and where it appears across physics, mathematics, and economics."
-tags: [isa, opcodes, flip, flop, split, splat, twist, label, bind, orbit, fork, superpose, entangle, meld, category-theory, string-diagrams, completeness]
+description: "The five opcodes of the Origami ISA (LABEL/ORBIT/TWIST/BIND/FLIP) — cohomological role, categorical structure, and incarnations across domains. Legacy SPLIT/SPLAT/FLOP mapping included."
+tags: [isa, opcodes, label, orbit, twist, bind, flip, split, splat, flop, category-theory, string-diagrams, completeness]
 portfolio: B
 ---
 
 # The ISA Opcodes
 {: .no_toc }
 
-*Twelve operations. One language for quantum physics, topological phases, molecular
+*Five opcodes. One language for quantum physics, topological phases, molecular
 computing, the geometric Langlands programme, and more — from classical Turing machines to the
 full Meld.*
 
@@ -34,9 +34,16 @@ H^k needed to describe it exactly:
 
 | Tier | Opcodes | One-word meaning | Technical meaning |
 | ---- | ------- | ---------------- | ----------------- |
-| **H⁰** | ORBIT, SPLIT, SPLAT, LABEL | Counting | Global sections; classical observables; no phase |
-| **H¹** | TWIST, FLIP, FLOP | Interference | Berry phase; connection; obstruction to triviality |
+| **H⁰** | ORBIT, LABEL, FLIP | Counting | Global sections; classical observables; no phase |
+| **H¹** | TWIST | Interference | Berry phase; connection; obstruction to triviality |
 | **H²** | BIND | Entanglement | Chern class; non-Abelian holonomy; topological charge |
+
+> **Terminology note — legacy opcode names:** Earlier papers and drafts use a twelve-opcode
+> vocabulary. The current five-opcode names (LABEL / ORBIT / TWIST / BIND / FLIP) consolidate
+> those as follows: SPLAT → LABEL, SPLIT → ORBIT, FLOP merged into FLIP (same duality role),
+> BIND promoted from implicit to first-class. The sections below retain the legacy names
+> where they clarify categorical structure (especially the SPLIT/SPLAT Frobenius pair and the
+> FLIP/FLOP distinction in the AZ tenfold way); treat them as sub-roles of the five canonical opcodes.
 
 **In one sentence: H⁰ is counting, H¹ is interference, H² is entanglement.**
 
@@ -229,7 +236,7 @@ The categorical foundation means:
    in their image. This is not an empirical observation; it is a consequence of
    the categorical structure.
 
-## Why twelve opcodes, and why these twelve?
+## Why five opcodes?
 
 The Origami ISA is not an arbitrary instruction set. It is the **minimal magmoidal
 extension of the free traced symmetric monoidal category (TSMC — a monoidal category
@@ -239,7 +246,7 @@ is a named morphism in the TSMC + Frobenius structure (the "spider calculus"). B
 the unique opcode that requires a magmoidal extension: it encodes a non-trivial
 associator, realised physically as G₂/octonion symmetry.
 
-The twelve opcodes form a **completeness hierarchy**: each new opcode lifts the ISA to
+The five opcodes form a **completeness hierarchy**: each tier lifts the ISA to
 the next level of the cohomological (H^k) computational tower, and no opcode at level
 k can be simulated by any combination of opcodes at level k−1. The H^k tiers are not
 merely a grading — they are the homology groups of a genuine chain complex (see
@@ -327,7 +334,7 @@ The diagrams below are described in text; the LaTeX figures appear in
 
 ---
 
-## The seven opcodes
+## Opcode reference
 
 ---
 

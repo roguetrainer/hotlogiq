@@ -303,9 +303,9 @@ At low $\beta$ (BOIL): smooth Gibbs distribution, continuous exploration. At $\b
 
 ## Origami ISA (Origami Instruction Set Architecture)
 
-The **Origami ISA** is the $\mathbb{R}$-arithmetic tier of a universal instruction set for topological quantum systems. Its seven opcodes — SPLIT, SPLAT, TWIST, FLIP, FLOP, LABEL, BIND — are the generating morphisms of a ribbon Frobenius monoidal category and double as Pachner moves on triangulated simplicial complexes.
+The **Origami ISA** is the open instruction set for topological quantum-classical systems. Its five opcodes — LABEL, ORBIT, TWIST, BIND, FLIP — are the generating morphisms of a ribbon Frobenius monoidal category and double as Pachner moves on triangulated simplicial complexes.
 
-The same seven opcodes compile nuclear spectroscopy, quantum error correction, GPU matrix multiplication, financial XVA, topological phases, and the Langlands programme into one language. See the [dedicated opcodes page](opcodes.md) for string diagrams, Pachner moves, and cross-domain tables.
+The same five opcodes compile nuclear spectroscopy, quantum error correction, GPU matrix multiplication, financial XVA, topological phases, and the Langlands programme into one language. Earlier papers use a twelve-opcode vocabulary (SPLIT, SPLAT, FLIP, FLOP, TWIST, LABEL, BIND, ORBIT, …); the five-opcode names consolidate these. See the [dedicated opcodes page](opcodes.md) for the mapping, string diagrams, Pachner moves, and cross-domain tables.
 
 *Defined:* [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916429/), [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474914/), [Paper 370 (Universal Computer)](papers/10.5281-zenodo.20543454/)  
 *Full opcode reference:* [The ISA Opcodes](opcodes.md)
@@ -546,7 +546,7 @@ In G-Walk chemistry, the state of a metal complex is an orbit occupancy vector $
 **Orbit computing** is a proposed fourth paradigm of computation in which:
 
 - **State** is a G-orbit occupancy vector $\mathbf{v} \in \mathbb{Z}^k$, where $G$ is the site symmetry group of the physical substrate (a molecule);
-- **Transitions** are G-orbit walks implemented by seven ISA opcodes (FLIP, FLOP, TWIST, SPLIT, SPLAT, ORBIT, LABEL);
+- **Transitions** are G-orbit walks implemented by the five ISA opcodes (LABEL, ORBIT, TWIST, BIND, FLIP);
 - **Output** is the discrete orbit label returned by the ORBIT opcode.
 
 The four paradigms and their distinguishing features:

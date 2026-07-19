@@ -138,11 +138,10 @@ quantum fluctuation dominance.
 
 | Opcode | Forge (real β) | Meld (β = it) |
 |--------|----------------|---------------|
-| SPLIT | Gibbs fan-out; soft copy | Unitary fan-out; QFT mode splitting |
-| SPLAT | Gibbs projection; soft measurement | Born rule measurement |
+| ORBIT | Gibbs fan-out; soft copy | Unitary fan-out; QFT mode splitting |
+| LABEL | Gibbs projection; soft measurement | Born rule measurement |
 | TWIST | Thermal phase $e^{-\beta\theta}$ | Quantum phase $e^{-it\theta}$; Berry phase |
-| FLIP | Real time-reversal | Anti-unitary time-reversal; Kramers |
-| FLOP | Partition function trace | Quantum trace; path integral |
+| FLIP | Real time-reversal / partition trace | Anti-unitary time-reversal; Kramers; quantum trace |
 | BIND | Thermal recoupling | Unitary $F$-matrix; non-Abelian anyon braiding |
 
 **The T-gate is the Meld-only opcode.** The T-gate — the gate that promotes
@@ -192,8 +191,8 @@ different kind.
 
 | Opcode | Harmonic (β → 0) incarnation |
 | --- | --- |
-| SPLIT | Hodge decomposition: $\omega = d\alpha + d^{*}\beta + \gamma$ |
-| SPLAT | Projection onto harmonic subspace ($\ker \Delta$) |
+| ORBIT | Hodge decomposition: $\omega = d\alpha + d^{*}\beta + \gamma$ |
+| LABEL | Projection onto harmonic subspace ($\ker \Delta$) |
 | TWIST | Exterior derivative $d$ (raises form degree) |
 | FLIP | Hodge star $\star$ (degree reversal; discrete ↔ smooth duality) |
 | BIND | Wedge product $\wedge$ (associative cup product in cohomology) |
