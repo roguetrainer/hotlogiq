@@ -99,7 +99,7 @@ This is not analogy. It is the same theorem — the 6j symbol is H¹ of the rele
 
 ## Start here
 
-- **New to the framework?** → [An Adelic Invitation](papers/10.5281-zenodo.19977475/) (Paper 000) or the [Origami ISA manifesto](papers/10.5281-zenodo.21428853/EXPLAINER.md) (Paper 631)
+- **New to the framework?** → [In Praise of Soft Thresholds](papers/10.5281-zenodo.21373469/EXPLAINER.md) (Paper 597) — accessible introduction — or the [Origami ISA manifesto](papers/10.5281-zenodo.21428853/EXPLAINER.md) (Paper 631) for the full technical picture
 - **Quantum computing?** → [Schubert halt theorem](papers/10.5281-zenodo.21373481/EXPLAINER.md) (Paper 606) or [Trapped-ion OPU](papers/604_trapped_ion_opu/) (Paper 604)
 - **Chemistry?** → [G-walk CO₂ fixation](papers/10.5281-zenodo.21373477/EXPLAINER.md) (Paper 603) or [Valence as orbit occupancy](papers/487_valence_orbit_occupancy/) (Paper 487)
 - **Finance?** → [Systemic risk as H²](papers/10.5281-zenodo.20642908/) (Paper 397) or [H^k pricing](papers/478_hk_pricing/) (Paper 478)
