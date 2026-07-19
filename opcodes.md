@@ -100,6 +100,27 @@ and FLIP/FLOP sub-roles (FLIP column). Read across a row to see how a domain
 implements the full ISA; read down a column to see the same abstract operation
 across completely different fields.
 
+**Domain coordinate table** — the three structural axes that determine which ISA a domain uses, plus whether its symmetry group is Abelian (if ✓, 6j symbols collapse to trivial phase factors and BIND is weak or absent; if ✗, genuine recoupling and non-trivial BIND).
+
+| Domain | Semiring | Symmetry group | Abelian? | β-regime |
+| ------ | -------- | -------------- | -------- | -------- |
+| **3-manifold** | ℤ / ℝ₊ | SU(2) / G₂ | ✗ | β→∞ (combinatorial) |
+| **Spectroscopy** | ℝ | SU(2) / SO(3) | ✗ | finite β |
+| **Quantum info** | ℂ | U(2ⁿ) | ✗ | β=it |
+| **Chemistry** | ℝ → ℂ at CI | point group ⊂ G₂ | ✗ | finite β → β=it at conical intersection |
+| **Nuclear** | ℝ | G₂ (always H²) | ✗ | finite β |
+| **Finance** | ℝ₊ | GL(n) / U(1) | ✓ | finite β |
+| **Condensed matter** | ℂ / ℤ₂ | U(1) → SU(2) → G₂ | ✓/✗ (phase-dependent) | β=it → β* snap |
+| **Turbulence** | ℝ | SDiff(ℝ³) | ✗ | finite β |
+| **Biology** | ℝ → ℂ | point group ⊂ G₂ | ✗ | β ≈ β* (physiological) |
+| **Statistics / ML** | ℝ₊ | GL(n) | ✓ | finite β |
+| **MCMC / sampling** | ℝ₊ | — | ✓ | finite β |
+| **Causal inference** | ℝ₊ | DAG automorphisms | ✓ | finite β |
+| **Dynamical systems** | (max,+) → ℝ | Diff(M) | ✗ | β→∞ → finite β |
+| **Number theory** | ℚ_p · ℂ · 𝔸 | GL(n) / G₂ | ✗ | all β |
+
+---
+
 | Domain | ORBIT 🔄 | LABEL 🏷️ | FLIP 👁️ | TWIST 🌀 | BIND 💎 |
 | ------ | --------- | --------- | -------- | --------- | ------- |
 | **3-manifold** | 1 tet → 4 tets · closed triangulation loop | 4 tets → 1 tet · face/edge colouring | 1 tri → 3 tris · 3 tris → 1 tri | Dehn twist | non-Pachner obstruction |
