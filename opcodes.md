@@ -76,25 +76,17 @@ same Bredon H² class (Euler characteristic 2).
 In ZX it appears as a disconnected bubble (no named spider); in the Frog Calculus it is a closed triangulation loop
 with no interior vertex. Neither calculus assigns ORBIT a node: ORBIT *closes* a loop rather than *opening* one.
 
-**Opcode symbols** (used in the LaTeX papers): filled = creation, hollow = annihilation. The symbol *shape* encodes the abstract arity — how many wires in, how many out. The Pachner move counts (1→4, 3→1, etc.) are the *3-manifold incarnation* of this arity, not its definition; the same opcodes appear with different in/out counts in spectroscopy, finance, and quantum information. See the [incarnations table](#opcode-incarnations-across-domains) below.
+**Opcode symbols:** each canonical opcode has a formal symbol (used in LaTeX papers) and an outreach emoji. The legacy geometric sub-symbols (■ ◇ ▲ △ ○ …) encode string-diagram arity (filled = creation, hollow = annihilation) and still appear in published papers — they are sub-roles of the five canonical opcodes, not independent primitives.
 
-| Opcode | Symbol | Categorical morphism | Abstract role |
-|--------|--------|---------------------|---------------|
-| SPLIT | ■ | Comultiplication $\Delta: A \to A \otimes A$ (Frobenius/bialgebra) | 1-to-many; any diagonalisation or fan-out |
-| SPLAT | ◇ | Multiplication $\mu: A \otimes A \to A$ (Frobenius); evaluation map | many-to-1; any projection or evaluation |
-| FLIP | ▲ | Dagger functor $(-)^\dagger$; pivotal structure $V \cong V^{**}$ | orientation reversal; duality |
-| FLOP | △ | Evaluation $\varepsilon_A: A^* \otimes A \to \mathbf{1}$; cup in compact closed category | closure; trace; Born rule |
-| TWIST | ↻ | Ribbon element $\theta_V: V \to V$; topological spin | phase / monodromy; 1-to-1 with memory |
-| SPIN | ⊛ | $\mathbb{Z}_3$ gauge automorphism; triality $V \to S^+ \to S^- \to V$ | order-3 cycling; triality gauge |
-| LABEL | ▪ | Unit morphism $\eta: \mathbf{1} \to A$ (Frobenius algebra unit); state preparation | sector selection; initial state creation |
-| BIND | ⋈ | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | non-associative fusion; recoupling |
-| ORBIT (**𝒪** 🔄) | ○ | Trace of ribbon twist $\mathrm{tr}(\theta_A): \mathbf{1} \to \mathbf{1}$; scalar closed-loop evaluation | feedback loop; G-set walk; closed orbit |
-| MELD | ● | Handle operator in TQFT; filled circle = topological class creation | deepest fusion; handle attachment |
-| FORK | ⑂ | Copairing / comonoid comultiplication $\delta: A \to A \otimes A$ (asymmetric) | directed 1-to-2 branching; coboundary |
-| SUPERPOSE | ⊕ | Biproduct $A \oplus B$; direct sum in Ab-enriched category | linear superposition; direct sum |
-| ENTANGLE | ⊗ | Tensor product $A \otimes B$; non-local correlation in compact closed category | non-local correlation; tensor product |
+| Opcode | Formal | Emoji | LaTeX sub-symbols | Categorical morphism | Abstract role |
+|--------|--------|-------|-------------------|---------------------|---------------|
+| ORBIT | 𝒪 | 🔄 | ■ fan-out · ○ closed loop | Comultiplication $\Delta: A \to A \otimes A$ · trace $\mathrm{tr}(\theta_A): \mathbf{1} \to \mathbf{1}$ | 1-to-many diagonalisation; closed feedback loop |
+| LABEL | ⊢ | 🏷️ | ◇ projection · ▪ unit | Multiplication $\mu: A \otimes A \to A$ · unit $\eta: \mathbf{1} \to A$ | Many-to-1 evaluation; sector selection |
+| FLIP | ⌁ | 👁️ | ▲ dagger · △ cup / Born rule | Dagger $(-)^\dagger$ · counit $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ | Orientation reversal; duality; Born rule |
+| TWIST | ∮ | 🌀 | ↻ | Ribbon element $\theta_V: V \to V$; topological spin | Phase / monodromy; 1-to-1 with memory |
+| BIND | ⋈ | 💎 | ⋈ | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | Non-associative fusion; recoupling; entanglement |
 
-The dagger map σ swaps creation ↔ annihilation: σ(■) = ◇, σ(▲) = △, σ(○) = ●, σ(⊕) = ⊗. The Frobenius identities are ◇∘■ = △∘▲ = id.
+The dagger map σ swaps creation ↔ annihilation within each opcode: σ(■) = ○, σ(◇) = ▪, σ(▲) = △. The Frobenius identities are ◇∘■ = △∘▲ = id.
 
 ---
 
