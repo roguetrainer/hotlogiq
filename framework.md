@@ -2,6 +2,7 @@
 layout: default
 title: Framework
 nav_order: 4
+nav_exclude: true
 description: "The five-layer hierarchy of the ASA: MGE, TRS, ISA trilogy, H^k ladder, and the full programme."
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "The ISA Opcodes"
-nav_order: 5
+nav_order: 4
 description: "The twelve opcodes of the Origami/Forge/Meld ISA: what each one does, its string diagram, its Pachner move, and where it appears across physics, mathematics, and economics."
 tags: [isa, opcodes, flip, flop, split, splat, twist, label, bind, orbit, fork, superpose, entangle, meld, category-theory, string-diagrams, completeness]
 portfolio: B

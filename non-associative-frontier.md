@@ -2,6 +2,7 @@
 layout: default
 title: "The Non-Associative Frontier"
 nav_order: 6
+nav_exclude: true
 description: "The division algebra ladder (ℝ→ℂ→ℍ→𝕆), the Freudenthal-Tits magic square, and the 731-ISA as the computational realisation of the exceptional algebras."
 tags: [octonions, g2, fano, 731-isa, division-algebras, magic-square, exceptional-lie-algebras]
 portfolio: B
