@@ -46,6 +46,7 @@ Each page follows the same structure:
 | [7](core-ideas/stratification-principle.md) | **The H^k stratification is not an analogy.** The three-tier structure appears across MCMC, EVT, causal inference, chemistry, and quantum computing — some mappings are exact theorems, some make quantitative predictions, some are useful taxonomy. | 420, 533, 557, 558, 559 |
 | [8](core-ideas/galois-chemistry.md) | **Every molecule runs a Galois programme.** The spin state, valence, and catalytic barrier of any transition-metal complex are determined by G-orbit walks on its molecular G-set — computable in O(1), without DFT, at 300 K. | 488, 489, 490, 491, 492, 562 |
 | [9](core-ideas/grassmannian-universality.md) | **The Grassmannian is the universal space for correlated systems.** A single angle θ_G = arccos(σ₀) — the geodesic distance from the classical fixed point — diagnoses multi-reference chemistry, QEC threshold failure, nuclear bonding, and financial contagion, with the same β* snap at θ_G ≈ 20° across all four domains. | 563, 568, 570, 574, 577, 578, 580 |
+| [10](core-ideas/ig-carnot-cycle.md) | **Nature runs information-geometric Carnot cycles.** Every biological fidelity machine and every enzyme operates a four-leg IG Carnot cycle between a high-surprise and a low-surprise reservoir; the adiabatic leg is parallel transport on the Grassmannian; β* is the Carnot-optimal operating point. | 325, 510, 574 |
 
 ---
 
