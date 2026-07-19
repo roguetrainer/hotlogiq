@@ -3,7 +3,7 @@
 Source for the [Alchemiac website](https://roguetrainer.github.io/adelic-simplicial-architecture/), a reference for the **Origami ISA** — a five-opcode instruction set (LABEL / ORBIT / TWIST / BIND / FLIP) unifying computation across quantum mechanics, chemistry, biology, and finance via Čech cohomology and the Maslov–Gibbs Einsum.
 
 **Author:** Ian R. C. Buckley · [ORCID 0009-0004-9287-2902](https://orcid.org/0009-0004-9287-2902)  
-**Zenodo community:** [asa-research](https://zenodo.org/communities/asa-research/) · 630+ papers (2024–)  
+**Zenodo community:** [thermyon](https://zenodo.org/communities/thermyon/) · 630+ papers (2024–)  
 **Live site:** <https://roguetrainer.github.io/adelic-simplicial-architecture/>
 
 ---

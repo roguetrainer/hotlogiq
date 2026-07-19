@@ -1,7 +1,7 @@
-title: Adelic Simplicial Architecture
-description: Eight opcodes. One framework. Every scale of nature.
-url: "https://roguetrainer.github.io"
-baseurl: "/adelic-simplicial-architecture"
+title: Thermyon — Origami ISA Framework
+description: Five opcodes. One framework. Every scale of nature.
+url: "https://thermyon.ca"
+baseurl: ""
 
 remote_theme: just-the-docs/just-the-docs@v0.10.0
 
@@ -13,6 +13,8 @@ color_scheme: light
 
 logo: "/assets/images/asa-logo.png"
 favicon_ico: "/assets/images/asa-logo.png"
+
+custom_domain: thermyon.ca
 
 search_enabled: true
 search:

@@ -7,7 +7,7 @@ nav_order: 9
 
 # Paper Index
 
-**630+ papers** published to the [asa-research Zenodo community](https://zenodo.org/communities/asa-research/records?q=&l=list&p=1&s=10&sort=newest) (2024–).
+**630+ papers** published to the [Thermyon Zenodo community](https://zenodo.org/communities/thermyon/records?q=&l=list&p=1&s=10&sort=newest) (2024–).
 
 The tables below cover landmark and foundational papers. For the full list browse Zenodo directly.
 

@@ -14,7 +14,7 @@ nav_order: 1
 
 One instruction set. Twenty orders of magnitude. From nuclear spectroscopy to quantum chemistry to systemic financial risk.
 
-[Browse all papers on Zenodo](https://zenodo.org/communities/asa-research/records){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Browse all papers on Zenodo](https://zenodo.org/communities/thermyon/records){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [ISA reference →](opcodes.md){: .btn .btn-outline .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [View on GitHub](https://github.com/roguetrainer/adelic-simplicial-architecture){: .btn .fs-5 .mb-4 .mb-md-0 }
 
