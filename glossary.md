@@ -17,7 +17,7 @@ Each entry links to the paper where the concept is defined or first used.
 
 In the ASA, the adelic structure appears in the routing of gradient updates: the real component flows continuously (gradient descent), while the $p$-adic component crystallises discretely (logic gate). This resolves the Averaging Paradox of purely-real optimisation and the Search Wall of purely-discrete search.
 
-*First used:* [Paper 201 (MGE)](papers/10.5281-zenodo.17981393/)
+*First used:* [Paper 201 (MGE)](papers/10.5281-zenodo.17981392/)
 
 ---
 
@@ -37,7 +37,7 @@ The four-level resource hierarchy:
 | 2 | **Associamancy** | $\nu_2 = 0$ (complex irrep) | 731 ISA (SPIN opcode) |
 
 TV is the total variation of the discrete Wigner function — the correct discriminant
-between dark and genuine magic ([Paper 470](papers/10.5281-zenodo.21219700/)).
+between dark and genuine magic ([Paper 470](papers/10.5281-zenodo.21219699/)).
 Associamancy (Level 2) sits strictly above both sub-tiers: $S_\mathrm{Schur}$ is
 independent of TV and Wigner negativity. A state can have genuine magic (TV $< 1$)
 and zero Schur entropy; and a state can have $S_\mathrm{Schur} = \log 2$ at either
@@ -47,7 +47,7 @@ The minimal group exhibiting associamancy is $\mathrm{PSL}(2,7)$ (order 168). Th
 
 The resource monotone is the **Schur entropy** $S_\mathrm{Schur}(\ket\psi) = -\sum_{\lambda: \nu_2=0} p_\lambda \log p_\lambda$.
 
-*Defined:* [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667174/)
+*Defined:* [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667173/)
 
 ---
 
@@ -59,7 +59,7 @@ $$\mathcal{A}(x, y, z) = (xy)z - x(yz).$$
 
 For basis octonions $e_i, e_j, e_k$: $\mathcal{A} = 0$ when $\{i,j,k\}$ is a Fano line; $\|\mathcal{A}\| = 2$ otherwise. The associator is the fundamental detector of topological contradiction in the ASA and the obstruction that distinguishes the 731 ISA (non-associative) from the Origami ISA (associative).
 
-*First used:* [Paper 200 (Fano-Foam)](papers/10.5281-zenodo.19869263/)
+*First used:* [Paper 200 (Fano-Foam)](papers/10.5281-zenodo.19869262/)
 
 ---
 
@@ -67,7 +67,7 @@ For basis octonions $e_i, e_j, e_k$: $\mathcal{A} = 0$ when $\{i,j,k\}$ is a Fan
 
 The MGE routing operator undergoes a spontaneous **phase transition** from exploratory (uniform) weighting to crystallised (winner-take-all) weighting as the inverse temperature $\beta$ rises. Unlike simulated annealing, no schedule is required: the $G_2$ geometry self-organises — geometric frustration spikes $E_k$ during chaotic exploration, causing Boltzmann freeze-out; at convergence the frustration dissolves and routing relaxes back to uniform. This is parameter-free annealing with topological guarantees.
 
-*Demonstrated:* [Paper 218 (NAIG Routing)](papers/10.5281-zenodo.20077198/)
+*Demonstrated:* [Paper 218 (NAIG Routing)](papers/10.5281-zenodo.20077197/)
 
 ---
 
@@ -89,7 +89,7 @@ $$\gamma_\mathrm{BI}^{G_2} = \frac{\sqrt{C_2(\mathrm{adj})}}{2\pi\ln\dim(\mathrm
 
 This is a genuine new prediction, differing from the $\mathrm{SU}(2)$ value by a factor of $\approx 0.773$.
 
-*Conjecture:* [Paper 410 (Spin Foams as Origami)](papers/10.5281-zenodo.20680634/) · *Experiment:* x410a, x410b
+*Conjecture:* [Paper 410 (Spin Foams as Origami)](papers/10.5281-zenodo.20680633/) · *Experiment:* x410a, x410b
 
 ---
 
@@ -140,7 +140,7 @@ This universality is not coincidental: all of these systems process information 
 
 The **Baker-Campbell-Hausdorff (BCH) obstruction** arises when attempting to aggregate updates directly on a non-commutative manifold such as $G_2$: $\exp(X_i + X_j) \neq \exp(X_i)\exp(X_j)$. The ASA resolves this via Dual-Space Routing — evaluation in the flat tangent space $\mathfrak{g}_2$ (Control Plane) separated from Euclidean execution (Data Plane).
 
-*Addressed:* [Paper 218 (NAIG Routing)](papers/10.5281-zenodo.20077198/)
+*Addressed:* [Paper 218 (NAIG Routing)](papers/10.5281-zenodo.20077197/)
 
 ---
 
@@ -152,7 +152,7 @@ $$\mathbb{R} \subset \mathbb{C} \subset \mathbb{H} \subset \mathbb{O}$$
 
 (reals, complex, quaternions, octonions) form a hierarchy in which each extension drops one algebraic property: $\mathbb{H}$ is non-commutative; $\mathbb{O}$ is additionally non-associative. By Hurwitz's theorem, no further division algebras exist. The ASA uses each rung as a distinct computational regime, and the Origami ISA opcodes organise quantum computation across all four rungs.
 
-*Framework:* [Paper 219 (Adelic Invitation)](papers/10.5281-zenodo.19977475/), [Paper 263 (Magic Square Architecture)](papers/10.5281-zenodo.19928880/) · *Full explainer:* [The Non-Associative Frontier](non-associative-frontier.md)
+*Framework:* [Paper 219 (Adelic Invitation)](papers/10.5281-zenodo.19977475/), [Paper 263 (Magic Square Architecture)](papers/10.5281-zenodo.19928879/) · *Full explainer:* [The Non-Associative Frontier](non-associative-frontier.md)
 
 ---
 
@@ -165,20 +165,20 @@ The Fano plane appears across the ASA in three contexts:
 - **Quantum computing:** the 3-qubit Pauli group modulo phases $\cong \mathrm{PG}(2,2)$; orbit decomposition $\mathrm{PG}(5,2)\setminus\mathrm{PG}(2,2) = \bigsqcup_{L=0}^6 \mathcal{O}_L$ gives the magic label
 - **Hardware:** the SevenQ register has 7 qubits = 7 Fano points; the 731 ISA opcodes are Pachner moves on $\mathrm{PG}(2,2)$
 
-*Central to:* [Paper 363 (Fano Geometry for QEC)](papers/10.5281-zenodo.20541595/), [Paper 386 (In Praise of Tetrahedra)](papers/10.5281-zenodo.20581484/), [Paper 408 (Fano Plane Primer)](papers/10.5281-zenodo.20667176/)
+*Central to:* [Paper 363 (Fano Geometry for QEC)](papers/10.5281-zenodo.20541594/), [Paper 386 (In Praise of Tetrahedra)](papers/10.5281-zenodo.20581483/), [Paper 408 (Fano Plane Primer)](papers/10.5281-zenodo.20667175/)
 
 ---
 
 ## Fano-Fisher Metric
 
-The **Fano-Fisher metric** $\Psi(\theta_\mathrm{ref})$ is the Fisher information metric on the $G_2$ statistical manifold, evaluated as the Hessian of the associator energy functional $E(\Omega) = \|\mathcal{A}(\theta_\mathrm{ref}, \Omega\, e_A, e_A)\|^2$. By the Fano-Fisher Decomposition Theorem ([Paper 221](papers/10.5281-zenodo.20076498/)):
+The **Fano-Fisher metric** $\Psi(\theta_\mathrm{ref})$ is the Fisher information metric on the $G_2$ statistical manifold, evaluated as the Hessian of the associator energy functional $E(\Omega) = \|\mathcal{A}(\theta_\mathrm{ref}, \Omega\, e_A, e_A)\|^2$. By the Fano-Fisher Decomposition Theorem ([Paper 221](papers/10.5281-zenodo.20076497/)):
 
 - $\mathrm{rank}(\Psi) = 4$ universally (10-dimensional null space = Fano-compatible directions)
 - All four non-zero eigenvalues $= 8/3$ exactly (from the $G_2$ Casimir)
 - Global average $= (32/49)\,I_{14}$ (from Fano incidence counting)
 - The active 4D friction subspace rotates (crystalline turnstile)
 
-*Proved:* [Paper 221 (Fano-Fisher)](papers/10.5281-zenodo.20076498/)
+*Proved:* [Paper 221 (Fano-Fisher)](papers/10.5281-zenodo.20076497/)
 
 ---
 
@@ -197,7 +197,7 @@ The $\nu_2 = 0$ condition defines the *Schur boundary* — the precise algebraic
 
 For $\mathrm{PSL}(2,7)$: the irreps $\chi_3$ and $\bar\chi_3$ (dimension 3, complex conjugate pair) have $\nu_2 = 0$; all other irreps have $\nu_2 = +1$.
 
-*Defined:* [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667174/)
+*Defined:* [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667173/)
 
 ---
 
@@ -211,7 +211,7 @@ Key appearances in the ASA:
 - **LQG extension:** extending LQG from $\mathrm{SU}(2)$ to $G_2$ gives a $G_2$-extended area spectrum and may fix the Barbero-Immirzi parameter
 - **Associamancy:** $G_2$ is the first rung of the Freudenthal magic square that exhibits associamancy
 
-*Central to:* [Paper 221 (Fano-Fisher)](papers/10.5281-zenodo.20076498/), [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667174/), [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680634/) · *See also:* [The Non-Associative Frontier](non-associative-frontier.md)
+*Central to:* [Paper 221 (Fano-Fisher)](papers/10.5281-zenodo.20076497/), [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667173/), [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680633/) · *See also:* [The Non-Associative Frontier](non-associative-frontier.md)
 
 ---
 
@@ -219,7 +219,7 @@ Key appearances in the ASA:
 
 A Riemannian manifold has **$G_2$ holonomy** if parallel transport around any closed loop rotates tangent vectors by an element of $G_2 \subset SO(7)$. Berger's theorem (1955) established $G_2$ as one of only two exceptional holonomy groups. $G_2$ holonomy manifolds are Ricci-flat, admit a covariantly constant 3-form (the associative 3-form), and provide the natural compactification geometry for M-theory to 4D.
 
-*Central to:* [Paper 206 (FTCs)](papers/10.5281-zenodo.19821692/)
+*Central to:* [Paper 206 (FTCs)](papers/10.5281-zenodo.19821691/)
 
 ---
 
@@ -260,7 +260,7 @@ Laplacian acts on the whole manifold simultaneously).
 
 The **Langlands Program** is a vast network connecting number theory, representation theory, and geometry via a deep reciprocity between automorphic forms and Galois representations. The natural setting is the adele ring $\mathbb{A}$; the $G_2$ case of geometric Langlands is directly relevant to the ASA. Paper 240 identifies the Bruhat-Tits building of $G_2$ as a candidate for a proof of the Riemann Hypothesis via automorphic methods.
 
-*Relevant to:* [Paper 202 (TRS)](papers/10.5281-zenodo.19858021/), [Paper 240 (J³(𝕆))](papers/10.5281-zenodo.19824028/)
+*Relevant to:* [Paper 202 (TRS)](papers/10.5281-zenodo.19858020/), [Paper 240 (J³(𝕆))](papers/10.5281-zenodo.19824027/)
 
 ---
 
@@ -277,7 +277,7 @@ The ASA organises magic into four levels (see *Associamancy*):
 
 The **orbit decomposition** of magic: $\mathrm{PG}(5,2)\setminus\mathrm{PG}(2,2) = \bigsqcup_{L=0}^6\mathcal{O}_L$ gives 7 orbits of 8 phase-space points, each labelled by a Fano line. The **magic label** $\{p_L\}$ is a new Clifford-invariant that refines Wigner negativity into 7 independent channels.
 
-*Framework:* [Paper 361 (Fano Orbit Decomposition)](papers/10.5281-zenodo.20541583/), [Paper 363 (Fano QEC)](papers/10.5281-zenodo.20541595/), [Paper 408 (Fano Primer)](papers/10.5281-zenodo.20667176/)
+*Framework:* [Paper 361 (Fano Orbit Decomposition)](papers/10.5281-zenodo.20541582/), [Paper 363 (Fano QEC)](papers/10.5281-zenodo.20541594/), [Paper 408 (Fano Primer)](papers/10.5281-zenodo.20667175/)
 
 ---
 
@@ -289,7 +289,7 @@ $$\pi_k = \frac{\exp(-\beta\, E_k)}{\sum_j \exp(-\beta\, E_j)}.$$
 
 At low $\beta$ (BOIL): smooth Gibbs distribution, continuous exploration. At $\beta\to\infty$ (SNAP): tropical $({\max},{+})$ semiring, discrete crystallisation. The transition is the ASA's fundamental computational phase transition.
 
-*Defined:* [Paper 201 (MGE)](papers/10.5281-zenodo.17981393/)
+*Defined:* [Paper 201 (MGE)](papers/10.5281-zenodo.17981392/)
 
 ---
 
@@ -297,7 +297,7 @@ At low $\beta$ (BOIL): smooth Gibbs distribution, continuous exploration. At $\b
 
 **NAIG Routing** applies the Fano-Fisher metric and MGE to distributed gradient routing, evaluating each gradient by its associator energy $E_k = \widetilde{\Delta c}_k^\top \Psi\, \widetilde{\Delta c}_k$ in $\mathfrak{g}_2$. Fano-compatible gradients (low $E_k$) are promoted regardless of staleness (**Topological Rescue**); non-Fano gradients are thermodynamically suppressed.
 
-*Defined:* [Paper 218 (NAIG Routing)](papers/10.5281-zenodo.20077198/)
+*Defined:* [Paper 218 (NAIG Routing)](papers/10.5281-zenodo.20077197/)
 
 ---
 
@@ -307,7 +307,7 @@ The **Origami ISA** is the open instruction set for topological quantum-classica
 
 The same five opcodes compile nuclear spectroscopy, quantum error correction, GPU matrix multiplication, financial XVA, topological phases, and the Langlands programme into one language. Earlier papers use a twelve-opcode vocabulary (SPLIT, SPLAT, FLIP, FLOP, TWIST, LABEL, BIND, ORBIT, …); the five-opcode names consolidate these. See the [dedicated opcodes page](opcodes.md) for the mapping, string diagrams, Pachner moves, and cross-domain tables.
 
-*Defined:* [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916429/), [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474914/), [Paper 370 (Universal Computer)](papers/10.5281-zenodo.20543454/)  
+*Defined:* [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916428/), [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474913/), [Paper 370 (Universal Computer)](papers/10.5281-zenodo.20543453/)  
 *Full opcode reference:* [The ISA Opcodes](opcodes.md)
 
 ---
@@ -318,7 +318,7 @@ The same five opcodes compile nuclear spectroscopy, quantum error correction, GP
 
 In the Origami ISA, the five opcodes are the five Pachner moves in dimensions 2 and 3. The invariance of quantum gravity amplitudes under Pachner moves is the Biedenharn-Elliott identity — the Pentagon identity $d^2=0$.
 
-*Central to:* [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474914/), [Paper 386 (In Praise of Tetrahedra)](papers/10.5281-zenodo.20581484/), [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680634/)
+*Central to:* [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474913/), [Paper 386 (In Praise of Tetrahedra)](papers/10.5281-zenodo.20581483/), [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680633/)
 
 ---
 
@@ -334,9 +334,9 @@ It is the single unifying equation of the Origami ISA and appears as:
 - **Topology:** invariance of Ponzano-Regge amplitudes under Pachner moves
 - **Finance:** the no-arbitrage condition on the Pacioli manifold (see EconIAC glossary)
 - **QEC:** the self-testing robustness identity $C = 7/8$ in the Fano game
-- **MIP\* = RE:** the verifier constraint in the MIP\* protocol ([Paper 357](papers/10.5281-zenodo.20516899/))
+- **MIP\* = RE:** the verifier constraint in the MIP\* protocol ([Paper 357](papers/10.5281-zenodo.20516898/))
 
-*Framework:* [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916429/), [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474914/)
+*Framework:* [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916428/), [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474913/)
 
 ---
 
@@ -344,9 +344,9 @@ It is the single unifying equation of the Origami ISA and appears as:
 
 The **Ponzano-Regge amplitude** for a tetrahedron with edge spins $j_1,\ldots,j_6$ is the $6j$ symbol evaluated at those spins — the SPLAT opcode of the Origami ISA. The Ponzano-Regge model (1968) evaluates quantum gravity path integrals as products of $6j$ symbols over the triangulation of a 3-manifold. Invariance under Pachner moves (the Pentagon identity) guarantees topological invariance.
 
-The same $6j$ symbol appears in nuclear spectroscopy (Racah coefficients) and representation theory (Clebsch-Gordan recoupling). [Paper 396](papers/10.5281-zenodo.20635479/) identifies the structurally analogous $H^1$ obstruction in finance — convexity, basis, and CDO correlation risk — but the financial gauge group $(\mathbb{R}_{>0},\times)$ is abelian, so this is the abelian/generic instance of the same Čech-cohomology pattern, not a literal $6j$ symbol.
+The same $6j$ symbol appears in nuclear spectroscopy (Racah coefficients) and representation theory (Clebsch-Gordan recoupling). [Paper 396](papers/10.5281-zenodo.20635478/) identifies the structurally analogous $H^1$ obstruction in finance — convexity, basis, and CDO correlation risk — but the financial gauge group $(\mathbb{R}_{>0},\times)$ is abelian, so this is the abelian/generic instance of the same Čech-cohomology pattern, not a literal $6j$ symbol.
 
-*Central to:* [Paper 386 (In Praise of Tetrahedra)](papers/10.5281-zenodo.20581484/), [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680634/)
+*Central to:* [Paper 386 (In Praise of Tetrahedra)](papers/10.5281-zenodo.20581483/), [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680633/)
 
 ---
 
@@ -361,7 +361,7 @@ The **Resonance Processing Unit (RPU)** and a standard **Quantum Processing Unit
 | **Symmetry group** | $SU(2^n)$ (grows with qubits) | $G_2$ (fixed, 14-dimensional) |
 | **Classical limit** | Bit string | Fano crystal (base-7) |
 
-*Defined:* [Paper 205 (RPU)](papers/10.5281-zenodo.19743800/)
+*Defined:* [Paper 205 (RPU)](papers/10.5281-zenodo.19743799/)
 
 ---
 
@@ -377,7 +377,7 @@ Three equivalent characterisations (Paper 407):
 2. **Cohomological:** the obstruction class $[\alpha] \neq 0 \in H^2(G,U(1))$
 3. **Number-theoretic:** for $G = \mathrm{PSL}(2,q)$, the boundary is crossed iff $q \equiv 3 \pmod{4}$ — the condition that makes the quadratic Gauss sum $\tau(q) = i\sqrt{q}$ purely imaginary
 
-*Defined:* [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667174/)
+*Defined:* [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667173/)
 
 ---
 
@@ -387,7 +387,7 @@ The **SevenQ** is the 7-qubit canonical register for the 731 ISA, with the 7 qub
 
 The **TriQ** is the 3-qudit register (qudits of dimension $d=3$) — the minimal hardware for qudit stabiliser learning at $d=3$ and the abelian StateHSP. Three TriQ registers suffice for $n$ logical qutrits.
 
-*Defined:* [Paper 385 (SQU TriQ and SevenQ)](papers/10.5281-zenodo.20581486/)
+*Defined:* [Paper 385 (SQU TriQ and SevenQ)](papers/10.5281-zenodo.20581485/)
 
 ---
 
@@ -395,7 +395,7 @@ The **TriQ** is the 3-qudit register (qudits of dimension $d=3$) — the minimal
 
 **Simplicial** refers to the use of simplicial complexes — triangles, tetrahedra, and their generalisations — as the combinatorial skeleton of the architecture. Pachner moves (local simplicial retriangulations) are the ISA opcodes. The simplicial structure makes the topology of computation discrete and exact.
 
-*Central to:* [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474914/), [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916429/)
+*Central to:* [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474913/), [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916428/)
 
 ---
 
@@ -405,7 +405,7 @@ A **spin foam** is a combinatorial 2-complex (vertices, edges, faces) with repre
 
 Classical LQG spin foams use $\mathrm{SU}(2)$ or $\mathrm{SL}(2,\mathbb{C})$ — both associative. The 731 ISA extends spin foams to $G_2$, adding Fano colour to edges and the SPIN opcode as the elementary $G_2$ gauge transformation.
 
-*Defined:* [Paper 410 (Spin Foams as Origami)](papers/10.5281-zenodo.20680634/)
+*Defined:* [Paper 410 (Spin Foams as Origami)](papers/10.5281-zenodo.20680633/)
 
 ---
 
@@ -414,10 +414,10 @@ Classical LQG spin foams use $\mathrm{SU}(2)$ or $\mathrm{SL}(2,\mathbb{C})$ —
 The **State Hidden Subgroup Problem** (Hinsche, Eisert & Carrasco 2026) asks: given copies of a quantum state $\ket\psi$ invariant under an unknown subgroup $H \leq G$, identify $H$ via quantum measurements.
 
 In the Origami ISA:
-- **Abelian StateHSP:** the character POVM is the SPLAT opcode; the hidden subgroup is $H^0$ of the symmetry sheaf; the algorithm is the SPLIT$\to$SPLAT pipeline ([Paper 404](papers/10.5281-zenodo.20667167/))
-- **Non-abelian StateHSP for $G = \mathrm{PSL}(2,7)$:** requires the SPIN opcode of the 731 ISA; no associative hardware can solve it exactly ([Paper 405](papers/10.5281-zenodo.20667170/))
+- **Abelian StateHSP:** the character POVM is the SPLAT opcode; the hidden subgroup is $H^0$ of the symmetry sheaf; the algorithm is the SPLIT$\to$SPLAT pipeline ([Paper 404](papers/10.5281-zenodo.20667166/))
+- **Non-abelian StateHSP for $G = \mathrm{PSL}(2,7)$:** requires the SPIN opcode of the 731 ISA; no associative hardware can solve it exactly ([Paper 405](papers/10.5281-zenodo.20667169/))
 
-*Defined:* [Paper 404 (StateHSP: SPLAT as Fourier Sampling)](papers/10.5281-zenodo.20667167/), [Paper 405 (Non-Abelian StateHSP)](papers/10.5281-zenodo.20667170/)
+*Defined:* [Paper 404 (StateHSP: SPLAT as Fourier Sampling)](papers/10.5281-zenodo.20667166/), [Paper 405 (Non-Abelian StateHSP)](papers/10.5281-zenodo.20667169/)
 
 ---
 
@@ -427,9 +427,9 @@ The **$\llbracket 7,1,3\rrbracket$ Steane code** encodes 1 logical qubit in 7 ph
 
 $$(\mathbb{Z}_2)^3\setminus\{0\} = \mathrm{GF}(2)^3\setminus\{0\} = \text{7 Fano points} = \text{cols of }[7,4,3]\text{ Hamming PCM}$$
 
-This generating relationship (proved in [Paper 363](papers/10.5281-zenodo.20541595/)) connects 3-qubit GHZ entanglement to 7-qubit error correction via the Fano geometry.
+This generating relationship (proved in [Paper 363](papers/10.5281-zenodo.20541594/)) connects 3-qubit GHZ entanglement to 7-qubit error correction via the Fano geometry.
 
-*Central to:* [Paper 363 (Fano QEC)](papers/10.5281-zenodo.20541595/), [Paper 408 (Fano Primer)](papers/10.5281-zenodo.20667176/)
+*Central to:* [Paper 363 (Fano QEC)](papers/10.5281-zenodo.20541594/), [Paper 408 (Fano Primer)](papers/10.5281-zenodo.20667175/)
 
 ---
 
@@ -439,7 +439,7 @@ This generating relationship (proved in [Paper 363](papers/10.5281-zenodo.205415
 **331** = 3 imaginary units, 3D cross product, 1 (trivially zero) associator. The quaternionic rung.
 **V31** = umbrella for both, with $v \in \{3,7\}$ indexing the rung.
 
-*Central to:* [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916429/)
+*Central to:* [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916428/)
 
 ---
 
@@ -447,7 +447,7 @@ This generating relationship (proved in [Paper 363](papers/10.5281-zenodo.205415
 
 **Topological Rescue** is the phenomenon in which NAIG assigns high routing weight to a highly stale gradient because its drift is Fano-compatible ($E_k = 0$), overriding any temporal penalty.
 
-*Demonstrated:* [Paper 218 (NAIG Routing)](papers/10.5281-zenodo.20077198/)
+*Demonstrated:* [Paper 218 (NAIG Routing)](papers/10.5281-zenodo.20077197/)
 
 ---
 
@@ -469,7 +469,7 @@ TRS is one layer of the ASA. The full hierarchy is:
 | 4 | **H^k ladder** | H⁰/H¹/H² complexity and cohomology classification of what the ISAs compute |
 | 5 | **ASA** | The full research programme: all of the above plus all applications |
 
-*Defined:* [Paper 202 (TRS)](papers/10.5281-zenodo.19858021/) · *See also:* [→ MGE](#maslov-gibbs-einsum-mge), [→ Origami ISA](#origami-isa-origami-instruction-set-architecture)
+*Defined:* [Paper 202 (TRS)](papers/10.5281-zenodo.19858020/) · *See also:* [→ MGE](#maslov-gibbs-einsum-mge), [→ Origami ISA](#origami-isa-origami-instruction-set-architecture)
 
 ---
 
@@ -501,7 +501,7 @@ where $\mathrm{PSL}(2,7) = \mathrm{Aut}(\mathrm{PG}(2,2))$ is the automorphism g
 
 **Why Clifford algebra hides triality.** In $\mathrm{Cl}(8,0)$, the vector space $V$ is singled out as primary by construction, breaking the triality symmetry. The Origami ISA (regime 2) inherits this asymmetry: it can implement $\mathrm{SU}(2)$ and $\mathrm{SL}(2,\mathbb{C})$ gates but not the triality outer automorphism. The 731 ISA (regime 3) restores triality via the SPIN opcode. This is the precise sense in which the 731 ISA is strictly more powerful than the Origami ISA: it is *triality-complete*.
 
-*Defined:* [Paper 410 (Spin Foams as Origami)](papers/10.5281-zenodo.20680634/), [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667174/), [Paper 408 (Fano Primer)](papers/10.5281-zenodo.20667176/)
+*Defined:* [Paper 410 (Spin Foams as Origami)](papers/10.5281-zenodo.20680633/), [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667173/), [Paper 408 (Fano Primer)](papers/10.5281-zenodo.20667175/)
 
 ---
 
@@ -521,7 +521,7 @@ The distinction matters because:
 
 **Relationship to associamancy.** A gate set reaches Level 2 (associamancy) if and only if it is triality-complete. The Schur boundary — the set of representations with Frobenius-Schur indicator $\nu_2 = 0$ — is exactly the boundary between triality-blind and triality-complete operation. See [→ Associamancy](#associamancy), [→ Schur Boundary](#schur-boundary), [→ Triality](#triality).
 
-*Defined:* [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667174/), [Paper 408 (Fano Primer)](papers/10.5281-zenodo.20667176/), [Paper 411 (Pulse Sequences)](papers/10.5281-zenodo.20680609/), [Paper 412 (Typed DSL)](papers/10.5281-zenodo.20681513/)
+*Defined:* [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667173/), [Paper 408 (Fano Primer)](papers/10.5281-zenodo.20667175/), [Paper 411 (Pulse Sequences)](papers/10.5281-zenodo.20680608/), [Paper 412 (Typed DSL)](papers/10.5281-zenodo.20681512/)
 
 ---
 
@@ -537,7 +537,7 @@ In G-Walk chemistry, the state of a metal complex is an orbit occupancy vector $
 
 *See also:* [→ Orbit Computing](#orbit-computing) for the general paradigm; [→ Tropical Limit / Crystallisation](#tropical-limit--crystallisation) for the connection to tropical algebraic geometry.
 
-*Defined:* [Paper 488 (G-Walk Chemistry)](papers/10.5281-zenodo.21224107/), [Paper 491 (Tropical DFT)](papers/10.5281-zenodo.21224113/), [Paper 487 (Valence as Orbit Occupancy)](papers/10.5281-zenodo.21219722/)
+*Defined:* [Paper 488 (G-Walk Chemistry)](papers/10.5281-zenodo.21224106/), [Paper 491 (Tropical DFT)](papers/10.5281-zenodo.21224112/), [Paper 487 (Valence as Orbit Occupancy)](papers/10.5281-zenodo.21219721/)
 
 ---
 
@@ -566,7 +566,7 @@ Biology discovered orbit computing 3.8 billion years ago. Every enzyme is a fixe
 
 *See also:* [→ G-Walk](#g-walk) for the molecular chemistry specialisation; [→ Origami ISA](#origami-isa-origami-instruction-set-architecture) for the opcode definitions.
 
-*Defined:* [Paper 489 (Orbit Computing)](papers/10.5281-zenodo.21224109/), [Paper 487 (Valence as Orbit Occupancy)](papers/10.5281-zenodo.21219722/)
+*Defined:* [Paper 489 (Orbit Computing)](papers/10.5281-zenodo.21224108/), [Paper 487 (Valence as Orbit Occupancy)](papers/10.5281-zenodo.21219721/)
 
 ---
 
@@ -574,4 +574,4 @@ Biology discovered orbit computing 3.8 billion years ago. Every enzyme is a fixe
 
 As $\beta \to \infty$ in the MGE, the softmax collapses to the **tropical** $(\max,+)$ semiring: the BOIL phase explores continuously; the SNAP phase crystallises to a discrete logical output.
 
-*Defined:* [Paper 201 (MGE)](papers/10.5281-zenodo.17981393/)
+*Defined:* [Paper 201 (MGE)](papers/10.5281-zenodo.17981392/)
