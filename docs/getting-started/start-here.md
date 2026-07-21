@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Start Here
-nav_order: 3
+nav_order: 1
 description: "What Thermyon is, why it matters, and the shortest path to the core ideas — by reader type."
 ---
 

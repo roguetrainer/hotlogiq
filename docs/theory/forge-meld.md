@@ -1,7 +1,7 @@
 ---
 layout: default
 title: β-plane
-nav_order: 5
+nav_order: 4
 description: "The four ISA regimes of the TRS framework: Origami (β → ∞), Forge (finite β), Meld (β = it), and the Harmonic ISA (β → 0, Hodge) — plus the p-adic and adèlic extensions."
 tags: [isa, forge, meld, ambient, harmonic, hodge, beta, snap, mge, gibbs, wick-rotation, tropical, complexity]
 portfolio: B

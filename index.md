@@ -1,7 +1,6 @@
 ---
 layout: home
 title: Thermyon — Origami ISA Framework
-nav_order: 1
 ---
 
 {% include isa-nav.html %}
