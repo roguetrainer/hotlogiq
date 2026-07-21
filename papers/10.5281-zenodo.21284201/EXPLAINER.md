@@ -85,7 +85,26 @@ There is no H³ for generic quantum systems. Period.
 
 ## Three applications
 
-### Quantum chemistry: HF → CASSCF → FCI
+### Quantum chemistry: H₂ as a worked example
+
+Start with the simplest case: **molecular hydrogen (H₂)**.
+
+Two hydrogen atoms sit at distance R apart. Each contributes one 1s atomic orbital (call them φ₁ and φ₂). The molecular Hamiltonian H acts on the 2D space spanned by these two orbitals.
+
+**The spectrum side (Spec):** Diagonalize H. You get two eigenvalues: E₋ (bonding, lower) and E₊ (antibonding, higher), with eigenvectors ψ₋ ∝ (φ₁ + φ₂) and ψ₊ ∝ (φ₁ − φ₂).
+
+**The bonding side (Lan):** Minimize the energy ⟨ψ|H|ψ⟩ / ⟨ψ|ψ⟩ over all unit vectors ψ in the 2D space. This is a 1-parameter family: ψ(θ) = cos(θ)φ₁ + sin(θ)φ₂. The minimizer is at θ = 45°, giving ψ_opt ∝ (φ₁ + φ₂) — the bonding orbital.
+
+**The adjunction in action:**
+
+- **(Spec → Lan, the variational principle)** Given the spectrum {E₋, E₊}, the unit η tells you: "The optimal trial vector is ψ₋, and it achieves energy E₋."
+- **(Lan → Spec, spectral completeness)** Given the optimal trial vector ψ_opt, you can decompose it as ψ_opt = c₋ψ₋ + c₊ψ₊. At the exact ground state, c₋ = 1 and c₊ = 0.
+
+The H¹ correction measures the "mismatch" between your trial wavefunction and the true ground state — it vanishes when your variational ansatz is exact.
+
+**Why this language matters:** Standard chemistry textbooks derive this by solving the secular determinant and reading off eigenvalues. But they leave implicit the geometric picture: you're finding the lowest-energy point on the Grassmannian Gr(1,2). That geometric view becomes essential when the active space grows (FeMoco has 55 electrons across many orbitals) — you can't enumerate all possibilities, so you need the Grassmannian structure to guide your search. The ISA makes this explicit.
+
+### Quantum chemistry: HF → CASSCF → FCI (the ladder)
 
 The Hartree-Fock (HF) method is the H⁰ Lan: it finds the single-determinant (rank-1 Grassmannian point) that minimises the energy. CASSCF extends this to a rank-r colimit over an active space. Full CI (FCI) is the exact colimit over all determinants. This is a sequence of iterated left Kan extensions: each step includes more of the Grassmannian.
 
@@ -104,7 +123,7 @@ The Langlands programme studies the correspondence between automorphic forms (sp
 ## The opcode dictionary
 
 | ISA opcode | Category theory | Physical meaning |
-|------------|----------------|-----------------|
+| --- | --- | --- |
 | ORBIT 🔄 | Limit / trace | Eigenspace, stabiliser, fixed point; diagonalisation |
 | LABEL 🏷️ | Multiplication / unit | Quantum number assignment; projection; sector selection |
 | FLIP 👁️ | Dagger / counit | Time-reversal; particle-hole; Born rule; duality |
