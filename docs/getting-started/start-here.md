@@ -19,7 +19,7 @@ description: "What Thermyon is, why it matters, and the shortest path to the cor
 
 Experts in quantum computing, spectroscopy, financial risk, and molecular biology have independently discovered the same three-tier structure — fixed points, local phase corrections, global topological obstructions — and given it different names in each field. **Thermyon** makes the common pattern explicit, computable, and transferable. The five opcodes (LABEL / ORBIT / TWIST / BIND / FLIP) are not analogies — they are the same categorical morphisms running on different physical substrates. The temperature parameter β is the single dial that interpolates between classical (β→∞), statistical (0<β<∞), and quantum (β=it/ℏ) regimes.
 
-The [Pillars](pillars.md) page gives the four load-bearing ideas. The [Origami ISA manifesto](https://doi.org/10.5281/zenodo.21428853) (Paper 631) gives the full technical case.
+The [Pillars](../guides/pillars.md) page gives the four load-bearing ideas. The [Origami ISA manifesto](https://doi.org/10.5281/zenodo.21428853) (Paper 631) gives the full technical case.
 
 ---
 
@@ -74,6 +74,6 @@ The [Pillars](pillars.md) page gives the four load-bearing ideas. The [Origami I
 
 ---
 
-[All papers →](papers.md) · [Zenodo community →](https://zenodo.org/communities/thermyon/)
+[All papers →](../guides/papers.md) · [Zenodo community →](https://zenodo.org/communities/thermyon/)
 
 {% include isa-nav.html %}

@@ -152,7 +152,7 @@ $$\mathbb{R} \subset \mathbb{C} \subset \mathbb{H} \subset \mathbb{O}$$
 
 (reals, complex, quaternions, octonions) form a hierarchy in which each extension drops one algebraic property: $\mathbb{H}$ is non-commutative; $\mathbb{O}$ is additionally non-associative. By Hurwitz's theorem, no further division algebras exist. The ASA uses each rung as a distinct computational regime, and the Origami ISA opcodes organise quantum computation across all four rungs.
 
-*Framework:* [Paper 219 (Adelic Invitation)](papers/10.5281-zenodo.19977475/), [Paper 263 (Magic Square Architecture)](papers/10.5281-zenodo.19928879/) · *Full explainer:* [The Non-Associative Frontier](non-associative-frontier.md)
+*Framework:* [Paper 219 (Adelic Invitation)](papers/10.5281-zenodo.19977475/), [Paper 263 (Magic Square Architecture)](papers/10.5281-zenodo.19928879/) · *Full explainer:* [The Non-Associative Frontier](../theory/non-associative-frontier.md)
 
 ---
 
@@ -211,7 +211,7 @@ Key appearances in the ASA:
 - **LQG extension:** extending LQG from $\mathrm{SU}(2)$ to $G_2$ gives a $G_2$-extended area spectrum and may fix the Barbero-Immirzi parameter
 - **Associamancy:** $G_2$ is the first rung of the Freudenthal magic square that exhibits associamancy
 
-*Central to:* [Paper 221 (Fano-Fisher)](papers/10.5281-zenodo.20076497/), [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667173/), [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680633/) · *See also:* [The Non-Associative Frontier](non-associative-frontier.md)
+*Central to:* [Paper 221 (Fano-Fisher)](papers/10.5281-zenodo.20076497/), [Paper 407 (Associamancy)](papers/10.5281-zenodo.20667173/), [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680633/) · *See also:* [The Non-Associative Frontier](../theory/non-associative-frontier.md)
 
 ---
 
@@ -252,7 +252,7 @@ The key distinction: operative ISAs make *local decisions* (each opcode acts on 
 finite neighbourhood); the Harmonic ISA makes *global decisions* (the Hodge
 Laplacian acts on the whole manifold simultaneously).
 
-*See:* [The Operative and Harmonic ISAs](forge-meld.md) · [The Opcodes](opcodes.md) · [Origami ISA](#origami-isa-origami-instruction-set-architecture)
+*See:* [The Operative and Harmonic ISAs](../theory/forge-meld.md) · [The Opcodes](../reference/opcodes.md) · [Origami ISA](#origami-isa-origami-instruction-set-architecture)
 
 ---
 
@@ -305,10 +305,10 @@ At low $\beta$ (BOIL): smooth Gibbs distribution, continuous exploration. At $\b
 
 The **Origami ISA** is the open instruction set for topological quantum-classical systems. Its five opcodes — LABEL, ORBIT, TWIST, BIND, FLIP — are the generating morphisms of a ribbon Frobenius monoidal category and double as Pachner moves on triangulated simplicial complexes.
 
-The same five opcodes compile nuclear spectroscopy, quantum error correction, GPU matrix multiplication, financial XVA, topological phases, and the Langlands programme into one language. Earlier papers use a twelve-opcode vocabulary (SPLIT, SPLAT, FLIP, FLOP, TWIST, LABEL, BIND, ORBIT, …); the five-opcode names consolidate these. See the [dedicated opcodes page](opcodes.md) for the mapping, string diagrams, Pachner moves, and cross-domain tables.
+The same five opcodes compile nuclear spectroscopy, quantum error correction, GPU matrix multiplication, financial XVA, topological phases, and the Langlands programme into one language. Earlier papers use a twelve-opcode vocabulary (SPLIT, SPLAT, FLIP, FLOP, TWIST, LABEL, BIND, ORBIT, …); the five-opcode names consolidate these. See the [dedicated opcodes page](../reference/opcodes.md) for the mapping, string diagrams, Pachner moves, and cross-domain tables.
 
 *Defined:* [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916428/), [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474913/), [Paper 370 (Universal Computer)](papers/10.5281-zenodo.20543453/)  
-*Full opcode reference:* [The ISA Opcodes](opcodes.md)
+*Full opcode reference:* [The ISA Opcodes](../reference/opcodes.md)
 
 ---
 

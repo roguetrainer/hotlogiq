@@ -26,7 +26,7 @@ The framework grew in layers. They are not synonyms.
 | 4 | **H^k ladder** | Cohomological complexity classification | 420, 469, 595 |
 | 5 | **Thermyon** | The full programme: all layers plus all domain applications | — |
 
-The [Pillars](pillars.md) page gives the four load-bearing ideas in detail.
+The [Pillars](../guides/pillars.md) page gives the four load-bearing ideas in detail.
 The [Opcodes](opcodes.md) page gives the full technical reference for the five opcodes.
 The [β-plane](forge-meld.md) page gives the geometry of the β-deformation.
 

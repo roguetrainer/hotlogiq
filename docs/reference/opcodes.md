@@ -327,7 +327,7 @@ states are the programmes that do *not* collapse.
 a single chip that accepts an ISA programme and a semiring specification at
 programme-load time, and routes to the appropriate arithmetic units — floating-point
 for the Forge ISA, NTT/Montgomery chain for the p-adic ISA, complex FMA for the
-Meld ISA. See [forge-meld.md](forge-meld.md) for the β-plane geometry that
+Meld ISA. See [forge-meld.md](../theory/forge-meld.md) for the β-plane geometry that
 relates the semirings to each other.
 
 ---
@@ -764,10 +764,10 @@ inner-product structures, exactly three Dyson $\beta\_D$ values, exactly three I
 columns.
 
 **For a full treatment of $\beta$, the snap threshold, the Wick rotation, and the
-Ambient:** see [The Forge and Meld ISAs](forge-meld.md).
+Ambient:** see [The Forge and Meld ISAs](../theory/forge-meld.md).
 
 The **731-ISA** extends beyond all three to the $\mathbb{O}$ (octonion) rung,
-adding BIND and SPIN. See [The Non-Associative Frontier](non-associative-frontier.md).
+adding BIND and SPIN. See [The Non-Associative Frontier](../theory/non-associative-frontier.md).
 
 ---
 
@@ -917,14 +917,14 @@ different hardware.
 
 **The H^k computational tower:**
 
-- **[The Forge and Meld ISAs](forge-meld.md)** — full treatment of β, the snap threshold β*, the Wick rotation β → it, vortons, and how the same opcodes run over tropical / Gibbs / complex arithmetic
+- **[The Forge and Meld ISAs](../theory/forge-meld.md)** — full treatment of β, the snap threshold β*, the Wick rotation β → it, vortons, and how the same opcodes run over tropical / Gibbs / complex arithmetic
 - **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰ classical / H¹ Clifford / H² magic; TWIST failure as phase boundary; β* snap threshold
-- **[BIND at the octonion rung](non-associative-frontier.md)** — the Non-Associative Frontier page; division algebra ladder ℝ→ℂ→ℍ→𝕆
+- **[BIND at the octonion rung](../theory/non-associative-frontier.md)** — the Non-Associative Frontier page; division algebra ladder ℝ→ℂ→ℍ→𝕆
 - **[BKT Transition / TWIST Failure](glossary.md#bkt-transition--twist-failure)** — TWIST in depth; quantum dimension, $d_{1/2}(\beta)=0$ at $\beta=1/2$
 
 **For number theorists and algebraic geometers:**
 
-- **[The Langlands Perspective](langlands.md)** — how each opcode column in the
+- **[The Langlands Perspective](../theory/langlands.md)** — how each opcode column in the
   tables above maps onto the Langlands programme: SPLIT = spectral decomposition
   of $L^2(G(\mathbb{Q})\backslash G(\mathbb{A}))$; TWIST = Tate twist / Hecke
   character; BIND = Rankin-Selberg convolution; FLOP = Arthur-Selberg trace

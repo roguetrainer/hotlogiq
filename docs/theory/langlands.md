@@ -228,6 +228,6 @@ Langlands factor $L_p(s, \pi_p)$ is computed by walking this tree. The NTT
 ---
 
 *See also:* [Langlands Program](glossary.md#langlands-program) in the Glossary ·
-[The Operative and Harmonic ISAs](forge-meld.md) ·
-[The ISA Opcodes — Langlands column](opcodes.md) ·
-[The Non-Associative Frontier](non-associative-frontier.md)
+[The Operative and Harmonic ISAs](./forge-meld.md) ·
+[The ISA Opcodes — Langlands column](../reference/opcodes.md) ·
+[The Non-Associative Frontier](./non-associative-frontier.md)

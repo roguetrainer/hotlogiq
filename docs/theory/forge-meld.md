@@ -296,7 +296,7 @@ Each prime p adds a **p-adic axis** into the β-plane, carrying the p-adic ISA
 
 The 731-ISA extends the diagram along a third axis — *associativity* — adding
 the BIND opcode and reaching the 𝕆-rung. See
-[The Non-Associative Frontier](non-associative-frontier.md).
+[The Non-Associative Frontier](./non-associative-frontier.md).
 
 **Ostrowski's theorem** guarantees completeness: the only completions of ℚ are
 ℝ and ℚ_p. The adèlic product ℝ × ∏_p ℚ_p contains every possible β. The ISA
@@ -325,9 +325,9 @@ is no other place for β to live.
 - **[Planck's Constant in Disguise](https://doi.org/10.5281/zenodo.20752384)** (Paper 443) — six equations from six fields are the same MGE at different β; the fastest entry point
 - **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰/H¹/H² as β regimes; TWIST failure as phase boundary; β* snap threshold
 
-*See also:* [BKT Transition / TWIST Failure](glossary.md#bkt-transition--twist-failure) ·
-[Maslov-Gibbs Einsum](glossary.md#maslov-gibbs-einsum-mge) · [The Opcodes](opcodes.md)
+*See also:* [BKT Transition / TWIST Failure](../reference/glossary.md#bkt-transition--twist-failure) ·
+[Maslov-Gibbs Einsum](../reference/glossary.md#maslov-gibbs-einsum-mge) · [The Opcodes](../reference/opcodes.md)
 
 *For number theorists and algebraic geometers:*
-[The Langlands Perspective](langlands.md) — the adèlic β-plane from the Langlands angle;
+[The Langlands Perspective](./langlands.md) — the adèlic β-plane from the Langlands angle;
 motivic L-functions as Harmonic ISA, automorphic forms as Meld ISA.

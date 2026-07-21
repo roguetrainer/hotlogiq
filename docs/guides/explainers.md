@@ -7,7 +7,7 @@ has_children: true
 
 Plain-language guides to every paper — no prior mathematics required. Filter by theme below.
 
-For a thematic overview of the non-associative work (division algebra ladder, Freudenthal-Tits magic square, 731-ISA), see [The Non-Associative Frontier](non-associative-frontier.md).
+For a thematic overview of the non-associative work (division algebra ladder, Freudenthal-Tits magic square, 731-ISA), see [The Non-Associative Frontier](../theory/non-associative-frontier.md).
 
 <div id="asa-filter-bar" style="margin: 1.5rem 0 1rem;">
   <span style="font-size: 0.85rem; font-weight: 600; margin-right: 0.5rem;">Portfolio:</span>
