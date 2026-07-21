@@ -1,7 +1,8 @@
 ---
 layout: default
 title: The ISA Opcodes
-nav_order: 3
+nav_order: 1
+parent: Reference
 description: "The five opcodes of the Origami ISA (LABEL/ORBIT/TWIST/BIND/FLIP) — cohomological role, categorical structure, and incarnations across domains. Legacy SPLIT/SPLAT/FLOP mapping included."
 tags: [isa, opcodes, label, orbit, twist, bind, flip, split, splat, flop, category-theory, string-diagrams, completeness]
 portfolio: B

@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Pillars
-nav_order: 2
+nav_order: 1
+parent: Guides
 description: "The five load-bearing ideas of the Thermyon / Origami ISA framework."
 ---
 
