@@ -76,7 +76,7 @@ same Bredon H² class (Euler characteristic 2).
 In ZX it appears as a disconnected bubble (no named spider); in the Frog Calculus it is a closed triangulation loop
 with no interior vertex. Neither calculus assigns ORBIT a node: ORBIT *closes* a loop rather than *opening* one.
 
-**Opcode symbols:** each canonical opcode has a formal symbol (used in LaTeX papers) and an outreach emoji. The legacy geometric sub-symbols (■ ◇ ▲ △ ○ …) encode string-diagram arity (filled = creation, hollow = annihilation) and still appear in published papers — they are sub-roles of the five canonical opcodes, not independent primitives.
+**Opcode symbols:** each canonical opcode has a formal symbol (used in LaTeX papers) and an outreach emoji.
 
 | Opcode | Formal | Emoji | Categorical morphism | Abstract role |
 |--------|--------|-------|---------------------|---------------|
