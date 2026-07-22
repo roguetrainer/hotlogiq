@@ -454,7 +454,7 @@ The diagrams below are described in text; the LaTeX figures appear in
 | **Category theory** | Coproduct / comultiplication of a bialgebra or Hopf algebra |
 | **Algebra** | Coproduct $\Delta(E) = E \otimes K + 1 \otimes E$ in quantum group $U\_q(\mathfrak{sl}\_2)$ |
 
-**Where SPLIT appears:**
+**Where ORBIT appears:**
 
 | Domain | Instance | What splits |
 |--------|----------|------------|
@@ -465,9 +465,9 @@ The diagrams below are described in text; the LaTeX figures appear in
 | Quantum error correction | Stabiliser expansion | Logical qubit → physical qubit register |
 | Finance | Factor decomposition (PCA on yield curve) | Portfolio → risk factors |
 
-**Key role:** SPLIT is always the *diagonalisation* step — the moment a
+**Key role:** ORBIT is always the *diagonalisation* step — the moment a
 composite object is resolved into its irreducible pieces. Every Fourier transform,
-every change of basis, every spectral decomposition is a SPLIT.
+every change of basis, every spectral decomposition is an ORBIT.
 
 ---
 
@@ -490,7 +490,7 @@ every change of basis, every spectral decomposition is a SPLIT.
 | **Category theory** | Counit $\varepsilon: A \to k$ of a Frobenius algebra; or the evaluation map $A^* \otimes A \to k$ |
 | **Algebra** | The $6j$-symbol / Racah coefficient; the POVM measurement map |
 
-**Where SPLAT appears:**
+**Where LABEL appears:**
 
 | Domain | Instance | What gets projected |
 |--------|----------|-------------------|
@@ -501,11 +501,11 @@ every change of basis, every spectral decomposition is a SPLIT.
 | Langlands programme | L-function evaluation $L(s, \pi)$ | Automorphic form → complex number |
 | Finance | Portfolio valuation | Risk factor exposure → P&L scalar |
 
-**Key role:** SPLAT is always the *evaluation* step — the moment a structured
+**Key role:** LABEL is always the *evaluation* step — the moment a structured
 object is projected to a number. Every inner product, every measurement, every
-partition function evaluation is a SPLAT.
+partition function evaluation is a LABEL.
 
-**The Frobenius axiom** $\mathrm{SPLAT} \circ \mathrm{SPLIT} = \mathrm{id}$
+**The Frobenius axiom** $\mathrm{LABEL} \circ \mathrm{ORBIT} = \mathrm{id}$
 (the counit-comultiplication identity) is the algebraic statement that
 diagonalisation followed by projection is the identity — you get back what
 you put in. This is the Pentagon identity in disguise, and it is simultaneously
@@ -598,7 +598,7 @@ of the Baez threefold way.
 
 ---
 
-### FLIP — fermion sub-role *(formerly FLOP)* 🕷️
+### FLOP 🕷️ *(FLIP fermion sub-role — particle-hole conjugation)*
 
 **A wire curls under into a cup** (fermionisation).
 
