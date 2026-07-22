@@ -78,15 +78,15 @@ with no interior vertex. Neither calculus assigns ORBIT a node: ORBIT *closes* a
 
 **Opcode symbols:** each canonical opcode has a formal symbol (used in LaTeX papers) and an outreach emoji. The legacy geometric sub-symbols (■ ◇ ▲ △ ○ …) encode string-diagram arity (filled = creation, hollow = annihilation) and still appear in published papers — they are sub-roles of the five canonical opcodes, not independent primitives.
 
-| Opcode | Formal | Emoji | LaTeX sub-symbols | Categorical morphism | Abstract role |
-|--------|--------|-------|-------------------|---------------------|---------------|
-| ORBIT | 𝒪 | 🔄 | ■ (SPLIT) fan-out · ○ (ORBIT) closed loop | Comultiplication $\Delta: A \to A \otimes A$ · trace $\mathrm{tr}(\theta_A): \mathbf{1} \to \mathbf{1}$ | 1-to-many diagonalisation; closed feedback loop |
-| LABEL | ⊢ | 🏷️ | ◇ (SPLAT) projection · ▪ (LABEL) unit | Multiplication $\mu: A \otimes A \to A$ · unit $\eta: \mathbf{1} \to A$ | Many-to-1 evaluation; sector selection |
-| FLIP | ⌁ | 👁️ | ▲ (FLIP) dagger · △ (CUP) cup / Born rule | Dagger $(-)^\dagger$ · counit $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ | Orientation reversal; duality; Born rule |
-| TWIST | ∮ | 🌀 | ↻ | Ribbon element $\theta_V: V \to V$; topological spin | Phase / monodromy; 1-to-1 with memory |
-| BIND | ⋈ | 💎 | ⋈ | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | Non-associative fusion; recoupling; entanglement |
+| Opcode | Formal | Emoji | Categorical morphism | Abstract role |
+|--------|--------|-------|---------------------|---------------|
+| ORBIT | 𝒪 | 🔄 | Comultiplication $\Delta: A \to A \otimes A$ · trace $\mathrm{tr}(\theta_A): \mathbf{1} \to \mathbf{1}$ | 1-to-many diagonalisation; closed feedback loop |
+| LABEL | ⊢ | 🏷️ | Multiplication $\mu: A \otimes A \to A$ · unit $\eta: \mathbf{1} \to A$ | Many-to-1 evaluation; sector selection |
+| FLIP | ⌁ | 👁️ | Dagger $(-)^\dagger$ · counit $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ (CUP sub-role) | Orientation reversal; duality; Born rule |
+| TWIST | ∮ | 🌀 | Ribbon element $\theta_V: V \to V$; topological spin | Phase / monodromy; 1-to-1 with memory |
+| BIND | ⋈ | 💎 | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | Non-associative fusion; recoupling; entanglement |
 
-The dagger map σ swaps creation ↔ annihilation within each opcode: σ(■) = ○, σ(◇) = ▪, σ(▲) = △. The Frobenius identities are ◇∘■ = △∘▲ = id.
+The Frobenius identities: LABEL∘ORBIT = id (diagonalise then evaluate = identity); CUP∘FLIP = id (dagger then Born rule = identity).
 
 ---
 
