@@ -239,7 +239,7 @@ orbital-knot labels. Category theory forces exactly two new opcodes and no other
 $\mu: A \otimes A \to A$. In the single-site ISA, this role is played by the LABEL
 projection sub-role — evaluating many states into one. For bonding, $\mu$ acquires
 a new physical content: two orbital knots $T(p_1, q_1)$ and $T(p_2, q_2)$ form a
-covalent bond whose molecular orbital has knot type $T(p_1, q_1) \# T(p_2, q_2)$
+covalent bond whose molecular orbital has knot type $T(p_1, q_1) \mathbin{\#} T(p_2, q_2)$
 (connected sum, with additive genus $g_1 + g_2$). This is **MERGE** — it was absent
 from the Origami ISA because the single-site ISA never had two distinct orbital types
 as inputs. Hybridisation (sp³, sp²) is NOT a new opcode: it is TWIST applied to the
