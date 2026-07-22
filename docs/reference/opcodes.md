@@ -280,10 +280,7 @@ levels. SNAP is therefore primitive by categorical level, not by type.
 **SNAP has no Frobenius dual but does have an inverse:** as a 2-cell, SNAP↑ (tier
 promotion, $\mathcal{F} \to \mathcal{F}'$) and SNAP↓ (tier demotion,
 $\mathcal{F}' \to \mathcal{F}$) are mutual inverses — together they form a 2-cell
-isomorphism. This corresponds physically to a reversible phase transition: increasing
-$\beta$ past $\beta^*$ fires SNAP↑; decreasing $\beta$ back fires SNAP↓. Spin-crossover
-hysteresis is the pair (SNAP↑, SNAP↓) following different paths through the
-$\beta$-plane (nonzero imaginary part during the loop). LIESST is SNAP↑ firing while
+isomorphism. This corresponds physically to a reversible phase transition: increasing $\beta$ past $\beta^*$ fires SNAP↑; decreasing $\beta$ back fires SNAP↓. Spin-crossover hysteresis is the pair (SNAP↑, SNAP↓) following different paths through the $\beta$-plane (nonzero imaginary part during the loop). LIESST is SNAP↑ firing while
 SNAP↓ is kinetically blocked at low temperature. The irreversibility of a *particular*
 SNAP event is kinetic, not categorical: SNAP↑ and SNAP↓ are both valid 2-cells.
 
