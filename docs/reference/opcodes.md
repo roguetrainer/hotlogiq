@@ -2,7 +2,7 @@
 layout: default
 title: The ISA Opcodes
 nav_order: 3
-description: "The five opcodes of the Origami ISA (LABEL/ORBIT/TWIST/BIND/FLIP) — cohomological role, categorical structure, and incarnations across domains. Legacy SPLIT/SPLAT/FLOP mapping included."
+description: "The canonical opcodes of the Origami ISA: ORBIT/LABEL/TWIST/BIND/FLIP/SNAP/MERGE/LINK — cohomological role, categorical structure, and incarnations across domains. Legacy names SPLIT/SPLAT/FLOP shown in parentheses."
 tags: [isa, opcodes, label, orbit, twist, bind, flip, split, splat, flop, category-theory, string-diagrams, completeness]
 portfolio: B
 ---
@@ -435,7 +435,7 @@ The diagrams below are described in text; the LaTeX figures appear in
 
 ---
 
-### SPLIT 🕷️
+### ORBIT 🔄 *(formerly SPLIT)* 🕷️
 
 **One wire becomes two** (or one tetrahedron becomes four).
 
@@ -471,7 +471,7 @@ every change of basis, every spectral decomposition is a SPLIT.
 
 ---
 
-### SPLAT 🕷️
+### LABEL 🏷️ *(formerly SPLAT)* 🕷️
 
 **Two wires become one** (or four tetrahedra become one).
 
@@ -598,7 +598,7 @@ of the Baez threefold way.
 
 ---
 
-### FLOP 🕷️*
+### FLIP — fermion sub-role *(formerly FLOP)* 🕷️
 
 **A wire curls under into a cup** (fermionisation).
 
