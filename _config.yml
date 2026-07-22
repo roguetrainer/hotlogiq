@@ -11,8 +11,8 @@ author: Ian R. C. Buckley
 # ── Just-the-docs settings ────────────────────────────────────────────────────
 color_scheme: hotlogiq
 
-logo: "/assets/images/asa-logo.png"
-favicon_ico: "/assets/images/asa-logo.png"
+logo: "/assets/images/hotlogiq-logo.png"
+favicon_ico: "/assets/images/hotlogiq-logo.png"
 
 custom_domain: hotlogiq.ca
 
