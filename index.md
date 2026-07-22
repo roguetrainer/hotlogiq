@@ -1,16 +1,16 @@
 ---
 layout: home
-title: Thermyon — Origami ISA Framework
+title: Hot LogiQ — Origami ISA Framework
 nav_exclude: true
 ---
 
 {% include isa-nav.html %}
 
 <div style="text-align:center; margin-bottom: 1.5rem;">
-  <img src="/assets/images/asa-logo.png" alt="Thermyon logo" width="220">
+  <img src="/assets/images/asa-logo.png" alt="Hot LogiQ logo" width="220">
 </div>
 
-**Thermyon** — Five opcodes. One framework. Every scale of nature.
+**Hot LogiQ** — Five opcodes. One framework. Every scale of nature.
 
 **Author:** Ian R. C. Buckley — [ORCID 0009-0004-9287-2902](https://orcid.org/0009-0004-9287-2902)
 
@@ -18,10 +18,10 @@ nav_exclude: true
 
 ## Get Started
 
-- **New to Thermyon?** [Start Here](docs/getting-started/start-here.md)
+- **New to Hot LogiQ?** [Start Here](docs/getting-started/start-here.md)
 - **Browse all papers on Zenodo** [→](https://zenodo.org/communities/thermyon/records)
 - **ISA Reference** [→](docs/reference/opcodes.md)
-- **View on GitHub** [→](https://github.com/roguetrainer/thermyon)
+- **View on GitHub** [→](https://github.com/roguetrainer/hotlogiq)
 
 ---
 

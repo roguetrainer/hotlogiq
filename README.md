@@ -5,7 +5,7 @@ Source for the [Hot LogiQ website](https://hotlogiq.ca), a reference for the **R
 > *Eureka!* — Archimedes, upon jumping out of the bath. We respectfully disagree.
 
 **Author:** Ian R. C. Buckley · [ORCID 0009-0004-9287-2902](https://orcid.org/0009-0004-9287-2902)  
-**Zenodo community:** [thermyon](https://zenodo.org/communities/thermyon/) · 630+ papers (2024–)  
+**Zenodo community:** [thermyon](https://zenodo.org/communities/thermyon/) · 630+ papers (2024–) *(rename pending)*  
 **PyPI:** [hotlogiq](https://pypi.org/project/hotlogiq/)  
 **Live site:** <https://hotlogiq.ca>
 
