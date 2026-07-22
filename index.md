@@ -1,6 +1,6 @@
 ---
 layout: home
-title: HotLogiQ — Origami ISA Framework
+title: HotLogiQ — Thawing classical logic
 nav_exclude: true
 image: /assets/images/hotlogiq-logo.png
 ---
@@ -11,7 +11,9 @@ image: /assets/images/hotlogiq-logo.png
   <img src="/assets/images/hotlogiq-logo.png" alt="HotLogiQ logo" width="220">
 </div>
 
-**HotLogiQ** — Five opcodes. One framework. Every scale of nature.
+**HotLogiQ — Thawing classical logic.**
+
+The MGE softens Boolean logic at finite β, recovers quantum mechanics at β = *i*t, and extends into hot dissipative systems at β ∈ ℂ. Five opcodes. Every scale of nature.
 
 **Author:** Ian R. C. Buckley — [ORCID 0009-0004-9287-2902](https://orcid.org/0009-0004-9287-2902)
 
