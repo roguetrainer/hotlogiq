@@ -761,15 +761,14 @@ most powerful: systems with BIND can encode computations that BIND-free
 
 ## The full opcode table
 
-| Opcode | Graphical calculi | String diagram | Pachner move | AZ symmetry | Division algebra | Langlands |
-|--------|------------------|---------------|--------------|-------------|-----------------|-----------|
-| SPLIT | 🕷️ | $\Delta: A \to A \otimes A$ (split) | $1 \to 4$ | — | All rungs | Hecke eigendecomposition |
-| SPLAT | 🕷️ | $\mu: A \otimes A \to A$ (merge) | $4 \to 1$ | — | All rungs | L-function evaluation |
-| TWIST | 🕷️* | $\theta\_V: V \to V$ (curl) | Gauge move | $S$ (chiral) | All rungs | Monodromy of local system |
-| FLIP | 🕷️ | $(-)^\dagger$ (wire reversal) | $1 \to 3$ | $T$ (time reversal) | $\mathbb{R}$ / $\mathbb{H}$ | Langlands duality $G \leftrightarrow G^\vee$ |
-| FLOP | 🕷️* | $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ (cup) | $3 \to 1$ | $C$ (particle-hole) | $\mathbb{R}$ / $\mathbb{H}$ | Abelian reciprocity ($GL\_1$) |
-| LABEL | 🕷️ | $\eta: \mathbf{1} \to A$ (unit / dot) | Colouring | — (parity in PT) | All rungs | Automorphic representation $\pi$ |
-| BIND | 🐸 | Associator $\alpha\_{A,B,C}$ (trivalent) | Obstruction | — | $\mathbb{O}$ only | Non-Abelian Hecke interaction |
+| Opcode | Legacy name | Graphical calculi | String diagram | Pachner move | AZ symmetry | Division algebra | Langlands |
+|--------|------------|------------------|---------------|--------------|-------------|-----------------|-----------|
+| ORBIT | SPLIT | 🕷️ | $\Delta: A \to A \otimes A$ (split) | $1 \to 4$ | — | All rungs | Hecke eigendecomposition |
+| LABEL | SPLAT | 🕷️ | $\mu: A \otimes A \to A$ (merge) | $4 \to 1$ | — | All rungs | L-function evaluation |
+| TWIST | — | 🕷️* | $\theta\_V: V \to V$ (curl) | Gauge move | $S$ (chiral) | All rungs | Monodromy of local system |
+| FLIP | — | 🕷️ | $(-)^\dagger$ (wire reversal) | $1 \to 3$ | $T$ (time reversal) | $\mathbb{R}$ / $\mathbb{H}$ | Langlands duality $G \leftrightarrow G^\vee$ |
+| FLOP | — | 🕷️* | $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ (cup) | $3 \to 1$ | $C$ (particle-hole) | $\mathbb{R}$ / $\mathbb{H}$ | Abelian reciprocity ($GL\_1$) |
+| BIND | — | 🐸 | Associator $\alpha\_{A,B,C}$ (trivalent) | Obstruction | — | $\mathbb{O}$ only | Non-Abelian Hecke interaction |
 
 ---
 
@@ -794,7 +793,7 @@ well-defined chain complex
 $$0 \;\longrightarrow\; C^0 \;\xrightarrow{\partial^0}\; C^1 \;\xrightarrow{\partial^1}\; C^2 \;\longrightarrow\; 0$$
 
 where $C^k = \bigoplus_{|v|=k} A^{\otimes c(v)}$, $A = \mathbb{Z}[x]/(x^2)$ is the
-Frobenius algebra of SPLIT/SPLAT opcodes, and $v$ ranges over the cube of
+Frobenius algebra of ORBIT/LABEL opcodes, and $v$ ranges over the cube of
 resolutions of an ISA programme. The boundary map $\partial$ satisfies $\partial^2 = 0$
 as a consequence of the Frobenius algebra axioms — which are exactly the pentagon
 identity and Frobenius condition proved in Paper 357.
