@@ -3,7 +3,7 @@ layout: default
 title: The ISA Opcodes
 nav_order: 3
 description: "The canonical opcodes of the Origami ISA: ORBIT/LABEL/TWIST/BIND/FLIP/SNAP/MERGE/LINK — cohomological role, categorical structure, and incarnations across domains. Legacy names SPLIT/SPLAT/FLOP shown in parentheses."
-tags: [isa, opcodes, label, orbit, twist, bind, flip, split, splat, flop, category-theory, string-diagrams, completeness]
+tags: [isa, opcodes, label, orbit, twist, bind, flip, cup, split, splat, flop, category-theory, string-diagrams, completeness]
 portfolio: B
 ---
 
@@ -40,10 +40,10 @@ H^k needed to describe it exactly:
 
 > **Terminology note — legacy opcode names:** Earlier papers and drafts use a twelve-opcode
 > vocabulary. The current five-opcode names (LABEL / ORBIT / TWIST / BIND / FLIP) consolidate
-> those as follows: SPLAT → LABEL, SPLIT → ORBIT, FLOP merged into FLIP (same duality role),
-> BIND promoted from implicit to first-class. The sections below retain the legacy names
-> where they clarify categorical structure (especially the SPLIT/SPLAT Frobenius pair and the
-> FLIP/FLOP distinction in the AZ tenfold way); treat them as sub-roles of the five canonical opcodes.
+> those as follows: SPLAT → LABEL, SPLIT → ORBIT, FLOP → CUP (FLIP fermion sub-role),
+> BIND promoted from implicit to first-class. The sections below retain the legacy name FLOP
+> where it clarifies categorical structure (especially the FLIP/FLOP distinction in the AZ
+> tenfold way); treat CUP as the canonical name for that sub-role.
 
 **In one sentence: H⁰ is counting, H¹ is interference, H² is entanglement.**
 
@@ -82,7 +82,7 @@ with no interior vertex. Neither calculus assigns ORBIT a node: ORBIT *closes* a
 |--------|--------|-------|-------------------|---------------------|---------------|
 | ORBIT | 𝒪 | 🔄 | ■ (SPLIT) fan-out · ○ (ORBIT) closed loop | Comultiplication $\Delta: A \to A \otimes A$ · trace $\mathrm{tr}(\theta_A): \mathbf{1} \to \mathbf{1}$ | 1-to-many diagonalisation; closed feedback loop |
 | LABEL | ⊢ | 🏷️ | ◇ (SPLAT) projection · ▪ (LABEL) unit | Multiplication $\mu: A \otimes A \to A$ · unit $\eta: \mathbf{1} \to A$ | Many-to-1 evaluation; sector selection |
-| FLIP | ⌁ | 👁️ | ▲ (FLIP) dagger · △ (FLOP) cup / Born rule | Dagger $(-)^\dagger$ · counit $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ | Orientation reversal; duality; Born rule |
+| FLIP | ⌁ | 👁️ | ▲ (FLIP) dagger · △ (CUP) cup / Born rule | Dagger $(-)^\dagger$ · counit $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ | Orientation reversal; duality; Born rule |
 | TWIST | ∮ | 🌀 | ↻ | Ribbon element $\theta_V: V \to V$; topological spin | Phase / monodromy; 1-to-1 with memory |
 | BIND | ⋈ | 💎 | ⋈ | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | Non-associative fusion; recoupling; entanglement |
 
@@ -96,7 +96,7 @@ The same abstract opcode appears with different in/out counts depending on the
 domain. Each row is a physical domain; each column is one of the five canonical
 opcodes. Within each cell, the two sub-roles separated by · correspond to the
 legacy SPLIT/ORBIT sub-roles (ORBIT column), SPLAT/LABEL sub-roles (LABEL column),
-and FLIP/FLOP sub-roles (FLIP column). Read across a row to see how a domain
+and FLIP/CUP sub-roles (FLIP column). Read across a row to see how a domain
 implements the full ISA; read down a column to see the same abstract operation
 across completely different fields.
 
@@ -598,9 +598,9 @@ of the Baez threefold way.
 
 ---
 
-### FLOP 🕷️ *(FLIP fermion sub-role — particle-hole conjugation)*
+### CUP 🕷️ *(FLIP fermion sub-role — formerly FLOP)*
 
-**A wire curls under into a cup** (fermionisation).
+**A wire curls under into a cup** (fermionisation / Born rule).
 
 ```
   │   │
@@ -615,7 +615,7 @@ of the Baez threefold way.
 | **Category theory** | The Frobenius co-unit; the trace map $\mathrm{tr}: \mathrm{End}(V) \to k$; the Born rule |
 | **Algebra** | Jordan-Wigner string; Majorana fermion creation/annihilation; particle-hole conjugation $C$ |
 
-**Where FLOP appears:**
+**Where CUP appears:**
 
 | Domain | Instance | What gets fermionised |
 |--------|----------|-----------------------|
@@ -625,15 +625,12 @@ of the Baez threefold way.
 | Finance | Born rule / expectation value | Density matrix → portfolio expectation |
 | Langlands (abelian) | Class field theory / $GL\_1$ reciprocity | Hecke character → Galois character |
 
-**FLOP and the division algebra ladder:**
-- FLOP producing a **Majorana co-unit** ($C^2=+1$): lives at the $\mathbb{R}$-rung (Origami ISA, GOE, Dyson $\beta\_D=1$)
-- FLOP producing a **complex fermion co-unit** ($C^2=-1$): lives at the $\mathbb{H}$-rung (Meld ISA, GSE, Dyson $\beta\_D=4$)
-- No FLOP: lives at the $\mathbb{C}$-rung (Forge/Meld ISA, GUE, Dyson $\beta\_D=2$)
+**CUP and the division algebra ladder:**
+- CUP producing a **Majorana co-unit** ($C^2=+1$): lives at the $\mathbb{R}$-rung (Origami ISA, GOE, Dyson $\beta\_D=1$)
+- CUP producing a **complex fermion co-unit** ($C^2=-1$): lives at the $\mathbb{H}$-rung (Meld ISA, GSE, Dyson $\beta\_D=4$)
+- No CUP: lives at the $\mathbb{C}$-rung (Forge/Meld ISA, GUE, Dyson $\beta\_D=2$)
 
-**Key role:** FLOP is the *fermionisation / Born rule* opcode. It is present in
-every model where particle statistics matter. Its sign ($C^2=\pm1$) is the
-deepest structural label in the AZ tenfold way — the distinction between Majorana
-(self-conjugate) and Dirac (complex) fermions.
+**Key role:** CUP is the *fermionisation / Born rule* sub-role of FLIP. It is present in every model where particle statistics matter. Its sign ($C^2=\pm1$) is the deepest structural label in the AZ tenfold way — the distinction between Majorana (self-conjugate) and Dirac (complex) fermions. Legacy name: FLOP.
 
 ---
 
@@ -690,7 +687,7 @@ assignment is a LABEL.
 
 *A naming note:* BIND is the one opcode that lives exclusively in the 🐸 Frog
 Calculus — the trivalent vertex, the non-associative fusion, the G₂ structure
-that ZX calculus cannot express. Meanwhile SPLAT, FLIP, and FLOP — which sound
+that ZX calculus cannot express. Meanwhile LABEL (formerly SPLAT), FLIP, and CUP (formerly FLOP) — which sound
 exactly like things a frog does — are all firmly in the 🕷️ ZX spider calculus.
 The missed opportunity: **GULP** would have been perfect (three wires in, one
 out; irreversible; nothing else does it). BIND is in the LaTeX of too many
@@ -746,8 +743,8 @@ $F$-matrices but still satisfy the pentagon (they are a fusion category); they l
 the $\mathbb{H}$-rung boundary, not the $\mathbb{O}$-rung.
 
 **The Fidkowski-Kitaev collapse** ($\mathbb{Z} \to \mathbb{Z}\_8$) is BIND insertion:
-promoting a FLOP-only programme (free Majorana chain, $\mathbb{C}$-rung) to a
-FLOP+BIND programme ($\mathbb{O}$-rung) collapses the integer winding-number
+promoting a CUP-only programme (free Majorana chain, $\mathbb{C}$-rung) to a
+CUP+BIND programme ($\mathbb{O}$-rung) collapses the integer winding-number
 classification to $\mathbb{Z}\_8$, because $8$ is the Cayley-Dickson period at
 the octonion rung.
 
@@ -767,7 +764,7 @@ most powerful: systems with BIND can encode computations that BIND-free
 | LABEL | SPLAT | 🕷️ | $\mu: A \otimes A \to A$ (merge) | $4 \to 1$ | — | All rungs | L-function evaluation |
 | TWIST | — | 🕷️* | $\theta\_V: V \to V$ (curl) | Gauge move | $S$ (chiral) | All rungs | Monodromy of local system |
 | FLIP | — | 🕷️ | $(-)^\dagger$ (wire reversal) | $1 \to 3$ | $T$ (time reversal) | $\mathbb{R}$ / $\mathbb{H}$ | Langlands duality $G \leftrightarrow G^\vee$ |
-| ↳ FLOP | *(FLIP sub-role)* | 🕷️* | $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ (cup) | $3 \to 1$ | $C$ (particle-hole) | $\mathbb{R}$ / $\mathbb{H}$ | Abelian reciprocity ($GL\_1$) |
+| ↳ CUP | *(FLIP sub-role, formerly FLOP)* | 🕷️* | $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ (cup) | $3 \to 1$ | $C$ (particle-hole) | $\mathbb{R}$ / $\mathbb{H}$ | Abelian reciprocity ($GL\_1$) |
 | BIND | — | 🐸 | Associator $\alpha\_{A,B,C}$ (trivalent) | Obstruction | — | $\mathbb{O}$ only | Non-Abelian Hecke interaction |
 
 ---
@@ -958,7 +955,7 @@ The ISA opcodes did not emerge from nowhere. Two graphical calculi were the dire
 quantum mechanics built from two spider generators (Z and X) obeying the Frobenius
 equations. It covers SPLIT, SPLAT, FLIP, and LABEL fully, and handles TWIST partially
 (phase gates exist in ZX but the full ribbon/topological twist — Berry phase, anyonic
-spin, BKT transition — is not expressible). FLOP is partially present as the compact
+spin, BKT transition — is not expressible). CUP is partially present as the compact
 structure (cups and caps) but the fermion-statistics interpretation ($C^2 = \pm 1$)
 is outside ZX's scope. BIND is entirely absent: ZX is strictly associative.
 
@@ -1008,5 +1005,5 @@ different hardware.
 - **[The Langlands Perspective](../theory/langlands.md)** — how each opcode column in the
   tables above maps onto the Langlands programme: SPLIT = spectral decomposition
   of $L^2(G(\mathbb{Q})\backslash G(\mathbb{A}))$; TWIST = Tate twist / Hecke
-  character; BIND = Rankin-Selberg convolution; FLOP = Arthur-Selberg trace
+  character; BIND = Rankin-Selberg convolution; CUP = Arthur-Selberg trace
   formula. The Langlands correspondence as adèlic ISA semiring-polymorphism.
