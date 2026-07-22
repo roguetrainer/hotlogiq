@@ -218,6 +218,73 @@ The **Frobenius axiom** $(\mu \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \D
 These are not analogies. They are the same equation, in the same Frobenius algebra,
 evaluated in different semirings over different physical hardware.
 
+### The Frobenius algebra for bonding: the Valence ISA extension
+
+The single-site Frobenius algebra above (§ "Why ORBIT and LABEL are dual") describes
+operations *within* one orbital. For **bonding** — operations *between* orbitals — the
+PROP must carry a second Frobenius algebra structure, one where the objects carry
+orbital-knot labels. Category theory forces exactly two new opcodes and no others:
+
+| CT symbol | Name | Type | Physical meaning | Status |
+| --------- | ---- | ---- | ---------------- | ------ |
+| $\eta$    | ORBIT | $\mathbf{1} \to A$ | orbital creation, prepare torus knot eigenstate | ✓ exists |
+| $\delta$  | BIND  | $A \to A \otimes A$ | Hopf fibration split, entanglement creation | ✓ exists |
+| $\varepsilon$ | FLIP | $A \to \mathbf{1}$ | measurement, orbital annihilation | ✓ exists |
+| $\mu$     | **MERGE** | $A \otimes A \to A$ | covalent bond formation: connected sum of torus knots | ✗ **new** |
+| —         | **LINK**  | $A \otimes B \to A \otimes B$ | coordinate/dative bond: Hopf linking without topology change | ✗ **new** |
+| —         | SNAP  | **2-cell** $\mathcal{F} \to \mathcal{F}'$ | β\* tier transition; switches active PROP | primitive (see below) |
+
+**Why MERGE is forced:** a Frobenius algebra requires a multiplication map
+$\mu: A \otimes A \to A$. In the single-site ISA, this role is played by the LABEL
+projection sub-role — evaluating many states into one. For bonding, $\mu$ acquires
+a new physical content: two orbital knots $T(p_1, q_1)$ and $T(p_2, q_2)$ form a
+covalent bond whose molecular orbital has knot type $T(p_1, q_1) \# T(p_2, q_2)$
+(connected sum, with additive genus $g_1 + g_2$). This is **MERGE** — it was absent
+from the Origami ISA because the single-site ISA never had two distinct orbital types
+as inputs. Hybridisation (sp³, sp²) is NOT a new opcode: it is TWIST applied to the
+orbital colour label (a change of basis, not a new morphism type).
+
+**Why LINK is forced:** the braided monoidal structure of the PROP requires a
+braiding morphism $\tau: A \otimes B \to B \otimes A$. For orbital knots, the
+natural braiding is not a swap but a **Hopf linking** — two orbital knots $T(p_A, q_A)$
+and $T(p_B, q_B)$ can be linked with linking number $\nu$ (bond order) without their
+topological types changing. This is the coordinate/dative bond: the ligand knot and
+the metal knot remain distinct (unlike MERGE), but they are geometrically linked.
+LINK is forced by the braided monoidal structure when objects carry knot-type labels.
+
+**The Frobenius condition as microscopic reversibility:**
+$$(\mathrm{id} \otimes \delta) \circ \mu = (\mu \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \delta)$$
+This is the algebraic form of **detailed balance** (microscopic reversibility): bond
+formation followed by bond breaking in either order gives the same result. Every
+reversible chemical reaction satisfies it. An irreversible reaction — one that violates
+detailed balance — lives outside the Frobenius sector. The Frobenius condition is not
+an extra axiom imposed on chemistry; it is the algebraic statement of a law chemistry
+already obeys.
+
+**Why SNAP is primitive — and not derivable from MERGE + FLIP:**
+MERGE, LINK, and all the other opcodes are **1-cell morphisms within a PROP** —
+operations that act inside a fixed computational tier (a fixed free-energy basin).
+SNAP is a **2-cell morphism between PROPs** — it marks the $\beta^*$ threshold where
+the system transitions between ISA tiers (H⁰ $\leftrightarrow$ H¹ $\leftrightarrow$ H²).
+No composition of 1-cells can produce a 2-cell: they live at different categorical
+levels. SNAP is therefore primitive by categorical level, not by type.
+
+The physical analogue is exact: MERGE is a chemical reaction (reversible, within one
+thermodynamic phase, satisfies the Frobenius condition). SNAP is a phase transition
+(irreversible, crosses between phases, violates the Frobenius condition on
+the side of the transition it came from). No sequence of chemical reactions produces
+a phase transition. This is why SNAP cannot be written as FLIP∘MERGE — the two
+operations are not in the same categorical layer.
+
+**Consequence for PT-symmetric computing (Paper 664):** the exceptional point (EP)
+crossing in a PT-symmetric material is a physical realisation of the SNAP 2-cell.
+The EP is simultaneously the $\beta^*$ snap threshold (MGE), the orbital knot
+crossing-change transition (torus curve changes type), and the tier boundary
+(ORBIT → TWIST → BIND regime). Existing PT-symmetric laser arrays are already
+executing ORBIT-tier computation (tropical mode competition); adding laser driving
+at orbital-commensurate frequencies implements TWIST-tier gates; crossing the EP
+executes SNAP. See Papers 662 and 664.
+
 ### The traced symmetric monoidal category (TSMC)
 
 Combining symmetric monoidal (swap wires) with traced (close feedback loops) gives
@@ -783,7 +850,8 @@ for what it *feels* like to work in that regime.
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Origami** | Origami ISA | all β (umbrella) | H⁰–H² | Weyl, Racah | Five-opcode open standard; tropical at β→∞, quantum at β=it | 1 | ℂ | ZX (spiders, undirected) |
 | **Forge** | Forge ISA | 0 < β < ∞ (real Gibbs) | H⁰–H² | Boltzmann, Gibbs | Free-energy routing; MGE soft threshold; snap at β* | 1 | ℂ | ZX (weighted) |
-| **Raven** | Raven ISA | β ≈ β* (physiological) | H⁰–H² | Hopfield, Ninio | Biological proofreading; enzyme catalysis; kinetic QEC | 1 | ℂ | ZX (weighted) |
+| **Raven** | Raven ISA | β = α + iωt (complex) | H⁰–H² | Bender, Boettcher | PT-symmetric computation; complex-β knot-type transitions; EP-enhanced sensing | 1 | ℂ | ZX (weighted) |
+| **Valence** | Valence ISA | all β (bonding extension) | H⁰–H² | Kelvin, Tait, Pauling | Covalent bonds as connected-sum MERGE; coordinate bonds as LINK; Frobenius = detailed balance; torus knots as orbital codes | 1 | ℂ | ZX + satellite knots |
 | **Knot** | Knot ISA | β → ∞ (imaginary oscillators) | H⁰–H² | Kauffman, Spencer-Brown | Q-calculus; three imaginary marks; Jones polynomial | 3 | ℍ (Q₈) | Directed ZX (oriented wires) |
 | **Frog** | Frog ISA | β → ∞ (exceptional) | H⁰–H³ | Kauffman (731 Calculus) | Seven imaginary marks; Fano multiplication; non-associative | 7 | 𝕆 (Moufang loop) | 731 Frog Calculus (4-legged tetrahedra + ribbon-legs) |
 | **Motive** | Motive ISA | all β (abstract parent) | H⁰–H³ | Carnot, Bender | ERASE = second law; PT exceptional point; five primitive opcodes | — | — | Laws of Form |
