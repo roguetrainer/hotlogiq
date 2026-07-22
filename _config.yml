@@ -9,7 +9,7 @@ remote_theme: just-the-docs/just-the-docs@v0.10.0
 author: Ian R. C. Buckley
 
 # ── Just-the-docs settings ────────────────────────────────────────────────────
-color_scheme: light
+color_scheme: hotlogiq
 
 logo: "/assets/images/asa-logo.png"
 favicon_ico: "/assets/images/asa-logo.png"

@@ -1,0 +1,12 @@
+// HotLogiQ layout tweaks (non-variable overrides).
+// Colour variables ($link-color etc.) live in _sass/color_schemes/hotlogiq.scss.
+
+.site-title {
+  font-weight: 700;
+}
+
+// ISA nav box — subtle warm background to complement the orange-red accent.
+.isa-nav-box {
+  border-color: #e0c8b8 !important;
+  background: #fdf8f5 !important;
+}

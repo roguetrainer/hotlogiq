@@ -1,0 +1,8 @@
+// HotLogiQ colour scheme — extends Just the Docs "light" with
+// deep orange-red (#C44B1A) accent, matching the logo terracotta.
+@import "./color_schemes/light";
+
+$link-color: #C44B1A;
+$nav-child-link-color: darken($link-color, 5%);
+$btn-primary-color: $link-color;
+$search-result-preview-highlight-font-color: $link-color;
