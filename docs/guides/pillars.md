@@ -2,7 +2,7 @@
 layout: default
 title: Pillars
 nav_order: 2
-description: "The five load-bearing ideas of the Hot LogiQ / Origami ISA framework."
+description: "The five load-bearing ideas of the HotLogiQ / Origami ISA framework."
 ---
 
 {% include isa-nav.html %}
@@ -109,7 +109,7 @@ This surprises most people. We are trained to think that nature is pairwise at h
 
 BIND cannot be built from TWIST or FLIP applied twice. It is not a 2-body interaction in disguise. The reason DFT fails for strongly-correlated molecules, the reason Clifford circuits cannot achieve universal quantum computation, and the reason the 2008 crisis could not be unwound bilaterally are all the same theorem: you hit the H¹→H² boundary and BIND is on the other side.
 
-The irreducibility of 4-body interactions is not a new discovery. It is a ninety-year-old fact from spectroscopy that has not yet been fully absorbed by the rest of science. Hot LogiQ names it, and makes it computable across every domain where it appears.
+The irreducibility of 4-body interactions is not a new discovery. It is a ninety-year-old fact from spectroscopy that has not yet been fully absorbed by the rest of science. HotLogiQ names it, and makes it computable across every domain where it appears.
 
 *Key papers: 258, 357, 447, 455, 571, 572 (ISA chain complex and G₂ spider)*
 

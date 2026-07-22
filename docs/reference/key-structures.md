@@ -2,7 +2,7 @@
 layout: default
 title: Key Structures
 nav_order: 9
-description: "Six mathematical structures that are genuinely load-bearing in Hot LogiQ — with Wikipedia pointers and one-sentence explanations of their role."
+description: "Six mathematical structures that are genuinely load-bearing in HotLogiQ — with Wikipedia pointers and one-sentence explanations of their role."
 ---
 
 {% include isa-nav.html %}
@@ -10,7 +10,7 @@ description: "Six mathematical structures that are genuinely load-bearing in Hot
 # Key Mathematical Structures
 {: .no_toc }
 
-*Six structures that recur throughout the framework. Each entry is: what it is (with a Wikipedia link), why it appears in Hot LogiQ, and where to read more.*
+*Six structures that recur throughout the framework. Each entry is: what it is (with a Wikipedia link), why it appears in HotLogiQ, and where to read more.*
 {: .fs-5 .fw-300 }
 
 These are not analogies or decorative mathematics. They are the objects the framework is *built from*. Everything else — the opcodes, the β-deformation, the H^k tiers — is assembled from these six pieces.
@@ -77,6 +77,6 @@ These are not analogies or decorative mathematics. They are the objects the fram
 
 ---
 
-*These six structures are the mathematical vocabulary of Hot LogiQ. For Hot LogiQ-specific terminology (β* snap, ORBIT opcode, H^k tier), see the [Glossary](glossary.md). For the full technical treatment, follow the paper links.*
+*These six structures are the mathematical vocabulary of HotLogiQ. For HotLogiQ-specific terminology (β* snap, ORBIT opcode, H^k tier), see the [Glossary](glossary.md). For the full technical treatment, follow the paper links.*
 
 {% include isa-nav.html %}
