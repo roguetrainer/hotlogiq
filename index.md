@@ -2,12 +2,13 @@
 layout: home
 title: HotLogiQ — Origami ISA Framework
 nav_exclude: true
+image: /assets/images/hotlogiq-logo.png
 ---
 
 {% include isa-nav.html %}
 
 <div style="text-align:center; margin-bottom: 1.5rem;">
-  <img src="/assets/images/asa-logo.png" alt="HotLogiQ logo" width="220">
+  <img src="/assets/images/hotlogiq-logo.png" alt="HotLogiQ logo" width="220">
 </div>
 
 **HotLogiQ** — Five opcodes. One framework. Every scale of nature.
