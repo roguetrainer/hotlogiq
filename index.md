@@ -31,10 +31,10 @@ A single inverse temperature β interpolates between classical winner-takes-all 
 
 | Section | Purpose |
 |---------|---------|
-| [Getting Started](docs/getting-started/) | Entry points and overview |
-| [Reference](docs/reference/) | Opcodes, glossary, key structures |
+| [Getting Started](docs/getting-started/start-here) | Entry points and overview |
+| [Reference](docs/reference/opcodes) | Opcodes, glossary, key structures |
 | [Theory](docs/theory/) | Conceptual foundations and theory |
-| [Guides](docs/guides/) | Explainers, portfolios, paper index |
+| [Guides](docs/guides/explainers) | Explainers, portfolios, paper index |
 
 ---
 
@@ -47,4 +47,4 @@ This site is organized for maintainability:
 - **`docs/theory/`** — Theoretical explorations and advanced topics
 - **`docs/guides/`** — Navigation guides, explainers, and indices
 
-For detailed documentation, browse the sections above or [view the full site](docs/getting-started/).
+For detailed documentation, browse the sections above or [start here](docs/getting-started/start-here).
