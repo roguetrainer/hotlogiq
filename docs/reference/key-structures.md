@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Key Structures
+title: Key Math
 nav_order: 9
 description: "Six mathematical structures that are genuinely load-bearing in HotLogiQ — with Wikipedia pointers and one-sentence explanations of their role."
 ---

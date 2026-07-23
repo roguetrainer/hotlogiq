@@ -30,7 +30,7 @@ Five pages that together cover the core of the framework — in reading order:
 1. **[β: The Universal Temperature](/docs/theory/maslov-dequantization)** — the single idea the whole framework rests on: β interpolates classical, statistical, and quantum regimes. Every hard threshold is β→∞ in disguise.
 2. **[The β-plane](/docs/theory/forge-meld)** — the full complex-β map: where Forge, Meld, Raven, and Origami live, and how PT-symmetric physics fits in.
 3. **[Pillars](/docs/guides/pillars)** — the five load-bearing claims, with the key evidence for each.
-4. **[Key Structures](/docs/reference/key-structures)** — the six mathematical objects the framework is built from (Grassmannian, Fano plane, Hopf fibration, …).
+4. **[Key Math](/docs/reference/key-structures)** — the six mathematical objects the framework is built from (Grassmannian, Fano plane, Hopf fibration, …).
 5. **[Applications](/docs/applications/)** — ten concrete results, each spanning a family of papers.
 
 ---
