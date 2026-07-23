@@ -2,7 +2,6 @@
 layout: default
 title: Explainers
 nav_order: 5
-has_children: true
 ---
 
 Plain-language guides to every paper — no prior mathematics required. Filter by theme below.

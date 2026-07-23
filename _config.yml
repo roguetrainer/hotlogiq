@@ -37,6 +37,7 @@ exclude:
   - "*.aux"
   - Gemfile
   - Gemfile.lock
+  - "papers/**/README.md"
 
 # ── Plugins ───────────────────────────────────────────────────────────────────
 plugins:

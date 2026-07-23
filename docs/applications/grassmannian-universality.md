@@ -3,7 +3,6 @@ layout: default
 title: "The Grassmannian is the universal space for correlated systems"
 parent: Applications
 nav_order: 9
-nav_exclude: true
 description: "A single angle θ_G diagnoses multi-reference chemistry, QEC threshold failure, nuclear bonding, and financial contagion, with the same β* snap at θ_G ≈ 20° across all four domains."
 tags: [grassmannian, fubini-study, beta-snap, schmidt-decomposition, universal, chemistry, qec, finance, nuclear, h-k-ladder, trs-framework]
 portfolio: A

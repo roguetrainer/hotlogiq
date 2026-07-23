@@ -13,6 +13,33 @@ The tables below cover landmark and foundational papers. For the full list brows
 
 ---
 
+## New to HotLogiQ? Start here
+
+Short, accessible papers — no prerequisites. Each stands alone.
+
+| # | Title | DOI | Audience |
+|---|-------|-----|----------|
+| 597 | [In Praise of Soft Thresholds](https://doi.org/10.5281/zenodo.21373469) | [21373469](https://zenodo.org/records/21373469) | Everyone — five examples, zero equations |
+| 443 | [Planck's Constant in Disguise](https://doi.org/10.5281/zenodo.20752384) | [20752384](https://zenodo.org/records/20752384) | Curious reader — six famous equations shown to be one |
+| 398 | [The Topology of Risk: A Primer](https://doi.org/10.5281/zenodo.20642983) | [20642983](https://zenodo.org/records/20642983) | Finance — H⁰/H¹/H² from the 2008 crisis |
+| 408 | [The Fano Plane is the Right Way to Think About Qubits](https://doi.org/10.5281/zenodo.20667176) | [20667176](https://zenodo.org/records/20667176) | Quantum computing practitioners |
+| 413 | [Molecular Machines as Origami ISA Programmes](https://doi.org/10.5281/zenodo.20682101) | [20682101](https://zenodo.org/records/20682101) | Biologists and biochemists |
+| 409 | [EconIAC — Overview and Reading Guide](https://doi.org/10.5281/zenodo.20679006) | [20679006](https://zenodo.org/records/20679006) | Economists |
+
+---
+
+### "In Praise of…" series
+
+Quirky, accessible essays that take one mathematical object seriously and follow the consequences.
+
+| # | Title | DOI |
+|---|-------|-----|
+| 597 | [In Praise of Soft Thresholds](https://doi.org/10.5281/zenodo.21373469) | [21373469](https://zenodo.org/records/21373469) |
+| 386 | [In Praise of Tetrahedra: Why Four Objects Change Everything](https://doi.org/10.5281/zenodo.20581484) | [20581484](https://zenodo.org/records/20581484) |
+| 310 | [In Praise of Qudits](https://zenodo.org/records/20269991) | [20269991](https://zenodo.org/records/20269991) |
+
+---
+
 ## Foundations (Portfolio A–B)
 
 | # | Title | DOI |

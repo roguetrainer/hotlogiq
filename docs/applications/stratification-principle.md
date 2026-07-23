@@ -3,7 +3,6 @@ layout: default
 title: "The H^k stratification is not an analogy"
 parent: Applications
 nav_order: 7
-nav_exclude: true
 description: "Why the three-tier H⁰/H¹/H² structure appears across mathematics, physics, statistics, and science — what is exact, what is precise, and what is organisational."
 tags: [stratification, hk, analogy, isomorphism, mcmc, evt, causal-inference, cohomology, semiring, precision]
 portfolio: F
