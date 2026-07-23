@@ -864,7 +864,7 @@ for what it *feels* like to work in that regime.
 | **Valence** | Valence ISA | all β (bonding extension) | H⁰–H² | Kelvin, Tait, Pauling | Covalent bonds as connected-sum MERGE; coordinate bonds as LINK; Frobenius = detailed balance; torus knots as orbital codes | 1 | ℂ | ZX + satellite knots |
 | **Knot** | Knot ISA | β → ∞ (imaginary oscillators) | H⁰–H² | Kauffman, Spencer-Brown | Q-calculus; three imaginary marks; Jones polynomial | 3 | ℍ (Q₈) | Directed ZX (oriented wires) |
 | **Frog** | Frog ISA | β → ∞ (exceptional) | H⁰–H³ | Kauffman (731 Calculus) | Seven imaginary marks; Fano multiplication; non-associative | 7 | 𝕆 (Moufang loop) | 731 Frog Calculus (4-legged tetrahedra + ribbon-legs) |
-| **Motive** | Motive ISA | all β (abstract parent) | H⁰–H³ | Carnot, Bender | ERASE = second law; PT exceptional point; five primitive opcodes | — | — | Laws of Form |
+| **Motive** | Motive ISA | all β (abstract parent) | H⁰–H³ | Carnot, Bender | Carnot cycles = ERASE + FLOW; PT exceptional point; five primitive opcodes | — | — | Laws of Form |
 | **Hum** | Hum ISA | β = it/ℏ (imaginary) | H³ | Lamb, Bethe | QFT vacuum; EMIT is the one new primitive; amplituhedron as ORBIT | — | — | Feynman / amplituhedron |
 | **Rising Sea** | Rising Sea ISA | full ℂ_β plane | all | Grothendieck | β-plane fibration of all ISAs; Noether from Aut(P_Motive) | — | — | — |
 | **Pentagon** | Pentagon ISA | abstract (coherence) | — | Baez, Mac Lane | Monoidal coherence theorem; five sides = five opcodes | — | — | — |
