@@ -266,11 +266,11 @@ structure of the multi-sheet EP locus at irrational ε.
 - [PT Symmetry in Unexpected Places](https://doi.org/10.5281/zenodo.21480284) (`PtSurvey`) —
   survey across chemistry, QEC, ranking, biology, information geometry; EP = β\* snap theorem;
   Raven ISA; FEP-PT bridge; written for Carl Bender ·
-  [Explainer](https://github.com/roguetrainer/differentiable-tropical-networks/blob/main/papers/656_pt_symmetry_isa/EXPLAINER_656.md)
+  [Explainer](/papers/10.5281-zenodo.21480284/)
 
 - [The Non-Hermitian ISA: PT Symmetry, Exceptional Points, and the 38-Fold Way](https://doi.org/10.5281/zenodo.21480491) (`NonHermIsa2`) —
   AZ symmetry classes in ISA language; LABEL failure = PT phase transition; EP at H¹/H² boundary ·
-  [Explainer](https://github.com/roguetrainer/differentiable-tropical-networks/blob/main/papers/460_pt_symmetric_isa/EXPLAINER_460.md)
+  [Explainer](/papers/10.5281-zenodo.21480491/)
 
 - [The Adelic β-Plane](https://doi.org/10.5281/zenodo.21245459) (`AdelicBeta`) —
   unified parameter space; classical (β real), quantum (β = it), PT-symmetric (β ∈ ℂ near imaginary axis)
@@ -280,7 +280,7 @@ structure of the multi-sheet EP locus at irrational ε.
 - [PiTch: A Topological Invariant for PT-Symmetric Systems](https://doi.org/10.5281/zenodo.21509972) (`PiTch`) —
   **start here for the mathematics**; PiTch number S = n−1 for n-th order EP;
   Berry phase Φ = πS; ℤₙ monodromy; Bender-Boettcher S = 0 certificate; 24/24 checks ·
-  [Explainer (1 page)](https://github.com/roguetrainer/differentiable-tropical-networks/blob/main/papers/678_snap_count_pt_symmetry/EXPLAINER_678.md)
+  [Explainer (1 page)](/papers/10.5281-zenodo.21509972/)
 
 - [Mean-Field Breakdown, Exceptional Geometry, and H² Universality](https://doi.org/10.5281/zenodo.21427824) (`MeanFieldBreak`) —
   mean-field collapse at the H² threshold; exceptional points as universality boundary
@@ -290,11 +290,11 @@ structure of the multi-sheet EP locus at irrational ε.
 - [PT-Symmetric Lifting](https://doi.org/10.5281/zenodo.21480495) (`PtLifting`) —
   unified language for quantum algorithms via EP-free evolution; HSP and walk families;
   Conditions A/B/C for lifting ·
-  [Explainer](https://github.com/roguetrainer/differentiable-tropical-networks/blob/main/papers/635_pt_lifting_quantum_algorithms/EXPLAINER_635.md)
+  [Explainer](/papers/10.5281-zenodo.21480495/)
 
 - [PT-Exceptional-Point Search: Beyond the BBBV Bound](https://doi.org/10.5281/zenodo.21480499) (`PtEpSearch`) —
   EP sensing enhancement is real; postselection cancels the speedup exactly; what remains open ·
-  [Explainer](https://github.com/roguetrainer/differentiable-tropical-networks/blob/main/papers/636_pt_exceptional_point_search/EXPLAINER_636.md)
+  [Explainer](/papers/10.5281-zenodo.21480499/)
 
 - [PT-Symmetric Combinatorics](https://doi.org/10.5281/zenodo.21480493) (`PtCombinato`) —
   SAT/TSP/graph-colouring as PT-breaking; Beraha numbers = EP₂; PT-Hardness Conjecture
@@ -307,7 +307,7 @@ structure of the multi-sheet EP locus at irrational ε.
 
 - [Raven on Existing Hardware](https://doi.org/10.5281/zenodo.21480501) (`RavenHardware`) —
   three routes to complex-β (Lindblad/Naimark/hybrid); 5-qubit Ising example; hardware roadmap 2026–2035 ·
-  [Explainer](https://github.com/roguetrainer/differentiable-tropical-networks/blob/main/papers/639_raven_on_existing_hardware/EXPLAINER_639.md)
+  [Explainer](/papers/10.5281-zenodo.21480501/)
 
 - [The Raven ISA: Enzymes as Molecular Programs](https://doi.org/10.5281/zenodo.21416925) (`RavenEnzyme`) —
   enzyme kinetics as PT-symmetric computation; SNAP↑/↓, ERASE, FLOW(β ∈ ℂ)
