@@ -2,8 +2,8 @@
 layout: default
 title: "PT Symmetry & Exceptional Points"
 nav_order: 8
-description: "For physicists already fluent in PT-symmetric quantum mechanics: how exceptional points, PT phase transitions, and eigenvalue braiding connect to the H^k tier ladder, SNAP-count, and the computational structure of non-Hermitian systems."
-tags: [pt-symmetry, exceptional-points, non-hermitian, berry-phase, gain-loss, snap-count, hpu]
+description: "For physicists already fluent in PT-symmetric quantum mechanics: how exceptional points, PT phase transitions, and eigenvalue braiding connect to the H^k tier ladder, PiTch number, and the computational structure of non-Hermitian systems."
+tags: [pt-symmetry, exceptional-points, non-hermitian, berry-phase, gain-loss, pitch-number, pitch, hpu]
 portfolio: A
 ---
 
@@ -30,8 +30,8 @@ resource. The PT phase transition — that sharp boundary between real and
 complex-conjugate eigenvalue pairs first identified by Bender and Boettcher
 (1998) — is a tier boundary in a general classification of physical
 computation. The new invariant that captures this structure is the
-**SNAP-count**: the total algebraic weight of all exceptional points enclosed
-or crossed by a path in parameter space. SNAP-count is to non-Hermitian
+**PiTch number**: the total algebraic weight of all exceptional points enclosed
+or crossed by a path in parameter space. The PiTch number is to non-Hermitian
 dynamics what T-count is to fault-tolerant quantum computing.
 
 ---
@@ -93,7 +93,7 @@ the substrate is what varies.
 
 ---
 
-## SNAP-count: the new invariant
+## PiTch number: the new invariant
 
 ### Definition
 
@@ -121,7 +121,7 @@ single invariant:
 **Reading the table:** one loop around an n-th order EP permutes the
 eigenvalue sheets by an n-cycle in ℤₙ, accumulates a Berry phase of 2π/n,
 and gives Kato eigenvalue splitting proportional to ε^{1/n} near the EP.
-These three facts were known separately. SNAP-count unifies them: the single
+These three facts were known separately. PiTch number unifies them: the single
 integer S = n−1 determines all three.
 
 **Two loops around a 4th order EP** give permutation (0 2)(1 3) — the
@@ -136,8 +136,8 @@ The winding number of a path around a region of parameter space is a
 topological invariant, but it is too coarse for the full eigenvalue braiding
 structure. Consider two distinct situations:
 
-- **Situation A:** one 3rd order EP enclosed by γ. Monodromy = ℤ₃. SNAP-count S = 2.
-- **Situation B:** three separate 2nd order EPs enclosed by γ. Monodromy = S₃ (symmetric group on 3 elements). SNAP-count S = 3.
+- **Situation A:** one 3rd order EP enclosed by γ. Monodromy = ℤ₃. PiTch number S = 2.
+- **Situation B:** three separate 2nd order EPs enclosed by γ. Monodromy = S₃ (symmetric group on 3 elements). PiTch number S = 3.
 
 Both situations have the same winding number = 1. But S = 2 ≠ 3, and ℤ₃ ≠ S₃ as
 groups — ℤ₃ is abelian (cyclic), S₃ is non-abelian. The observable consequence:
@@ -145,7 +145,7 @@ the eigenvalue braiding is a cyclic permutation in situation A and potentially
 a non-cyclic permutation in situation B. Any measurement that encodes information
 in the eigenvalue ordering can distinguish them; winding number cannot.
 
-SNAP-count is not a complete invariant in general (two paths can have the same S
+PiTch number is not a complete invariant in general (two paths can have the same S
 but different permutation groups), but it is a strictly finer invariant than
 winding number, and for cyclic EPs it is complete.
 
@@ -153,7 +153,7 @@ winding number, and for cyclic EPs it is complete.
 
 ## Numerical evidence
 
-Experiments x678a, x678b, and x678c verify the SNAP-count table for 2nd, 3rd,
+Experiments x678a, x678b, and x678c verify the PiTch number table for 2nd, 3rd,
 and 4th order EPs in a family of non-Hermitian random matrices:
 
 | n | S | Monodromy | Phase/loop | Kato exp | Experiment |
@@ -166,15 +166,16 @@ Each experiment: (i) constructs an n-th order EP via fine-tuned complex
 deformation of a Hermitian starting matrix; (ii) tracks eigenvalue sheets
 numerically around a closed loop in parameter space; (iii) reads off
 monodromy permutation, accumulated phase, and power-law splitting exponent
-and compares to the SNAP-count prediction. All 18 tests pass.
+and compares to the PiTch number prediction. All 18 tests pass.
 
-**Experiment x678d** (in progress) addresses Bender's original system
-H = p² + x²(ix)^ε: what is the SNAP-count structure of the ε-parametrised
-EP locus?
+**Experiment x678d** addresses Bender's original system H = p² + x²(ix)^ε
+via an effective 2×2 PT model at each level pair. Result: S = 0 throughout
+ε ≥ 0 (all pairs in the H¹ tier); the PiTch threshold appears at ε = 0.
+This gives the 1998 real-spectrum result a topological certificate. [PASS 6/6]
 
 ---
 
-## SNAP-count as a computational resource
+## PiTch number as a computational resource
 
 ### The T-count analogy
 
@@ -183,7 +184,7 @@ non-Clifford gate cost. Clifford gates are cheap (stabiliser states, easy to
 simulate classically); T gates are expensive (they promote Clifford circuits
 into the genuinely quantum regime). The T-count is the resource metric.
 
-SNAP-count plays the same role for non-Hermitian computation:
+PiTch number plays the same role for non-Hermitian computation:
 
 - **S = 0:** the path in parameter space never crosses or encloses an EP. The
   system stays in one tier throughout its evolution. It can be efficiently
@@ -195,7 +196,7 @@ SNAP-count plays the same role for non-Hermitian computation:
   computation.
 
 The analogy is imperfect in one important direction: T-count measures a
-*cost* (you want it low for efficient classical simulation); SNAP-count
+*cost* (you want it low for efficient classical simulation); PiTch number
 measures a *resource* (you want it non-zero to exploit EP-specific physics).
 But the structural parallel holds — both are invariants that divide circuits
 into computationally distinct classes.
@@ -204,18 +205,18 @@ into computationally distinct classes.
 
 The HPU (Hot Processing Unit) is the hardware class that deliberately
 programmes with gain, loss, and complex β as first-class resources. Five
-substrate families have been identified, each with a natural SNAP-count
+substrate families have been identified, each with a natural PiTch number
 operating regime:
 
-| Class | Substrate | SNAP-count regime | Key feature |
-|-------|-----------|-------------------|-------------|
+| Class | Substrate | S (PiTch) | Key feature |
+|-------|-----------|-----------|-------------|
 | HPU-P | PT-symmetric photonic | S ≥ 1 | EP crossing = SNAP↑ event |
 | HPU-B | Bosonic cat qubit | S = 0 (controlled) | ERASE opcode; autonomous error correction |
 | HPU-R | Radical-pair molecular | S = 0 or 1 | Spin selection; ERASE = triplet/singlet swap |
 | HPU-C | Non-Hermitian circuit | S = 1 | SNAP↓ = non-Hermitian skin effect |
-| HPU-E | EP sensor array | S = 0 (at the EP) | SNAP-count = 0 sensing; maximally sensitive |
+| HPU-E | EP sensor array | S = 0 (at the EP) | S = 0 sensing; maximally sensitive |
 
-The HPU-E entry deserves attention. "SNAP-count = 0 sensing" sounds paradoxical
+The HPU-E entry deserves attention. "PiTch number = 0 sensing" sounds paradoxical
 — if S = 0, hasn't nothing happened? The point is subtler: the EP sensor
 operates *at* the snap threshold β\*₁₂, poised exactly at the EP without
 crossing it. The anomalous Kato splitting ε^{1/n} is maximal at the EP; the
@@ -225,15 +226,15 @@ critical point and using the diverging susceptibility as a transducer.
 
 **Result:** EP sensing — the observation that sensitivity to a perturbation δ
 near an n-th order EP scales as δ^{1/n} rather than δ (the Hermitian result)
-— is a SNAP-count = 0 computation. It is the first demonstrated HPU algorithm.
+— is a PiTch number = 0 computation. It is the first demonstrated HPU algorithm.
 
 ---
 
 ## Open questions
 
-The SNAP-count framework opens several concrete research questions:
+The PiTch number framework opens several concrete research questions:
 
-**Completeness.** Is SNAP-count a complete invariant? Two paths with the same
+**Completeness.** Is PiTch number a complete invariant? Two paths with the same
 S but different enclosed EP configurations can have different permutation
 groups (ℤ₃ vs S₃ for S = 2, as above). A complete invariant would need to
 encode not just the total count but the full braiding group of the enclosed
@@ -243,25 +244,25 @@ is it finitely computable from the spectrum?
 **Transmission-matrix access.** In photonic and microwave experiments, the
 directly accessible observable is the transmission matrix S(ω), not the
 individual eigenvalue sheets. Can S be extracted from the transmission matrix
-without full eigenvalue tracking? A positive answer would make SNAP-count
+without full eigenvalue tracking? A positive answer would make PiTch number
 experimentally accessible in any two-port scattering setup.
 
 **Floquet systems.** Time-periodic PT-symmetric Hamiltonians H(t) = H(t+T)
 have quasi-energies defined modulo ℏΩ. The Floquet Brillouin zone is a torus,
-not a plane. Is there a SNAP-count for the quasi-energy spectrum — a count of
+not a plane. Is there a PiTch number for the quasi-energy spectrum — a count of
 EPs per Floquet zone — and does it have the same tier-boundary interpretation?
 
-**Bender's original system (x678d).** H = p² + x²(ix)^ε is PT-symmetric for
-all ε and passes through an EP structure as ε varies. What is the SNAP-count
-structure of this family? The experiment is in progress; early indications
-suggest a dense EP locus at irrational ε.
+**Bender's original system.** H = p² + x²(ix)^ε is PT-symmetric for all ε
+and passes through an EP structure as ε varies. The effective-model experiment
+(x678d) confirms S = 0 throughout ε ≥ 0. Open question: the full PiTch number
+structure of the multi-sheet EP locus at irrational ε.
 
 ---
 
 ## Papers
 
 - [PT Symmetry in Unexpected Places](https://doi.org/10.5281/zenodo.21480284) —
-  the full ISA treatment of PT systems; SNAP-count derivation; H^k tier
+  the full ISA treatment of PT systems; PiTch number derivation; H^k tier
   identification; the place to start for the mathematics
 
 - [The β-plane](https://doi.org/10.5281/zenodo.21245459) — the unified
@@ -272,9 +273,9 @@ suggest a dense EP locus at irrational ε.
   side; EP sensors as HPU-E substrate; the Raven ISA opcodes SNAP↑/↓, ERASE,
   FLOW(β∈ℂ); routes to room-temperature dissipative computation
 
-- **SNAP-Count: Exceptional Points as Computational Resources** (in preparation)
+- [PiTch: A Topological Invariant for PT-Symmetric Systems](https://doi.org/10.5281/zenodo.21509972)
   — the entry-point paper written specifically for the PT community;
-  self-contained; no prior ISA knowledge assumed
+  self-contained; no prior ISA knowledge assumed; 24/24 numerical checks
 
 ---
 
@@ -283,15 +284,17 @@ suggest a dense EP locus at irrational ε.
 {: .note }
 > **If you work on EP sensing:**
 > Start with [HPU Architecture](https://doi.org/10.5281/zenodo.21500669).
-> Section 3 introduces SNAP-count = 0 sensing directly, with the
+> Section 3 introduces PiTch number = 0 sensing directly, with the
 > ε^{1/n} sensitivity table and the HPU-E substrate. The ISA formalism is
 > introduced only as needed.
 
 {: .note }
 > **If you want the mathematics:**
-> Start with [PT Symmetry in Unexpected Places](https://doi.org/10.5281/zenodo.21480284).
-> It derives the H¹/H² tier identification from the Jordan block structure,
-> proves the SNAP-count formula, and connects to Kato perturbation theory.
+> Start with [PiTch: A Topological Invariant for PT-Symmetric Systems](https://doi.org/10.5281/zenodo.21509972).
+> It derives the PiTch number, proves the Berry-phase formula Φ = πS, and
+> verifies the ℤₙ monodromy for n = 2, 3, 4. Then
+> [PT Symmetry in Unexpected Places](https://doi.org/10.5281/zenodo.21480284)
+> for the full H¹/H² tier identification and ISA context.
 
 {: .note }
 > **If you want the big picture:**
@@ -304,7 +307,7 @@ suggest a dense EP locus at irrational ε.
 ---
 
 *See also: [Processing Units](/docs/theory/processing-units) — the HPU is the
-hardware class built around SNAP-count as a resource ·
+hardware class built around PiTch number as a resource ·
 [The β-plane](/docs/theory/forge-meld) — the full complex β parameter space ·
 [The Non-Associative Frontier](/docs/theory/non-associative-frontier) — the
 complementary H² structure (G₂ geometry) that sits alongside PT symmetry in
