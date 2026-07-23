@@ -79,8 +79,20 @@ All six are the same formula. The ML engineer who tunes the softmax temperature,
 the physicist computing a partition function, and the quant pricing options are
 all turning the same dial.
 
-**Paper:** [β in Disguise](https://doi.org/10.5281/zenodo.20752384) — six
-equations, one formula, no prerequisites.
+> **Remark — the bridge variable has many names.** The table above shows β
+> appearing directly. But in several classical fields it travels under an alias:
+> in quantum mechanics it is ħ (Planck's constant); in fluid dynamics it is ν
+> (kinematic viscosity); in mathematical finance it is σ² (volatility); in
+> optimal transport it is ε (regularisation strength). These are all β in
+> disguise — the same dial, measured in different units. The Cole-Hopf
+> transformation (heat equation ↔ Burgers shocks, bridge: ν), the
+> Black-Scholes / Hamilton-Jacobi duality (bridge: σ²), and the WKB
+> semiclassical limit (Schrödinger ↔ Hamilton-Jacobi, bridge: ħ) are all
+> instances of the same Maslov dequantization. None of this is new individually
+> — what is new is that it is all one thing.
+
+**Paper:** [β in Disguise](https://doi.org/10.5281/zenodo.20752384) — five
+classical dualities proved to be the same algebraic structure; ħ = ν = σ² = β.
 
 ---
 
