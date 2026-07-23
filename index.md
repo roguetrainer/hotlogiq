@@ -5,7 +5,6 @@ nav_exclude: true
 image: /assets/images/hotlogiq-logo.png
 ---
 
-{% include isa-nav.html %}
 
 <div style="text-align:center; margin-bottom: 1.5rem;">
   <img src="/assets/images/hotlogiq-logo.png" alt="HotLogiQ logo" width="220">
@@ -13,7 +12,7 @@ image: /assets/images/hotlogiq-logo.png
 
 **HotLogiQ — Thawing classical logic.**
 
-The MGE softens Boolean logic at finite β, recovers quantum mechanics at β = *i*t, and extends into hot dissipative systems at β ∈ ℂ. Five opcodes. Every scale of nature.
+A single inverse temperature β interpolates between classical winner-takes-all logic (β → ∞), probability (β finite), quantum mechanics (β = *i*t), and open dissipative systems (β ∈ ℂ). Five opcodes. Every scale of nature.
 
 **Author:** Ian R. C. Buckley — [ORCID 0009-0004-9287-2902](https://orcid.org/0009-0004-9287-2902)
 

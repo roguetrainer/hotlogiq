@@ -6,7 +6,6 @@ nav_exclude: true
 description: "How the layers of the HotLogiQ framework fit together: MGE, Origami ISA, H^k ladder."
 ---
 
-{% include isa-nav.html %}
 
 # The HotLogiQ Framework
 {: .no_toc }
@@ -30,4 +29,3 @@ The [Pillars](../guides/pillars.md) page gives the four load-bearing ideas in de
 The [Opcodes](opcodes.md) page gives the full technical reference for the five opcodes.
 The [β-plane](forge-meld.md) page gives the geometry of the β-deformation.
 
-{% include isa-nav.html %}

@@ -5,7 +5,6 @@ nav_order: 9
 description: "Six mathematical structures that are genuinely load-bearing in HotLogiQ — with Wikipedia pointers and one-sentence explanations of their role."
 ---
 
-{% include isa-nav.html %}
 
 # Key Mathematical Structures
 {: .no_toc }
@@ -79,4 +78,3 @@ These are not analogies or decorative mathematics. They are the objects the fram
 
 *These six structures are the mathematical vocabulary of HotLogiQ. For HotLogiQ-specific terminology (β* snap, ORBIT opcode, H^k tier), see the [Glossary](glossary.md). For the full technical treatment, follow the paper links.*
 
-{% include isa-nav.html %}

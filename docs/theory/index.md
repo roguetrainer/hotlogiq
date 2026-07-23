@@ -6,7 +6,6 @@ has_children: true
 description: "The mathematical and physical foundations of the HotLogiQ / Origami ISA framework."
 ---
 
-{% include isa-nav.html %}
 
 # Theory
 {: .no_toc }

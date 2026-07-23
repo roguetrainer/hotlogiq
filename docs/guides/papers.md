@@ -4,7 +4,6 @@ title: Papers
 nav_order: 6
 ---
 
-{% include isa-nav.html %}
 
 # Paper Index
 
@@ -110,4 +109,3 @@ The tables below cover landmark and foundational papers. For the full list brows
 
 Machine-readable index: [_data/papers.csv](_data/papers.csv)
 
-{% include isa-nav.html %}

@@ -6,8 +6,10 @@
 }
 
 .site-logo {
-  max-height: 4rem;
+  display: block;
+  height: 3rem;
   width: auto;
+  max-width: 100%;
 }
 
 // ISA nav box — subtle warm background to complement the orange-red accent.

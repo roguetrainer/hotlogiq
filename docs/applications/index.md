@@ -6,7 +6,6 @@ has_children: true
 description: "The Origami ISA applied across domains — each a significant result spanning a family of papers."
 ---
 
-{% include isa-nav.html %}
 
 # Applications
 {: .no_toc }
@@ -32,6 +31,5 @@ These are not summaries of individual papers — they are the ideas that span fa
 
 ---
 
-*The five load-bearing ideas behind all of the above are on the [Pillars](../guides/pillars) page.*
+*The five load-bearing ideas behind all of the above are on the [Pillars](../guides/pillars) page. For the full ISA family table, see [Pillars → ISA Family](/docs/guides/pillars#the-isa-family).*
 
-{% include isa-nav.html %}

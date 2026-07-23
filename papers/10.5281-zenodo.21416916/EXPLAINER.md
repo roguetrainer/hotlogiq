@@ -11,7 +11,6 @@ portfolio: B
 
 *Plain-language explainer for [doi:10.5281/zenodo.21416916](https://doi.org/10.5281/zenodo.21416916) (#622)*
 
-{% include isa-nav.html %}
 
 ---
 
@@ -79,6 +78,5 @@ This is why the ISA can serve as an open standard: its equational theory is deci
 - [The Rising Sea ISA](https://doi.org/10.5281/zenodo.21416914) — the β-plane fibration of all ISAs
 - [ISA Completeness](https://doi.org/10.5281/zenodo.21219698) (#469) — nine SWAP-classes; formal completeness proof
 
-{% include isa-nav.html %}
 
 *For the full technical treatment, see [doi:10.5281/zenodo.21416916](https://doi.org/10.5281/zenodo.21416916)*

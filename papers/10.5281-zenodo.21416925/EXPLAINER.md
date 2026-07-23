@@ -11,7 +11,6 @@ portfolio: E
 
 *Plain-language explainer for [doi:10.5281/zenodo.21416925](https://doi.org/10.5281/zenodo.21416925)*
 
-{% include isa-nav.html %}
 
 ---
 
@@ -79,6 +78,5 @@ This is the Friston free energy principle seen through the ISA lens: the brain m
 - [Kinetic Proofreading as QEC](papers/510_kinetic_proofreading_qec/) — full treatment of proofreading as H² error correction
 - [Protein Folding ISA](https://doi.org/10.5281/zenodo.21345099) (#515) — folding kinetics as three-factor ISA programme
 
-{% include isa-nav.html %}
 
 *For the full technical treatment, see [doi:10.5281/zenodo.21416925](https://doi.org/10.5281/zenodo.21416925)*

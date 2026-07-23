@@ -5,7 +5,6 @@ nav_order: 1
 description: "What HotLogiQ is, why it matters, and the shortest path to the core ideas — by reader type."
 ---
 
-{% include isa-nav.html %}
 
 # Start Here
 {: .no_toc }
@@ -86,6 +85,5 @@ Five pages that together cover the core of the framework — in reading order:
 
 ---
 
-[All papers →](../guides/papers.md) · [Zenodo community →](https://zenodo.org/communities/thermyon/)
+[All papers →](../guides/papers.md) · [Zenodo community →](https://zenodo.org/communities/thermyon/) · [ISA Family →](/docs/guides/pillars)
 
-{% include isa-nav.html %}

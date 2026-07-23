@@ -11,7 +11,6 @@ portfolio: C
 
 *Plain-language explainer for [doi:10.5281/zenodo.21428853](https://doi.org/10.5281/zenodo.21428853) (#631)*
 
-{% include isa-nav.html %}
 
 ---
 
@@ -153,6 +152,5 @@ The goal is a RISC-V for quantum computing: an open standard that enables indepe
 - **Origami for QEC**: [Diagrammatic QEC as ISA](https://doi.org/10.5281/zenodo.21372999) (#607) — fault-tolerant compilers in the Origami framework
 - **Completeness proof**: [ISA Completeness](https://doi.org/10.5281/zenodo.21219698) (#469) — nine SWAP-classes; formal proof that the five opcodes are complete
 
-{% include isa-nav.html %}
 
 *For the full technical treatment, see [doi:10.5281/zenodo.21428853](https://doi.org/10.5281/zenodo.21428853)*
