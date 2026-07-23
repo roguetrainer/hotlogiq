@@ -265,10 +265,12 @@ structure of the multi-sheet EP locus at irrational ε.
 
 - [PT Symmetry in Unexpected Places](https://doi.org/10.5281/zenodo.21480284) (`PtSurvey`) —
   survey across chemistry, QEC, ranking, biology, information geometry; EP = β\* snap theorem;
-  Raven ISA; FEP-PT bridge; written for Carl Bender
+  Raven ISA; FEP-PT bridge; written for Carl Bender ·
+  [Explainer](https://github.com/roguetrainer/differentiable-tropical-networks/blob/main/papers/656_pt_symmetry_isa/EXPLAINER_656.md)
 
 - [The Non-Hermitian ISA: PT Symmetry, Exceptional Points, and the 38-Fold Way](https://doi.org/10.5281/zenodo.21480491) (`NonHermIsa2`) —
-  AZ symmetry classes in ISA language; LABEL failure = PT phase transition; EP at H¹/H² boundary
+  AZ symmetry classes in ISA language; LABEL failure = PT phase transition; EP at H¹/H² boundary ·
+  [Explainer](https://github.com/roguetrainer/differentiable-tropical-networks/blob/main/papers/460_pt_symmetric_isa/EXPLAINER_460.md)
 
 - [The Adelic β-Plane](https://doi.org/10.5281/zenodo.21245459) (`AdelicBeta`) —
   unified parameter space; classical (β real), quantum (β = it), PT-symmetric (β ∈ ℂ near imaginary axis)
@@ -287,11 +289,12 @@ structure of the multi-sheet EP locus at irrational ε.
 
 - [PT-Symmetric Lifting](https://doi.org/10.5281/zenodo.21480495) (`PtLifting`) —
   unified language for quantum algorithms via EP-free evolution; HSP and walk families;
-  Conditions A/B/C for lifting
+  Conditions A/B/C for lifting ·
+  [Explainer](https://github.com/roguetrainer/differentiable-tropical-networks/blob/main/papers/635_pt_lifting_quantum_algorithms/EXPLAINER_635.md)
 
 - [PT-Exceptional-Point Search: Beyond the BBBV Bound](https://doi.org/10.5281/zenodo.21480499) (`PtEpSearch`) —
-  EP₂ beats Grover for N > 16 after Naimark dilation; BBBV inapplicable to non-unitary;
-  code distance = EP order
+  EP sensing enhancement is real; postselection cancels the speedup exactly; what remains open ·
+  [Explainer](https://github.com/roguetrainer/differentiable-tropical-networks/blob/main/papers/636_pt_exceptional_point_search/EXPLAINER_636.md)
 
 - [PT-Symmetric Combinatorics](https://doi.org/10.5281/zenodo.21480493) (`PtCombinato`) —
   SAT/TSP/graph-colouring as PT-breaking; Beraha numbers = EP₂; PT-Hardness Conjecture
@@ -303,7 +306,8 @@ structure of the multi-sheet EP locus at irrational ε.
 **Hardware and substrate**
 
 - [Raven on Existing Hardware](https://doi.org/10.5281/zenodo.21480501) (`RavenHardware`) —
-  three routes to complex-β (Lindblad/Naimark/hybrid); 5-qubit Ising example; hardware roadmap 2026–2035
+  three routes to complex-β (Lindblad/Naimark/hybrid); 5-qubit Ising example; hardware roadmap 2026–2035 ·
+  [Explainer](https://github.com/roguetrainer/differentiable-tropical-networks/blob/main/papers/639_raven_on_existing_hardware/EXPLAINER_639.md)
 
 - [The Raven ISA: Enzymes as Molecular Programs](https://doi.org/10.5281/zenodo.21416925) (`RavenEnzyme`) —
   enzyme kinetics as PT-symmetric computation; SNAP↑/↓, ERASE, FLOW(β ∈ ℂ)
