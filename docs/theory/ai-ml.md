@@ -26,28 +26,26 @@ voting are all the same mathematical object viewed from different angles.*
 
 ## The entry point: β is the softmax temperature
 
-The single most direct connection between HotLogiQ and mainstream ML is this:
-
-> **The softmax temperature parameter and Planck's constant are the same object.**
-
-The ML engineer writes softmax(x/T). The physicist writes exp(−E/k_BT). The
-Bayesian statistician writes exp(−βE). The HotLogiQ framework calls this the
-β-deformation of arithmetic — the single dial that interpolates between:
+The softmax temperature is not an ML trick. It is the inverse temperature β
+from statistical mechanics — the same dial that controls Boltzmann
+distributions, Ising models, simulated annealing, and tropical arithmetic. The
+ML engineer writes softmax(x/T). The statistical physicist writes exp(−βE).
+The Bayesian writes exp(−βE) normalised over hypotheses. They are all the same
+expression at different β:
 
 | β regime | Limit | Computation |
 |----------|-------|-------------|
 | β → 0 | High temperature / max entropy | Uniform distribution; maximum uncertainty |
 | β finite, real | Boltzmann / Gibbs | Probabilistic AI; statistical mechanics |
 | β → ∞ | Low temperature / argmax | Tropical arithmetic; winner-takes-all |
-| β = it/ℏ | Complex (imaginary) | Quantum mechanics; Meld ISA |
-| β ∈ ℂ | PT-symmetric | Hot quantum; Raven ISA |
+| β ∈ ℂ | PT-symmetric / gain-loss | Hot quantum; Raven ISA |
 
 Every hard decision threshold in ML (softmax argmax, ReLU activation, top-k
 sampling) is the β→∞ limit of a smooth soft threshold. The interesting
 computation happens at finite β — near the **β\* snap point** where the system
 transitions between regimes.
 
-**Paper:** [Planck's Constant in Disguise (443)](https://doi.org/10.5281/zenodo.20752384) —
+**Paper:** [β in Disguise](https://doi.org/10.5281/zenodo.20752384) —
 six famous equations from six fields (softmax, Boltzmann, Black-Scholes, Schrödinger,
 Fourier, Ising) shown to be the same equation at different β. No prerequisites.
 
@@ -62,7 +60,7 @@ programme operating in the H¹ regime:
 ORBIT  : token similarity QKᵀ/√d — inner product on token manifold
 TWIST  : softmax(·) — Berry phase; non-trivial distribution over tokens
 MERGE  : weighted value aggregation Σⱼ aᵢⱼ vⱼ — contextualised representation
-SPLIT  : multi-head projection via W^Q, W^K, W^V — h parallel Grassmannian points
+ORBIT  : multi-head projection via W^Q, W^K, W^V — h parallel Grassmannian points
 MERGE  : Concat(heads) · W^O — head aggregation back to d_model
 LABEL  : attention entropy H(aᵢ) — the ISA β* eigenvalue at each query position
 ```
@@ -86,8 +84,8 @@ given task is a Schubert variety in this product.
 
 **Zoo entry:** [ML01 — Transformer Self-Attention](/isa-zoo/ml01-attention-mechanism)
 
-**Papers:** [Paper 598 (OPU/AlphaFold)](https://doi.org/10.5281/zenodo.21360838) ·
-[Paper 528 (Information Geometry ISA)](https://doi.org/10.5281/zenodo.PENDING)
+**Papers:** [OPU and AlphaFold](https://doi.org/10.5281/zenodo.21360838) ·
+[Information Geometry ISA](https://doi.org/10.5281/zenodo.PENDING)
 
 ---
 
@@ -122,8 +120,8 @@ The ISA provides a diagnostic: compute the Weyl c₂ index of the task's
 function class. If c₂ > δ*, the task has genuine H² structure and benefits
 from BIND-based architectures.
 
-**Papers:** [The 4-Point Network (627)](https://doi.org/10.5281/zenodo.21480272) ·
-[Agentic Consensus via Bilinear Belief Pooling (629)](https://doi.org/10.5281/zenodo.21480276)
+**Papers:** [The 4-Point Network](https://doi.org/10.5281/zenodo.21480272) ·
+[Agentic Consensus via Bilinear Belief Pooling](https://doi.org/10.5281/zenodo.21480276)
 
 ---
 
@@ -164,8 +162,8 @@ This is the **layerwise β profile** of the network. The framework predicts:
 trained network; identify β*-critical layers; apply mixed-precision
 quantisation that preserves full precision only at β*-critical layers.
 
-**Papers:** [In Praise of Soft Thresholds (597)](https://doi.org/10.5281/zenodo.21373468) ·
-[Paper 400 — Gibbs GEMM](https://doi.org/10.5281/PENDING) (notes only)
+**Papers:** [In Praise of Soft Thresholds](https://doi.org/10.5281/zenodo.21373468) ·
+[Gibbs GEMM](https://doi.org/10.5281/zenodo.PENDING) (notes only)
 
 ---
 
@@ -214,8 +212,8 @@ indefinite). The ISA framework connects:
 - **Grokking** = β* snap from H⁰ (memorisation manifold) to H¹ (generalisation manifold)
 - **Loss spikes** in large-batch training = brief excursion through H² territory
 
-**Papers:** [Paper 528 — Information Geometry ISA](https://doi.org/10.5281/zenodo.PENDING) ·
-[Gibbs GEMM (400)](https://doi.org/10.5281/zenodo.PENDING)
+**Papers:** [Information Geometry ISA](https://doi.org/10.5281/zenodo.PENDING) ·
+[Gibbs GEMM](https://doi.org/10.5281/zenodo.PENDING)
 
 ---
 
@@ -254,7 +252,7 @@ repository demonstrates practical SHAP on tabular (finance/loan approval) and
 NLP (LLM sentiment) tasks. The thermal Shapley value is the theoretically
 grounded extension of this practical work.
 
-**Paper:** [Thermal Attribution (293)](https://doi.org/10.5281/zenodo.20236870) —
+**Paper:** [Thermal Attribution](https://doi.org/10.5281/zenodo.20236870) —
 notes only; target: Journal of Economic Theory / Games and Economic Behavior
 
 ---
@@ -292,7 +290,7 @@ tile-level matrix multiplication. Each tile of C = A·B can be approximated
 from a Gibbs-sampled partial result; the H¹ cohomological certificate confirms
 whether the approximation is within ε of exact without computing the exact result.
 
-**Papers:** Patent 15 (filed 2026-07-06) · [Gibbs GEMM (400)](https://doi.org/10.5281/zenodo.PENDING)
+**Paper:** [Gibbs GEMM](https://doi.org/10.5281/zenodo.PENDING)
 
 ---
 
@@ -312,14 +310,15 @@ This cannot be expressed as a sum of pairwise interactions — it requires the
 BIND opcode (H² coupling between Markov blankets). Matrix multiplication is
 constitutionally unable to represent it.
 
-**Paper 629 claim:** consensus in multi-agent inference is a 4-point problem.
+The claim of [Agentic Consensus](https://doi.org/10.5281/zenodo.21480276): consensus in multi-agent inference is a 4-point problem.
 Standard attention-based aggregation (pairwise ORBIT) systematically
 underestimates disagreement between agents whose beliefs are structured by
 relationships between relationships.
 
 ### Hot knowledge: the β-deformation of belief
 
-**Paper 628** proposes that knowledge itself has H^k structure:
+[Knowledge as a Cohomological Object](https://doi.org/10.5281/zenodo.21480274)
+proposes that knowledge itself has H^k structure:
 
 | Degree | Knowledge type | Operation | Failure mode |
 |--------|---------------|-----------|--------------|
@@ -359,9 +358,9 @@ that agents occupy different Schubert strata of the belief Grassmannian —
 diverse enough to disagree, structured enough to combine.
 
 **Papers:**
-[Knowledge as a Cohomological Object (628)](https://doi.org/10.5281/zenodo.21480274) ·
-[Agentic Consensus (629)](https://doi.org/10.5281/zenodo.21480276) ·
-[β-Rank Family (633)](https://doi.org/10.5281/zenodo.21479920)
+[Knowledge as a Cohomological Object](https://doi.org/10.5281/zenodo.21480274) ·
+[Agentic Consensus](https://doi.org/10.5281/zenodo.21480276) ·
+[β-Rank Family](https://doi.org/10.5281/zenodo.21479920)
 
 ---
 
@@ -378,7 +377,7 @@ The classical neural network models of the 1980s–90s all have natural ISA inte
 | Ising model | H⁰/H¹ | any | Exact MGE: Ising partition function = tropical polynomial at β→∞ |
 | Hubbard model | H¹→H⁰ | β = U/t | Mott transition = β* snap from H¹ delocalised to H⁰ localised |
 
-**The G₂ Boltzmann Machine (Paper 317)** is the most novel: replacing the
+**The [G₂ Boltzmann Machine](https://doi.org/10.5281/zenodo.20319577)** is the most novel: replacing the
 pairwise J_ij coupling with the G₂ 3-form φ_ijk gives a machine that learns
 three-way correlations directly. Contrastive divergence becomes a G₂-equivariant
 gradient step. The Fano plane incidence structure provides an exact error-detection
@@ -391,9 +390,9 @@ Z(β) = Σ_σ exp(−βH(σ)) is an ordinary polynomial in {exp(−βJ_ij)} at f
 deformation made explicit and controllable.
 
 **Papers:**
-[G₂ Boltzmann Machine (317)](https://doi.org/10.5281/zenodo.20319577) ·
-[MCMC as H^k Ladder (557)](https://doi.org/10.5281/zenodo.PENDING) ·
-[Universal Bonding Theory (570)](https://doi.org/10.5281/zenodo.21277821) (Hubbard/Mott)
+[G₂ Boltzmann Machine](https://doi.org/10.5281/zenodo.20319577) ·
+[MCMC as H^k Ladder](https://doi.org/10.5281/zenodo.PENDING) ·
+[Universal Bonding Theory](https://doi.org/10.5281/zenodo.21277821) (Hubbard/Mott)
 
 ---
 
@@ -414,13 +413,13 @@ the sampling monad — the same saddle-point optimum as the Vaswani 1/√d_head
 and the MGE soft router. All three are instances of the same variational
 principle: maximise information throughput at the snap threshold.
 
-**Paper:** [MCMC as H^k Ladder (557)](https://doi.org/10.5281/zenodo.PENDING)
+**Paper:** [MCMC as H^k Ladder](https://doi.org/10.5281/zenodo.PENDING)
 
 ---
 
 ## Rankings, recommendations, and the β-rank family
 
-The **β-rank family** (Paper 633) unifies pairwise ranking algorithms under
+The **[β-rank family](https://doi.org/10.5281/zenodo.21479920)** unifies pairwise ranking algorithms under
 a single β-deformation:
 
 | β limit | Algorithm | Semiring | Use case |
@@ -441,36 +440,10 @@ solves hard random SAT instances near the satisfiability threshold is the
 ForgeRank algorithm applied to the factor graph of the SAT instance. The
 satisfiability threshold = β* of the ranking semiring.
 
-**Paper:** [β-Rank Family (633)](https://doi.org/10.5281/zenodo.21479920) ·
-[PT-Symmetric Combinatorics (634)](https://doi.org/10.5281/zenodo.21480493)
+**Papers:** [β-Rank Family](https://doi.org/10.5281/zenodo.21479920) ·
+[PT-Symmetric Combinatorics](https://doi.org/10.5281/zenodo.21480493)
 
 ---
-
-## Open research directions
-
-These are the AI/ML threads that have supporting material but no dedicated paper yet:
-
-**A. Geometric skeleton compression of LLMs** — identify Schubert strata of
-attention heads; prune heads in the same stratum; provide H^k compression
-certificates. Target: NeurIPS systems track. Requires: Grassmannian
-decomposition of trained GPT-2/Llama weights (x_llm_geometry proposed).
-
-**B. Layerwise β profiling** — measure effective temperature at each layer
-of a trained network via attention entropy H(aᵢ); identify β*-critical layers;
-design mixed-precision schedule that protects only those layers. Target: ICLR.
-
-**C. Thermal Shapley values** — implement φᵢ(β) as a differentiable
-attribution method; validate latent bottleneck detection on financial stress
-scenarios. Target: Games and Economic Behavior / NeurIPS XAI workshop.
-Code base: [shap-explainability](https://github.com/roguetrainer/shap-explainability).
-
-**D. Bilinear belief pooling for agentic consensus** — x629 experiment:
-compare bilinear vs attention aggregation on multi-hop relational reasoning
-benchmarks. Target: NeurIPS multi-agent workshop.
-
-**E. H² Hopfield networks** — replace pairwise J_ij with G₂ 3-form φ_ijk
-in a modern Hopfield network; measure capacity scaling; compare to standard
-and dense associative memory. Target: NeurIPS.
 
 ---
 
@@ -478,4 +451,4 @@ and dense associative memory. Target: NeurIPS.
 [Processing Units](/docs/theory/processing-units) ·
 [ML01 — Transformer Attention](/isa-zoo/ml01-attention-mechanism) ·
 [IG01 — EM Algorithm](/isa-zoo/ig01-em-algorithm) ·
-[In Praise of Soft Thresholds (597)](https://doi.org/10.5281/zenodo.21373468)
+[In Praise of Soft Thresholds](https://doi.org/10.5281/zenodo.21373468)
