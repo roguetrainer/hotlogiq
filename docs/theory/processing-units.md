@@ -184,7 +184,7 @@ opcode or semiring regime that existing hardware cannot natively execute.
 
 ---
 
-*See also: [The β-plane](/docs/theory/forge-meld) · [Paradigm Comparison](/docs/theory/paradigm-comparison) · [ISA Zoo](/isa-zoo/)*
+*See also: [The β-plane](/docs/theory/forge-meld) · [AI & Machine Learning](/docs/theory/ai-ml) · [ISA Zoo](/isa-zoo/)*
 
 [205]: https://doi.org/10.5281/zenodo.19743800
 [488]: https://doi.org/10.5281/zenodo.21224107
