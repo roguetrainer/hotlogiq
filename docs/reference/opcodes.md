@@ -271,14 +271,23 @@ detailed balance — lives outside the Frobenius sector. The Frobenius condition
 an extra axiom imposed on chemistry; it is the algebraic statement of a law chemistry
 already obeys.
 
-**Opcode duality:** the 1-cell opcodes come in Frobenius dual pairs: (RESOLVE, FLIP) and
-(JOIN, CLEAVE). TWIST and LINK are self-dual. FUSE (the associator) has no Frobenius
-dual — it lives in the magmoidal extension beyond the Frobenius sector. Frobenius
-duality is *not* the same as inversion: CLEAVE is not the inverse of JOIN (they are
-adjoint under the Frobenius condition, not composites that yield identity). In quantum
-computing terms, CLEAVE creates an entangled Bell pair and JOIN fuses one — they are
-the creation/annihilation pair of the inter-site Frobenius algebra, related by
-$\delta^\dagger = \mu$.
+**Opcode duality:** the 1-cell opcodes come in two kinds of dual pairs.
+
+*Frobenius comultiplication/multiplication pairs* (related by $\Delta^\dagger = \mu$):
+- **(RESOLVE, PROJECT)** — intra-site; $\Delta^\dagger = \mu$; the spider identity PROJECT∘RESOLVE = id
+- **(JOIN, CLEAVE)** — inter-site (Valence ISA); $\mu^\dagger = \delta$; bond formation/breaking
+
+*Compact closed unit/counit pairs* (related by the zigzag identity):
+- **(FLIP, CUP)** — FLIP is the dagger anti-involution $(-)^\dagger$; CUP is its counit sub-role $\varepsilon: A^* \otimes A \to \mathbf{1}$; together they satisfy $(\varepsilon \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \eta) = \mathrm{id}$
+
+TWIST and LINK are self-dual. FUSE (the associator $\alpha_{A,B,C}$) has no Frobenius
+dual — it lives in the magmoidal extension beyond the Frobenius sector entirely.
+
+Frobenius duality is *not* the same as inversion: CLEAVE is not the inverse of JOIN
+(they are adjoint under the Frobenius condition, not composites that yield identity).
+In quantum computing terms, CLEAVE fans out an entangled orbital into two components
+and JOIN merges two orbitals into one — the creation/annihilation pair of the
+inter-site Frobenius algebra, related by $\delta^\dagger = \mu$.
 
 **Why SNAP is primitive — and not derivable from JOIN + CLEAVE + FLIP:**
 JOIN, CLEAVE, LINK, and all the other opcodes are **1-cell morphisms within a PROP** —
