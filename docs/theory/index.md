@@ -17,6 +17,7 @@ description: "The mathematical and physical foundations of the HotLogiQ / Origam
 
 | Page | What it covers |
 |------|---------------|
+| [Why Hot Logic?](hot-logic) | Boolean logic is zero-temperature; every LLM runs at finite β; the unification via the β-plane |
 | [β: The Universal Temperature](maslov-dequantization) | β interpolates classical → statistical → quantum; Maslov dequantisation; tropical arithmetic |
 | [The β-plane](forge-meld) | The full complex-β plane; Forge (real β), Meld (β = it), Raven (complex β) |
 | [PT Symmetry & Exceptional Points](pt-symmetry) | Exceptional points as tier boundaries; PiTch number; 38-fold way; HPU substrates |
