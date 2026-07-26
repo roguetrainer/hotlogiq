@@ -10,16 +10,46 @@ portfolio: B
 # The ISA Opcodes
 {: .no_toc }
 
-*Five opcodes. One language for quantum physics, topological phases, molecular
-computing, the geometric Langlands programme, and more — from classical Turing machines to the
-full Meld.*
+*Five opcodes. Every temperature. One language — for quantum circuits, living cells, financial crises, and unsolved problems in mathematics.*
 
 > **Name change (2026):** This document uses the current canonical names.
 > Mapping from previous names: **ORBIT → RESOLVE**, **LABEL → PROJECT**, **BIND → FUSE**, **MERGE → JOIN**.
 > FLIP, TWIST, CUP, LINK, SNAP, HALT, THERMAL unchanged.
 > Published papers use the previous names; the legacy mapping table at §[Full opcode table](#the-full-opcode-table) preserves all prior names.
 
-## The H^k tier summary
+## Contents
+{: .no_toc }
+
+1. TOC
+{:toc}
+
+---
+
+## The opcodes
+
+**Opcode symbols:** each canonical opcode has a formal symbol (used in LaTeX papers) and an outreach emoji.
+
+| Opcode | Formal | Emoji | Categorical morphism | Abstract role |
+|--------|--------|-------|---------------------|---------------|
+| RESOLVE | △ | 🔬 | Comultiplication $\Delta: A \to A \otimes A$ · trace $\mathrm{tr}(\theta_A): \mathbf{1} \to \mathbf{1}$ | 1-to-many diagonalisation; spectral decomposition |
+| PROJECT | ▼ | 🎯 | Multiplication $\mu: A \otimes A \to A$ · unit $\eta: \mathbf{1} \to A$ | Many-to-1 evaluation; sector selection |
+| FLIP | † | ↩️ | Dagger $(-)^\dagger$ · counit $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ (CUP sub-role) | Orientation reversal; time-reversal; duality |
+| TWIST | ∮ | 🌀 | Ribbon element $\theta_V: V \to V$; topological spin | Phase / monodromy; 1-to-1 with memory |
+| FUSE | ⋈ | 💎 | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | Non-associative fusion; recoupling; entanglement |
+
+**Graphical calculus legend:**
+🕷️ present in ZX calculus · 🕷️\* partial (related ZX construct, not full ISA semantics) ·
+🐸 present in 731 Frog Calculus · unmarked = ISA-native (no dedicated graphical symbol).
+
+**RESOLVE is intentionally unmarked.** It is a closed scalar loop `𝟏 → 𝟏` — a trace, not a vertex.
+In ZX it appears as a disconnected bubble (no named spider); in the Frog Calculus it is a closed triangulation loop
+with no interior vertex. Neither calculus assigns RESOLVE a node: RESOLVE *closes* a loop rather than *opening* one.
+
+The **Frobenius identity** PROJECT∘RESOLVE = id (evaluate after diagonalising = identity) is the spider identity. FLIP∘CUP = id (reverse an arrow, then close it = identity, compact closure) — where CUP is the counit sub-role of FLIP; see §[CUP](#cup--flip-fermion-sub-role--formerly-flop) below.
+
+---
+
+## The H^k tiers
 
 Every opcode lives at a specific **cohomological degree** — the superscript k in
 H^k is not a power but a degree in the de Rham / sheaf cohomology sequence.
@@ -29,13 +59,7 @@ The technical names:
 - **H¹** — first cohomology: connections, Berry phases, obstructions to global triviality
 - **H²** — second cohomology: characteristic classes, Chern numbers, genuine topological charges
 
-The ladder H⁰ → H¹ → H² is literally the de Rham sequence with d∘d = 0.
-This is also why FUSE∘TWIST ≠ 0 but FUSE∘FUSE = 0 in the ISA — the chain
-complex structure of the opcodes is the same object as the cohomology sequence.
-(See Theorem 3 below.)
-
-The tier of a physical system is its **minimum opcode requirement** — the lowest
-H^k needed to describe it exactly:
+**In one sentence: H⁰ is counting (RESOLVE/PROJECT/FLIP), H¹ is interference (TWIST), H² is entanglement (FUSE).**
 
 | Tier | Opcodes | One-word meaning | Technical meaning |
 | ---- | ------- | ---------------- | ----------------- |
@@ -43,21 +67,13 @@ H^k needed to describe it exactly:
 | **H¹** | TWIST | Interference | Berry phase; connection; obstruction to triviality |
 | **H²** | FUSE | Entanglement | Chern class; non-Abelian holonomy; topological charge |
 
-> **Terminology note — legacy opcode names:** Earlier papers and drafts use a twelve-opcode
-> vocabulary. The current five-opcode names (PROJECT / RESOLVE / TWIST / FUSE / FLIP) consolidate
-> those as follows: SPLAT → LABEL → **PROJECT**, SPLIT → ORBIT → **RESOLVE**,
-> FLOP → CUP (FLIP fermion sub-role, name unchanged), BIND → **FUSE**, MERGE → **JOIN**.
-> The sections below retain the legacy name FLOP where it clarifies categorical structure
-> (especially the FLIP/FLOP distinction in the AZ tenfold way); treat CUP as the canonical
-> name for that sub-role.
+The ladder H⁰ → H¹ → H² is literally the de Rham sequence with d∘d = 0.
+This is also why FUSE∘TWIST ≠ 0 but FUSE∘FUSE = 0 in the ISA — the chain
+complex structure of the opcodes is the same object as the cohomology sequence.
+(See Theorem 3 below.)
 
-**In one sentence: H⁰ is counting (RESOLVE/PROJECT/FLIP), H¹ is interference (TWIST), H² is entanglement (FUSE).**
-
-### Why the tier matters: methods recommendation
-
-The cohomological degree is simultaneously a complexity classification and a
-methods recommendation — it tells you the minimum tier needed to describe a
-system, and therefore which computational tools are adequate:
+The tier of a physical system is its **minimum opcode requirement** — the lowest
+H^k needed to describe it exactly:
 
 | Tier | Chemistry | Quantum computing |
 | ---- | --------- | ----------------- |
@@ -72,27 +88,13 @@ The cohomological degree is what makes that precise — see
 the chemistry Grassmannian and the quantum-computing Weyl chamber carry the
 same Bredon H² class (Euler characteristic 2).
 
----
-
-**Graphical calculus legend:**
-🕷️ present in ZX calculus · 🕷️\* partial (related ZX construct, not full ISA semantics) ·
-🐸 present in 731 Frog Calculus · unmarked = ISA-native (no dedicated graphical symbol).
-
-**RESOLVE is intentionally unmarked.** It is a closed scalar loop `𝟏 → 𝟏` — a trace, not a vertex.
-In ZX it appears as a disconnected bubble (no named spider); in the Frog Calculus it is a closed triangulation loop
-with no interior vertex. Neither calculus assigns RESOLVE a node: RESOLVE *closes* a loop rather than *opening* one.
-
-**Opcode symbols:** each canonical opcode has a formal symbol (used in LaTeX papers) and an outreach emoji.
-
-| Opcode | Formal | Emoji | Categorical morphism | Abstract role |
-|--------|--------|-------|---------------------|---------------|
-| RESOLVE | △ | 🔬 | Comultiplication $\Delta: A \to A \otimes A$ · trace $\mathrm{tr}(\theta_A): \mathbf{1} \to \mathbf{1}$ | 1-to-many diagonalisation; spectral decomposition |
-| PROJECT | ▼ | 🎯 | Multiplication $\mu: A \otimes A \to A$ · unit $\eta: \mathbf{1} \to A$ | Many-to-1 evaluation; sector selection |
-| FLIP | † | ↩️ | Dagger $(-)^\dagger$ · counit $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ (CUP sub-role) | Orientation reversal; time-reversal; duality |
-| TWIST | ∮ | 🌀 | Ribbon element $\theta_V: V \to V$; topological spin | Phase / monodromy; 1-to-1 with memory |
-| FUSE | ⋈ | 💎 | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | Non-associative fusion; recoupling; entanglement |
-
-The Frobenius identities: PROJECT∘RESOLVE = id (diagonalise then evaluate = identity); CUP∘FLIP = id (dagger then Born rule = identity).
+> **Terminology note — legacy opcode names:** Earlier papers and drafts use a twelve-opcode
+> vocabulary. The current five-opcode names (PROJECT / RESOLVE / TWIST / FUSE / FLIP) consolidate
+> those as follows: SPLAT → LABEL → **PROJECT**, SPLIT → ORBIT → **RESOLVE**,
+> FLOP → CUP (FLIP fermion sub-role, name unchanged), BIND → **FUSE**, MERGE → **JOIN**.
+> The sections below retain the legacy name FLOP where it clarifies categorical structure
+> (especially the FLIP/FLOP distinction in the AZ tenfold way); treat CUP as the canonical
+> name for that sub-role.
 
 ---
 
@@ -151,309 +153,7 @@ cases (FeMoco, bond-breaking); nuclear physics starts there and never leaves.
 
 ---
 
-## The category theory behind the opcodes
-
-This section explains *why* the ISA opcodes are rigorous mathematical objects and
-not just suggestive names — and why the same objects appear across physics,
-mathematics, and computing without any analogy or hand-waving.
-
-### The ladder of categories
-
-The opcodes are generated by a strict hierarchy of categorical structures. Each
-level adds one new kind of morphism, and each addition corresponds to one H^k tier:
-
-| Category type | What it adds | Opcode unlocked | H^k tier |
-| ------------- | ------------ | --------------- | -------- |
-| **Monoidal category** | Parallel composition (⊗); unit object **1** | RESOLVE (fan-out sub-role) · PROJECT (projection + unit sub-roles) | H⁰ |
-| **+ Symmetric** | Swap morphism; wire crossing | RESOLVE (closed traces) | H⁰ |
-| **+ Traced** | Feedback loops (trace closing a wire on itself) | RESOLVE (full feedback) | H⁰ |
-| **+ Frobenius** | Comultiplication + counit satisfying Frobenius law | RESOLVE ↔ PROJECT duality | H⁰ |
-| **+ Compact closed** | Dual objects; cups and caps | FLIP (Born rule / fermionisation sub-role) | H⁰/H¹ |
-| **+ Dagger** | Anti-involution $(-)^\dagger$ reversing all arrows | FLIP (time-reversal sub-role) | H¹ |
-| **+ Ribbon** | Ribbon element $\theta_V$ (topological spin / twist) | TWIST (Berry phase) | H¹ |
-| **+ Magmoidal** | Non-trivial associator $\alpha_{A,B,C} \neq \mathrm{id}$ | FUSE (entanglement) | H² |
-
-A **monoidal category** is any mathematical structure where operations can compose
-both *sequentially* (one after another, written ∘) and *in parallel* (side by side,
-written ⊗), with a unit object **1** for "doing nothing." This covers essentially
-all of mathematical physics: quantum circuits, Feynman diagrams, tensor networks,
-representations of groups, the Langlands correspondence.
-
-Each row in the table is a *property* that a monoidal category may or may not have.
-The opcodes are the **canonical generators** of each property — the minimal new
-morphism you must add to express it. This is why the opcodes are not arbitrary: they
-are forced by the categorical structure.
-
-### Why FUSE is special: magmoidal categories
-
-Every category in the ladder above (monoidal through ribbon) satisfies the
-**pentagon axiom**: the associator is coherent, meaning all ways of
-re-bracketing a tensor product $(A \otimes B) \otimes C \cong A \otimes (B \otimes C)$
-are consistent. In such categories, the associator is effectively invisible — you
-can ignore brackets.
-
-A **magmoidal category** is one where the pentagon axiom *fails*: the associator
-$\alpha_{A,B,C}$ is genuinely non-trivial and cannot be set to the identity. This
-is the categorical home of:
-
-- **Octonions** — the non-associative normed division algebra; $e_i(e_j e_k) \neq (e_i e_j)e_k$
-- **Non-Abelian anyons** — fusion categories with non-trivial $F$-matrices (the $F$-matrix *is* the associator)
-- **$G_2$ symmetry** — the automorphism group of the octonions; the exceptional Lie group whose root system is the Fano plane
-
-FUSE is the single opcode that requires magmoidal extension. Every opcode except
-FUSE lives in a ribbon category (associative, pentagon holds). FUSE is the
-morphism that encodes the associator itself — which is why it requires genuine
-multi-body correlation (H²) that no H⁰/H¹ approximation can reproduce.
-
-### The Frobenius algebra: why RESOLVE and PROJECT are dual
-
-RESOLVE and PROJECT are not independent. Together with FLIP they form a **Frobenius
-algebra** $(A, \mu, \eta, \Delta, \varepsilon)$:
-
-- $\Delta: A \to A \otimes A$ — RESOLVE fan-out sub-role (comultiplication)
-- $\mu: A \otimes A \to A$ — PROJECT projection sub-role (multiplication)
-- $\eta: \mathbf{1} \to A$ — PROJECT unit sub-role
-- $\varepsilon: A \to \mathbf{1}$ — FLIP Born-rule sub-role (counit)
-
-The **Frobenius axiom** $(\mu \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \Delta) = \Delta \circ \mu = (\mathrm{id} \otimes \mu) \circ (\Delta \otimes \mathrm{id})$ is the algebraic statement that "fan-out then project = identity." This is simultaneously:
-- The Pentagon identity in angular momentum theory (Biedenharn-Elliott)
-- The no-arbitrage condition in finance
-- The topological invariance of Ponzano-Regge amplitudes
-- The Reidemeister moves for knot diagrams
-
-These are not analogies. They are the same equation, in the same Frobenius algebra,
-evaluated in different semirings over different physical hardware.
-
-### The Frobenius algebra for bonding: the Valence ISA extension
-
-The single-site Frobenius algebra above (§ "Why RESOLVE and PROJECT are dual") describes
-operations *within* one orbital. For **bonding** — operations *between* orbitals — the
-PROP must carry a second Frobenius algebra structure, one where the objects carry
-orbital-knot labels. Category theory forces exactly two new opcodes and no others:
-
-| CT symbol | CT name | Name | Type | Frobenius dual | Physical meaning | Status |
-| --------- | ------- | ---- | ---- | -------------- | ---------------- | ------ |
-| $\eta$    | unit | PROJECT | $\mathbf{1} \to A$ | FLIP | orbital state preparation; prepare torus knot eigenstate | ✓ exists |
-| $\delta$  | comultiplication | **CLEAVE** | $A \to A \otimes A$ | JOIN | bond breaking: split connected-sum orbital into two | ✗ **new** |
-| $\varepsilon$ | counit | FLIP | $A \to \mathbf{1}$ | PROJECT | measurement, orbital annihilation | ✓ exists |
-| $\mu$     | multiplication | **JOIN** | $A \otimes A \to A$ | CLEAVE | covalent bond formation: connected sum of torus knots | ✗ **new** |
-| $\tau$    | braiding | **LINK** | $A \otimes B \to A \otimes B$ | LINK (self-dual) | coordinate/dative bond: Hopf linking without topology change | ✗ **new** |
-| —         | 2-cell (PROP morphism) | SNAP↑ | **2-cell** $\mathcal{F} \to \mathcal{F}'$ | SNAP↓ (inverse) | β\* tier promotion H^k → H^{k+1}; switches active PROP upward | primitive (see below) |
-| —         | 2-cell (PROP morphism) | SNAP↓ | **2-cell** $\mathcal{F}' \to \mathcal{F}$ | SNAP↑ (inverse) | β\* tier demotion H^{k+1} → H^k; switches active PROP downward | primitive (see below) |
-
-**Why JOIN and CLEAVE are forced:** a Frobenius algebra requires both a multiplication
-$\mu: A \otimes A \to A$ and a comultiplication $\delta: A \to A \otimes A$ satisfying
-the Frobenius condition. In the single-site ISA, these roles are played by PROJECT and
-RESOLVE — but those act *within* one orbital. For bonding, $\mu$ acquires new physical
-content: two orbital knots $T(p_1, q_1)$ and $T(p_2, q_2)$ form a covalent bond whose
-molecular orbital has knot type $T(p_1, q_1) \mathbin{\#} T(p_2, q_2)$ (connected sum,
-additive genus $g_1 + g_2$). This is **JOIN**. Its Frobenius dual $\delta: A \to A \otimes A$
-is **CLEAVE** — the reverse of JOIN, splitting a bonded orbital back into two
-components. JOIN and CLEAVE were absent from the Origami ISA because the single-site
-ISA never had two distinct orbital types as inputs. Hybridisation (sp³, sp²) is NOT a
-new opcode: it is TWIST applied to the orbital colour label (a change of basis, not a
-new morphism type).
-
-**Why LINK is forced:** the braided monoidal structure of the PROP requires a
-braiding morphism $\tau: A \otimes B \to B \otimes A$. For orbital knots, the
-natural braiding is not a swap but a **Hopf linking** — two orbital knots $T(p_A, q_A)$
-and $T(p_B, q_B)$ can be linked with linking number $\nu$ (bond order) without their
-topological types changing. This is the coordinate/dative bond: the ligand knot and
-the metal knot remain distinct (unlike JOIN), but they are geometrically linked.
-LINK is forced by the braided monoidal structure when objects carry knot-type labels.
-
-**The Frobenius condition as microscopic reversibility:**
-$$(\mathrm{id} \otimes \delta) \circ \mu = (\mu \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \delta)$$
-This is the algebraic form of **detailed balance** (microscopic reversibility): bond
-formation followed by bond breaking in either order gives the same result. Every
-reversible chemical reaction satisfies it. An irreversible reaction — one that violates
-detailed balance — lives outside the Frobenius sector. The Frobenius condition is not
-an extra axiom imposed on chemistry; it is the algebraic statement of a law chemistry
-already obeys.
-
-**Opcode duality:** the 1-cell opcodes come in two kinds of dual pairs.
-
-*Frobenius comultiplication/multiplication pairs* (related by $\Delta^\dagger = \mu$):
-- **(RESOLVE, PROJECT)** — intra-site; $\Delta^\dagger = \mu$; the spider identity PROJECT∘RESOLVE = id
-- **(JOIN, CLEAVE)** — inter-site (Valence ISA); $\mu^\dagger = \delta$; bond formation/breaking
-
-*Compact closed unit/counit pairs* (related by the zigzag identity):
-- **(FLIP, CUP)** — FLIP is the dagger anti-involution $(-)^\dagger$; CUP is its counit sub-role $\varepsilon: A^* \otimes A \to \mathbf{1}$; together they satisfy $(\varepsilon \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \eta) = \mathrm{id}$
-
-TWIST and LINK are self-dual. FUSE (the associator $\alpha_{A,B,C}$) has no Frobenius
-dual — it lives in the magmoidal extension beyond the Frobenius sector entirely.
-
-Frobenius duality is *not* the same as inversion: CLEAVE is not the inverse of JOIN
-(they are adjoint under the Frobenius condition, not composites that yield identity).
-In quantum computing terms, CLEAVE fans out an entangled orbital into two components
-and JOIN merges two orbitals into one — the creation/annihilation pair of the
-inter-site Frobenius algebra, related by $\delta^\dagger = \mu$.
-
-**Why SNAP is primitive — and not derivable from JOIN + CLEAVE + FLIP:**
-JOIN, CLEAVE, LINK, and all the other opcodes are **1-cell morphisms within a PROP** —
-operations that act inside a fixed computational tier (a fixed free-energy basin).
-SNAP is a **2-cell morphism between PROPs** — it marks the $\beta^*$ threshold where
-the system transitions between ISA tiers (H⁰ $\leftrightarrow$ H¹ $\leftrightarrow$ H²).
-No composition of 1-cells can produce a 2-cell: they live at different categorical
-levels. SNAP is therefore primitive by categorical level, not by type.
-
-**SNAP has no Frobenius dual but does have an inverse:** as a 2-cell, SNAP↑ (tier
-promotion, $\mathcal{F} \to \mathcal{F}'$) and SNAP↓ (tier demotion,
-$\mathcal{F}' \to \mathcal{F}$) are mutual inverses — together they form a 2-cell
-isomorphism. This corresponds physically to a reversible phase transition: increasing $\beta$ past $\beta^*$ fires SNAP↑; decreasing $\beta$ back fires SNAP↓. Spin-crossover hysteresis is the pair (SNAP↑, SNAP↓) following different paths through the $\beta$-plane (nonzero imaginary part during the loop). LIESST is SNAP↑ firing while
-SNAP↓ is kinetically blocked at low temperature. The irreversibility of a *particular*
-SNAP event is kinetic, not categorical: SNAP↑ and SNAP↓ are both valid 2-cells.
-
-The physical analogue of SNAP's categorical level: JOIN is a chemical reaction
-(reversible, within one thermodynamic phase, satisfies the Frobenius condition).
-SNAP is a phase transition (crosses between phases). No sequence of chemical reactions
-produces a phase transition. This is why SNAP cannot be written as FLIP∘JOIN — the
-two operations are not in the same categorical layer.
-
-**Consequence for PT-symmetric computing (Paper 664):** the exceptional point (EP)
-crossing in a PT-symmetric material is a physical realisation of the SNAP 2-cell.
-The EP is simultaneously the $\beta^*$ snap threshold (MGE), the orbital knot
-crossing-change transition (torus curve changes type), and the tier boundary
-(ORBIT → TWIST → BIND regime). Existing PT-symmetric laser arrays are already
-executing RESOLVE-tier computation (tropical mode competition); adding laser driving
-at orbital-commensurate frequencies implements TWIST-tier gates; crossing the EP
-executes SNAP. See Papers 662 and 664.
-
-### The traced symmetric monoidal category (TSMC)
-
-Combining symmetric monoidal (swap wires) with traced (close feedback loops) gives
-the **traced symmetric monoidal category (TSMC)** — the minimal structure needed
-to write programmes that have both parallel composition and feedback. The TSMC is:
-
-- The categorical foundation of **dataflow computing** (Abramsky & Duncan 2004)
-- The setting for **Girard's geometry of interaction** (proof theory / linear logic)
-- The home of **ZX calculus** (Coecke & Duncan 2008) for qubit quantum mechanics
-
-All opcodes except FUSE live in the free TSMC + Frobenius. FUSE requires the
-magmoidal extension beyond TSMC. The containment is strict:
-
-$$\text{free TSMC + Frobenius} \;\subset\; \text{free magmoidal TSMC + Frobenius}$$
-
-The left side generates all H⁰ and H¹ computation. The right side adds H².
-
-### Why this makes the ISA rigorous
-
-The categorical foundation means:
-1. **The opcodes are universal** — any system described by a monoidal category
-   (which is essentially all of mathematical physics) uses these morphisms.
-2. **The tier assignments are theorems** — the H^k tier of each opcode follows
-   from which level of the categorical hierarchy it requires; this is not a
-   classification imposed from outside.
-3. **The cross-domain appearances are identities** — when the Frobenius axiom
-   appears in angular momentum theory and in finance and in knot theory, it is
-   the *same equation*, not an analogy. The ISA makes this explicit by naming it.
-4. **The failure of classical methods is a theorem** — DFT and Clifford simulation
-   fail at the H¹→H² boundary because they are functors from ribbon categories
-   (H⁰/H¹) and the H² obstruction (the non-trivial associator / FUSE) is not
-   in their image. This is not an empirical observation; it is a consequence of
-   the categorical structure.
-
-## Why five opcodes?
-
-The Origami ISA is not an arbitrary instruction set. It is the **minimal magmoidal
-extension of the free traced symmetric monoidal category (TSMC — a monoidal category
-with a trace operation closing loops in the string diagram)** — the smallest
-opcode set that is both TSMC-complete and magmoidal-complete. Every opcode except FUSE
-is a named morphism in the TSMC + Frobenius structure (the "spider calculus"). FUSE is
-the unique opcode that requires a magmoidal extension: it encodes a non-trivial
-associator, realised physically as G₂/octonion symmetry.
-
-The five opcodes form a **completeness hierarchy**: each tier lifts the ISA to
-the next level of the cohomological (H^k) computational tower, and no opcode at level
-k can be simulated by any combination of opcodes at level k−1. The H^k tiers are not
-merely a grading — they are the homology groups of a genuine chain complex (see
-Theorem 3 below).
-
-Monoidal categories underlie all of mathematical physics for the same reason: any
-system in which operations compose in parallel and in sequence — quantum circuits,
-Feynman diagrams, tensor networks, representation theory, the Langlands
-correspondence — is an object in some monoidal category. The twelve opcodes are the
-**universal generating morphisms** of that structure, extended to include the
-non-associative (magmoidal) and non-local (compact closed) regimes.
-
-This is why the same operations appear in nuclear spectroscopy, topological quantum
-computing, loop quantum gravity, financial XVA, the geometric Langlands programme,
-protein folding, and the ribosome. They are not analogies. They are the same
-categorical morphisms, running on different physical hardware.
-
-**How precise are the ISA mappings across domains?** The mappings range from exact
-algebraic theorems (Tier A: Fano commutation structure, Casimir identity, Wigner
-vertex theorem) to quantitative predictions verified by experiment (Tier B: MCMC
-optimal acceptance rates, GEV shape parameter, Shor mana = 0) to useful
-organisational language for hierarchies the field already knew were hierarchical
-(Tier C: Pearl's causal ladder, fairness taxonomies). The programme does not claim
-all mappings are equally strong — [see the full precision taxonomy](/docs/applications/stratification-principle).
-
----
-
-## The ISA is semiring-polymorphic
-
-The Origami ISA is not tied to a specific number system. Every opcode has a
-**semiring-polymorphic** definition: the same programme computes different things
-depending on the semiring in which it is evaluated. The semiring is the *runtime*;
-the ISA is the *programme*.
-
-| Semiring | Runtime name | Hardware |
-| -------- | ------------ | -------- |
-| $(\mathbb{R}\cup\{-\infty\}, \max, +)$ | Tropical limit (Origami at β→∞) | CPU |
-| $(\mathbb{R}_{>0}, +, \times)$ | Gibbs / Forge ISA | GPU / TPU |
-| $(\mathbb{C}, +, \times)$ | Meld ISA | Quantum processor |
-| $(\mathbb{Z}_p, +, \times)$ | p-adic / U-MGE | PPU |
-| $(\mathbb{A}_\mathbb{Q}, +, \times)$ | Adèlic / A-MGE | PPU array + quantum |
-
-| Semiring | RESOLVE computes | TWIST computes |
-| -------- | -------------- | -------------- |
-| Tropical | argmax fan-out | phase = sign flip |
-| Gibbs | Boltzmann fan-out | Berry phase weight |
-| Meld | amplitude fan-out | ribbon / Berry phase |
-| p-adic | modular fan-out | Gauss sum $\tau_p$ |
-| Adèlic | adèlic fan-out | product of Gauss sums |
-
-This is why the ISA appears in so many domains without modification: nuclear
-spectroscopy, quantum information, financial risk, and protein folding are all
-running the same opcodes, but over different semirings suited to their physics.
-The Clifford group is the ISA's Clifford sector *evaluated in $(\mathbb{C},+,\times)$*;
-tropical optimisation is the same ISA *evaluated in $(\mathbb{R}\cup\{-\infty\},\max,+)$*.
-The Gottesman-Knill theorem says the Clifford sector admits efficient classical
-simulation — equivalently, that the $(\mathbb{C},+,\times)$ ISA collapses to the
-$(\mathbb{R}\cup\{-\infty\},\max,+)$ ISA for Clifford-only programmes. Magic
-states are the programmes that do *not* collapse.
-
-**The semiring-programmable Origami processor** is the long-term hardware vision:
-a single chip that accepts an ISA programme and a semiring specification at
-programme-load time, and routes to the appropriate arithmetic units — floating-point
-for the Forge ISA, NTT/Montgomery chain for the p-adic ISA, complex FMA for the
-Meld ISA. See [forge-meld.md](../theory/forge-meld.md) for the β-plane geometry that
-relates the semirings to each other.
-
----
-
-## String diagrams
-
-Every opcode has a **string diagram** — the graphical calculus of monoidal
-categories, popularised in quantum information by Coecke and Abramsky (2004) and
-in topological field theory by Reshetikhin and Turaev (1991). In string diagrams:
-
-- **Wires** (lines) represent objects (vector spaces, representations, anyons)
-- **Boxes** (nodes) represent morphisms (linear maps, operations)
-- **Composition** is vertical stacking (sequential)
-- **Tensor product** is horizontal juxtaposition (parallel)
-- **Orientation** of a wire matters: upward = the object, downward = its dual
-
-The diagrams below are described in text; the LaTeX figures appear in
-[Paper 258 (Origami Calculus)](papers/10.5281-zenodo.19916429/) and
-[Paper 349](papers/10.5281-zenodo.20474914/).
-
----
-
 ## Opcode reference
-
----
 
 ### RESOLVE 🔬 *(formerly ORBIT, originally SPLIT)* 🕷️
 
@@ -793,7 +493,287 @@ most powerful: systems with FUSE can encode computations that FUSE-free
 
 ---
 
-## The three theorems
+## Theoretical foundations
+
+### Why five opcodes?
+
+The Origami ISA is not an arbitrary instruction set. It is the **minimal magmoidal
+extension of the free traced symmetric monoidal category (TSMC — a monoidal category
+with a trace operation closing loops in the string diagram)** — the smallest
+opcode set that is both TSMC-complete and magmoidal-complete. Every opcode except FUSE
+is a named morphism in the TSMC + Frobenius structure (the "spider calculus"). FUSE is
+the unique opcode that requires a magmoidal extension: it encodes a non-trivial
+associator, realised physically as G₂/octonion symmetry.
+
+The five opcodes form a **completeness hierarchy**: each tier lifts the ISA to
+the next level of the cohomological (H^k) computational tower, and no opcode at level
+k can be simulated by any combination of opcodes at level k−1. The H^k tiers are not
+merely a grading — they are the homology groups of a genuine chain complex (see
+Theorem 3 below).
+
+Monoidal categories underlie all of mathematical physics for the same reason: any
+system in which operations compose in parallel and in sequence — quantum circuits,
+Feynman diagrams, tensor networks, representation theory, the Langlands
+correspondence — is an object in some monoidal category. The twelve opcodes are the
+**universal generating morphisms** of that structure, extended to include the
+non-associative (magmoidal) and non-local (compact closed) regimes.
+
+This is why the same operations appear in nuclear spectroscopy, topological quantum
+computing, loop quantum gravity, financial XVA, the geometric Langlands programme,
+protein folding, and the ribosome. They are not analogies. They are the same
+categorical morphisms, running on different physical hardware.
+
+**How precise are the ISA mappings across domains?** The mappings range from exact
+algebraic theorems (Tier A: Fano commutation structure, Casimir identity, Wigner
+vertex theorem) to quantitative predictions verified by experiment (Tier B: MCMC
+optimal acceptance rates, GEV shape parameter, Shor mana = 0) to useful
+organisational language for hierarchies the field already knew were hierarchical
+(Tier C: Pearl's causal ladder, fairness taxonomies). The programme does not claim
+all mappings are equally strong — [see the full precision taxonomy](/docs/applications/stratification-principle).
+
+### The category theory behind the opcodes
+
+This section explains *why* the ISA opcodes are rigorous mathematical objects and
+not just suggestive names — and why the same objects appear across physics,
+mathematics, and computing without any analogy or hand-waving.
+
+#### The ladder of categories
+
+The opcodes are generated by a strict hierarchy of categorical structures. Each
+level adds one new kind of morphism, and each addition corresponds to one H^k tier:
+
+| Category type | What it adds | Opcode unlocked | H^k tier |
+| ------------- | ------------ | --------------- | -------- |
+| **Monoidal category** | Parallel composition (⊗); unit object **1** | RESOLVE (fan-out sub-role) · PROJECT (projection + unit sub-roles) | H⁰ |
+| **+ Symmetric** | Swap morphism; wire crossing | RESOLVE (closed traces) | H⁰ |
+| **+ Traced** | Feedback loops (trace closing a wire on itself) | RESOLVE (full feedback) | H⁰ |
+| **+ Frobenius** | Comultiplication + counit satisfying Frobenius law | RESOLVE ↔ PROJECT duality | H⁰ |
+| **+ Compact closed** | Dual objects; cups and caps | FLIP (Born rule / fermionisation sub-role) | H⁰/H¹ |
+| **+ Dagger** | Anti-involution $(-)^\dagger$ reversing all arrows | FLIP (time-reversal sub-role) | H¹ |
+| **+ Ribbon** | Ribbon element $\theta_V$ (topological spin / twist) | TWIST (Berry phase) | H¹ |
+| **+ Magmoidal** | Non-trivial associator $\alpha_{A,B,C} \neq \mathrm{id}$ | FUSE (entanglement) | H² |
+
+A **monoidal category** is any mathematical structure where operations can compose
+both *sequentially* (one after another, written ∘) and *in parallel* (side by side,
+written ⊗), with a unit object **1** for "doing nothing." This covers essentially
+all of mathematical physics: quantum circuits, Feynman diagrams, tensor networks,
+representations of groups, the Langlands correspondence.
+
+Each row in the table is a *property* that a monoidal category may or may not have.
+The opcodes are the **canonical generators** of each property — the minimal new
+morphism you must add to express it. This is why the opcodes are not arbitrary: they
+are forced by the categorical structure.
+
+#### Why FUSE is special: magmoidal categories
+
+Every category in the ladder above (monoidal through ribbon) satisfies the
+**pentagon axiom**: the associator is coherent, meaning all ways of
+re-bracketing a tensor product $(A \otimes B) \otimes C \cong A \otimes (B \otimes C)$
+are consistent. In such categories, the associator is effectively invisible — you
+can ignore brackets.
+
+A **magmoidal category** is one where the pentagon axiom *fails*: the associator
+$\alpha_{A,B,C}$ is genuinely non-trivial and cannot be set to the identity. This
+is the categorical home of:
+
+- **Octonions** — the non-associative normed division algebra; $e_i(e_j e_k) \neq (e_i e_j)e_k$
+- **Non-Abelian anyons** — fusion categories with non-trivial $F$-matrices (the $F$-matrix *is* the associator)
+- **$G_2$ symmetry** — the automorphism group of the octonions; the exceptional Lie group whose root system is the Fano plane
+
+FUSE is the single opcode that requires magmoidal extension. Every opcode except
+FUSE lives in a ribbon category (associative, pentagon holds). FUSE is the
+morphism that encodes the associator itself — which is why it requires genuine
+multi-body correlation (H²) that no H⁰/H¹ approximation can reproduce.
+
+#### The Frobenius algebra: why RESOLVE and PROJECT are dual
+
+RESOLVE and PROJECT are not independent. Together with FLIP they form a **Frobenius
+algebra** $(A, \mu, \eta, \Delta, \varepsilon)$:
+
+- $\Delta: A \to A \otimes A$ — RESOLVE fan-out sub-role (comultiplication)
+- $\mu: A \otimes A \to A$ — PROJECT projection sub-role (multiplication)
+- $\eta: \mathbf{1} \to A$ — PROJECT unit sub-role
+- $\varepsilon: A \to \mathbf{1}$ — FLIP Born-rule sub-role (counit)
+
+The **Frobenius axiom** $(\mu \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \Delta) = \Delta \circ \mu = (\mathrm{id} \otimes \mu) \circ (\Delta \otimes \mathrm{id})$ is the algebraic statement that "fan-out then project = identity." This is simultaneously:
+- The Pentagon identity in angular momentum theory (Biedenharn-Elliott)
+- The no-arbitrage condition in finance
+- The topological invariance of Ponzano-Regge amplitudes
+- The Reidemeister moves for knot diagrams
+
+These are not analogies. They are the same equation, in the same Frobenius algebra,
+evaluated in different semirings over different physical hardware.
+
+#### The Frobenius algebra for bonding: the Valence ISA extension
+
+The single-site Frobenius algebra above (§ "Why RESOLVE and PROJECT are dual") describes
+operations *within* one orbital. For **bonding** — operations *between* orbitals — the
+PROP must carry a second Frobenius algebra structure, one where the objects carry
+orbital-knot labels. Category theory forces exactly two new opcodes and no others:
+
+| CT symbol | CT name | Name | Type | Frobenius dual | Physical meaning | Status |
+| --------- | ------- | ---- | ---- | -------------- | ---------------- | ------ |
+| $\eta$    | unit | PROJECT | $\mathbf{1} \to A$ | FLIP | orbital state preparation; prepare torus knot eigenstate | ✓ exists |
+| $\delta$  | comultiplication | **CLEAVE** | $A \to A \otimes A$ | JOIN | bond breaking: split connected-sum orbital into two | ✗ **new** |
+| $\varepsilon$ | counit | FLIP | $A \to \mathbf{1}$ | PROJECT | measurement, orbital annihilation | ✓ exists |
+| $\mu$     | multiplication | **JOIN** | $A \otimes A \to A$ | CLEAVE | covalent bond formation: connected sum of torus knots | ✗ **new** |
+| $\tau$    | braiding | **LINK** | $A \otimes B \to A \otimes B$ | LINK (self-dual) | coordinate/dative bond: Hopf linking without topology change | ✗ **new** |
+| —         | 2-cell (PROP morphism) | SNAP↑ | **2-cell** $\mathcal{F} \to \mathcal{F}'$ | SNAP↓ (inverse) | β\* tier promotion H^k → H^{k+1}; switches active PROP upward | primitive (see below) |
+| —         | 2-cell (PROP morphism) | SNAP↓ | **2-cell** $\mathcal{F}' \to \mathcal{F}$ | SNAP↑ (inverse) | β\* tier demotion H^{k+1} → H^k; switches active PROP downward | primitive (see below) |
+
+**Why JOIN and CLEAVE are forced:** a Frobenius algebra requires both a multiplication
+$\mu: A \otimes A \to A$ and a comultiplication $\delta: A \to A \otimes A$ satisfying
+the Frobenius condition. In the single-site ISA, these roles are played by PROJECT and
+RESOLVE — but those act *within* one orbital. For bonding, $\mu$ acquires new physical
+content: two orbital knots $T(p_1, q_1)$ and $T(p_2, q_2)$ form a covalent bond whose
+molecular orbital has knot type $T(p_1, q_1) \mathbin{\#} T(p_2, q_2)$ (connected sum,
+additive genus $g_1 + g_2$). This is **JOIN**. Its Frobenius dual $\delta: A \to A \otimes A$
+is **CLEAVE** — the reverse of JOIN, splitting a bonded orbital back into two
+components. JOIN and CLEAVE were absent from the Origami ISA because the single-site
+ISA never had two distinct orbital types as inputs. Hybridisation (sp³, sp²) is NOT a
+new opcode: it is TWIST applied to the orbital colour label (a change of basis, not a
+new morphism type).
+
+**Why LINK is forced:** the braided monoidal structure of the PROP requires a
+braiding morphism $\tau: A \otimes B \to B \otimes A$. For orbital knots, the
+natural braiding is not a swap but a **Hopf linking** — two orbital knots $T(p_A, q_A)$
+and $T(p_B, q_B)$ can be linked with linking number $\nu$ (bond order) without their
+topological types changing. This is the coordinate/dative bond: the ligand knot and
+the metal knot remain distinct (unlike JOIN), but they are geometrically linked.
+LINK is forced by the braided monoidal structure when objects carry knot-type labels.
+
+**The Frobenius condition as microscopic reversibility:**
+$$(\mathrm{id} \otimes \delta) \circ \mu = (\mu \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \delta)$$
+This is the algebraic form of **detailed balance** (microscopic reversibility): bond
+formation followed by bond breaking in either order gives the same result. Every
+reversible chemical reaction satisfies it. An irreversible reaction — one that violates
+detailed balance — lives outside the Frobenius sector. The Frobenius condition is not
+an extra axiom imposed on chemistry; it is the algebraic statement of a law chemistry
+already obeys.
+
+**Opcode duality:** the 1-cell opcodes come in two kinds of dual pairs.
+
+*Frobenius comultiplication/multiplication pairs* (related by $\Delta^\dagger = \mu$):
+- **(RESOLVE, PROJECT)** — intra-site; $\Delta^\dagger = \mu$; the spider identity PROJECT∘RESOLVE = id
+- **(JOIN, CLEAVE)** — inter-site (Valence ISA); $\mu^\dagger = \delta$; bond formation/breaking
+
+*Compact closed unit/counit pairs* (related by the zigzag identity):
+- **(FLIP, CUP)** — FLIP is the dagger anti-involution $(-)^\dagger$; CUP is its counit sub-role $\varepsilon: A^* \otimes A \to \mathbf{1}$; together they satisfy $(\varepsilon \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \eta) = \mathrm{id}$
+
+TWIST and LINK are self-dual. FUSE (the associator $\alpha_{A,B,C}$) has no Frobenius
+dual — it lives in the magmoidal extension beyond the Frobenius sector entirely.
+
+Frobenius duality is *not* the same as inversion: CLEAVE is not the inverse of JOIN
+(they are adjoint under the Frobenius condition, not composites that yield identity).
+In quantum computing terms, CLEAVE fans out an entangled orbital into two components
+and JOIN merges two orbitals into one — the creation/annihilation pair of the
+inter-site Frobenius algebra, related by $\delta^\dagger = \mu$.
+
+**Why SNAP is primitive — and not derivable from JOIN + CLEAVE + FLIP:**
+JOIN, CLEAVE, LINK, and all the other opcodes are **1-cell morphisms within a PROP** —
+operations that act inside a fixed computational tier (a fixed free-energy basin).
+SNAP is a **2-cell morphism between PROPs** — it marks the $\beta^*$ threshold where
+the system transitions between ISA tiers (H⁰ $\leftrightarrow$ H¹ $\leftrightarrow$ H²).
+No composition of 1-cells can produce a 2-cell: they live at different categorical
+levels. SNAP is therefore primitive by categorical level, not by type.
+
+**SNAP has no Frobenius dual but does have an inverse:** as a 2-cell, SNAP↑ (tier
+promotion, $\mathcal{F} \to \mathcal{F}'$) and SNAP↓ (tier demotion,
+$\mathcal{F}' \to \mathcal{F}$) are mutual inverses — together they form a 2-cell
+isomorphism. This corresponds physically to a reversible phase transition: increasing $\beta$ past $\beta^*$ fires SNAP↑; decreasing $\beta$ back fires SNAP↓. Spin-crossover hysteresis is the pair (SNAP↑, SNAP↓) following different paths through the $\beta$-plane (nonzero imaginary part during the loop). LIESST is SNAP↑ firing while
+SNAP↓ is kinetically blocked at low temperature. The irreversibility of a *particular*
+SNAP event is kinetic, not categorical: SNAP↑ and SNAP↓ are both valid 2-cells.
+
+The physical analogue of SNAP's categorical level: JOIN is a chemical reaction
+(reversible, within one thermodynamic phase, satisfies the Frobenius condition).
+SNAP is a phase transition (crosses between phases). No sequence of chemical reactions
+produces a phase transition. This is why SNAP cannot be written as FLIP∘JOIN — the
+two operations are not in the same categorical layer.
+
+**Consequence for PT-symmetric computing (Paper 664):** the exceptional point (EP)
+crossing in a PT-symmetric material is a physical realisation of the SNAP 2-cell.
+The EP is simultaneously the $\beta^*$ snap threshold (MGE), the orbital knot
+crossing-change transition (torus curve changes type), and the tier boundary
+(ORBIT → TWIST → BIND regime). Existing PT-symmetric laser arrays are already
+executing RESOLVE-tier computation (tropical mode competition); adding laser driving
+at orbital-commensurate frequencies implements TWIST-tier gates; crossing the EP
+executes SNAP. See Papers 662 and 664.
+
+#### The traced symmetric monoidal category (TSMC)
+
+Combining symmetric monoidal (swap wires) with traced (close feedback loops) gives
+the **traced symmetric monoidal category (TSMC)** — the minimal structure needed
+to write programmes that have both parallel composition and feedback. The TSMC is:
+
+- The categorical foundation of **dataflow computing** (Abramsky & Duncan 2004)
+- The setting for **Girard's geometry of interaction** (proof theory / linear logic)
+- The home of **ZX calculus** (Coecke & Duncan 2008) for qubit quantum mechanics
+
+All opcodes except FUSE live in the free TSMC + Frobenius. FUSE requires the
+magmoidal extension beyond TSMC. The containment is strict:
+
+$$\text{free TSMC + Frobenius} \;\subset\; \text{free magmoidal TSMC + Frobenius}$$
+
+The left side generates all H⁰ and H¹ computation. The right side adds H².
+
+#### Why this makes the ISA rigorous
+
+The categorical foundation means:
+1. **The opcodes are universal** — any system described by a monoidal category
+   (which is essentially all of mathematical physics) uses these morphisms.
+2. **The tier assignments are theorems** — the H^k tier of each opcode follows
+   from which level of the categorical hierarchy it requires; this is not a
+   classification imposed from outside.
+3. **The cross-domain appearances are identities** — when the Frobenius axiom
+   appears in angular momentum theory and in finance and in knot theory, it is
+   the *same equation*, not an analogy. The ISA makes this explicit by naming it.
+4. **The failure of classical methods is a theorem** — DFT and Clifford simulation
+   fail at the H¹→H² boundary because they are functors from ribbon categories
+   (H⁰/H¹) and the H² obstruction (the non-trivial associator / FUSE) is not
+   in their image. This is not an empirical observation; it is a consequence of
+   the categorical structure.
+
+### The ISA is semiring-polymorphic
+
+The Origami ISA is not tied to a specific number system. Every opcode has a
+**semiring-polymorphic** definition: the same programme computes different things
+depending on the semiring in which it is evaluated. The semiring is the *runtime*;
+the ISA is the *programme*.
+
+| Semiring | Runtime name | Hardware |
+| -------- | ------------ | -------- |
+| $(\mathbb{R}\cup\{-\infty\}, \max, +)$ | Tropical limit (Origami at β→∞) | CPU |
+| $(\mathbb{R}_{>0}, +, \times)$ | Gibbs / Forge ISA | GPU / TPU |
+| $(\mathbb{C}, +, \times)$ | Meld ISA | Quantum processor |
+| $(\mathbb{Z}_p, +, \times)$ | p-adic / U-MGE | PPU |
+| $(\mathbb{A}_\mathbb{Q}, +, \times)$ | Adèlic / A-MGE | PPU array + quantum |
+
+| Semiring | RESOLVE computes | TWIST computes |
+| -------- | -------------- | -------------- |
+| Tropical | argmax fan-out | phase = sign flip |
+| Gibbs | Boltzmann fan-out | Berry phase weight |
+| Meld | amplitude fan-out | ribbon / Berry phase |
+| p-adic | modular fan-out | Gauss sum $\tau_p$ |
+| Adèlic | adèlic fan-out | product of Gauss sums |
+
+This is why the ISA appears in so many domains without modification: nuclear
+spectroscopy, quantum information, financial risk, and protein folding are all
+running the same opcodes, but over different semirings suited to their physics.
+The Clifford group is the ISA's Clifford sector *evaluated in $(\mathbb{C},+,\times)$*;
+tropical optimisation is the same ISA *evaluated in $(\mathbb{R}\cup\{-\infty\},\max,+)$*.
+The Gottesman-Knill theorem says the Clifford sector admits efficient classical
+simulation — equivalently, that the $(\mathbb{C},+,\times)$ ISA collapses to the
+$(\mathbb{R}\cup\{-\infty\},\max,+)$ ISA for Clifford-only programmes. Magic
+states are the programmes that do *not* collapse.
+
+**The semiring-programmable Origami processor** is the long-term hardware vision:
+a single chip that accepts an ISA programme and a semiring specification at
+programme-load time, and routes to the appropriate arithmetic units — floating-point
+for the Forge ISA, NTT/Montgomery chain for the p-adic ISA, complex FMA for the
+Meld ISA. See [forge-meld.md](../theory/forge-meld.md) for the β-plane geometry that
+relates the semirings to each other.
+
+### The three theorems
 
 Everything above is a dictionary. Three theorems give it teeth.
 
@@ -833,6 +813,22 @@ cohomology theory. Theorem 3 supplies the missing differential and confirms that
 tiers are genuine homology groups. The RESOLVE count was always correct; it now has a
 proof that it equals an Euler characteristic, not just a heuristic count.
 
+### String diagrams
+
+Every opcode has a **string diagram** — the graphical calculus of monoidal
+categories, popularised in quantum information by Coecke and Abramsky (2004) and
+in topological field theory by Reshetikhin and Turaev (1991). In string diagrams:
+
+- **Wires** (lines) represent objects (vector spaces, representations, anyons)
+- **Boxes** (nodes) represent morphisms (linear maps, operations)
+- **Composition** is vertical stacking (sequential)
+- **Tensor product** is horizontal juxtaposition (parallel)
+- **Orientation** of a wire matters: upward = the object, downward = its dual
+
+The diagrams below are described in text; the LaTeX figures appear in
+[Paper 258 (Origami Calculus)](papers/10.5281-zenodo.19916429/) and
+[Paper 349](papers/10.5281-zenodo.20474914/).
+
 ---
 
 ## The ISA trilogy and the Baez threefold way
@@ -847,6 +843,7 @@ run over, and in the value of the inverse-temperature parameter $\beta$:
 | Meld | $\beta = it$ | Complex amplitudes | $4$ (GSE) | Kramers-degenerate | AII, CII, C, CI |
 
 The opcodes are the same in all three; only the number system and $\beta$ change.
+
 As $\beta \to \infty$ the Gibbs softmax collapses to a tropical argmax — discrete,
 classical computation. At finite $\beta$ it is a smooth Gibbs distribution — the
 Forge ISA. The Wick rotation $\beta \to it$ turns real Boltzmann weights into
@@ -1027,8 +1024,5 @@ different hardware.
 
 **For number theorists and algebraic geometers:**
 
-- **[The Langlands Perspective](../theory/langlands.md)** — how each opcode column in the
-  tables above maps onto the Langlands programme: RESOLVE = spectral decomposition
-  of $L^2(G(\mathbb{Q})\backslash G(\mathbb{A}))$; TWIST = Tate twist / Hecke
-  character; FUSE = Rankin-Selberg convolution; CUP = Arthur-Selberg trace
-  formula. The Langlands correspondence as adèlic ISA semiring-polymorphism.
+- **[The Geometric Langlands ISA](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — RESOLVE = Hecke eigendecomposition; PROJECT = L-function evaluation; FUSE = Rankin-Selberg convolution; CUP = Arthur-Selberg trace formula; non-Abelian = FUSE required
+- **[The Apéry ISA](papers/)** (Paper 553) — $\zeta(3) \notin \mathbb{Q}$ as an H² obstruction; RESOLVE count on the Apéry recursion; x553a experiment
