@@ -604,70 +604,113 @@ The **Frobenius axiom** $(\mu \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \D
 These are not analogies. They are the same equation, in the same Frobenius algebra,
 evaluated in different semirings over different physical hardware.
 
-#### The Frobenius algebra for bonding: the Valence ISA extension
+#### The Valence ISA: why Origami is still universal
 
-The single-site Frobenius algebra above (§ "Why RESOLVE and PROJECT are dual") describes
-operations *within* one orbital. For **bonding** — operations *between* orbitals — the
-PROP must carry a second Frobenius algebra structure, one where the objects carry
-orbital-knot labels. Category theory forces exactly two new opcodes and no others:
+Before addressing the Valence ISA extension, a question must be answered directly:
+**if Origami is universal, why does bonding require new opcodes?**
 
-| CT symbol | CT name | Name | Type | Frobenius dual | Physical meaning | Status |
-| --------- | ------- | ---- | ---- | -------------- | ---------------- | ------ |
-| $\eta$    | unit | PROJECT | $\mathbf{1} \to A$ | FLIP | orbital state preparation; prepare torus knot eigenstate | ✓ exists |
-| $\delta$  | comultiplication | **CLEAVE** | $A \to A \otimes A$ | JOIN | bond breaking: split connected-sum orbital into two | ✗ **new** |
-| $\varepsilon$ | counit | FLIP | $A \to \mathbf{1}$ | PROJECT | measurement, orbital annihilation | ✓ exists |
-| $\mu$     | multiplication | **JOIN** | $A \otimes A \to A$ | CLEAVE | covalent bond formation: connected sum of torus knots | ✗ **new** |
-| $\tau$    | braiding | **LINK** | $A \otimes B \to A \otimes B$ | LINK (self-dual) | coordinate/dative bond: Hopf linking without topology change | ✗ **new** |
-| —         | 2-cell (PROP morphism) | SNAP↑ | **2-cell** $\mathcal{F} \to \mathcal{F}'$ | SNAP↓ (inverse) | β\* tier promotion H^k → H^{k+1}; switches active PROP upward | primitive (see below) |
-| —         | 2-cell (PROP morphism) | SNAP↓ | **2-cell** $\mathcal{F}' \to \mathcal{F}$ | SNAP↑ (inverse) | β\* tier demotion H^{k+1} → H^k; switches active PROP downward | primitive (see below) |
+The answer is that Origami is universal for **single-object** computation — morphisms
+*within* one Frobenius algebra (one atom, one orbital, one site). JOIN and CLEAVE
+are not missing from Origami; they are **not the right type** to exist in it. They
+are morphisms *between* two different Frobenius algebras. You cannot write them down
+until you have two objects.
 
-**Why JOIN and CLEAVE are forced:** a Frobenius algebra requires both a multiplication
-$\mu: A \otimes A \to A$ and a comultiplication $\delta: A \to A \otimes A$ satisfying
-the Frobenius condition. In the single-site ISA, these roles are played by PROJECT and
-RESOLVE — but those act *within* one orbital. For bonding, $\mu$ acquires new physical
-content: two orbital knots $T(p_1, q_1)$ and $T(p_2, q_2)$ form a covalent bond whose
-molecular orbital has knot type $T(p_1, q_1) \mathbin{\#} T(p_2, q_2)$ (connected sum,
-additive genus $g_1 + g_2$). This is **JOIN**. Its Frobenius dual $\delta: A \to A \otimes A$
-is **CLEAVE** — the reverse of JOIN, splitting a bonded orbital back into two
-components. JOIN and CLEAVE were absent from the Origami ISA because the single-site
-ISA never had two distinct orbital types as inputs. Hybridisation (sp³, sp²) is NOT a
-new opcode: it is TWIST applied to the orbital colour label (a change of basis, not a
-new morphism type).
+This is not a patch. It is the standard categorical tower:
 
-**Why LINK is forced:** the braided monoidal structure of the PROP requires a
-braiding morphism $\tau: A \otimes B \to B \otimes A$. For orbital knots, the
-natural braiding is not a swap but a **Hopf linking** — two orbital knots $T(p_A, q_A)$
-and $T(p_B, q_B)$ can be linked with linking number $\nu$ (bond order) without their
-topological types changing. This is the coordinate/dative bond: the ligand knot and
-the metal knot remain distinct (unlike JOIN), but they are geometrically linked.
-LINK is forced by the braided monoidal structure when objects carry knot-type labels.
+| Level | Structure | ISA | Objects |
+|-------|-----------|-----|---------|
+| **Level 1** | Single Frobenius algebra on A | Origami ISA | One atom / orbital / site |
+| **Level 2** | PROP of two Frobenius algebras A, B | Valence ISA | Two atoms bonding |
+
+Origami is universal at Level 1 exactly as group theory is universal for symmetry —
+and group theory does not describe *homomorphisms between groups* until you have two
+groups. That is not a failure of group theory; it is a statement about categorical
+level. The Valence ISA is the forced Level 2 extension, derived from Origami by the
+standard PROP construction.
+
+The full argument — including why PAT-q is the canonical faithful representation of
+both levels simultaneously, and what a "hoperator" is — is developed in Paper 708
+(*The Universal Hoperator*). This section records the conclusions; see that paper
+for proofs.
+
+**The CT↔chemistry bridge.** An electron in a hydrogen 1s orbital traces a Hopf
+fibre on $S^3$ — topologically a $(1,1)$ torus knot $T(1,1)$. More generally, an
+electron in an orbital with quantum numbers $(n, \ell)$ traces a torus knot
+$T(n, \ell)$ on $S^3$. A **covalent bond** between atoms A and B combines their
+orbitals: the molecular orbital has knot type
+
+$$T(n_A, \ell_A) \mathbin{\#} T(n_B, \ell_B)$$
+
+the **connected sum** — additive genus $g_A + g_B$. This connected-sum operation
+*is* JOIN. CLEAVE is its Frobenius dual: the bond-breaking operation that recovers
+the two component torus knots. The Frobenius condition on (JOIN, CLEAVE) is not
+imposed on chemistry — it is the algebraic form of detailed balance, which
+reversible chemistry already satisfies.
+
+**Level 1 — Single-site Frobenius algebra (Origami ISA opcodes, unchanged):**
+
+| CT symbol | CT name | Opcode | Type | Frobenius dual | Chemical meaning |
+| --------- | ------- | ------ | ---- | -------------- | ---------------- |
+| $\Delta$ | comultiplication | RESOLVE | $A \to A \otimes A$ | PROJECT | spectral decomposition; diagonalise orbital |
+| $\mu$ | multiplication | PROJECT | $A \otimes A \to A$ | RESOLVE | evaluation; project onto quantum number |
+| $\eta$ | unit | PROJECT (sub-role) | $\mathbf{1} \to A$ | FLIP | orbital state preparation |
+| $\varepsilon$ | counit | FLIP (CUP sub-role) | $A \to \mathbf{1}$ | PROJECT | measurement; orbital annihilation |
+| $\theta$ | ribbon twist | TWIST | $A \to A$ | TWIST (self-dual) | Berry phase; spin-orbit coupling |
+
+**Level 2 — Inter-site Frobenius algebra (Valence ISA — new opcodes only):**
+
+| CT symbol | CT name | Opcode | Type | Frobenius dual | Chemical meaning |
+| --------- | ------- | ------ | ---- | -------------- | ---------------- |
+| $\mu$ | multiplication | **JOIN** | $A \otimes B \to A\mathbin{\#}B$ | CLEAVE | covalent bond: connected sum of torus knots |
+| $\delta$ | comultiplication | **CLEAVE** | $A\mathbin{\#}B \to A \otimes B$ | JOIN | bond breaking: split connected-sum orbital |
+| $\tau$ | braiding | **LINK** | $A \otimes B \to A \otimes B$ | LINK (self-dual) | coordinate/dative bond: Hopf linking, bond order = linking number |
+
+**2-cell (between levels — neither Level 1 nor Level 2):**
+
+| CT level | Opcode | Type | Inverse | Physical meaning |
+|----------|--------|------|---------|-----------------|
+| 2-cell between PROPs | **SNAP↑** | $\mathcal{F} \to \mathcal{F}'$ | SNAP↓ | β\* tier promotion; phase transition upward |
+| 2-cell between PROPs | **SNAP↓** | $\mathcal{F}' \to \mathcal{F}$ | SNAP↑ | β\* tier demotion; phase transition downward |
+
+SNAP is primitive by categorical level: no composition of Level 1 or Level 2
+morphisms can produce a 2-cell. JOIN is a chemical reaction (within one
+thermodynamic phase). SNAP is a phase transition (between phases). These are
+not in the same layer.
+
+**Why JOIN and CLEAVE are forced (not chosen):** any Frobenius algebra at Level 2
+requires both a multiplication $\mu: A \otimes B \to A\mathbin{\#}B$ and a
+comultiplication $\delta: A\mathbin{\#}B \to A \otimes B$ satisfying the Frobenius
+condition. There is no choice about whether to include them — a Frobenius algebra
+without both is not a Frobenius algebra. Hybridisation (sp³, sp²) is *not* a new
+opcode: it is TWIST applied within Level 1 to the orbital colour label.
+
+**Why LINK is forced:** the braided monoidal structure of the Level 2 PROP requires
+a braiding morphism. For orbital knots the natural braiding is Hopf linking — two
+torus knots $T(p_A, q_A)$ and $T(p_B, q_B)$ linked with linking number $\nu$ (bond
+order) without changing their topological types. This is the coordinate/dative bond.
 
 **The Frobenius condition as microscopic reversibility:**
 $$(\mathrm{id} \otimes \delta) \circ \mu = (\mu \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \delta)$$
-This is the algebraic form of **detailed balance** (microscopic reversibility): bond
-formation followed by bond breaking in either order gives the same result. Every
-reversible chemical reaction satisfies it. An irreversible reaction — one that violates
-detailed balance — lives outside the Frobenius sector. The Frobenius condition is not
-an extra axiom imposed on chemistry; it is the algebraic statement of a law chemistry
-already obeys.
+Bond formation followed by bond breaking in either order gives the same result. Every
+reversible chemical reaction satisfies this. Irreversible reactions live outside the
+Frobenius sector.
 
-**Opcode duality:** the 1-cell opcodes come in two kinds of dual pairs.
+**Opcode duality across both levels:**
 
-*Frobenius comultiplication/multiplication pairs* (related by $\Delta^\dagger = \mu$):
-- **(RESOLVE, PROJECT)** — intra-site; $\Delta^\dagger = \mu$; the spider identity PROJECT∘RESOLVE = id
-- **(JOIN, CLEAVE)** — inter-site (Valence ISA); $\mu^\dagger = \delta$; bond formation/breaking
+*Level 1 — intra-site Frobenius pair:*
+- **(RESOLVE, PROJECT)** — $\Delta^\dagger = \mu$; spider identity PROJECT∘RESOLVE = id
 
-*Compact closed unit/counit pairs* (related by the zigzag identity):
-- **(FLIP, CUP)** — FLIP is the dagger anti-involution $(-)^\dagger$; CUP is its counit sub-role $\varepsilon: A^* \otimes A \to \mathbf{1}$; together they satisfy $(\varepsilon \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \eta) = \mathrm{id}$
+*Level 2 — inter-site Frobenius pair:*
+- **(JOIN, CLEAVE)** — $\mu^\dagger = \delta$; bond formation/breaking
 
-TWIST and LINK are self-dual. FUSE (the associator $\alpha_{A,B,C}$) has no Frobenius
-dual — it lives in the magmoidal extension beyond the Frobenius sector entirely.
+*Compact closed pair (Level 1):*
+- **(FLIP, CUP)** — dagger anti-involution and its counit sub-role; zigzag identity
 
-Frobenius duality is *not* the same as inversion: CLEAVE is not the inverse of JOIN
-(they are adjoint under the Frobenius condition, not composites that yield identity).
-In quantum computing terms, CLEAVE fans out an entangled orbital into two components
-and JOIN merges two orbitals into one — the creation/annihilation pair of the
-inter-site Frobenius algebra, related by $\delta^\dagger = \mu$.
+TWIST and LINK are self-dual at their respective levels. FUSE has no Frobenius dual
+— it lives in the magmoidal extension beyond the Frobenius sector entirely.
+
+Frobenius duality is *not* inversion: CLEAVE is not the inverse of JOIN (they are
+adjoint under the Frobenius condition, not composites yielding identity).
 
 **Why SNAP is primitive — and not derivable from JOIN + CLEAVE + FLIP:**
 JOIN, CLEAVE, LINK, and all the other opcodes are **1-cell morphisms within a PROP** —
