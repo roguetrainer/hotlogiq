@@ -86,9 +86,9 @@ with no interior vertex. Neither calculus assigns RESOLVE a node: RESOLVE *close
 
 | Opcode | Formal | Emoji | Categorical morphism | Abstract role |
 |--------|--------|-------|---------------------|---------------|
-| RESOLVE | 𝒪 | 🔄 | Comultiplication $\Delta: A \to A \otimes A$ · trace $\mathrm{tr}(\theta_A): \mathbf{1} \to \mathbf{1}$ | 1-to-many diagonalisation; closed feedback loop |
-| PROJECT | ⊢ | 🏷️ | Multiplication $\mu: A \otimes A \to A$ · unit $\eta: \mathbf{1} \to A$ | Many-to-1 evaluation; sector selection |
-| FLIP | ⌁ | 👁️ | Dagger $(-)^\dagger$ · counit $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ (CUP sub-role) | Orientation reversal; duality; Born rule |
+| RESOLVE | △ | 🔬 | Comultiplication $\Delta: A \to A \otimes A$ · trace $\mathrm{tr}(\theta_A): \mathbf{1} \to \mathbf{1}$ | 1-to-many diagonalisation; spectral decomposition |
+| PROJECT | ▼ | 🎯 | Multiplication $\mu: A \otimes A \to A$ · unit $\eta: \mathbf{1} \to A$ | Many-to-1 evaluation; sector selection |
+| FLIP | † | ↩️ | Dagger $(-)^\dagger$ · counit $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ (CUP sub-role) | Orientation reversal; time-reversal; duality |
 | TWIST | ∮ | 🌀 | Ribbon element $\theta_V: V \to V$; topological spin | Phase / monodromy; 1-to-1 with memory |
 | FUSE | ⋈ | 💎 | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | Non-associative fusion; recoupling; entanglement |
 
@@ -127,7 +127,7 @@ across completely different fields.
 
 ---
 
-| Domain | RESOLVE 🔄 | PROJECT 🏷️ | FLIP 👁️ | TWIST 🌀 | FUSE 💎 |
+| Domain | RESOLVE 🔬 | PROJECT 🎯 | FLIP ↩️ | TWIST 🌀 | FUSE 💎 |
 | ------ | --------- | --------- | -------- | --------- | ------- |
 | **3-manifold** | 1 tet → 4 tets · closed triangulation loop | 4 tets → 1 tet · face/edge colouring | 1 tri → 3 tris · 3 tris → 1 tri | Dehn twist | non-Pachner obstruction |
 | **Spectroscopy** | 1 rep → CG irreps · closed G-orbit on weight lattice | CG sum → 1 rep (6j) · quantum number assignment | raising $J_+$ · lowering $J_-$ | CG phase $(-1)^j$ | Racah recoupling (6j→9j) |
@@ -455,7 +455,9 @@ The diagrams below are described in text; the LaTeX figures appear in
 
 ---
 
-### RESOLVE 🔄 *(formerly ORBIT, originally SPLIT)* 🕷️
+### RESOLVE 🔬 *(formerly ORBIT, originally SPLIT)* 🕷️
+
+**Symbols (Origami ISA):** formal △ (hollow upward triangle — CT Δ analogue; open/branching, fan-out into components) · outreach 🔬
 
 **One wire becomes two** (or one tetrahedron becomes four).
 
@@ -491,7 +493,9 @@ every change of basis, every spectral decomposition is a RESOLVE.
 
 ---
 
-### PROJECT 🏷️ *(formerly LABEL, originally SPLAT)* 🕷️
+### PROJECT 🎯 *(formerly LABEL, originally SPLAT)* 🕷️
+
+**Symbols (Origami ISA):** formal ▼ (solid downward triangle — filled/converging; fan-in onto a target) · outreach 🎯
 
 **Two wires become one** (or four tetrahedra become one).
 
@@ -575,11 +579,11 @@ for the full treatment.
 
 ---
 
-### FLIP 🕷️  ⌁ 👁️
+### FLIP 🕷️  † ↩️
 
 **A wire reverses orientation** (arrow pointing down instead of up).
 
-**Symbols (Origami ISA):** formal ⌁ (lightning/discharge — irreversible collapse to classical outcome) · outreach 👁️
+**Symbols (Origami ISA):** formal † (dagger — anti-involution, time-reversal) · outreach ↩️
 
 ```
     ↑         ↓
@@ -654,11 +658,11 @@ of the Baez threefold way.
 
 ---
 
-### PROJECT (sector sub-role) 🕷️  ⊢ 🏷️
+### PROJECT (sector sub-role) 🕷️  ▼ 🎯
 
 **A wire passes through a projector** (sector selection).
 
-**Symbols (Origami ISA):** formal ⊢ (sequent turnstile — "this context proves/prepares this state") · outreach 🏷️
+**Symbols (Origami ISA):** formal ▼ (solid downward triangle — filled/converging; fan-in onto a target) · outreach 🎯
 
 ```
     │
