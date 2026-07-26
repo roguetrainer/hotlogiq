@@ -83,16 +83,16 @@ The bottom-right cell — g(𝕆, 𝕆) = E₈ — is the richest and hardest. I
 
 ## The 731-ISA as the octonion compiler
 
-The Origami, Forge, and Meld ISAs operate entirely within the associative world. Their canonical opcodes (ORBIT, TWIST, MERGE, LINK, FLIP, SNAP↑/↓) satisfy the Pentagon identity — the algebraic condition that corresponds to associativity of the underlying fusion category. This is not a limitation: almost all molecular chemistry, spectroscopy, and quantum error correction can be expressed without leaving the associative regime (see [Paper 672](https://doi.org/10.5281/zenodo.PENDING) for the formal boundary result).
+The Origami, Forge, and Meld ISAs operate entirely within the associative world. Their canonical opcodes (RESOLVE, TWIST, JOIN, LINK, FLIP, SNAP↑/↓) satisfy the Pentagon identity — the algebraic condition that corresponds to associativity of the underlying fusion category. This is not a limitation: almost all molecular chemistry, spectroscopy, and quantum error correction can be expressed without leaving the associative regime (see [Paper 672](https://doi.org/10.5281/zenodo.PENDING) for the formal boundary result).
 
 The **731-ISA** is the extension that enters the non-associative regime. It adds two new opcodes:
 
 | Opcode | Description | Algebraic content |
 |--------|-------------|-------------------|
-| **BIND** | Frog vertex — non-abelian four-leg fusion | G₂ associator at j=½; T-gate in the associative limit |
+| **FUSE** | Frog vertex — non-abelian four-leg fusion | G₂ associator at j=½; T-gate in the associative limit |
 | **SPIN** | G₂ triality rotation | Order-3 outer automorphism of Spin(8); cycles the three 8-dim representations |
 
-The Pentagon identity **fails** for BIND — this is not a bug but the defining feature. BIND implements the Fano associator obstruction: the non-zero associator [eᵢ, eⱼ, eₖ] that marks a non-Fano triple. When BIND appears in a program, that program is computing something that cannot be expressed in any associative algebra — it is genuinely in the octonion regime.
+The Pentagon identity **fails** for FUSE — this is not a bug but the defining feature. FUSE implements the Fano associator obstruction: the non-zero associator [eᵢ, eⱼ, eₖ] that marks a non-Fano triple. When FUSE appears in a program, that program is computing something that cannot be expressed in any associative algebra — it is genuinely in the octonion regime.
 
 A gate set is **triality-complete** if it contains SPIN. Triality-completeness is a strictly stronger condition than universality in the quantum computing sense. The Origami/Forge/Meld trilogy is not triality-complete; the 731-ISA is.
 
@@ -100,9 +100,9 @@ A gate set is **triality-complete** if it contains SPIN. Triality-completeness i
 
 ## What the 731-ISA can compute that the trilogy cannot
 
-Because BIND breaks the Pentagon identity, it accesses representations of quantum groups at roots of unity that are outside the ribbon-pivotal category described by Shum's theorem. Concretely:
+Because FUSE breaks the Pentagon identity, it accesses representations of quantum groups at roots of unity that are outside the ribbon-pivotal category described by Shum's theorem. Concretely:
 
-- **Fibonacci anyons** — the j=3/2 BIND recoupling generates the Fibonacci fusion category, which is dense in SU(2) and gives universal topological quantum computation.
+- **Fibonacci anyons** — the j=3/2 FUSE recoupling generates the Fibonacci fusion category, which is dense in SU(2) and gives universal topological quantum computation.
 - **Haah's cubic code** — the fracton topological order in Haah's code requires twisted coefficients that do not arise in any standard H¹ sheaf; the 731-ISA can represent the obstruction class directly.
 - **E₈ lattice theta-series** — the generating function of the E₈ root lattice (the densest known packing in 8 dimensions) factors through the 731-ISA's SPIN opcode.
 - **G₂ holonomy manifolds** — the special holonomy of the Joyce manifolds used in M-theory compactification is the G₂ symmetry of SPIN.
@@ -117,7 +117,7 @@ The Fano plane has a remarkable property: it is a [7,3,4]-code — a classical H
 - Any double error leaves a correctable Fano-plane violation.
 - Triple errors enter the non-associative sector and are detectable as non-zero associators.
 
-The 731-ISA exploits this: the **BIND** opcode returns a non-zero residual precisely when the three input representations fail to form a Fano-consistent triple. This makes the 731-ISA self-checking: Fano violations are observable, measurable, and correctable at the circuit level.
+The 731-ISA exploits this: the **FUSE** opcode returns a non-zero residual precisely when the three input representations fail to form a Fano-consistent triple. This makes the 731-ISA self-checking: Fano violations are observable, measurable, and correctable at the circuit level.
 
 ---
 
@@ -125,7 +125,7 @@ The 731-ISA exploits this: the **BIND** opcode returns a non-zero residual preci
 
 | Paper | What it does |
 |-------|-------------|
-| [207 — The 731 Frog Calculus](https://doi.org/10.5281/zenodo.19713350) | Full diagrammatic calculus for 731-ISA programs; the BIND and SPIN rules |
+| [207 — The 731 Frog Calculus](https://doi.org/10.5281/zenodo.19713350) | Full diagrammatic calculus for 731-ISA programs; the FUSE and SPIN rules |
 | [263 — The Architecture of Inevitability](https://doi.org/10.5281/zenodo.19928880) | Freudenthal-Tits magic square; why G₂ geometry forces the Four-Leg Constraint |
 | [271 — The 731 Theorem](https://doi.org/10.5281/zenodo.20139443) | Five proved identities; Spin-7 annihilator theorem; tr(T²)=21 exactly |
 | [317 — G₂ Boltzmann Machine](https://doi.org/10.5281/zenodo.20319577) | G₂ triality as a learning prior; MGE advantage over CD-k |

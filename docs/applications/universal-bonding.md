@@ -121,8 +121,8 @@ the wavefunction has crossed the H¹/H² boundary.
 The same framework extends beyond chemistry. The nucleon–nucleon bond in the
 deuteron has $^3S_1 + ^3D_1$ mixing from the tensor force, giving
 $\theta_G \approx 14°$ (weakly H²). But unlike electronic bonds, nuclear bonds
-are **intrinsically H²**: the tensor force $S_{12}$ is a trivalent BIND vertex
-coupling three angular momenta (the strong force is non-Abelian), so BIND is
+are **intrinsically H²**: the tensor force $S_{12}$ is a trivalent FUSE vertex
+coupling three angular momenta (the strong force is non-Abelian), so FUSE is
 mandatory even for the simplest nuclear bond. There is no nuclear analogue of
 the H⁰ Lewis bond — SU(3) colour forces every nucleon–nucleon interaction into
 the H² sector.
@@ -145,7 +145,7 @@ and Trnka. The ISA bonding descriptors have exact amplitude counterparts:
 | ISA bonding | Scattering amplitude | Common structure |
 |---|---|---|
 | $\theta_G$ | Momentum twistor coordinate | Geodesic distance on $\mathrm{Gr}(k,n)$ |
-| $n_{\mathrm{bond}}$ (NOON) | Leading singularity | ORBIT count on $\mathrm{Gr}(k,n)$ |
+| $n_{\mathrm{bond}}$ (NOON) | Leading singularity | RESOLVE count on $\mathrm{Gr}(k,n)$ |
 | $H_{01}$ (Galerkin) | Residue at factorisation channel | Galerkin projection on $\mathrm{Gr}(k,n)$ |
 | β* snap ($\theta_G \approx 20°$) | Spurious-pole degeneration | Tropical singularity of the volume form |
 
@@ -188,8 +188,8 @@ hardware, at energy scales separated by 13 orders of magnitude. See Paper 574 (i
 
 - **Metallic bonding:** as system size $N \to \infty$, $\theta_G \to 45°$ and
   $\sigma_0^2 \to 1/N$ — the metallic bond is deep H². The Zak phase of Schmidt
-  orbitals around the Brillouin zone is a BIND opcode; topological metals should
-  have non-zero BIND holonomy.
+  orbitals around the Brillouin zone is a FUSE opcode; topological metals should
+  have non-zero FUSE holonomy.
 
 - **Machine learning force fields:** the three ISA bonding descriptors
   ($\theta_G$, NOON, $H_{01}$) are computable from CASSCF and could serve as

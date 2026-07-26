@@ -49,13 +49,13 @@ itself:
   An H¹ object is one where going around a loop leaves a trace.
 
 - **H²** measures 2-cycles that are not boundaries — global topological obstructions
-  that cannot be removed by local surgery. Non-Abelian holonomy, BIND operations,
+  that cannot be removed by local surgery. Non-Abelian holonomy, FUSE operations,
   compact-support extremes (Weibull), counterfactual twin-world loops, and topological
   quantum phases all live here. An H² object is one where a topological invariant
   forbids a continuous deformation.
 
 Any field that studies transformations on spaces will eventually encounter all three.
-Algebraic topology named them first. The ISA gives them opcodes (ORBIT / TWIST / BIND).
+Algebraic topology named them first. The ISA gives them opcodes (RESOLVE / TWIST / FUSE).
 Physics calls them vacuum / perturbative / non-perturbative. The convergence is not
 a coincidence — it is the same mathematical fact, re-derived independently in each field.
 
@@ -91,9 +91,9 @@ and experiments verify it to numerical precision.
 | Field | ISA prediction | Status |
 |-------|---------------|--------|
 | Quantum information (Papers 469–473) | TV = 1 iff stabiliser state; 9 SWAP-classes; Casimir c₂(proj) = 2 universally for C_{2k+1} | All experiments pass; Fano exceptionality k = 3 proved |
-| Molecular chemistry (Papers 488–491) | Aufbau/Hund/Taube rules = ORBIT/TWIST/BIND theorems; tropical DFT 20/20 on SCO benchmark | x491a–d: 100% on SCO; Wigner vertex theorem proved |
+| Molecular chemistry (Papers 488–491) | Aufbau/Hund/Taube rules = RESOLVE/TWIST/FUSE theorems; tropical DFT 20/20 on SCO benchmark | x491a–d: 100% on SCO; Wigner vertex theorem proved |
 | Protein proofreading (Paper 510) | H⁰ × H¹ × H² gives 10⁹/10⁶/10⁴ fidelity for Pol III/RNAP/ribosome | Structural argument from known biochemistry |
-| Proton stability (Paper 545) | Colour singlet = closed Fano ORBIT; ΔE_Fano = 0.9–1.3 GeV | x545a: Routes A/C agree × 1.9 |
+| Proton stability (Paper 545) | Colour singlet = closed Fano RESOLVE; ΔE_Fano = 0.9–1.3 GeV | x545a: Routes A/C agree × 1.9 |
 
 At Tier A, the ISA language is not introducing a new perspective on the field — it
 is proving theorems that did not have proofs before, or making predictions with
@@ -110,7 +110,7 @@ result.
 |-------|---------------|--------|
 | MCMC (Paper 557) | Optimal accept rates 0.234 (H⁰) < 0.574 (H¹) < 0.651 (H²); monotone across tiers | Roberts-Rosenthal / Sherlock-Roberts theorems independently proved these; ISA explains the monotonicity |
 | Extreme value theory (Paper 558) | GEV shape ξ = β-deformation parameter; Gumbel = tropical fixed point (exact: log(-log Λ) = -x) | Gumbel-as-tropical is exact; ξ-as-β is a structural parallel, not yet derived |
-| Information geometry (Paper 528) | α-connection = TWIST parameter; Uhlmann holonomy = BIND; EM algorithm = SPLIT/SPLAT cycle | Amari's formalism independently derives the same three tiers; ISA names them |
+| Information geometry (Paper 528) | α-connection = TWIST parameter; Uhlmann holonomy = FUSE; EM algorithm = RESOLVE/PROJECT cycle | Amari's formalism independently derives the same three tiers; ISA names them |
 | Quantum algorithms (Papers 420–421) | Shor = H¹ (mana = 0); Grover intermediate states Clifford-simulable | x472a–c, x473b pass; predictions made before experiments ran |
 
 At Tier B, the ISA is a useful lens that organises existing results and sometimes
@@ -126,8 +126,8 @@ what the field already knew; the ISA provides a cross-domain translation layer.
 | Field | ISA framing | What it adds |
 |-------|------------|--------------|
 | Causal inference (Paper 559) | Pearl's ladder (seeing/doing/imagining) = H⁰/H¹/H² | Names the tiers; clarifies why H² (counterfactual) is strictly harder than H¹ (interventional); suggests fairness hierarchy |
-| Ergodicity economics (Paper 549) | GBM = multiplicative ORBIT; Kelly = β* snap | Connects to ISA β-ladder; no new finance predictions beyond Kelly |
-| Incentive geometry (Paper 542) | Tragedy of commons = H¹ ORBIT open; cap-and-trade = H¹ closure; climate clubs = H² BIND | Provides language; the policy conclusions were already known |
+| Ergodicity economics (Paper 549) | GBM = multiplicative RESOLVE; Kelly = β* snap | Connects to ISA β-ladder; no new finance predictions beyond Kelly |
+| Incentive geometry (Paper 542) | Tragedy of commons = H¹ RESOLVE open; cap-and-trade = H¹ closure; climate clubs = H² FUSE | Provides language; the policy conclusions were already known |
 
 At Tier C, the ISA framing is legitimate science — taxonomy papers are real
 contributions — but claims should be written as "the H^k framework provides useful
@@ -186,7 +186,7 @@ That is a significant contribution. It does not require claiming more than it is
 
 - **Can the Tier C mappings be promoted to Tier B?** For causal inference, this
   would require a quantitative prediction — e.g., a new bound on the sample
-  complexity of counterfactual estimation derived from the H² BIND structure —
+  complexity of counterfactual estimation derived from the H² FUSE structure —
   that can be checked independently. If such a prediction can be made and tested,
   Paper 559 moves from taxonomic to predictive.
 

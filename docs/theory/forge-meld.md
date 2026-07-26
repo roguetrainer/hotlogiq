@@ -147,11 +147,11 @@ quantum fluctuation dominance.
 
 | Opcode | Forge (real β) | Meld (β = it) |
 |--------|----------------|---------------|
-| ORBIT | Gibbs fan-out; soft copy | Unitary fan-out; QFT mode splitting |
-| LABEL | Gibbs projection; soft measurement | Born rule measurement |
+| RESOLVE | Gibbs fan-out; soft copy | Unitary fan-out; QFT mode splitting |
+| PROJECT | Gibbs projection; soft measurement | Born rule measurement |
 | TWIST | Thermal phase $e^{-\beta\theta}$ | Quantum phase $e^{-it\theta}$; Berry phase |
 | FLIP | Real time-reversal / partition trace | Anti-unitary time-reversal; Kramers; quantum trace |
-| BIND | Thermal recoupling | Unitary $F$-matrix; non-Abelian anyon braiding |
+| FUSE | Thermal recoupling | Unitary $F$-matrix; non-Abelian anyon braiding |
 
 **The T-gate is the Meld-only opcode.** The T-gate — the gate that promotes
 Clifford circuits to universal quantum computation — cannot be expressed as a real
@@ -170,14 +170,14 @@ cannot be built from any finite gate set and are never reached by a finite circu
 Universal quantum computation needs only one step up this ladder — from 4th to 8th
 roots of unity — which is what the T-gate provides.
 
-BIND at the octonion / $G_2$ rung is a *stronger* structure needed for
+FUSE at the octonion / $G_2$ rung is a *stronger* structure needed for
 **topological quantum computation** — fault-tolerant universality via Fibonacci
 anyons and non-Abelian braiding. This is the 731-ISA extension, not standard
 qubit universality. Building an octonionic quantum computer would require
 physical hardware that braids non-Abelian anyons — a technology that does not yet
 exist in any laboratory. The two levels are:
 
-| Level | Gates | BIND rung | Universality | Fault tolerance |
+| Level | Gates | FUSE rung | Universality | Fault tolerance |
 | --- | --- | --- | --- | --- |
 | Standard QC | Clifford + T | SU(2), $j=1/2$ (associative) | Yes (BQP) | Requires error correction |
 | Topological QC | Clifford + Fibonacci braid | $G_2$ / octonion (non-associative) | Yes (BQP) | Built-in (anyon braiding) |
@@ -203,11 +203,11 @@ than the operative three.
 
 | Opcode | Harmonic (β → 0) incarnation |
 | --- | --- |
-| ORBIT | Hodge decomposition: $\omega = d\alpha + d^{*}\beta + \gamma$ |
-| LABEL | Projection onto harmonic subspace ($\ker \Delta$) |
+| RESOLVE | Hodge decomposition: $\omega = d\alpha + d^{*}\beta + \gamma$ |
+| PROJECT | Projection onto harmonic subspace ($\ker \Delta$) |
 | TWIST | Exterior derivative $d$ (raises form degree) |
 | FLIP | Hodge star $\star$ (degree reversal; discrete ↔ smooth duality) |
-| BIND | Wedge product $\wedge$ (associative cup product in cohomology) |
+| FUSE | Wedge product $\wedge$ (associative cup product in cohomology) |
 
 The output of a Harmonic ISA programme is always a **harmonic form** — the
 canonical, unique representative of a cohomology class. The H^k cohomology
@@ -307,7 +307,7 @@ Each prime p adds a **p-adic axis** into the β-plane, carrying the p-adic ISA
   which the operative ISAs precipitate.
 
 The 731-ISA extends the diagram along a third axis — *associativity* — adding
-the BIND opcode and reaching the 𝕆-rung. See
+the FUSE opcode and reaching the 𝕆-rung. See
 [The Non-Associative Frontier](./non-associative-frontier.md).
 
 **Ostrowski's theorem** guarantees completeness: the only completions of ℚ are
@@ -332,7 +332,7 @@ is no other place for β to live.
 ## Key papers
 
 - **[The Forge ISA](https://doi.org/10.5281/zenodo.20694527)** (Paper 419) — snap event; vorton architecture; thermodynamic computation; β-ladder
-- **[The Meld ISA](https://doi.org/10.5281/zenodo.20773563)** (Paper 454) — Wick rotation; Clifford = Meld without BIND; Shor as Origami/Meld/Origami programme; T-gate as BIND
+- **[The Meld ISA](https://doi.org/10.5281/zenodo.20773563)** (Paper 454) — Wick rotation; Clifford = Meld without FUSE; Shor as Origami/Meld/Origami programme; T-gate as FUSE
 - **[The Origami ISA](https://doi.org/10.5281/zenodo.19916429)** (Paper 258) — the classical β → ∞ ISA; opcode definitions
 - **[Planck's Constant in Disguise](https://doi.org/10.5281/zenodo.20752384)** (Paper 443) — six equations from six fields are the same MGE at different β; the fastest entry point
 - **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰/H¹/H² as β regimes; TWIST failure as phase boundary; β* snap threshold

@@ -303,9 +303,9 @@ At low $\beta$ (BOIL): smooth Gibbs distribution, continuous exploration. At $\b
 
 ## Origami ISA (Origami Instruction Set Architecture)
 
-The **Origami ISA** is the open instruction set for topological quantum-classical systems. Its five opcodes — LABEL, ORBIT, TWIST, BIND, FLIP — are the generating morphisms of a ribbon Frobenius monoidal category and double as Pachner moves on triangulated simplicial complexes.
+The **Origami ISA** is the open instruction set for topological quantum-classical systems. Its five opcodes — PROJECT, RESOLVE, TWIST, FUSE, FLIP — are the generating morphisms of a ribbon Frobenius monoidal category and double as Pachner moves on triangulated simplicial complexes.
 
-The same five opcodes compile nuclear spectroscopy, quantum error correction, GPU matrix multiplication, financial XVA, topological phases, and the Langlands programme into one language. Earlier papers use a twelve-opcode vocabulary (SPLIT, SPLAT, FLIP, FLOP, TWIST, LABEL, BIND, ORBIT, …); the five-opcode names consolidate these. See the [dedicated opcodes page](../reference/opcodes.md) for the mapping, string diagrams, Pachner moves, and cross-domain tables.
+The same five opcodes compile nuclear spectroscopy, quantum error correction, GPU matrix multiplication, financial XVA, topological phases, and the Langlands programme into one language. Earlier papers use a twelve-opcode vocabulary (SPLIT, SPLAT, FLIP, FLOP, TWIST, LABEL, BIND, ORBIT, …); the current names consolidate these: RESOLVE (formerly ORBIT/SPLIT), PROJECT (formerly LABEL/SPLAT), FUSE (formerly BIND). See the [dedicated opcodes page](../reference/opcodes.md) for the full legacy mapping, string diagrams, Pachner moves, and cross-domain tables.
 
 *Defined:* [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916428/), [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474913/), [Paper 370 (Universal Computer)](papers/10.5281-zenodo.20543453/)  
 *Full opcode reference:* [The ISA Opcodes](../reference/opcodes.md)
@@ -530,7 +530,7 @@ The distinction matters because:
 **G-Walk** names the closed orbit walks that implement orbit computing on a molecular state space. The name carries three meanings simultaneously:
 
 - **Group** — the site symmetry group $G$ of the metal centre (e.g.\ $O_h$ for an octahedral iron centre, $T_d$ for tetrahedral) defines the orbit structure. The irreducible representations of $G$ label the discrete orbit slots.
-- **Graph** — execution is a walk on the Cayley graph of $G$: each ISA opcode moves the system one step along an edge of that graph. The ORBIT opcode closes the walk and reads the orbit label.
+- **Graph** — execution is a walk on the Cayley graph of $G$: each ISA opcode moves the system one step along an edge of that graph. The RESOLVE opcode closes the walk and reads the orbit label.
 - **Galois** — the original name for this research programme before renaming; the Galois group of the crystal-field polynomial determines which symmetry operations are physically realised. Galois chemistry, orbit theory, and G-Walk chemistry all refer to the same mathematical framework.
 
 In G-Walk chemistry, the state of a metal complex is an orbit occupancy vector $\mathbf{v} \in \mathbb{Z}^k$ (e.g.\ $(v_{t_{2g}}, v_{e_g})$ for an octahedral $d^n$ system), and G-Walk is the walk on the orbit graph induced by ligand-field perturbations. G-Walk chemistry achieves 20/20 on spin-crossover benchmarks where DFT achieves 14/20, because it operates natively in the tropical semiring — the correct algebraic structure for the strong-crystal-field limit.
@@ -546,8 +546,8 @@ In G-Walk chemistry, the state of a metal complex is an orbit occupancy vector $
 **Orbit computing** is a proposed fourth paradigm of computation in which:
 
 - **State** is a G-orbit occupancy vector $\mathbf{v} \in \mathbb{Z}^k$, where $G$ is the site symmetry group of the physical substrate (a molecule);
-- **Transitions** are G-orbit walks implemented by the five ISA opcodes (LABEL, ORBIT, TWIST, BIND, FLIP);
-- **Output** is the discrete orbit label returned by the ORBIT opcode.
+- **Transitions** are G-orbit walks implemented by the five ISA opcodes (PROJECT, RESOLVE, TWIST, FUSE, FLIP);
+- **Output** is the discrete orbit label returned by the RESOLVE opcode.
 
 The four paradigms and their distinguishing features:
 

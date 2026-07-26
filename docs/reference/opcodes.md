@@ -2,8 +2,8 @@
 layout: default
 title: The ISA Opcodes
 nav_order: 3
-description: "The canonical opcodes of the Origami ISA: ORBIT/LABEL/TWIST/BIND/FLIP/SNAP/MERGE/LINK — cohomological role, categorical structure, and incarnations across domains. Legacy names SPLIT/SPLAT/FLOP shown in parentheses."
-tags: [isa, opcodes, label, orbit, twist, bind, flip, cup, split, splat, flop, category-theory, string-diagrams, completeness]
+description: "The canonical opcodes of the Origami ISA: RESOLVE/PROJECT/TWIST/FUSE/FLIP/SNAP/JOIN/LINK — cohomological role, categorical structure, and incarnations across domains. Legacy names ORBIT/LABEL/BIND/MERGE and older SPLIT/SPLAT/FLOP shown for reference."
+tags: [isa, opcodes, resolve, project, fuse, twist, flip, cup, join, link, orbit, label, bind, merge, split, splat, flop, category-theory, string-diagrams, completeness]
 portfolio: B
 ---
 
@@ -13,6 +13,11 @@ portfolio: B
 *Five opcodes. One language for quantum physics, topological phases, molecular
 computing, the geometric Langlands programme, and more — from classical Turing machines to the
 full Meld.*
+
+> **Name change (2026):** This document uses the current canonical names.
+> Mapping from previous names: **ORBIT → RESOLVE**, **LABEL → PROJECT**, **BIND → FUSE**, **MERGE → JOIN**.
+> FLIP, TWIST, CUP, LINK, SNAP, HALT, THERMAL unchanged.
+> Published papers use the previous names; the legacy mapping table at §[Full opcode table](#the-full-opcode-table) preserves all prior names.
 
 ## The H^k tier summary
 
@@ -25,7 +30,7 @@ The technical names:
 - **H²** — second cohomology: characteristic classes, Chern numbers, genuine topological charges
 
 The ladder H⁰ → H¹ → H² is literally the de Rham sequence with d∘d = 0.
-This is also why BIND∘TWIST ≠ 0 but BIND∘BIND = 0 in the ISA — the chain
+This is also why FUSE∘TWIST ≠ 0 but FUSE∘FUSE = 0 in the ISA — the chain
 complex structure of the opcodes is the same object as the cohomology sequence.
 (See Theorem 3 below.)
 
@@ -34,18 +39,19 @@ H^k needed to describe it exactly:
 
 | Tier | Opcodes | One-word meaning | Technical meaning |
 | ---- | ------- | ---------------- | ----------------- |
-| **H⁰** | ORBIT, LABEL, FLIP | Counting | Global sections; classical observables; no phase |
+| **H⁰** | RESOLVE, PROJECT, FLIP | Counting | Global sections; classical observables; no phase |
 | **H¹** | TWIST | Interference | Berry phase; connection; obstruction to triviality |
-| **H²** | BIND | Entanglement | Chern class; non-Abelian holonomy; topological charge |
+| **H²** | FUSE | Entanglement | Chern class; non-Abelian holonomy; topological charge |
 
 > **Terminology note — legacy opcode names:** Earlier papers and drafts use a twelve-opcode
-> vocabulary. The current five-opcode names (LABEL / ORBIT / TWIST / BIND / FLIP) consolidate
-> those as follows: SPLAT → LABEL, SPLIT → ORBIT, FLOP → CUP (FLIP fermion sub-role),
-> BIND promoted from implicit to first-class. The sections below retain the legacy name FLOP
-> where it clarifies categorical structure (especially the FLIP/FLOP distinction in the AZ
-> tenfold way); treat CUP as the canonical name for that sub-role.
+> vocabulary. The current five-opcode names (PROJECT / RESOLVE / TWIST / FUSE / FLIP) consolidate
+> those as follows: SPLAT → LABEL → **PROJECT**, SPLIT → ORBIT → **RESOLVE**,
+> FLOP → CUP (FLIP fermion sub-role, name unchanged), BIND → **FUSE**, MERGE → **JOIN**.
+> The sections below retain the legacy name FLOP where it clarifies categorical structure
+> (especially the FLIP/FLOP distinction in the AZ tenfold way); treat CUP as the canonical
+> name for that sub-role.
 
-**In one sentence: H⁰ is counting, H¹ is interference, H² is entanglement.**
+**In one sentence: H⁰ is counting (RESOLVE/PROJECT/FLIP), H¹ is interference (TWIST), H² is entanglement (FUSE).**
 
 ### Why the tier matters: methods recommendation
 
@@ -72,21 +78,21 @@ same Bredon H² class (Euler characteristic 2).
 🕷️ present in ZX calculus · 🕷️\* partial (related ZX construct, not full ISA semantics) ·
 🐸 present in 731 Frog Calculus · unmarked = ISA-native (no dedicated graphical symbol).
 
-**ORBIT is intentionally unmarked.** It is a closed scalar loop `𝟏 → 𝟏` — a trace, not a vertex.
+**RESOLVE is intentionally unmarked.** It is a closed scalar loop `𝟏 → 𝟏` — a trace, not a vertex.
 In ZX it appears as a disconnected bubble (no named spider); in the Frog Calculus it is a closed triangulation loop
-with no interior vertex. Neither calculus assigns ORBIT a node: ORBIT *closes* a loop rather than *opening* one.
+with no interior vertex. Neither calculus assigns RESOLVE a node: RESOLVE *closes* a loop rather than *opening* one.
 
 **Opcode symbols:** each canonical opcode has a formal symbol (used in LaTeX papers) and an outreach emoji.
 
 | Opcode | Formal | Emoji | Categorical morphism | Abstract role |
 |--------|--------|-------|---------------------|---------------|
-| ORBIT | 𝒪 | 🔄 | Comultiplication $\Delta: A \to A \otimes A$ · trace $\mathrm{tr}(\theta_A): \mathbf{1} \to \mathbf{1}$ | 1-to-many diagonalisation; closed feedback loop |
-| LABEL | ⊢ | 🏷️ | Multiplication $\mu: A \otimes A \to A$ · unit $\eta: \mathbf{1} \to A$ | Many-to-1 evaluation; sector selection |
+| RESOLVE | 𝒪 | 🔄 | Comultiplication $\Delta: A \to A \otimes A$ · trace $\mathrm{tr}(\theta_A): \mathbf{1} \to \mathbf{1}$ | 1-to-many diagonalisation; closed feedback loop |
+| PROJECT | ⊢ | 🏷️ | Multiplication $\mu: A \otimes A \to A$ · unit $\eta: \mathbf{1} \to A$ | Many-to-1 evaluation; sector selection |
 | FLIP | ⌁ | 👁️ | Dagger $(-)^\dagger$ · counit $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ (CUP sub-role) | Orientation reversal; duality; Born rule |
 | TWIST | ∮ | 🌀 | Ribbon element $\theta_V: V \to V$; topological spin | Phase / monodromy; 1-to-1 with memory |
-| BIND | ⋈ | 💎 | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | Non-associative fusion; recoupling; entanglement |
+| FUSE | ⋈ | 💎 | Associator $\alpha_{A,B,C}: (A \otimes B) \otimes C \xrightarrow{\sim} A \otimes (B \otimes C)$; $F$-matrix | Non-associative fusion; recoupling; entanglement |
 
-The Frobenius identities: LABEL∘ORBIT = id (diagonalise then evaluate = identity); CUP∘FLIP = id (dagger then Born rule = identity).
+The Frobenius identities: PROJECT∘RESOLVE = id (diagonalise then evaluate = identity); CUP∘FLIP = id (dagger then Born rule = identity).
 
 ---
 
@@ -95,12 +101,12 @@ The Frobenius identities: LABEL∘ORBIT = id (diagonalise then evaluate = identi
 The same abstract opcode appears with different in/out counts depending on the
 domain. Each row is a physical domain; each column is one of the five canonical
 opcodes. Within each cell, the two sub-roles separated by · correspond to the
-legacy SPLIT/ORBIT sub-roles (ORBIT column), SPLAT/LABEL sub-roles (LABEL column),
+legacy SPLIT/ORBIT sub-roles (RESOLVE column), SPLAT/LABEL sub-roles (PROJECT column),
 and FLIP/CUP sub-roles (FLIP column). Read across a row to see how a domain
 implements the full ISA; read down a column to see the same abstract operation
 across completely different fields.
 
-**Domain coordinate table** — the three structural axes that determine which ISA a domain uses, plus whether its symmetry group is Abelian (if ✓, 6j symbols collapse to trivial phase factors and BIND is weak or absent; if ✗, genuine recoupling and non-trivial BIND).
+**Domain coordinate table** — the three structural axes that determine which ISA a domain uses, plus whether its symmetry group is Abelian (if ✓, 6j symbols collapse to trivial phase factors and FUSE is weak or absent; if ✗, genuine recoupling and non-trivial FUSE).
 
 | Domain | Semiring | Symmetry group | Abelian? | β-regime |
 | ------ | -------- | -------------- | -------- | -------- |
@@ -121,7 +127,7 @@ across completely different fields.
 
 ---
 
-| Domain | ORBIT 🔄 | LABEL 🏷️ | FLIP 👁️ | TWIST 🌀 | BIND 💎 |
+| Domain | RESOLVE 🔄 | PROJECT 🏷️ | FLIP 👁️ | TWIST 🌀 | FUSE 💎 |
 | ------ | --------- | --------- | -------- | --------- | ------- |
 | **3-manifold** | 1 tet → 4 tets · closed triangulation loop | 4 tets → 1 tet · face/edge colouring | 1 tri → 3 tris · 3 tris → 1 tri | Dehn twist | non-Pachner obstruction |
 | **Spectroscopy** | 1 rep → CG irreps · closed G-orbit on weight lattice | CG sum → 1 rep (6j) · quantum number assignment | raising $J_+$ · lowering $J_-$ | CG phase $(-1)^j$ | Racah recoupling (6j→9j) |
@@ -130,16 +136,16 @@ across completely different fields.
 | **Nuclear** | shell-model diagonalisation; Nilsson basis · closed shell (magic number); Nilsson orbit | 9j evaluation; nuclear matrix element · $J$, $T$, parity quantum numbers | time-reversal; parity doubling · particle-hole in shell model | spin-orbit coupling (strong; mandatory); nuclear CG phase | **tensor force $S_{12}$; mandatory in every nucleus** |
 | **Finance** | 1 exposure → risk factor legs · closed risk cycle | risk factor legs → net P&L · scenario / regime selection | long ↔ short position · Born rule on exposure | convexity correction; drift | H² snap event (systemic crisis) |
 | **Condensed matter** | Bogoliubov transform; band diagonalisation · hopping on lattice; Fermi sea orbit | 6j / spectral projection · double occupancy $D$; order parameter; symmetry sector | particle-hole conjugation $C$ · fermionisation (Jordan-Wigner) | Berry phase; Chern number; BKT vortex | Mott transition (U/t snap); superexchange ring; topological order |
-| **Turbulence** | large eddy → two smaller eddies · Kolmogorov cascade $k \to 2k$; inertial range | two sub-eddies dissipate at Kolmogorov scale · pressure Leray projector enforcing $\nabla\cdot u = 0$ | — | vortex stretching $\omega \to \omega + (\omega\cdot\nabla)u\,\delta t$ | blow-up conjecture: ORBIT fails to close (NS unsolved) |
-| **Biology** | CASSCF-like active-site diagonalisation · ORBIT on Ramachandran torus; protein fold search; metabolic cycle | projection to electron density; tertiary fold evaluation · point-group label of active site; spin-state; cofactor oxidation state | time-reversal of reaction; particle-hole in redox · Born rule on conformational ensemble | Berry phase on reaction path; Maslov index at TS; spin-orbit (RuBisCO SOC problem) | chaperone-assisted H² fold; proofreading QEC; FeMoco (nitrogen fixation) |
-| **Statistics / ML** | E-step (marginalise joint → conditional); multi-head projection · EM iteration (Fisher-Rao geodesic); Markov chain ORBIT; attention token orbit | M-step (reconstruct parameters); head aggregation · convergence criterion ($\beta^*$ snap); energy eigenvalue; attention entropy | dagger on sufficient statistic · trace over latent variables; Born rule on posterior | $\alpha$-connection correction (curved exponential family); softmax Berry phase | multimodal posterior; phase transition in learning (grokking); non-Abelian Fisher tensor |
+| **Turbulence** | large eddy → two smaller eddies · Kolmogorov cascade $k \to 2k$; inertial range | two sub-eddies dissipate at Kolmogorov scale · pressure Leray projector enforcing $\nabla\cdot u = 0$ | — | vortex stretching $\omega \to \omega + (\omega\cdot\nabla)u\,\delta t$ | blow-up conjecture: RESOLVE fails to close (NS unsolved) |
+| **Biology** | CASSCF-like active-site diagonalisation · RESOLVE on Ramachandran torus; protein fold search; metabolic cycle | projection to electron density; tertiary fold evaluation · point-group label of active site; spin-state; cofactor oxidation state | time-reversal of reaction; particle-hole in redox · Born rule on conformational ensemble | Berry phase on reaction path; Maslov index at TS; spin-orbit (RuBisCO SOC problem) | chaperone-assisted H² fold; proofreading QEC; FeMoco (nitrogen fixation) |
+| **Statistics / ML** | E-step (marginalise joint → conditional); multi-head projection · EM iteration (Fisher-Rao geodesic); Markov chain RESOLVE; attention token orbit | M-step (reconstruct parameters); head aggregation · convergence criterion ($\beta^*$ snap); energy eigenvalue; attention entropy | dagger on sufficient statistic · trace over latent variables; Born rule on posterior | $\alpha$-connection correction (curved exponential family); softmax Berry phase | multimodal posterior; phase transition in learning (grokking); non-Abelian Fisher tensor |
 | **MCMC / sampling** | Markov chain step $x \to x'$; ergodic average over $\pi$ | energy evaluation $U(x)$; accept/reject eigenvalue | Metropolis accept/reject: $\alpha = \min(1, e^{-\beta\Delta U})$ | HMC leapfrog: symplectic integrator accumulating momentum phase | NUTS U-turn criterion: H² snap when Hamiltonian trajectory doubles back |
-| **Causal inference** | DAG marginalisation $P(Y) = \sum_X P(Y\vert X)P(X)$ · observational ORBIT; Markov blanket boundary | observational distribution fixed point · DAG structure label; backdoor criterion; instrumental variable sector | time-reversal of causal arrow · trace over latent confounders | do-calculus: graph surgery $\mathrm{do}(X=x)$ mutilates edges | counterfactual: $P(Y_{X=x}=y \vert X=x', Y=y')$ — two parallel worlds, non-local BIND |
-| **Dynamical systems** | soliton emergence: smooth hump → $n$ solitons (Lax eigendecomposition) · quasi-periodic orbit on $\mathbb{T}^n$; Lorenz lobe winding | soliton collision and re-emergence; Marchenko reconstruction · Lax eigenvalue $\kappa_n$; Lyapunov exponent; rotation number | time-reversal symmetry; Lax pair adjoint | resonance: KAM island chains; lobe-switching in Lorenz; Rankine-Hugoniot shock speed | cantorus at last KAM torus destruction $\varepsilon^*$; strange attractor (ORBIT fails to close) |
+| **Causal inference** | DAG marginalisation $P(Y) = \sum_X P(Y\vert X)P(X)$ · observational RESOLVE; Markov blanket boundary | observational distribution fixed point · DAG structure label; backdoor criterion; instrumental variable sector | time-reversal of causal arrow · trace over latent confounders | do-calculus: graph surgery $\mathrm{do}(X=x)$ mutilates edges | counterfactual: $P(Y_{X=x}=y \vert X=x', Y=y')$ — two parallel worlds, non-local FUSE |
+| **Dynamical systems** | soliton emergence: smooth hump → $n$ solitons (Lax eigendecomposition) · quasi-periodic orbit on $\mathbb{T}^n$; Lorenz lobe winding | soliton collision and re-emergence; Marchenko reconstruction · Lax eigenvalue $\kappa_n$; Lyapunov exponent; rotation number | time-reversal symmetry; Lax pair adjoint | resonance: KAM island chains; lobe-switching in Lorenz; Rankine-Hugoniot shock speed | cantorus at last KAM torus destruction $\varepsilon^*$; strange attractor (RESOLVE fails to close) |
 | **Number theory** | spectral decomposition of $L^2(G(\mathbb{Q})\backslash G(\mathbb{A}))$; Hecke eigendecomposition · Apéry recurrence; rational points on $E(\mathbb{Q})$; $\pi_1(C)$ monodromy | L-function evaluation $L(s,\pi)$; Euler product · Hecke eigenvalue $a_p(E)$; quantum number of automorphic rep $\pi$ | Langlands duality $G \leftrightarrow G^\vee$ · Abelian reciprocity ($GL_1$); class field theory | Tate twist; monodromy of local system; Selmer group $\mathrm{Sel}_n(E/\mathbb{Q}) \in H^1$ | Apéry H² obstruction ($\zeta(3) \notin \mathbb{Q}$); Tate-Shafarevich $\Sha(E/\mathbb{Q})$; RH = H² zero-free region |
 
 **Nuclear note:** unlike every other domain, nuclear systems are H² *by default*.
-BIND (the tensor force $S_{12}$) is mandatory even for the deuteron — the simplest
+FUSE (the tensor force $S_{12}$) is mandatory even for the deuteron — the simplest
 nucleus. There is no H⁰ or H¹ nuclear bond. Chemistry reaches H² only in hard
 cases (FeMoco, bond-breaking); nuclear physics starts there and never leaves.
 
@@ -158,14 +164,14 @@ level adds one new kind of morphism, and each addition corresponds to one H^k ti
 
 | Category type | What it adds | Opcode unlocked | H^k tier |
 | ------------- | ------------ | --------------- | -------- |
-| **Monoidal category** | Parallel composition (⊗); unit object **1** | ORBIT (fan-out sub-role) · LABEL (projection + unit sub-roles) | H⁰ |
-| **+ Symmetric** | Swap morphism; wire crossing | ORBIT (closed traces) | H⁰ |
-| **+ Traced** | Feedback loops (trace closing a wire on itself) | ORBIT (full feedback) | H⁰ |
-| **+ Frobenius** | Comultiplication + counit satisfying Frobenius law | ORBIT ↔ LABEL duality | H⁰ |
+| **Monoidal category** | Parallel composition (⊗); unit object **1** | RESOLVE (fan-out sub-role) · PROJECT (projection + unit sub-roles) | H⁰ |
+| **+ Symmetric** | Swap morphism; wire crossing | RESOLVE (closed traces) | H⁰ |
+| **+ Traced** | Feedback loops (trace closing a wire on itself) | RESOLVE (full feedback) | H⁰ |
+| **+ Frobenius** | Comultiplication + counit satisfying Frobenius law | RESOLVE ↔ PROJECT duality | H⁰ |
 | **+ Compact closed** | Dual objects; cups and caps | FLIP (Born rule / fermionisation sub-role) | H⁰/H¹ |
 | **+ Dagger** | Anti-involution $(-)^\dagger$ reversing all arrows | FLIP (time-reversal sub-role) | H¹ |
 | **+ Ribbon** | Ribbon element $\theta_V$ (topological spin / twist) | TWIST (Berry phase) | H¹ |
-| **+ Magmoidal** | Non-trivial associator $\alpha_{A,B,C} \neq \mathrm{id}$ | BIND (entanglement) | H² |
+| **+ Magmoidal** | Non-trivial associator $\alpha_{A,B,C} \neq \mathrm{id}$ | FUSE (entanglement) | H² |
 
 A **monoidal category** is any mathematical structure where operations can compose
 both *sequentially* (one after another, written ∘) and *in parallel* (side by side,
@@ -178,7 +184,7 @@ The opcodes are the **canonical generators** of each property — the minimal ne
 morphism you must add to express it. This is why the opcodes are not arbitrary: they
 are forced by the categorical structure.
 
-### Why BIND is special: magmoidal categories
+### Why FUSE is special: magmoidal categories
 
 Every category in the ladder above (monoidal through ribbon) satisfies the
 **pentagon axiom**: the associator is coherent, meaning all ways of
@@ -194,19 +200,19 @@ is the categorical home of:
 - **Non-Abelian anyons** — fusion categories with non-trivial $F$-matrices (the $F$-matrix *is* the associator)
 - **$G_2$ symmetry** — the automorphism group of the octonions; the exceptional Lie group whose root system is the Fano plane
 
-BIND is the single opcode that requires magmoidal extension. Every opcode except
-BIND lives in a ribbon category (associative, pentagon holds). BIND is the
+FUSE is the single opcode that requires magmoidal extension. Every opcode except
+FUSE lives in a ribbon category (associative, pentagon holds). FUSE is the
 morphism that encodes the associator itself — which is why it requires genuine
 multi-body correlation (H²) that no H⁰/H¹ approximation can reproduce.
 
-### The Frobenius algebra: why ORBIT and LABEL are dual
+### The Frobenius algebra: why RESOLVE and PROJECT are dual
 
-ORBIT and LABEL are not independent. Together with FLIP they form a **Frobenius
+RESOLVE and PROJECT are not independent. Together with FLIP they form a **Frobenius
 algebra** $(A, \mu, \eta, \Delta, \varepsilon)$:
 
-- $\Delta: A \to A \otimes A$ — ORBIT fan-out sub-role (comultiplication)
-- $\mu: A \otimes A \to A$ — LABEL projection sub-role (multiplication)
-- $\eta: \mathbf{1} \to A$ — LABEL unit sub-role
+- $\Delta: A \to A \otimes A$ — RESOLVE fan-out sub-role (comultiplication)
+- $\mu: A \otimes A \to A$ — PROJECT projection sub-role (multiplication)
+- $\eta: \mathbf{1} \to A$ — PROJECT unit sub-role
 - $\varepsilon: A \to \mathbf{1}$ — FLIP Born-rule sub-role (counit)
 
 The **Frobenius axiom** $(\mu \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \Delta) = \Delta \circ \mu = (\mathrm{id} \otimes \mu) \circ (\Delta \otimes \mathrm{id})$ is the algebraic statement that "fan-out then project = identity." This is simultaneously:
@@ -220,27 +226,27 @@ evaluated in different semirings over different physical hardware.
 
 ### The Frobenius algebra for bonding: the Valence ISA extension
 
-The single-site Frobenius algebra above (§ "Why ORBIT and LABEL are dual") describes
+The single-site Frobenius algebra above (§ "Why RESOLVE and PROJECT are dual") describes
 operations *within* one orbital. For **bonding** — operations *between* orbitals — the
 PROP must carry a second Frobenius algebra structure, one where the objects carry
 orbital-knot labels. Category theory forces exactly two new opcodes and no others:
 
 | CT symbol | Name | Type | Frobenius dual | Physical meaning | Status |
 | --------- | ---- | ---- | -------------- | ---------------- | ------ |
-| $\eta$    | ORBIT | $\mathbf{1} \to A$ | FLIP | orbital creation, prepare torus knot eigenstate | ✓ exists |
-| $\delta$  | BIND  | $A \to A \otimes A$ | MERGE | Hopf fibration split, entanglement creation | ✓ exists |
-| $\varepsilon$ | FLIP | $A \to \mathbf{1}$ | ORBIT | measurement, orbital annihilation | ✓ exists |
-| $\mu$     | **MERGE** | $A \otimes A \to A$ | BIND | covalent bond formation: connected sum of torus knots | ✗ **new** |
+| $\eta$    | RESOLVE | $\mathbf{1} \to A$ | FLIP | orbital creation, prepare torus knot eigenstate | ✓ exists |
+| $\delta$  | FUSE  | $A \to A \otimes A$ | JOIN | Hopf fibration split, entanglement creation | ✓ exists |
+| $\varepsilon$ | FLIP | $A \to \mathbf{1}$ | RESOLVE | measurement, orbital annihilation | ✓ exists |
+| $\mu$     | **JOIN** | $A \otimes A \to A$ | FUSE | covalent bond formation: connected sum of torus knots | ✗ **new** |
 | —         | **LINK**  | $A \otimes B \to A \otimes B$ | LINK (self-dual) | coordinate/dative bond: Hopf linking without topology change | ✗ **new** |
 | —         | SNAP↑ | **2-cell** $\mathcal{F} \to \mathcal{F}'$ | SNAP↓ (inverse) | β\* tier promotion H^k → H^{k+1}; switches active PROP upward | primitive (see below) |
 | —         | SNAP↓ | **2-cell** $\mathcal{F}' \to \mathcal{F}$ | SNAP↑ (inverse) | β\* tier demotion H^{k+1} → H^k; switches active PROP downward | primitive (see below) |
 
-**Why MERGE is forced:** a Frobenius algebra requires a multiplication map
-$\mu: A \otimes A \to A$. In the single-site ISA, this role is played by the LABEL
+**Why JOIN is forced:** a Frobenius algebra requires a multiplication map
+$\mu: A \otimes A \to A$. In the single-site ISA, this role is played by the PROJECT
 projection sub-role — evaluating many states into one. For bonding, $\mu$ acquires
 a new physical content: two orbital knots $T(p_1, q_1)$ and $T(p_2, q_2)$ form a
 covalent bond whose molecular orbital has knot type $T(p_1, q_1) \mathbin{\#} T(p_2, q_2)$
-(connected sum, with additive genus $g_1 + g_2$). This is **MERGE** — it was absent
+(connected sum, with additive genus $g_1 + g_2$). This is **JOIN** — it was absent
 from the Origami ISA because the single-site ISA never had two distinct orbital types
 as inputs. Hybridisation (sp³, sp²) is NOT a new opcode: it is TWIST applied to the
 orbital colour label (a change of basis, not a new morphism type).
@@ -250,7 +256,7 @@ braiding morphism $\tau: A \otimes B \to B \otimes A$. For orbital knots, the
 natural braiding is not a swap but a **Hopf linking** — two orbital knots $T(p_A, q_A)$
 and $T(p_B, q_B)$ can be linked with linking number $\nu$ (bond order) without their
 topological types changing. This is the coordinate/dative bond: the ligand knot and
-the metal knot remain distinct (unlike MERGE), but they are geometrically linked.
+the metal knot remain distinct (unlike JOIN), but they are geometrically linked.
 LINK is forced by the braided monoidal structure when objects carry knot-type labels.
 
 **The Frobenius condition as microscopic reversibility:**
@@ -262,15 +268,15 @@ detailed balance — lives outside the Frobenius sector. The Frobenius condition
 an extra axiom imposed on chemistry; it is the algebraic statement of a law chemistry
 already obeys.
 
-**Opcode duality:** the 1-cell opcodes come in Frobenius dual pairs: (ORBIT, FLIP) and
-(BIND, MERGE). TWIST and LINK are self-dual. Frobenius duality is *not* the same as
-inversion: MERGE is not the inverse of BIND (they are adjoint under the Frobenius
-condition, not composites that yield identity). In quantum computing terms, BIND
-creates an entangled Bell pair and MERGE fuses one — they are the creation/annihilation
+**Opcode duality:** the 1-cell opcodes come in Frobenius dual pairs: (RESOLVE, FLIP) and
+(FUSE, JOIN). TWIST and LINK are self-dual. Frobenius duality is *not* the same as
+inversion: JOIN is not the inverse of FUSE (they are adjoint under the Frobenius
+condition, not composites that yield identity). In quantum computing terms, FUSE
+creates an entangled Bell pair and JOIN fuses one — they are the creation/annihilation
 pair of the Frobenius algebra, related by $\delta^\dagger = \mu$.
 
-**Why SNAP is primitive — and not derivable from MERGE + FLIP:**
-MERGE, LINK, and all the other opcodes are **1-cell morphisms within a PROP** —
+**Why SNAP is primitive — and not derivable from JOIN + FLIP:**
+JOIN, LINK, and all the other opcodes are **1-cell morphisms within a PROP** —
 operations that act inside a fixed computational tier (a fixed free-energy basin).
 SNAP is a **2-cell morphism between PROPs** — it marks the $\beta^*$ threshold where
 the system transitions between ISA tiers (H⁰ $\leftrightarrow$ H¹ $\leftrightarrow$ H²).
@@ -284,10 +290,10 @@ isomorphism. This corresponds physically to a reversible phase transition: incre
 SNAP↓ is kinetically blocked at low temperature. The irreversibility of a *particular*
 SNAP event is kinetic, not categorical: SNAP↑ and SNAP↓ are both valid 2-cells.
 
-The physical analogue of SNAP's categorical level: MERGE is a chemical reaction
+The physical analogue of SNAP's categorical level: JOIN is a chemical reaction
 (reversible, within one thermodynamic phase, satisfies the Frobenius condition).
 SNAP is a phase transition (crosses between phases). No sequence of chemical reactions
-produces a phase transition. This is why SNAP cannot be written as FLIP∘MERGE — the
+produces a phase transition. This is why SNAP cannot be written as FLIP∘JOIN — the
 two operations are not in the same categorical layer.
 
 **Consequence for PT-symmetric computing (Paper 664):** the exceptional point (EP)
@@ -295,7 +301,7 @@ crossing in a PT-symmetric material is a physical realisation of the SNAP 2-cell
 The EP is simultaneously the $\beta^*$ snap threshold (MGE), the orbital knot
 crossing-change transition (torus curve changes type), and the tier boundary
 (ORBIT → TWIST → BIND regime). Existing PT-symmetric laser arrays are already
-executing ORBIT-tier computation (tropical mode competition); adding laser driving
+executing RESOLVE-tier computation (tropical mode competition); adding laser driving
 at orbital-commensurate frequencies implements TWIST-tier gates; crossing the EP
 executes SNAP. See Papers 662 and 664.
 
@@ -309,7 +315,7 @@ to write programmes that have both parallel composition and feedback. The TSMC i
 - The setting for **Girard's geometry of interaction** (proof theory / linear logic)
 - The home of **ZX calculus** (Coecke & Duncan 2008) for qubit quantum mechanics
 
-All opcodes except BIND live in the free TSMC + Frobenius. BIND requires the
+All opcodes except FUSE live in the free TSMC + Frobenius. FUSE requires the
 magmoidal extension beyond TSMC. The containment is strict:
 
 $$\text{free TSMC + Frobenius} \;\subset\; \text{free magmoidal TSMC + Frobenius}$$
@@ -329,7 +335,7 @@ The categorical foundation means:
    the *same equation*, not an analogy. The ISA makes this explicit by naming it.
 4. **The failure of classical methods is a theorem** — DFT and Clifford simulation
    fail at the H¹→H² boundary because they are functors from ribbon categories
-   (H⁰/H¹) and the H² obstruction (the non-trivial associator / BIND) is not
+   (H⁰/H¹) and the H² obstruction (the non-trivial associator / FUSE) is not
    in their image. This is not an empirical observation; it is a consequence of
    the categorical structure.
 
@@ -338,8 +344,8 @@ The categorical foundation means:
 The Origami ISA is not an arbitrary instruction set. It is the **minimal magmoidal
 extension of the free traced symmetric monoidal category (TSMC — a monoidal category
 with a trace operation closing loops in the string diagram)** — the smallest
-opcode set that is both TSMC-complete and magmoidal-complete. Every opcode except BIND
-is a named morphism in the TSMC + Frobenius structure (the "spider calculus"). BIND is
+opcode set that is both TSMC-complete and magmoidal-complete. Every opcode except FUSE
+is a named morphism in the TSMC + Frobenius structure (the "spider calculus"). FUSE is
 the unique opcode that requires a magmoidal extension: it encodes a non-trivial
 associator, realised physically as G₂/octonion symmetry.
 
@@ -386,7 +392,7 @@ the ISA is the *programme*.
 | $(\mathbb{Z}_p, +, \times)$ | p-adic / U-MGE | PPU |
 | $(\mathbb{A}_\mathbb{Q}, +, \times)$ | Adèlic / A-MGE | PPU array + quantum |
 
-| Semiring | SPLIT computes | TWIST computes |
+| Semiring | RESOLVE computes | TWIST computes |
 | -------- | -------------- | -------------- |
 | Tropical | argmax fan-out | phase = sign flip |
 | Gibbs | Boltzmann fan-out | Berry phase weight |
@@ -435,7 +441,7 @@ The diagrams below are described in text; the LaTeX figures appear in
 
 ---
 
-### ORBIT 🔄 *(formerly SPLIT)* 🕷️
+### RESOLVE 🔄 *(formerly ORBIT, originally SPLIT)* 🕷️
 
 **One wire becomes two** (or one tetrahedron becomes four).
 
@@ -454,7 +460,7 @@ The diagrams below are described in text; the LaTeX figures appear in
 | **Category theory** | Coproduct / comultiplication of a bialgebra or Hopf algebra |
 | **Algebra** | Coproduct $\Delta(E) = E \otimes K + 1 \otimes E$ in quantum group $U\_q(\mathfrak{sl}\_2)$ |
 
-**Where ORBIT appears:**
+**Where RESOLVE appears:**
 
 | Domain | Instance | What splits |
 |--------|----------|------------|
@@ -465,13 +471,13 @@ The diagrams below are described in text; the LaTeX figures appear in
 | Quantum error correction | Stabiliser expansion | Logical qubit → physical qubit register |
 | Finance | Factor decomposition (PCA on yield curve) | Portfolio → risk factors |
 
-**Key role:** ORBIT is always the *diagonalisation* step — the moment a
+**Key role:** RESOLVE is always the *diagonalisation* step — the moment a
 composite object is resolved into its irreducible pieces. Every Fourier transform,
-every change of basis, every spectral decomposition is an ORBIT.
+every change of basis, every spectral decomposition is a RESOLVE.
 
 ---
 
-### LABEL 🏷️ *(formerly SPLAT)* 🕷️
+### PROJECT 🏷️ *(formerly LABEL, originally SPLAT)* 🕷️
 
 **Two wires become one** (or four tetrahedra become one).
 
@@ -490,7 +496,7 @@ every change of basis, every spectral decomposition is an ORBIT.
 | **Category theory** | Counit $\varepsilon: A \to k$ of a Frobenius algebra; or the evaluation map $A^* \otimes A \to k$ |
 | **Algebra** | The $6j$-symbol / Racah coefficient; the POVM measurement map |
 
-**Where LABEL appears:**
+**Where PROJECT appears:**
 
 | Domain | Instance | What gets projected |
 |--------|----------|-------------------|
@@ -501,11 +507,11 @@ every change of basis, every spectral decomposition is an ORBIT.
 | Langlands programme | L-function evaluation $L(s, \pi)$ | Automorphic form → complex number |
 | Finance | Portfolio valuation | Risk factor exposure → P&L scalar |
 
-**Key role:** LABEL is always the *evaluation* step — the moment a structured
+**Key role:** PROJECT is always the *evaluation* step — the moment a structured
 object is projected to a number. Every inner product, every measurement, every
-partition function evaluation is a LABEL.
+partition function evaluation is a PROJECT.
 
-**The Frobenius axiom** $\mathrm{LABEL} \circ \mathrm{ORBIT} = \mathrm{id}$
+**The Frobenius axiom** $\mathrm{PROJECT} \circ \mathrm{RESOLVE} = \mathrm{id}$
 (the counit-comultiplication identity) is the algebraic statement that
 diagonalisation followed by projection is the identity — you get back what
 you put in. This is the Pentagon identity in disguise, and it is simultaneously
@@ -634,7 +640,7 @@ of the Baez threefold way.
 
 ---
 
-### LABEL 🕷️  ⊢ 🏷️
+### PROJECT (sector sub-role) 🕷️  ⊢ 🏷️
 
 **A wire passes through a projector** (sector selection).
 
@@ -655,7 +661,7 @@ of the Baez threefold way.
 | **Category theory** | The unit of the Frobenius algebra $(A, \mu, \eta, \Delta, \varepsilon)$; state preparation; the map $\mathbf{1} \to A$ selecting the initial sector |
 | **Algebra** | Gauge fixing; stabiliser eigenstate preparation; sector selection; the Satake isomorphism |
 
-**Where LABEL appears:**
+**Where PROJECT appears (sector sub-role):**
 
 | Domain | Instance | What gets labelled |
 |--------|----------|--------------------|
@@ -667,31 +673,31 @@ of the Baez threefold way.
 | PT symmetry | Parity sector projection $\mathcal{P}$ | Even / odd parity eigenspace |
 | Finance | Scenario / regime selection | Market state |
 
-**LABEL failure = PT phase transition.** When PT symmetry spontaneously breaks
+**PROJECT failure = PT phase transition.** When PT symmetry spontaneously breaks
 (Bender-Boettcher), eigenstates of $H$ are no longer eigenstates of $\mathcal{PT}$:
-LABEL can no longer project onto definite-parity sectors. The parity sectors mix
+PROJECT can no longer project onto definite-parity sectors. The parity sectors mix
 at the exceptional point.
 
-**Key role:** LABEL is the *sector / gauge / colour* opcode. It is always the
+**Key role:** PROJECT is the *sector / gauge / colour* opcode. It is always the
 operation that selects which subspace of the full Hilbert space the computation
 lives in. Every gauge-fixing, every stabiliser projection, every quantum number
-assignment is a LABEL.
+assignment is a PROJECT.
 
 ---
 
-### BIND 🐸  ⋈ 💎
+### FUSE 🐸  ⋈ 💎 *(formerly BIND)*
 
 **Three wires enter a vertex** (non-Abelian fusion; associator).
 
 **Symbols (Origami ISA):** formal ⋈ (natural join / bowtie — two registers fused into an entangled pair) · outreach 💎
 
-*A naming note:* BIND is the one opcode that lives exclusively in the 🐸 Frog
+*A naming note:* FUSE is the one opcode that lives exclusively in the 🐸 Frog
 Calculus — the trivalent vertex, the non-associative fusion, the G₂ structure
-that ZX calculus cannot express. Meanwhile LABEL (formerly SPLAT), FLIP, and CUP (formerly FLOP) — which sound
+that ZX calculus cannot express. Meanwhile PROJECT (formerly LABEL/SPLAT), FLIP, and CUP (formerly FLOP) — which sound
 exactly like things a frog does — are all firmly in the 🕷️ ZX spider calculus.
-The missed opportunity: **GULP** would have been perfect (three wires in, one
-out; irreversible; nothing else does it). BIND is in the LaTeX of too many
-papers to change now.
+The name FUSE was chosen for its resonance with fusion categories, F-matrices, and
+anyon fusion, and to eliminate the collision with the monad bind operator (>>=) in
+category-theoretic and functional-programming contexts.
 
 ```
   │   │   │
@@ -708,7 +714,7 @@ papers to change now.
 | **Category theory** | The associator of a monoidal category; non-trivial when the category is only quasi-monoidal (quasi-Hopf algebra, braided fusion category with non-trivial $F$-matrices) |
 | **Algebra** | Octonion associator $[e\_i, e\_j, e\_k] = (e\_i e\_j)e\_k - e\_i(e\_j e\_k)$; the $F$-matrix of a fusion category; the 4-Majorana coupling $\gamma\_i\gamma\_j\gamma\_k\gamma\_l$ |
 
-**Where BIND appears:**
+**Where FUSE appears:**
 
 | Domain | Instance | What fails to associate |
 |--------|----------|------------------------|
@@ -719,53 +725,53 @@ papers to change now.
 | Langlands (non-Abelian) | Non-commuting Hecke operators at different primes | $[T\_p, T\_q] \neq 0$ for $GL\_n$, $n \geq 2$ |
 | p-adic Langlands | Pentagon failure in p-adic Hodge theory | Non-associative p-adic completions |
 
-**BIND in finance:** The interbank network accumulates systemic risk in H¹ — the cycle
+**FUSE in finance:** The interbank network accumulates systemic risk in H¹ — the cycle
 topology of mutual exposures, which is non-trivial even though balance-sheet arithmetic
-is Abelian. BIND marks the H² *snap event*: the moment when those H¹ cycles become
+is Abelian. FUSE marks the H² *snap event*: the moment when those H¹ cycles become
 globally inconsistent and cannot be unwound bilaterally. Systemic risk is measured in
 H¹; systemic crises (2008 GFC, LTCM) are H² snap events. See Papers 397–398.
 
-**BIND theorem** (*The Opcode Rosetta Stone*, Paper 447): A gapped topological phase
+**FUSE theorem** (*The Opcode Rosetta Stone*, Paper 447): A gapped topological phase
 has **non-Abelian anyonic order if and only if** its minimal ISA programme contains
-BIND. Associative phases are BIND-free; non-associative phases require BIND.
+FUSE. Associative phases are FUSE-free; non-associative phases require FUSE.
 
-**BIND and the division algebra ladder:**
+**FUSE and the division algebra ladder:**
 
-- No BIND: associative computation — $\mathbb{R}$, $\mathbb{C}$, or $\mathbb{H}$ rung
+- No FUSE: associative computation — $\mathbb{R}$, $\mathbb{C}$, or $\mathbb{H}$ rung
   (pentagon holds, $\alpha = \mathrm{id}$)
-- BIND present: non-associative — $\mathbb{O}$-rung; $G\_2$, $E\_8$;
+- FUSE present: non-associative — $\mathbb{O}$-rung; $G\_2$, $E\_8$;
   Furey's octonionic Standard Model programme; 731-ISA regime
 
-The canonical definition (Paper 591, Definition 4.1): BIND $= \alpha_{A,A,A} \neq \mathrm{id}$
-in the ISA magmoidal category. BIND present $\Leftrightarrow$ pentagon coherence axiom
+The canonical definition (Paper 591, Definition 4.1): FUSE $= \alpha_{A,A,A} \neq \mathrm{id}$
+in the ISA magmoidal category. FUSE present $\Leftrightarrow$ pentagon coherence axiom
 fails $\Leftrightarrow$ non-trivial $F$-matrix. *Note:* Fibonacci anyons have non-trivial
 $F$-matrices but still satisfy the pentagon (they are a fusion category); they live at
 the $\mathbb{H}$-rung boundary, not the $\mathbb{O}$-rung.
 
-**The Fidkowski-Kitaev collapse** ($\mathbb{Z} \to \mathbb{Z}\_8$) is BIND insertion:
+**The Fidkowski-Kitaev collapse** ($\mathbb{Z} \to \mathbb{Z}\_8$) is FUSE insertion:
 promoting a CUP-only programme (free Majorana chain, $\mathbb{C}$-rung) to a
-CUP+BIND programme ($\mathbb{O}$-rung) collapses the integer winding-number
+CUP+FUSE programme ($\mathbb{O}$-rung) collapses the integer winding-number
 classification to $\mathbb{Z}\_8$, because $8$ is the Cayley-Dickson period at
 the octonion rung.
 
-**Key role:** BIND is the *non-associative* opcode. Its presence or absence is
+**Key role:** FUSE is the *non-associative* opcode. Its presence or absence is
 a syntactic, computable test for non-Abelian anyonic order — no modular tensor
 category computation required. It is the hardest opcode to implement and the
-most powerful: systems with BIND can encode computations that BIND-free
+most powerful: systems with FUSE can encode computations that FUSE-free
 (associative) systems cannot.
 
 ---
 
 ## The full opcode table
 
-| Opcode | Legacy name | Graphical calculi | String diagram | Pachner move | AZ symmetry | Division algebra | Langlands |
-|--------|------------|------------------|---------------|--------------|-------------|-----------------|-----------|
-| ORBIT | SPLIT | 🕷️ | $\Delta: A \to A \otimes A$ (split) | $1 \to 4$ | — | All rungs | Hecke eigendecomposition |
-| LABEL | SPLAT | 🕷️ | $\mu: A \otimes A \to A$ (merge) | $4 \to 1$ | — | All rungs | L-function evaluation |
+| Opcode | Legacy names | Graphical calculi | String diagram | Pachner move | AZ symmetry | Division algebra | Langlands |
+|--------|-------------|------------------|---------------|--------------|-------------|-----------------|-----------|
+| RESOLVE | ORBIT, SPLIT | 🕷️ | $\Delta: A \to A \otimes A$ (split) | $1 \to 4$ | — | All rungs | Hecke eigendecomposition |
+| PROJECT | LABEL, SPLAT | 🕷️ | $\mu: A \otimes A \to A$ (merge) | $4 \to 1$ | — | All rungs | L-function evaluation |
 | TWIST | — | 🕷️* | $\theta\_V: V \to V$ (curl) | Gauge move | $S$ (chiral) | All rungs | Monodromy of local system |
 | FLIP | — | 🕷️ | $(-)^\dagger$ (wire reversal) | $1 \to 3$ | $T$ (time reversal) | $\mathbb{R}$ / $\mathbb{H}$ | Langlands duality $G \leftrightarrow G^\vee$ |
 | ↳ CUP | *(FLIP sub-role, formerly FLOP)* | 🕷️* | $\varepsilon_A: A^* \otimes A \to \mathbf{1}$ (cup) | $3 \to 1$ | $C$ (particle-hole) | $\mathbb{R}$ / $\mathbb{H}$ | Abelian reciprocity ($GL\_1$) |
-| BIND | — | 🐸 | Associator $\alpha\_{A,B,C}$ (trivalent) | Obstruction | — | $\mathbb{O}$ only | Non-Abelian Hecke interaction |
+| FUSE | BIND | 🐸 | Associator $\alpha\_{A,B,C}$ (trivalent) | Obstruction | — | $\mathbb{O}$ only | Non-Abelian Hecke interaction |
 
 ---
 
@@ -773,8 +779,8 @@ most powerful: systems with BIND can encode computations that BIND-free
 
 Everything above is a dictionary. Three theorems give it teeth.
 
-**Theorem 1 — BIND = Non-Abelian** (*Paper 447*): A gapped topological phase has
-non-Abelian anyonic order if and only if its minimal ISA programme contains BIND.
+**Theorem 1 — FUSE = Non-Abelian** (*Paper 447*): A gapped topological phase has
+non-Abelian anyonic order if and only if its minimal ISA programme contains FUSE.
 This is a syntactic test: inspect the Hamiltonian for three-body terms that cannot
 be factored into products of two-body operators.
 
@@ -790,23 +796,23 @@ well-defined chain complex
 $$0 \;\longrightarrow\; C^0 \;\xrightarrow{\partial^0}\; C^1 \;\xrightarrow{\partial^1}\; C^2 \;\longrightarrow\; 0$$
 
 where $C^k = \bigoplus_{|v|=k} A^{\otimes c(v)}$, $A = \mathbb{Z}[x]/(x^2)$ is the
-Frobenius algebra of ORBIT/LABEL opcodes, and $v$ ranges over the cube of
+Frobenius algebra of RESOLVE/PROJECT opcodes, and $v$ ranges over the cube of
 resolutions of an ISA programme. The boundary map $\partial$ satisfies $\partial^2 = 0$
 as a consequence of the Frobenius algebra axioms — which are exactly the pentagon
 identity and Frobenius condition proved in Paper 357.
 
-The ORBIT count is the Euler characteristic of this complex:
-$\chi = \sum_k (-1)^k \mathrm{rank}(H^k) = \mathrm{ORBIT}(P)$.
+The RESOLVE count is the Euler characteristic of this complex:
+$\chi = \sum_k (-1)^k \mathrm{rank}(H^k) = \mathrm{RESOLVE}(P)$.
 The Poincaré polynomial $\sum_k t^k \mathrm{rank}(H^k)$ is a strictly stronger
-invariant, categorifying the ORBIT count in the same way Khovanov homology
+invariant, categorifying the RESOLVE count in the same way Khovanov homology
 categorifies the Jones polynomial. At H²: the differential $\partial^1$ is given by
-the BIND vertex — the trivalent generator of the Kuperberg $G_2$ spider (CMP 1996),
+the FUSE vertex — the trivalent generator of the Kuperberg $G_2$ spider (CMP 1996),
 whose completeness theorem provides a full diagrammatic axiomatisation of the H² tier.
 
 *Why this matters:* earlier presentations of the ISA described H⁰, H¹, H² as three
 separate computational levels with no map between them — a graded direct sum, not a
 cohomology theory. Theorem 3 supplies the missing differential and confirms that the
-tiers are genuine homology groups. The ORBIT count was always correct; it now has a
+tiers are genuine homology groups. The RESOLVE count was always correct; it now has a
 proof that it equals an Euler characteristic, not just a heuristic count.
 
 ---
@@ -844,7 +850,7 @@ columns.
 Ambient:** see [The Forge and Meld ISAs](../theory/forge-meld.md).
 
 The **731-ISA** extends beyond all three to the $\mathbb{O}$ (octonion) rung,
-adding BIND and SPIN. See [The Non-Associative Frontier](../theory/non-associative-frontier.md).
+adding FUSE and SPIN. See [The Non-Associative Frontier](../theory/non-associative-frontier.md).
 
 ---
 
@@ -861,11 +867,11 @@ for what it *feels* like to work in that regime.
 | **Origami** | Origami ISA | all β (umbrella) | H⁰–H² | Weyl, Racah | Five-opcode open standard; tropical at β→∞, quantum at β=it | 1 | ℂ | ZX (spiders, undirected) |
 | **Forge** | Forge ISA | 0 < β < ∞ (real Gibbs) | H⁰–H² | Boltzmann, Gibbs | Free-energy routing; MGE soft threshold; snap at β* | 1 | ℂ | ZX (weighted) |
 | **Raven** | Raven ISA | β = α + iωt (complex) | H⁰–H² | Bender, Boettcher | PT-symmetric computation; complex-β knot-type transitions; EP-enhanced sensing | 1 | ℂ | ZX (weighted) |
-| **Valence** | Valence ISA | all β (bonding extension) | H⁰–H² | Kelvin, Tait, Pauling | Covalent bonds as connected-sum MERGE; coordinate bonds as LINK; Frobenius = detailed balance; torus knots as orbital codes | 1 | ℂ | ZX + satellite knots |
+| **Valence** | Valence ISA | all β (bonding extension) | H⁰–H² | Kelvin, Tait, Pauling | Covalent bonds as connected-sum JOIN; coordinate bonds as LINK; Frobenius = detailed balance; torus knots as orbital codes | 1 | ℂ | ZX + satellite knots |
 | **Knot** | Knot ISA | β → ∞ (imaginary oscillators) | H⁰–H² | Kauffman, Spencer-Brown | Q-calculus; three imaginary marks; Jones polynomial | 3 | ℍ (Q₈) | Directed ZX (oriented wires) |
 | **Frog** | Frog ISA | β → ∞ (exceptional) | H⁰–H³ | Kauffman (731 Calculus) | Seven imaginary marks; Fano multiplication; non-associative | 7 | 𝕆 (Moufang loop) | 731 Frog Calculus (4-legged tetrahedra + ribbon-legs) |
 | **Motive** | Motive ISA | all β (abstract parent) | H⁰–H³ | Carnot, Bender | Carnot cycles = ERASE + FLOW; PT exceptional point; five primitive opcodes | — | — | Laws of Form |
-| **Hum** | Hum ISA | β = it/ℏ (imaginary) | H³ | Lamb, Bethe | QFT vacuum; EMIT is the one new primitive; amplituhedron as ORBIT | — | — | Feynman / amplituhedron |
+| **Hum** | Hum ISA | β = it/ℏ (imaginary) | H³ | Lamb, Bethe | QFT vacuum; EMIT is the one new primitive; amplituhedron as RESOLVE | — | — | Feynman / amplituhedron |
 | **Rising Sea** | Rising Sea ISA | full ℂ_β plane | all | Grothendieck | β-plane fibration of all ISAs; Noether from Aut(P_Motive) | — | — | — |
 | **Pentagon** | Pentagon ISA | abstract (coherence) | — | Baez, Mac Lane | Monoidal coherence theorem; five sides = five opcodes | — | — | — |
 
@@ -953,15 +959,16 @@ The ISA opcodes did not emerge from nowhere. Two graphical calculi were the dire
 
 **ZX calculus** (Coecke and Duncan, 2008) is a complete graphical language for qubit
 quantum mechanics built from two spider generators (Z and X) obeying the Frobenius
-equations. It covers SPLIT, SPLAT, FLIP, and LABEL fully, and handles TWIST partially
+equations. It covers RESOLVE (as SPLIT), PROJECT (as SPLAT), FLIP, and the sector
+sub-role of PROJECT fully, and handles TWIST partially
 (phase gates exist in ZX but the full ribbon/topological twist — Berry phase, anyonic
 spin, BKT transition — is not expressible). CUP is partially present as the compact
 structure (cups and caps) but the fermion-statistics interpretation ($C^2 = \pm 1$)
-is outside ZX's scope. BIND is entirely absent: ZX is strictly associative.
+is outside ZX's scope. FUSE is entirely absent: ZX is strictly associative.
 
 **The 731 Frog Calculus** extends ZX to the non-associative regime by adding the
 *frog vertex* — a trivalent node with a non-trivial associator, realised physically
-as $G_2$/octonion symmetry. The frog vertex is exactly the BIND opcode. The two
+as $G_2$/octonion symmetry. The frog vertex is exactly the FUSE opcode. The two
 foundational papers are:
 
 - [The 731 Frog Calculus, Part 1](https://doi.org/10.5281/zenodo.19713350) (Paper 207) — three-dimensional spin foams, magmoidal category theory, and non-associative topology
@@ -972,7 +979,7 @@ The containment is strict:
 $$\text{ZX calculus} \;\subset\; \text{731 Frog Calculus} \;\subset\; \text{Origami ISA}$$
 
 ZX lives at H¹ (Clifford/stabiliser regime, $\mathbb{C}$-rung of the division algebra
-ladder). The Frog Calculus adds the H² BIND opcode ($\mathbb{O}$-rung). The full
+ladder). The Frog Calculus adds the H² FUSE opcode ($\mathbb{O}$-rung). The full
 Origami ISA extends both to all physical domains — spectroscopy, molecular computing,
 financial risk, climate economics — running the same categorical morphisms on
 different hardware.
@@ -997,13 +1004,13 @@ different hardware.
 
 - **[The Forge and Meld ISAs](../theory/forge-meld.md)** — full treatment of β, the snap threshold β*, the Wick rotation β → it, vortons, and how the same opcodes run over tropical / Gibbs / complex arithmetic
 - **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰ classical / H¹ Clifford / H² magic; TWIST failure as phase boundary; β* snap threshold
-- **[BIND at the octonion rung](../theory/non-associative-frontier.md)** — the Non-Associative Frontier page; division algebra ladder ℝ→ℂ→ℍ→𝕆
+- **[FUSE at the octonion rung](../theory/non-associative-frontier.md)** — the Non-Associative Frontier page; division algebra ladder ℝ→ℂ→ℍ→𝕆
 - **[BKT Transition / TWIST Failure](glossary.md#bkt-transition--twist-failure)** — TWIST in depth; quantum dimension, $d_{1/2}(\beta)=0$ at $\beta=1/2$
 
 **For number theorists and algebraic geometers:**
 
 - **[The Langlands Perspective](../theory/langlands.md)** — how each opcode column in the
-  tables above maps onto the Langlands programme: SPLIT = spectral decomposition
+  tables above maps onto the Langlands programme: RESOLVE = spectral decomposition
   of $L^2(G(\mathbb{Q})\backslash G(\mathbb{A}))$; TWIST = Tate twist / Hecke
-  character; BIND = Rankin-Selberg convolution; CUP = Arthur-Selberg trace
+  character; FUSE = Rankin-Selberg convolution; CUP = Arthur-Selberg trace
   formula. The Langlands correspondence as adèlic ISA semiring-polymorphism.

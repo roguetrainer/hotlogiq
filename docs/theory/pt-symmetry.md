@@ -270,7 +270,7 @@ structure of the multi-sheet EP locus at irrational ε.
   [Explainer](/papers/10.5281-zenodo.21480284/)
 
 - [The Non-Hermitian ISA: PT Symmetry, Exceptional Points, and the 38-Fold Way](https://doi.org/10.5281/zenodo.21480491) (`NonHermIsa2`) —
-  AZ symmetry classes in ISA language; LABEL failure = PT phase transition; EP at H¹/H² boundary ·
+  AZ symmetry classes in ISA language; PROJECT failure = PT phase transition; EP at H¹/H² boundary ·
   [Explainer](/papers/10.5281-zenodo.21480491/)
 
 - [The Adelic β-Plane](https://doi.org/10.5281/zenodo.21245459) (`AdelicBeta`) —
