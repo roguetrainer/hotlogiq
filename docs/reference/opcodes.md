@@ -108,24 +108,24 @@ and FLIP/CUP sub-roles (FLIP column). Read across a row to see how a domain
 implements the full ISA; read down a column to see the same abstract operation
 across completely different fields.
 
-**Domain coordinate table** — the three structural axes that determine which ISA a domain uses, plus whether its symmetry group is Abelian (if ✓, 6j symbols collapse to trivial phase factors and FUSE is weak or absent; if ✗, genuine recoupling and non-trivial FUSE).
+**Domain coordinate table** — the three structural axes that determine which ISA a domain uses, plus whether its symmetry group is Abelian (if ✓, 6j symbols collapse to trivial phase factors and FUSE is weak or absent; if ✗, genuine recoupling and non-trivial FUSE). The suggested ISA follows from these axes. **Most domains are Forge** — this is the point: finite-β thermodynamic computation is the generic case; Boolean logic (Origami) and quantum mechanics (Meld) are the cold and imaginary limits of the same framework.
 
-| Domain | Semiring | Symmetry group | Abelian? | β-regime |
-| ------ | -------- | -------------- | -------- | -------- |
-| **3-manifold** | ℤ / ℝ₊ | SU(2) / G₂ | ✗ | β→∞ (combinatorial) |
-| **Spectroscopy** | ℝ | SU(2) / SO(3) | ✗ | finite β |
-| **Quantum info** | ℂ | U(2ⁿ) | ✗ | β=it |
-| **Chemistry** | ℝ → ℂ at CI | point group ⊂ G₂ | ✗ | finite β → β=it at conical intersection |
-| **Nuclear** | ℝ | G₂ (always H²) | ✗ | finite β |
-| **Finance** | ℝ₊ | GL(n) / U(1) | ✓ | finite β |
-| **Condensed matter** | ℂ / ℤ₂ | U(1) → SU(2) → G₂ | ✓/✗ (phase-dependent) | β=it → β* snap |
-| **Turbulence** | ℝ | SDiff(ℝ³) | ✗ | finite β |
-| **Biology** | ℝ → ℂ | point group ⊂ G₂ | ✗ | β ≈ β* (physiological) |
-| **Statistics / ML** | ℝ₊ | GL(n) | ✓ | finite β |
-| **MCMC / sampling** | ℝ₊ | — | ✓ | finite β |
-| **Causal inference** | ℝ₊ | DAG automorphisms | ✓ | finite β |
-| **Dynamical systems** | (max,+) → ℝ | Diff(M) | ✗ | β→∞ → finite β |
-| **Number theory** | ℚ_p · ℂ · 𝔸 | GL(n) / G₂ | ✗ | all β |
+| Domain | Semiring | Symmetry group | Abelian? | β-regime | Suggested ISA |
+| ------ | -------- | -------------- | -------- | -------- | ------------- |
+| **3-manifold** | ℤ / ℝ₊ | SU(2) / G₂ | ✗ | β→∞ (combinatorial) | Origami / Frog (if G₂) |
+| **Spectroscopy** | ℝ | SU(2) / SO(3) | ✗ | finite β | Forge |
+| **Quantum info** | ℂ | U(2ⁿ) | ✗ | β=it | Meld |
+| **Chemistry** | ℝ → ℂ at CI | point group ⊂ G₂ | ✗ | finite β → β=it at conical intersection | Forge → Raven at CI |
+| **Nuclear** | ℝ | G₂ (always H²) | ✗ | finite β | Forge + Frog (tensor force mandatory) |
+| **Finance** | ℝ₊ | GL(n) / U(1) | ✓ | finite β | Forge |
+| **Condensed matter** | ℂ / ℤ₂ | U(1) → SU(2) → G₂ | ✓/✗ (phase-dependent) | β=it → β* snap | Forge → Meld (phase-dependent) |
+| **Turbulence** | ℝ | SDiff(ℝ³) | ✗ | finite β | Forge |
+| **Biology** | ℝ → ℂ | point group ⊂ G₂ | ✗ | β ≈ β* (physiological) | Forge |
+| **Statistics / ML** | ℝ₊ | GL(n) | ✓ | finite β | Forge |
+| **MCMC / sampling** | ℝ₊ | — | ✓ | finite β | Forge |
+| **Causal inference** | ℝ₊ | DAG automorphisms | ✓ | finite β | Forge |
+| **Dynamical systems** | (max,+) → ℝ | Diff(M) | ✗ | β→∞ → finite β | Origami → Forge |
+| **Number theory** | ℚ_p · ℂ · 𝔸 | GL(n) / G₂ | ✗ | all β | Rising Sea |
 
 ---
 
