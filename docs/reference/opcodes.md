@@ -231,15 +231,15 @@ operations *within* one orbital. For **bonding** — operations *between* orbita
 PROP must carry a second Frobenius algebra structure, one where the objects carry
 orbital-knot labels. Category theory forces exactly two new opcodes and no others:
 
-| CT symbol | Name | Type | Frobenius dual | Physical meaning | Status |
-| --------- | ---- | ---- | -------------- | ---------------- | ------ |
-| $\eta$    | PROJECT | $\mathbf{1} \to A$ | FLIP | orbital state preparation; prepare torus knot eigenstate | ✓ exists |
-| $\delta$  | **CLEAVE** | $A \to A \otimes A$ | JOIN | bond breaking: split connected-sum orbital into two | ✗ **new** |
-| $\varepsilon$ | FLIP | $A \to \mathbf{1}$ | PROJECT | measurement, orbital annihilation | ✓ exists |
-| $\mu$     | **JOIN** | $A \otimes A \to A$ | CLEAVE | covalent bond formation: connected sum of torus knots | ✗ **new** |
-| —         | **LINK**  | $A \otimes B \to A \otimes B$ | LINK (self-dual) | coordinate/dative bond: Hopf linking without topology change | ✗ **new** |
-| —         | SNAP↑ | **2-cell** $\mathcal{F} \to \mathcal{F}'$ | SNAP↓ (inverse) | β\* tier promotion H^k → H^{k+1}; switches active PROP upward | primitive (see below) |
-| —         | SNAP↓ | **2-cell** $\mathcal{F}' \to \mathcal{F}$ | SNAP↑ (inverse) | β\* tier demotion H^{k+1} → H^k; switches active PROP downward | primitive (see below) |
+| CT symbol | CT name | Name | Type | Frobenius dual | Physical meaning | Status |
+| --------- | ------- | ---- | ---- | -------------- | ---------------- | ------ |
+| $\eta$    | unit | PROJECT | $\mathbf{1} \to A$ | FLIP | orbital state preparation; prepare torus knot eigenstate | ✓ exists |
+| $\delta$  | comultiplication | **CLEAVE** | $A \to A \otimes A$ | JOIN | bond breaking: split connected-sum orbital into two | ✗ **new** |
+| $\varepsilon$ | counit | FLIP | $A \to \mathbf{1}$ | PROJECT | measurement, orbital annihilation | ✓ exists |
+| $\mu$     | multiplication | **JOIN** | $A \otimes A \to A$ | CLEAVE | covalent bond formation: connected sum of torus knots | ✗ **new** |
+| $\tau$    | braiding | **LINK** | $A \otimes B \to A \otimes B$ | LINK (self-dual) | coordinate/dative bond: Hopf linking without topology change | ✗ **new** |
+| —         | 2-cell (PROP morphism) | SNAP↑ | **2-cell** $\mathcal{F} \to \mathcal{F}'$ | SNAP↓ (inverse) | β\* tier promotion H^k → H^{k+1}; switches active PROP upward | primitive (see below) |
+| —         | 2-cell (PROP morphism) | SNAP↓ | **2-cell** $\mathcal{F}' \to \mathcal{F}$ | SNAP↑ (inverse) | β\* tier demotion H^{k+1} → H^k; switches active PROP downward | primitive (see below) |
 
 **Why JOIN and CLEAVE are forced:** a Frobenius algebra requires both a multiplication
 $\mu: A \otimes A \to A$ and a comultiplication $\delta: A \to A \otimes A$ satisfying
