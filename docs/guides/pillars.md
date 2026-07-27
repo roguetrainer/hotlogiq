@@ -60,13 +60,13 @@ The **Pentagon identity** (d² = 0) is simultaneously: the HJM no-arbitrage cond
 
 Every computation — at any β, in any domain — decomposes into five operations. This is not a design choice; it follows from the structure of Čech cohomology on a sheaf.
 
-| Opcode | Symbol | Emoji | Cohomological role |
-|--------|--------|-------|--------------------|
-| RESOLVE | △ | 🔬 | H⁰: spectral decomposition; enumerate group orbits |
-| PROJECT | ▼ | 🎯 | H⁰: sector selection; many-to-one evaluation |
-| FLIP | † | ↩️ | Sheaf dualisation / time-reversal / dagger |
-| TWIST | ∮ | 🌀 | H¹: gauge transformation / phase / monodromy |
-| FUSE | ⋈ | 💎 | H²: Pachner surgery / recoupling / entanglement |
+| Opcode | Symbol | Cohomological role |
+|--------|--------|--------------------|
+| RESOLVE 🔬 | △ | H⁰: spectral decomposition; enumerate group orbits |
+| PROJECT 🎯 | ▼ | H⁰: sector selection; many-to-one evaluation |
+| FLIP ↩️ | † | Sheaf dualisation / time-reversal / dagger |
+| TWIST 🌀 | ∮ | H¹: gauge transformation / phase / monodromy |
+| FUSE 💎 | ⋈ | H²: Pachner surgery / recoupling / entanglement |
 
 The same five opcodes describe a ribosome, Shor's algorithm, a yield curve, and an enzyme — at twenty orders of magnitude in physical scale. This is not analogy: the 6j symbol is H¹ of the representation sheaf in every case.
 
