@@ -1,5 +1,8 @@
 ---
+layout: default
 title: "Pachner Moves and Quantum Symbols"
+parent: Theory
+nav_order: 10
 description: "How the 6j, 15j, and higher recoupling symbols arise as transition amplitudes of Pachner moves, and why the Biedenharn-Elliott identity proves topological invariance."
 ---
 

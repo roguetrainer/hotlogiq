@@ -1,7 +1,8 @@
 ---
 layout: default
 title: "Orbital Knots: The Torus-Knot Assignment for Atomic Orbitals"
-nav_order: 6
+parent: Theory
+nav_order: 11
 description: "Every hydrogen-like orbital (n,ℓ) is assigned the torus knot T(ℓ+1, n-ℓ) on the Fock 3-sphere. This page tabulates those assignments, their genera, and their chemical consequences."
 tags: [orbital-knots, torus-knots, fock-sphere, winding-number, periodic-table, knot-topology, seifert-genus, trefoil, hopf-link, kelvin-tait]
 ---
