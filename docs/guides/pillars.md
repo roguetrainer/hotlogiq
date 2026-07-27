@@ -38,9 +38,9 @@ Every computation has a cohomological address. The three tiers are not a taxonom
 
 | Tier | Cohomology | Opcodes | Character |
 |------|------------|---------|-----------|
-| H⁰ | Classical / bilateral | RESOLVE, PROJECT, FLIP | Symmetry sectors, discrete orbits |
-| H¹ | Gauge / triangular | + TWIST | Phase accumulation, convexity, stabiliser QC |
-| H² | Systemic / entangled | + FUSE | Entanglement, correlation, fault-tolerant QC |
+| H⁰ | Classical / bilateral | RESOLVE 🔬, PROJECT 🎯, FLIP ↩️ | Symmetry sectors, discrete orbits |
+| H¹ | Gauge / triangular | + TWIST 🌀 | Phase accumulation, convexity, stabiliser QC |
+| H² | Systemic / entangled | + FUSE 💎 | Entanglement, correlation, fault-tolerant QC |
 
 **The triangle and the tetrahedron.** H⁰ is a closed triangle: three nodes, three edges, everything balances bilaterally. H¹ is what happens when you try to fill that triangle with a consistent phase and find you can't — there is a [Berry phase](https://en.wikipedia.org/wiki/Geometric_phase), a convexity correction, a residual that won't cancel. H² is four triangles glued into a [tetrahedron](https://en.wikipedia.org/wiki/Tetrahedron): the interior is genuinely non-trivial, and evaluating it requires the 6j symbol. The [Pachner move](https://en.wikipedia.org/wiki/Pachner_moves) that replaces one tetrahedron with four — and the identity that says both give the same amplitude — is the Pentagon identity, and it is the same equation as d² = 0.
 
@@ -96,9 +96,9 @@ Every colour you have ever seen — the blue of the sky, the green of a leaf, th
 
 This surprises most people. We are trained to think that nature is pairwise at heart: Newton's gravity, Coulomb's law, the bilateral loan, the two-qubit gate. But the 6j symbol has been sitting in the spectroscopy textbooks for ninety years, quietly ruling out that picture for any system with non-Abelian symmetry.
 
-**FUSE is that object.** In the Origami ISA, FUSE is the opcode that encodes the non-trivial associator — the F-matrix of a fusion category, the octonion associator, the 6j recoupling coefficient. It appears identically in:
+**FUSE 💎 is that object.** In the Origami ISA, FUSE 💎 is the opcode that encodes the non-trivial associator — the F-matrix of a fusion category, the octonion associator, the 6j recoupling coefficient. It appears identically in:
 
-| System | FUSE incarnation | Known since |
+| System | FUSE 💎 incarnation | Known since |
 |--------|-----------------|-------------|
 | Atomic / molecular spectroscopy | Racah 6j symbol; every spectral line | Racah 1942 |
 | Nuclear physics | Tensor force $S_{12}$; mandatory in every nucleus from the deuteron up | Wigner 1933 |
@@ -107,7 +107,7 @@ This surprises most people. We are trained to think that nature is pairwise at h
 | Nitrogen fixation (FeMoco) | 4-Majorana coupling in the iron-sulfur cluster | — |
 | Non-Abelian anyons | Pentagon equation for fusion categories | Moore–Seiberg 1989 |
 
-FUSE cannot be built from TWIST or FLIP applied twice. It is not a 2-body interaction in disguise. The reason DFT fails for strongly-correlated molecules, the reason Clifford circuits cannot achieve universal quantum computation, and the reason the 2008 crisis could not be unwound bilaterally are all the same theorem: you hit the H¹→H² boundary and FUSE is on the other side.
+FUSE 💎 cannot be built from TWIST 🌀 or FLIP ↩️ applied twice. It is not a 2-body interaction in disguise. The reason DFT fails for strongly-correlated molecules, the reason Clifford circuits cannot achieve universal quantum computation, and the reason the 2008 crisis could not be unwound bilaterally are all the same theorem: you hit the H¹→H² boundary and FUSE 💎 is on the other side.
 
 The irreducibility of 4-body interactions is not a new discovery. It is a ninety-year-old fact from spectroscopy that has not yet been fully absorbed by the rest of science. HotLogiQ names it, and makes it computable across every domain where it appears.
 
