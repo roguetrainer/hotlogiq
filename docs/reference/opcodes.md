@@ -132,12 +132,12 @@ across completely different fields.
 | Domain | RESOLVE 🔬 | PROJECT 🎯 | FLIP ↩️ | TWIST 🌀 | FUSE 💎 |
 | ------ | --------- | --------- | -------- | --------- | ------- |
 | **3-manifold** | 1 tet → 4 tets · closed triangulation loop | 4 tets → 1 tet · face/edge colouring | 1 tri → 3 tris · 3 tris → 1 tri | Dehn twist | non-Pachner obstruction |
-| **Spectroscopy** | 1 rep → CG irreps · closed G-orbit on weight lattice | CG sum → 1 rep (6j) · quantum number assignment | raising $J_+$ · lowering $J_-$ | CG phase $(-1)^j$ | Racah recoupling (6j→9j) |
+| **Spectroscopy** | 1 rep → CG irreps · closed G-orbit on weight lattice | CG sum → 1 rep (3j) · quantum number assignment | raising $J_+$ · lowering $J_-$ | CG phase $(-1)^j$ | Racah recoupling (6j) — *H³ in extended ISA* |
 | **Quantum info** | 1 qubit → register · feedback in quantum circuit | many states → 1 outcome · stabiliser projection | dagger / time-reversal · cup / partial trace | Berry phase / ribbon | $F$-matrix; non-Abelian anyon |
-| **Chemistry** | CASSCF diagonalisation; NOON decomposition · G-walk / Galois step; CASSCF macro-iteration | 6j evaluation; projection to density · orbital symmetry label; spin-state; point-group irrep | time-reversal; particle-hole; raising · Born rule for density; lowering | Berry phase on reaction path; Maslov index at conical intersection | tensor force; strongly-correlated bond; FeMoco; DFT failure |
+| **Chemistry** | CASSCF diagonalisation; NOON decomposition · G-walk / Galois step; CASSCF macro-iteration | 3j/CG projection to density · orbital symmetry label; spin-state; point-group irrep | time-reversal; particle-hole; raising · Born rule for density; lowering | Berry phase on reaction path; Maslov index at conical intersection | tensor force; strongly-correlated bond; FeMoco; DFT failure |
 | **Nuclear** | shell-model diagonalisation; Nilsson basis · closed shell (magic number); Nilsson orbit | 9j evaluation; nuclear matrix element · $J$, $T$, parity quantum numbers | time-reversal; parity doubling · particle-hole in shell model | spin-orbit coupling (strong; mandatory); nuclear CG phase | **tensor force $S_{12}$; mandatory in every nucleus** |
 | **Finance** | 1 exposure → risk factor legs · closed risk cycle | risk factor legs → net P&L · scenario / regime selection | long ↔ short position · Born rule on exposure | convexity correction; drift | H² snap event (systemic crisis) |
-| **Condensed matter** | Bogoliubov transform; band diagonalisation · hopping on lattice; Fermi sea orbit | 6j / spectral projection · double occupancy $D$; order parameter; symmetry sector | particle-hole conjugation $C$ · fermionisation (Jordan-Wigner) | Berry phase; Chern number; BKT vortex | Mott transition (U/t snap); superexchange ring; topological order |
+| **Condensed matter** | Bogoliubov transform; band diagonalisation · hopping on lattice; Fermi sea orbit | 3j / spectral projection · double occupancy $D$; order parameter; symmetry sector | particle-hole conjugation $C$ · fermionisation (Jordan-Wigner) | Berry phase; Chern number; BKT vortex | Mott transition (U/t snap); superexchange ring; topological order |
 | **Turbulence** | large eddy → two smaller eddies · Kolmogorov cascade $k \to 2k$; inertial range | two sub-eddies dissipate at Kolmogorov scale · pressure Leray projector enforcing $\nabla\cdot u = 0$ | — | vortex stretching $\omega \to \omega + (\omega\cdot\nabla)u\,\delta t$ | blow-up conjecture: RESOLVE fails to close (NS unsolved) |
 | **Biology** | CASSCF-like active-site diagonalisation · RESOLVE on Ramachandran torus; protein fold search; metabolic cycle | projection to electron density; tertiary fold evaluation · point-group label of active site; spin-state; cofactor oxidation state | time-reversal of reaction; particle-hole in redox · Born rule on conformational ensemble | Berry phase on reaction path; Maslov index at TS; spin-orbit (RuBisCO SOC problem) | chaperone-assisted H² fold; proofreading QEC; FeMoco (nitrogen fixation) |
 | **Statistics / ML** | E-step (marginalise joint → conditional); multi-head projection · EM iteration (Fisher-Rao geodesic); Markov chain RESOLVE; attention token orbit | M-step (reconstruct parameters); head aggregation · convergence criterion ($\beta^*$ snap); energy eigenvalue; attention entropy | dagger on sufficient statistic · trace over latent variables; Born rule on posterior | $\alpha$-connection correction (curved exponential family); softmax Berry phase | multimodal posterior; phase transition in learning (grokking); non-Abelian Fisher tensor |
@@ -212,14 +212,14 @@ every change of basis, every spectral decomposition is a RESOLVE.
 | **String diagram** | Multiplication $\mu: A \otimes A \to A$ — two wires merging into one (or a cap: one wire curling down to nothing) |
 | **Pachner move** | $4 \to 1$ (four tetrahedra sharing a vertex collapsed to one) |
 | **Category theory** | Counit $\varepsilon: A \to k$ of a Frobenius algebra; or the evaluation map $A^* \otimes A \to k$ |
-| **Algebra** | The $6j$-symbol / Racah coefficient; the POVM measurement map |
+| **Algebra** | The $3j$-symbol / Clebsch-Gordan coefficient; the POVM measurement map |
 
 **Where PROJECT appears:**
 
 | Domain | Instance | What gets projected |
 |--------|----------|-------------------|
-| Angular momentum | $6j$-symbol evaluation | Recoupling amplitude → scalar |
-| Quantum gravity | Ponzano-Regge vertex amplitude | Spin foam face → amplitude |
+| Angular momentum | $3j$-symbol evaluation | CG amplitude → scalar (6j recoupling belongs at H³/RECOUPLE) |
+| Quantum gravity | Ponzano-Regge face amplitude | Spin foam triangle → 3j amplitude |
 | Quantum information | Character POVM measurement | State → outcome probability |
 | Bethe ansatz | Scalar product of Bethe states | Rapidities → norm |
 | Langlands programme | L-function evaluation $L(s, \pi)$ | Automorphic form → complex number |
@@ -477,6 +477,50 @@ a syntactic, computable test for non-Abelian anyonic order — no modular tensor
 category computation required. It is the hardest opcode to implement and the
 most powerful: systems with FUSE can encode computations that FUSE-free
 (associative) systems cannot.
+
+---
+
+## H³ and beyond (open — speculative)
+
+The Origami ISA currently terminates at H² (FUSE). The orbital simplex construction
+(Paper 719) and the Ponzano-Regge / Turaev-Viro frameworks suggest a coherent H³
+tier whose primitive is the **6j symbol evaluated on a tetrahedron** — not a new
+mathematical object, but a new ISA depth.
+
+**The correct simplex-to-symbol ladder** (per Turaev-Viro consensus):
+
+| H^k | Simplex | Recoupling symbol | ISA opcode |
+| --- | ------- | ----------------- | ---------- |
+| H⁰ | vertex | identity / single spin | RESOLVE/PROJECT/FLIP |
+| H¹ | edge | R-matrix / braiding | TWIST |
+| H² | triangle | 3j / Clebsch-Gordan | FUSE (associator = non-trivial F-matrix) |
+| H³ | tetrahedron | 6j / F-matrix amplitude | **RECOUPLE** *(proposed)* |
+| H⁴ | 4-simplex | 15j symbol | *(Crane-Yetter; not yet proposed)* |
+
+**Key clarifications:**
+
+- FUSE is defined as the **non-trivial associator** α_{A,B,C} ≠ id — this is the
+  categorical H² object. The F-matrix of a fusion category *is* this associator;
+  it is an H² primitive.
+- The **6j symbol** as a *Racah recoupling amplitude* (the scalar evaluated on a
+  tetrahedron) is an H³ object in the Ponzano-Regge / Turaev-Viro sense: it is a
+  3-cocycle evaluated on a 3-simplex.
+- The **9j symbol** is not a new simplex-level primitive; it is a circuit of three
+  6j (RECOUPLE) gates. Mac Lane coherence guarantees that all higher recoupling
+  reduces to sequences of F-moves.
+- The domain table rows for spectroscopy/chemistry labelled "6j" under PROJECT or
+  FUSE should be understood as H³-level operations that the current three-tier ISA
+  approximates by collapsing into FUSE.
+
+**Whether RECOUPLE is one opcode or several** is open: the Frog ISA (H⁰–H³) already
+accommodates this tier, and the Hum ISA nominates EMIT as the H³ primitive in the
+QFT / amplituhedron context. These may be domain-specific faces of a single H³
+opcode, or genuinely distinct primitives. See Paper 719 for the orbital simplex
+argument; see Papers 207/281 (Frog Calculus) for the graphical calculus.
+
+For a full derivation of how Pachner moves map to quantum symbols — including the
+Biedenharn-Elliott identity and why 9j is a RECOUPLE circuit — see
+[Pachner Moves and Quantum Symbols](pachner-symbols.md).
 
 ---
 
