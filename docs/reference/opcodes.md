@@ -683,7 +683,7 @@ electron in an orbital with quantum numbers $(n, \ell)$ traces a torus knot
 $T(n, \ell)$ on $S^3$. A **covalent bond** between atoms A and B combines their
 orbitals: the molecular orbital has knot type
 
-$$T(n_A, \ell_A) \mathbin{\#} T(n_B, \ell_B)$$
+$$T(n_A, \ell_A) \mathbin{\sharp} T(n_B, \ell_B)$$
 
 the **connected sum** — additive genus $g_A + g_B$. This connected-sum operation
 *is* JOIN. CLEAVE is its Frobenius dual: the bond-breaking operation that recovers
@@ -705,8 +705,8 @@ reversible chemistry already satisfies.
 
 | CT symbol | CT name | Opcode | Type | Frobenius dual | Chemical meaning |
 | --------- | ------- | ------ | ---- | -------------- | ---------------- |
-| $\mu$ | multiplication | **JOIN** | $A \otimes B \to A\mathbin{\#}B$ | CLEAVE | covalent bond: connected sum of torus knots |
-| $\delta$ | comultiplication | **CLEAVE** | $A\mathbin{\#}B \to A \otimes B$ | JOIN | bond breaking: split connected-sum orbital |
+| $\mu$ | multiplication | **JOIN** | $A \otimes B \to A\mathbin{\sharp}B$ | CLEAVE | covalent bond: connected sum of torus knots |
+| $\delta$ | comultiplication | **CLEAVE** | $A\mathbin{\sharp}B \to A \otimes B$ | JOIN | bond breaking: split connected-sum orbital |
 | $\tau$ | braiding | **LINK** | $A \otimes B \to A \otimes B$ | LINK (self-dual) | coordinate/dative bond: Hopf linking, bond order = linking number |
 
 **2-cell (between levels — neither Level 1 nor Level 2):**
@@ -722,8 +722,8 @@ thermodynamic phase). SNAP is a phase transition (between phases). These are
 not in the same layer.
 
 **Why JOIN and CLEAVE are forced (not chosen):** any Frobenius algebra at Level 2
-requires both a multiplication $\mu: A \otimes B \to A\mathbin{\#}B$ and a
-comultiplication $\delta: A\mathbin{\#}B \to A \otimes B$ satisfying the Frobenius
+requires both a multiplication $\mu: A \otimes B \to A\mathbin{\sharp}B$ and a
+comultiplication $\delta: A\mathbin{\sharp}B \to A \otimes B$ satisfying the Frobenius
 condition. There is no choice about whether to include them — a Frobenius algebra
 without both is not a Frobenius algebra. Hybridisation (sp³, sp²) is *not* a new
 opcode: it is TWIST applied within Level 1 to the orbital colour label.
@@ -1050,18 +1050,19 @@ Each named ISA is a specific point (or arc) in the β-plane, with a characterist
 physical content, a set of patron thinkers, and a distinct informal name chosen
 for what it *feels* like to work in that regime.
 
-| Informal name | Formal name | β location | H^k reach | Patron(s) | Hook | IMAGINE count | Algebra | Graphical calculus |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Origami** | Origami ISA | all β (umbrella) | H⁰–H² | Weyl, Racah | Five-opcode open standard; tropical at β→∞, quantum at β=it | 1 | ℂ | ZX (spiders, undirected) |
-| **Forge** | Forge ISA | 0 < β < ∞ (real Gibbs) | H⁰–H² | Boltzmann, Gibbs | Free-energy routing; MGE soft threshold; snap at β* | 1 | ℂ | ZX (weighted) |
-| **Raven** | Raven ISA | β = α + iωt (complex) | H⁰–H² | Bender, Boettcher | PT-symmetric computation; complex-β knot-type transitions; EP-enhanced sensing | 1 | ℂ | ZX (weighted) |
-| **Valence** | Valence ISA | all β (bonding extension) | H⁰–H² | Kelvin, Tait, Pauling | Covalent bonds as connected-sum JOIN; coordinate bonds as LINK; Frobenius = detailed balance; torus knots as orbital codes | 1 | ℂ | ZX + satellite knots |
-| **Knot** | Knot ISA | β → ∞ (imaginary oscillators) | H⁰–H² | Kauffman, Spencer-Brown | Q-calculus; three imaginary marks; Jones polynomial | 3 | ℍ (Q₈) | Directed ZX (oriented wires) |
-| **Frog** | Frog ISA | β → ∞ (exceptional) | H⁰–H³ | Kauffman (731 Calculus) | Seven imaginary marks; Fano multiplication; non-associative | 7 | 𝕆 (Moufang loop) | 731 Frog Calculus (4-legged tetrahedra + ribbon-legs) |
-| **Motive** | Motive ISA | all β (abstract parent) | H⁰–H³ | Carnot, Bender | Carnot cycles = ERASE + FLOW; PT exceptional point; five primitive opcodes | — | — | Laws of Form |
-| **Hum** | Hum ISA | β = it/ℏ (imaginary) | H³ | Lamb, Bethe | QFT vacuum; EMIT is the one new primitive; amplituhedron as RESOLVE | — | — | Feynman / amplituhedron |
-| **Rising Sea** | Rising Sea ISA | full ℂ_β plane | all | Grothendieck | β-plane fibration of all ISAs; Noether from Aut(P_Motive) | — | — | — |
-| **Pentagon** | Pentagon ISA | abstract (coherence) | — | Baez, Mac Lane | Monoidal coherence theorem; five sides = five opcodes | — | — | — |
+| Informal name | Formal name | Entry-point paper | β location | H^k reach | Patron(s) | Hook | IMAGINE count | Algebra | Graphical calculus |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Origami** | Origami ISA | [Paper 631](https://doi.org/10.5281/zenodo.21428853) | all β (umbrella) | H⁰–H² | Weyl, Racah | Five-opcode open standard; tropical at β→∞, quantum at β=it | 1 | ℂ | ZX (spiders, undirected) |
+| **Forge** | Forge ISA | [Paper 419](https://doi.org/10.5281/zenodo.20694527) | 0 < β < ∞ (real Gibbs) | H⁰–H² | Boltzmann, Gibbs | Free-energy routing; MGE soft threshold; snap at β* | 1 | ℂ | ZX (weighted) |
+| **Meld** | Meld ISA | [Paper 454](https://doi.org/10.5281/zenodo.20773563) | β = it/ℏ (quantum) | H⁰–H² | Shor, Grover | Complex-MGE quantum algorithm discovery; T-gate as octonion obstruction | 1 | ℂ | ZX (weighted) |
+| **Raven** | Raven ISA | [Paper 636](https://doi.org/10.5281/zenodo.21416924) | β = α + iωt (complex) | H⁰–H² | Bender, Boettcher | PT-symmetric computation; complex-β knot-type transitions; EP-enhanced sensing | 1 | ℂ | ZX (weighted) |
+| **Valence** | Valence ISA | [Paper 487](https://doi.org/10.5281/zenodo.21219722) | all β (bonding extension) | H⁰–H² | Kelvin, Tait, Pauling | Covalent bonds as connected-sum JOIN; coordinate bonds as LINK; Frobenius = detailed balance; torus knots as orbital codes | 1 | ℂ | ZX + satellite knots |
+| **Knot** | Knot ISA | [Paper 618](https://doi.org/10.5281/zenodo.21416907) | β → ∞ (imaginary oscillators) | H⁰–H² | Kauffman, Spencer-Brown | Q-calculus; three imaginary marks; Jones polynomial | 3 | ℍ (Q₈) | Directed ZX (oriented wires) |
+| **Frog** | Frog ISA | [Paper 623](https://doi.org/10.5281/zenodo.21480268) | β → ∞ (exceptional) | H⁰–H³ | Kauffman (731 Calculus) | Seven imaginary marks; Fano multiplication; non-associative | 7 | 𝕆 (Moufang loop) | 731 Frog Calculus (4-legged tetrahedra + ribbon-legs) |
+| **Motive** | Motive ISA | [Paper 619](https://doi.org/10.5281/zenodo.21416909) | all β (abstract parent) | H⁰–H³ | Carnot, Bender | Carnot cycles = ERASE + FLOW; PT exceptional point; five primitive opcodes | — | — | Laws of Form |
+| **Hum** | Hum ISA | [Paper 722](https://doi.org/10.5281/zenodo.21416912) | β = it/ℏ (imaginary) | H³ | Lamb, Bethe | QFT vacuum; EMIT is the one new primitive; amplituhedron as RESOLVE | — | — | Feynman / amplituhedron |
+| **Rising Sea** | Rising Sea ISA | [Paper 621](https://doi.org/10.5281/zenodo.21416914) | full ℂ_β plane | all | Grothendieck | β-plane fibration of all ISAs; Noether from Aut(P_Motive) | — | — | — |
+| **Pentagon** | Pentagon ISA | [Paper 622](https://doi.org/10.5281/zenodo.21416915) | abstract (coherence) | — | Baez, Mac Lane | Monoidal coherence theorem; five sides = five opcodes | — | — | — |
 
 **Reading the table:**
 
@@ -1183,6 +1184,20 @@ different hardware.
 - **[The Magmoidal Origami ISA](https://doi.org/10.5281/zenodo.19916429)** (Paper 258) — original definition; FLIP/FLOP/SPLIT/SPLAT/TWIST/SPIN; the symbol logic (filled = creation, hollow = annihilation; 4-sided = stellar move, 3-sided = bistellar move)
 - **[The Opcode Rosetta Stone](https://doi.org/10.5281/zenodo.20761260)** (Paper 447) — the same seven opcodes identified across twelve exactly-solvable models (Ising, Heisenberg, Kitaev, XXZ, Hubbard, Bethe ansatz, ...); universal ISA dictionary
 
+**The named ISAs — one entry-point paper each:**
+
+- **[Origami: An Open Instruction Set Architecture for Quantum Computing](https://doi.org/10.5281/zenodo.21428853)** (Paper 631) — the umbrella manifesto; all β
+- **[The Forge ISA](https://doi.org/10.5281/zenodo.20694527)** (Paper 419) — temperature-parameterised instruction set; the snap threshold β*
+- **[The Meld ISA](https://doi.org/10.5281/zenodo.20773563)** (Paper 454) — complex-MGE quantum algorithm discovery; the T-gate as octonion obstruction
+- **[The Raven ISA](https://doi.org/10.5281/zenodo.21416924)** (Paper 636) — enzymes as molecular programs; PT-symmetric computation at complex β
+- **[Valence as Orbit Occupancy](https://doi.org/10.5281/zenodo.21219722)** (Paper 487) — the entry point for the Valence ISA; Aufbau/Hund/Taube as orbit theorems
+- **[The Knot ISA](https://doi.org/10.5281/zenodo.21416907)** (Paper 618) — Laws of Form, Q-calculus, thermodynamic deformation of logical operators
+- **[The Frog ISA](https://doi.org/10.5281/zenodo.21480268)** (Paper 623) — seven imaginary opcodes; the octonion O-calculus
+- **[The Motive ISA](https://doi.org/10.5281/zenodo.21416909)** (Paper 619) — five opcodes for dissipative thermodynamic systems; the abstract parent
+- **[The Hum ISA](https://doi.org/10.5281/zenodo.21416912)** (Paper 722) — quantum field theory as a six-opcode programme; EMIT
+- **[The Rising Sea ISA](https://doi.org/10.5281/zenodo.21416914)** (Paper 621) — the ISA hierarchy as a fibred Lawvere theory over the β-plane
+- **[The Pentagon ISA](https://doi.org/10.5281/zenodo.21416915)** (Paper 622) — confluence, coherence, and uniqueness for the Carnot ISA
+
 **The graphical calculi:**
 
 - **[The 731 Frog Calculus, Part 1](https://doi.org/10.5281/zenodo.19713350)** (Paper 207) — three-dimensional spin foams, magmoidal category theory, non-associative topology
@@ -1197,5 +1212,4 @@ different hardware.
 
 **For number theorists and algebraic geometers:**
 
-- **[The Geometric Langlands ISA](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — RESOLVE = Hecke eigendecomposition; PROJECT = L-function evaluation; FUSE = Rankin-Selberg convolution; CUP = Arthur-Selberg trace formula; non-Abelian = FUSE required
-- **[The Apéry ISA](papers/)** (Paper 553) — $\zeta(3) \notin \mathbb{Q}$ as an H² obstruction; RESOLVE count on the Apéry recursion; x553a experiment
+- **[The Langlands Correspondence for G-Walk Chemistry](https://doi.org/10.5281/zenodo.21224115)** (Paper 492) — RESOLVE = Hecke eigendecomposition; PROJECT = L-function evaluation; FUSE = Rankin-Selberg convolution; G-local systems on molecular graphs
