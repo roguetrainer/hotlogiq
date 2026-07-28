@@ -16,7 +16,7 @@ description: "What HotLogiQ is, why it matters, and the shortest path to the cor
 
 ## The one-paragraph version
 
-Experts in quantum computing, spectroscopy, financial risk, and molecular biology have independently discovered the same three-tier structure — fixed points, local phase corrections, global topological obstructions — and given it different names in each field. **HotLogiQ** makes the common pattern explicit, computable, and transferable. The five opcodes (LABEL / ORBIT / TWIST / BIND / FLIP) are not analogies — they are the same categorical morphisms running on different physical substrates. The temperature parameter β is the single dial that interpolates between classical (β→∞), statistical (0<β<∞), and quantum (β=it/ℏ) regimes.
+Experts in quantum computing, spectroscopy, financial risk, and molecular biology have independently discovered the same three-tier structure — fixed points, local phase corrections, global topological obstructions — and given it different names in each field. **HotLogiQ** makes the common pattern explicit, computable, and transferable. The five opcodes (RESOLVE 🔬 / PROJECT 🎯 / TWIST 🌀 / FUSE 💎 / FLIP ↩️) are not analogies — they are the same categorical morphisms running on different physical substrates. The temperature parameter β is the single dial that interpolates between classical (β→∞), statistical (0<β<∞), and quantum (β=it/ℏ) regimes.
 
 The [Pillars](../guides/pillars) page gives the five load-bearing ideas. The [Origami ISA manifesto](https://doi.org/10.5281/zenodo.21428853) (Paper 631) gives the full technical case.
 
@@ -48,7 +48,7 @@ Five pages that together cover the core of the framework — in reading order:
 
 1. **[Origami: An Open ISA for Quantum-Classical Systems](https://doi.org/10.5281/zenodo.21428853)** (Paper 631) — the manifesto. Why gate-and-circuit abstraction obscures where quantum advantage actually lives; Shor's algorithm as a case study.
 2. **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰ = classical, H¹ = stabiliser/Clifford, H² = universal QC. A graded alternative to the P=NP question.
-3. **[The Meld ISA](https://doi.org/10.5281/zenodo.20773563)** (Paper 454) — quantum branch of the framework. QFT as a TWIST cascade; BIND as the non-Abelian obstruction; why LWE is quantum-resistant.
+3. **[The Meld ISA](https://doi.org/10.5281/zenodo.20773563)** (Paper 454) — quantum branch of the framework. QFT as a TWIST 🌀 cascade; FUSE 💎 as the non-Abelian obstruction; why LWE is quantum-resistant.
 4. **[Eight Derivations of a Universal Instruction Set](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — eight independent routes all forced to the same five opcodes. Explains *why* this gate set is universal at a deeper level than Solovay-Kitaev.
 
 ---
