@@ -663,7 +663,7 @@ This is not a patch. It is the standard categorical tower:
 
 | Level | Structure | ISA | Objects |
 |-------|-----------|-----|---------|
-| **Level 1** | Single Frobenius algebra on A | Origami ISA | One atom / orbital / site |
+| **Level 1** | Single Frobenius algebra on A | Origami ISA | One orbital / site (an atom is a *composite* — see below) |
 | **Level 2** | PROP of two Frobenius algebras A, B | Valence ISA | Two atoms bonding |
 
 Origami is universal at Level 1 exactly as group theory is universal for symmetry —
@@ -738,6 +738,61 @@ $$(\mathrm{id} \otimes \delta) \circ \mu = (\mu \otimes \mathrm{id}) \circ (\mat
 Bond formation followed by bond breaking in either order gives the same result. Every
 reversible chemical reaction satisfies this. Irreversible reactions live outside the
 Frobenius sector.
+
+#### The missing rung: is the atom itself Level 1, or a composite? (open, 2026-07-27)
+
+The table above writes the Level 1 object as "one atom / orbital / site" — treating
+"atom" and "orbital" as interchangeable. They are not, except in the single-electron
+case (hydrogen-like ions), and the difference exposes a genuine gap in the tower.
+
+Under the torus-knot correspondence (Papers 657, 709, 718, 719), the true Level-0
+object is a **single orbital** $(n,\ell)$: one torus knot $T(n,\ell)$, one Frobenius
+algebra, acted on by RESOLVE/PROJECT/FLIP/TWIST exactly as the Level 1 table
+describes. A multi-electron **atom is already composite** — a *bouquet* of
+orbital-knots on one nucleus (see the Zn/Cu Solomon-link discussion:
+[orbital-knots.md](orbital-knots.md)) — assembled from several Level-0 objects, not
+a single one. The Level 1 table's "atom" label silently assumes this composite
+already exists; it does not name the assembly.
+
+**Why this is not the same problem Level 2 solved.** JOIN/CLEAVE/LINK (Level 2)
+combine two *distinct* Frobenius algebras $A, B$ on two different nuclei — a PROP of
+two objects. The within-atom problem combines *several copies of the same kind of
+object* (orbitals) on *one* nucleus, under two hard constraints that a plain
+tensor product does not respect:
+
+1. **Pauli exclusion** — at most two electrons (opposite spin) per orbital. Free
+   combination (an ordinary tensor product, unlimited copies) is the wrong
+   structure; the forced structure is an **exterior algebra** — an antisymmetrized,
+   graded-commutative product — over the Level-0 orbital objects. This is exactly
+   the categorical content of second quantization: the **fermionic Fock functor**
+   from a one-particle Hilbert space to its exterior algebra, applied here to a
+   Hilbert space whose basis is torus-knot-labelled orbitals rather than abstract
+   states.
+2. **Aufbau filtration** — orbitals fill by increasing winding number $w=n+\ell+1$
+   (Paper 709), not in arbitrary order. The exterior algebra is not merely graded by
+   particle number; it carries a second filtration by $w$, and ground-state filling
+   selects the minimal element of that filtration compatible with exclusion (with
+   Hund's rule further constraining spin pairing within a degenerate $w$-shell).
+
+**Provisional statement.** The forced object for "orbitals combining into one atom"
+is a **$w$-filtered fermionic Fock functor** over the Level-0 Origami Frobenius
+algebras — a real, independently-known categorical gadget (second quantization），not
+one invented for this ISA. Whether this filtered-Fock structure reduces entirely to
+existing Origami/Valence opcodes (e.g. iterated RESOLVE with a Pauli-exclusion
+side-constraint) or forces a genuinely new opcode — call it provisionally **FILL** —
+is open. Unlike the JOIN/CLEAVE derivation (Paper 708), no proof has yet been
+attempted that a new generator is *forced* rather than merely convenient; the
+Frobenius-algebra argument that pinned down JOIN/CLEAVE has not yet been run for
+this rung. This is a research question in category theory / representation theory,
+not an experimental one — no `x`-series numerical validation is implied here, only
+a categorical derivation analogous to Paper 708's.
+
+**Status:** open. See Paper 720 (in preparation) for the first attempt at this
+derivation, cross-referenced against the exceptional-algebra literature (Racah's
+$G_2$ use for $f$-electron term structure is a related but distinct phenomenon —
+see [orbital-knots.md](orbital-knots.md) — since it governs electron-electron
+*repulsion within* a fixed configuration, not the *assembly* of the configuration
+itself).
 
 **Opcode duality across both levels:**
 
