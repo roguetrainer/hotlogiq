@@ -760,39 +760,70 @@ two objects. The within-atom problem combines *several copies of the same kind o
 object* (orbitals) on *one* nucleus, under two hard constraints that a plain
 tensor product does not respect:
 
-1. **Pauli exclusion** — at most two electrons (opposite spin) per orbital. Free
-   combination (an ordinary tensor product, unlimited copies) is the wrong
-   structure; the forced structure is an **exterior algebra** — an antisymmetrized,
-   graded-commutative product — over the Level-0 orbital objects. This is exactly
-   the categorical content of second quantization: the **fermionic Fock functor**
-   from a one-particle Hilbert space to its exterior algebra, applied here to a
-   Hilbert space whose basis is torus-knot-labelled orbitals rather than abstract
-   states.
-2. **Aufbau filtration** — orbitals fill by increasing winding number $w=n+\ell+1$
-   (Paper 709), not in arbitrary order. The exterior algebra is not merely graded by
-   particle number; it carries a second filtration by $w$, and ground-state filling
-   selects the minimal element of that filtration compatible with exclusion (with
-   Hund's rule further constraining spin pairing within a degenerate $w$-shell).
+1. **Pauli exclusion (kinematic — genuinely forces structure).** At most one
+   fermion per **spin-orbital** $(n,\ell,m_\ell,m_s)$; the chemist's "two per
+   orbital" is two spin-orbitals per spatial orbital. Free combination (an ordinary
+   tensor product, unlimited copies) is the wrong structure. Pauli exclusion forces
+   the shift from the tensor algebra to the **exterior algebra** $\Lambda(V)$ over
+   $V=\bigoplus_i A_i$ (the spin-orbital modes), and this shift has a clean forcing
+   axiom — the **universal property of the exterior algebra**: given any linear map
+   $f: V \to B$ into a unital algebra with $f(v)^2 = 0$ for all $v$, there is a
+   *unique* algebra homomorphism $\Lambda(V) \to B$. The condition $f(v)^2=0$ **is**
+   Pauli exclusion ($v \wedge v = 0$). This is exactly parallel to how the Frobenius
+   condition forces JOIN/CLEAVE — a real existence-of-morphism constraint, not a
+   convenience. The forced morphism is the **creation / wedge morphism**
+   $c^\dagger : V \otimes \Lambda^p(V) \to \Lambda^{p+1}(V)$.
+2. **Aufbau filling (dynamic — forces NO morphism).** Orbitals fill by increasing
+   $w=n+\ell+1$ (Paper 709). This does *not* force a new morphism: it is an
+   order-theoretic **selection of a state** — "choose the minimal-$w$ antisymmetric
+   $N$-vector in $\Lambda^N(V)$" — not a generator the algebra requires into
+   existence. Nothing in the exterior-algebra axioms is violated by filling out of
+   order; you simply get an excited state. Aufbau is a **filling rule, not an
+   operator**. (Hund's rule further constrains spin pairing within a degenerate
+   $w$-shell — again a selection rule, not a morphism.)
 
-**Provisional statement.** The forced object for "orbitals combining into one atom"
-is a **$w$-filtered fermionic Fock functor** over the Level-0 Origami Frobenius
-algebras — a real, independently-known categorical gadget (second quantization），not
-one invented for this ISA. Whether this filtered-Fock structure reduces entirely to
-existing Origami/Valence opcodes (e.g. iterated RESOLVE with a Pauli-exclusion
-side-constraint) or forces a genuinely new opcode — call it provisionally **FILL** —
-is open. Unlike the JOIN/CLEAVE derivation (Paper 708), no proof has yet been
-attempted that a new generator is *forced* rather than merely convenient; the
-Frobenius-algebra argument that pinned down JOIN/CLEAVE has not yet been run for
-this rung. This is a research question in category theory / representation theory,
-not an experimental one — no `x`-series numerical validation is implied here, only
-a categorical derivation analogous to Paper 708's.
+**Corrected statement (Opus + Gemini adversarial review, 2026-07-27).** The honest
+result is a **type correction plus a functorial embedding**, not a new opcode:
 
-**Status:** open. See Paper 720 (in preparation) for the first attempt at this
-derivation, cross-referenced against the exceptional-algebra literature (Racah's
-$G_2$ use for $f$-electron term structure is a related but distinct phenomenon —
-see [orbital-knots.md](orbital-knots.md) — since it governs electron-electron
-*repulsion within* a fixed configuration, not the *assembly* of the configuration
-itself).
+- The Origami ISA's single-object Frobenius algebra describes **one spin-orbital**,
+  not one atom. An atom is the image of a family of spin-orbitals under the
+  **fermionic Fock functor** $\Lambda$ — standard second quantization. This functor
+  sits *between* Level 1 (single orbital) and Level 2 (inter-atom bonding); call it
+  **Level 1.5**. It maps single-orbital Frobenius algebras into an *exterior*
+  algebra, a different kind of object from the plain tensor products at Levels 1
+  and 2, so Level 2 (JOIN/CLEAVE/LINK) properly acts on filtered exterior algebras,
+  not on bare Frobenius algebras.
+- The creation/wedge morphism $c^\dagger$ is **the Fock functor's own canonical
+  morphism**, supplied for free by second quantization — *not* a framework-specific
+  new primitive on par with JOIN. It should be named and used, but described as
+  "the creation morphism $\Lambda$ already supplies," never as "a new opcode we
+  discovered." Provisional label **WEDGE** (a.k.a. OCCUPY / $c^\dagger$); it is a
+  structural morphism, not a fifth generator.
+- The $w$-ordering is an **energy / Madelung filtration** — a filtration by an
+  integer-valued function on the modes. It is **not** a weight filtration in the
+  representation-theoretic sense: $w=n+\ell+1$ additively mixes a radial and an
+  angular quantum number and is not the eigenvalue of any Cartan element, and its
+  well-known *approximateness* (Cr, Cu, Pd, La/Lu anomalies) is direct evidence it
+  is not a genuine weight (which would be exact). Do **not** call it a weight or
+  Koszul filtration — that would silently re-import the still-open SO(4,2) dynamical-
+  symmetry claims, exactly the unearned Lie-theoretic upgrade that sank Papers
+  643/644/318.
+
+This is category-theory / representation-theory research, not experimental — no
+`x`-series numerical validation is implied. Racah's $G_2$ use for $f$-electron
+term structure is a *related but distinct* phenomenon (see
+[orbital-knots.md](orbital-knots.md)): it governs electron-electron *repulsion
+within* a fixed configuration, not the *assembly* of the configuration.
+
+**Open problem (Gemini, 2026-07-27):** how does JOIN (connected sum of orbital
+knots, Level 2 bonding) interact with the graded, antisymmetric structure that
+WEDGE builds at Level 1.5? Bond formation between two atoms must respect the
+fermionic sign rule across both atoms' Fock spaces; the JOIN of two *filtered
+exterior algebras* is not obviously the JOIN of two bare Frobenius algebras. This
+consistency condition on the tower is the genuine research direction that came out
+of the review.
+
+**Status:** open. See Paper 720 (in preparation).
 
 **Opcode duality across both levels:**
 
