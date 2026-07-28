@@ -7,7 +7,7 @@ nav_order: 6
 
 # Paper Index
 
-**630+ papers** published to the [HotLogiQ Zenodo community](https://zenodo.org/communities/hotlogiq/records?q=&l=list&p=1&s=10&sort=newest) (2024–).
+Papers published to the [HotLogiQ Zenodo community](https://zenodo.org/communities/hotlogiq/records?q=&l=list&p=1&s=10&sort=newest) (2024–).
 
 The tables below cover landmark and foundational papers. For the full list browse Zenodo directly.
 
@@ -134,5 +134,5 @@ Quirky, accessible essays that take one mathematical object seriously and follow
 
 ---
 
-Machine-readable index: [_data/papers.csv](_data/papers.csv)
+Machine-readable index of the papers with published explainers: [_data/papers.csv](_data/papers.csv). For the complete catalogue, browse the [Zenodo community](https://zenodo.org/communities/hotlogiq/records) directly.
 

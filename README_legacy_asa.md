@@ -190,5 +190,4 @@ _data/           ← papers.csv, papers.json (machine-readable index)
 README.md        ← This index
 ```
 
-**Total papers:** ~400 (Papers 200–399 in the main series; Papers 000 and 000-series as introductions).  
-Full machine-readable index: [_data/papers.csv](_data/papers.csv) · [_data/papers.json](_data/papers.json)
+Machine-readable index of the papers with published explainers: [_data/papers.csv](_data/papers.csv). For the complete catalogue, browse the [Zenodo community](https://zenodo.org/communities/hotlogiq/records) directly.
