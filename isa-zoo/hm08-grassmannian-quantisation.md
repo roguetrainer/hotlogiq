@@ -113,5 +113,5 @@ PROPAGATE and RENORM.
 
 ---
 
-*Part of the [ISA Zoo](/adelic-simplicial-architecture/isa-zoo/).
+*Part of the [ISA Zoo](/isa-zoo/).
 Hum ISA reference: [Paper 620](https://doi.org/10.5281/zenodo.21416912).*

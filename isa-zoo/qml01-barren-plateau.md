@@ -212,7 +212,7 @@ the data geometry triggers the Schubert halt.
 
 ---
 
-*Part of the [ISA Zoo](/adelic-simplicial-architecture/isa-zoo/). See also:
+*Part of the [ISA Zoo](/isa-zoo/). See also:
 [QML02 — Quantum Kernels](qml02-quantum-kernels.md) ·
 [ST01 — Metropolis MCMC](st01-metropolis-mcmc.md) ·
 [β is a coordinate](../core-ideas/beta-plane.md)*

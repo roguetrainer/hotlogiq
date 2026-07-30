@@ -127,5 +127,5 @@ all the above quotients.
 
 ---
 
-*Part of the [ISA Zoo](/adelic-simplicial-architecture/isa-zoo/).
+*Part of the [ISA Zoo](/isa-zoo/).
 Categorical foundations: [Paper 619](https://doi.org/10.5281/zenodo.21416910).*

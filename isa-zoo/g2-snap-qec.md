@@ -138,6 +138,6 @@ QC: they are the codes whose stabiliser geometry sits exactly at G₂ snap point
 
 ---
 
-*Part of the [ISA Zoo](/adelic-simplicial-architecture/isa-zoo/).
+*Part of the [ISA Zoo](/isa-zoo/).
 See also: [Q03 Steane code](q03-steane.md), [G2-CHEM snap events](g2-snap-chemistry.md),
 [G2-SSM symmetry making](g2-snap-ssm.md), [Paper 607](https://doi.org/10.5281/zenodo.21372999).*

@@ -129,7 +129,7 @@ The SSM at β = 1/7 is the meeting point of these two exceptional objects.
 
 ---
 
-*Part of the [ISA Zoo](/adelic-simplicial-architecture/isa-zoo/).
+*Part of the [ISA Zoo](/isa-zoo/).
 See also: [G2-CHEM snap events in chemistry](g2-snap-chemistry.md),
 [G2-QEC snap events in QEC](g2-snap-qec.md),
 [Paper 572](https://doi.org/10.5281/zenodo.21278538),

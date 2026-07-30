@@ -191,6 +191,6 @@ formation; etc.).
 
 ---
 
-*Part of the [ISA Zoo](/adelic-simplicial-architecture/isa-zoo/).
+*Part of the [ISA Zoo](/isa-zoo/).
 Foundational ISA: [Paper 591](https://doi.org/10.5281/zenodo.21309088).
 PAT-q bonding: Papers 688, 699. AGL(2,3) bijection: Paper 707.*

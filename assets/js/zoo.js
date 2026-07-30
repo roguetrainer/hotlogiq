@@ -1,7 +1,7 @@
 var active = { domain: "all", tier: "all", trilogy: "all", status: "all", tags: "all", backends: "all", confidence: "all", ec_class: "all", cofactor: "all", rate_limit: "all" };
 var sortCol = "id";
 var sortDir = 1;
-var BASEURL = "/adelic-simplicial-architecture";
+var BASEURL = "";
 
 function serialiseFilters() {
   var parts = [];

@@ -188,4 +188,4 @@ an ordinary Fourier-Mukai transform. This confirms the H¹ → H² structure.
 
 ---
 
-*Part of the [ISA Zoo](/adelic-simplicial-architecture/isa-zoo/). Categorical foundations: [Paper 591](https://doi.org/10.5281/zenodo.21309088).*
+*Part of the [ISA Zoo](/isa-zoo/). Categorical foundations: [Paper 591](https://doi.org/10.5281/zenodo.21309088).*

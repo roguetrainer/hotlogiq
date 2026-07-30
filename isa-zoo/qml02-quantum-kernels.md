@@ -249,7 +249,7 @@ The ISA is the thermodynamic extension of ZX that captures all three.
 
 ---
 
-*Part of the [ISA Zoo](/adelic-simplicial-architecture/isa-zoo/). See also:
+*Part of the [ISA Zoo](/isa-zoo/). See also:
 [QML01 — Barren Plateaus](qml01-barren-plateau.md) ·
 [ML01 — Transformer Attention](ml01-attention-mechanism.md) ·
 [β is a coordinate](../core-ideas/beta-plane.md)*

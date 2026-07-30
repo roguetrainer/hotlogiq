@@ -185,4 +185,4 @@ vocabulary to express it cleanly.
 
 ---
 
-*Part of the [ISA Zoo](/adelic-simplicial-architecture/isa-zoo/). QC Tutorial series: Paper 605.*
+*Part of the [ISA Zoo](/isa-zoo/). QC Tutorial series: Paper 605.*

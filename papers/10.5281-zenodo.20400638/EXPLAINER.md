@@ -15,7 +15,9 @@ portfolio: A
 
 ## The central idea in one sentence
 
-Among all connected 7-node quantum systems, exactly one geometry achieves positive Carnot efficiency — the Fano plane with one line deliberately weakened — and the FMO photosynthetic complex achieves η = 0.1825 because it has exactly this broken-Fano structure, for no other reason.
+Among all connected 7-node quantum systems, exactly one geometry achieves positive Carnot efficiency — the Fano plane with one line deliberately weakened — and the seven-residue ribosomal decoding centre realises exactly this broken-Fano structure, confirmed against a random-matrix null model (p < 0.0005).
+
+*Update, 2026-07-28:* this page originally led with the FMO photosynthetic complex as the flagship example. A follow-up test found that FMO's real coupling data (Adolphs-Renger 2006) does **not** show the 6/7 Fano-line signature under a fair, null-model-validated search — it scores 4/7, statistically indistinguishable from random. The original 6/7 claim used a much weaker test design (see "Why the FMO complex is relevant," below, for the corrected account). The ribosome result is the one that holds up.
 
 ---
 
@@ -39,7 +41,9 @@ The FMO (Fenna-Matthews-Olson) bacteriochlorophyll complex has 7 pigment sites (
 
 Nature found the unique symmetry-broken geometry that maximises quantum thermodynamic efficiency, and embedded it in a protein running at room temperature for 3.5 billion years.
 
-For quantum hardware people, the lesson is not "build a photosynthetic chip." It is: **the efficiency of a quantum system at exploiting thermal gradients is controlled by its symmetry group, not its energy gap or qubit count.** A quantum device with the wrong topology — even with excellent qubit fidelity — is thermodynamically inert.
+For quantum hardware people, the lesson is: **breaking the topology's symmetry is what turns on positive Carnot efficiency (η = 0 for any fully symmetric graph) — a quantum device with the wrong topology cannot run as a heat engine at all, regardless of qubit fidelity.**
+
+*Update, 2026-07-28:* a follow-up test found this efficiency effect is distinct from *directionality* — whether energy flows preferentially one way through the network (a "diode" effect). That directionality turned out to be controlled by the site energies (which pigment sits at lower energy), not by which Fano line is broken: the broken and symmetry-restored topologies gave statistically indistinguishable forward/reverse rate ratios once the physically-required detailed-balance factor was included. So the topology governs *whether the system can do thermodynamic work at all* (this paper's real result), while the energy landscape — not the topology — governs *which direction that work flows*.
 
 ---
 

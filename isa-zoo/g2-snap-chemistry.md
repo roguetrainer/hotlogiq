@@ -136,6 +136,6 @@ OUTPUT:  LABEL[phase + predictions]
 
 ---
 
-*Part of the [ISA Zoo](/adelic-simplicial-architecture/isa-zoo/).
+*Part of the [ISA Zoo](/isa-zoo/).
 See also: [CM01 Hubbard-Mott](cm01-hubbard-mott.md), [C02 Spin-Crossover](c02-spin-crossover.md),
 [GA02 FeMoco Galois](ga02-femoco-galois.md), [G2-QEC snap events](g2-snap-qec.md).*

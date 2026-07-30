@@ -255,4 +255,4 @@ and ISA compilation.
 
 ---
 
-*Part of the [ISA Zoo](/adelic-simplicial-architecture/isa-zoo/). QC Tutorial series: Paper 605. Algorithm result: Paper 472.*
+*Part of the [ISA Zoo](/isa-zoo/). QC Tutorial series: Paper 605. Algorithm result: Paper 472.*

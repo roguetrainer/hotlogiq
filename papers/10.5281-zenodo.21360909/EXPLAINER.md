@@ -164,8 +164,8 @@ The device-level functor handles:
 
 - [Orbit Processing Unit](https://doi.org/10.5281/zenodo.21360838) (#598) — the Grassmannian tape; OPU theory
 - [Trapped-Ion OPU](https://doi.org/10.5281/zenodo.21360907) (#604) — why MS gate = BIND; BIND depth as quantum advantage metric
-- [QT01 — Bell State](https://adelic-simplicial-architecture/isa-zoo/qt01-bell-state/) — zoo entry for the Bell state ISA programme
-- [QT02 — GHZ State](https://adelic-simplicial-architecture/isa-zoo/qt02-ghz-state/) — BIND count vs BIND depth for GHZ
-- [QT03 — QFT](https://adelic-simplicial-architecture/isa-zoo/qt03-qft/) — QFT has 0 BINDs; Shor speedup is H¹
+- [QT01 — Bell State](https://hotlogiq.ca/isa-zoo/qt01-bell-state/) — zoo entry for the Bell state ISA programme
+- [QT02 — GHZ State](https://hotlogiq.ca/isa-zoo/qt02-ghz-state/) — BIND count vs BIND depth for GHZ
+- [QT03 — QFT](https://hotlogiq.ca/isa-zoo/qt03-qft/) — QFT has 0 BINDs; Shor speedup is H¹
 
 *For the full technical treatment, see [doi:10.5281/zenodo.21360909](https://doi.org/10.5281/zenodo.21360909)*
