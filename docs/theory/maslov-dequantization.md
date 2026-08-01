@@ -245,35 +245,7 @@ entirely.
 
 ---
 
-## Where to go from here
-
-This page describes the mathematical foundation. The applications branch
-into three directions:
-
-**For AI and machine learning:**
-[AI & Machine Learning](/docs/theory/ai-ml) — softmax temperature = β;
-transformers as ISA programmes; layerwise β profiling; differentiable Shapley
-values; grokking as β* snap.
-
-**For physics and non-Hermitian systems:**
-[PT Symmetry & Exceptional Points](/docs/theory/pt-symmetry) — exceptional
-points as β*₁₂ snaps; SNAP-count as the EP topological invariant; the
-PT phase transition as the H¹↔H² tier boundary.
-
-**For the full ISA picture:**
-[The β-plane](/docs/theory/forge-meld) — how β extends into the complex plane
-(β = it for quantum mechanics, β ∈ ℂ for PT-symmetric systems); the full ISA
-family; the snap threshold in detail.
-
-**Primary papers:**
-- [The Maslov-Gibbs Einsum](https://doi.org/10.5281/zenodo.17981393) — start here for the mathematics
-- [β in Disguise](https://doi.org/10.5281/zenodo.20752384) — start here if you want the intuition first
-- [In Praise of Soft Thresholds](https://doi.org/10.5281/zenodo.21373468) — why every hard threshold is β→∞
-- [The β-plane](https://doi.org/10.5281/zenodo.21245459) — the full complex β parameter space
-
----
-
-## Is this phenomenon unique? (added 2026-08-01)
+## Is this phenomenon unique?
 
 A natural reaction to Maslov dequantization is that it is bizarre: you vary a
 parameter smoothly and the *algebra underneath* the model changes. Three
@@ -349,3 +321,37 @@ other deformations in the table. It is also why the tropical limit is a genuine
 qualitative jump rather than a smooth degeneration, and why "hard threshold" and
 "soft threshold" are not merely quantitatively different — one lives in a
 structure where differences exist, the other in one where they do not.
+
+---
+
+## Where to go from here
+
+This page describes the mathematical foundation. The applications branch
+into three directions:
+
+**For AI and machine learning:**
+[AI & Machine Learning](/docs/theory/ai-ml) — softmax temperature = β;
+transformers as ISA programmes; layerwise β profiling; differentiable Shapley
+values; grokking as β* snap.
+
+**For physics and non-Hermitian systems:**
+[PT Symmetry & Exceptional Points](/docs/theory/pt-symmetry) — exceptional
+points as β*₁₂ snaps; SNAP-count as the EP topological invariant; the
+PT phase transition as the H¹↔H² tier boundary.
+
+**For aggregation and multi-source reasoning:**
+[Disagreement](/docs/theory/disagreement) — the companion tool. The MGE says how
+to *combine* at a temperature; the JSD says how much is *lost* in combining.
+Note the two are different kinds of object, which is why neither substitutes for
+the other: see "Is this phenomenon unique?" above.
+
+**For the full ISA picture:**
+[The β-plane](/docs/theory/forge-meld) — how β extends into the complex plane
+(β = it for quantum mechanics, β ∈ ℂ for PT-symmetric systems); the full ISA
+family; the snap threshold in detail.
+
+**Primary papers:**
+- [The Maslov-Gibbs Einsum](https://doi.org/10.5281/zenodo.17981393) — start here for the mathematics
+- [β in Disguise](https://doi.org/10.5281/zenodo.20752384) — start here if you want the intuition first
+- [In Praise of Soft Thresholds](https://doi.org/10.5281/zenodo.21373468) — why every hard threshold is β→∞
+- [The β-plane](https://doi.org/10.5281/zenodo.21245459) — the full complex β parameter space
