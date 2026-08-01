@@ -270,3 +270,82 @@ family; the snap threshold in detail.
 - [β in Disguise](https://doi.org/10.5281/zenodo.20752384) — start here if you want the intuition first
 - [In Praise of Soft Thresholds](https://doi.org/10.5281/zenodo.21373468) — why every hard threshold is β→∞
 - [The β-plane](https://doi.org/10.5281/zenodo.21245459) — the full complex β parameter space
+
+---
+
+## Is this phenomenon unique? (added 2026-08-01)
+
+A natural reaction to Maslov dequantization is that it is bizarre: you vary a
+parameter smoothly and the *algebra underneath* the model changes. Three
+questions follow, and they have different answers.
+
+### What exactly is preserved?
+
+Not the equation. The heat equation and Hamilton–Jacobi visibly differ — a
+diffusion term vanishes in the limit. What is preserved is **linearity**:
+
+| | equation | superposition |
+|---|---|---|
+| finite β | heat / Schrödinger, linear over $(+,\times)$ | $u = u_1 + u_2$ |
+| β → ∞ | Hamilton–Jacobi, linear over $(\min,+)$ | $S = \min(S_1, S_2)$ |
+
+So the precise statement is that **the solution set stays closed under the
+semiring operations, and which semiring depends on β**. Maslov called this
+*idempotent superposition*.
+
+### Is log-sum-exp the only deformation that does it?
+
+Essentially yes, up to a change of coordinates. The candidates are:
+
+| family | works? | note |
+|---|---|---|
+| $h\log\sum e^{x/h}$ | yes | the standard soft-min |
+| $(\sum x^p)^{1/p}$ | yes | the $p$-norm |
+| power means | yes | $\to\max/\min$ as $p\to\pm\infty$ |
+| plain sum | no | no parameter, no limit |
+| median, mode | no | not associative |
+
+But the $p$-norm **is** log-sum-exp conjugated by $\exp$ — verified numerically:
+soft-min at $h$ and the $p$-norm at $p = 1/h$ agree to six decimals. So there is
+one family wearing two costumes, not two families.
+
+**A related question, sometimes confused with this one**: can the
+[JSD](disagreement.md) or Rényi entropy deform the semiring? No, and the reason
+is a category distinction rather than a limitation. A semiring deformation must
+supply two *binary operations* satisfying associativity, commutativity and
+distributivity. The JSD and $H_\alpha$ are *functionals* — they eat
+distributions and return scalars. They **measure** structure; they do not
+**constitute** it. Asking whether the JSD can change the semiring is like asking
+whether the variance can change addition.
+
+### Where else does this happen?
+
+The phenomenon is not unique to Maslov. It has a general name — **algebraic
+deformation and contraction**, with Gerstenhaber deformation theory as the
+formal setting — and several familiar instances:
+
+| phenomenon | parameter | what changes |
+|---|---|---|
+| Maslov dequantization | $h \to 0$ | $(+,\times) \to (\min,+)$ |
+| deformation quantization | $h \to 0$ | Moyal $\star \to$ commutative product — the *mirror* of Maslov |
+| İnönü–Wigner contraction | $c \to \infty$ | Poincaré $\to$ Galilei |
+| $q$-deformation | $q \to 1$ | $U_q(\mathfrak g) \to U(\mathfrak g)$ |
+| tropical geometry | Litvinov–Maslov | algebraic $\to$ tropical variety |
+| large-$N$ | $N \to \infty$ | matrices $\to$ free probability |
+
+### What *is* genuinely unusual about the Maslov case
+
+Most deformations move continuously **within a type**: associative algebras stay
+associative, Lie algebras stay Lie algebras. Maslov dequantization does
+something stronger. In the limit,
+
+$$a \oplus a = a$$
+
+addition becomes **idempotent** — and an idempotent addition has no inverses. So
+the limit object is not a ring at all.
+
+**You lose subtraction.** That is the strange part, and it is not shared by the
+other deformations in the table. It is also why the tropical limit is a genuine
+qualitative jump rather than a smooth degeneration, and why "hard threshold" and
+"soft threshold" are not merely quantitatively different — one lives in a
+structure where differences exist, the other in one where they do not.
