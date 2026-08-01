@@ -179,9 +179,17 @@ from a different motive:
 | **JLV** | 1960 | a calculational tool for atomic and nuclear spectroscopy |
 | **Penrose spin networks** | 1971 | a foundational proposal about combinatorial spacetime |
 
-Same diagrams, opposite intentions. The atomic-physics literature and the
-quantum-gravity literature developed the identical formalism largely unaware of
-each other for years.
+Same diagrams, opposite intentions.
+
+**Correction (2026-08-01):** an earlier version of this section said the two
+literatures "developed the identical formalism largely unaware of each other".
+That is wrong. The connection is explicit and long documented: **Yutsis diagrams
+embed into Penrose's binor calculus**, of which spin networks are the physical
+reading, and Penrose introduced his graphical calculus *soon after* the 1960 JLV
+book. Contemporary work treats JLV as foundational to the spin-network
+formalism, and SU(2) graphical calculus is used routinely for computing operator
+actions in the spin-network representation. The identification was made by the
+people who made it, not rediscovered here.
 
 ### Spin networks do *not* need Pachner moves — spin foams do
 
@@ -210,6 +218,32 @@ That is why JLV's rewrite rules and the Pachner moves are not competing
 formalisms. JLV manipulates a network at fixed combinatorial structure; Pachner
 changes the structure; and the coherence conditions that make either
 well-defined are the same $6j$ identities.
+
+### And spin networks are already in ZX
+
+More consequential than the history: the chain from spin networks to a
+categorical graphical calculus **has already been published**.
+
+- **East, van de Wetering, Chancellor and Grushin (2021)**, *Spin-networks in
+  the ZX-calculus*, arXiv:2111.03114.
+- **Priestley (2025)**, *Finite-Dimensional ZX-Calculus for Loop Quantum
+  Gravity*, arXiv:2511.15966.
+
+ZX spiders are Frobenius algebras. So "SU(2) recoupling as a Frobenius
+structure" is not a new observation — it is the subject of an existing
+literature, and should be **cited rather than claimed**.
+
+What that literature does *not* contain, and what therefore remains open to this
+corpus:
+
+- a **coefficient semiring** k(β) — the ZX spin-network work carries no
+  temperature;
+- the **occupancy boundary** result (bond order is not recoverable from
+  geometry);
+- the **basis-set-free two-centre overlap**.
+
+Those three are the honest contributions. The categorical framing of recoupling
+is not among them.
 
 ### Consequence for the ISA
 
