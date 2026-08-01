@@ -118,3 +118,48 @@ cannot represent second-order beliefs), not the statistic.
   the exact decomposition.
 - [Maslov dequantization](maslov-dequantization.md) — the companion tool, for
   combination rather than disagreement.
+
+---
+
+## Arity: the JSD is an H¹ quantity, not an H² one
+
+A natural next step is to assume the JSD carries the H¹/H² distinction —
+two-party disagreement at H¹, irreducible three-party disagreement at H². It
+does not, and the correction matters because the intuition is right about
+*something else*.
+
+**Tested** (`x628d`, 4/4): can two three-party ensembles have identical pairwise
+JSD signatures but different triple JSD? Over 400,000 random ensembles, **no
+counterexample was found**. The evidence is that for three outcomes the JSD is
+**pairwise-determined** — it is an H¹ quantity throughout, however many parties
+are involved.
+
+**What does carry irreducible three-way structure** is **co-information**,
+
+$$I(X;Y;Z) = I(X;Y) - I(X;Y \mid Z)$$
+
+which splits three-party structure by *sign*:
+
+| sign | name | meaning |
+|---|---|---|
+| positive | **redundancy** | the parties repeat each other |
+| negative | **synergy** | the triple says what no pair can |
+
+**XOR is the proof.** With $Z = X \oplus Y$ and $X, Y$ independent, every
+pairwise mutual information is exactly zero while the triple is perfectly
+determined: $I(X;Y) = 0$, $I(X;Y;Z) = -1$ bit. No pairwise measurement can see
+it. That is the genuine H¹ → H² step.
+
+So the ladder is:
+
+| tier | quantity | what it detects |
+|---|---|---|
+| H⁰ | H(mean) | total uncertainty |
+| H¹ | **JSD** | disagreement — *however many parties* |
+| H² | **co-information** | synergy and redundancy: structure no pair reveals |
+
+Co-information, synergy and redundancy are standard (McGill 1954; Bell 2003;
+Williams & Beer 2010 for the partial information decomposition that refines
+them). What is recorded here is only the correction: **do not identify the JSD
+with the H² tier.**
+
