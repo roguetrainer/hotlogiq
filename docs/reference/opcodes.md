@@ -648,6 +648,42 @@ The **Frobenius axiom** $(\mu \otimes \mathrm{id}) \circ (\mathrm{id} \otimes \D
 These are not analogies. They are the same equation, in the same Frobenius algebra,
 evaluated in different semirings over different physical hardware.
 
+#### Arity: RESOLVE is 1 → 2, not 1 → 4 (settled 2026-08-03)
+
+Three different arities for RESOLVE/SPLIT have appeared across the corpus. They
+are not alternatives; two of them are errors of type.
+
+| form | what it actually is |
+|---|---|
+| $\Delta: A \to A \otimes A$, **1 → 2** | **the generator.** Frobenius comultiplication. This is RESOLVE. |
+| $A \to A^{\otimes 4}$, 1 → 4 | the **iterated coproduct** $(\mathrm{id}\otimes\Delta)\circ\Delta$ — a *derived* term built from two applications of the generator, not a primitive |
+| $1 \to 4$ in the table above | the **Pachner move**, a different column and a different kind of object entirely — a move on a triangulation, not a morphism arity |
+
+The confusion arose because papers interpreting wires in Rep($G$) wrote the
+iterated form directly and read its arity off the diagram. **A generator is
+whatever cannot be decomposed into other generators; the 4-legged form
+decomposes, so it is not one.**
+
+This is recorded here rather than in a paper because a definitional reference
+must be able to follow renames. Paper 591 (*Categorical Foundations of the
+Origami ISA*, 10.5281/zenodo.21300689, deleted 2026-08-03) reached the same
+conclusion on the same grounds, and was then superseded fifteen days after
+upload when ORBIT→RESOLVE, LABEL→PROJECT, BIND→FUSE were finalised on
+2026-07-25. A PDF cannot track that; this file can.
+
+**What 591 claimed and what remains unverified.** Its structural claim was that
+the seven associative opcodes are *precisely* the generating structure maps of a
+ribbon pivotal category with duals, and that FUSE (then BIND) *is* the
+associator — the obstruction to pentagon coherence. The second half is true by
+construction (it is how FUSE is defined here, see "Why FUSE is special"), so it
+carries no independent content. **The first half — that these seven generate,
+and that no eighth associative generator is needed — was never checked.** It is
+the claim worth proving, and it is name-independent, so it survives any future
+rename. Prior art to engage before attempting it: Kuperberg's spiders (CMP 1996)
+for rank-2 groups, and Paper 572, whose x572a pentagon-relation check did **not**
+match the textbook prediction and was reinterpreted post hoc. **Resolve 572
+first.**
+
 #### The Valence ISA: why Origami is still universal
 
 Before addressing the Valence ISA extension, a question must be answered directly:
