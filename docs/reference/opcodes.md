@@ -1080,6 +1080,36 @@ adding FUSE and SPIN. See [The Non-Associative Frontier](../theory/non-associati
 
 ## The named ISAs
 
+> **STATUS (2026-08-04).** Seven of the twelve named ISAs below **no longer have
+> a live entry-point paper.** Those papers were withdrawn during the August 2026
+> corpus audit, and their DOIs no longer resolve. The names are retained here
+> because they appear in other documents, but **they should not be cited or
+> built upon** until a replacement paper exists.
+>
+> | ISA | entry paper | status |
+> |---|---|---|
+> | Origami | 258, 631 | **live** (258 carries a notice) |
+> | Forge | 419 | **live** |
+> | Meld | 454 | **live** |
+> | Frog | 207, 281 | **live** — but see the pentagon finding below; 623 (the octonion extension) was withdrawn |
+> | Raven | 615 | ✗ withdrawn |
+> | Valence | 708 | ✗ withdrawn |
+> | Knot | 618 | ✗ withdrawn |
+> | Motive | 619 | ✗ withdrawn |
+> | Hum | 722 | ✗ withdrawn |
+> | Rising Sea | 621 | ✗ withdrawn |
+> | Pentagon | 622 | ✗ withdrawn |
+> | Carnot | 619 | ✗ withdrawn (same paper as Motive) |
+>
+> **On the Frog/non-associative line specifically**: the naive pentagon identity
+> *fails* for octonionic labels — verified 2026-08-04, 1176 of 2401 imaginary
+> labelings disagree — and the Pachner-prover verification in 207 is vacuous
+> (the identical test passes on random signs). That is not fatal to the
+> programme: octonions are non-associative, so rebracketing *must* be
+> path-dependent. What it means is that the associator has to be supplied as
+> explicit data with its own coherence condition (Mac Lane; Kuperberg's spiders),
+> which is what FUSE is defined to be here.
+
 The opcode set is fixed. What varies is the *regime* — which β-value, which
 physical domain, which specialisation of the abstract opcodes is in play.
 Each named ISA is a specific point (or arc) in the β-plane, with a characteristic
@@ -1091,14 +1121,14 @@ for what it *feels* like to work in that regime.
 | **Origami** | Origami ISA | [Paper 631](https://doi.org/10.5281/zenodo.21428853) | all β (umbrella) | H⁰–H² | Weyl, Racah | Five-opcode open standard; tropical at β→∞, quantum at β=it | 1 | ℂ | ZX (spiders, undirected) |
 | **Forge** | Forge ISA | [Paper 419](https://doi.org/10.5281/zenodo.20694527) | 0 < β < ∞ (real Gibbs) | H⁰–H² | Boltzmann, Gibbs | Free-energy routing; MGE soft threshold; snap at β* | 1 | ℂ | ZX (weighted) |
 | **Meld** | Meld ISA | [Paper 454](https://doi.org/10.5281/zenodo.20773563) | β = it/ℏ (quantum) | H⁰–H² | Shor, Grover | Complex-MGE quantum algorithm discovery; T-gate as octonion obstruction | 1 | ℂ | ZX (weighted) |
-| **Raven** | Raven ISA | [Paper 636](https://doi.org/10.5281/zenodo.21416924) | β = α + iωt (complex) | H⁰–H² | Bender, Boettcher | PT-symmetric computation; complex-β knot-type transitions; EP-enhanced sensing | 1 | ℂ | ZX (weighted) |
-| **Valence** | Valence ISA | [Paper 487](https://doi.org/10.5281/zenodo.21219722) | all β (bonding extension) | H⁰–H² | Kelvin, Tait, Pauling | Covalent bonds as connected-sum JOIN; coordinate bonds as LINK; Frobenius = detailed balance; torus knots as orbital codes | 1 | ℂ | ZX + satellite knots |
-| **Knot** | Knot ISA | [Paper 618](https://doi.org/10.5281/zenodo.21416907) | β → ∞ (imaginary oscillators) | H⁰–H² | Kauffman, Spencer-Brown | Q-calculus; three imaginary marks; Jones polynomial | 3 | ℍ (Q₈) | Directed ZX (oriented wires) |
-| **Frog** | Frog ISA | [Paper 623](https://doi.org/10.5281/zenodo.21480268) | β → ∞ (exceptional) | H⁰–H³ | Kauffman (731 Calculus) | Seven imaginary marks; Fano multiplication; non-associative | 7 | 𝕆 (Moufang loop) | 731 Frog Calculus (4-legged tetrahedra + ribbon-legs) |
-| **Motive** | Motive ISA | [Paper 619](https://doi.org/10.5281/zenodo.21416909) | all β (abstract parent) | H⁰–H³ | Carnot, Bender | Carnot cycles = ERASE + FLOW; PT exceptional point; five primitive opcodes | — | — | Laws of Form |
-| **Hum** | Hum ISA | [Paper 722](https://doi.org/10.5281/zenodo.21416912) | β = it/ℏ (imaginary) | H³ | Lamb, Bethe | QFT vacuum; EMIT is the one new primitive; amplituhedron as RESOLVE | — | — | Feynman / amplituhedron |
-| **Rising Sea** | Rising Sea ISA | [Paper 621](https://doi.org/10.5281/zenodo.21416914) | full ℂ_β plane | all | Grothendieck | β-plane fibration of all ISAs; Noether from Aut(P_Motive) | — | — | — |
-| **Pentagon** | Pentagon ISA | [Paper 622](https://doi.org/10.5281/zenodo.21416915) | abstract (coherence) | — | Baez, Mac Lane | Monoidal coherence theorem; five sides = five opcodes | — | — | — |
+| **Raven** | Raven ISA | **[WITHDRAWN — Paper 636 removed 2026-08]** | β = α + iωt (complex) | H⁰–H² | Bender, Boettcher | PT-symmetric computation; complex-β knot-type transitions; EP-enhanced sensing | 1 | ℂ | ZX (weighted) |
+| **Valence** | Valence ISA | **[WITHDRAWN — Paper 487 removed 2026-08]** | all β (bonding extension) | H⁰–H² | Kelvin, Tait, Pauling | Covalent bonds as connected-sum JOIN; coordinate bonds as LINK; Frobenius = detailed balance; torus knots as orbital codes | 1 | ℂ | ZX + satellite knots |
+| **Knot** | Knot ISA | **[WITHDRAWN — Paper 618 removed 2026-08]** | β → ∞ (imaginary oscillators) | H⁰–H² | Kauffman, Spencer-Brown | Q-calculus; three imaginary marks; Jones polynomial | 3 | ℍ (Q₈) | Directed ZX (oriented wires) |
+| **Frog** | Frog ISA | [Paper 207](https://doi.org/10.5281/zenodo.19713350) / [281](https://doi.org/10.5281/zenodo.20139448) *(623 withdrawn)* | β → ∞ (exceptional) | H⁰–H³ | Kauffman (731 Calculus) | Seven imaginary marks; Fano multiplication; non-associative | 7 | 𝕆 (Moufang loop) | 731 Frog Calculus (4-legged tetrahedra + ribbon-legs) |
+| **Motive** | Motive ISA | **[WITHDRAWN — Paper 619 removed 2026-08]** | all β (abstract parent) | H⁰–H³ | Carnot, Bender | Carnot cycles = ERASE + FLOW; PT exceptional point; five primitive opcodes | — | — | Laws of Form |
+| **Hum** | Hum ISA | **[WITHDRAWN — Paper 722 removed 2026-08]** | β = it/ℏ (imaginary) | H³ | Lamb, Bethe | QFT vacuum; EMIT is the one new primitive; amplituhedron as RESOLVE | — | — | Feynman / amplituhedron |
+| **Rising Sea** | Rising Sea ISA | **[WITHDRAWN — Paper 621 removed 2026-08]** | full ℂ_β plane | all | Grothendieck | β-plane fibration of all ISAs; Noether from Aut(P_Motive) | — | — | — |
+| **Pentagon** | Pentagon ISA | **[WITHDRAWN — Paper 622 removed 2026-08]** | abstract (coherence) | — | Baez, Mac Lane | Monoidal coherence theorem; five sides = five opcodes | — | — | — |
 
 **Reading the table:**
 
@@ -1225,14 +1255,14 @@ different hardware.
 - **[Origami: An Open Instruction Set Architecture for Quantum Computing](https://doi.org/10.5281/zenodo.21428853)** (Paper 631) — the umbrella manifesto; all β
 - **[The Forge ISA](https://doi.org/10.5281/zenodo.20694527)** (Paper 419) — temperature-parameterised instruction set; the snap threshold β*
 - **[The Meld ISA](https://doi.org/10.5281/zenodo.20773563)** (Paper 454) — complex-MGE quantum algorithm discovery; the T-gate as octonion obstruction
-- **[The Raven ISA](https://doi.org/10.5281/zenodo.21416924)** (Paper 636) — enzymes as molecular programs; PT-symmetric computation at complex β
-- **[Valence as Orbit Occupancy](https://doi.org/10.5281/zenodo.21219722)** (Paper 487) — the entry point for the Valence ISA; Aufbau/Hund/Taube as orbit theorems
-- **[The Knot ISA](https://doi.org/10.5281/zenodo.21416907)** (Paper 618) — Laws of Form, Q-calculus, thermodynamic deformation of logical operators
-- **[The Frog ISA](https://doi.org/10.5281/zenodo.21480268)** (Paper 623) — seven imaginary opcodes; the octonion O-calculus
-- **[The Motive ISA](https://doi.org/10.5281/zenodo.21416909)** (Paper 619) — five opcodes for dissipative thermodynamic systems; the abstract parent
-- **[The Hum ISA](https://doi.org/10.5281/zenodo.21416912)** (Paper 722) — quantum field theory as a six-opcode programme; EMIT
-- **[The Rising Sea ISA](https://doi.org/10.5281/zenodo.21416914)** (Paper 621) — the ISA hierarchy as a fibred Lawvere theory over the β-plane
-- **[The Pentagon ISA](https://doi.org/10.5281/zenodo.21416915)** (Paper 622) — confluence, coherence, and uniqueness for the Carnot ISA
+- **The Raven ISA** ~~(withdrawn 2026-08)~~ (Paper 636) — enzymes as molecular programs; PT-symmetric computation at complex β
+- **Valence as Orbit Occupancy** ~~(withdrawn 2026-08)~~ (Paper 487) — the entry point for the Valence ISA; Aufbau/Hund/Taube as orbit theorems
+- **The Knot ISA** ~~(withdrawn 2026-08)~~ (Paper 618) — Laws of Form, Q-calculus, thermodynamic deformation of logical operators
+- **The Frog ISA** ~~(withdrawn 2026-08)~~ (Paper 623) — seven imaginary opcodes; the octonion O-calculus
+- **The Motive ISA** ~~(withdrawn 2026-08)~~ (Paper 619) — five opcodes for dissipative thermodynamic systems; the abstract parent
+- **The Hum ISA** ~~(withdrawn 2026-08)~~ (Paper 722) — quantum field theory as a six-opcode programme; EMIT
+- **The Rising Sea ISA** ~~(withdrawn 2026-08)~~ (Paper 621) — the ISA hierarchy as a fibred Lawvere theory over the β-plane
+- **The Pentagon ISA** ~~(withdrawn 2026-08)~~ (Paper 622) — confluence, coherence, and uniqueness for the Carnot ISA
 
 **The graphical calculi:**
 
@@ -1248,4 +1278,4 @@ different hardware.
 
 **For number theorists and algebraic geometers:**
 
-- **[The Langlands Correspondence for G-Walk Chemistry](https://doi.org/10.5281/zenodo.21224115)** (Paper 492) — RESOLVE = Hecke eigendecomposition; PROJECT = L-function evaluation; FUSE = Rankin-Selberg convolution; G-local systems on molecular graphs
+- **The Langlands Correspondence for G-Walk Chemistry** ~~(withdrawn 2026-08)~~ (Paper 492) — RESOLVE = Hecke eigendecomposition; PROJECT = L-function evaluation; FUSE = Rankin-Selberg convolution; G-local systems on molecular graphs
