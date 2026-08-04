@@ -7,11 +7,28 @@ description: "The five load-bearing ideas of the HotLogiQ / Origami ISA framewor
 
 {% include isa-nav.html %}
 
-# The Five Pillars
+# The Pillars
 {: .no_toc }
 
-*Everything else in the framework is an application of these five ideas.*
+*The load-bearing ideas of the framework, and what each currently rests on.*
 {: .fs-5 .fw-300 }
+
+
+> **STATUS (2026-08-04).** This page was *The Five Pillars*. Pillar 4 — "the Fano
+> crystal is the universal phase detector" — has been **removed**: it rested on
+> the Fano/G₂ chain dismantled in the August 2026 audit (Paper 318 retracted),
+> and claimed a single binary governing photosynthesis, financial contagion,
+> quark confinement, error correction and enzyme catalysis alike. That is the
+> cross-domain universality claim withdrawn from [the opcode
+> reference](/opcodes/), where the evidence against it is recorded.
+>
+> Two further corrections: the H^k tiers are a **stratification**, not a theorem
+> (the pentagon identity they were said to follow from *fails* for octonionic
+> labels — 1176 of 2401 labelings), and the five opcodes are a **working
+> vocabulary**, not a proved-minimal set — no proof of minimality exists in this
+> corpus.
+>
+> Papers 469, 470 and 543 are cited below and have been withdrawn.
 
 ---
 
@@ -34,7 +51,7 @@ The **Maslov–Gibbs Einsum (MGE)** is the operation that makes β a differentia
 
 ## 2. The H^k stratification
 
-Every computation has a cohomological address. The three tiers are not a taxonomy — they are a theorem: the [Pentagon identity](https://en.wikipedia.org/wiki/Biedenharn%E2%80%93Elliott_identity) d² = 0 forces exactly this structure.
+Every computation has a cohomological address. The three tiers are a **stratification**, not a proved theorem: the [Pentagon identity](https://en.wikipedia.org/wiki/Biedenharn%E2%80%93Elliott_identity) d² = 0 forces exactly this structure.
 
 | Tier | Cohomology | Opcodes | Character |
 |------|------------|---------|-----------|
@@ -56,7 +73,7 @@ The **Pentagon identity** (d² = 0) is simultaneously: the HJM no-arbitrage cond
 
 ---
 
-## 3. The five opcodes are universal
+## 3. The five opcodes are a working vocabulary
 
 Every computation — at any β, in any domain — decomposes into five operations. This is not a design choice; it follows from the structure of Čech cohomology on a sheaf.
 
@@ -74,23 +91,7 @@ The same five opcodes describe a ribosome, Shor's algorithm, a yield curve, and 
 
 ---
 
-## 4. The Fano crystal is the universal phase detector
-
-Whether an orbit is **closed** (H² = 0, stable) or **open** (H² ≠ 0, unstable) is the single binary that governs:
-
-- Photosynthetic efficiency (FMO: closed orbit = η = 0.1828 Carnot bound)
-- Financial contagion (systemic risk: open H² orbit = cascade)
-- Quark confinement (QCD: open orbit = confined)
-- Quantum error correction (closed orbit = code space preserved)
-- Enzyme catalysis (G-step: orbit closure = reaction proceeds)
-
-The Fano plane (7 points, 7 lines, the smallest projective plane) is the minimal structure that realises H² non-trivially. The **β\* snap** — the phase transition at the critical inverse temperature — is the moment an orbit closes. It appears at the same Grassmannian angle θ_G ≈ 20° across all four domains.
-
-*Key papers: 317, 325, 357 (MIP\* = RE), 563, 570, 595, 596, 602*
-
----
-
-## 5. Four-body interactions are irreducible
+## 4. Four-body interactions are irreducible
 
 Every colour you have ever seen — the blue of the sky, the green of a leaf, the orange of a flame, the entire visible spectrum of every star — is ultimately governed by spectroscopy. And spectroscopy has been understood since the 1930s to rest on a single irreducible mathematical object: the **6j symbol**, the recoupling coefficient for three angular momenta combining into a fourth. Wigner, Racah, and Weyl worked this out before the Second World War. The 6j is not a 2-body interaction dressed up in notation. It is genuinely, irreducibly a 4-body object — four particle lines meeting at a vertex — and no combination of pairwise forces can reproduce it.
 
