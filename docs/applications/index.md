@@ -10,7 +10,7 @@ description: "The Origami ISA applied across domains — each a significant resu
 # Applications
 {: .no_toc }
 
-*Each entry below applies the [five pillars](../guides/pillars) to a specific domain.
+*Each entry below applies the [pillars](../guides/pillars) to a specific domain.
 These are not summaries of individual papers — they are the ideas that span families of papers.*
 {: .fs-5 .fw-300 }
 

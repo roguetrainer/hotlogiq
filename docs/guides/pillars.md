@@ -20,7 +20,7 @@ description: "The five load-bearing ideas of the HotLogiQ / Origami ISA framewor
 > and claimed a single binary governing photosynthesis, financial contagion,
 > quark confinement, error correction and enzyme catalysis alike. That is the
 > cross-domain universality claim withdrawn from [the opcode
-> reference](/opcodes/), where the evidence against it is recorded.
+> reference](/docs/reference/opcodes.html), where the evidence against it is recorded.
 >
 > Two further corrections: the H^k tiers are a **stratification**, not a theorem
 > (the pentagon identity they were said to follow from *fails* for octonionic
