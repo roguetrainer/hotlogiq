@@ -1,0 +1,1790 @@
+[
+  {
+    "number": 200,
+    "title": "The Fano-Foam Manifold",
+    "doi": "10.5281/zenodo.19869263",
+    "slug": "10.5281-zenodo.19869263",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "geometry",
+      "fano",
+      "g2"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 201,
+    "title": "The Maslov-Gibbs Einsum (MGE)",
+    "doi": "10.5281/zenodo.17981393",
+    "slug": "10.5281-zenodo.17981393",
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "core-engine",
+      "optimisation",
+      "ai-ml",
+      "tropical"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 202,
+    "title": "Topological Resonance Synthesis (TRS)",
+    "doi": "10.5281/zenodo.19858021",
+    "slug": "10.5281-zenodo.19858021",
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "core-engine",
+      "optimisation",
+      "ai-ml",
+      "geometry"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 203,
+    "title": "The Unitary Resonance Network (URN)",
+    "doi": "10.5281/zenodo.20086746",
+    "slug": "10.5281-zenodo.20086746",
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "ai-ml",
+      "continual-learning"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 205,
+    "title": "The Resonance Processing Unit (RPU)",
+    "doi": "10.5281/zenodo.19743800",
+    "slug": "10.5281-zenodo.19743800",
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "qec",
+      "hardware"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 206,
+    "title": "Fibrational Tensor Codes (FTCs)",
+    "doi": "10.5281/zenodo.19821692",
+    "slug": "10.5281-zenodo.19821692",
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "qec",
+      "fano",
+      "g2"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 207,
+    "title": "The 731-Calculus (Part 1)",
+    "doi": "10.5281/zenodo.19713350",
+    "slug": "10.5281-zenodo.19713350",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "geometry",
+      "fano",
+      "category-theory"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 211,
+    "title": "Non-Associative Calculus",
+    "doi": "10.5281/zenodo.20025384",
+    "slug": "10.5281-zenodo.20025384",
+    "portfolios": [
+      "A",
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "core-engine",
+      "calculus",
+      "g2",
+      "octonions"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 217,
+    "title": "Fibrational Lattice Surgery (FLS)",
+    "doi": "10.5281/zenodo.19922441",
+    "slug": "10.5281-zenodo.19922441",
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "qec",
+      "hardware"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 218,
+    "title": "Thermodynamic Routing of Stale Gradients",
+    "doi": "10.5281/zenodo.20077198",
+    "slug": "10.5281-zenodo.20077198",
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "ai-ml",
+      "optimisation",
+      "distributed"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 240,
+    "title": "The Riemann Spectrometer",
+    "doi": "10.5281/zenodo.19824028",
+    "slug": "10.5281-zenodo.19824028",
+    "portfolios": [
+      "E"
+    ],
+    "tags": [
+      "grand-challenges",
+      "number-theory",
+      "riemann",
+      "g2"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 258,
+    "title": "The Origami ISA",
+    "doi": "10.5281/zenodo.19916429",
+    "slug": "10.5281-zenodo.19916429",
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "hardware-ai",
+      "hardware",
+      "instruction-set",
+      "fano"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 263,
+    "title": "The Architecture of Inevitability",
+    "doi": "10.5281/zenodo.19928880",
+    "slug": "10.5281-zenodo.19928880",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "geometry",
+      "magic-square",
+      "octonions"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 265,
+    "title": "The ζ(21) Apéry Ladder",
+    "doi": "10.5281/zenodo.20029647",
+    "slug": "10.5281-zenodo.20029647",
+    "portfolios": [
+      "E"
+    ],
+    "tags": [
+      "grand-challenges",
+      "number-theory",
+      "recurrence",
+      "g2"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 266,
+    "title": "Geometric Shadows in Apéry's Polynomial",
+    "doi": "10.5281/zenodo.20031913",
+    "slug": "10.5281-zenodo.20031913",
+    "portfolios": [
+      "E"
+    ],
+    "tags": [
+      "grand-challenges",
+      "number-theory",
+      "recurrence",
+      "g2"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 270,
+    "title": "The Fano Monogamy Paradox",
+    "doi": "10.5281/zenodo.20058092",
+    "slug": "10.5281-zenodo.20058092",
+    "portfolios": [
+      "F"
+    ],
+    "tags": [
+      "quantum-foundations",
+      "entanglement",
+      "fano"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 275,
+    "title": "Cyclic Inconsistency in Multi-Agent Reasoning: Topological Diagnosis and Dykstra Correction (Volume of Thought v3.0)",
+    "doi": "10.5281/zenodo.20059019",
+    "slug": "10.5281-zenodo.20059019",
+    "portfolios": [
+      "A",
+      "C"
+    ],
+    "tags": [
+      "ai-ml",
+      "multi-agent",
+      "volume-of-thought",
+      "sheaf-cohomology",
+      "h1",
+      "condorcet",
+      "origami-isa",
+      "dykstra-projection"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 281,
+    "title": "The 731 Frog Calculus (Part 2)",
+    "doi": "10.5281/zenodo.20139448",
+    "slug": "10.5281-zenodo.20139448",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "foundations",
+      "geometry",
+      "fano",
+      "category-theory"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 286,
+    "title": "Conserved Computation",
+    "doi": "10.5281/zenodo.20127517",
+    "slug": "10.5281-zenodo.20127517",
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "core-engine",
+      "geometry",
+      "noether",
+      "g2"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 289,
+    "title": "The Temperature of Rationality: Maslov-Gibbs Ensemble as a Foundation for Heterogeneous-Agent Economics",
+    "doi": "10.5281/zenodo.20234841",
+    "slug": "10.5281-zenodo.20234841",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "thermodynamics",
+      "agent-based-models",
+      "ai-ml"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 291,
+    "title": "The Topology of Conservation: Double-Entry Accounting as a Discrete Gauge Theory of Macroeconomics",
+    "doi": "10.5281/zenodo.20234853",
+    "slug": "10.5281-zenodo.20234853",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "gauge-theory",
+      "topology",
+      "thermodynamics"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 292,
+    "title": "Beyond DAGs: A Non-Associative Algebra of Policy Interventions",
+    "doi": "10.5281/zenodo.20234870",
+    "slug": "10.5281-zenodo.20234870",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "non-associative-algebra",
+      "causality"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 293,
+    "title": "Thermal Attribution: Differentiable Shapley Values, Latent Bottlenecks, and the Tropical Limit of Cooperative Game Theory",
+    "doi": "10.5281/zenodo.20236870",
+    "slug": "10.5281-zenodo.20236870",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "thermodynamics",
+      "attribution",
+      "ai-ml"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 294,
+    "title": "Thermodynamic Information Routing: A Unified Framework for Gibbs Aggregation Across Economics, Computation, and Knowledge Retrieval",
+    "doi": "10.5281/zenodo.20237288",
+    "slug": "10.5281-zenodo.20237288",
+    "portfolios": [
+      "G",
+      "A"
+    ],
+    "tags": [
+      "economics",
+      "thermodynamics",
+      "information-routing",
+      "ai-ml"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 295,
+    "title": "Currency Bundles: Foreign Exchange as Connection Curvature on the Pacioli Manifold",
+    "doi": "10.5281/zenodo.20242355",
+    "slug": "10.5281-zenodo.20242355",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "gauge-theory",
+      "foreign-exchange",
+      "curvature"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 296,
+    "title": "Term Structure Bundles: Interest Rates as Temporal Connections on the Pacioli Manifold",
+    "doi": "10.5281/zenodo.20244445",
+    "slug": "10.5281-zenodo.20244445",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "gauge-theory",
+      "interest-rates",
+      "term-structure"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 297,
+    "title": "The Geometry of the Euler–Mascheroni Constant",
+    "doi": "10.5281/zenodo.20139443",
+    "slug": "10.5281-zenodo.20139443",
+    "portfolios": [
+      "E"
+    ],
+    "tags": [
+      "number-theory",
+      "geometry",
+      "thermodynamics",
+      "holonomy"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 298,
+    "title": "Credit Bundles: Survival Probabilities as Parallel Transport on the Pacioli Manifold",
+    "doi": "10.5281/zenodo.20257596",
+    "slug": "10.5281-zenodo.20257596",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "gauge-theory",
+      "credit-risk",
+      "parallel-transport"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 299,
+    "title": "Valuation Adjustments as Curvature: XVA in Financial Gauge Theory",
+    "doi": "10.5281/zenodo.20257724",
+    "slug": "10.5281-zenodo.20257724",
+    "portfolios": [],
+    "tags": [],
+    "explainer": true
+  },
+  {
+    "number": 300,
+    "title": "Economic Gauge Theory: Stock-Flow Consistency, Thermodynamic Constraints, and Climate Risk on the Pacioli Manifold",
+    "doi": "10.5281/zenodo.20259495",
+    "slug": "10.5281-zenodo.20259495",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "gauge-theory",
+      "stock-flow-consistency",
+      "climate"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 301,
+    "title": "A Primer on Economic Gauge Theory",
+    "doi": "10.5281/zenodo.20259505",
+    "slug": "10.5281-zenodo.20259505",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "gauge-theory",
+      "thermodynamics"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 305,
+    "title": "Differentiable Agent-Based Macroeconomics: A Gauge-Theoretic Digital Twin on the Pacioli Manifold",
+    "doi": "10.5281/zenodo.20261945",
+    "slug": "10.5281-zenodo.20261945",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "agent-based-models",
+      "differentiable-programming",
+      "ai-ml"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 306,
+    "title": "The Pacioli Combinator Library: A Universal Domain-Specific Language for Financial and Economic Computation",
+    "doi": "10.5281/zenodo.20262070",
+    "slug": "10.5281-zenodo.20262070",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "dsl",
+      "programming",
+      "gauge-theory"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 311,
+    "title": "The Climate Hazard Yield Surface: A Geometric Framework for the Economics of Climate Action, with Per-Household Dollar Translation and the Doomsday Clock Isocurve",
+    "doi": "10.5281/zenodo.20291646",
+    "slug": "10.5281-zenodo.20291646",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "economics",
+      "climate",
+      "policy",
+      "gauge-theory"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 318,
+    "title": "[RETRACTED] Virtual Monopoles in the FeMo-Cofactor: G2 Symmetry Does Not Apply to d-Electron Systems",
+    "doi": "10.5281/zenodo.20346650",
+    "slug": "10.5281-zenodo.20346650",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "g2",
+      "octonions",
+      "biophysics"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 321,
+    "title": "Evolutionary Quantum Programming: The 731 ISA as a Rosetta Stone for Directed Energy Transfer in Biology",
+    "doi": "10.5281/zenodo.20393465",
+    "slug": "10.5281-zenodo.20393465",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "biophysics",
+      "origami-isa",
+      "evolution"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 323,
+    "title": "Fano-Guided Search for High-Winding Equal-Mass Three-Body Choreographies",
+    "doi": "10.5281/zenodo.20369300",
+    "slug": "10.5281-zenodo.20369300",
+    "portfolios": [
+      "B",
+      "E"
+    ],
+    "tags": [
+      "fano",
+      "three-body",
+      "choreography",
+      "ai-for-science"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 325,
+    "title": "The Topological Heat Engine: The 6-731 Information-Geometric Carnot Cycle",
+    "doi": "10.5281/zenodo.20400638",
+    "slug": "10.5281-zenodo.20400638",
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "fano",
+      "thermodynamics",
+      "biophysics",
+      "quantum-foundations"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 357,
+    "title": "The Origami ISA as a Structural Model for MIP* Verification",
+    "doi": "10.5281/zenodo.20516899",
+    "slug": "10.5281-zenodo.20516899",
+    "portfolios": [
+      "F",
+      "B"
+    ],
+    "tags": [
+      "quantum-foundations",
+      "fano",
+      "origami-isa",
+      "complexity"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 361,
+    "title": "Fano Orbit Decomposition of Magic: Wigner Negativity as Broken-Line Activation in the 3-Qubit Phase Space",
+    "doi": "10.5281/zenodo.20541583",
+    "slug": "10.5281-zenodo.20541583",
+    "portfolios": [
+      "F"
+    ],
+    "tags": [
+      "fano",
+      "magic",
+      "wigner",
+      "phase-space",
+      "orbit-valence"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 363,
+    "title": "Fano Geometry as a Unifying Language for Quantum Error Correction: Stabiliser Codes Magic States and Self-Testing from a Single Projective Plane",
+    "doi": "10.5281/zenodo.20541595",
+    "slug": "10.5281-zenodo.20541595",
+    "portfolios": [
+      "F",
+      "C"
+    ],
+    "tags": [
+      "fano",
+      "qec",
+      "steane-code",
+      "magic",
+      "self-testing",
+      "stabiliser",
+      "wigner",
+      "orbit-valence",
+      "ghz",
+      "psl27"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 366,
+    "title": "A Valence Theory of Quantum Magic: Fano Orbit Structure of the 3-Qubit Phase Space and the CS Magic Composition Theorem",
+    "doi": "10.5281/zenodo.20541665",
+    "slug": "10.5281-zenodo.20541665",
+    "portfolios": [
+      "F"
+    ],
+    "tags": [
+      "fano",
+      "magic",
+      "orbit-valence",
+      "wigner",
+      "quantum-foundations"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 370,
+    "title": "The Origami ISA as Nature's Universal Computer: One Instruction Set Twenty Orders of Magnitude",
+    "doi": "10.5281/zenodo.20543454",
+    "slug": "10.5281-zenodo.20543454",
+    "portfolios": [
+      "A",
+      "B"
+    ],
+    "tags": [
+      "origami-isa",
+      "fano",
+      "spectroscopy",
+      "universal-computer"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 385,
+    "title": "The SQU TriQ and SevenQ: Standard Hardware Registers for the Origami ISA",
+    "doi": "10.5281/zenodo.20581486",
+    "slug": "10.5281-zenodo.20581486",
+    "portfolios": [
+      "C"
+    ],
+    "tags": [
+      "fano",
+      "hardware",
+      "origami-isa",
+      "qec",
+      "orbit-valence"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 393,
+    "title": "Projective Geometry as the Mother Tongue of Quantum Mechanics: From Brody & Hughston's CP^n to the Fano Orbit Decomposition",
+    "doi": "10.5281/zenodo.20634729",
+    "slug": "10.5281-zenodo.20634729",
+    "portfolios": [
+      "F",
+      "B"
+    ],
+    "tags": [
+      "fano",
+      "projective-geometry",
+      "quantum-foundations",
+      "wigner",
+      "metaplectic",
+      "category-theory",
+      "brody-hughston"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 396,
+    "title": "The Unhedgeability Theorem: Sheaf Cohomology of Interaction Diagrams and the Topology of Financial Risk",
+    "doi": "10.5281/zenodo.20635479",
+    "slug": "10.5281-zenodo.20635479",
+    "portfolios": [
+      "G",
+      "B"
+    ],
+    "tags": [
+      "sheaf-cohomology",
+      "economics",
+      "gauge-theory",
+      "origami-isa"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 397,
+    "title": "Systemic Risk as H²: Cohomological Stress Testing the Unhedgeable Residual and Why the 2008 Crisis Was a Topological Event",
+    "doi": "10.5281/zenodo.20642908",
+    "slug": "10.5281-zenodo.20642908",
+    "portfolios": [
+      "G",
+      "B"
+    ],
+    "tags": [
+      "sheaf-cohomology",
+      "systemic-risk",
+      "xva",
+      "wrong-way-risk",
+      "sifi",
+      "contagion",
+      "pentagon",
+      "stress-testing",
+      "econiac"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 398,
+    "title": "The Topology of Risk: A Primer on Cohomology for Financial Practitioners",
+    "doi": "10.5281/zenodo.20642983",
+    "slug": "10.5281-zenodo.20642983",
+    "portfolios": [
+      "G",
+      "B"
+    ],
+    "tags": [
+      "sheaf-cohomology",
+      "primer",
+      "bilateral-risk",
+      "triangular-risk",
+      "systemic-risk",
+      "xva",
+      "2008-crisis",
+      "econiac",
+      "tutorial"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 399,
+    "title": "The Origami ISA as Financial Middleware: SPLIT and SPLAT as the Cech Coboundary Model-Free XVA and the Unification of Four Computational Paradigms",
+    "doi": "10.5281/zenodo.20645695",
+    "slug": "10.5281-zenodo.20645695",
+    "portfolios": [
+      "F",
+      "G",
+      "B"
+    ],
+    "tags": [
+      "origami-isa",
+      "cech-cohomology",
+      "xva",
+      "model-free",
+      "pentagon",
+      "financial-middleware",
+      "econiac",
+      "sheaf-cohomology"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 403,
+    "title": "Tipping Points Are Topological: Sheaf Cohomology of the Climate System and the H¹-Corrected Social Cost of Carbon",
+    "doi": "10.5281/zenodo.20653285",
+    "slug": "10.5281-zenodo.20653285",
+    "portfolios": [
+      "B",
+      "G"
+    ],
+    "tags": [
+      "sheaf-cohomology",
+      "climate",
+      "tipping-points",
+      "social-cost-of-carbon",
+      "h1-cohomology",
+      "armstrong-mckay",
+      "paris-targets",
+      "econiac"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 404,
+    "title": "The Origami ISA and the State Hidden Subgroup Problem: SPLAT as Fourier Sampling",
+    "doi": "10.5281/zenodo.20667167",
+    "slug": "10.5281-zenodo.20667167",
+    "portfolios": [
+      "F",
+      "C"
+    ],
+    "tags": [
+      "origami-isa",
+      "state-hsp",
+      "splat",
+      "fourier-sampling",
+      "bell-sampling",
+      "stabiliser-learning",
+      "abelian",
+      "character-povm"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 405,
+    "title": "Non-Associative Hardware is Necessary for the Non-Abelian State Hidden Subgroup Problem: PSL(2-7) via the 731 ISA and the SevenQ Register",
+    "doi": "10.5281/zenodo.20667170",
+    "slug": "10.5281-zenodo.20667170",
+    "portfolios": [
+      "F",
+      "C"
+    ],
+    "tags": [
+      "origami-isa",
+      "non-abelian",
+      "state-hsp",
+      "psl27",
+      "fano",
+      "spin-opcode",
+      "sevenq",
+      "associamancy",
+      "731-isa"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 406,
+    "title": "Origami MBQC: The Origami ISA as a Measurement-Based Instruction Set",
+    "doi": "10.5281/zenodo.20667729",
+    "slug": "10.5281-zenodo.20667729",
+    "portfolios": [
+      "F",
+      "C"
+    ],
+    "tags": [
+      "origami-isa",
+      "mbqc",
+      "fano-cluster-state",
+      "photonics",
+      "731-isa",
+      "spin-opcode",
+      "measurement-based",
+      "cluster-state"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 408,
+    "title": "The Fano Plane is the Right Way to Think About Qubits: A Practitioner's Guide to the Origami ISA and Associamancy",
+    "doi": "10.5281/zenodo.20667176",
+    "slug": "10.5281-zenodo.20667176",
+    "portfolios": [
+      "F",
+      "C"
+    ],
+    "tags": [
+      "origami-isa",
+      "primer",
+      "fano",
+      "associamancy",
+      "magic",
+      "stabiliser",
+      "731-isa",
+      "qec",
+      "tutorial"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 409,
+    "title": "EconIAC: A Differentiable Economics Engine — Overview Mathematical Foundations and Reading Guide",
+    "doi": "10.5281/zenodo.20679006",
+    "slug": "10.5281-zenodo.20679006",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "econiac",
+      "overview",
+      "reading-guide",
+      "gauge-theory",
+      "sheaf-cohomology",
+      "pacioli",
+      "gibbs",
+      "systemic-risk",
+      "primer",
+      "tutorial"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 410,
+    "title": "Spin Foams as Origami: Loop Quantum Gravity from the ISA Perspective",
+    "doi": "10.5281/zenodo.20680634",
+    "slug": "10.5281-zenodo.20680634",
+    "portfolios": [
+      "F",
+      "B"
+    ],
+    "tags": [
+      "lqg",
+      "spin-foam",
+      "origami-isa",
+      "pachner",
+      "ponzano-regge",
+      "eprl",
+      "g2",
+      "barbero-immirzi",
+      "monopole",
+      "sevenq",
+      "non-associative"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 411,
+    "title": "Origami ISA Pulse Sequences: Optimal Control of the 731 Gate Set — DRAG as ISA Typing Triality as Berry Phase and the G₂ Circuit Depth of the SPIN Opcode",
+    "doi": "10.5281/zenodo.20680609",
+    "slug": "10.5281-zenodo.20680609",
+    "portfolios": [
+      "F",
+      "C"
+    ],
+    "tags": [
+      "origami-isa",
+      "pulse-control",
+      "grape",
+      "drag",
+      "triality",
+      "spin-opcode",
+      "berry-phase",
+      "g2",
+      "weyl-group",
+      "holonomic",
+      "transmon",
+      "trapped-ion",
+      "731-isa"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 412,
+    "title": "The Origami ISA as a Typed Quantum DSL: Dependent Types Linear Types and the Schur Boundary as a Type Error",
+    "doi": "10.5281/zenodo.20681513",
+    "slug": "10.5281-zenodo.20681513",
+    "portfolios": [
+      "F",
+      "C"
+    ],
+    "tags": [
+      "origami-isa",
+      "typed-dsl",
+      "linear-types",
+      "dependent-types",
+      "schur-boundary",
+      "associamancy",
+      "no-cloning",
+      "pentagon-identity",
+      "pacioli",
+      "combinator-library",
+      "type-theory"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 413,
+    "title": "Molecular Machines as Origami ISA Programmes: Ribosomes Photosynthesis and Nitrogenase as Pachner-Move Computers",
+    "doi": "10.5281/zenodo.20682101",
+    "slug": "10.5281-zenodo.20682101",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "ribosome",
+      "fmo",
+      "nitrogenase",
+      "femoco",
+      "fano",
+      "6j-symbol",
+      "origami-isa",
+      "photosynthesis",
+      "molecular-machine",
+      "spectroscopy",
+      "g2",
+      "triality",
+      "broken-fano"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 415,
+    "title": "H1=0 is the Performance Condition: Eight Algorithms as Origami ISA Programmes on Different Sheaves",
+    "doi": "10.5281/zenodo.20684509",
+    "slug": "10.5281-zenodo.20684509",
+    "portfolios": [
+      "F",
+      "C",
+      "G"
+    ],
+    "tags": [
+      "sheaf-cohomology",
+      "h1",
+      "elastic-hashing",
+      "gemm",
+      "max-flow",
+      "cache-coherence",
+      "slam",
+      "mittag-leffler",
+      "consensus",
+      "tda",
+      "origami-isa",
+      "pentagon-identity",
+      "coboundary",
+      "temperature",
+      "complexity"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 417,
+    "title": "Hodge Theory is the Smooth Limit of the Origami ISA: Discrete Algorithms as Tropical Shadows of Smooth Manifold Problems",
+    "doi": "10.5281/zenodo.20684838",
+    "slug": "10.5281-zenodo.20684838",
+    "portfolios": [
+      "F",
+      "C"
+    ],
+    "tags": [
+      "hodge-theory",
+      "origami-isa",
+      "tropical",
+      "information-geometry",
+      "fisher-metric",
+      "parallel-transport",
+      "natural-gradient",
+      "spectral-gap",
+      "index-theorem",
+      "slam",
+      "trs",
+      "mge",
+      "harmonic-forms"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 419,
+    "title": "The Forge ISA: A Temperature-Parameterised Instruction Set for Thermodynamic Computation",
+    "doi": "10.5281/zenodo.20694527",
+    "slug": "10.5281-zenodo.20694527",
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "forge-isa",
+      "thermodynamic",
+      "beta",
+      "snap-event",
+      "vorton",
+      "gibbs",
+      "trs",
+      "temperature",
+      "phase-transition"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 420,
+    "title": "The H^k Complexity Ladder: Sheaf Cohomology as a Pre-Diagnostic for Algorithmic Hardness",
+    "doi": "10.5281/zenodo.20773526",
+    "slug": "10.5281-zenodo.20773526",
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "complexity",
+      "sheaf-cohomology",
+      "h0",
+      "h1",
+      "h2",
+      "bpp",
+      "bqp",
+      "pspace",
+      "p-np",
+      "beta-star",
+      "algorithmic-hardness"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 426,
+    "title": "Beyond Basel: A Cohomological Framework for Systemic Risk Regulation",
+    "doi": "10.5281/zenodo.20701683",
+    "slug": "10.5281-zenodo.20701683",
+    "portfolios": [
+      "G"
+    ],
+    "tags": [
+      "systemic-risk",
+      "regulation",
+      "basel",
+      "g-sib",
+      "network-topology",
+      "sheaf-cohomology",
+      "betti-numbers",
+      "funding-loops",
+      "capital-requirements",
+      "lcr",
+      "nsfr",
+      "lender-of-last-resort",
+      "bagehot",
+      "mehrling",
+      "ccp",
+      "macroprudential",
+      "resolution",
+      "financial-stability",
+      "2008-crisis",
+      "marginal-capital-charge",
+      "deep-framework"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 443,
+    "title": "Planck's Constant in Disguise: Five Classical Dualities as a Single Semiring Deformation",
+    "doi": "10.5281/zenodo.20752384",
+    "slug": "10.5281-zenodo.20752384",
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "semiring-deformation",
+      "maslov",
+      "tropical",
+      "cole-hopf",
+      "black-scholes",
+      "sinkhorn",
+      "kantorovich",
+      "viterbi",
+      "forward-backward",
+      "hamilton-jacobi",
+      "schrodinger",
+      "burgers",
+      "planck",
+      "duality",
+      "unification"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 445,
+    "title": "The Kitaev Menagerie in Origami: Topological Phases Anyon F-Matrices and the ISA Hierarchy",
+    "doi": "10.5281/zenodo.20752352",
+    "slug": "10.5281-zenodo.20752352",
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "kitaev",
+      "toric-code",
+      "honeycomb",
+      "anyon",
+      "f-matrix",
+      "racah",
+      "6j-symbol",
+      "origami-isa",
+      "731-isa",
+      "frog-calculus",
+      "zx-calculus",
+      "topological-quantum-computation",
+      "ising-anyon",
+      "fibonacci-anyon",
+      "gibbs-isa",
+      "beta-scheduling",
+      "nishimori",
+      "h1-cohomology",
+      "error-correction",
+      "phase-transition",
+      "non-abelian"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 451,
+    "title": "Codon Recognition on S³ × S³ × S³: Product Manifold Geometry and Exact ΔΔG Additivity in Ribosomal Decoding",
+    "doi": "10.5281/zenodo.20761315",
+    "slug": "10.5281-zenodo.20761315",
+    "portfolios": [],
+    "tags": [],
+    "explainer": true
+  },
+  {
+    "number": 454,
+    "title": "The Meld ISA: Complex-MGE Quantum Algorithm Discovery and the T-Gate as Octonion Obstruction",
+    "doi": "10.5281/zenodo.20773563",
+    "slug": "10.5281-zenodo.20773563",
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "meld-isa",
+      "quantum-computing",
+      "shor",
+      "qft",
+      "t-gate",
+      "clifford",
+      "bind",
+      "fano",
+      "hidden-subgroup",
+      "lwe",
+      "ml-kem",
+      "post-quantum",
+      "pqc",
+      "complex-mge",
+      "h2-cohomology"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 455,
+    "title": "The Origami ISA: Eight Derivations of a Universal Instruction Set",
+    "doi": "10.5281/zenodo.20774076",
+    "slug": "10.5281-zenodo.20774076",
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "origami-isa",
+      "eight-derivations",
+      "pachner",
+      "wigner-racah",
+      "mac-lane",
+      "frobenius",
+      "fisher-information",
+      "hodge",
+      "shum",
+      "universal-instruction-set"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 456,
+    "title": "The Alchemy of Distributions Revisited: Rank Transmutation Maps as Beta-Deformations of the Tropical Semiring",
+    "doi": "10.5281/zenodo.20784870",
+    "slug": "10.5281-zenodo.20784870",
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "rank-transmutation",
+      "beta-deformation",
+      "tropical-semiring",
+      "fisher-information",
+      "order-statistics",
+      "optimal-transport",
+      "origami-isa",
+      "jacobi-polynomials",
+      "softmax",
+      "gibbs-ensemble",
+      "differentiable-distributions",
+      "sheaf-cohomology"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 457,
+    "title": "The Thermal AZ Table: Origami ISA Classification of the Tenfold Way and its Forge ISA Thermalisation",
+    "doi": "10.5281/zenodo.20955478",
+    "slug": "10.5281-zenodo.20955478",
+    "portfolios": [
+      "A",
+      "B"
+    ],
+    "tags": [
+      "tenfold-way",
+      "az-table",
+      "origami-isa",
+      "forge-isa",
+      "symmetry-class",
+      "topological-insulator",
+      "kitaev",
+      "bott-periodicity",
+      "thermal-classification",
+      "superconductor"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 466,
+    "title": "Magic Has Valence: A Primer on the Fano Orbit Classification of 3-Qubit CZ-Type Stabiliser States",
+    "doi": "10.5281/zenodo.21158966",
+    "slug": "10.5281-zenodo.21158966",
+    "portfolios": [
+      "A",
+      "F"
+    ],
+    "tags": [
+      "magic",
+      "stabiliser",
+      "orbit",
+      "fano",
+      "wigner",
+      "clifford",
+      "origami-isa",
+      "valence"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 468,
+    "title": "Resource Theory as Circuit Syntax: The Origami ISA as a Coloured PROP",
+    "doi": "10.5281/zenodo.20955514",
+    "slug": "10.5281-zenodo.20955514",
+    "portfolios": [
+      "A"
+    ],
+    "tags": [
+      "resource-theory",
+      "prop",
+      "coloured-prop",
+      "circuit-syntax",
+      "monoidal-category",
+      "frobenius",
+      "zx-calculus",
+      "origami-isa",
+      "dark-magic",
+      "stabiliser"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 551,
+    "title": "The Adelic Atom: L-Functions, Selberg Trace, and the Riemann Hypothesis via Thomas-Fermi ISA",
+    "doi": "10.5281/zenodo.21301604",
+    "slug": "10.5281-zenodo.21301604",
+    "portfolios": [],
+    "tags": [],
+    "explainer": true
+  },
+  {
+    "number": 563,
+    "title": "The Condensed Matter Amplituhedron: CASSCF Wavefunctions as Geodesics on the Grassmannian",
+    "doi": "10.5281/zenodo.21277815",
+    "slug": "10.5281-zenodo.21277815",
+    "portfolios": [
+      "A",
+      "B"
+    ],
+    "tags": [
+      "grassmannian",
+      "casscf",
+      "schmidt-decomposition",
+      "amplituhedron",
+      "hubbard-model",
+      "mott-transition",
+      "correlation-energy",
+      "h-k-ladder",
+      "trs-framework",
+      "quantum-chemistry",
+      "condensed-matter"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 572,
+    "title": "The Kuperberg G2 Spider is the BIND Calculus",
+    "doi": "10.5281/zenodo.21278538",
+    "slug": "10.5281-zenodo.21278538",
+    "portfolios": [],
+    "tags": [],
+    "explainer": true
+  },
+  {
+    "number": 578,
+    "title": "The Quantum Chemistry Hierarchy as Iterated Kan Extension",
+    "doi": "10.5281/zenodo.21284201",
+    "slug": "10.5281-zenodo.21284201",
+    "portfolios": [
+      "A",
+      "B",
+      "F"
+    ],
+    "tags": [
+      "category-theory",
+      "kan-extension",
+      "grassmannian",
+      "quantum-chemistry",
+      "h-k-ladder",
+      "trs-framework"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 580,
+    "title": "The Grassmannian of Systematic Risk: Factor Models Contagion and the 2008 Crisis",
+    "doi": "10.5281/zenodo.21284204",
+    "slug": "10.5281-zenodo.21284204",
+    "portfolios": [
+      "A",
+      "G"
+    ],
+    "tags": [
+      "grassmannian",
+      "systematic-risk",
+      "factor-models",
+      "contagion",
+      "2008-crisis",
+      "geodesic-collapse",
+      "h-k-ladder",
+      "trs-framework",
+      "finance",
+      "risk-management"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 595,
+    "title": "Weyl Chamber Homology: Bredon Cohomology of the Two-Qubit Gate Polytope",
+    "doi": "10.5281/zenodo.21345107",
+    "slug": "10.5281-zenodo.21345107",
+    "portfolios": [],
+    "tags": [],
+    "explainer": true
+  },
+  {
+    "number": 596,
+    "title": "Weyl-Stratified Active Space Compression: Topological Routing of Orbital Pairs to Exact Correlation Methods",
+    "doi": "10.5281/zenodo.21346077",
+    "slug": "10.5281-zenodo.21346077",
+    "portfolios": [],
+    "tags": [],
+    "explainer": true
+  },
+  {
+    "number": 631,
+    "title": "Origami: An Open Instruction Set Architecture for Quantum Computing",
+    "doi": "10.5281/zenodo.21428853",
+    "slug": "10.5281-zenodo.21428853",
+    "portfolios": [
+      "A",
+      "C"
+    ],
+    "tags": [
+      "isa",
+      "origami",
+      "quantum-computing",
+      "instruction-set",
+      "open-source"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 680,
+    "title": "PT Symmetry and the Amplituhedron: The Positive Grassmannian as the PT-Unbroken Phase",
+    "doi": "10.5281/zenodo.21518107",
+    "slug": "10.5281-zenodo.21518107",
+    "portfolios": [
+      "A",
+      "B"
+    ],
+    "tags": [
+      "pt-symmetry",
+      "exceptional-points",
+      "amplituhedron",
+      "positive-grassmannian",
+      "bcfw",
+      "scattering-amplitudes",
+      "non-hermitian",
+      "collinear-limit",
+      "origami-isa",
+      "snap-threshold"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 690,
+    "title": "Chemistry in Pictures: A Finite-Geometry Diagrammatic Language for Molecular Science",
+    "doi": "10.5281/zenodo.21537495",
+    "slug": "10.5281-zenodo.21537495",
+    "portfolios": [
+      "A",
+      "B"
+    ],
+    "tags": [
+      "finite-geometry",
+      "diagrammatic-language",
+      "molecular-science",
+      "pg-ag",
+      "origami-isa",
+      "tutorial"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 697,
+    "title": "Conical Intersections as Hitchin Branch Points: Spectral Curves and the Period Matrix for PAT-q Active Sites",
+    "doi": "10.5281/zenodo.21558771",
+    "slug": "10.5281-zenodo.21558771",
+    "portfolios": [
+      "A",
+      "E"
+    ],
+    "tags": [
+      "conical-intersections",
+      "hitchin-system",
+      "berry-phase",
+      "jahn-teller",
+      "spectral-curve",
+      "photochemistry",
+      "porphyrin",
+      "femoco",
+      "nitrogenase",
+      "enzyme-catalysis",
+      "pat-q",
+      "algebraic-geometry",
+      "origami-isa"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 704,
+    "title": "The Oxygen-Evolving Complex as a PAT-3 Maxwell Demon",
+    "doi": "10.5281/zenodo.21613234",
+    "slug": "10.5281-zenodo.21613234",
+    "portfolios": [
+      "A",
+      "E"
+    ],
+    "tags": [
+      "oxygen-evolving-complex",
+      "photosystem-ii",
+      "kok-cycle",
+      "pat-3",
+      "maxwell-demon",
+      "ag23",
+      "origami-isa"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 706,
+    "title": "Why Mg2+? The Two-Metal Polymerase Active Site as PAT-2 Fidelity Engine",
+    "doi": "10.5281/zenodo.21613240",
+    "slug": "10.5281-zenodo.21613240",
+    "portfolios": [
+      "A",
+      "E"
+    ],
+    "tags": [
+      "mg2-polymerases",
+      "two-metal-mechanism",
+      "pat-2",
+      "dna-polymerase",
+      "fidelity",
+      "origami-isa"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 710,
+    "title": "The Frontier Winding Gap: Topological Origin of Chemical Reactivity",
+    "doi": "10.5281/zenodo.21612627",
+    "slug": "10.5281-zenodo.21612627",
+    "portfolios": [
+      "A",
+      "E"
+    ],
+    "tags": [
+      "winding-number",
+      "homo-lumo-gap",
+      "reactivity",
+      "transition-metals",
+      "noble-gases",
+      "aromaticity",
+      "18-electron-rule",
+      "periodic-table",
+      "catalysis",
+      "orbital-topology",
+      "variable-valence",
+      "huckel-rule"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 712,
+    "title": "No Shell Game: A Topological Criterion for MCSCF Active Space Selection",
+    "doi": "10.5281/zenodo.21612846",
+    "slug": "10.5281-zenodo.21612846",
+    "portfolios": [
+      "A",
+      "E"
+    ],
+    "tags": [
+      "active-space",
+      "casscf",
+      "dmrg",
+      "winding-numbers",
+      "transition-metals",
+      "quantum-chemistry",
+      "multi-reference",
+      "orbital-topology",
+      "so4",
+      "madelung-rule"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 713,
+    "title": "Cobalamin and the Three-Oxidation-State Metal: A Winding-Shell Analysis of Radical and Nucleophilic Catalysis",
+    "doi": "10.5281/zenodo.21613228",
+    "slug": "10.5281-zenodo.21613228",
+    "portfolios": [
+      "A",
+      "E"
+    ],
+    "tags": [
+      "cobalamin",
+      "vitamin-b12",
+      "cobalt",
+      "winding-shell",
+      "jahn-teller",
+      "radical-chemistry",
+      "nucleophilic-chemistry",
+      "corrin",
+      "porphyrin",
+      "metalloenzymes",
+      "oxidation-states",
+      "pat-framework",
+      "bio-catalysis"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 714,
+    "title": "Cytochrome c Oxidase and the Coupled DwF=0 Centre: Two DwF-Zero Metals, One Superexchange Bridge, Four epsilon-Steps",
+    "doi": "10.5281/zenodo.21630126",
+    "slug": "10.5281-zenodo.21630126",
+    "portfolios": [
+      "A",
+      "E"
+    ],
+    "tags": [
+      "cytochrome-c-oxidase",
+      "winding-shell",
+      "dwf-zero",
+      "superexchange",
+      "electron-transport-chain",
+      "origami-isa"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 715,
+    "title": "Hydrogenase and the Winding Shell: CO and CN- as Topological Tuners of the H2 Catalytic Window",
+    "doi": "10.5281/zenodo.21630149",
+    "slug": "10.5281-zenodo.21630149",
+    "portfolios": [
+      "A",
+      "E"
+    ],
+    "tags": [
+      "hydrogenase",
+      "winding-shell",
+      "co-tuner",
+      "cn-tuner",
+      "nife-hydrogenase",
+      "catalytic-window",
+      "origami-isa"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 716,
+    "title": "Nitrogenase and the Winding Shell: N=8 Stoichiometry as Eight epsilon-Crossings",
+    "doi": "10.5281/zenodo.21630152",
+    "slug": "10.5281-zenodo.21630152",
+    "portfolios": [
+      "A",
+      "E"
+    ],
+    "tags": [
+      "nitrogenase",
+      "winding-shell",
+      "femoco",
+      "nitrogen-fixation",
+      "stoichiometry",
+      "origami-isa"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 719,
+    "title": "Shell Genus as the 2-Skeleton of the Orbital Simplex: Torus Knots 6j Symbols and Tetrahedral Numbers in Atomic Shell Structure",
+    "doi": "10.5281/zenodo.21630155",
+    "slug": "10.5281-zenodo.21630155",
+    "portfolios": [
+      "A",
+      "B",
+      "E"
+    ],
+    "tags": [
+      "knot-theory",
+      "torus-knots",
+      "orbital-topology",
+      "6j-symbols",
+      "simplex",
+      "tetrahedral-numbers",
+      "fano-plane",
+      "angular-momentum",
+      "clebsch-gordan",
+      "oeis",
+      "combinatorics",
+      "origami-isa"
+    ],
+    "explainer": true
+  },
+  {
+    "number": 723,
+    "title": "Hot-TropKnot: A Maslov-Dequantized Kauffman Bracket, and Its Regular Isotopy Invariance",
+    "doi": "10.5281/zenodo.21705005",
+    "slug": "10.5281-zenodo.21705005",
+    "portfolios": [
+      "B"
+    ],
+    "tags": [
+      "knot-theory",
+      "mge",
+      "thermodynamics",
+      "torus-knots",
+      "kauffman-bracket",
+      "tropical-geometry",
+      "origami-isa"
+    ],
+    "explainer": true
+  }
+]
