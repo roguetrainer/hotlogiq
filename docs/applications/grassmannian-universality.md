@@ -195,4 +195,4 @@ The universality claim is falsified if:
 [QEC as Grassmannian parallel transport](https://doi.org/10.5281/zenodo.21284199) (#577) ·
 [The Grassmannian of Systematic Risk](https://doi.org/10.5281/zenodo.21284204) (#580) ·
 [Why exactly three tiers?](https://doi.org/10.5281/zenodo.21284201) (#578) ·
-[Magic has a periodic table](magic-structure.md) — the discrete complement to this continuous picture
+

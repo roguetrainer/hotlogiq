@@ -18,7 +18,6 @@ These are not summaries of individual papers — they are the ideas that span fa
 
 | # | Claim | Domain | Key papers |
 |---|-------|--------|------------|
-| [1](magic-structure) | **Magic has a periodic table.** Quantum non-classicality has orbits, valences, and dark states invisible to standard measures. | Quantum foundations | 365, 366, 467, 469, 470 |
 | [2](molecular-computation) | **Every molecule runs a programme.** Enzyme catalysis, nitrogen fixation, and spin-state switching are ISA programmes in the G-orbit language. | Chemistry | 488, 489, 490, 491, 509 |
 | [3](biological-qec) | **Biology runs quantum error correction.** Kinetic proofreading and the ribosome implement H⁰ × H¹ × H² QEC. | Biology | 510, 511, 515, 324 |
 | [4](galois-chemistry) | **Every molecule runs a G-orbit walk.** Spin state, valence, and catalytic barrier are computable in O(1) without DFT. | Chemistry | 488, 489, 490, 491, 492 |

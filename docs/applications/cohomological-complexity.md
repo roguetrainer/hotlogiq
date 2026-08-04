@@ -171,6 +171,6 @@ access; the 731-ISA is the resource theory of H² access.
 ---
 
 *See also:* [H^k Complexity Ladder — Paper 420](https://doi.org/10.5281/zenodo.20773526) ·
-[Magic has a periodic table](magic-structure.md) ·
+
 [BKT Transition / TWIST Failure](../glossary.md#bkt-transition--twist-failure) in the Glossary ·
 [The Non-Associative Frontier](../non-associative-frontier.md)
