@@ -99,30 +99,48 @@ and looking at the wrong inhabitants.
 
 ## Six: The Knots Are Not the Inhabitants
 
-It is tempting to go further: if orbitals live on S³, and S³ is full of torus
-knots, perhaps each orbital *is* a knot. We tried this, and it does not work.
+If orbitals live on S³, and S³ is full of torus knots, perhaps each orbital *is*
+a knot. We tried this. It does not work, and the way it fails is instructive.
 
-The obvious map sends the orbital (n, ℓ) to the torus knot T(ℓ+1, n−ℓ). Under
-it, **two entire families collapse to the unknot** — every ℓ = 0 orbital and
-every ℓ = n−1 orbital — and several orbitals become multi-component links rather
-than knots at all. Through n = 5, exactly two orbitals receive a genuine knot.
+The obvious map sends orbital (n, ℓ) to T(ℓ+1, n−ℓ). Under it two entire
+families collapse to the unknot — every ℓ = 0 and every ℓ = n−1 orbital — and
+through n = 5 exactly two orbitals get a genuine knot.
 
-We tested seven candidate maps. The best of them assigns non-trivial knots to 14
-of 21 orbitals, which looks like progress until you notice the real obstruction:
+A better map exists, and it very nearly works:
 
-> For a torus knot T(p, q), **every** standard invariant — genus, crossing
-> number, Alexander and Jones polynomials, signature, braid index — is a
-> function of (p, q) alone. If p and q are themselves functions of n and ℓ, then
-> every knot invariant is a function of n and ℓ. **The knot cannot tell you
-> anything the quantum numbers do not already say.**
+> **T(n+ℓ+1, n−ℓ)**
 
-There is a second, sharper problem. n and ℓ are asymmetric — ℓ is bounded by n,
-n is unbounded — but T(p, q) and T(q, p) are the same unoriented knot. The
-asymmetry has no counterpart in the knot type, so ℓ < n cannot be encoded there
-by any map at all.
+It knots 14 of the 21 orbitals up to n = 6, against 6 for the obvious map. Both
+indices mean something: n+ℓ+1 is the Madelung number plus one, and n−ℓ is the
+radial node count plus one. Better still, its unknots fall exactly on ℓ = n−1 —
+the circular Bohr orbits, the ones with **zero radial nodes**. A nodeless orbit
+getting an unknotted curve looks less like a failure than a result.
 
-A knot assignment can still be a way of *seeing* orbital structure. It cannot be
-a source of predictions.
+It even seems to impose a selection rule: p and q always come out with opposite
+parity, excluding half of all coprime pairs. If something physical forced that,
+it would be the first genuinely topological constraint in the programme.
+
+Both hopes fail, and not because of anything specific to this map.
+
+The parity rule is an artefact of arithmetic. For any map p = an+bℓ+c,
+q = dn+eℓ+f, the parity of p+q is fixed by **c+f** — the offsets. Map G adds 1
+to p and 0 to q, so the rule records the +1. Drop it and the same orbitals obey
+the opposite rule.
+
+And the deeper obstruction defeats every map at once. For a torus knot T(p, q),
+**every** standard invariant — genus, crossing number, Alexander and Jones
+polynomials, signature, braid index — is a function of (p, q) alone. If p and q
+come from n and ℓ, so does every invariant. **The knot cannot tell you anything
+the quantum numbers do not already say.**
+
+There is also something the topology simply cannot express. n and ℓ are
+asymmetric — ℓ is bounded by n, n is unbounded — but T(p, q) and T(q, p) are the
+same unoriented knot. That asymmetry has no counterpart in the knot type, so
+ℓ < n cannot be encoded there by any map at all.
+
+A knot assignment can still be a way of *seeing* orbital structure; the genus
+visualises the (n, ℓ) relationship rather neatly. It cannot be a source of
+predictions.
 
 ## Seven: What the Knots Did Get Right
 
