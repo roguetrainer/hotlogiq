@@ -122,7 +122,7 @@ asymmetry has no counterpart in the knot type, so ℓ < n cannot be encoded ther
 by any map at all.
 
 A knot assignment can still be a way of *seeing* orbital structure. It cannot be
-a source of predictions, and we should not have implied otherwise.
+a source of predictions.
 
 ## Seven: What the Knots Did Get Right
 
@@ -163,67 +163,46 @@ It did not find its home in atoms.
 
 ## What the Chemists Were Actually Doing
 
-An earlier version of this essay claimed rather more here, and it was wrong. It
-is worth saying exactly how, because the error is instructive.
+It is tempting to read the periodic table's structure — shells, periods, the
+transition-metal block, the lanthanide/actinide split — as knot topology in
+disguise. It isn't, and the reason is worth stating plainly.
 
-The claim was that the periodic table's structure — shells, periods, the
-transition-metal block, the lanthanide/actinide split — consists of *patterns in
-the knot topology* of the (n, ℓ) lattice. Three specific arguments were offered.
-All three fail, and the first fails on its own arithmetic.
+Every standard invariant of a torus knot T(p, q) is a function of p and q alone.
+If p and q are themselves determined by n and ℓ, then every knot invariant is a
+function of n and ℓ. **The knot can never tell you more than the quantum numbers
+you built it from.** Anywhere the topology seems to explain a chemical fact, it
+is the quantum numbers doing the work in a costume.
 
-**"The 3d orbital is the trefoil, the first genuinely knotted orbital, which is
-why transition-metal chemistry is where things get interesting."** Under the map
-this essay used, T(ℓ+1, n−ℓ), the 3d orbital (n = 3, ℓ = 2) is **T(3, 1) — the
-unknot**. The trefoil is 4d, not 3d. The transition-metal block does not begin
-where knotting begins. The claim was not merely unsupported; it contradicted the
-map it was based on.
+And the costume fits badly. The unknots include 1s, 2s and 2p — so any story of
+the form "unknotted, therefore chemically quiet" has to explain carbon. Two-
+component links include both 5f and 3p, and phosphorus is not baroque.
 
-**"The 4f orbital is an unknot, which explains why lanthanides are chemically
-well-behaved."** 4f is indeed T(4, 1), an unknot. So are 1s, 2s, 2p and every
-other orbital with ℓ = 0 or ℓ = n−1 — including 2p, which gives us carbon.
-"Unknot, therefore inert" cannot be right when the unknots include the most
-chemically prolific orbital in the periodic table.
-
-**"The 5f orbital is a link, which explains actinide complexity."** 5f is
-T(4, 2), a genuine two-component link — that part is arithmetic and it is
-correct. But 3p is T(2, 2), also a two-component link, and phosphorus is not
-notably baroque. The property does not track the chemistry.
-
-The deeper problem is the one in section six: every torus-knot invariant is a
-function of (p, q), and if p and q are functions of (n, ℓ), then no knot
-invariant can say anything the quantum numbers do not already say. Any apparent
-explanatory success is the quantum numbers doing the work, wearing a topological
-costume.
-
-**What the chemists were actually doing** is less romantic and more impressive.
+What the chemists were actually doing is less romantic and more impressive.
 Bohr, Sommerfeld, Slater, Hartree and Fock mapped the structure of
-quantum-number space using real-space tools, and they got it right. The order in
-which orbitals fill — the Madelung rule, n+ℓ increasing — was later given a
-proper group-theoretic explanation by Barut, by Rumer and Fet, and by Kibler,
-using the SO(4,2) spectrum-generating group. That explanation exists, it works,
-and it is not topological. Chromium's [Ar] 3d⁵4s¹ configuration really does come
-down to exchange energy, and calling that a patch rather than an explanation was
-unfair to it.
+quantum-number space using real-space tools, and got it right. The filling order
+itself — Madelung's n+ℓ rule — was later derived group-theoretically by Barut,
+by Rumer and Fet, and by Kibler, from the SO(4,2) spectrum-generating group.
+That explanation exists, it works, and it is not topological. Chromium's
+[Ar] 3d⁵4s¹ really does come down to exchange energy.
+
+Knots offered a shortcut past all of that. There isn't one.
 
 ## The Honest Frontier
 
-The open question is not the one this essay originally posed.
+There is still an open question here, but it is not the one this essay was
+originally written to pose.
 
-An earlier version of this piece invited readers to prove that orbital (n, ℓ) is
-canonically the torus knot T(ℓ+1, n−ℓ). That invitation is withdrawn: the map is
-degenerate, and even a better map cannot help, because torus-knot invariants are
-functions of (p, q) and therefore of (n, ℓ). There is no theorem there to prove.
+Fock's S³ picture is standard physics and essentially unknown to chemists. A
+quantum chemistry course covers the ℝ³ solution and mentions SO(4) as a remark
+about the Runge–Lenz vector, if at all; the twistor description is less known
+still. So the open work is not a theorem but a translation. What does a chemist
+gain from knowing that the 2s/2p degeneracy is a single SO(4) irrep rather than
+an accident?
 
-What remains open is narrower and, I think, more interesting. Fock's S³ picture
-is standard physics and essentially unknown to chemists — a quantum chemistry
-course covers the ℝ³ solution and mentions SO(4) as a remark about the
-Runge–Lenz vector, if at all. The twistor description is less known still. So
-the open work is not a new theorem but a translation: what does a chemist gain
-from knowing that the 2s/2p degeneracy is a single SO(4) irrep rather than an
-accident? Possibly nothing. Possibly a better way to choose which orbitals a
-correlated calculation must treat exactly, which is a real and expensive
-problem. That is a question about the value of an existing method, and it is
-worth asking honestly rather than dressing up as a discovery.
+Possibly nothing. Possibly a better way to decide which orbitals a correlated
+calculation must treat exactly — which is a real, expensive, unsolved problem.
+That is a question about the value of an existing method, and it deserves to be
+asked plainly rather than dressed up as a discovery.
 
 ## Coda: What Tait's Knots Were For
 
@@ -239,21 +218,13 @@ It has now been waiting long enough.
 
 ---
 
-*A note on sources, revised August 2026.* An earlier version of this essay cited
-three papers from the same research programme, and two of those citations no
-longer stand. Paper 652 was described here as proving that the Madelung filling
-order is the unique ordering on Pic(ℂP³) = ℤ. **That paper has been withdrawn.**
-Pic(ℂP³) = ℤ is true and standard, but ordering ℤ is trivial — the content lies
-entirely in *which* function of (n, ℓ) one identifies with the bundle degree, and
-choosing n+ℓ because it reproduces Madelung is fitting, not derivation. The
-Madelung rule's group-theoretic explanation belongs to Barut (1971), Rumer and
-Fet (1971), and Kibler. Paper 657's torus-knot conjecture is degenerate for the
-reasons given in section six, and Paper 681 survives only in weakened form.
+*A note on sources.* This essay rests on Fock's 1935 result and the
+SO(4) → SO(3) branching rule, both standard and neither mine. An earlier version
+cited three papers from my own research programme in support of stronger claims;
+those claims did not survive checking, and the citations have been removed. The
+Madelung rule's group-theoretic explanation belongs to Barut (1971), to Rumer
+and Fet (1971), and to Kibler.
 
-What this essay now rests on is Fock's 1935 result and the SO(4) → SO(3)
-branching rule, both of which are standard, celebrated, and not mine. The
-contribution here is exposition and an honest negative result about knots.
-
-*Related reading: Bander & Itzykson's review of the hydrogen atom's hidden
+*Further reading: Bander & Itzykson's review of the hydrogen atom's hidden
 symmetry; Kleckner & Irvine,* Nature Physics **9**, 253 (2013), *on knotted
-vortices actually made in a laboratory.*
+vortices made in a laboratory.*
