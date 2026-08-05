@@ -114,6 +114,3 @@ The irreducibility of 4-body interactions is not a new discovery. It is a ninety
 
 *Key papers: 258, 357, 447, 455, 571, 572 (ISA chain complex and G₂ spider)*
 
----
-
-{% include isa-nav.html %}
