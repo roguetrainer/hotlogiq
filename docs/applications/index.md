@@ -23,8 +23,8 @@ These are not summaries of individual papers — they are the ideas that span fa
 | [4](galois-chemistry) | **Every molecule runs a G-orbit walk.** Spin state, valence, and catalytic barrier are computable in O(1) without DFT. | Chemistry | 488, 489, 490, 491, 492 |
 | [5](grassmannian-universality) | **The Grassmannian is the universal space for correlated systems.** One angle θ_G diagnoses chemistry, QEC, nuclear bonding, and financial contagion. | Universal | 563, 568, 570, 574 |
 | [6](ig-carnot-cycle) | **Nature runs information-geometric Carnot cycles.** Every fidelity machine operates a four-leg IG Carnot cycle; β\* is the Carnot-optimal point. | Biology / chemistry | 325, 510, 574 |
-| [7](stratification-principle) | **The H^k stratification is not an analogy.** The three-tier structure makes quantitative predictions across MCMC, chemistry, and quantum computing. | Universal | 420, 533, 557, 558 |
-| [8](cohomological-complexity) | **Quantum speedup has a cohomological address.** H⁰/H¹/H² classify which problems admit which speedups. | Quantum computing | 420, 421, 472, 473 |
+| [7](stratification-principle) | **The H^k stratification is not an analogy.** The three-tier structure makes quantitative predictions across MCMC, chemistry, and quantum computing. | Universal | 420 · *(533, 557, 558 withdrawn)* |
+| [8](cohomological-complexity) | **Quantum speedup has a cohomological address.** H⁰/H¹/H² classify which problems admit which speedups. | Quantum computing | 420, 472 · *(473 withdrawn; 421 no DOI)* |
 | 9 | **The same boundary that separates easy from hard quantum circuits also separates DFT from CASSCF.** Magic and molecular correlation are the same obstruction. | Chemistry / QC | 595, 596, 570, 563 |
 | [10](ai-ml) | **AI & Machine Learning.** β is the softmax temperature; transformers are Forge ISA programmes; 4-point networks, agentic consensus, and the HPC stale-data problem. | AI / ML | 400, 627, 628, 629 |
 

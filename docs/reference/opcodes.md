@@ -1331,7 +1331,7 @@ different hardware.
 **The H^k computational tower:**
 
 - **[The Forge and Meld ISAs](../theory/forge-meld.md)** — full treatment of β, the snap threshold β*, the Wick rotation β → it, vortons, and how the same opcodes run over tropical / Gibbs / complex arithmetic
-- **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰ classical / H¹ Clifford / H² magic; TWIST failure as phase boundary; β* snap threshold
+- **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰ classical / H¹ Clifford / H² magic *(the χ-based routing algorithm in 420 is unsound — χ cannot determine the Betti numbers; see [cohomological complexity](/docs/applications/cohomological-complexity.html))*; TWIST failure as phase boundary; β* snap threshold
 - **[FUSE at the octonion rung](../theory/non-associative-frontier.md)** — the Non-Associative Frontier page; division algebra ladder ℝ→ℂ→ℍ→𝕆
 - **[BKT Transition / TWIST Failure](glossary.md#bkt-transition--twist-failure)** — TWIST in depth; quantum dimension, $d_{1/2}(\beta)=0$ at $\beta=1/2$
 

@@ -47,7 +47,7 @@ Five pages that together cover the core of the framework — in reading order:
 ### Quantum computing
 
 1. **[Origami: An Open ISA for Quantum-Classical Systems](https://doi.org/10.5281/zenodo.21428853)** (Paper 631) — the manifesto. Why gate-and-circuit abstraction obscures where quantum advantage actually lives; Shor's algorithm as a case study.
-2. **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰ = classical, H¹ = stabiliser/Clifford, H² = universal QC. A graded alternative to the P=NP question.
+2. **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰ = classical, H¹ = stabiliser/Clifford, H² = universal QC. A graded alternative to the P=NP question. *(the χ-based routing algorithm in 420 is unsound — χ cannot determine the Betti numbers; see [cohomological complexity](/docs/applications/cohomological-complexity.html))*
 3. **[The Meld ISA](https://doi.org/10.5281/zenodo.20773563)** (Paper 454) — quantum branch of the framework. QFT as a TWIST 🌀 cascade; FUSE 💎 as the non-Abelian obstruction; why LWE is quantum-resistant.
 4. **[Eight Derivations of a Universal Instruction Set](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — eight independent routes all forced to the same five opcodes. Explains *why* this gate set is universal at a deeper level than Solovay-Kitaev.
 5. **[ISA Completeness: Nine Normal Forms](https://doi.org/10.5281/zenodo.21219699)** (Paper 469) — the three-qubit Clifford+T fragment reduces to nine normal forms; closes the classification the resource-theory papers depend on.

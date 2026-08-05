@@ -19,6 +19,20 @@ Is this a coincidence? An analogy? Over-selling? This page gives the honest answ
 
 ---
 
+
+> **CAVEAT on Paper 420's routing algorithm (added 2026-08-04).** 420 is live and
+> its framing — that hardness is *graded* rather than binary — is worth keeping.
+> But its stated "key practical contribution", computing the Euler characteristic
+> χ = |V| − |E| + |F| in O(n+m) and **inferring the Betti numbers** to route an
+> instance, does not work. χ = b₀ − b₁ + b₂ − … is one equation in several
+> unknowns. A circle has (b₀,b₁,b₂) = (1,1,0) and a torus (1,2,1); **both have
+> χ = 0**, but the first has H² = 0 (rung 1, polynomial) and the second H² ≠ 0
+> (rung 2, conjectured NP-hard). Same χ, opposite routing decision. χ cannot
+> determine the rung, so the pre-diagnostic as described is unsound. Treat the
+> ladder as a *classification scheme*, not as a polynomial-time oracle for
+> hardness.
+
+
 ## The claim
 
 **The H⁰/H¹/H² stratification is a universal organisational principle, not a

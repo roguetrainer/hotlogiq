@@ -19,6 +19,20 @@ The H^k ladder is a periodic table of quantum advantage.*
 
 ---
 
+
+> **CAVEAT on Paper 420's routing algorithm (added 2026-08-04).** 420 is live and
+> its framing — that hardness is *graded* rather than binary — is worth keeping.
+> But its stated "key practical contribution", computing the Euler characteristic
+> χ = |V| − |E| + |F| in O(n+m) and **inferring the Betti numbers** to route an
+> instance, does not work. χ = b₀ − b₁ + b₂ − … is one equation in several
+> unknowns. A circle has (b₀,b₁,b₂) = (1,1,0) and a torus (1,2,1); **both have
+> χ = 0**, but the first has H² = 0 (rung 1, polynomial) and the second H² ≠ 0
+> (rung 2, conjectured NP-hard). Same χ, opposite routing decision. χ cannot
+> determine the rung, so the pre-diagnostic as described is unsound. Treat the
+> ladder as a *classification scheme*, not as a polynomial-time oracle for
+> hardness.
+
+
 ## The claim
 
 **Every quantum speedup can be assigned a cohomological level H^k, and the
@@ -93,7 +107,7 @@ access; the 731-ISA is the resource theory of H² access.
 | Paper | What it shows |
 | --- | --- |
 | [Paper 420](https://doi.org/10.5281/zenodo.20773526) | H^k complexity ladder: β₂ jump at α*; routing algorithm; H⁰/H¹/H² as β regimes; snap threshold as phase boundary |
-| [Paper 421](https://doi.org/10.5281/zenodo.20773526) | H^k classification of quantum speedup: Shor = H¹; Grover = H¹ (weak); topological QC = H²; new algorithm directions |
+| Paper 421 *(no DOI on record — the link here previously duplicated 420's)* | H^k classification of quantum speedup: Shor = H¹; Grover = H¹ (weak); topological QC = H²; new algorithm directions |
 | [Paper 472](https://doi.org/10.5281/zenodo.21219704) | Shor lifting: Shor = Clifford (mana = 0) at the QFT step; D_N hidden shift: NAQFT fires TWIST, mana > 0; eigenphase spectrum as T-count replacement |
 | [Paper 473](https://doi.org/10.5281/zenodo.21219706) | Meld projections: Grover intermediate magic states are Clifford-simulable; Grover's algorithm as Origami ISA programme; eigenphase spectrum + asymptotic stabiliser complexity |
 

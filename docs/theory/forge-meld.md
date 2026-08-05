@@ -335,7 +335,7 @@ is no other place for β to live.
 - **[The Meld ISA](https://doi.org/10.5281/zenodo.20773563)** (Paper 454) — Wick rotation; Clifford = Meld without FUSE; Shor as Origami/Meld/Origami programme; T-gate as FUSE
 - **[The Origami ISA](https://doi.org/10.5281/zenodo.19916429)** (Paper 258) — the classical β → ∞ ISA; opcode definitions
 - **[Planck's Constant in Disguise](https://doi.org/10.5281/zenodo.20752384)** (Paper 443) — six equations from six fields are the same MGE at different β; the fastest entry point
-- **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰/H¹/H² as β regimes; TWIST failure as phase boundary; β* snap threshold
+- **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰/H¹/H² as β regimes *(the χ-based routing algorithm in 420 is unsound — χ cannot determine the Betti numbers; see [cohomological complexity](/docs/applications/cohomological-complexity.html))*; TWIST failure as phase boundary; β* snap threshold
 
 *See also:* [β: The Universal Temperature](/docs/theory/maslov-dequantization) — the Maslov dequantization idea and the two semirings, one level up from the ISA ·
 [BKT Transition / TWIST Failure](../reference/glossary.md#bkt-transition--twist-failure) ·
