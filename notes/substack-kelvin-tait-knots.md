@@ -161,21 +161,49 @@ recognised the hopfion immediately.
 
 It did not find its home in atoms.
 
-## What the Chemists Didn't Know They Were Doing
+## What the Chemists Were Actually Doing
 
-Here is where it is worth pausing to appreciate what was actually accomplished in the century between Kelvin-Tait's collapse and this result.
+An earlier version of this essay claimed rather more here, and it was wrong. It
+is worth saying exactly how, because the error is instructive.
 
-The chemists and physicists who built the modern periodic table — Bohr's shell model, Sommerfeld's fine structure, Slater's rules, Hartree-Fock, the aufbau principle — were doing something extraordinary. They were mapping the structure of a combinatorial object (quantum-number space, the lattice of (n, ℓ) pairs and their filling order) using the tools of real space (orbitals, wavefunctions in three dimensions, electron densities). They were working, in the sense of the framework that eventually clarified things, at the wrong level of abstraction. The patterns they were finding — shells, periods, the transition metal block, the lanthanide/actinide split — are patterns in the knot topology of the (n, ℓ) lattice. But they were reading them as patterns in three-dimensional space, and then wondering why the explanations kept needing patches.
+The claim was that the periodic table's structure — shells, periods, the
+transition-metal block, the lanthanide/actinide split — consists of *patterns in
+the knot topology* of the (n, ℓ) lattice. Three specific arguments were offered.
+All three fail, and the first fails on its own arithmetic.
 
-Consider the standard account of transition metal chemistry. The 3d orbitals fill after the 4s orbitals, because n+ℓ is 3 for 4s and 5 for 3d — wait, that's wrong. Let me restart. The 4s orbital (n=4, ℓ=0, so n+ℓ=4) fills before the 3d orbital (n=3, ℓ=2, so n+ℓ=5). The standard explanation for why chromium is [Ar] 3d⁵4s¹ rather than [Ar] 3d⁴4s² is "extra stability of the half-filled d subshell." Why? "Exchange energy." Why? It is, in the standard presentation, left as a numerical fact about the Hamiltonian.
+**"The 3d orbital is the trefoil, the first genuinely knotted orbital, which is
+why transition-metal chemistry is where things get interesting."** Under the map
+this essay used, T(ℓ+1, n−ℓ), the 3d orbital (n = 3, ℓ = 2) is **T(3, 1) — the
+unknot**. The trefoil is 4d, not 3d. The transition-metal block does not begin
+where knotting begins. The claim was not merely unsupported; it contradicted the
+map it was based on.
 
-In the torus-knot picture, the 3d orbital is T(3,2) — the trefoil, the first genuinely knotted orbital. The anomalous stability of the half-filled 3d shell is, topologically, the statement that you are at the first point in the periodic table where genuine knot topology enters. The transition metal block begins precisely where the torus curves start becoming non-trivially knotted. This is not an explanation of the specific energy values — those still come from Schrödinger — but it tells you *why this is where the interesting chemistry starts*. The richness of transition metal chemistry is the chemical signature of the first non-trivial knot.
+**"The 4f orbital is an unknot, which explains why lanthanides are chemically
+well-behaved."** 4f is indeed T(4, 1), an unknot. So are 1s, 2s, 2p and every
+other orbital with ℓ = 0 or ℓ = n−1 — including 2p, which gives us carbon.
+"Unknot, therefore inert" cannot be right when the unknots include the most
+chemically prolific orbital in the periodic table.
 
-The same pattern holds further up. The 4f orbital is T(4,1): an unknot. The 5f orbital is T(4,2), which has gcd(4,2)=2 — it decomposes into two linked loops, each a copy of T(2,1). This is not just any 2-component link: it belongs to the same family as the **Hopf link** — the simplest non-trivial output of the Hopf fibration itself, which is T(2,2) with linking number 1 — but is one step further along it: T(4,2) is the (2,4)-torus link, with linking number 2, not the Hopf link itself. Tait catalogued both. Hopf rediscovered the significance of the whole family in 1931 while working on the abstract mathematics of sphere maps, with no thought of chemistry. The 5f orbital carries, encoded in its torus structure, a more tightly-linked cousin of the object Hopf found. The 5f orbital has *hidden p-character*: its torus structure contains two interleaved p-type curves. This is why actinides are chemically different from lanthanides, despite occupying nominally analogous f-shells: the 4f orbital (unknot, no sub-structure) gives chemically inert, well-behaved lanthanides; the 5f orbital (linked, hidden p-character) gives uranium's covalent bonding, plutonium's five oxidation states, the whole baroque complexity of actinide chemistry.
+**"The 5f orbital is a link, which explains actinide complexity."** 5f is
+T(4, 2), a genuine two-component link — that part is arithmetic and it is
+correct. But 3p is T(2, 2), also a two-component link, and phosphorus is not
+notably baroque. The property does not track the chemistry.
 
-Mendeleev, Bohr, Slater — geniuses, all of them, mapping quantum-number topology by hand with real-space tools. They got the map essentially right. They just didn't know what they were mapping.
+The deeper problem is the one in section six: every torus-knot invariant is a
+function of (p, q), and if p and q are functions of (n, ℓ), then no knot
+invariant can say anything the quantum numbers do not already say. Any apparent
+explanatory success is the quantum numbers doing the work, wearing a topological
+costume.
 
----
+**What the chemists were actually doing** is less romantic and more impressive.
+Bohr, Sommerfeld, Slater, Hartree and Fock mapped the structure of
+quantum-number space using real-space tools, and they got it right. The order in
+which orbitals fill — the Madelung rule, n+ℓ increasing — was later given a
+proper group-theoretic explanation by Barut, by Rumer and Fet, and by Kibler,
+using the SO(4,2) spectrum-generating group. That explanation exists, it works,
+and it is not topological. Chromium's [Ar] 3d⁵4s¹ configuration really does come
+down to exchange energy, and calling that a patch rather than an explanation was
+unfair to it.
 
 ## The Honest Frontier
 
