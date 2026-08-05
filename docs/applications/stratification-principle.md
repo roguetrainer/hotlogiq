@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "The H^k stratification is not an analogy"
+title: "The H^k stratification: what it is and is not"
 parent: Applications
 nav_order: 7
 description: "Why the three-tier H⁰/H¹/H² structure appears across mathematics, physics, statistics, and science — what is exact, what is precise, and what is organisational."
@@ -8,7 +8,35 @@ tags: [stratification, hk, analogy, isomorphism, mcmc, evt, causal-inference, co
 portfolio: F
 ---
 
-# The H^k stratification is not an analogy
+> **STATUS (2026-08-04).** This page was titled *"The H^k stratification is not
+> an analogy"*. The title asserted more than the evidence supports and has been
+> changed; the body, which already distinguished Tier A/B/C precision and listed
+> what it does *not* claim, was more careful than its own headline.
+>
+> **Three of the four papers this page cited as support have been withdrawn** —
+> 533 (ISA survey), 557 (MCMC ladder) and 558 (EVT ladder). 420 survives but its
+> routing algorithm does not; see the caveat below. The Tier B evidence line
+> citing "Papers 420–421" should be read with that in mind, and 421 has no DOI on
+> record at all.
+>
+> **What direct testing found.** Four experiments this session asked whether a
+> shared categorical structure yields a shared *prediction*, and none did: the
+> Grassmannian path metric reproduced the energy gradient (ρ = 0.95), redox-ladder
+> curvature lost to plain d-electron count, Yutsis diagram topology failed to
+> predict the good spin-coupling tree (which is set by the exchange couplings),
+> and the Weyl coordinate turned out to be a monotone function of the occupation
+> number. A fifth test *confirmed* a transfer — spin-coupling multiplicities are
+> tree-independent, exactly as the Frobenius spider normal form requires — but
+> that fact is Wigner-era standard, so the framework predicted something the
+> target field established in the 1930s.
+>
+> **The honest reading**: the stratification is a real and useful *organising*
+> principle, and the semiring-polymorphic claim below is a genuine theorem. Shared
+> structure transfers *vocabulary and proof technique*; it does not, on the
+> evidence so far, transfer new predictions.
+
+
+# The H^k stratification: what it is and is not
 {: .no_toc }
 
 *The same three-tier structure — fixed points, local phase corrections, global
@@ -178,11 +206,17 @@ instance of the ISA."
 
 ## The legitimate version of the strong claim
 
-The opcodes page says: "They are not analogies. They are the same categorical
-morphisms, running on different physical hardware." That is precisely true for
-the semiring-polymorphic claim — the same programme computes different things over
-different semirings, and this is a theorem, not a metaphor (see
-[The ISA is semiring-polymorphic](../opcodes.md#the-isa-is-semiring-polymorphic)).
+The opcodes page **used to say**: "They are not analogies. They are the same
+categorical morphisms, running on different physical hardware." **That sentence
+was withdrawn on 2026-08-04** and should not be quoted as support.
+
+What survives of it is narrower and genuinely true: the **semiring-polymorphic**
+claim. The same programme really does compute different things over different
+semirings — shortest paths over (min,+), partition functions over (+,×),
+amplitudes over ℂ — and that is a theorem, not a metaphor (see
+[The ISA is semiring-polymorphic](../reference/opcodes.html#the-isa-is-semiring-polymorphic)).
+That is a statement about *one programme run over different arithmetics*, which
+is much stronger evidence than *two fields having a morphism with the same name*.
 
 The weaker but broader claim is: **the H^k stratification is a universal
 organisational principle, and the ISA is the first systematic attempt to give
