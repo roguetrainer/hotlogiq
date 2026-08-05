@@ -76,45 +76,90 @@ None of these three men knew they were handing a baton to each other.
 
 ---
 
-## Five: The Integers Come First
+## Five: What S³ Actually Delivers
 
-Before the knots, there is a simpler question, and it turns out to have a rigorous answer: why should n and ℓ — the labels Bohr and Sommerfeld attached to hydrogen's orbitals — be *integers* at all? The textbook answer is technical: boundary conditions on a differential equation force certain eigenvalues to be whole numbers. That answer is correct but unilluminating. It explains the arithmetic without explaining why the universe bothers with arithmetic at that particular joint.
+Here is the part that is solid, and it is not ours.
 
-A more recent line of this research program (Paper 681) argues for a different answer: n, ℓ, the magnetic number m, spin, and even electric charge are not eigenvalues at all. They are **winding numbers** — counts of how many times a map wraps around a topological space before closing up on itself. Winding numbers are always integers, for the same reason you can't wind a rope around a post three-and-a-half times and have it look any different from three-and-a-half-plus-something: the count is discrete because the *thing being counted* is discrete, not because a mathematical machine spat out a whole number as a side effect. Spin-1/2 turns out to be one of these — the two-sheetedness of SU(2) covering SO(3) — and even the Pauli exclusion principle becomes a statement about two winding configurations not being able to occupy the same point in the same topological space.
+In 1935 Vladimir Fock showed that hydrogen's momentum-space wavefunctions are
+hyperspherical harmonics on **S³**, the three-sphere. This is the origin of the
+n² degeneracy and of the hidden SO(4) symmetry. It is a celebrated result.
 
-If quantum numbers are winding numbers, Kelvin and Tait's instinct is vindicated at a level *deeper* than knots specifically: topology, not a force law, is what makes atomic structure discrete and stable in the first place. This is the general form of the intuition that a smoke ring gave Kelvin in 1867.
+And it explains something the textbook picture leaves as a coincidence. In ℝ³,
+the fact that 2s and 2p have the same energy is called an *accidental*
+degeneracy, and nothing accounts for it. On S³ it stops being accidental: the
+whole n = 2 shell is a **single SO(4) irreducible representation**, and ℓ and m
+are just labels for how that one object decomposes under rotations. The
+constraint ℓ < n, which the textbook derives from a differential equation, is on
+S³ the **SO(4) → SO(3) branching rule**: the irrep of dimension n² decomposes
+into exactly ℓ = 0, 1, …, n−1, giving n² = Σ(2ℓ+1). Pure representation theory.
 
-## Six: The Ordering Is Forced
+So Kelvin's instinct about the *arena* was better than anyone realised. Atoms
+really do have a natural home on a three-sphere. He was sixty-eight years early
+and looking at the wrong inhabitants.
 
-The next question is why electrons fill those integer-labelled orbitals in the particular order Madelung wrote down — n+ℓ increasing — rather than some other order. Here the research program has an actual theorem, not a conjecture (Paper 652).
+## Six: The Knots Are Not the Inhabitants
 
-Hydrogen's orbitals live as sections of line bundles over CP³, complex projective twistor space — the natural home for the SU(2,2) symmetry that governs the hydrogen atom. CP³ is simply connected, and for any simply connected complex manifold, the group classifying its line bundles (the Picard group) is exactly ℤ, the integers, with exactly one way to put them in order. Once orbitals are graded by n+ℓ — which the twistor construction does automatically — there is no freedom left. The Madelung order isn't the order that happens to minimize energy in this universe; it's the *only* order ℤ can be put in. Nature didn't choose it. There was nothing else it could have been.
+It is tempting to go further: if orbitals live on S³, and S³ is full of torus
+knots, perhaps each orbital *is* a knot. We tried this, and it does not work.
 
-This is the rigorous explanation for Madelung's rule. It does not involve knots.
+The obvious map sends the orbital (n, ℓ) to the torus knot T(ℓ+1, n−ℓ). Under
+it, **two entire families collapse to the unknot** — every ℓ = 0 orbital and
+every ℓ = n−1 orbital — and several orbitals become multi-component links rather
+than knots at all. Through n = 5, exactly two orbitals receive a genuine knot.
 
-## Seven: What the Knots Add
+We tested seven candidate maps. The best of them assigns non-trivial knots to 14
+of 21 orbitals, which looks like progress until you notice the real obstruction:
 
-So where do Tait's tables actually re-enter?
+> For a torus knot T(p, q), **every** standard invariant — genus, crossing
+> number, Alexander and Jones polynomials, signature, braid index — is a
+> function of (p, q) alone. If p and q are themselves functions of n and ℓ, then
+> every knot invariant is a function of n and ℓ. **The knot cannot tell you
+> anything the quantum numbers do not already say.**
 
-The Picard-group argument fixes the *order* orbitals fill in. It says nothing about the finer shape of an individual orbital — and this is where the Hopf fibration, and Tait's knots, come back in. Fock's 1935 result put hydrogen's orbitals on S³, the three-sphere, inside that same CP³. S³, via the Hopf fibration, decomposes into circles. A circle that winds p times around one direction of a torus in S³ and q times around the other traces out a torus knot — exactly the knots that Tait catalogued.
+There is a second, sharper problem. n and ℓ are asymmetric — ℓ is bounded by n,
+n is unbounded — but T(p, q) and T(q, p) are the same unoriented knot. The
+asymmetry has no counterpart in the knot type, so ℓ < n cannot be encoded there
+by any map at all.
 
-The assignment, proposed in Paper 657, is:
+A knot assignment can still be a way of *seeing* orbital structure. It cannot be
+a source of predictions, and we should not have implied otherwise.
 
-**orbital (n, ℓ) ↔ torus knot T(ℓ+1, n−ℓ)**
+## Seven: What the Knots Did Get Right
 
-So the 1s orbital (n=1, ℓ=0) is the unknot T(1,1) — a plain loop, no crossings. The 2p orbital (n=2, ℓ=1) is also an unknot. The first genuine knot appears at Period 4: the 4p orbital is T(2,3) and the 4d orbital is T(3,2) — and since T(p,q) = T(q,p) as knots, these are the same object: the trefoil. The simplest non-trivial knot. The three-leaf clover. The knot that Tait would have recognised immediately.
+So were Kelvin and Tait simply wrong? No — and the honest accounting is more
+interesting than either verdict.
 
-Here is a striking consistency check, not a coincidence: the torus-knot index 2p+q−2, computed for each assignment, comes out to n+ℓ. Substitute p=ℓ+1 and q=n−ℓ: 2(ℓ+1)+(n−ℓ)−2 = n+ℓ, exactly. So whichever knot an orbital gets, its place in Tait's tables lines up with its place in Madelung's already-proven order. The knot conjecture doesn't compete with the Picard-group theorem — it sits inside it, adding a further layer of structure (which specific torus curve, not just which integer) to an ordering that was already settled.
+From topology alone, a closed curve on a torus in S³ gives you **two integers**,
+because H₁(T²) = ℤ². Two quantum numbers, falling out of the topology, before
+anyone knew quantum numbers existed. And it gives you **discreteness** — knot
+types do not vary continuously, so whatever they label comes in distinct
+species. In 1867, with no other candidate explanation for why matter comes in
+stable discrete kinds, that was a serious idea.
 
-**This part is conjecture, not theorem — worth being exact about the difference.** Unlike the Picard-group argument, nobody has yet derived, starting from the Schrödinger equation, that orbital (n, ℓ) is *canonically* the torus knot T(ℓ+1, n−ℓ) rather than some other curve with the same winding numbers. What exists is: the arithmetic identity above (proved, trivial), and an exact match on all 45 distinct (n, ℓ) pairs appearing in the known periodic table (strong evidence, not proof). If the missing derivation is ever completed, Tait's tables become literally the finer-grained version of the periodic table Madelung's rule already organizes. Until then, it's the best-supported open conjecture in this whole story, not a settled fact.
+What knots do not give you is everything else:
 
-Here is the striking thing about Tait's labour. He catalogued every knot up to seven crossings — a heroic enumeration that took nine years. But all of the chemistry in the first five periods of the periodic table, everything from hydrogen to xenon, uses exactly two non-trivial knots: the trefoil (3 crossings, Period 4) and the cinquefoil T(2,5) (5 crossings, Period 6p). Both appear on page one of any knot table. Tait would have reached them by the end of his first afternoon. The exotic knots in his later tables — eight crossings, ten crossings, the objects that cost him years — appear only in Periods 6 and 7, among the superheavy elements that barely exist outside a particle accelerator. The knots Tait never reached are the orbitals of elements that barely exist. All of organic chemistry, all of biochemistry, all of the periodic table that a working chemist encounters daily: two knots.
+| | knots on S³ | harmonics on S³ |
+|---|---|---|
+| discreteness | **yes** | yes |
+| two integers | **yes** | yes |
+| the degeneracy count n² | no | **yes** |
+| the constraint ℓ < n | no | **yes** |
+| energy ordering | no | **yes** |
+| selection rules | no | **yes** |
 
-> **Didn't Tait assign one knot per element?**
->
-> Yes — and this is where the vindication is partial. Tait's programme had a single knot *being* each atom: trefoil = hydrogen, some other knot = carbon. What we have is different: one torus knot per *orbital* (n, ℓ), not per element. Carbon occupies three torus knots simultaneously — T(1,1) for 1s, T(1,2) for 2s, T(2,1) for 2p. The element is a *filling pattern* over the knot table, not a single row in it. The deeper claim Tait was reaching for — that an element's chemical identity is encoded in a single knot — remains open. That is what the bonding theory work is working toward.
+**Kelvin got the arena right, sixty-eight years early. Fock found the
+inhabitants. Knots were a reasonable guess about what lives on a three-sphere;
+harmonics were the right answer.**
 
----
+And the vortex instinct itself — that topology can confer stability with no
+dynamical mechanism — was not wrong either. It simply found its home elsewhere:
+in quantised vortex lines in superfluid helium, in the knotted vortex tubes
+Kleckner and Irvine made and photographed in 2013, in magnetic helicity in
+plasmas, and in the Faddeev–Skyrme hopfion, a genuinely knotted field
+configuration classified by an invariant of maps S³ → S². Kelvin would have
+recognised the hopfion immediately.
+
+It did not find its home in atoms.
 
 ## What the Chemists Didn't Know They Were Doing
 
@@ -134,13 +179,23 @@ Mendeleev, Bohr, Slater — geniuses, all of them, mapping quantum-number topolo
 
 ## The Honest Frontier
 
-This is not a complete story. The orbital-knot assignment T(ℓ+1, n−ℓ) is a conjecture, not a theorem. The algebraic fact that 2p+q−2 = n+ℓ is trivial arithmetic — that part is proved. The 45/45 empirical match is strong evidence. The Fock-sphere route provides a theoretical mechanism: S³ in momentum space decomposes via Hopf fibration into torus curves, and the torus curve carrying winding numbers (ℓ+1, n−ℓ) is the natural object associated with orbital (n, ℓ).
+The open question is not the one this essay originally posed.
 
-But a complete proof — starting from the Schrödinger equation and ending with the statement that orbital (n, ℓ) is canonically associated with T(ℓ+1, n−ℓ) — has not been written down. The Fock transformation, the Hopf fibration, the torus curve: each step in the chain is understood. The chain itself, written as a rigorous derivation, is open.
+An earlier version of this piece invited readers to prove that orbital (n, ℓ) is
+canonically the torus knot T(ℓ+1, n−ℓ). That invitation is withdrawn: the map is
+degenerate, and even a better map cannot help, because torus-knot invariants are
+functions of (p, q) and therefore of (n, ℓ). There is no theorem there to prove.
 
-This means the story is not over. The conjecture is there, falsifiable, precise, waiting. If you can prove it, you complete what Kelvin and Tait started in that Edinburgh lecture room.
-
----
+What remains open is narrower and, I think, more interesting. Fock's S³ picture
+is standard physics and essentially unknown to chemists — a quantum chemistry
+course covers the ℝ³ solution and mentions SO(4) as a remark about the
+Runge–Lenz vector, if at all. The twistor description is less known still. So
+the open work is not a new theorem but a translation: what does a chemist gain
+from knowing that the 2s/2p degeneracy is a single SO(4) irrep rather than an
+accident? Possibly nothing. Possibly a better way to choose which orbitals a
+correlated calculation must treat exactly, which is a real and expensive
+problem. That is a question about the value of an existing method, and it is
+worth asking honestly rather than dressing up as a discovery.
 
 ## Coda: What Tait's Knots Were For
 
@@ -156,36 +211,21 @@ It has now been waiting long enough.
 
 ---
 
-*This article draws on three papers in the same research program, in the order they actually explain things: Paper 681, [Quantum Numbers are Winding Numbers](https://doi.org/10.5281/zenodo.21534391) — why n, ℓ, spin, and charge are topological winding invariants rather than boundary-condition eigenvalues; Paper 652, [Twistor Chemistry I: The Madelung Rule as Pic(CP³)](https://doi.org/10.5281/zenodo.21479618) — the proved theorem that the Madelung filling order is the unique ordering on Pic(CP³) = ℤ; and Paper 657, [Knotted Orbitals: The Hopf Vindication of Kelvin-Tait](https://doi.org/10.5281/zenodo.21480634) — the torus-knot assignment itself, Conjecture 1 of that paper, with 45/45 empirical verification and an open derivation.*
+*A note on sources, revised August 2026.* An earlier version of this essay cited
+three papers from the same research programme, and two of those citations no
+longer stand. Paper 652 was described here as proving that the Madelung filling
+order is the unique ordering on Pic(ℂP³) = ℤ. **That paper has been withdrawn.**
+Pic(ℂP³) = ℤ is true and standard, but ordering ℤ is trivial — the content lies
+entirely in *which* function of (n, ℓ) one identifies with the bundle degree, and
+choosing n+ℓ because it reproduces Madelung is fitting, not derivation. The
+Madelung rule's group-theoretic explanation belongs to Barut (1971), Rumer and
+Fet (1971), and Kibler. Paper 657's torus-knot conjecture is degenerate for the
+reasons given in section six, and Paper 681 survives only in weakened form.
 
-*Related: [Shell Symmetry-Breaking and the Periodic Table](https://doi.org/10.5281/zenodo.21480129) (#650) — the periodic table as a shadow of an SO(4,2) lattice.*
+What this essay now rests on is Fock's 1935 result and the SO(4) → SO(3)
+branching rule, both of which are standard, celebrated, and not mine. The
+contribution here is exposition and an honest negative result about knots.
 
----
-
-## STATUS 2026-08-04 — DO NOT PUBLISH AS WRITTEN
-
-This draft rests on claims withdrawn during the August 2026 corpus audit:
-
-- **§6 "The Ordering Is Forced"** presents Paper 652's Madelung result as "an
-  actual theorem, not a conjecture". **652 has been withdrawn.** Pic(CP³) = ℤ is
-  true and standard, but ordering ℤ is trivial — the content lies entirely in
-  *which function of (n,ℓ)* is identified with the bundle degree, and choosing
-  n+ℓ because it reproduces Madelung is fitting, not derivation. The Madelung
-  order is Barut (1971), Rumer–Fet (1971) and Kibler; this draft claims it.
-- **§5 "The Integers Come First"** leans on Paper 681. The winding-number
-  framing survives only in weakened form; the paper has been retitled.
-- **§7 "What the Knots Add"** — the orbital→torus-knot map is **degenerate**.
-  Two whole families collapse to the unknot (ℓ=0 and ℓ=n−1), several orbitals
-  are multi-component links rather than knots, and every torus-knot invariant is
-  a function of (p,q) hence of (n,ℓ). The knot cannot outperform the quantum
-  numbers it was built from. See `CHECK_orbital_topology_on_S3.md`.
-
-**What survives, and it is a better ending than the current one:** Fock (1935)
-put hydrogen on S³, and that arena genuinely does explain the "accidental" 2s/2p
-degeneracy as a single SO(4) irrep — but the inhabitants are *harmonics*, not
-knots. Kelvin had the right instinct (topology can confer stability without a
-dynamical mechanism) and it found its home in superfluid vortices, plasma
-helicity and Faddeev–Skyrme hopfions — not in atoms. See
-`CHECK_are_orbitals_vortices.md`.
-
-Rewrite around that before publishing.
+*Related reading: Bander & Itzykson's review of the hydrogen atom's hidden
+symmetry; Kleckner & Irvine,* Nature Physics **9**, 253 (2013), *on knotted
+vortices actually made in a laboratory.*
