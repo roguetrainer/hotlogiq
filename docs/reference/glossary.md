@@ -37,7 +37,7 @@ The four-level resource hierarchy:
 | 2 | **Associamancy** | $\nu_2 = 0$ (complex irrep) | 731 ISA (SPIN opcode) |
 
 TV is the total variation of the discrete Wigner function — the correct discriminant
-between dark and genuine magic ([Paper 470](papers/10.5281-zenodo.21219699/)).
+between dark and genuine magic (Paper 470 *(withdrawn 2026-08)*).
 Associamancy (Level 2) sits strictly above both sub-tiers: $S_\mathrm{Schur}$ is
 independent of TV and Wigner negativity. A state can have genuine magic (TV $< 1$)
 and zero Schur entropy; and a state can have $S_\mathrm{Schur} = \log 2$ at either
@@ -67,7 +67,7 @@ For basis octonions $e_i, e_j, e_k$: $\mathcal{A} = 0$ when $\{i,j,k\}$ is a Fan
 
 The MGE routing operator undergoes a spontaneous **phase transition** from exploratory (uniform) weighting to crystallised (winner-take-all) weighting as the inverse temperature $\beta$ rises. Unlike simulated annealing, no schedule is required: the $G_2$ geometry self-organises — geometric frustration spikes $E_k$ during chaotic exploration, causing Boltzmann freeze-out; at convergence the frustration dissolves and routing relaxes back to uniform. This is parameter-free annealing with topological guarantees.
 
-*Demonstrated:* [Paper 218 (NAIG Routing)](papers/10.5281-zenodo.20077197/)
+*Demonstrated:* Paper 218 (NAIG Routing) *(withdrawn 2026-08)*
 
 ---
 
@@ -140,7 +140,7 @@ This universality is not coincidental: all of these systems process information 
 
 The **Baker-Campbell-Hausdorff (BCH) obstruction** arises when attempting to aggregate updates directly on a non-commutative manifold such as $G_2$: $\exp(X_i + X_j) \neq \exp(X_i)\exp(X_j)$. The ASA resolves this via Dual-Space Routing — evaluation in the flat tangent space $\mathfrak{g}_2$ (Control Plane) separated from Euclidean execution (Data Plane).
 
-*Addressed:* [Paper 218 (NAIG Routing)](papers/10.5281-zenodo.20077197/)
+*Addressed:* Paper 218 (NAIG Routing) *(withdrawn 2026-08)*
 
 ---
 
@@ -165,7 +165,7 @@ The Fano plane appears across the ASA in three contexts:
 - **Quantum computing:** the 3-qubit Pauli group modulo phases $\cong \mathrm{PG}(2,2)$; orbit decomposition $\mathrm{PG}(5,2)\setminus\mathrm{PG}(2,2) = \bigsqcup_{L=0}^6 \mathcal{O}_L$ gives the magic label
 - **Hardware:** the SevenQ register has 7 qubits = 7 Fano points; the 731 ISA opcodes are Pachner moves on $\mathrm{PG}(2,2)$
 
-*Central to:* [Paper 363 (Fano Geometry for QEC)](papers/10.5281-zenodo.20541594/), [Paper 386 (In Praise of Tetrahedra)](papers/10.5281-zenodo.20581483/), [Paper 408 (Fano Plane Primer)](papers/10.5281-zenodo.20667175/)
+*Central to:* [Paper 363 (Fano Geometry for QEC)](papers/10.5281-zenodo.20541594/), Paper 386 (In Praise of Tetrahedra) *(withdrawn 2026-08)*, [Paper 408 (Fano Plane Primer)](papers/10.5281-zenodo.20667175/)
 
 ---
 
@@ -260,7 +260,7 @@ Laplacian acts on the whole manifold simultaneously).
 
 The **Langlands Program** is a vast network connecting number theory, representation theory, and geometry via a deep reciprocity between automorphic forms and Galois representations. The natural setting is the adele ring $\mathbb{A}$; the $G_2$ case of geometric Langlands is directly relevant to the ASA. Paper 240 identifies the Bruhat-Tits building of $G_2$ as a candidate for a proof of the Riemann Hypothesis via automorphic methods.
 
-*Relevant to:* [Paper 202 (TRS)](papers/10.5281-zenodo.19858020/), [Paper 240 (J³(𝕆))](papers/10.5281-zenodo.19824027/)
+*Relevant to:* Paper 202 (TRS) *(withdrawn 2026-08)*, [Paper 240 (J³(𝕆))](papers/10.5281-zenodo.19824027/)
 
 ---
 
@@ -297,7 +297,7 @@ At low $\beta$ (BOIL): smooth Gibbs distribution, continuous exploration. At $\b
 
 **NAIG Routing** applies the Fano-Fisher metric and MGE to distributed gradient routing, evaluating each gradient by its associator energy $E_k = \widetilde{\Delta c}_k^\top \Psi\, \widetilde{\Delta c}_k$ in $\mathfrak{g}_2$. Fano-compatible gradients (low $E_k$) are promoted regardless of staleness (**Topological Rescue**); non-Fano gradients are thermodynamically suppressed.
 
-*Defined:* [Paper 218 (NAIG Routing)](papers/10.5281-zenodo.20077197/)
+*Defined:* Paper 218 (NAIG Routing) *(withdrawn 2026-08)*
 
 ---
 
@@ -305,10 +305,10 @@ At low $\beta$ (BOIL): smooth Gibbs distribution, continuous exploration. At $\b
 
 The **Origami ISA** is the open instruction set for topological quantum-classical systems. Its five opcodes — PROJECT, RESOLVE, TWIST, FUSE, FLIP — are the generating morphisms of a ribbon Frobenius monoidal category and double as Pachner moves on triangulated simplicial complexes.
 
-The same five opcodes compile nuclear spectroscopy, quantum error correction, GPU matrix multiplication, financial XVA, topological phases, and the Langlands programme into one language. Earlier papers use a twelve-opcode vocabulary (SPLIT, SPLAT, FLIP, FLOP, TWIST, LABEL, BIND, ORBIT, …); the current names consolidate these: RESOLVE (formerly ORBIT/SPLIT), PROJECT (formerly LABEL/SPLAT), FUSE (formerly BIND). See the [dedicated opcodes page](../reference/opcodes.md) for the full legacy mapping, string diagrams, Pachner moves, and cross-domain tables.
+The same five opcodes provide a common *vocabulary* across nuclear spectroscopy, quantum error correction, GPU matrix multiplication, financial XVA, topological phases and the Langlands programme — because each of these is modelled in a monoidal category, which is what monoidal categories are for. Note this transfers **structure and proof technique, not predictions**: direct tests found a shared categorical name does not yield a shared prediction (see [the opcode reference](/docs/reference/opcodes.html)).
 
 *Defined:* [Paper 258 (Origami ISA)](papers/10.5281-zenodo.19916428/), [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474913/), [Paper 370 (Universal Computer)](papers/10.5281-zenodo.20543453/)  
-*Full opcode reference:* [The ISA Opcodes](../reference/opcodes.md)
+*Full opcode reference:* [The ISA Opcodes](/docs/reference/opcodes.html)
 
 ---
 
@@ -318,7 +318,7 @@ The same five opcodes compile nuclear spectroscopy, quantum error correction, GP
 
 In the Origami ISA, the five opcodes are the five Pachner moves in dimensions 2 and 3. The invariance of quantum gravity amplitudes under Pachner moves is the Biedenharn-Elliott identity — the Pentagon identity $d^2=0$.
 
-*Central to:* [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474913/), [Paper 386 (In Praise of Tetrahedra)](papers/10.5281-zenodo.20581483/), [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680633/)
+*Central to:* [Paper 349 (Origami Calculus)](papers/10.5281-zenodo.20474913/), Paper 386 (In Praise of Tetrahedra) *(withdrawn 2026-08)*, [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680633/)
 
 ---
 
@@ -326,7 +326,16 @@ In the Origami ISA, the five opcodes are the five Pachner moves in dimensions 2 
 
 The **Pentagon identity** (also: Biedenharn-Elliott identity, MacLane coherence condition) is:
 
-$$\mathrm{SPLAT}\circ\mathrm{SPLIT} = 0 \quad (d^2 = 0)$$
+$$\partial \circ \partial = 0 \quad (d^2 = 0)$$
+
+> **CORRECTION (2026-08-04).** This line previously read
+> $\mathrm{SPLAT}\circ\mathrm{SPLIT} = 0$. That is wrong on two counts. SPLAT and
+> SPLIT are the former names of **PROJECT** and **RESOLVE**, and their composite
+> is **not zero** — the Frobenius ("spider") identity gives
+> $\mathrm{PROJECT}\circ\mathrm{RESOLVE} = \mathrm{id}$, verified directly, and
+> that is what [the opcode reference](/docs/reference/opcodes.html) states. The
+> equation $d^2 = 0$ is a separate statement about a boundary/differential map,
+> not about $\mu\circ\Delta$. The two were conflated.
 
 It is the single unifying equation of the Origami ISA and appears as:
 - **Angular momentum:** the Biedenhahn-Elliott identity for $6j$ symbols
@@ -342,11 +351,11 @@ It is the single unifying equation of the Origami ISA and appears as:
 
 ## Ponzano-Regge Amplitude
 
-The **Ponzano-Regge amplitude** for a tetrahedron with edge spins $j_1,\ldots,j_6$ is the $6j$ symbol evaluated at those spins — the SPLAT opcode of the Origami ISA. The Ponzano-Regge model (1968) evaluates quantum gravity path integrals as products of $6j$ symbols over the triangulation of a 3-manifold. Invariance under Pachner moves (the Pentagon identity) guarantees topological invariance.
+The **Ponzano-Regge amplitude** for a tetrahedron with edge spins $j_1,\ldots,j_6$ is the $6j$ symbol evaluated at those spins — the RESOLVE/PROJECTAT opcode of the Origami ISA. The Ponzano-Regge model (1968) evaluates quantum gravity path integrals as products of $6j$ symbols over the triangulation of a 3-manifold. Invariance under Pachner moves (the Pentagon identity) guarantees topological invariance.
 
 The same $6j$ symbol appears in nuclear spectroscopy (Racah coefficients) and representation theory (Clebsch-Gordan recoupling). [Paper 396](papers/10.5281-zenodo.20635478/) identifies the structurally analogous $H^1$ obstruction in finance — convexity, basis, and CDO correlation risk — but the financial gauge group $(\mathbb{R}_{>0},\times)$ is abelian, so this is the abelian/generic instance of the same Čech-cohomology pattern, not a literal $6j$ symbol.
 
-*Central to:* [Paper 386 (In Praise of Tetrahedra)](papers/10.5281-zenodo.20581483/), [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680633/)
+*Central to:* Paper 386 (In Praise of Tetrahedra) *(withdrawn 2026-08)*, [Paper 410 (Spin Foams)](papers/10.5281-zenodo.20680633/)
 
 ---
 
@@ -414,7 +423,7 @@ Classical LQG spin foams use $\mathrm{SU}(2)$ or $\mathrm{SL}(2,\mathbb{C})$ —
 The **State Hidden Subgroup Problem** (Hinsche, Eisert & Carrasco 2026) asks: given copies of a quantum state $\ket\psi$ invariant under an unknown subgroup $H \leq G$, identify $H$ via quantum measurements.
 
 In the Origami ISA:
-- **Abelian StateHSP:** the character POVM is the SPLAT opcode; the hidden subgroup is $H^0$ of the symmetry sheaf; the algorithm is the SPLIT$\to$SPLAT pipeline ([Paper 404](papers/10.5281-zenodo.20667166/))
+- **Abelian StateHSP:** the character POVM is the PROJECT opcode; the hidden subgroup is $H^0$ of the symmetry sheaf; the algorithm is the RESOLVE$\to$PROJECTAT pipeline ([Paper 404](papers/10.5281-zenodo.20667166/))
 - **Non-abelian StateHSP for $G = \mathrm{PSL}(2,7)$:** requires the SPIN opcode of the 731 ISA; no associative hardware can solve it exactly ([Paper 405](papers/10.5281-zenodo.20667169/))
 
 *Defined:* [Paper 404 (StateHSP: SPLAT as Fourier Sampling)](papers/10.5281-zenodo.20667166/), [Paper 405 (Non-Abelian StateHSP)](papers/10.5281-zenodo.20667169/)
@@ -447,7 +456,7 @@ This generating relationship (proved in [Paper 363](papers/10.5281-zenodo.205415
 
 **Topological Rescue** is the phenomenon in which NAIG assigns high routing weight to a highly stale gradient because its drift is Fano-compatible ($E_k = 0$), overriding any temporal penalty.
 
-*Demonstrated:* [Paper 218 (NAIG Routing)](papers/10.5281-zenodo.20077197/)
+*Demonstrated:* Paper 218 (NAIG Routing) *(withdrawn 2026-08)*
 
 ---
 
@@ -469,7 +478,7 @@ TRS is one layer of the ASA. The full hierarchy is:
 | 4 | **H^k ladder** | H⁰/H¹/H² complexity and cohomology classification of what the ISAs compute |
 | 5 | **ASA** | The full research programme: all of the above plus all applications |
 
-*Defined:* [Paper 202 (TRS)](papers/10.5281-zenodo.19858020/) · *See also:* [→ MGE](#maslov-gibbs-einsum-mge), [→ Origami ISA](#origami-isa-origami-instruction-set-architecture)
+*Defined:* Paper 202 (TRS) *(withdrawn 2026-08)* · *See also:* [→ MGE](#maslov-gibbs-einsum-mge), [→ Origami ISA](#origami-isa-origami-instruction-set-architecture)
 
 ---
 
@@ -537,7 +546,7 @@ In G-Walk chemistry, the state of a metal complex is an orbit occupancy vector $
 
 *See also:* [→ Orbit Computing](#orbit-computing) for the general paradigm; [→ Tropical Limit / Crystallisation](#tropical-limit--crystallisation) for the connection to tropical algebraic geometry.
 
-*Defined:* [Paper 488 (G-Walk Chemistry)](papers/10.5281-zenodo.21224106/), [Paper 491 (Tropical DFT)](papers/10.5281-zenodo.21224112/), [Paper 487 (Valence as Orbit Occupancy)](papers/10.5281-zenodo.21219721/)
+*Defined:* [Paper 488 (G-Walk Chemistry)](papers/10.5281-zenodo.21224106/), Paper 491 (Tropical DFT) *(withdrawn 2026-08)*, Paper 487 (Valence as Orbit Occupancy) *(withdrawn 2026-08)*
 
 ---
 
@@ -566,7 +575,7 @@ Biology discovered orbit computing 3.8 billion years ago. Every enzyme is a fixe
 
 *See also:* [→ G-Walk](#g-walk) for the molecular chemistry specialisation; [→ Origami ISA](#origami-isa-origami-instruction-set-architecture) for the opcode definitions.
 
-*Defined:* [Paper 489 (Orbit Computing)](papers/10.5281-zenodo.21224108/), [Paper 487 (Valence as Orbit Occupancy)](papers/10.5281-zenodo.21219721/)
+*Defined:* Paper 489 (Orbit Computing) *(withdrawn 2026-08)*, Paper 487 (Valence as Orbit Occupancy) *(withdrawn 2026-08)*
 
 ---
 
