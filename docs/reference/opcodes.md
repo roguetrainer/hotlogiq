@@ -840,13 +840,10 @@ The table above writes the Level 1 object as "one atom / orbital / site" — tre
 "atom" and "orbital" as interchangeable. They are not, except in the single-electron
 case (hydrogen-like ions), and the difference exposes a genuine gap in the tower.
 
-Under the torus-knot correspondence (Papers 657, 709, 718, 719), the true Level-0
-object is a **single orbital** $(n,\ell)$: one torus knot $T(n,\ell)$, one Frobenius
-algebra, acted on by RESOLVE/PROJECT/FLIP/TWIST exactly as the Level 1 table
-describes. A multi-electron **atom is already composite** — a *bouquet* of
-orbital-knots on one nucleus (see the Zn/Cu Solomon-link discussion:
-[orbital-knots.md](orbital-knots.md)) — assembled from several Level-0 objects, not
-a single one. The Level 1 table's "atom" label silently assumes this composite
+The true Level-0 object is a **single orbital** $(n,\ell)$: one Frobenius algebra,
+acted on by RESOLVE/PROJECT/FLIP/TWIST exactly as the Level 1 table describes. A
+multi-electron **atom is already composite** — assembled from several Level-0
+objects, not a single one. The Level 1 table's "atom" label silently assumes this composite
 already exists; it does not name the assembly.
 
 **Why this is not the same problem Level 2 solved.** JOIN/CLEAVE/LINK (Level 2)
@@ -906,8 +903,7 @@ result is a **type correction plus a functorial embedding**, not a new opcode:
 
 This is category-theory / representation-theory research, not experimental — no
 `x`-series numerical validation is implied. Racah's $G_2$ use for $f$-electron
-term structure is a *related but distinct* phenomenon (see
-[orbital-knots.md](orbital-knots.md)): it governs electron-electron *repulsion
+term structure is a *related but distinct* phenomenon: it governs electron-electron *repulsion
 within* a fixed configuration, not the *assembly* of the configuration.
 
 **Open problem (Gemini, 2026-07-27):** how does JOIN (connected sum of orbital
