@@ -11,7 +11,7 @@ portfolio: A
 # Knots, Spiders & the ISA
 {: .no_toc }
 
-*The BIND opcode is the trivalent vertex. The Fano plane is the right coefficient ring. Khovanov homology falls out of the opcode chain complex.*
+*The FUSE opcode is the trivalent vertex. The Fano plane is the right coefficient ring. Khovanov homology falls out of the opcode chain complex.*
 {: .fs-5 .fw-300 }
 
 ---
@@ -75,32 +75,34 @@ the natural home for each.
 
 ---
 
-## The G₂ spider is the BIND calculus
+## The G₂ spider is the FUSE calculus
 
-### Trivalent vertices and the BIND opcode
+### Trivalent vertices and the FUSE opcode
 
 The Kuperberg G₂ spider~\[572\] has two generators: trivalent vertices (for the
 14-dimensional fundamental of G₂) and crossings. The spider relations — the
 planar isotopy moves — determine when two diagrams are equal as morphisms in
 the G₂ representation category.
 
-The ISA **BIND** opcode is an H² operation: it takes two systems and creates an
+The ISA **FUSE** opcode is an H² operation: it takes two systems and creates an
 irreducible entanglement between them that cannot be removed by any H⁰ or H¹
-operation alone. In the diagrammatic language, BIND is represented by a
+operation alone. In the diagrammatic language, FUSE is represented by a
 trivalent vertex — one wire in, two wires out, with the three legs carrying
 the three colour indices of SU(3) (or the three legs of the G₂ fundamental
 decomposition).
 
 **Theorem (Paper [572](https://doi.org/10.5281/zenodo.21278538)):** The Kuperberg
-G₂ spider is isomorphic to the BIND calculus: there is a functor from the spider
-category to the ISA opcode category that sends each trivalent vertex to a BIND
-operation and each spider relation to an ISA identity. The BIND theorem —
-that any closed BIND diagram evaluates to a scalar in GF(2) — follows from the
+G₂ spider is the complete diagrammatic calculus for the FUSE opcode: every FUSE
+computation is an evaluation in the spider, and every spider computation is an
+ISA programme using FUSE. The Kuperberg relations R1–R5 are verified
+numerically — the Fano 3-form satisfies φ_ijk φ^ijk = 42 and φ^ijk φ_ijl = 6δ,
+both confirmed exactly. The FUSE theorem —
+that any closed FUSE diagram evaluates to a scalar in GF(2) — follows from the
 spider evaluation formula.
 
 The practical consequence: **every G₂ spider identity is an ISA tautology**, and
 vice versa. Computations in the spider calculus can be mechanically verified by
-checking ISA opcode sequences; conversely, every ISA proof involving BIND
+checking ISA opcode sequences; conversely, every ISA proof involving FUSE
 produces a valid G₂ spider identity.
 
 ---
@@ -114,9 +116,9 @@ cohomological degree:
 
 | Opcode | Degree | Tier |
 | --- | --- | --- |
-| ORBIT | 0 | H⁰ |
+| RESOLVE | 0 | H⁰ |
 | TWIST, SNAP↑, SNAP↓ | 1 | H¹ |
-| BIND, MERGE, LINK | 2 | H² |
+| FUSE, JOIN, LINK | 2 | H² |
 
 The differential ∂: C^k → C^{k+1} is defined by the ISA composition law:
 ∂(f) = sum over all ways of promoting f by one tier, weighted by the Fano
@@ -139,7 +141,7 @@ of crossings.
 
 The ISA chain complex recovers this: the two resolutions of a crossing are the
 two SNAP states (SNAP↑ and SNAP↓), and the saddle cobordism between them is
-the BIND differential. The grading on Khovanov's complex is the tier grading
+the FUSE differential. The grading on Khovanov's complex is the tier grading
 (H⁰ = 0-smoothing, H¹ = 1-smoothing, H² = two-smoothing connected by a cobordism).
 
 The coefficient ring GF(2) — the Fano plane's arithmetic — is exactly the
@@ -267,11 +269,9 @@ The ISA framework is not a redescription of known topology. It adds:
 
 | # | Title | DOI | Notes |
 | --- | --- | --- | --- |
-| 572 | [The Kuperberg G₂ Spider is the BIND Calculus](https://doi.org/10.5281/zenodo.21278538) | [21278538](https://zenodo.org/records/21278538) | BIND theorem; spider = opcode calculus · [Explainer](/papers/10.5281-zenodo.21278538/) |
+| 572 | [The Kuperberg G₂ Spider is the BIND Calculus](https://doi.org/10.5281/zenodo.21278538) | [21278538](https://zenodo.org/records/21278538) | FUSE theorem; spider = opcode calculus · [Explainer](/papers/10.5281-zenodo.21278538/) |
 | 571 | [The ISA Chain Complex: Khovanov Homology from Opcode Projections](https://doi.org/10.5281/zenodo.21278536) | [21278536](https://zenodo.org/records/21278536) | ∂²=0 proved; Khovanov recovery |
-| 574 |  | [21279006](https://zenodo.org/records/21279006) | Gr(k,n) unifies amplituhedron and chemistry · [Explainer](/papers/10.5281-zenodo.21279006/) |
 | 595 | [Weyl Chamber Homology](https://doi.org/10.5281/zenodo.21345107) | [21345107](https://zenodo.org/records/21345107) | Bredon cohomology; tier obstruction · [Explainer](/papers/10.5281-zenodo.21345107/) |
-| 568 |  | [21277819](https://zenodo.org/records/21277819) | Correct Schmidt decomposition; Gr(k,n) frame |
 
 **Fano plane and magic**
 
@@ -286,9 +286,6 @@ The ISA framework is not a redescription of known topology. It adds:
 
 | # | Title | DOI | Notes |
 | --- | --- | --- | --- |
-| 469 |  | [21219699](https://zenodo.org/records/21219699) | Completeness theorem; 9 opcode classes |
-| 607 |  | [21372998](https://zenodo.org/records/21372998) | ZX-calculus ↔ ISA; footprints and fibres |
-| 468 |  | [20955514](https://zenodo.org/records/20955514) | ISA as symmetric monoidal category · [Explainer](/papers/10.5281-zenodo.20955514/) |
 
 ---
 
@@ -296,8 +293,9 @@ The ISA framework is not a redescription of known topology. It adds:
 
 {: .note }
 > **If you work on spider calculi / planar algebras:**
-> Start with [The Kuperberg G₂ Spider is the BIND Calculus](https://doi.org/10.5281/zenodo.21278538).
-> It shows exactly how the G₂ spider relations map to BIND opcode identities
+> Start with [The Kuperberg G₂ Spider is the BIND Calculus](https://doi.org/10.5281/zenodo.21278538)
+> (published under the opcode’s former name; BIND is now FUSE).
+> It shows exactly how the G₂ spider relations map to FUSE opcode identities
 > with explicit diagrammatic proofs. The ISA formalism is introduced only as needed.
 
 {: .note }
