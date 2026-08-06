@@ -571,23 +571,6 @@
     "explainer": true
   },
   {
-    "number": 323,
-    "title": "Fano-Guided Search for High-Winding Equal-Mass Three-Body Choreographies",
-    "doi": "10.5281/zenodo.20369300",
-    "slug": "10.5281-zenodo.20369300",
-    "portfolios": [
-      "B",
-      "E"
-    ],
-    "tags": [
-      "fano",
-      "three-body",
-      "choreography",
-      "ai-for-science"
-    ],
-    "explainer": true
-  },
-  {
     "number": 325,
     "title": "The Topological Heat Engine: The 6-731 Information-Geometric Carnot Cycle",
     "doi": "10.5281/zenodo.20400638",
@@ -875,27 +858,6 @@
       "sevenq",
       "associamancy",
       "731-isa"
-    ],
-    "explainer": true
-  },
-  {
-    "number": 406,
-    "title": "Origami MBQC: The Origami ISA as a Measurement-Based Instruction Set",
-    "doi": "10.5281/zenodo.20667729",
-    "slug": "10.5281-zenodo.20667729",
-    "portfolios": [
-      "F",
-      "C"
-    ],
-    "tags": [
-      "origami-isa",
-      "mbqc",
-      "fano-cluster-state",
-      "photonics",
-      "731-isa",
-      "spin-opcode",
-      "measurement-based",
-      "cluster-state"
     ],
     "explainer": true
   },
@@ -1317,29 +1279,6 @@
     "explainer": true
   },
   {
-    "number": 457,
-    "title": "The Thermal AZ Table: Origami ISA Classification of the Tenfold Way and its Forge ISA Thermalisation",
-    "doi": "10.5281/zenodo.20955478",
-    "slug": "10.5281-zenodo.20955478",
-    "portfolios": [
-      "A",
-      "B"
-    ],
-    "tags": [
-      "tenfold-way",
-      "az-table",
-      "origami-isa",
-      "forge-isa",
-      "symmetry-class",
-      "topological-insulator",
-      "kitaev",
-      "bott-periodicity",
-      "thermal-classification",
-      "superconductor"
-    ],
-    "explainer": true
-  },
-  {
     "number": 466,
     "title": "Magic Has Valence: A Primer on the Fano Orbit Classification of 3-Qubit CZ-Type Stabiliser States",
     "doi": "10.5281/zenodo.21158966",
@@ -1357,28 +1296,6 @@
       "clifford",
       "origami-isa",
       "valence"
-    ],
-    "explainer": true
-  },
-  {
-    "number": 468,
-    "title": "Resource Theory as Circuit Syntax: The Origami ISA as a Coloured PROP",
-    "doi": "10.5281/zenodo.20955514",
-    "slug": "10.5281-zenodo.20955514",
-    "portfolios": [
-      "A"
-    ],
-    "tags": [
-      "resource-theory",
-      "prop",
-      "coloured-prop",
-      "circuit-syntax",
-      "monoidal-category",
-      "frobenius",
-      "zx-calculus",
-      "origami-isa",
-      "dark-magic",
-      "stabiliser"
     ],
     "explainer": true
   },
