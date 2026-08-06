@@ -116,7 +116,7 @@ The ribosome wobble position (β\*_pos3 < 0.5 vs β\*_pos1,2 ≈ 0.5) is the
 biological implementation of the broken symmetry in the 6-731 topology of
 Paper 325: the designed asymmetry that allows the Carnot engine to run. A
 ribosome with three equally strong codon positions would have η = 0 —
-consistent with the Paper 325 uniqueness theorem (symmetric topology → η = 0).
+consistent with the corrected result: η = 0 exactly when the topology is vertex-transitive, so asymmetry is *necessary* for positive efficiency.
 
 ### The 6-731 topological heat engine (Paper 325)
 
@@ -127,9 +127,14 @@ The IG CC for the 6-731 broken-Fano graph has been worked out explicitly:
 - Biological machines (FMO, ribosome, motor proteins) operate in the robustness
   plateau at η ≈ 0.18
 
-The uniqueness theorem of Paper 325 proves that among all connected 7-node
-graphs with fixed mean edge weight, the 6-731 topology is the *unique* one
-with η > 0. All symmetric topologies (full Fano, K₇) have η = 0.
+Paper 325 originally claimed that the 6-731 topology is the *unique* connected
+7-node graph with η > 0. **That claim is false** — a direct test found 93% of
+sampled connected 7-vertex graphs have η > 0. What survives, and is the real
+result, is the mechanism: η = 0 exactly when the graph is **vertex-transitive**,
+because the Gibbs fixed point then stays uniform at every β. The full Fano
+plane, K₇ and the 7-cycle all give exactly zero. So broken symmetry is
+*necessary* for a cycle to do work — but nowhere near sufficient to single out
+one topology.
 
 ### Catalytic efficiency on the Grassmannian (Paper 574)
 
@@ -254,7 +259,7 @@ below. What is new here:
 - Souriau (2024) — Carnot's second principle via symplectic geometry and Pfaff foliations
 - Hopfield (1974) *J. Mol. Biol.* 105:197 — kinetic proofreading; the irreversible step
 - Pauling (1948) *Nature* 161:707 — enzyme complementarity to transition state
-- Buckley, Paper 325 — The 6-731 IG Carnot cycle; uniqueness theorem; η ≈ 0.18
+- Buckley, Paper 325 — The 6-731 IG Carnot cycle; symmetry-breaking result; η ≈ 0.18
 - Buckley, Paper 510 — Proofreading as QEC; four-leg IG CC; β\* operating point
 - Buckley, Paper 574 — Catalysis as parallel transport on Gr(n_e, n_orb); x574d proposed
 

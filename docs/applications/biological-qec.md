@@ -196,4 +196,3 @@ that operates at finite temperature.
 *See also:* [Paper 324 — The Decoding Engine](https://doi.org/10.5281/zenodo.20400652) ·
 [Paper 325 — The Topological Heat Engine](https://doi.org/10.5281/zenodo.20400638) ·
 [Steane Code / QEC](../glossary.md#steane-code--quantum-error-correction-qec) in the Glossary ·
-[Every molecule is running a programme](molecular-computation.md)

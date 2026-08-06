@@ -97,7 +97,7 @@ The H^k classification tells you where to look.
 **It connects to magic resource theory.** The T-gate — the elementary magic
 operation — is the minimal H¹ → H¹ lift that breaks classical simulability.
 Adding BIND at the H² level introduces genuine topological (H²) structure.
-The magic resource theory (Papers 469/470) is the resource theory of H¹
+The magic resource theory is the resource theory of H¹
 access; the 731-ISA is the resource theory of H² access.
 
 ---
@@ -109,7 +109,7 @@ access; the 731-ISA is the resource theory of H² access.
 | [Paper 420](https://doi.org/10.5281/zenodo.20773526) | H^k complexity ladder: β₂ jump at α*; routing algorithm; H⁰/H¹/H² as β regimes; snap threshold as phase boundary |
 | Paper 421 *(no DOI on record — the link here previously duplicated 420's)* | H^k classification of quantum speedup: Shor = H¹; Grover = H¹ (weak); topological QC = H²; new algorithm directions |
 | [Paper 472](https://doi.org/10.5281/zenodo.21219704) | Shor lifting: Shor = Clifford (mana = 0) at the QFT step; D_N hidden shift: NAQFT fires TWIST, mana > 0; eigenphase spectrum as T-count replacement |
-| [Paper 473](https://doi.org/10.5281/zenodo.21219706) | Meld projections: Grover intermediate magic states are Clifford-simulable; Grover's algorithm as Origami ISA programme; eigenphase spectrum + asymptotic stabiliser complexity |
+| Paper 473 | Meld projections: Grover intermediate magic states are Clifford-simulable; Grover's algorithm as Origami ISA programme; eigenphase spectrum + asymptotic stabiliser complexity |
 
 **Key results:**
 

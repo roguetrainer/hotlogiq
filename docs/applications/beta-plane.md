@@ -90,7 +90,7 @@ The p-adic completions attach at **β = 0** (the Ambient), not at β → ∞. Th
 | [#443](https://doi.org/10.5281/zenodo.20752384) | Six classical dualities unified as β-deformations; conductor = 2/β for quantum group fields |
 | [#419](https://doi.org/10.5281/zenodo.20694527) | Positive real axis in full: snap event β★, vorton, Carnot efficiency η = 0.1825 (FMO) |
 | [#454](https://doi.org/10.5281/zenodo.20773563) | Imaginary axis: Meld ISA, Wick rotation, quantum algorithms |
-| [#543](https://doi.org/10.5281/zenodo.21245459) | Full adèlic β-plane: negative β, PT-symmetry, p-adic, Ostrowski, Palmer $I_U$, Clifford = quantum tropical |
+| #543 | Full adèlic β-plane: negative β, PT-symmetry, p-adic, Ostrowski, Palmer $I_U$, Clifford = quantum tropical |
 | [#445](https://doi.org/10.5281/zenodo.20752352) | Quantum groups at $q = e^{i\pi\beta}$; conductor = 2/β; Ising/Fibonacci anyons at specific β values |
 
 ---
@@ -112,4 +112,4 @@ The p-adic completions attach at **β = 0** (the Ambient), not at β → ∞. Th
 
 ---
 
-*Key papers: [#543](https://doi.org/10.5281/zenodo.21245459) · [#201](https://doi.org/10.5281/zenodo.17981393) · [#443](https://doi.org/10.5281/zenodo.20752384) · [#419](https://doi.org/10.5281/zenodo.20694527) · [#454](https://doi.org/10.5281/zenodo.20773563)*
+*Key papers: #543 · [#201](https://doi.org/10.5281/zenodo.17981393) · [#443](https://doi.org/10.5281/zenodo.20752384) · [#419](https://doi.org/10.5281/zenodo.20694527) · [#454](https://doi.org/10.5281/zenodo.20773563)*

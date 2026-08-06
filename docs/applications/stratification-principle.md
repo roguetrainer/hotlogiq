@@ -134,7 +134,7 @@ and experiments verify it to numerical precision.
 |-------|---------------|--------|
 | Quantum information (Papers 469–473) | TV = 1 iff stabiliser state; 9 SWAP-classes; Casimir c₂(proj) = 2 universally for C_{2k+1} | All experiments pass; Fano exceptionality k = 3 proved |
 | Molecular chemistry (Papers 488–491) | Aufbau/Hund/Taube rules = RESOLVE/TWIST/FUSE theorems; tropical DFT 20/20 on SCO benchmark | x491a–d: 100% on SCO; Wigner vertex theorem proved |
-| Protein proofreading (Paper 510) | H⁰ × H¹ × H² gives 10⁹/10⁶/10⁴ fidelity for Pol III/RNAP/ribosome | Structural argument from known biochemistry |
+| Protein proofreading | H⁰ × H¹ × H² gives 10⁹/10⁶/10⁴ fidelity for Pol III/RNAP/ribosome | Structural argument from known biochemistry |
 | Proton stability (Paper 545) | Colour singlet = closed Fano RESOLVE; ΔE_Fano = 0.9–1.3 GeV | x545a: Routes A/C agree × 1.9 |
 
 At Tier A, the ISA language is not introducing a new perspective on the field — it
@@ -150,9 +150,9 @@ result.
 
 | Field | ISA prediction | Status |
 |-------|---------------|--------|
-| MCMC (Paper 557) | Optimal accept rates 0.234 (H⁰) < 0.574 (H¹) < 0.651 (H²); monotone across tiers | Roberts-Rosenthal / Sherlock-Roberts theorems independently proved these; ISA explains the monotonicity |
-| Extreme value theory (Paper 558) | GEV shape ξ = β-deformation parameter; Gumbel = tropical fixed point (exact: log(-log Λ) = -x) | Gumbel-as-tropical is exact; ξ-as-β is a structural parallel, not yet derived |
-| Information geometry (Paper 528) | α-connection = TWIST parameter; Uhlmann holonomy = FUSE; EM algorithm = RESOLVE/PROJECT cycle | Amari's formalism independently derives the same three tiers; ISA names them |
+| MCMC | Optimal accept rates 0.234 (H⁰) < 0.574 (H¹) < 0.651 (H²); monotone across tiers | Roberts-Rosenthal / Sherlock-Roberts theorems independently proved these; ISA explains the monotonicity |
+| Extreme value theory | GEV shape ξ = β-deformation parameter; Gumbel = tropical fixed point (exact: log(-log Λ) = -x) | Gumbel-as-tropical is exact; ξ-as-β is a structural parallel, not yet derived |
+| Information geometry | α-connection = TWIST parameter; Uhlmann holonomy = FUSE; EM algorithm = RESOLVE/PROJECT cycle | Amari's formalism independently derives the same three tiers; ISA names them |
 | Quantum algorithms (Papers 420–421) | Shor = H¹ (mana = 0); Grover intermediate states Clifford-simulable | x472a–c, x473b pass; predictions made before experiments ran |
 
 At Tier B, the ISA is a useful lens that organises existing results and sometimes
@@ -169,7 +169,7 @@ what the field already knew; the ISA provides a cross-domain translation layer.
 |-------|------------|--------------|
 | Causal inference (Paper 559) | Pearl's ladder (seeing/doing/imagining) = H⁰/H¹/H² | Names the tiers; clarifies why H² (counterfactual) is strictly harder than H¹ (interventional); suggests fairness hierarchy |
 | Ergodicity economics (Paper 549) | GBM = multiplicative RESOLVE; Kelly = β* snap | Connects to ISA β-ladder; no new finance predictions beyond Kelly |
-| Incentive geometry (Paper 542) | Tragedy of commons = H¹ RESOLVE open; cap-and-trade = H¹ closure; climate clubs = H² FUSE | Provides language; the policy conclusions were already known |
+| Incentive geometry | Tragedy of commons = H¹ RESOLVE open; cap-and-trade = H¹ closure; climate clubs = H² FUSE | Provides language; the policy conclusions were already known |
 
 At Tier C, the ISA framing is legitimate science — taxonomy papers are real
 contributions — but claims should be written as "the H^k framework provides useful
@@ -199,7 +199,7 @@ instance of the ISA."
 
 - **We do not claim the ISA is complete or final.** The H^k tower is in principle
   infinite. H³ would require a quantum gravity computer. The β-plane may have
-  structure we have not yet mapped. The survey paper (Paper 533) is a progress
+  structure we have not yet mapped. The survey paper is a progress
   report, not a closed theory.
 
 ---
@@ -254,4 +254,4 @@ That is a significant contribution. It does not require claiming more than it is
 *See also:* [The ISA Opcodes](../opcodes.md) ·
 [β is a coordinate](beta-plane.md) ·
 [Quantum speedup has a cohomological address](cohomological-complexity.md) ·
-[Paper 533 — ISA Survey](https://doi.org/10.5281/zenodo.21219728)
+Paper 533 — ISA Survey

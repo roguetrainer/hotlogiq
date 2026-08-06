@@ -85,7 +85,7 @@ given task is a Schubert variety in this product.
 
 **Zoo entry:** [ML01 — Transformer Self-Attention](/isa-zoo/ml01-attention-mechanism)
 
-**Papers:** [OPU and AlphaFold](https://doi.org/10.5281/zenodo.21360838) ·
+**Papers:** OPU and AlphaFold ·
 [Information Geometry ISA](https://doi.org/10.5281/zenodo.PENDING)
 
 ---
@@ -122,7 +122,7 @@ function class. If c₂ > δ*, the task has genuine H² structure and benefits
 from BIND-based architectures.
 
 **Papers:** [The 4-Point Network](https://doi.org/10.5281/zenodo.21480272) ·
-[Agentic Consensus via Bilinear Belief Pooling](https://doi.org/10.5281/zenodo.21480276)
+Agentic Consensus via Bilinear Belief Pooling
 
 ---
 
@@ -311,14 +311,14 @@ This cannot be expressed as a sum of pairwise interactions — it requires the
 BIND opcode (H² coupling between Markov blankets). Matrix multiplication is
 constitutionally unable to represent it.
 
-The claim of [Agentic Consensus](https://doi.org/10.5281/zenodo.21480276): consensus in multi-agent inference is a 4-point problem.
+The claim of Agentic Consensus: consensus in multi-agent inference is a 4-point problem.
 Standard attention-based aggregation (pairwise ORBIT) systematically
 underestimates disagreement between agents whose beliefs are structured by
 relationships between relationships.
 
 ### Hot knowledge: the β-deformation of belief
 
-[Knowledge as a Cohomological Object](https://doi.org/10.5281/zenodo.21480274)
+Knowledge as a Cohomological Object
 proposes that knowledge itself has H^k structure:
 
 | Degree | Knowledge type | Operation | Failure mode |
@@ -359,8 +359,8 @@ that agents occupy different Schubert strata of the belief Grassmannian —
 diverse enough to disagree, structured enough to combine.
 
 **Papers:**
-[Knowledge as a Cohomological Object](https://doi.org/10.5281/zenodo.21480274) ·
-[Agentic Consensus](https://doi.org/10.5281/zenodo.21480276) ·
+Knowledge as a Cohomological Object ·
+Agentic Consensus ·
 [β-Rank Family](https://doi.org/10.5281/zenodo.21479920)
 
 ---
@@ -378,7 +378,7 @@ The classical neural network models of the 1980s–90s all have natural ISA inte
 | Ising model | H⁰/H¹ | any | Exact MGE: Ising partition function = tropical polynomial at β→∞ |
 | Hubbard model | H¹→H⁰ | β = U/t | Mott transition = β* snap from H¹ delocalised to H⁰ localised |
 
-**The [G₂ Boltzmann Machine](https://doi.org/10.5281/zenodo.20319577)** is the most novel: replacing the
+**The G₂ Boltzmann Machine** is the most novel: replacing the
 pairwise J_ij coupling with the G₂ 3-form φ_ijk gives a machine that learns
 three-way correlations directly. Contrastive divergence becomes a G₂-equivariant
 gradient step. The Fano plane incidence structure provides an exact error-detection
@@ -391,9 +391,9 @@ Z(β) = Σ_σ exp(−βH(σ)) is an ordinary polynomial in {exp(−βJ_ij)} at f
 deformation made explicit and controllable.
 
 **Papers:**
-[G₂ Boltzmann Machine](https://doi.org/10.5281/zenodo.20319577) ·
+G₂ Boltzmann Machine ·
 [MCMC as H^k Ladder](https://doi.org/10.5281/zenodo.PENDING) ·
-[Universal Bonding Theory](https://doi.org/10.5281/zenodo.21277821) (Hubbard/Mott)
+Universal Bonding Theory (Hubbard/Mott)
 
 ---
 
@@ -442,7 +442,7 @@ ForgeRank algorithm applied to the factor graph of the SAT instance. The
 satisfiability threshold = β* of the ranking semiring.
 
 **Papers:** [β-Rank Family](https://doi.org/10.5281/zenodo.21479920) ·
-[PT-Symmetric Combinatorics](https://doi.org/10.5281/zenodo.21480493)
+PT-Symmetric Combinatorics
 
 ---
 

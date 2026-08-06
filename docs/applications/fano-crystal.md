@@ -80,7 +80,7 @@ qualitative agreement.
 
 | Paper | What it shows |
 | --- | --- |
-| [Paper 317](https://doi.org/10.5281/zenodo.20319577) | G₂ Boltzmann machine: Fano-orbit energy landscape; closed orbit = ground state |
+| Paper 317 | G₂ Boltzmann machine: Fano-orbit energy landscape; closed orbit = ground state |
 | [Paper 319](https://doi.org/10.5281/zenodo.20400638) | FMO complex: η = 0.1825 reproduced as 6/7 Fano (one broken line); SPLAT opcode identified |
 | [Paper 325](https://doi.org/10.5281/zenodo.20400638) | Topological heat engine: uniqueness theorem — η > 0 iff broken Fano symmetry; η = 0 for all 7/7 closed systems |
 | [Paper 357](https://doi.org/10.5281/zenodo.20490046) | MIP* = RE connection: GHZ stabiliser group = Fano plane; 7/7 quantum lines verified; 0 classical |

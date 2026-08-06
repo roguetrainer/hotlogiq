@@ -113,10 +113,10 @@ the $\varphi_\ell$ ordering above the $\ell = 2$ shell.
 | Paper | What it shows |
 | --- | --- |
 | [Paper 375](../papers/) | EVP = PEP: formal theorem; Jordan-Wigner as explicit construction of the EVP isomorphism; fermion antisymmetry as consequence of symplectic non-isotropy |
-| [Paper 487](https://doi.org/10.5281/zenodo.21219722) | Valence as orbit occupancy: Aufbau, Hund, Taube as ISA theorems (72/73 = 98.6% on benchmark) |
-| [Paper 488](https://doi.org/10.5281/zenodo.21219720) | G-walk Chemistry: d-electron orbit occupancy predicts spin state; 90% accuracy without DFT |
-| [Paper 490](https://doi.org/10.5281/zenodo.21219724) | Galois Protein Design: metal-site orbit structure determines enzymatic selectivity |
-| [Paper 491](https://doi.org/10.5281/zenodo.21224113) | Galois Chemistry = Tropical DFT: spin-state crossing = tropical singularity; derivative discontinuity = TWIST opcode |
+| Paper 487 | Valence as orbit occupancy: Aufbau, Hund, Taube as ISA theorems (72/73 = 98.6% on benchmark) |
+| Paper 488 | G-walk Chemistry: d-electron orbit occupancy predicts spin state; 90% accuracy without DFT |
+| Paper 490 | Galois Protein Design: metal-site orbit structure determines enzymatic selectivity |
+| Paper 491 | Galois Chemistry = Tropical DFT: spin-state crossing = tropical singularity; derivative discontinuity = TWIST opcode |
 | x344 | Geometric PEP verified computationally: non-isotropic pairs in $W(5,2)$ correctly reproduce PEP for 3-qubit states |
 
 **Key insight from Heusler (IOP 2018):** The 3D-printed nodal-surface models
@@ -187,6 +187,5 @@ the adelic EVP for the TF atom.
 
 *See also:*
 [The Fano crystal is universal](fano-crystal.md) ·
-[Every molecule runs a Galois programme](galois-chemistry.md) ·
 [Paper 375 — The EVP = PEP Theorem](../papers/) ·
-[Paper 487 — Valence as Orbit Occupancy](https://doi.org/10.5281/zenodo.21219722)
+Paper 487 — Valence as Orbit Occupancy

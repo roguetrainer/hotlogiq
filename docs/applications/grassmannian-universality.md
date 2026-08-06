@@ -93,7 +93,7 @@ The Hubbard model (1D, half-filling) crosses θ_G ≈ 20° at U/t ≈ 1.8, the
 Mott metal-insulator transition — the same threshold, on the condensed-matter
 side.
 
-### Quantum error correction (Paper 577)
+### Quantum error correction
 
 A [[n,k,d]] stabiliser code is a point $p_C \in \mathrm{Gr}(2^k, 2^n)$. The
 code distance d is the Fubini-Study distance from $p_C$ to the nearest
@@ -102,7 +102,7 @@ level at which this geodesic distance collapses to zero. The ISA chain complex
 (Paper 571) makes ∂² = 0 (stabilisers commute) tautological — it is the chain
 complex condition.
 
-### Nuclear physics (Paper 575)
+### Nuclear physics
 
 The deuteron's S/D mixing angle θ_G ≈ 13° — determined by the tensor force
 from one-pion exchange — is the nuclear analogue of the bond-breaking angle in
@@ -191,8 +191,8 @@ The universality claim is falsified if:
 ---
 
 *See also:*
-[Universal Chemical Bonding](https://doi.org/10.5281/zenodo.21277821) (#570) ·
-[QEC as Grassmannian parallel transport](https://doi.org/10.5281/zenodo.21284199) (#577) ·
+Universal Chemical Bonding (#570) ·
+QEC as Grassmannian parallel transport (#577) ·
 [The Grassmannian of Systematic Risk](https://doi.org/10.5281/zenodo.21284204) (#580) ·
 [Why exactly three tiers?](https://doi.org/10.5281/zenodo.21284201) (#578) ·
 

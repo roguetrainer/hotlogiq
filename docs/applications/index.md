@@ -6,7 +6,6 @@ has_children: true
 description: "The Origami ISA applied across domains — each a significant result spanning a family of papers."
 ---
 
-
 # Applications
 {: .no_toc }
 
@@ -18,15 +17,13 @@ These are not summaries of individual papers — they are the ideas that span fa
 
 | # | Claim | Domain | Key papers |
 |---|-------|--------|------------|
-| [2](molecular-computation) | **Every molecule runs a programme.** Enzyme catalysis, nitrogen fixation, and spin-state switching are ISA programmes in the G-orbit language. | Chemistry | 488, 489, 490, 491, 509 |
-| [3](biological-qec) | **Biology runs quantum error correction.** Kinetic proofreading and the ribosome implement H⁰ × H¹ × H² QEC. | Biology | 510, 511, 515, 324 |
-| [4](galois-chemistry) | **Every molecule runs a G-orbit walk.** Spin state, valence, and catalytic barrier are computable in O(1) without DFT. | Chemistry | 488, 489, 490, 491, 492 |
-| [5](grassmannian-universality) | **The Grassmannian is the universal space for correlated systems.** One angle θ_G diagnoses chemistry, QEC, nuclear bonding, and financial contagion. | Universal | 563, 568, 570, 574 |
-| [6](ig-carnot-cycle) | **Nature runs information-geometric Carnot cycles.** Every fidelity machine operates a four-leg IG Carnot cycle; β\* is the Carnot-optimal point. | Biology / chemistry | 325, 510, 574 |
+| [3](biological-qec) | **Proofreading looks like error correction.** Kinetic proofreading and ribosomal decoding both spend energy to suppress errors — a suggestive parallel with quantum error correction, not an established equivalence. | Biology | 324 |
+| [5](grassmannian-universality) | **Correlation has an angle.** θ_G, the Grassmannian angle between a correlated wavefunction and its mean-field reference, tracks the onset of strong correlation in real calculations. | Universal | 563 |
+| [6](ig-carnot-cycle) | **Broken symmetry is what lets a cycle do work.** On a graph register, the Gibbs entropy profile is flat exactly when the graph is vertex-transitive — so asymmetry is necessary for positive efficiency. | Biology / chemistry | 325 |
 | [7](stratification-principle) | **The H^k stratification: what it is and is not.** A useful organising principle across MCMC, chemistry and quantum computing — and an honest account of where the parallel stops. | Universal | 420 · *(533, 557, 558 withdrawn)* |
 | [8](cohomological-complexity) | **Quantum speedup has a cohomological address.** H⁰/H¹/H² classify which problems admit which speedups. | Quantum computing | 420, 472 · *(473 withdrawn; 421 no DOI)* |
-| 9 | **The same boundary that separates easy from hard quantum circuits also separates DFT from CASSCF.** Magic and molecular correlation are the same obstruction. | Chemistry / QC | 595, 596, 570, 563 |
-| [10](ai-ml) | **AI & Machine Learning.** β is the softmax temperature; transformers are Forge ISA programmes; 4-point networks, agentic consensus, and the HPC stale-data problem. | AI / ML | 400, 627, 628, 629 |
+| 9 | **One threshold, two problems.** The entanglement measure that flags where cheap simulation fails in chemistry is the same coordinate that separates classically simulable circuits from universal ones — a shared diagnostic, whether or not it is a shared cause. | Chemistry / QC | 595, 596, 570, 563 |
+| [10](ai-ml) | **β is the softmax temperature.** The same inverse-temperature parameter that governs Gibbs distributions governs attention, quantal response, and entropy-regularised learning. | AI / ML | 627 |
 
 ---
 
