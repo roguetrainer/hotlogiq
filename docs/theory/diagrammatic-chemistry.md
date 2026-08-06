@@ -44,7 +44,7 @@ distances.
 | Which orbitals exist for a given *n*? | SO(4) → SO(3) branching | no |
 | Which terms arise from a d³ configuration? | Young tableaux, character tables | no |
 | Which transitions are allowed? | selection rules, triangle conditions | no |
-| How many CSFs in an active space? | Weyl–Paldus dimension formula | no |
+| How many configuration state functions (CSFs) in an active space? | Weyl–Paldus dimension formula | no |
 | Which point group does a molecule have? | its geometry | no |
 | Which orbitals belong in the active space? | **judgement** — see below | partly |
 | **Which term is the ground state?** | Hund's rules, then computation | **yes** |
@@ -81,14 +81,14 @@ that answer questions chemistry does not ask.
 
 | Calculus | What it draws | Used in chemistry? |
 |---|---|---|
-| **Goldstone / Hugenholtz diagrams** | many-body perturbation terms; antisymmetrised vertices handle exchange in one diagram | **yes** — the standard language of MBPT and coupled cluster since the 1950s |
-| **Brandow diagrams** | folded diagrams for effective Hamiltonians | **yes** — open-shell and quasi-degenerate PT |
-| **Wick contraction diagrams** | operator contraction bookkeeping | **yes** — every CC derivation |
-| **GUGA (Graphical Unitary Group Approach)** | the Gel'fand–Tsetlin lattice as a walk on a graph | **yes** — in production MCSCF codes since the 1970s |
+| **Goldstone / Hugenholtz diagrams** | many-body perturbation terms; antisymmetrised vertices handle exchange in one diagram | **yes** — the standard language of many-body perturbation theory (MBPT) and coupled cluster since the 1950s |
+| **Brandow diagrams** | folded diagrams for effective Hamiltonians | **yes** — open-shell and quasi-degenerate perturbation theory |
+| **Wick contraction diagrams** | operator contraction bookkeeping | **yes** — every coupled-cluster derivation |
+| **GUGA (Graphical Unitary Group Approach)** | the Gel'fand–Tsetlin lattice as a walk on a graph | **yes** — in production multiconfigurational-SCF codes since the 1970s |
 | **Yutsis / JLV diagrams** | 3n*j* recoupling of angular momenta | **yes** — molecular magnetism; MAGPACK computes polynuclear cluster spectra with 6*j* and 9*j* symbols |
-| **Young tableaux** | irrep labels, branching rules, CSF counts | **yes** — spin eigenfunctions, term symbols |
+| **Young tableaux** | irreducible-representation labels, branching rules, CSF counts | **yes** — spin eigenfunctions, term symbols |
 | **Character tables** | point-group irreps and selection rules | **yes** — undergraduate spectroscopy onward |
-| **Tensor-network diagrams** | MPS and PEPS contraction | **yes** — DMRG |
+| **Tensor-network diagrams** | matrix-product and projected-entangled-pair states | **yes** — DMRG |
 | **Weight and root diagrams** | Lie algebra structure | rarely — implicit in SO(4,2) treatments of the periodic table |
 | **Birdtracks** (Cvitanović, Penrose) | Casimirs, irrep dimensions, invariant tensors | **no** — computes things chemists get from tables |
 | **Crystal bases** (Kashiwara) | representation theory as coloured graphs at *q* → 0 | **no** — but GUGA is the same poset walked differently |
@@ -144,11 +144,13 @@ Two cautions, both real:
 
 **The non-perturbative problem is solved, several times over.** Coupled cluster's
 exponential ansatz e^T resums infinite classes of diagrams in closed form and has
-been the workhorse since the 1960s; DMRG, Green's-function methods and quantum
+been the workhorse since the 1960s; [DMRG](../reference/glossary.md#dmrg-density-matrix-renormalisation-group)
+(density matrix renormalisation group), Green's-function methods and quantum
 Monte Carlo are further mature answers. What remains hard is *strong*
 correlation, where DMRG is currently the best available tool.
 
-**There is no amplituhedron shortcut.** The amplituhedron is not a general
+**There is no [amplituhedron](../reference/glossary.md#amplituhedron) shortcut.**
+The amplituhedron is not a general
 technique for summing diagrams; it is a statement about planar N = 4
 super-Yang–Mills, whose dual conformal and Yangian symmetries are large enough
 to fix the answer geometrically. Chemistry has no conformal symmetry (Coulomb

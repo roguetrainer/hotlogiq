@@ -11,6 +11,22 @@ Each entry links to the paper where the concept is defined or first used.
 
 ---
 
+## Active Space
+
+The handful of orbitals a correlated method treats **exactly**, with the rest
+frozen or handled approximately. Cost grows exponentially in its size, so the
+choice is the central practical decision in multireference chemistry: too few
+orbitals and the answer is qualitatively wrong, too many and the calculation
+never finishes.
+
+Selecting it is normally done by expert judgement. Automated methods exist —
+AVAS, AutoCAS, AEGISS — but each rests on a human-chosen threshold.
+
+*See also:* [→ CASSCF](#casscf-complete-active-space-self-consistent-field),
+[→ DMRG](#dmrg-density-matrix-renormalisation-group)
+
+---
+
 ## Adelic
 
 **Adelic** refers to the simultaneous use of all completions of the rational numbers: the real field $\mathbb{R}$ and the $p$-adic fields $\mathbb{Q}_p$ for every prime $p$. The adele ring $\mathbb{A} = \mathbb{R} \times \prod_p \mathbb{Z}_p$ unifies continuous and discrete arithmetic in one algebraic object.
@@ -18,6 +34,21 @@ Each entry links to the paper where the concept is defined or first used.
 In the ASA, the adelic structure appears in the routing of gradient updates: the real component flows continuously (gradient descent), while the $p$-adic component crystallises discretely (logic gate). This resolves the Averaging Paradox of purely-real optimisation and the Search Wall of purely-discrete search.
 
 *First used:* [Paper 201 (MGE)](papers/10.5281-zenodo.17981392/)
+
+---
+
+## Amplituhedron
+
+A geometric object (Arkani-Hamed & Trnka, 2013) whose canonical form encodes
+scattering amplitudes in planar $\mathcal{N} = 4$ super-Yang–Mills, replacing a
+sum over Feynman or BCFW terms with the volume of a positive geometry.
+
+**It is not a general technique for summing diagrams.** It works because that
+particular theory has dual conformal and Yangian symmetry, planarity and
+masslessness — enough symmetry to fix the answer geometrically. Chemistry has
+none of these: Coulomb attraction to fixed nuclei breaks conformal symmetry,
+electrons are massive and non-relativistic, and the quantity computed is an
+energy rather than an S-matrix element.
 
 ---
 
@@ -139,6 +170,34 @@ The **Baker-Campbell-Hausdorff (BCH) obstruction** arises when attempting to agg
 
 ---
 
+## CASSCF (Complete Active Space Self-Consistent Field)
+
+The standard multireference method: exact within a chosen [active
+space](#active-space), approximate outside it, with the orbitals optimised
+simultaneously. It handles the cases where a single electron configuration is
+not a good description — bond breaking, transition-metal centres, spin-state
+crossings — at a cost exponential in the active-space size.
+
+*See also:* [→ DFT](#dft-density-functional-theory), [→ Multireference](#multireference)
+
+---
+
+## DFT (Density Functional Theory)
+
+The workhorse of computational chemistry: fast enough for routine use, and built
+on the assumption that the electron density alone determines the energy. It
+handles most of chemistry well and fails systematically where several electron
+configurations are comparably important — precisely the regime that makes
+catalysis interesting.
+
+DFT+U adds an empirical on-site repulsion to patch some transition-metal cases;
+the parameter U is fitted rather than derived.
+
+*See also:* [→ CASSCF](#casscf-complete-active-space-self-consistent-field),
+[→ Multireference](#multireference)
+
+---
+
 ## Division Algebra Ladder
 
 The four **normed division algebras**
@@ -148,6 +207,22 @@ $$\mathbb{R} \subset \mathbb{C} \subset \mathbb{H} \subset \mathbb{O}$$
 (reals, complex, quaternions, octonions) form a hierarchy in which each extension drops one algebraic property: $\mathbb{H}$ is non-commutative; $\mathbb{O}$ is additionally non-associative. By Hurwitz's theorem, no further division algebras exist. The ASA uses each rung as a distinct computational regime, and the Origami ISA opcodes organise quantum computation across all four rungs.
 
 *Framework:* [Paper 219 (Adelic Invitation)](papers/10.5281-zenodo.19977475/), [Paper 263 (Magic Square Architecture)](papers/10.5281-zenodo.19928879/) · *Full explainer:* [The Non-Associative Frontier](../theory/non-associative-frontier.md)
+
+---
+
+## DMRG (Density Matrix Renormalisation Group)
+
+A variational method (White, 1992) that represents a many-body state as a
+**matrix product state** — a chain of tensors whose bond dimension controls how
+much entanglement is retained. Originally for one-dimensional lattice models, now
+the strongest classical tool for strongly correlated chemistry, reaching active
+spaces far beyond exact diagonalisation.
+
+Two properties matter here. Its cost is set by **entanglement**, not by system
+size, so structured problems compress well. And the orbital entropies it produces
+are the basis of entropy-driven active-space selection.
+
+*See also:* [→ Active Space](#active-space), [→ Multireference](#multireference)
 
 ---
 
@@ -285,6 +360,19 @@ $$\pi_k = \frac{\exp(-\beta\, E_k)}{\sum_j \exp(-\beta\, E_j)}.$$
 At low $\beta$ (BOIL): smooth Gibbs distribution, continuous exploration. At $\beta\to\infty$ (SNAP): tropical $({\max},{+})$ semiring, discrete crystallisation. The transition is the ASA's fundamental computational phase transition.
 
 *Defined:* [Paper 201 (MGE)](papers/10.5281-zenodo.17981392/)
+
+---
+
+## Multireference
+
+The situation where no single electron configuration dominates: two or more are
+comparably important, so any method built on one reference is qualitatively
+wrong. It arises at stretched bonds, in transition-metal clusters, and at
+conical intersections.
+
+Diagnosing it cheaply is the point of occupation-number and entanglement
+measures; treating it properly requires [CASSCF](#casscf-complete-active-space-self-consistent-field)
+or [DMRG](#dmrg-density-matrix-renormalisation-group).
 
 ---
 

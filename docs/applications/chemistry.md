@@ -27,14 +27,14 @@ framework that addresses it.*
 
 ## The bottleneck
 
-Cheap simulation — density functional theory — assumes electrons behave roughly
-independently. That assumption holds for most of chemistry and fails precisely
+Cheap simulation — [density functional theory](../reference/glossary.md#dft-density-functional-theory),
+DFT — assumes electrons behave roughly independently. That assumption holds for most of chemistry and fails precisely
 where the interesting things happen: bond breaking, transition-metal centres,
 spin-state crossings, the moment a catalyst does its work.
 
 The accurate methods handle those cases, at exponential cost in the number of
-orbitals treated exactly. So somebody has to choose the **active space** — which
-handful of orbitals gets the expensive treatment. Choose too few and the answer
+orbitals treated exactly. So somebody has to choose the [**active space**](../reference/glossary.md#active-space) —
+which handful of orbitals gets the expensive treatment. Choose too few and the answer
 is qualitatively wrong; too many and it never finishes.
 
 That choice is made by intuition. It takes years to learn, and the people who do
@@ -48,7 +48,7 @@ it well are few. Automating it is the practical problem this work is aimed at.
 
 θ_G is the Grassmannian angle between a correlated wavefunction and its
 mean-field reference — the geodesic distance from Hartree–Fock. It is computable
-from cheap MP2 occupation numbers, and it moves sharply where strong correlation
+from cheap second-order Møller–Plesset (MP2) occupation numbers, and it moves sharply where strong correlation
 sets in: crossing threshold at 1.50 Å for H₂ and H₂O bond stretching, and at
 U/t ≈ 2 for the Hubbard model, in real pyscf calculations.
 
@@ -79,7 +79,7 @@ catalogued systems. A guaranteed-complete active space, chosen without an expert
   iron-dominated *w*₀ = 5. Taking a union of per-metal windows restores them and
   then spans 82–99% of all valence orbitals, which is not a selection rule.
 - The "20 out of 20" figure describes a subshell **containment check**, not a
-  computational benchmark. No CASSCF is run in it.
+  computational benchmark. No [CASSCF](../reference/glossary.md#casscf-complete-active-space-self-consistent-field) is run in it.
 
 ---
 
@@ -119,8 +119,8 @@ argument for taking the selection problem seriously.
 **RuBisCO** has never been costed. There is no published resource estimate,
 qubit count or algorithm design targeting its oxygenase transition state. The
 methodology to produce one is public; the missing step is a defensible active
-space, which requires the DMRG entanglement analysis nobody has pointed at this
-target.
+space, which requires the [DMRG](../reference/glossary.md#dmrg-density-matrix-renormalisation-group)
+entanglement analysis nobody has pointed at this target.
 
 **Battery cathodes** are partly covered — Toffoli counts exist for Li-excess
 cathodes and for Li₂FeSiO₄ — but an algorithm tailored to the Mn³⁺ Jahn–Teller
