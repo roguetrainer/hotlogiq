@@ -81,7 +81,7 @@ that answer questions chemistry does not ask.
 
 | Calculus | What it draws | Used in chemistry? |
 |---|---|---|
-| **Goldstone / Hugenholtz diagrams** | many-body perturbation terms; antisymmetrised vertices handle exchange in one diagram | **yes** — the standard language of many-body perturbation theory (MBPT) and coupled cluster since the 1950s |
+| **Goldstone / Hugenholtz diagrams** | terms in many-body perturbation theory (MBPT); antisymmetrised vertices handle exchange in one diagram | **yes** — the standard language of many-body perturbation theory (MBPT) and coupled cluster since the 1950s |
 | **Brandow diagrams** | folded diagrams for effective Hamiltonians | **yes** — open-shell and quasi-degenerate perturbation theory |
 | **Wick contraction diagrams** | operator contraction bookkeeping | **yes** — every coupled-cluster derivation |
 | **GUGA (Graphical Unitary Group Approach)** | the Gel'fand–Tsetlin lattice as a walk on a graph | **yes** — in production multiconfigurational-SCF codes since the 1970s |
