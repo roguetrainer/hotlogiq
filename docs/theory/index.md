@@ -16,6 +16,7 @@ description: "The mathematical and physical foundations of the HotLogiQ / Origam
 
 | Page | What it covers |
 |------|---------------|
+| [Diagrammatic Chemistry](diagrammatic-chemistry) | Which parts of chemistry are combinatorial, and which need a Hamiltonian |
 | [Why Hot Logic?](hot-logic) | Boolean logic is zero-temperature; every LLM runs at finite β; the unification via the β-plane |
 | [β: The Universal Temperature](maslov-dequantization) | β interpolates classical → statistical → quantum; Maslov dequantisation; tropical arithmetic |
 | [Disagreement](disagreement) | JSD = H(mean) − mean(H); why pooled beliefs cannot distinguish confident disagreement from shared ignorance |

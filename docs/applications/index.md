@@ -17,6 +17,7 @@ These are not summaries of individual papers — they are the ideas that span fa
 
 | # | Claim | Domain | Key papers |
 |---|-------|--------|------------|
+| [1](chemistry) | **Chemistry.** The expensive part of simulating a molecule is deciding which electrons matter — and that is still done by hand. | Chemistry | 563, 596, 712 |
 | [3](biological-qec) | **Proofreading looks like error correction.** Kinetic proofreading and ribosomal decoding both spend energy to suppress errors — a suggestive parallel with quantum error correction, not an established equivalence. | Biology | 324 |
 | [5](grassmannian-universality) | **Correlation has an angle.** θ_G, the Grassmannian angle between a correlated wavefunction and its mean-field reference, tracks the onset of strong correlation in real calculations. | Universal | 563 |
 | [6](ig-carnot-cycle) | **Broken symmetry is what lets a cycle do work.** On a graph register, the Gibbs entropy profile is flat exactly when the graph is vertex-transitive — so asymmetry is necessary for positive efficiency. | Biology / chemistry | 325 |
