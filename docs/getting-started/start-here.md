@@ -49,9 +49,7 @@ Five pages that together cover the core of the framework — in reading order:
 2. **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰ = classical, H¹ = stabiliser/Clifford, H² = universal QC. A graded alternative to the P=NP question. *(the χ-based routing algorithm in 420 is unsound — χ cannot determine the Betti numbers; see [cohomological complexity](/docs/applications/cohomological-complexity.html))*
 3. **[The Meld ISA](https://doi.org/10.5281/zenodo.20773563)** (Paper 454) — quantum branch of the framework. QFT as a TWIST 🌀 cascade; FUSE 💎 as the non-Abelian obstruction; why LWE is quantum-resistant.
 4. **[Eight Derivations of a Universal Instruction Set](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — eight independent routes all forced to the same five opcodes. Explains *why* this gate set is universal at a deeper level than Solovay-Kitaev.
-5. **[ISA Completeness: Nine Normal Forms](https://doi.org/10.5281/zenodo.21219699)** (Paper 469) — the three-qubit Clifford+T fragment reduces to nine normal forms; closes the classification the resource-theory papers depend on.
 8. **[The Cookie-Cutter Lifting Programme: Shor as a Clifford Circuit](https://doi.org/10.5281/zenodo.21219704)** (Paper 472) — Shor's algorithm re-derived as a lifted Clifford circuit; a concrete, checkable flagship result.
-9. **[Quantum Error Correction as Cohomological Encoding](https://doi.org/10.5281/zenodo.21164005)** (Paper 480) — QEC codes as chain complexes, logical qubits as homology classes, with a β* threshold.
 
 ---
 
@@ -65,7 +63,6 @@ Five pages that together cover the core of the framework — in reading order:
 
 ### Chemistry and physics
 
-2. **[G-Step CO₂ Fixation](https://doi.org/10.5281/zenodo.21373477)** (Paper 603) — the G-step definition; RuBisCO baseline; three control handles (spin topology, E-field, B-field); Carbonase concept.
 3. **[Weyl–DFT Accelerator](https://doi.org/10.5281/zenodo.21373469)** (Paper 596) — Weyl c₂ as a DFT failure detector (r=0.990); MGE soft router replaces hard CASSCF threshold.
 5. **[The Frontier Winding Gap](https://doi.org/10.5281/zenodo.21612627)** (Paper 710) — chemical reactivity traced to a single topological invariant, the frontier winding gap ΔwF.
 6. **[Conical Intersections as Hitchin Branch Points](https://doi.org/10.5281/zenodo.21558771)** (Paper 697) — Jahn–Teller and related conical intersections identified with branch points of a Hitchin spectral curve.

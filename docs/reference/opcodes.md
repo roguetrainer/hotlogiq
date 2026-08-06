@@ -124,7 +124,7 @@ across completely different fields.
 | **3-manifold** | ℤ / ℝ₊ | SU(2) / G₂ | ✗ | β→∞ (combinatorial) | Origami / Frog (if G₂) |
 | **Spectroscopy** | ℝ | SU(2) / SO(3) | ✗ | finite β | Forge |
 | **Quantum info** | ℂ | U(2ⁿ) | ✗ | β=it | Meld |
-| **Chemistry** | ℝ → ℂ at CI | point group ⊂ G₂ | ✗ | finite β → β=it at conical intersection | Forge → Raven at CI |
+| **Chemistry** | ℝ → ℂ at CI | point group ⊂ G₂ | ✗ | finite β → β=it at conical intersection | Forge → complex β at CI |
 | **Nuclear** | ℝ | G₂ (always H²) | ✗ | finite β | Forge + Frog (tensor force mandatory) |
 | **Finance** | ℝ₊ | GL(n) / U(1) | ✓ | finite β | Forge |
 | **Condensed matter** | ℂ / ℤ₂ | U(1) → SU(2) → G₂ | ✓/✗ (phase-dependent) | β=it → β* snap | Forge → Meld (phase-dependent) |
@@ -134,7 +134,7 @@ across completely different fields.
 | **MCMC / sampling** | ℝ₊ | — | ✓ | finite β | Forge |
 | **Causal inference** | ℝ₊ | DAG automorphisms | ✓ | finite β | Forge |
 | **Dynamical systems** | (max,+) → ℝ | Diff(M) | ✗ | β→∞ → finite β | Origami → Forge |
-| **Number theory** | ℚ_p · ℂ · 𝔸 | GL(n) / G₂ | ✗ | all β | Rising Sea |
+| **Number theory** | ℚ_p · ℂ · 𝔸 | GL(n) / G₂ | ✗ | all β | full β-plane |
 
 ---
 
@@ -522,7 +522,7 @@ mathematical object, but a new ISA depth.
   approximates by collapsing into FUSE.
 
 **Whether RECOUPLE is one opcode or several** is open: the Frog ISA (H⁰–H³) already
-accommodates this tier, and the Hum ISA nominates EMIT as the H³ primitive in the
+accommodates this tier, and EMIT is the proposed H³ primitive in the
 QFT / amplituhedron context. These may be domain-specific faces of a single H³
 opcode, or genuinely distinct primitives. See Paper 719 for the orbital simplex
 argument; see Papers 207/281 (Frog Calculus) for the graphical calculus.
@@ -743,9 +743,9 @@ for rank-2 groups, and Paper 572, whose x572a pentagon-relation check did **not*
 match the textbook prediction and was reinterpreted post hoc. **Resolve 572
 first.**
 
-#### The Valence ISA: why Origami is still universal
+#### Bonding opcodes: why Origami is still universal
 
-Before addressing the Valence ISA extension, a question must be answered directly:
+Before addressing the bonding extension, a question must be answered directly:
 **if Origami is universal, why does bonding require new opcodes?**
 
 The answer is that Origami is universal for **single-object** computation — morphisms
@@ -759,12 +759,12 @@ This is not a patch. It is the standard categorical tower:
 | Level | Structure | ISA | Objects |
 |-------|-----------|-----|---------|
 | **Level 1** | Single Frobenius algebra on A | Origami ISA | One orbital / site (an atom is a *composite* — see below) |
-| **Level 2** | PROP of two Frobenius algebras A, B | Valence ISA | Two atoms bonding |
+| **Level 2** | PROP of two Frobenius algebras A, B | bonding layer | Two atoms bonding |
 
 Origami is universal at Level 1 exactly as group theory is universal for symmetry —
 and group theory does not describe *homomorphisms between groups* until you have two
 groups. That is not a failure of group theory; it is a statement about categorical
-level. The Valence ISA is the forced Level 2 extension, derived from Origami by the
+level. The bonding layer is the forced Level 2 extension, derived from Origami by the
 standard PROP construction.
 
 The full argument — including why PAT-q is the canonical faithful representation of
@@ -796,7 +796,7 @@ reversible chemistry already satisfies.
 | $\varepsilon$ | counit | FLIP (CUP sub-role) | $A \to \mathbf{1}$ | PROJECT | measurement; orbital annihilation |
 | $\theta$ | ribbon twist | TWIST | $A \to A$ | TWIST (self-dual) | Berry phase; spin-orbit coupling |
 
-**Level 2 — Inter-site Frobenius algebra (Valence ISA — new opcodes only):**
+**Level 2 — Inter-site Frobenius algebra (bonding opcodes only):**
 
 | CT symbol | CT name | Opcode | Type | Frobenius dual | Chemical meaning |
 | --------- | ------- | ------ | ---- | -------------- | ---------------- |
@@ -1139,36 +1139,6 @@ adding FUSE and SPIN. See [The Non-Associative Frontier](../theory/non-associati
 
 ## The named ISAs
 
-> **STATUS (2026-08-04).** Seven of the twelve named ISAs below **no longer have
-> a live entry-point paper.** Those papers were withdrawn during the August 2026
-> corpus audit, and their DOIs no longer resolve. The names are retained here
-> because they appear in other documents, but **they should not be cited or
-> built upon** until a replacement paper exists.
->
-> | ISA | entry paper | status |
-> |---|---|---|
-> | Origami | 258, 631 | **live** (258 carries a notice) |
-> | Forge | 419 | **live** |
-> | Meld | 454 | **live** |
-> | Frog | 207, 281 | **live** — but see the pentagon finding below; 623 (the octonion extension) was withdrawn |
-> | Raven | 615 | ✗ withdrawn |
-> | Valence | 708 | ✗ withdrawn |
-> | Knot | 618 | ✗ withdrawn |
-> | Motive | 619 | ✗ withdrawn |
-> | Hum | 722 | ✗ withdrawn |
-> | Rising Sea | 621 | ✗ withdrawn |
-> | Pentagon | 622 | ✗ withdrawn |
-> | Carnot | 619 | ✗ withdrawn (same paper as Motive) |
->
-> **On the Frog/non-associative line specifically**: the naive pentagon identity
-> *fails* for octonionic labels — verified 2026-08-04, 1176 of 2401 imaginary
-> labelings disagree — and the Pachner-prover verification in 207 is vacuous
-> (the identical test passes on random signs). That is not fatal to the
-> programme: octonions are non-associative, so rebracketing *must* be
-> path-dependent. What it means is that the associator has to be supplied as
-> explicit data with its own coherence condition (Mac Lane; Kuperberg's spiders),
-> which is what FUSE is defined to be here.
-
 The opcode set is fixed. What varies is the *regime* — which β-value, which
 physical domain, which specialisation of the abstract opcodes is in play.
 Each named ISA is a specific point (or arc) in the β-plane, with a characteristic
@@ -1180,21 +1150,13 @@ for what it *feels* like to work in that regime.
 | **Origami** | Origami ISA | [Paper 631](https://doi.org/10.5281/zenodo.21428853) | all β (umbrella) | H⁰–H² | Weyl, Racah | Five-opcode open standard; tropical at β→∞, quantum at β=it | 1 | ℂ | ZX (spiders, undirected) |
 | **Forge** | Forge ISA | [Paper 419](https://doi.org/10.5281/zenodo.20694527) | 0 < β < ∞ (real Gibbs) | H⁰–H² | Boltzmann, Gibbs | Free-energy routing; MGE soft threshold; snap at β* | 1 | ℂ | ZX (weighted) |
 | **Meld** | Meld ISA | [Paper 454](https://doi.org/10.5281/zenodo.20773563) | β = it/ℏ (quantum) | H⁰–H² | Shor, Grover | Complex-MGE quantum algorithm discovery; T-gate as octonion obstruction | 1 | ℂ | ZX (weighted) |
-| **Raven** | Raven ISA | **[WITHDRAWN — Paper 636 removed 2026-08]** | β = α + iωt (complex) | H⁰–H² | Bender, Boettcher | PT-symmetric computation; complex-β knot-type transitions; EP-enhanced sensing | 1 | ℂ | ZX (weighted) |
-| **Valence** | Valence ISA | **[WITHDRAWN — Paper 487 removed 2026-08]** | all β (bonding extension) | H⁰–H² | Kelvin, Tait, Pauling | Covalent bonds as connected-sum JOIN; coordinate bonds as LINK; Frobenius = detailed balance; torus knots as orbital codes | 1 | ℂ | ZX + satellite knots |
-| **Knot** | Knot ISA | **[WITHDRAWN — Paper 618 removed 2026-08]** | β → ∞ (imaginary oscillators) | H⁰–H² | Kauffman, Spencer-Brown | Q-calculus; three imaginary marks; Jones polynomial | 3 | ℍ (Q₈) | Directed ZX (oriented wires) |
 | **Frog** | Frog ISA | [Paper 207](https://doi.org/10.5281/zenodo.19713350) / [281](https://doi.org/10.5281/zenodo.20139448) *(623 withdrawn)* | β → ∞ (exceptional) | H⁰–H³ | Kauffman (731 Calculus) | Seven imaginary marks; Fano multiplication; non-associative | 7 | 𝕆 (Moufang loop) | 731 Frog Calculus (4-legged tetrahedra + ribbon-legs) |
-| **Motive** | Motive ISA | **[WITHDRAWN — Paper 619 removed 2026-08]** | all β (abstract parent) | H⁰–H³ | Carnot, Bender | Carnot cycles = ERASE + FLOW; PT exceptional point; five primitive opcodes | — | — | Laws of Form |
-| **Hum** | Hum ISA | **[WITHDRAWN — Paper 722 removed 2026-08]** | β = it/ℏ (imaginary) | H³ | Lamb, Bethe | QFT vacuum; EMIT is the one new primitive; amplituhedron as RESOLVE | — | — | Feynman / amplituhedron |
-| **Rising Sea** | Rising Sea ISA | **[WITHDRAWN — Paper 621 removed 2026-08]** | full ℂ_β plane | all | Grothendieck | β-plane fibration of all ISAs; Noether from Aut(P_Motive) | — | — | — |
-| **Pentagon** | Pentagon ISA | **[WITHDRAWN — Paper 622 removed 2026-08]** | abstract (coherence) | — | Baez, Mac Lane | Monoidal coherence theorem; five sides = five opcodes | — | — | — |
 
 **Reading the table:**
 
 The IMAGINE-count column follows the **Hurwitz tower**: the only normed division
-algebras are ℝ (0 imaginary units), ℂ (1), ℍ (3), and 𝕆 (7). The ISA trilogy
-(Origami/Forge/Raven) all live at the ℂ level — one imaginary direction, associative.
-The Knot ISA extends to ℍ (three imaginary marks, Q-calculus, Jones polynomial).
+algebras are ℝ (0 imaginary units), ℂ (1), ℍ (3), and 𝕆 (7). Origami, Forge and
+Meld all live at the ℂ level — one imaginary direction, associative.
 The Frog ISA extends to 𝕆 (seven imaginary marks, O-calculus, non-associative
 Moufang loop, G₂ exceptional geometry). No ISA beyond Frog is possible: the
 Hurwitz theorem ends at 𝕆.
@@ -1209,61 +1171,6 @@ still spiders) is needed at ℍ because quaternion multiplication is non-commuta
 (the 3 vertices of that triangular face). The Fano colour triple specifies which
 octonion product eₐ · eᵦ = ±eᵧ fires at each face-weld. No leg may carry more
 than 4 connections because a 5-valent spider would silently invoke associativity.
-
-- **Motive ISA** is the abstract parent: its five opcodes {MARK, CROSS, IMAGINE, FLOW,
-  ERASE} are what remains when you strip every physical specialisation away.
-  Origami, Forge, and Raven are all restrictions of Motive to particular β-values and
-  opcode subsets. The name comes from Carnot's *puissance motrice* (motive power) —
-  the force that drives thermodynamic computation — and echoes Grothendieck's *motives*
-  (universal cohomological avatars), intentionally.
-
-- **Hum ISA** extends Motive by one opcode (EMIT) and rotates β to the imaginary
-  axis. Willis Lamb named the regime: he called the Lamb shift "the unmistakable hum
-  of empty space." EMIT is the vertex at which a particle couples to a field mode;
-  without it, the vacuum is silent.
-
-- **Rising Sea ISA** is the categorical envelope: it shows that every named ISA is
-  a *fibre* of a single Grothendieck fibration p: E → ℂ_β over the complex
-  β-plane. The phrase comes from Grothendieck's own description of his mathematical
-  style — patient, structural, letting the sea rise until the hard problems float.
-
-- **Pentagon ISA** is the coherence machine: it proves that the Motive PROP is
-  well-defined (confluent, terminating rewriting system) and that the pentagon
-  identity holds strictly. Five sides, five opcodes — an unexpected coincidence
-  that Baez would appreciate.
-
-### The containment diagram
-
-```
-                          Rising Sea ISA
-                    (full ℂ_β fibration; Grothendieck)
-                               │
-               ┌───────────────┼───────────────┐
-               │               │               │
-         Motive ISA        Pentagon ISA     (future ISAs)
-      (abstract parent;   (coherence proof)
-       Carnot / Bender)
-               │
-      ┌────────┼──────────┐
-      │        │          │
-  Forge ISA  Raven ISA  Hum ISA          Knot ISA    Frog ISA
-  (real β)  (physio β)  (β = it/ℏ)      (ℍ, Q₈)    (𝕆, G₂)
-      │                                      │           │
-  Origami ISA                         3 IMAGINEs   7 IMAGINEs
-  (β → ∞, ℂ)                         (Jones poly) (Fano plane)
-
-Graphical calculus:  ZX spiders (ℂ) → Directed ZX (ℍ) → 731 Frogs (𝕆)
-```
-
-The Knot and Frog ISAs are siblings at β→∞ that differ from Origami/Forge/Raven
-by their number of active IMAGINE directions: 1 (ℂ), 3 (ℍ), or 7 (𝕆).
-The Hurwitz theorem closes the tower at 7 — no eighth imaginary direction is possible
-in a normed division algebra.
-
-The horizontal axis inside each ISA is the H^k degree — opcodes at H⁰, H¹, H², H³.
-The vertical axis is the β-plane location.
-The three operative ISAs (Origami/Forge/Raven) live on the real β-axis;
-Hum lives on the imaginary axis; Rising Sea covers the whole plane.
 
 ---
 
@@ -1314,14 +1221,6 @@ different hardware.
 - **[Origami: An Open Instruction Set Architecture for Quantum Computing](https://doi.org/10.5281/zenodo.21428853)** (Paper 631) — the umbrella manifesto; all β
 - **[The Forge ISA](https://doi.org/10.5281/zenodo.20694527)** (Paper 419) — temperature-parameterised instruction set; the snap threshold β*
 - **[The Meld ISA](https://doi.org/10.5281/zenodo.20773563)** (Paper 454) — complex-MGE quantum algorithm discovery; the T-gate as octonion obstruction
-- **The Raven ISA** ~~(withdrawn 2026-08)~~ (Paper 636) — enzymes as molecular programs; PT-symmetric computation at complex β
-- **Valence as Orbit Occupancy** ~~(withdrawn 2026-08)~~ (Paper 487) — the entry point for the Valence ISA; Aufbau/Hund/Taube as orbit theorems
-- **The Knot ISA** ~~(withdrawn 2026-08)~~ (Paper 618) — Laws of Form, Q-calculus, thermodynamic deformation of logical operators
-- **The Frog ISA** ~~(withdrawn 2026-08)~~ (Paper 623) — seven imaginary opcodes; the octonion O-calculus
-- **The Motive ISA** ~~(withdrawn 2026-08)~~ (Paper 619) — five opcodes for dissipative thermodynamic systems; the abstract parent
-- **The Hum ISA** ~~(withdrawn 2026-08)~~ (Paper 722) — quantum field theory as a six-opcode programme; EMIT
-- **The Rising Sea ISA** ~~(withdrawn 2026-08)~~ (Paper 621) — the ISA hierarchy as a fibred Lawvere theory over the β-plane
-- **The Pentagon ISA** ~~(withdrawn 2026-08)~~ (Paper 622) — confluence, coherence, and uniqueness for the Carnot ISA
 
 **The graphical calculi:**
 
@@ -1337,4 +1236,3 @@ different hardware.
 
 **For number theorists and algebraic geometers:**
 
-- **The Langlands Correspondence for G-Walk Chemistry** ~~(withdrawn 2026-08)~~ (Paper 492) — RESOLVE = Hecke eigendecomposition; PROJECT = L-function evaluation; FUSE = Rankin-Selberg convolution; G-local systems on molecular graphs

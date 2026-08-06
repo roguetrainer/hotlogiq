@@ -4,7 +4,6 @@ title: Papers
 nav_order: 6
 ---
 
-
 # Paper Index
 
 Papers published to the [HotLogiQ Zenodo community](https://zenodo.org/communities/hotlogiq/records?q=&l=list&p=1&s=10&sort=newest) (2024–).
@@ -54,7 +53,6 @@ Quirky, accessible essays that take one mathematical object seriously and follow
 | 443 | [Planck's Constant in Disguise](papers/10.5281-zenodo.20752384/) | [20752384](https://zenodo.org/records/20752384) |
 | 454 | [The Meld ISA](https://doi.org/10.5281/zenodo.20773563) | [20773563](https://zenodo.org/records/20773563) |
 | 455 | [Eight Derivations of a Universal Instruction Set](https://doi.org/10.5281/zenodo.20774076) | [20774076](https://zenodo.org/records/20774076) |
-| 543 | [The Complex β-Plane](https://doi.org/10.5281/zenodo.21245459) | [21245459](https://zenodo.org/records/21245459) |
 | 631 | [Origami: An Open ISA for Quantum-Classical Systems](https://doi.org/10.5281/zenodo.21428853) | [21428853](https://zenodo.org/records/21428853) |
 
 ---
@@ -69,10 +67,6 @@ Quirky, accessible essays that take one mathematical object seriously and follow
 | 303 | [Pacioli Combinator Library (PCL)](https://zenodo.org/records/20262070) | [20262070](https://zenodo.org/records/20262070) |
 | 310 | [In Praise of Qudits](https://zenodo.org/records/20269991) | [20269991](https://zenodo.org/records/20269991) |
 | 385 | [SQU TriQ and SevenQ: Standard Registers](papers/10.5281-zenodo.20581486/) | [20581486](https://zenodo.org/records/20581486) |
-| 598 | [Orbit Processing Unit (OPU)](https://doi.org/10.5281/zenodo.21360838) | [21360838](https://zenodo.org/records/21360838) |
-| 604 | [Trapped-Ion OPU](https://doi.org/10.5281/zenodo.21360907) | [21360907](https://zenodo.org/records/21360907) |
-| 606 | [Schubert Halt Condition](https://doi.org/10.5281/zenodo.21373481) | [21373481](https://zenodo.org/records/21373481) |
-| 607 | [Diagrammatic QEC as ISA](https://doi.org/10.5281/zenodo.21372999) | [21372999](https://zenodo.org/records/21372999) |
 
 ---
 
@@ -84,12 +78,8 @@ Quirky, accessible essays that take one mathematical object seriously and follow
 | 357 | [Interactive Verification without Trust (MIP\* = RE)](https://zenodo.org/records/20541989) | [20541989](https://zenodo.org/records/20541989) |
 | 361 | [Fano Orbit Decomposition of Magic](papers/10.5281-zenodo.20541583/) | [20541583](https://zenodo.org/records/20541583) |
 | 366 | [A Valence Theory of Quantum Magic](https://zenodo.org/records/20541665) | [20541665](https://zenodo.org/records/20541665) |
-| 469 | [ISA Completeness](https://doi.org/10.5281/zenodo.21219698) | [21219698](https://zenodo.org/records/21219698) |
-| 470 | [Hot Logic](https://doi.org/10.5281/zenodo.21219700) | [21219700](https://zenodo.org/records/21219700) |
-| 595 | [Weyl Chamber Homology](https://doi.org/10.5281/zenodo.21309088) | [21309088](https://zenodo.org/records/21309088) |
 | 596 | [Weyl–DFT Accelerator](https://doi.org/10.5281/zenodo.21373469) | [21373469](https://zenodo.org/records/21373469) |
 | 597 | [In Praise of Soft Thresholds](https://doi.org/10.5281/zenodo.21373469) | [21373469](https://zenodo.org/records/21373469) |
-| 602 | [Hecke–Weyl Routing](https://doi.org/10.5281/zenodo.21372929) | [21372929](https://zenodo.org/records/21372929) |
 
 ---
 
@@ -99,12 +89,6 @@ Quirky, accessible essays that take one mathematical object seriously and follow
 |---|-------|-----|
 | 324 | [The Decoding Engine (Ribosome)](https://zenodo.org/records/20400652) | [20400652](https://zenodo.org/records/20400652) |
 | 325 | [The Topological Heat Engine (FMO)](https://zenodo.org/records/20400638) | [20400638](https://zenodo.org/records/20400638) |
-| 487 | [Valence as Orbit Occupancy](https://doi.org/10.5281/zenodo.21219722) | [21219722](https://zenodo.org/records/21219722) |
-| 488 | [G-walk Chemistry](https://doi.org/10.5281/zenodo.21219720) | [21219720](https://zenodo.org/records/21219720) |
-| 490 | [G-walk Protein Design](https://doi.org/10.5281/zenodo.21219724) | [21219724](https://zenodo.org/records/21219724) |
-| 510 | [Kinetic Proofreading as QEC](https://doi.org/10.5281/zenodo.21345099) | [21345099](https://zenodo.org/records/21345099) |
-| 515 | [Protein Folding ISA](https://doi.org/10.5281/zenodo.21345099) | [21345099](https://zenodo.org/records/21345099) |
-| 603 | [G-Step CO₂ Fixation](https://doi.org/10.5281/zenodo.21373477) | [21373477](https://zenodo.org/records/21373477) |
 
 ---
 
@@ -117,8 +101,6 @@ Quirky, accessible essays that take one mathematical object seriously and follow
 | 316 | [EconIAC / MONIAC](https://zenodo.org/records/20315689) | [20315689](https://zenodo.org/records/20315689) |
 | 397 | [Systemic Risk as H²](papers/10.5281-zenodo.20642908/) | [20642908](https://zenodo.org/records/20642908) |
 | 478 | [H^k Pricing](https://doi.org/10.5281/zenodo.21158959) | [21158959](https://zenodo.org/records/21158959) |
-| 542 | [Incentive Geometry](https://doi.org/10.5281/zenodo.21219738) | [21219738](https://zenodo.org/records/21219738) |
-| 549 | [Ergodicity Economics ISA](https://doi.org/10.5281/zenodo.21249153) | [21249153](https://zenodo.org/records/21249153) |
 
 ---
 
@@ -129,8 +111,6 @@ Quirky, accessible essays that take one mathematical object seriously and follow
 | 240 | [Structural Observations on J³(𝕆)](papers/10.5281-zenodo.19824028/) | [19824028](https://zenodo.org/records/19824028) |
 | 245 | [Nuclear Magic Numbers and Exceptional Lie Algebras](papers/10.5281-zenodo.19960385/) | [19960385](https://zenodo.org/records/19960385) |
 | 265 | [The ζ(21) Apéry Generalisation](papers/10.5281-zenodo.20029647/) | [20029647](https://zenodo.org/records/20029647) |
-| 553 | [Apéry ISA](https://doi.org/10.5281/zenodo.21250670) | [21250670](https://zenodo.org/records/21250670) |
-| 608 | [ISA Self-Reference Tower](https://doi.org/10.5281/zenodo.21373483) | [21373483](https://zenodo.org/records/21373483) |
 
 ---
 

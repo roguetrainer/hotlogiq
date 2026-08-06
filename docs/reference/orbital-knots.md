@@ -222,7 +222,6 @@ Note that T(2,3) and T(3,2) are the same knot — the trefoil — because T(p,q)
 ## Key references
 
 - **Paper 657 — Knotted Orbitals (Kelvin-Tait revival):** doi:[10.5281/zenodo.21480634](https://doi.org/10.5281/zenodo.21480634) — introduces the torus-knot assignment for atomic orbitals; Hopf fibres on S³; connection to Kelvin-Tait vortex atoms.
-- **Paper 709 — Filling by Winding (Periodic Table as S³ shadow):** doi:[10.5281/zenodo.21608229](https://doi.org/10.5281/zenodo.21608229) — derives the winding number w = n from the S³ geometry; explains the Madelung filling rule topologically; tabulates orbital knots through n = 7.
 - **Paper 719 — Orbital Simplex / Shell Genus:** doi:[10.5281/zenodo.21630155](https://doi.org/10.5281/zenodo.21630155) — shows that the total torus-knot genus of shell n equals a combinatorial number (related to C(n,3)); relates orbital simplices to 6j symbols as H³ primitives.
 - **Fock (1935)** — V.A. Fock, *Zur Theorie des Wasserstoffatoms*, Z. Phys. 98, 145–154. The original S³ map for hydrogen wave functions.
 - **Milnor (1975)** — J. Milnor, *On the 3-dimensional Brieskorn manifolds M(p,q,r)*, in *Knots, Groups, and 3-Manifolds*, Ann. Math. Studies 84. Contains the Seifert genus formula for torus knots.
