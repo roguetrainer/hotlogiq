@@ -5,7 +5,6 @@ nav_order: 1
 description: "What HotLogiQ is, why it matters, and the shortest path to the core ideas — by reader type."
 ---
 
-
 # Start Here
 {: .no_toc }
 
@@ -51,11 +50,8 @@ Five pages that together cover the core of the framework — in reading order:
 3. **[The Meld ISA](https://doi.org/10.5281/zenodo.20773563)** (Paper 454) — quantum branch of the framework. QFT as a TWIST 🌀 cascade; FUSE 💎 as the non-Abelian obstruction; why LWE is quantum-resistant.
 4. **[Eight Derivations of a Universal Instruction Set](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — eight independent routes all forced to the same five opcodes. Explains *why* this gate set is universal at a deeper level than Solovay-Kitaev.
 5. **[ISA Completeness: Nine Normal Forms](https://doi.org/10.5281/zenodo.21219699)** (Paper 469) — the three-qubit Clifford+T fragment reduces to nine normal forms; closes the classification the resource-theory papers depend on.
-6. **[Dark Magic: A Complete Resource Theory of Magic](https://doi.org/10.5281/zenodo.21219700)** (Paper 470) — the full magic resource theory via the Origami ISA; three-tier stabiliser/dark/genuine classification with a TV-complete monotone.
-7. **[The Clifford Hierarchy as Group Cohomology](https://doi.org/10.5281/zenodo.21219712)** (Paper 476) — TWIST 🌀 identified with the Schur multiplier certificate; recasts the Clifford hierarchy in purely cohomological terms.
 8. **[The Cookie-Cutter Lifting Programme: Shor as a Clifford Circuit](https://doi.org/10.5281/zenodo.21219704)** (Paper 472) — Shor's algorithm re-derived as a lifted Clifford circuit; a concrete, checkable flagship result.
 9. **[Quantum Error Correction as Cohomological Encoding](https://doi.org/10.5281/zenodo.21164005)** (Paper 480) — QEC codes as chain complexes, logical qubits as homology classes, with a β* threshold.
-10. **[The Wigner Defect Conservation Law](https://doi.org/10.5281/zenodo.21219702)** (Paper 471) — a single T gate imprints a defect whose count is independent of circuit size N; a sharp, falsifiable conservation law.
 
 ---
 
@@ -64,16 +60,13 @@ Five pages that together cover the core of the framework — in reading order:
 1. **[The Non-Hermitian ISA](https://doi.org/10.5281/zenodo.21480491)** (Paper 460) — PT symmetry, exceptional points, and the 38-fold way inside the Origami ISA; the thread's entry point.
 2. **[PiTch: A Topological Invariant for PT-Symmetric Systems](https://doi.org/10.5281/zenodo.21509971)** (Paper 678) — a discrete topological invariant distinguishing PT-broken from PT-unbroken phases.
 3. **[PT Symmetry and the Amplituhedron](https://doi.org/10.5281/zenodo.21518106)** (Paper 680) — the positive Grassmannian identified as the PT-unbroken phase; connects non-Hermitian physics to scattering-amplitude geometry.
-4. **[PT-Symmetric Combinatorics](https://doi.org/10.5281/zenodo.21480493)** (Paper 634) — Lee-Yang zeros and exceptional points as a single combinatorial phenomenon, thawing discrete optimisation.
 
 ---
 
 ### Chemistry and physics
 
-1. **[A Universal Theory of Chemical Bonding](https://doi.org/10.5281/zenodo.21277821)** (Paper 570) — three ISA descriptors (θ_G, NOON bond order, Galerkin coupling H₀₁) unify Lewis, MO, and VB theories. Validated across nine molecules; benzene resonance energy 54.5 vs 57.4 mEh experimental.
 2. **[G-Step CO₂ Fixation](https://doi.org/10.5281/zenodo.21373477)** (Paper 603) — the G-step definition; RuBisCO baseline; three control handles (spin topology, E-field, B-field); Carbonase concept.
 3. **[Weyl–DFT Accelerator](https://doi.org/10.5281/zenodo.21373469)** (Paper 596) — Weyl c₂ as a DFT failure detector (r=0.990); MGE soft router replaces hard CASSCF threshold.
-4. **[Filling by Winding: The Periodic Table from S³ Geometry](https://doi.org/10.5281/zenodo.21608229)** (Paper 709) — the periodic table derived topologically from S³ winding numbers, not fit to observed shell structure. The flagship result of the winding-shell programme.
 5. **[The Frontier Winding Gap](https://doi.org/10.5281/zenodo.21612627)** (Paper 710) — chemical reactivity traced to a single topological invariant, the frontier winding gap ΔwF.
 6. **[Conical Intersections as Hitchin Branch Points](https://doi.org/10.5281/zenodo.21558771)** (Paper 697) — Jahn–Teller and related conical intersections identified with branch points of a Hitchin spectral curve.
 7. **[Cobalamin and the Three-Oxidation-State Metal](https://doi.org/10.5281/zenodo.21613228)** (Paper 713) — vitamin B12's radical/nucleophilic switching explained via winding-shell analysis; a concrete biological test case.
@@ -83,10 +76,7 @@ Five pages that together cover the core of the framework — in reading order:
 
 ### Biology
 
-1. **[Protein Folding ISA](https://doi.org/10.5281/zenodo.21345098)** (Paper 515) — SSM (spontaneous symmetry making) as the H¹→H² step that creates G_fold; chaperones as H² QEC; AUC=0.981.
-2. **[Kinetic Proofreading as QEC](https://doi.org/10.5281/zenodo.21300655)** (Paper 510) — proofreading IS quantum error correction; H⁰×H¹×H² gives 10⁹/10⁶/10⁴ fidelity for Pol III/RNAP/ribosome.
 3. **[The Topological Heat Engine (FMO)](https://doi.org/10.5281/zenodo.20400638)** (Paper 325) — broken-Fano topology is the unique 7-node graph with positive Carnot efficiency; η=0.1825 from crystal structure alone.
-4. **[The Porphyrin Ring as PAT-2](https://doi.org/10.5281/zenodo.21613237)** (Paper 705) — metal selectivity in biological macrocycle catalysts (heme, chlorophyll, cobalamin) derived from Hitchin geometry.
 
 ---
 
@@ -95,8 +85,6 @@ Five pages that together cover the core of the framework — in reading order:
 1. **[The Topology of Risk: A Primer](https://doi.org/10.5281/zenodo.20642983)** (Paper 398) — H⁰/H¹/H² from scratch using the 2008 crisis. No prerequisites beyond knowing what a credit exposure is.
 2. **[Systemic Risk as H²](https://doi.org/10.5281/zenodo.20642908)** (Paper 397) — the 2008 crisis as a topological event; H¹ cycles become globally inconsistent at the H² snap.
 3. **[H^k Pricing](https://doi.org/10.5281/zenodo.21158959)** (Paper 478) — H⁰=spot, H¹=options/yield curves, H²=CDO²/correlation; post-2008 regulation as H¹-complete/H²-incomplete.
-4. **[The Financial 6j Symbol](https://doi.org/10.5281/zenodo.21428855)** (Paper 632) — six distinct market phenomena unified as manifestations of a single H² obstruction, the financial analogue of the 6j symbol.
-5. **[The Maslov Moment](https://doi.org/10.5281/zenodo.21480503)** (Paper 655) — financial phase transitions recast in the tropical (Maslov, β→∞) limit.
 
 ---
 
@@ -104,8 +92,6 @@ Five pages that together cover the core of the framework — in reading order:
 
 1. **[Eight Derivations](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — eight routes to the same five generators. Closes an 80-year fragmentation between spectroscopy (Racah 1942), categorical QM (Abramsky-Coecke 2004), and quantum computing (Boykin 1999).
 2. **[ISA Khovanov Complex](https://doi.org/10.5281/zenodo.21278536)** (Paper 571) — C^k = ⊕ A^{⊗c(v)}, ∂²=0 from the Frobenius axiom, ISA homology recovers Khovanov's categorification of the Jones polynomial.
-3. **[Hecke–Weyl Routing](https://doi.org/10.5281/zenodo.21372929)** (Paper 602) — Kazhdan-Lusztig polynomials as MGE routing weights; Weak Lifting Theorem = KL positivity; Fano = G₂ Schubert calculus at 7th root of unity.
-4. **[The Four-Body Threshold](https://doi.org/10.5281/zenodo.21428849)** (Paper 626) — universal computation shown to require pair-of-pairs (four-body) interactions; a sharp threshold result.
 5. **[Non-Associative Information Geometry](https://doi.org/10.5281/zenodo.20076498)** (Paper 221) — the Fano-Fisher metric decomposition theorem on G₂; extends information geometry to the non-associative setting.
 
 ---

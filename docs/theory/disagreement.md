@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Disagreement (JSD)"
+parent: Theory
+nav_exclude: true
+description: "The Jensen-Shannon divergence as a measure of information lost when sources are combined."
+---
+
 # Disagreement: the Jensen–Shannon divergence
 
 **Status**: foundational tool, but narrower than the MGE. Added 2026-08-01.
@@ -105,13 +113,10 @@ The decomposition into "data uncertainty" ($\overline{H}$) and "knowledge
 uncertainty" (JSD) is **standard in Bayesian deep learning** — see Depeweg et
 al. and Malinin & Gales on ensemble uncertainty decomposition. Anything written
 here should engage that literature rather than rediscover it. The corpus's
-contribution is the cohomological framing (Paper 628: $H^1$ pooling provably
 cannot represent second-order beliefs), not the statistic.
 
 ## References
 
-- Paper 628 — *Knowledge as a Cohomological Object*: the obstruction theorem.
-- Paper 629 — *Agentic Consensus via Bilinear Belief Pooling*: the $H^2$
   construction that can represent what $H^1$ cannot.
 - `experiments/x628_second_order_beliefs/x628a_disagreement_decomposition.py` —
   4/4 PASS; establishes the negative (no pooling rule separates A from B) and
