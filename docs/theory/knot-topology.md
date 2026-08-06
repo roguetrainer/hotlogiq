@@ -30,7 +30,7 @@ portfolio: A
 is the paper written directly for this audience.
 
 Over forty years, Louis Kauffman developed a sequence of knot invariants —
-bracket, Jones polynomial, Khovanov homology, virtual knots, slice concordance,
+bracket, Jones polynomial, Khovanov homology, virtual knots, slice concordance
 loop braids — each more powerful than the last, yet none completing the
 classification of knots. The ISA reading: this progression is not a sequence of
 failures but a **traversal of topological tiers**. Each invariant lives at a
@@ -57,15 +57,15 @@ would need to detect.
 If you work in low-dimensional topology or representation theory, the relevant
 objects are ones you know well:
 
-- The **Kuperberg G₂ spider** — a planar diagram calculus for G₂ representations,
+- The **Kuperberg G₂ spider** — a planar diagram calculus for G₂ representations
   with trivalent vertices and the 14-dimensional fundamental representation
 - **Khovanov homology** — a categorification of the Jones polynomial; the
   differential ∂ on the chain complex satisfies ∂² = 0 by a direct algebraic
   argument
-- The **Grassmannian Gr(k,n)** — the space of k-dimensional subspaces of ℂⁿ,
+- The **Grassmannian Gr(k,n)** — the space of k-dimensional subspaces of ℂⁿ
   carrying Schubert calculus, Plücker coordinates, and the amplituhedron
   construction
-- The **Fano plane PG(2,2)** — the unique projective plane over GF(2); 7 points,
+- The **Fano plane PG(2,2)** — the unique projective plane over GF(2); 7 points
   7 lines, automorphism group PSL(2,7) of order 168
 
 The ISA claim is that these are not four separate structures imported into physics
@@ -163,7 +163,7 @@ studied separately:
   point in Gr(k,n) (k occupied orbitals in n basis functions); the molecular
   Hamiltonian acts on this space by Schubert intersection
 
-**Paper [574](https://doi.org/10.5281/zenodo.21279006)** shows these are the
+**Paper ** shows these are the
 same object: the Plücker embedding gives a unified parametrisation of both the
 bonding tier (H², irreducible entanglement between orbitals) and the scattering
 amplitude (H², irreducible entanglement between external legs). The ISA tier
@@ -249,7 +249,7 @@ The ISA framework is not a redescription of known topology. It adds:
    corresponding process).
 
 3. **A connection between knot invariants and scattering amplitudes.** The
-   Grassmannian common parent (Paper [574](https://doi.org/10.5281/zenodo.21279006))
+   Grassmannian common parent (Paper )
    suggests that the HOMFLY polynomial and scattering amplitudes in gauge
    theory share a Grassmannian Schubert cell decomposition — a precise statement
    that is open as a conjecture.
@@ -269,9 +269,9 @@ The ISA framework is not a redescription of known topology. It adds:
 | --- | --- | --- | --- |
 | 572 | [The Kuperberg G₂ Spider is the BIND Calculus](https://doi.org/10.5281/zenodo.21278538) | [21278538](https://zenodo.org/records/21278538) | BIND theorem; spider = opcode calculus · [Explainer](/papers/10.5281-zenodo.21278538/) |
 | 571 | [The ISA Chain Complex: Khovanov Homology from Opcode Projections](https://doi.org/10.5281/zenodo.21278536) | [21278536](https://zenodo.org/records/21278536) | ∂²=0 proved; Khovanov recovery |
-| 574 | [The Grassmannian as Common Parent of Bonding and Scattering](https://doi.org/10.5281/zenodo.21279006) | [21279006](https://zenodo.org/records/21279006) | Gr(k,n) unifies amplituhedron and chemistry · [Explainer](/papers/10.5281-zenodo.21279006/) |
+| 574 |  | [21279006](https://zenodo.org/records/21279006) | Gr(k,n) unifies amplituhedron and chemistry · [Explainer](/papers/10.5281-zenodo.21279006/) |
 | 595 | [Weyl Chamber Homology](https://doi.org/10.5281/zenodo.21345107) | [21345107](https://zenodo.org/records/21345107) | Bredon cohomology; tier obstruction · [Explainer](/papers/10.5281-zenodo.21345107/) |
-| 568 | [Schrödinger's Equation on the Grassmannian](https://doi.org/10.5281/zenodo.21277819) | [21277819](https://zenodo.org/records/21277819) | Correct Schmidt decomposition; Gr(k,n) frame |
+| 568 |  | [21277819](https://zenodo.org/records/21277819) | Correct Schmidt decomposition; Gr(k,n) frame |
 
 **Fano plane and magic**
 
@@ -286,9 +286,9 @@ The ISA framework is not a redescription of known topology. It adds:
 
 | # | Title | DOI | Notes |
 | --- | --- | --- | --- |
-| 469 | [ISA Completeness: Nine Normal Forms](https://doi.org/10.5281/zenodo.21219699) | [21219699](https://zenodo.org/records/21219699) | Completeness theorem; 9 opcode classes |
-| 607 | [Diagrammatic QEC as ISA](https://doi.org/10.5281/zenodo.21372998) | [21372998](https://zenodo.org/records/21372998) | ZX-calculus ↔ ISA; footprints and fibres |
-| 468 | [Resource Theory as Circuit Syntax](https://doi.org/10.5281/zenodo.20955514) | [20955514](https://zenodo.org/records/20955514) | ISA as symmetric monoidal category · [Explainer](/papers/10.5281-zenodo.20955514/) |
+| 469 |  | [21219699](https://zenodo.org/records/21219699) | Completeness theorem; 9 opcode classes |
+| 607 |  | [21372998](https://zenodo.org/records/21372998) | ZX-calculus ↔ ISA; footprints and fibres |
+| 468 |  | [20955514](https://zenodo.org/records/20955514) | ISA as symmetric monoidal category · [Explainer](/papers/10.5281-zenodo.20955514/) |
 
 ---
 
@@ -297,7 +297,7 @@ The ISA framework is not a redescription of known topology. It adds:
 {: .note }
 > **If you work on spider calculi / planar algebras:**
 > Start with [The Kuperberg G₂ Spider is the BIND Calculus](https://doi.org/10.5281/zenodo.21278538).
-> It shows exactly how the G₂ spider relations map to BIND opcode identities,
+> It shows exactly how the G₂ spider relations map to BIND opcode identities
 > with explicit diagrammatic proofs. The ISA formalism is introduced only as needed.
 
 {: .note }
@@ -308,7 +308,7 @@ The ISA framework is not a redescription of known topology. It adds:
 
 {: .note }
 > **If you work on the amplituhedron / positive Grassmannian:**
-> Start with [The Grassmannian as Common Parent](https://doi.org/10.5281/zenodo.21279006).
+> Start with .
 > It identifies the Schubert cell decomposition with the ISA tier structure and
 > states the open conjecture connecting HOMFLY to scattering amplitudes.
 
@@ -321,7 +321,7 @@ The ISA framework is not a redescription of known topology. It adds:
 
 *See also:
 [Non-Associative Frontier](/docs/theory/non-associative-frontier) — G₂ geometry
-and the octonions ·
+and the octonions
 [PT Symmetry & Exceptional Points](/docs/theory/pt-symmetry) — a parallel entry-point
-page written for non-Hermitian physicists ·
+page written for non-Hermitian physicists
 [Opcodes reference](/docs/reference/opcodes) — canonical definitions of all 8 ISA opcodes*

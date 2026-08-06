@@ -52,7 +52,7 @@ arises systematically as the ℏ → 0 (or β → ∞) limit of quantum/statisti
 mechanics.
 
 **The single most important consequence:** every algorithm, model, or physical
-system that uses a hard threshold — argmax, winner-takes-all, on/off logic,
+system that uses a hard threshold — argmax, winner-takes-all, on/off logic
 phase transitions — is implicitly operating at β → ∞. Replacing that hard
 threshold with finite β softens it, makes it differentiable, and connects it
 to the probabilistic semiring. This is not an approximation. It is the
@@ -76,7 +76,7 @@ $$\pi_k(\beta) = \frac{e^{-\beta E_k}}{\sum_j e^{-\beta E_j}}$$
 | Optimisation | Simulated annealing schedule | β(t) increasing; cooling toward β→∞ |
 | Information theory | Maximum entropy at fixed energy | β = Lagrange multiplier |
 
-All six are the same formula. The ML engineer who tunes the softmax temperature,
+All six are the same formula. The ML engineer who tunes the softmax temperature
 the physicist computing a partition function, and the quant pricing options are
 all turning the same dial.
 
@@ -109,7 +109,7 @@ arithmetic is the familiar (+, ×) of real numbers. Key properties:
 - **Entropy is positive**: H(π) = −Σπ_k log π_k > 0
 - **Gradients flow**: backpropagation works; the system can be optimised
 
-This is the regime of neural networks, Bayesian inference, statistical physics,
+This is the regime of neural networks, Bayesian inference, statistical physics
 and chemical kinetics. It is the regime where learning happens.
 
 ### The tropical semiring: β → ∞
@@ -126,7 +126,7 @@ addition. Key properties:
 - **Entropy is zero**: H(π) = 0 at β → ∞
 - **No gradients**: classical algorithms, lookup tables, discrete logic
 
-This is the regime of classical computers, database queries, shortest paths,
+This is the regime of classical computers, database queries, shortest paths
 and discrete optimisation. It is the regime where answers are stored.
 
 ### The β* snap: the transition between them
@@ -138,7 +138,7 @@ problem:
 
 $$\beta^* = \frac{3}{8} \ln\frac{1}{1-\rho}$$
 
-where ρ is the load factor of the constraint graph. Below β*: smooth, learning,
+where ρ is the load factor of the constraint graph. Below β*: smooth, learning
 exploring. Above β*: crystallised, decided, locked in.
 
 **Every hard threshold in science is β* in disguise:**
@@ -201,7 +201,7 @@ six different fields — they are all evaluating the same programme over the
 semiring appropriate to their domain.
 
 **The operational consequence for the ISA:** every opcode in the Origami ISA
-has a β-parameterised version. At β → ∞ it runs over (max,+) — classical,
+has a β-parameterised version. At β → ∞ it runs over (max,+) — classical
 discrete. At finite β it runs over Gibbs — statistical, differentiable. The
 same ISA programme, run at different β, gives different answers and uses
 different computational resources. This is what we mean by a
@@ -210,7 +210,7 @@ that its natural parameter β has been set to a finite value rather than ∞.
 
 **Papers:**
 [The Maslov-Gibbs Einsum](https://doi.org/10.5281/zenodo.17981393) — the
-foundational paper; tropical crystallisation and the thermodynamic bridge ·
+foundational paper; tropical crystallisation and the thermodynamic bridge
 [β in Disguise](https://doi.org/10.5281/zenodo.20752384)
 
 ---
@@ -309,8 +309,7 @@ formal setting — and several familiar instances:
 
 Most deformations move continuously **within a type**: associative algebras stay
 associative, Lie algebras stay Lie algebras. Maslov dequantization does
-something stronger. In the limit,
-
+something stronger. In the limit
 $$a \oplus a = a$$
 
 addition becomes **idempotent** — and an idempotent addition has no inverses. So
@@ -354,4 +353,4 @@ family; the snap threshold in detail.
 - [The Maslov-Gibbs Einsum](https://doi.org/10.5281/zenodo.17981393) — start here for the mathematics
 - [β in Disguise](https://doi.org/10.5281/zenodo.20752384) — start here if you want the intuition first
 - [In Praise of Soft Thresholds](https://doi.org/10.5281/zenodo.21373468) — why every hard threshold is β→∞
-- [The β-plane](https://doi.org/10.5281/zenodo.21245459) — the full complex β parameter space
+-  — the full complex β parameter space

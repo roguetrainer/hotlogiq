@@ -342,5 +342,4 @@ is no other place for β to live.
 [Maslov-Gibbs Einsum](../reference/glossary.md#maslov-gibbs-einsum-mge) · [The Opcodes](../reference/opcodes.md)
 
 *For number theorists and algebraic geometers:*
-[The Langlands Perspective](./langlands.md) — the adèlic β-plane from the Langlands angle;
 motivic L-functions as Harmonic ISA, automorphic forms as Meld ISA.

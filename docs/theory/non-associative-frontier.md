@@ -128,7 +128,7 @@ The 731-ISA exploits this: the **FUSE** opcode returns a non-zero residual preci
 | [207 — The 731 Frog Calculus](https://doi.org/10.5281/zenodo.19713350) | Full diagrammatic calculus for 731-ISA programs; the FUSE and SPIN rules |
 | [263 — The Architecture of Inevitability](https://doi.org/10.5281/zenodo.19928880) | Freudenthal-Tits magic square; why G₂ geometry forces the Four-Leg Constraint |
 | [271 — The 731 Theorem](https://doi.org/10.5281/zenodo.20139443) | Five proved identities; Spin-7 annihilator theorem; tr(T²)=21 exactly |
-| [317 — G₂ Boltzmann Machine](https://doi.org/10.5281/zenodo.20319577) | G₂ triality as a learning prior; MGE advantage over CD-k |
+|  | G₂ triality as a learning prior; MGE advantage over CD-k |
 | [318 — FeMo-Cofactor](https://doi.org/10.5281/zenodo.20346650) | 5/7 Fano coverage in nitrogen fixation; 731-ISA program for the Mo₇ cluster |
 | [325 — The Topological Heat Engine](https://doi.org/10.5281/zenodo.20400638) | 6/7 Fano = broken symmetry = η > 0; FMO photosynthesis as a 731-ISA program |
 | [357 — MIP* = RE at the Physical Level](https://doi.org/10.5281/zenodo.20541583) | Fano plane as MIP* constraint graph; GHZ stabiliser = Fano plane (7/7 lines) |
@@ -150,6 +150,6 @@ If you want the physics applications, jump directly to Paper 325 (FMO photosynth
 
 ---
 
-*See also: [Processing Units](/docs/theory/processing-units) — the RPU is the hardware realisation of the 731-ISA ·
-[The β-plane](/docs/theory/forge-meld) — how the full β-plane situates the non-associative H² tier ·
+*See also: [Processing Units](/docs/theory/processing-units) — the RPU is the hardware realisation of the 731-ISA
+[The β-plane](/docs/theory/forge-meld) — how the full β-plane situates the non-associative H² tier
 [The Langlands Perspective](/docs/theory/langlands) — G₂ self-duality in the Langlands programme*

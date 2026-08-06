@@ -6,7 +6,6 @@ has_children: true
 description: "The mathematical and physical foundations of the HotLogiQ / Origami ISA framework."
 ---
 
-
 # Theory
 {: .no_toc }
 
@@ -22,6 +21,4 @@ description: "The mathematical and physical foundations of the HotLogiQ / Origam
 | [Disagreement](disagreement) | JSD = H(mean) − mean(H); why pooled beliefs cannot distinguish confident disagreement from shared ignorance |
 | [The β-plane](forge-meld) | The full complex-β plane; Forge (real β), Meld (β = it), Raven (complex β) |
 | [PT Symmetry & Exceptional Points](pt-symmetry) | Exceptional points as tier boundaries; PiTch number; 38-fold way; HPU substrates |
-| [Processing Units](processing-units) | GPU / QPU / HPU / OPU — the hardware taxonomy |
-| [The Langlands Perspective](langlands) | Geometric Langlands as the deepest symmetry of the ISA |
 | [The Non-Associative Frontier](non-associative-frontier) | Division algebra ladder; octonions; G₂; 731-ISA |

@@ -50,7 +50,7 @@ hands. The H^k tier ladder gives it a name.
 | PT phase transition | Eigenvalues collide; eigenvectors coalesce; Jordan block forms | **H¹ ↔ H² boundary (β\*₁₂)** |
 | PT-broken (complex-conjugate pairs) | Gain-loss dynamics; exponential amplification/decay; dissipation dominant | **H²** |
 
-The **H¹ tier** is the home of coherent, unitary-like dynamics — Berry phase,
+The **H¹ tier** is the home of coherent, unitary-like dynamics — Berry phase
 adiabatic transport, interference. The gain-loss parameter is present but
 small; the system lives in the PT-unbroken phase; eigenvalues are real and
 well-separated.
@@ -108,7 +108,7 @@ merge into a single Jordan block), the contribution to S is n − 1.
 
 ### The pattern for low-order EPs
 
-The three things that physicists already know — monodromy group, Berry phase,
+The three things that physicists already know — monodromy group, Berry phase
 Kato exponent — are not three separate phenomena. They are three faces of a
 single invariant:
 
@@ -120,7 +120,7 @@ single invariant:
 | n | n−1 | ℤₙ | 2π/n | 1/n | n-cycle |
 
 **Reading the table:** one loop around an n-th order EP permutes the
-eigenvalue sheets by an n-cycle in ℤₙ, accumulates a Berry phase of 2π/n,
+eigenvalue sheets by an n-cycle in ℤₙ, accumulates a Berry phase of 2π/n
 and gives Kato eigenvalue splitting proportional to ε^{1/n} near the EP.
 These three facts were known separately. PiTch number unifies them: the single
 integer S = n−1 determines all three.
@@ -154,7 +154,7 @@ winding number, and for cyclic EPs it is complete.
 
 ## Numerical evidence
 
-Experiments x678a, x678b, and x678c verify the PiTch number table for 2nd, 3rd,
+Experiments x678a, x678b, and x678c verify the PiTch number table for 2nd, 3rd
 and 4th order EPs in a family of non-Hermitian random matrices:
 
 | n | S | Monodromy | Phase/loop | Kato exp | Experiment |
@@ -249,7 +249,7 @@ without full eigenvalue tracking? A positive answer would make PiTch number
 experimentally accessible in any two-port scattering setup.
 
 **Floquet systems.** Time-periodic PT-symmetric Hamiltonians H(t) = H(t+T)
-have quasi-energies defined modulo ℏΩ. The Floquet Brillouin zone is a torus,
+have quasi-energies defined modulo ℏΩ. The Floquet Brillouin zone is a torus
 not a plane. Is there a PiTch number for the quasi-energy spectrum — a count of
 EPs per Floquet zone — and does it have the same tier-boundary interpretation?
 
@@ -264,40 +264,40 @@ structure of the multi-sheet EP locus at irrational ε.
 
 **Foundation — parameter space and tier structure**
 
-- [PT Symmetry in Unexpected Places](https://doi.org/10.5281/zenodo.21480284) (`PtSurvey`) —
+-  (`PtSurvey`) —
   survey across chemistry, QEC, ranking, biology, information geometry; EP = β\* snap theorem;
-  Raven ISA; FEP-PT bridge; written for Carl Bender ·
+  Raven ISA; FEP-PT bridge; written for Carl Bender
   [Explainer](/papers/10.5281-zenodo.21480284/)
 
 - [The Non-Hermitian ISA: PT Symmetry, Exceptional Points, and the 38-Fold Way](https://doi.org/10.5281/zenodo.21480491) (`NonHermIsa2`) —
-  AZ symmetry classes in ISA language; PROJECT failure = PT phase transition; EP at H¹/H² boundary ·
+  AZ symmetry classes in ISA language; PROJECT failure = PT phase transition; EP at H¹/H² boundary
   [Explainer](/papers/10.5281-zenodo.21480491/)
 
-- [The Adelic β-Plane](https://doi.org/10.5281/zenodo.21245459) (`AdelicBeta`) —
+-  (`AdelicBeta`) —
   unified parameter space; classical (β real), quantum (β = it), PT-symmetric (β ∈ ℂ near imaginary axis)
 
 **The invariant**
 
 - [PiTch: A Topological Invariant for PT-Symmetric Systems](https://doi.org/10.5281/zenodo.21509972) (`PiTch`) —
   **start here for the mathematics**; PiTch number S = n−1 for n-th order EP;
-  Berry phase Φ = πS; ℤₙ monodromy; Bender-Boettcher S = 0 certificate; 24/24 checks ·
+  Berry phase Φ = πS; ℤₙ monodromy; Bender-Boettcher S = 0 certificate; 24/24 checks
   [Explainer (1 page)](/papers/10.5281-zenodo.21509972/)
 
-- [Mean-Field Breakdown, Exceptional Geometry, and H² Universality](https://doi.org/10.5281/zenodo.21427824) (`MeanFieldBreak`) —
+-  (`MeanFieldBreak`) —
   mean-field collapse at the H² threshold; exceptional points as universality boundary
 
 **PT symmetry in algorithms and computation**
 
-- [PT-Symmetric Lifting](https://doi.org/10.5281/zenodo.21480495) (`PtLifting`) —
+-  (`PtLifting`) —
   unified language for quantum algorithms via EP-free evolution; HSP and walk families;
-  Conditions A/B/C for lifting ·
+  Conditions A/B/C for lifting
   [Explainer](/papers/10.5281-zenodo.21480495/)
 
-- [PT-Exceptional-Point Search: Beyond the BBBV Bound](https://doi.org/10.5281/zenodo.21480499) (`PtEpSearch`) —
-  EP sensing enhancement is real; postselection cancels the speedup exactly; what remains open ·
+-  (`PtEpSearch`) —
+  EP sensing enhancement is real; postselection cancels the speedup exactly; what remains open
   [Explainer](/papers/10.5281-zenodo.21480499/)
 
-- [PT-Symmetric Combinatorics](https://doi.org/10.5281/zenodo.21480493) (`PtCombinato`) —
+-  (`PtCombinato`) —
   SAT/TSP/graph-colouring as PT-breaking; Beraha numbers = EP₂; PT-Hardness Conjecture
 
 - [The β-Rank Family](https://doi.org/10.5281/zenodo.21479920) (`BetaRank`) —
@@ -306,17 +306,17 @@ structure of the multi-sheet EP locus at irrational ε.
 
 **Hardware and substrate**
 
-- [Raven on Existing Hardware](https://doi.org/10.5281/zenodo.21480501) (`RavenHardware`) —
-  three routes to complex-β (Lindblad/Naimark/hybrid); 5-qubit Ising example; hardware roadmap 2026–2035 ·
+-  (`RavenHardware`) —
+  three routes to complex-β (Lindblad/Naimark/hybrid); 5-qubit Ising example; hardware roadmap 2026–2035
   [Explainer](/papers/10.5281-zenodo.21480501/)
 
-- [The Raven ISA: Enzymes as Molecular Programs](https://doi.org/10.5281/zenodo.21416925) (`RavenEnzyme`) —
+-  (`RavenEnzyme`) —
   enzyme kinetics as PT-symmetric computation; SNAP↑/↓, ERASE, FLOW(β ∈ ℂ)
 
-- [The Motive ISA](https://doi.org/10.5281/zenodo.21416909) (`MotiveIsa`) —
+-  (`MotiveIsa`) —
   five primitive opcodes for dissipative systems; ERASE = second law; abstract parent of Raven
 
-- [HPU Architecture](https://doi.org/10.5281/zenodo.21500669) —
+-  —
   EP sensors as HPU-E substrate; routes to room-temperature dissipative computation
 
 **Connections to other domains**
@@ -324,7 +324,7 @@ structure of the multi-sheet EP locus at irrational ε.
 - [G₂ Snap Thresholds](https://doi.org/10.5281/zenodo.21401321) (`G2SnapThresh`) —
   why 3-, 5-, and 7-qubit codes are canonical; G₂ geometry of the snap threshold
 
-- [The Maslov Moment](https://doi.org/10.5281/zenodo.21480503) (`MaslovMoment`) —
+-  (`MaslovMoment`) —
   financial phase transitions; spinodal = EP₂; 2008 crisis as min-plus snap
 
 ---
@@ -333,7 +333,7 @@ structure of the multi-sheet EP locus at irrational ε.
 
 {: .note }
 > **If you work on EP sensing:**
-> Start with [HPU Architecture](https://doi.org/10.5281/zenodo.21500669).
+> Start with .
 > Section 3 introduces PiTch number = 0 sensing directly, with the
 > ε^{1/n} sensitivity table and the HPU-E substrate. The ISA formalism is
 > introduced only as needed.
@@ -343,22 +343,22 @@ structure of the multi-sheet EP locus at irrational ε.
 > Start with [PiTch: A Topological Invariant for PT-Symmetric Systems](https://doi.org/10.5281/zenodo.21509972).
 > It derives the PiTch number, proves the Berry-phase formula Φ = πS, and
 > verifies the ℤₙ monodromy for n = 2, 3, 4. Then
-> [PT Symmetry in Unexpected Places](https://doi.org/10.5281/zenodo.21480284)
+> 
 > for the full H¹/H² tier identification and ISA context.
 
 {: .note }
 > **If you want the big picture:**
-> Start with [The β-plane](https://doi.org/10.5281/zenodo.21245459).
+> Start with .
 > It places PT physics in the context of the full HotLogiQ framework — showing
-> where PT systems live relative to classical (β real), quantum (β imaginary),
+> where PT systems live relative to classical (β real), quantum (β imaginary)
 > and other exotic regimes — and explains why the EP locus is a tier boundary
 > rather than a spectral accident.
 
 ---
 
 *See also: [Processing Units](/docs/theory/processing-units) — the HPU is the
-hardware class built around PiTch number as a resource ·
-[The β-plane](/docs/theory/forge-meld) — the full complex β parameter space ·
+hardware class built around PiTch number as a resource
+[The β-plane](/docs/theory/forge-meld) — the full complex β parameter space
 [The Non-Associative Frontier](/docs/theory/non-associative-frontier) — the
 complementary H² structure (G₂ geometry) that sits alongside PT symmetry in
 the H² tier*
