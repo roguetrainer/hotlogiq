@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "The Grassmannian is the universal space for correlated systems"
+title: "Correlation as a distance on the Grassmannian"
 parent: Applications
 nav_order: 9
 description: "A single angle θ_G diagnoses multi-reference chemistry, QEC threshold failure, nuclear bonding, and financial contagion, with the same β* snap at θ_G ≈ 20° across all four domains."
@@ -8,13 +8,13 @@ tags: [grassmannian, fubini-study, beta-snap, schmidt-decomposition, universal, 
 portfolio: A
 ---
 
-# The Grassmannian is the universal space for correlated systems
+# Correlation as a distance on the Grassmannian
 {: .no_toc }
 
 *A single angle — the geodesic distance from the classical fixed point on the
-Grassmannian — diagnoses multi-reference chemistry, fault-tolerance threshold
-failure, nuclear structure, and financial contagion, with a universal snap at
-θ_G ≈ 20° across all four domains.*
+Grassmannian — tracks the onset of strong correlation. Computed in two domains,
+conjectured in others, and a reformulation of a standard criterion rather than a
+replacement for it.*
 {: .fs-5 .fw-300 }
 
 ---
@@ -41,16 +41,22 @@ the largest overlap between the correlated state and its closest single-referenc
 - **θ_G = 45°**: the system is a perfect biradical / maximally entangled / fully
   correlated in two directions
 
-The claim is that **a universal threshold β* ≈ 20°** separates the weakly
+The claim is that a threshold near **θ_G ≈ 20°** separates the weakly
 correlated regime (classical simulation efficient) from the strongly correlated
-regime (classical simulation fails), across at least four independent domains:
+regime (classical simulation fails). It has been **computed in two domains** and
+is **conjectured, not measured, in the other two** — the table marks which:
 
-| Domain | System | What θ_G measures | β* crossing |
-| --- | --- | --- | --- |
-| Chemistry | Molecular wavefunction | Distance from Hartree-Fock reference | Bond breaking, R ≈ 1.5 Å |
-| Condensed matter | Hubbard model | Deviation from mean-field ground state | Mott transition, U/t ≈ 1.8 |
-| Quantum error correction | Code subspace | Distance from nearest Pauli-error image | Fault-tolerance threshold p* |
-| Finance | Factor subspace | Distance from prior-period factor structure | Systemic crisis onset |
+| Domain | System | What θ_G measures | Crossing | Status |
+| --- | --- | --- | --- | --- |
+| Chemistry | Molecular wavefunction | Distance from Hartree-Fock reference | Bond breaking, R ≈ 1.5 Å | **computed** (pyscf) |
+| Condensed matter | Hubbard model | Deviation from mean-field ground state | Mott transition, U/t ≈ 1.8 | **computed** (pyscf) |
+| Quantum error correction | Code subspace | Distance from nearest Pauli-error image | Fault-tolerance threshold p* | *conjectured — never computed* |
+| Finance | Factor subspace | Distance from prior-period factor structure | Systemic crisis onset | *conjectured — never computed* |
+
+**Only the first two rows are measurements.** θ_G has not been evaluated for a
+stabiliser code subspace or for an empirical factor structure; those rows state
+what the construction would mean, not what it returns. A four-domain
+universality claim rests on two domains.
 
 The threshold is not fitted separately in each domain. It emerges from the same
 geometric condition: the leading Schmidt singular value dropping below
@@ -62,21 +68,26 @@ total weight.
 
 ## Why it matters
 
-**Before this work, there was no common language for "how correlated is this
-system?" across domains.** Quantum chemists used empirical rules ("use CASSCF
-when T1 > 0.02"), condensed matter physicists used the interaction-to-hopping
-ratio U/t, QEC theorists used the fault-tolerance threshold p*, and risk
-managers used VaR. These are not the same quantity expressed in different units
-— or so it appeared.
+Different fields measure "how correlated is this system?" differently: quantum
+chemists use diagnostics like the T1 amplitude norm and natural-orbital
+occupations, condensed matter physicists use U/t, QEC theorists use the
+fault-tolerance threshold p*, and risk managers use factor-model diagnostics.
+The Grassmannian picture proposes that these are projections of one geometric
+quantity — the distance from a classical fixed point to the true correlated
+state in the Fubini-Study metric on $\mathrm{Gr}(k,n)$.
 
-The Grassmannian shows they are. Each is a different projection of the same
-underlying geometric object: the distance from a classical fixed point to the
-true correlated state, measured in the Fubini-Study metric on $\mathrm{Gr}(k,n)$.
+**An important qualification.** In the chemistry case θ_G is a *monotone
+function of the natural-orbital occupation numbers*. It therefore orders systems
+exactly as occupation-number thresholding does, and flags the same molecules at
+the same geometries. It is a reformulation of a criterion the field already
+uses, in coordinates that happen to generalise, **not a more sensitive
+diagnostic**. Anyone adopting it should expect the same answers, more portably
+expressed — not better ones.
 
-**The practical consequence is a universal diagnostic.** θ_G is computable
-from the Schmidt decomposition of any state matrix, in any domain, using the
-same SVD algorithm. A chemist, a QEC engineer, and a risk manager can now
-compare notes in the same language.
+The value, if there is one, is portability: the same SVD applies to any state
+matrix. Whether that portability yields anything a domain specialist wants is
+the open question, and the two unmeasured rows above are where it would be
+settled.
 
 ---
 
@@ -84,10 +95,13 @@ compare notes in the same language.
 
 ### Chemistry: molecular bond breaking (Papers 563, 570)
 
-SA-CASSCF calculations on H₂, H₂O, N₂, and benzene (Papers 563/570) show
-that the θ_G threshold for single-reference breakdown is universal at ≈ 20°
-across all molecules. The crossing occurs at bond lengths where CCSD(T) diverges
-and multi-reference treatment becomes mandatory.
+SA-CASSCF calculations on H₂, H₂O, N₂ and benzene put the single-reference
+breakdown near θ_G ≈ 20° in each case. The crossing occurs at bond lengths where
+CCSD(T) degrades and multi-reference treatment becomes necessary.
+
+Four closed-shell molecules is a small and homogeneous sample, and "universal
+across all molecules" is not what it supports. Open-shell systems,
+transition-metal complexes and excited states are untested.
 
 The Hubbard model (1D, half-filling) crosses θ_G ≈ 20° at U/t ≈ 1.8, the
 Mott metal-insulator transition — the same threshold, on the condensed-matter
