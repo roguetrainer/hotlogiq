@@ -16,5 +16,4 @@ underlying corpus; the ones that did not are gone rather than archived.
 
 ---
 
-Built with [Just the Docs](https://just-the-docs.com/).  
-Legacy ASA content preserved in [README_legacy_asa.md](README_legacy_asa.md).
+Built with [Just the Docs](https://just-the-docs.com/).
