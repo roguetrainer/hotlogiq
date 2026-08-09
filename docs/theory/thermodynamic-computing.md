@@ -116,11 +116,17 @@ stated rule set for transforming one circuit into an equal one. The question
 "when are two PSCs the same?" cannot yet be posed in their framework, which is
 precisely why the synthesis problem is open.
 
-The nearest existing mathematics is not ZX but **Markov categories** (Fritz;
-Cho and Jacobs), which give categorical semantics for exactly this structure:
-stochastic maps with copying and discarding. Their four operations are a Markov
-category's structure in all but name. The connection appears uncited in their
-paper, and is the sort of thing that would be worth someone making precise.
+The gap is not that the mathematics is missing. Completeness for **mixed-state**
+processes is settled: the doubled ZX-calculus is proved sound and complete for
+quantum channels (Carette, Jeandel, Perdrix & Vilmart, 2021), building on
+Selinger's CP construction. And the classical structure PSCs actually have —
+stochastic maps with copying and discarding — is that of a **Markov category**
+(Fritz; Cho and Jacobs), with the quantum counterpart and the exact cost of
+no-cloning worked out by Parzygnat (2020).
+
+So the calculi exist on both sides. What is absent is the connection: their four
+operations are a Markov category's structure in all but name, and their paper
+does not cite that literature.
 
 ---
 
@@ -164,5 +170,9 @@ hardware rather than addressed by it.
 - Kingman, *Z. Wahrscheinlichkeitstheorie* **1**, 14 (1962) — the embeddability
   problem for Markov chains.
 - Fritz, *Adv. Math.* **370**, 107239 (2020) — Markov categories.
+- Parzygnat, arXiv:2001.08375 (2020) — quantum Markov categories; what
+  no-cloning costs.
+- Carette, Jeandel, Perdrix & Vilmart, *ACM Trans. Quantum Comput.* **2**(4)
+  (2021) — completeness of the doubled ZX-calculus for mixed states.
 - Coecke & Kissinger, *Picturing Quantum Processes* (CUP, 2017) — ZX-calculus
   and its completeness.
