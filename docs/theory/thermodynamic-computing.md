@@ -143,16 +143,12 @@ opcodes are matrices you can multiply; that is why a synthesis question can even
 be asked about them. An instruction set without a substrate is a naming
 convention, and should be described as one.
 
-**What is left, and it is not a consolation prize.** Their demonstrations are
-random walks on graphs, discrete diffusion on MNIST, max-cut, jump diffusion and
-Ising rings. **None of it is chemistry.** Molecular electronic structure is not
-an energy-based model over binary variables, and the expensive part of
-simulating a molecule — deciding which electrons need exact treatment — is not a
-sampling problem. That question is untouched by this hardware, and it is the one
-the [chemistry](../applications/chemistry.md) work on this site addresses.
-
-Different machine, different question. Worth knowing about theirs before
-claiming anything about ours.
+**On scope.** Their demonstrations are random walks on graphs, discrete
+diffusion, max-cut, jump diffusion and Ising rings. Molecular electronic
+structure is not an energy-based model over binary variables, and choosing which
+electrons need exact treatment is not a sampling problem — so the
+[chemistry](../applications/chemistry.md) question is orthogonal to this
+hardware rather than addressed by it.
 
 ---
 
