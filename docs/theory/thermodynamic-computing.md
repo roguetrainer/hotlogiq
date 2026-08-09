@@ -126,7 +126,7 @@ paper, and is the sort of thing that would be worth someone making precise.
 
 ## Where this leaves the work on this site
 
-Two honest observations.
+Three observations.
 
 **On temperature as a parameter.** Treating β as a real quantity to be tuned
 rather than a limit to be taken is common ground — their `PIsing` gate carries β
