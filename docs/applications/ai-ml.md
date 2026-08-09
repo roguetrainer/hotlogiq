@@ -58,12 +58,12 @@ The scaled dot-product attention mechanism of the transformer is a Forge ISA
 programme operating in the H¹ regime:
 
 ```
-ORBIT  : token similarity QKᵀ/√d — inner product on token manifold
+RESOLVE  : token similarity QKᵀ/√d — inner product on token manifold
 TWIST  : softmax(·) — Berry phase; non-trivial distribution over tokens
-MERGE  : weighted value aggregation Σⱼ aᵢⱼ vⱼ — contextualised representation
-ORBIT  : multi-head projection via W^Q, W^K, W^V — h parallel Grassmannian points
-MERGE  : Concat(heads) · W^O — head aggregation back to d_model
-LABEL  : attention entropy H(aᵢ) — the ISA β* eigenvalue at each query position
+JOIN  : weighted value aggregation Σⱼ aᵢⱼ vⱼ — contextualised representation
+RESOLVE  : multi-head projection via W^Q, W^K, W^V — h parallel Grassmannian points
+JOIN  : Concat(heads) · W^O — head aggregation back to d_model
+PROJECT  : attention entropy H(aᵢ) — the ISA β* eigenvalue at each query position
 ```
 
 The **Vaswani 1/√d_head normalisation** is not empirical tuning — it is the β*
@@ -104,22 +104,22 @@ contraction that the task requires; the MLP must learn to approximate it
 through many layers of 2-point operations.
 
 **Why 4 points?** The ISA framework identifies 4-point interactions with the
-BIND opcode (δ: A→A⊗A, Frobenius comultiplication). Matrix multiplication is
-a 2-point ORBIT; tensor contraction is a 4-point BIND. The categorical claim:
+FUSE opcode (δ: A→A⊗A, Frobenius comultiplication). Matrix multiplication is
+a 2-point RESOLVE; tensor contraction is a 4-point FUSE. The categorical claim:
 *any problem whose ground truth involves two entangled pairs of variables
-requires BIND and cannot be efficiently expressed using only ORBIT + MERGE.*
+requires FUSE and cannot be efficiently expressed using only RESOLVE + JOIN.*
 
 **The task-conditional lesson:** the 4-point advantage is task-dependent.
 
 | Task structure | Natural architecture | Advantage |
 |---------------|---------------------|-----------|
-| 2-point (MNIST, linear) | MLP (ORBIT + MERGE) | MLP wins |
-| 4-point (relational, degree-4) | Bilinear (BIND) | 1,830× |
-| 4-point multi-agent | Bilinear belief pooling (H² BIND) | Claim of Paper 629 |
+| 2-point (MNIST, linear) | MLP (RESOLVE + JOIN) | MLP wins |
+| 4-point (relational, degree-4) | Bilinear (FUSE) | 1,830× |
+| 4-point multi-agent | Bilinear belief pooling (H² FUSE) | Claim of Paper 629 |
 
 The ISA provides a diagnostic: compute the Weyl c₂ index of the task's
 function class. If c₂ > δ*, the task has genuine H² structure and benefits
-from BIND-based architectures.
+from FUSE-based architectures.
 
 **Papers:** [The 4-Point Network](https://doi.org/10.5281/zenodo.21480272) ·
 Agentic Consensus via Bilinear Belief Pooling
@@ -198,7 +198,7 @@ Not all compression is safe. The H^k framework predicts:
 - H¹ structure (diffuse functional attention) can be approximated but not
   eliminated without changing behaviour
 - H² structure (entangled cross-layer circuits) cannot be compressed at
-  all without destroying the computation — it requires the full BIND depth
+  all without destroying the computation — it requires the full FUSE depth
 
 The Weyl c₂ index of a circuit measures which tier it lives in. A layer with
 c₂ > δ* is doing genuinely H² computation and should not be quantised or
@@ -308,11 +308,11 @@ f(xᵢ, xⱼ, xₖ, xₗ) = (xᵢ ⊗ xⱼ) · T · (xₖ ⊗ xₗ)
 ```
 
 This cannot be expressed as a sum of pairwise interactions — it requires the
-BIND opcode (H² coupling between Markov blankets). Matrix multiplication is
+FUSE opcode (H² coupling between Markov blankets). Matrix multiplication is
 constitutionally unable to represent it.
 
 The claim of Agentic Consensus: consensus in multi-agent inference is a 4-point problem.
-Standard attention-based aggregation (pairwise ORBIT) systematically
+Standard attention-based aggregation (pairwise RESOLVE) systematically
 underestimates disagreement between agents whose beliefs are structured by
 relationships between relationships.
 
@@ -325,7 +325,7 @@ proposes that knowledge itself has H^k structure:
 |--------|---------------|-----------|--------------|
 | H⁰ | Facts (tropical) | Lookup / retrieval | Hallucination (wrong fact) |
 | H¹ | Beliefs (probabilistic) | Bayesian update / TWIST | Miscalibration |
-| H² | Meta-beliefs (holographic) | BIND across agents | Groupthink / coherent error |
+| H² | Meta-beliefs (holographic) | FUSE across agents | Groupthink / coherent error |
 
 An agent that operates only at H⁰ hallucinates — it retrieves the
 nearest-neighbour fact without uncertainty. An agent at H¹ maintains calibrated
@@ -337,7 +337,7 @@ productive disagreement.
 memory — it stores patterns as energy minima (β→∞ fixed points). Modern
 Hopfield networks (Ramsauer 2020) are H¹: the energy function uses a softmax
 rather than a sign function, allowing continuous-valued, exponentially large
-storage. The ISA framework extends this to H²: a Hopfield network with BIND
+storage. The ISA framework extends this to H²: a Hopfield network with FUSE
 coupling between memory slots stores *relationships between patterns*, not
 just patterns.
 
@@ -371,7 +371,7 @@ The classical neural network models of the 1980s–90s all have natural ISA inte
 
 | Model | ISA tier | β regime | Connection |
 |-------|----------|----------|------------|
-| Hopfield (1982) | H⁰ | β→∞ | Tropical associative memory; patterns = ORBIT fixed points |
+| Hopfield (1982) | H⁰ | β→∞ | Tropical associative memory; patterns = RESOLVE fixed points |
 | Modern Hopfield (Ramsauer 2020) | H¹ | β finite | Softmax energy; continuous capacity; attention = one Hopfield step |
 | Boltzmann Machine | H¹ | β finite | Gibbs sampling = Forge ISA annealing; CD-k = MGE β-step |
 | G₂ Boltzmann Machine | H² | β near β* | G₂ couplings replace pairwise; non-associative learning prior |
@@ -433,8 +433,8 @@ a single β-deformation:
 **HodgeRank** (Jiang et al. 2011) decomposes a pairwise comparison matrix into
 gradient (consistent rankings) + curl (inconsistent cycles) + harmonic (neither)
 components via Hodge decomposition on the comparison graph. The ISA identifies
-this as a Forge ISA programme: ORBIT (comparison graph) + TWIST (Hodge Laplacian)
-+ LABEL (gradient/curl/harmonic eigenvalues).
+this as a Forge ISA programme: RESOLVE (comparison graph) + TWIST (Hodge Laplacian)
++ PROJECT (gradient/curl/harmonic eigenvalues).
 
 **Survey Propagation = ForgeRank for SAT:** the message-passing algorithm that
 solves hard random SAT instances near the satisfiability threshold is the

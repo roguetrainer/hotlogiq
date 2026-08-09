@@ -46,9 +46,9 @@ The engine extracts work — discrimination (proofreading) or barrier reduction
 | Leg | Thermodynamic type | Biological realisation | ISA opcode |
 | --- | --- | --- | --- |
 | 1 | Isothermal compression | Substrate binding / geometric selection | TWIST |
-| 2 | Adiabatic expansion | Conformational change / parallel transport | ORBIT |
+| 2 | Adiabatic expansion | Conformational change / parallel transport | RESOLVE |
 | 3 | Isothermal expansion | Proofreading checkpoint / product release | FLIP/SPLAT |
-| 4 | Adiabatic compression | Commitment / enzyme reset | ORBIT |
+| 4 | Adiabatic compression | Commitment / enzyme reset | RESOLVE |
 
 The Carnot efficiency is:
 

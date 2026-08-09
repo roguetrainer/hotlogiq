@@ -45,9 +45,9 @@ This is the C/T picture of aromaticity: **aromaticity = a closed loop of T-arrow
 
 ---
 
-## The resonance energy from BIND
+## The resonance energy from FUSE
 
-The resonance stabilisation energy is a **H² (BIND) quantity** — it is the off-diagonal coupling between the two Kekulé determinants:
+The resonance stabilisation energy is a **H² (FUSE) quantity** — it is the off-diagonal coupling between the two Kekulé determinants:
 
 $$\Delta E_{\text{res}} = \frac{1}{2}(E_1 - E_0)(1 - S)$$
 
@@ -63,7 +63,7 @@ From SA-CASSCF(6e,6o) calculation (experiment x570b):
 | Kekulé overlap S | ~0.23 |
 | Correction factor (1−S)⁻¹ | ~1.30 |
 
-The agreement is within 5% using only the CASSCF wavefunction — no empirical parameters. The BIND opcode is the resonance integral H₀₁ = ⟨Kekulé₁\|H\|Kekulé₂⟩.
+The agreement is within 5% using only the CASSCF wavefunction — no empirical parameters. The FUSE opcode is the resonance integral H₀₁ = ⟨Kekulé₁\|H\|Kekulé₂⟩.
 
 ---
 
@@ -73,9 +73,9 @@ In Chapters 1 and 2:
 - H₂ at equilibrium: **H⁰** (no T-arrows, Lewis diagram exact)
 - Ethylene at equilibrium: **H¹** (two T-arrows, CASSCF needed)
 
-Benzene at equilibrium: **H²** (four T-arrows in a closed loop, BIND coupling required).
+Benzene at equilibrium: **H²** (four T-arrows in a closed loop, FUSE coupling required).
 
-The key is the **closure** of the T-arrow loop. Ethylene has two T-arrows but they are not closed — there is no path back from π\* to π without breaking the bond. Benzene has four T-arrows that form a cycle: ψ₂ ↔ ψ₄\* ↔ ψ₃ ↔ ψ₅\* ↔ ψ₂. A closed T-arrow loop is exactly the structure that requires H² (BIND) to compute correctly.
+The key is the **closure** of the T-arrow loop. Ethylene has two T-arrows but they are not closed — there is no path back from π\* to π without breaking the bond. Benzene has four T-arrows that form a cycle: ψ₂ ↔ ψ₄\* ↔ ψ₃ ↔ ψ₅\* ↔ ψ₂. A closed T-arrow loop is exactly the structure that requires H² (FUSE) to compute correctly.
 
 This is the C/T definition of aromaticity:
 
@@ -93,7 +93,7 @@ The two Kekulé structures correspond to two distinct points in Gr(3,6). The res
 
 $$\Delta E_{\text{res}} \propto d_{\text{FS}}(\text{Kekulé}_1, \text{Kekulé}_2)$$
 
-The Maslov index along the closed Kekulé loop is μ = 2 (two Schubert crossings — one for each degenerate pair). This confirms: benzene requires at least 2 BIND operations. SA-CASSCF with two states is the minimal correct treatment.
+The Maslov index along the closed Kekulé loop is μ = 2 (two Schubert crossings — one for each degenerate pair). This confirms: benzene requires at least 2 FUSE operations. SA-CASSCF with two states is the minimal correct treatment.
 
 ---
 
@@ -106,7 +106,7 @@ The Maslov index along the closed Kekulé loop is μ = 2 (two Schubert crossings
 | T-arrow topology | — | Open chain | **Closed loop** |
 | Minimal method | HF | CASSCF(2,2) | SA-CASSCF(6,6) |
 | Key quantity | Bond order | Rotation barrier | Resonance energy |
-| ISA opcode | ORBIT | TWIST | **BIND** |
+| ISA opcode | RESOLVE | TWIST | **FUSE** |
 
 The progression H⁰ → H¹ → H² maps exactly onto single bond → double bond → aromatic ring. The C/T tier is not a grading imposed on chemistry — it is the natural complexity stratification of the molecular Grassmannian.
 
@@ -114,13 +114,13 @@ The progression H⁰ → H¹ → H² maps exactly onto single bond → double bo
 
 ## The sceptic test
 
-> *"Hückel theory gives me the right answer in five minutes. Why do I need BIND and Grassmannians?"*
+> *"Hückel theory gives me the right answer in five minutes. Why do I need FUSE and Grassmannians?"*
 
 For benzene itself, Hückel is excellent. The problems appear at the boundary:
 
-**1. Anti-aromaticity.** Cyclobutadiene (4 π electrons, 4n rule) is antiaromatic and violently reactive. In C/T: the T-arrow loop is present but the BIND coupling is *destabilising* (H₀₁ > 0). C/T predicts antiaromaticity from the sign of H₀₁ — Hückel gives the 4n rule but not the sign of the coupling.
+**1. Anti-aromaticity.** Cyclobutadiene (4 π electrons, 4n rule) is antiaromatic and violently reactive. In C/T: the T-arrow loop is present but the FUSE coupling is *destabilising* (H₀₁ > 0). C/T predicts antiaromaticity from the sign of H₀₁ — Hückel gives the 4n rule but not the sign of the coupling.
 
-**2. Interrupted aromaticity.** Azulene (a 5+7 ring fusion) is aromatic by the 4n+2 count but has a permanent dipole moment of 1.08 D that Hückel cannot explain. C/T accounts for it: the T-arrow loop is asymmetric, BIND coupling is non-zero in the direction of the dipole.
+**2. Interrupted aromaticity.** Azulene (a 5+7 ring fusion) is aromatic by the 4n+2 count but has a permanent dipole moment of 1.08 D that Hückel cannot explain. C/T accounts for it: the T-arrow loop is asymmetric, FUSE coupling is non-zero in the direction of the dipole.
 
 **3. Transition metal aromaticity.** FeMoco (the active site of nitrogenase) has been proposed to have aromatic character in its iron-sulfur cluster. C/T diagnoses this from the NOONs of the metal d orbitals — Hückel cannot be applied.
 
@@ -146,7 +146,7 @@ From SA-CASSCF(6e,6o)/STO-3G and experiment (x570b):
 
 ## In one sentence
 
-**Benzene is H²: its four π T-arrows form a closed loop, the BIND opcode computes the resonance coupling H₀₁, and the resonance stabilisation energy (54.5 mEh, within 5% of experiment) follows from the Grassmannian geodesic distance between the two Kekulé points — no empirical parameters.**
+**Benzene is H²: its four π T-arrows form a closed loop, the FUSE opcode computes the resonance coupling H₀₁, and the resonance stabilisation energy (54.5 mEh, within 5% of experiment) follows from the Grassmannian geodesic distance between the two Kekulé points — no empirical parameters.**
 
 ---
 

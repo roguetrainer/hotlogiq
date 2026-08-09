@@ -120,7 +120,7 @@ complex condition.
 
 The deuteron's S/D mixing angle θ_G ≈ 13° — determined by the tensor force
 from one-pion exchange — is the nuclear analogue of the bond-breaking angle in
-H₂. The alpha particle (4-nucleon BIND orbit) sits at large θ_G, which is why
+H₂. The alpha particle (4-nucleon FUSE orbit) sits at large θ_G, which is why
 alpha decay is the dominant heavy-nucleus instability. The Hoyle state of ¹²C
 is a two-level ISA system at the H²/H² interface.
 
@@ -140,9 +140,9 @@ The same three-tier H^k structure governs all four domains:
 
 | ISA tier | Opcode | Chemistry | QEC | Finance |
 | --- | --- | --- | --- | --- |
-| H⁰ | ORBIT | HF fixed point (σ₀ = 1) | Stabiliser code | Single-factor model |
+| H⁰ | RESOLVE | HF fixed point (σ₀ = 1) | Stabiliser code | Single-factor model |
 | H¹ | TWIST | Mild correlation (θ_G < 20°) | Mild errors, correctable | Model risk accumulating |
-| H² | BIND | Strong correlation (θ_G > 20°) | Threshold failure | Systemic snap |
+| H² | FUSE | Strong correlation (θ_G > 20°) | Threshold failure | Systemic snap |
 
 The β* snap is the geometric transition where the H⁰ fixed point loses
 stability. Below it, the leading singular value σ₀² > 0.88 and the system
@@ -163,7 +163,7 @@ The three-tier structure terminates at H² — there is no H³ for generic quant
 systems. Paper 578 proves this categorically: the relevant module category has
 global homological dimension ≤ 2 (Hilbert syzygy theorem, 1890). The Grassmannian
 encodes why: $\pi_2(\mathrm{Gr}(k,n)) = \mathbb{Z}$ for $k > 0$, which supports
-BIND (H² holonomy) but $\pi_3 = 0$ generically, which is why there is no H³
+FUSE (H² holonomy) but $\pi_3 = 0$ generically, which is why there is no H³
 opcode.
 
 ---

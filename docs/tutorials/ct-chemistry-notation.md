@@ -111,13 +111,13 @@ The two types of orbital in the C/T classification:
 - **C-box** (Crystallised): NOON < 0.02 or NOON > 1.98. The orbital is frozen — either almost doubly occupied or almost empty. A single Slater determinant (HF) describes it correctly.
 - **T-arrow** (Topological): NOON ∈ (0.02, 1.98). The orbital is active — it participates in the multi-reference correlation. CASSCF or higher is needed.
 
-The names reflect the ISA opcodes: C-boxes carry ORBIT (H⁰) structure; T-arrows carry TWIST (H¹) or BIND (H²) structure.
+The names reflect the ISA opcodes: C-boxes carry RESOLVE (H⁰) structure; T-arrows carry TWIST (H¹) or FUSE (H²) structure.
 
 ---
 
 ### sCeleTon
 
-The **sCeleTon** (C/T skeleton) is the bipartite graph whose nodes are the C-boxes and T-arrows, with edges connecting each T-arrow to the C-boxes it bridges. The sCeleTon encodes the topology of the active space: a tree-shaped sCeleTon → H¹ (CASSCF sufficient); a closed-loop sCeleTon → H² (BIND/MRCI required).
+The **sCeleTon** (C/T skeleton) is the bipartite graph whose nodes are the C-boxes and T-arrows, with edges connecting each T-arrow to the C-boxes it bridges. The sCeleTon encodes the topology of the active space: a tree-shaped sCeleTon → H¹ (CASSCF sufficient); a closed-loop sCeleTon → H² (FUSE/MRCI required).
 
 *Named in session 2026-07-10; defined in Paper 588.*
 
@@ -129,9 +129,9 @@ The complexity tier of a molecular system:
 
 | Tier | Condition | Method needed | ISA opcode |
 |---|---|---|---|
-| H⁰ | All NOONs outside (0.02, 1.98) | Hartree-Fock | ORBIT |
+| H⁰ | All NOONs outside (0.02, 1.98) | Hartree-Fock | RESOLVE |
 | H¹ | Some NOONs inside (0.02, 1.98), open sCeleTon | CASSCF | TWIST |
-| H² | Closed T-arrow loop in sCeleTon | SA-CASSCF, MRCI, CASPT2 | BIND |
+| H² | Closed T-arrow loop in sCeleTon | SA-CASSCF, MRCI, CASPT2 | FUSE |
 
 The H^k tier is a pre-diagnostic: it tells you which method to use before running any calculation.
 
@@ -156,7 +156,7 @@ A **NOON snap** occurs when a natural orbital occupation number crosses the C/T 
 
 ### Maslov index μ
 
-The **Maslov index** of a molecular path γ(R) is the signed count of NOON snaps along the path. It measures the minimum number of BIND (H²) operations required to represent the wavefunction change along the path. μ = 0 means CASSCF is sufficient; μ > 0 means multi-reference correlation is mandatory.
+The **Maslov index** of a molecular path γ(R) is the signed count of NOON snaps along the path. It measures the minimum number of FUSE (H²) operations required to represent the wavefunction change along the path. μ = 0 means CASSCF is sufficient; μ > 0 means multi-reference correlation is mandatory.
 
 ---
 

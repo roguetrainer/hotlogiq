@@ -96,7 +96,7 @@ The H^k classification tells you where to look.
 
 **It connects to magic resource theory.** The T-gate — the elementary magic
 operation — is the minimal H¹ → H¹ lift that breaks classical simulability.
-Adding BIND at the H² level introduces genuine topological (H²) structure.
+Adding FUSE at the H² level introduces genuine topological (H²) structure.
 The magic resource theory is the resource theory of H¹
 access; the 731-ISA is the resource theory of H² access.
 
@@ -132,9 +132,9 @@ access; the 731-ISA is the resource theory of H² access.
   TWIST failure condition are the same event viewed in different coordinates.
   (Paper 420.)
 
-- **H² requires BIND at a non-Abelian rung.** No sequence of H⁰ and H¹
-  operations (tropical + Gibbs + Meld without BIND) can generate an H²
-  invariant. BIND is the irreducible H² opcode. This is why topological quantum
+- **H² requires FUSE at a non-Abelian rung.** No sequence of H⁰ and H¹
+  operations (tropical + Gibbs + Meld without FUSE) can generate an H²
+  invariant. FUSE is the irreducible H² opcode. This is why topological quantum
   computation requires physical anyons or equivalent hardware — not just better
   gates. (Papers 445/446.)
 

@@ -18,4 +18,4 @@ Written for a sceptical chemist or physicist who knows Lewis structures, orbital
 | [Ch 3](ct-chemistry-03-benzene) | Aromaticity: Benzene | Hückel 4n+2, delocalisation | T-arrow closure; ΔE_res = 54.5 mEh |
 | [Ch 4](ct-chemistry-04-water) | Lone Pairs: H₂O | sp³ hybrids, dipole | All C-boxes at eq; H⁰ exactly |
 | [Ch 5](ct-chemistry-05-fesco) | Spin Crossover: Fe(II) SCO | Crystal field t₂g/e_g | NOON snap at Δ*; β* snap |
-| [Ch 6](ct-chemistry-06-n2) | Nitrogen Fixation: N₂/FeMoco | Triple bond, nitrogenase | 3 BIND operations; resource theory |
+| [Ch 6](ct-chemistry-06-n2) | Nitrogen Fixation: N₂/FeMoco | Triple bond, nitrogenase | 3 FUSE operations; resource theory |

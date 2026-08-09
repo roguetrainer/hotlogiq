@@ -105,7 +105,7 @@ that operates at finite temperature.
 | [Paper 324](https://doi.org/10.5281/zenodo.20400652) | The decoding engine: ribosome as H⁰ × H¹ × H² QEC; GTPase proofreading as H¹; ribosome topology as H² |
 | [Paper 510](../papers/) | Kinetic proofreading IS QEC: H⁰ × H¹ × H² gives 10⁹/10⁶/10⁴ fidelity for Pol III/RNAP/ribosome; β* threshold operation; Hopfield embedded in Forge ISA |
 | [Paper 511](../papers/) | Von Neumann/Turing H^k: H² epigenetic layer as missing middle term between Turing morphogenesis (H¹ spatial TWIST) and von Neumann replication (H⁰ + H¹ + H²) |
-| [Paper 515](../papers/) | Protein folding ISA: Levinthal resolved via H⁰ (Ramachandran, 10⁸⁰ states eliminated) + H¹ ORBIT cooperativity (10⁵⁰ more) + H² rate-limiting topology obstruction; chaperones = H² QEC |
+| [Paper 515](../papers/) | Protein folding ISA: Levinthal resolved via H⁰ (Ramachandran, 10⁸⁰ states eliminated) + H¹ RESOLVE cooperativity (10⁵⁰ more) + H² rate-limiting topology obstruction; chaperones = H² QEC |
 | [Paper 325](https://doi.org/10.5281/zenodo.20400638) | Ribosome A-site: 6/7 Fano coverage at q = 0.25; B-factor covariance; β_phys = 1.23 (123× above β*) |
 
 **Key results:**
@@ -114,7 +114,7 @@ that operates at finite temperature.
   paradox asks how a protein finds its native fold in microseconds when random
   search of conformation space would take longer than the age of the universe.
   The H^k resolution: H⁰ eliminates 10⁸⁰ conformations by Ramachandran
-  geometry (steric exclusion, exact); H¹ ORBIT cooperativity eliminates 10⁵⁰
+  geometry (steric exclusion, exact); H¹ RESOLVE cooperativity eliminates 10⁵⁰
   more (folding nuclei, correlated); H² provides the rate-limiting topology
   obstruction (the fold involves a topological change — a knot or crossing —
   that requires chaperone assistance). The three tiers together reduce the

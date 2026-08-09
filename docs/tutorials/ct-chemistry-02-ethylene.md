@@ -93,7 +93,7 @@ The same torsion picture handles cis and trans isomers. In 2-butene (CH₃–CH=
 
 C/T does not distinguish cis from trans from the electronic structure alone: they are the same point on the Bloch sphere. The distinction is purely geometric (nuclear configuration). What C/T does describe is the **interconversion path**: rotating from φ = 0° (cis) to φ = 180° (trans) requires passing through φ = 90° — the diradical snap. The thermal isomerisation barrier (~260 kJ/mol for simple alkenes) is the energy cost of that snap.
 
-**What about chirality?** Enantiomers (R vs S, or Λ vs Δ) have identical NOONs and identical H^k tiers — the electronic structure is the same. However, the **Berry phase** of a closed loop traced in nuclear configuration space around a chiral centre has opposite sign for the two enantiomers. This is an H² (BIND) quantity: the holonomy of the active-space Berry connection distinguishes mirror images where the NOONs cannot. This is developed in [Paper 594](https://doi.org/10.5281/zenodo.21309088).
+**What about chirality?** Enantiomers (R vs S, or Λ vs Δ) have identical NOONs and identical H^k tiers — the electronic structure is the same. However, the **Berry phase** of a closed loop traced in nuclear configuration space around a chiral centre has opposite sign for the two enantiomers. This is an H² (FUSE) quantity: the holonomy of the active-space Berry connection distinguishes mirror images where the NOONs cannot. This is developed in [Paper 594](https://doi.org/10.5281/zenodo.21309088).
 
 ---
 

@@ -68,14 +68,14 @@ never from a single foundation. The EVP provides that foundation:
 | Rule | EVP derivation |
 | --- | --- |
 | Pauli exclusion | Non-isotropic pairs excluded from same isotropic flat (EVP directly) |
-| Hund's rule (max spin) | Maximum-spin state = maximum number of non-isotropic pairs = largest ORBIT; always preferred by EVP |
-| Aufbau principle | Fill isotropic flats from lowest to highest action integral $\varphi_\ell$; ORBIT closure at each shell |
-| Woodward-Hoffmann | Thermal/photochemical allowed = parity of ORBIT count across HOMO/LUMO crossing; EVP on the reaction ORBIT |
-| Taube electron transfer | Inner-sphere (direct ORBIT overlap) vs outer-sphere (TWIST without ORBIT contact) |
+| Hund's rule (max spin) | Maximum-spin state = maximum number of non-isotropic pairs = largest RESOLVE; always preferred by EVP |
+| Aufbau principle | Fill isotropic flats from lowest to highest action integral $\varphi_\ell$; RESOLVE closure at each shell |
+| Woodward-Hoffmann | Thermal/photochemical allowed = parity of RESOLVE count across HOMO/LUMO crossing; EVP on the reaction RESOLVE |
+| Taube electron transfer | Inner-sphere (direct RESOLVE overlap) vs outer-sphere (TWIST without RESOLVE contact) |
 | 4s before 3d anomaly | $\varphi_{4,0} < \varphi_{3,2}$: zero-TWIST-cost s-orbital outcompetes TWIST-penalised d-orbital |
 
 None of these is ad hoc once the EVP is the foundation. They are all statements
-about ORBIT closure and isotropic flat occupation in $W(2n-1, 2)$.
+about RESOLVE closure and isotropic flat occupation in $W(2n-1, 2)$.
 
 **It explains the shape of the periodic table.** The block structure of the
 periodic table — s-block (2 elements/period), p-block (6), d-block (10),
@@ -84,10 +84,10 @@ space at each $H^k$ level:
 
 | Block | $\ell$ | Orbitals | States | $H^k$ tier | Symplectic dimension |
 | --- | --- | --- | --- | --- | --- |
-| s | 0 | 1 | 2 | $H^0$ (ORBIT only) | $W(1,2)$ |
+| s | 0 | 1 | 2 | $H^0$ (RESOLVE only) | $W(1,2)$ |
 | p | 1 | 3 | 6 | $H^1$ (TWIST) | $W(3,2)$ |
 | d | 2 | 5 | 10 | $H^1$ (TWIST, higher) | $W(5,2)$ |
-| f | 3 | 7 | 14 | $H^2$ (BIND / Fano) | $W(7,2) \supset \mathrm{PG}(2,2)$ |
+| f | 3 | 7 | 14 | $H^2$ (FUSE / Fano) | $W(7,2) \supset \mathrm{PG}(2,2)$ |
 
 The f-block has exactly 14 states because $W(7,2)$ contains the Fano plane
 $\mathrm{PG}(2,2)$ as its maximal isotropic substructure, and the 7 f-orbitals
@@ -98,10 +98,10 @@ periodic table.
 **It unifies atomic and nuclear shell models.** Heusler demonstrates that the
 same nodal-surface counting that gives atomic quantum numbers $(n, \ell, m)$
 also gives the nuclear shell quantum numbers. The ISA explanation: both atoms
-and nuclei are ORBIT-counting problems in the same $W(2n-1,2)$ symplectic
+and nuclei are RESOLVE-counting problems in the same $W(2n-1,2)$ symplectic
 space; only the action integrals $\varphi_\ell$ differ (Coulomb potential
 for atoms, Woods-Saxon for nuclei). The nuclear magic numbers
-$(2, 8, 20, 28, 50, 82, 126)$ are the ORBIT closure points for nucleons,
+$(2, 8, 20, 28, 50, 82, 126)$ are the RESOLVE closure points for nucleons,
 shifted relative to atomic magic numbers $(2, 10, 18, 36, \ldots)$ by the
 spin-orbit TWIST term $\ell \cdot s$, which costs a Berry phase that rearranges
 the $\varphi_\ell$ ordering above the $\ell = 2$ shell.
@@ -156,7 +156,7 @@ the adelic EVP for the TF atom.
   dimension in any symplectic space of reasonable dimension — which would mean
   the GPEP is not universal.
 
-- **Hund's rule exceptions not explained by ORBIT cost**: there are known
+- **Hund's rule exceptions not explained by RESOLVE cost**: there are known
   exceptions to Hund's rule (e.g. Cr, Cu anomalous configurations). If these
   cannot be explained by modified $\varphi_\ell$ ordering (TWIST cost
   reordering the isotropic flats) but require genuinely new principles, the EVP

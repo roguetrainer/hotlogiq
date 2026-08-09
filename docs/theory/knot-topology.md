@@ -269,7 +269,7 @@ The ISA framework is not a redescription of known topology. It adds:
 
 | # | Title | DOI | Notes |
 | --- | --- | --- | --- |
-| 572 | [The Kuperberg G₂ Spider is the BIND Calculus](https://doi.org/10.5281/zenodo.21278538) | [21278538](https://zenodo.org/records/21278538) | FUSE theorem; spider = opcode calculus · [Explainer](/papers/10.5281-zenodo.21278538/) |
+| 572 | [The Kuperberg G₂ Spider is the FUSE Calculus](https://doi.org/10.5281/zenodo.21278538) | [21278538](https://zenodo.org/records/21278538) | FUSE theorem; spider = opcode calculus · [Explainer](/papers/10.5281-zenodo.21278538/) |
 | 571 | [The ISA Chain Complex: Khovanov Homology from Opcode Projections](https://doi.org/10.5281/zenodo.21278536) | [21278536](https://zenodo.org/records/21278536) | ∂²=0 proved; Khovanov recovery |
 | 595 | [Weyl Chamber Homology](https://doi.org/10.5281/zenodo.21345107) | [21345107](https://zenodo.org/records/21345107) | Bredon cohomology; tier obstruction · [Explainer](/papers/10.5281-zenodo.21345107/) |
 
@@ -293,8 +293,8 @@ The ISA framework is not a redescription of known topology. It adds:
 
 {: .note }
 > **If you work on spider calculi / planar algebras:**
-> Start with [The Kuperberg G₂ Spider is the BIND Calculus](https://doi.org/10.5281/zenodo.21278538)
-> (published under the opcode’s former name; BIND is now FUSE).
+> Start with [The Kuperberg G₂ Spider is the FUSE Calculus](https://doi.org/10.5281/zenodo.21278538)
+> (published under the opcode’s former name; FUSE is now FUSE).
 > It shows exactly how the G₂ spider relations map to FUSE opcode identities
 > with explicit diagrammatic proofs. The ISA formalism is introduced only as needed.
 

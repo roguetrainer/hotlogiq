@@ -40,7 +40,7 @@ translates *exactly* into the question of whether the relevant group-orbit close
 | Nuclear structure | Magic nucleon numbers (2, 8, 20, 28, 50, 82, 126) = closed shell orbits | Open shells = reactive, decay-prone |
 | Photosynthesis (FMO) | 7/7 Fano lines closed = zero efficiency loss | 6/7 Fano (broken line) = directed energy flow η = 0.183 |
 | Enzyme fidelity | Closed orbit = locked transition state; no side reactions | Open orbit = accessible to competing substrates |
-| Proton stability | Baryon = closed Fano ORBIT (colour singlet); H² BIND forbidden below β* | Baryon violation requires H² topology change; exactly forbidden |
+| Proton stability | Baryon = closed Fano RESOLVE (colour singlet); H² FUSE forbidden below β* | Baryon violation requires H² topology change; exactly forbidden |
 | Financial contagion | H¹ cycle closed = no arbitrage, no contagion | H¹ cycle open = contagion propagates along open orbit |
 
 The **6-731 distinction** — 7/7 closed (full Fano symmetry, PSL(2,7)) versus
@@ -65,7 +65,7 @@ at every scale where the relevant symmetry group contains G₂ or its subgroups.
 **It makes cross-domain predictions.** Because the criterion is the same, a
 result proved in one domain transfers — with translation — to all others. The
 proof that proton decay is forbidden (baryon number = winding number in
-π₁(SU(3)/ℤ₃); violation requires H² BIND below β*_QCD) uses the same
+π₁(SU(3)/ℤ₃); violation requires H² FUSE below β*_QCD) uses the same
 mathematics as the proof that the FMO complex achieves η = 0.183 efficiency
 (6/7 Fano, one broken line introduces directed transport without full
 decoherence). The mathematics does not know which domain it is in.
@@ -84,7 +84,7 @@ qualitative agreement.
 | [Paper 319](https://doi.org/10.5281/zenodo.20400638) | FMO complex: η = 0.1825 reproduced as 6/7 Fano (one broken line); SPLAT opcode identified |
 | [Paper 325](https://doi.org/10.5281/zenodo.20400638) | Topological heat engine: uniqueness theorem — η > 0 iff broken Fano symmetry; η = 0 for all 7/7 closed systems |
 | [Paper 357](https://doi.org/10.5281/zenodo.20490046) | MIP* = RE connection: GHZ stabiliser group = Fano plane; 7/7 quantum lines verified; 0 classical |
-| [Paper 545](../papers/) | Proton stability: colour singlet = closed Fano ORBIT; baryon number = winding number; H² BIND required for violation; β* snap hierarchy |
+| [Paper 545](../papers/) | Proton stability: colour singlet = closed Fano RESOLVE; baryon number = winding number; H² FUSE required for violation; β* snap hierarchy |
 
 **Key results:**
 
