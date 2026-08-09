@@ -67,6 +67,58 @@ is a different machine that samples distributions efficiently.
 
 ---
 
+## The precise relationship: PSCs are channels with the coherence discarded
+
+The contrast above is the useful practical statement, but the two models are not
+merely analogous. Stochastic circuits sit *inside* the theory of quantum
+channels.
+
+A **CPTP map** (completely positive, trace preserving) describes an open quantum
+system's evolution: Φ(ρ) = Σₖ Kₖ ρ Kₖ† with Σₖ Kₖ†Kₖ = I. Restrict attention to
+states diagonal in the computational basis, ρ = diag(*p*). A channel taking
+diagonal states to diagonal states acts on *p* by a column-stochastic matrix,
+and every column-stochastic matrix arises this way.
+
+> **Stochastic maps are exactly the CPTP maps that preserve the diagonal
+> subalgebra.** A PSC is what remains of a quantum channel once coherence is
+> thrown away.
+
+This is standard — it is what is meant by calling classical probability the
+commutative case of quantum theory. The gate-level version is the part worth
+writing out.
+
+| PSC gate | Quantum channel | Kraus operators |
+|---|---|---|
+| `PNOT(p)` | **bit-flip channel** | √(1−p)·I, √p·X |
+| `PReset(p)` | **amplitude damping** | [[1,0],[0,√(1−p)]], [[0,√p],[0,0]] |
+| `PSWAP(p)` | partial swap | √(1−p)·I⊗I, √p·SWAP |
+| `PCNOT(p)` | probabilistic CNOT | √(1−p)·I⊗I, √p·CNOT |
+| `PCopy(p)` | **no faithful lift** — see below | — |
+| `PIsing(θ)` | Davies generator / thermal Lindbladian | exp(t·ℒ) |
+| `POU(γ,D,t)` | quantum Ornstein–Uhlenbeck | Gaussian channel |
+
+Two rows are worth dwelling on.
+
+**`PReset` is amplitude damping.** Their paper singles it out as the exception in
+the library, being rank 1 and non-invertible. In the quantum setting it is the
+most familiar channel there is — spontaneous emission, a qubit relaxing to |0⟩.
+The gate carrying irreversibility is the same operation that makes open quantum
+systems open.
+
+**`PCopy` has no faithful quantum lift.** Copying a classical bit is
+unproblematic; copying an unknown quantum state is forbidden by no-cloning. The
+classical gate lifts only to the CNOT-with-ancilla construction, which copies in
+the computational basis and *entangles* on superpositions. This is where Markov
+categories and their quantum counterpart part company, and the divergence is
+already formalised: Parzygnat (2020) defines quantum Markov categories and
+identifies what is lost — the canonical copy map Δ: X → X ⊗ X.
+
+The first two rows were checked numerically rather than assumed: applying the
+channel to a diagonal state and reading off the diagonal reproduces the
+stochastic gate to 1.1 × 10⁻¹⁶ across the parameter range.
+
+---
+
 ## The gate set, and what it can reach
 
 Their elementary gates are given as explicit matrices: `PNOT`, `PSWAP`,
@@ -119,10 +171,9 @@ precisely why the synthesis problem is open.
 The gap is not that the mathematics is missing. Completeness for **mixed-state**
 processes is settled: the doubled ZX-calculus is proved sound and complete for
 quantum channels (Carette, Jeandel, Perdrix & Vilmart, 2021), building on
-Selinger's CP construction. And the classical structure PSCs actually have —
-stochastic maps with copying and discarding — is that of a **Markov category**
-(Fritz; Cho and Jacobs), with the quantum counterpart and the exact cost of
-no-cloning worked out by Parzygnat (2020).
+Selinger's CP construction. And the classical structure PSCs have — stochastic
+maps with copying and discarding — is that of a **Markov category** (Fritz; Cho
+and Jacobs).
 
 So the calculi exist on both sides. What is absent is the connection: their four
 operations are a Markov category's structure in all but name, and their paper
@@ -165,6 +216,9 @@ hardware rather than addressed by it.
   (2026) — PSCs and `torx`.
 - Camsari *et al.*, *Phys. Rev. X* **7**, 031014 (2017) — p-bits and invertible
   logic.
+- Nielsen & Chuang, *Quantum Computation and Quantum Information* (CUP, 2010),
+  §8.2 — Kraus representation; the bit-flip and amplitude-damping channels.
+- Wootters & Zurek, *Nature* **299**, 802 (1982) — no-cloning.
 - Birkhoff, *Univ. Nac. Tucumán Revista A* **5**, 147 (1946) — the doubly
   stochastic decomposition.
 - Kingman, *Z. Wahrscheinlichkeitstheorie* **1**, 14 (1962) — the embeddability
