@@ -18,6 +18,7 @@ description: "The mathematical and physical foundations of the HotLogiQ / Origam
 |------|---------------|
 | [Diagrammatic Chemistry](diagrammatic-chemistry) | Which parts of chemistry are combinatorial, and which need a Hamiltonian |
 | [Thermodynamic Computing](thermodynamic-computing) | Extropic's probabilistic hardware and gate language: what it is, why it is not quantum, and what it leaves open |
+| [Why Formalise Chemistry?](formal-proof) | What a proof assistant buys you when the mathematics is combinatorial — and what it does not |
 | [Why Hot Logic?](hot-logic) | Boolean logic is zero-temperature; every LLM runs at finite β; the unification via the β-plane |
 | [β: The Universal Temperature](maslov-dequantization) | β interpolates classical → statistical → quantum; Maslov dequantisation; tropical arithmetic |
 | [Disagreement](disagreement) | JSD = H(mean) − mean(H); why pooled beliefs cannot distinguish confident disagreement from shared ignorance |
