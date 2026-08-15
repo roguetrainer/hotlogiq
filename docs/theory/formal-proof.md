@@ -225,9 +225,17 @@ Both use the same tool against different mistakes. Numerical chemistry codes are
 large and their bugs are hard to find; symmetry arguments are short and their
 errors are structural. Neither approach subsumes the other.
 
-The existence of LeanLJ also answers a question worth asking before starting
-anything here: is there anybody else? There is. Formal methods in chemistry is
-small but not empty.
+LeanLJ is not alone. The same group at UMBC has mechanised classical chemical
+derivations — Langmuir and BET adsorption — and
+[PhysLean](https://physlean.com/) is digitalising physics in Lean 4, though it
+skews toward foundational and high-energy topics and has no character tables or
+molecular point groups.
+
+So: formal methods in chemistry is small but not empty, and it is easy to
+underestimate. A survey run here in August 2026 found that the single hardest
+item on this page's own to-do list had been formalised by someone else four
+weeks earlier — see the next section. **Check before you build** is the cheapest
+lesson in the discipline and the one most often skipped.
 
 ---
 
@@ -241,18 +249,31 @@ representations, binomial coefficients, Young diagrams. That is enough for point
 groups, character tables, selection rules and microstate counting — the working
 vocabulary of an undergraduate spectroscopy course.
 
-**Absent**: Clebsch–Gordan coefficients, 6*j* symbols, Casimir elements,
-octonions. So angular-momentum recoupling — the algebra behind atomic spectra —
-would have to be built before it could be taught.
+**Absent from Mathlib**: 6*j* symbols, Casimir elements, octonions — and,
+more surprisingly, **crystallographic groups**. The 32 point groups and the 230
+space groups are finite, enumerable objects of exactly the kind formalisation
+suits, and no proof assistant has them.
 
-That gap is labour, not a limitation of the tools. Lean can express all of it;
-nobody has yet.
+**Absent from Mathlib, but formalised elsewhere**: Clebsch–Gordan coefficients.
+This one is worth dwelling on, because getting it wrong cost nothing here only
+by luck.
+
+A survey of this library found no Clebsch–Gordan and concluded the gap was real.
+It was not. *Exact Symmetry as Algebra*
+([arXiv:2605.20440](https://arxiv.org/abs/2605.20440), July 2026) contains a
+Lean 4 formalisation of the Wigner–Eckart theorem and algebraic Clebsch–Gordan
+proofs, with no gaps — published four weeks earlier, and missed because the
+search covered the library and not the preprint server. A standing rule to
+check for prior work before building is what caught it.
+
+The remaining gaps are labour, not a limitation of the tools. Lean can express
+all of it; nobody has yet.
 
 ---
 
 ## A worked set
 
-Six lessons exist, each a single file that compiles, written for a reader who
+Nine lessons exist, each a single file that compiles, written for a reader who
 knows neither the chemistry nor the formal methods:
 
 | lesson | chemistry | what is proved |
@@ -263,6 +284,16 @@ knows neither the chemistry nor the formal methods:
 | Selection rules | why spectra have gaps | "allowed" means a dimension is nonzero |
 | Configurations | how many microstates a d³ ion has | 120 — and d³ and d⁷ agree, by particle–hole symmetry |
 | Subspaces | active spaces and error-correcting codes | they are the *same* mathematical object |
+| Ladder | why angular momentum comes in whole steps | the rungs are evenly spaced, the top is a whole number, and there are exactly 2*j*+1 |
+| Standard triple | "take the standard basis of sl₂" | that it *is* one — a statement Mathlib could not previously make |
+| G₂ asymmetry | why a published formula could not be right | the pairing is not symmetric, so no symmetric formula describes it |
+
+The **standard triple** is the one that gives something back. Mathlib defines
+the sl₂ commutation relations abstractly and defines the 2×2 trace-zero
+matrices concretely, but nothing connected the two — so the phrase every physics
+text opens with was not available as a term. It now is. Small, but it was
+missing, and it was still missing when rechecked after the Clebsch–Gordan
+surprise above.
 
 None asserts anything the reader must take on trust. Every claim is checked by
 the machine, and the axioms used are the standard three.
