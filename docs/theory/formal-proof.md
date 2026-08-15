@@ -25,6 +25,86 @@ error.*
 
 ---
 
+## Start here, if the words are unfamiliar
+
+*This section assumes no mathematics beyond school. Skip it if terms like
+"irreducible representation" are already comfortable.*
+
+### Symmetry is a list of things you can do
+
+Take an ammonia molecule: a nitrogen atom with three hydrogens below it, like a
+tripod. Now ask what you can **do** to it that leaves it looking exactly as it
+did. You can leave it alone. You can spin it a third of a turn, or two thirds.
+And you can reflect it in any of three mirrors, each containing one of the
+N–H bonds.
+
+Six operations, and no others. That list is what mathematicians call a
+[group](https://en.wikipedia.org/wiki/Group_(mathematics)), and chemists have a
+name for this particular one: C₃ᵥ.
+
+Nothing about energy has been mentioned. We have not asked how strong the bonds
+are, how long they are, or how much it costs to bend one. The list of six came
+from the *shape* alone.
+
+### Why a list of operations predicts anything
+
+Here is the part that is genuinely surprising, and it is the reason any of this
+matters.
+
+That list of six constrains what the molecule can *do*. It fixes how many
+distinct vibrations there are and which ones share a frequency. It decides which
+colours of light the molecule can absorb and which it cannot touch, no matter
+how bright the light. Shine a laser at a forbidden transition and nothing
+happens — not weakly, but not at all.
+
+Water is a useful contrast. It has only four symmetry operations, and — this is
+the crucial difference — **the order in which you apply them does not matter**.
+For ammonia it does: spin-then-reflect and reflect-then-spin land you somewhere
+different. That single distinction is why water's spectrum is simpler than
+ammonia's. Water has no pairs of vibrations forced to share a frequency; ammonia
+does.
+
+So counting and comparing symmetry operations tells you real things about a
+molecule before you know anything about its energies. That half of chemistry is
+*combinatorial* — it is about counting and structure, not about solving
+equations.
+
+### What a proof assistant is
+
+A [proof assistant](https://en.wikipedia.org/wiki/Proof_assistant) is a program
+that checks mathematical reasoning the way a compiler checks a program. You
+state a claim and supply the argument; the machine verifies every step against
+its rules and rejects anything not fully justified. It has no intuition and
+gives no benefit of the doubt.
+
+The one used here is called [Lean](https://en.wikipedia.org/wiki/Lean_(proof_assistant)),
+together with its mathematics library,
+[Mathlib](https://leanprover-community.github.io/).
+
+Think of it as a spellchecker for arguments, with one important difference: you
+cannot click "ignore". If the machine will not accept a step, either the step is
+wrong or you have not said what you meant.
+
+### One error, as an example
+
+An argument in this corpus claimed that a certain operation, applied three times
+over, could squash something down to nothing.
+
+But each of those operations was of a kind that **never changes the size of
+anything** — like a rotation, which turns things without stretching or
+shrinking. Do three rotations in a row and you have still only rotated. Nothing
+can vanish.
+
+The claim was fluent, published, and impossible. Spotting it required no
+calculation, only noticing what kind of operation was involved — exactly the
+kind of check a machine performs automatically and a reader may not think to
+make.
+
+The rest of this page is about that: which errors this catches, which it cannot,
+and what the mathematics actually costs.
+
+---
+
 ## The short version
 
 Chemistry divides into two halves. **Which states exist, how they are labelled,
