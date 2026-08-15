@@ -231,11 +231,9 @@ derivations — Langmuir and BET adsorption — and
 skews toward foundational and high-energy topics and has no character tables or
 molecular point groups.
 
-So: formal methods in chemistry is small but not empty, and it is easy to
-underestimate. A survey run here in August 2026 found that the single hardest
-item on this page's own to-do list had been formalised by someone else four
-weeks earlier — see the next section. **Check before you build** is the cheapest
-lesson in the discipline and the one most often skipped.
+So: formal methods in chemistry is small but not empty. It is also easy to
+*over*estimate, which is a failure this page committed and documents in the
+next section.
 
 ---
 
@@ -249,25 +247,40 @@ representations, binomial coefficients, Young diagrams. That is enough for point
 groups, character tables, selection rules and microstate counting — the working
 vocabulary of an undergraduate spectroscopy course.
 
-**Absent from Mathlib**: 6*j* symbols, Casimir elements, octonions — and,
-more surprisingly, **crystallographic groups**. The 32 point groups and the 230
-space groups are finite, enumerable objects of exactly the kind formalisation
-suits, and no proof assistant has them.
+**Absent**: Clebsch–Gordan coefficients, 6*j* symbols, Casimir elements,
+octonions — and, more surprisingly, **crystallographic groups**. The 32 point
+groups and the 230 space groups are finite, enumerable objects of exactly the
+kind formalisation suits, and no proof assistant has them.
 
-**Absent from Mathlib, but formalised elsewhere**: Clebsch–Gordan coefficients.
-This one is worth dwelling on, because getting it wrong cost nothing here only
-by luck.
+So angular-momentum recoupling — the algebra behind atomic spectra — would have
+to be built before it could be taught.
 
-A survey of this library found no Clebsch–Gordan and concluded the gap was real.
-It was not. *Exact Symmetry as Algebra*
-([arXiv:2605.20440](https://arxiv.org/abs/2605.20440), July 2026) contains a
-Lean 4 formalisation of the Wigner–Eckart theorem and algebraic Clebsch–Gordan
-proofs, with no gaps — published four weeks earlier, and missed because the
-search covered the library and not the preprint server. A standing rule to
-check for prior work before building is what caught it.
+That gap is labour, not a limitation of the tools. Lean can express all of it;
+nobody has yet.
 
-The remaining gaps are labour, not a limitation of the tools. Lean can express
-all of it; nobody has yet.
+### A retraction, and what it cost to find out
+
+An earlier version of this section said Clebsch–Gordan *had* been formalised
+elsewhere, citing [arXiv:2605.20440](https://arxiv.org/abs/2605.20440). **That
+was wrong, and the error was mine.**
+
+A literature survey reported that paper as containing "a zero-sorry Lean 4
+formalisation of the Wigner–Eckart theorem and algebraic Clebsch–Gordan
+proofs". I recorded it, rewrote the plans around it, and published it here —
+without reading the paper. Reading it a day later: it formalises a 600-line
+algebra of group-equivariant tensor operations, applies it to finite groups up
+to order 24, and lists complete Wigner–Eckart decomposition as *future work*.
+It contains no Clebsch–Gordan coefficients and no 6*j* symbols.
+
+The irony is exact. This page argues that fluent, plausible, structurally wrong
+claims survive review — and a fluent, plausible summary of a paper I had not
+opened went straight onto it. A machine checker would not have caught this
+either: it is not a mathematical error but a sourcing one, the kind that only
+reading the primary source catches.
+
+Worth stating plainly because the failure mode generalises: **a summary of a
+source is not the source.** The survey was doing what surveys do, and the error
+entered when its confident paraphrase was treated as verified fact.
 
 ---
 
