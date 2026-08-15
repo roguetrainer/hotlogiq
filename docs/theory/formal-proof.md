@@ -138,15 +138,13 @@ cannot tell whose fault it is.
 A formal statement has no such room. The type either says which one you mean or
 it does not compile.
 
-During an audit of this corpus in August 2026, one paper could not be assessed
-**at all** — not confirmed, not refuted — because its operator convention could
-not be reconstructed from the prose. Three attempts at reading it gave three
-different quantities. That is a wasted afternoon that formalisation would have
-made impossible.
+One paper in this corpus could not be assessed **at all** — not confirmed, not
+refuted — because its operator convention could not be reconstructed from the
+prose. Three readings gave three different quantities.
 
 ### 2. Some errors are structural, and a type catches them
 
-Three errors found in that audit were not arithmetic slips. They were claims
+Three errors found in this corpus were not arithmetic slips. They were claims
 that could not have been true, for reasons visible before any calculation:
 
 - a theorem asserted that a certain product of maps had eigenvalue zero. Those
