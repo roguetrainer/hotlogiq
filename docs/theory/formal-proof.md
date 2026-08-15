@@ -187,12 +187,45 @@ mathematics was sound, the modelling was wrong, and a proof assistant would have
 verified it happily. Choosing the right object to reason about remains entirely
 human.
 
-**It cannot reach the Hamiltonian half.** Bond lengths, energies, barrier
-heights and reaction rates come from integrals over real wavefunctions. Nothing
-in a proof assistant touches them.
+**It cannot decide the Hamiltonian half.** Bond lengths, energies, barrier
+heights and reaction rates come from integrals over real wavefunctions. No proof
+assistant will tell you an energy is −1.7 kcal/mol.
+
+*But it can verify the code that computes one* — see the next section. An
+earlier version of this page said formalisation "cannot reach the Hamiltonian
+half" full stop. That was too strong, and other people's work shows why.
 
 **It is slow.** A result that takes an afternoon in numpy can take a week in
 Lean, and the first attempt at anything is mostly learning the library's names.
+
+---
+
+## Other people are doing this, and differently
+
+Worth knowing, because it marks out a third thing formalisation is good for that
+this page originally missed.
+
+**LeanLJ** (Ugwuanyi, Jones, Velkey & Josephson, UMBC,
+[arXiv:2505.09095](https://arxiv.org/abs/2505.09095)) implements Lennard-Jones
+energy calculations in Lean 4 *with proofs of correctness*, reproducing NIST
+benchmark values. Their claim is that software errors in the calculation can be
+eliminated by construction.
+
+That is a different target from the lessons on this page, and the distinction is
+worth stating plainly:
+
+| | what is proved | the failure it prevents |
+|---|---|---|
+| **LeanLJ** | the program matches its specification | *"did I code the formula correctly?"* |
+| **this page** | a claim about symmetry is true or false | *"is the formula right at all?"* |
+
+Both use the same tool against different mistakes. Numerical chemistry codes are
+large and their bugs are hard to find; symmetry arguments are short and their
+errors are structural. Neither approach subsumes the other.
+
+The existence of LeanLJ also answers a question worth asking before starting
+anything here: is there anybody else? There is. Formal methods in chemistry is
+small but not empty.
 
 ---
 
@@ -246,4 +279,6 @@ prose review is worst at catching. If a body of work rests on combinatorial and
 group-theoretic claims, having them machine-checked is worth the slowness.
 
 The parts that need a Hamiltonian still need a computer, a basis set, and a
-chemist's judgement. Nothing here changes that.
+chemist's judgement. What formalisation can add there is a guarantee that the
+code implements what it claims to — which is what LeanLJ demonstrates, and a
+different job from the one this page is about.
