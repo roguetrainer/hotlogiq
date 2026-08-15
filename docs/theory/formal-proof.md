@@ -113,9 +113,13 @@ before any energy is computed. **Which state is lowest, how far apart, how fast
 a reaction goes** — that half needs a Hamiltonian and real integrals. The
 division is set out in [Diagrammatic Chemistry](diagrammatic-chemistry.md).
 
-A proof assistant is useless for the second half and unusually well suited to
-the first. Symmetry arguments are finite, discrete and exact — which is what a
-type checker is for.
+A proof assistant is unusually well suited to the first half: symmetry arguments
+are finite, discrete and exact, which is what a type checker is for.
+
+It cannot *decide* the second half — no proof assistant will tell you an energy
+is −1.7 kcal/mol. But it can verify the **code** that computes one, which is a
+third thing worth distinguishing and is what
+[LeanLJ](#other-people-are-doing-this-and-differently) does.
 
 ---
 
