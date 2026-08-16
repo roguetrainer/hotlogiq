@@ -1,15 +1,15 @@
 ---
 layout: default
-title: "Nature runs information-geometric Carnot cycles"
+title: "Enzymes as information-geometric Carnot cycles"
 parent: Applications
 nav_order: 10
 nav_exclude: true
-description: "Every biological fidelity machine and every enzyme catalytic cycle operates a four-leg information-geometric Carnot cycle between a high-surprise reservoir and a low-surprise reservoir, with the adiabatic leg enforced by parallel transport on the Grassmannian."
+description: "A proposal that biological fidelity machines and enzyme catalytic cycles can be modelled as a four-leg information-geometric Carnot cycle between a high-surprise reservoir and a low-surprise reservoir, with the adiabatic leg enforced by parallel transport on the Grassmannian."
 tags: [carnot-cycle, information-geometry, grassmannian, parallel-transport, proofreading, catalysis, biology, surprise, entropy, fisher-metric, beta-star, h1, h2, trs-framework]
 portfolio: B|E
 ---
 
-# Nature runs information-geometric Carnot cycles
+# Enzymes as information-geometric Carnot cycles
 {: .no_toc }
 
 *Proofreading enzymes and catalytic enzymes are both heat engines — but the
@@ -24,10 +24,15 @@ subspaces. The β\* snap is the engine's operating point.*
 
 ## The claim
 
-**Every biological molecular machine that achieves fidelity or catalytic
-efficiency beyond thermodynamic equilibrium operates a four-leg
+**Proposal.** Biological molecular machines that achieve fidelity or catalytic
+efficiency beyond thermodynamic equilibrium can be modelled as a four-leg
 information-geometric Carnot cycle (IG CC) between a source and a sink of
-surprise.**
+surprise.
+
+*Scope, stated up front:* this is a modelling proposal, not an established
+result. The page works through cases where the correspondence holds; it does
+not establish that every such machine works this way, and "nature runs" — the
+page's earlier title — asserted more than the evidence below supports.
 
 The cycle is not a metaphor for thermodynamics — it *is* thermodynamics,
 formulated on the statistical manifold of probability distributions rather

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "The Pauli exclusion principle is a theorem"
+title: "Pauli exclusion from symplectic geometry"
 parent: Applications
 nav_order: 10
 nav_exclude: true
@@ -9,7 +9,7 @@ tags: [evp, pauli, exclusion, symplectic, fano, periodic-table, nuclear-shell, g
 portfolio: E
 ---
 
-# The Pauli exclusion principle is a theorem
+# Pauli exclusion from symplectic geometry
 {: .no_toc }
 
 *Fermion antisymmetry is not an axiom of quantum mechanics. It is a consequence
@@ -23,7 +23,16 @@ the nuclear shell model, and the stability of matter all follow from it.*
 
 ## The claim
 
-**The Pauli Exclusion Principle (PEP) is a theorem, not a postulate.**
+**Proposal: the Pauli Exclusion Principle (PEP) can be recovered from a
+geometric fact rather than postulated.**
+
+*Read the scope before the argument.* What is a theorem below is the statement
+about the symplectic polar space $W(2n-1,2)$ — that is real finite geometry and
+is not in doubt. What is **proposed** is the identification of electron orbitals
+with isotropic flats of that space. The physical PEP follows only if that
+identification holds, and establishing it is exactly what this page does not do.
+So: a suggestive reformulation with a clean geometric core, not a derivation of
+physics from geometry. The page's earlier title asserted the latter.
 
 The standard textbook treatment introduces PEP as an empirical rule: no two
 fermions can share the same quantum state. It is postulated, not derived. Spin
@@ -51,6 +60,13 @@ simultaneously occupy the same nodal-surface configuration because:
 3. Therefore no two electrons with the same $(n, \ell, m, \mathrm{spin})$ can
    coexist — which is exactly the PEP.
 
+**Step 3 is where the weight sits.** Steps 1 and 2 are finite geometry and
+follow. Step 3 carries the argument from a statement about $W(2n-1,2)$ to a
+statement about electrons, and it does so via the orbital ↔ isotropic-flat
+identification assumed in the GPEP paragraph above. That identification is the
+substantive claim, and it is asserted rather than derived. A reader should treat
+the chain as conditional on it.
+
 The GPEP is not a separate principle from the EVP. It is the EVP instantiated
 in spherical geometry, with the symplectic structure on $S^2$ replacing the
 abstract $W(2n-1,2)$ structure. One principle, two languages.
@@ -74,8 +90,11 @@ never from a single foundation. The EVP provides that foundation:
 | Taube electron transfer | Inner-sphere (direct RESOLVE overlap) vs outer-sphere (TWIST without RESOLVE contact) |
 | 4s before 3d anomaly | $\varphi_{4,0} < \varphi_{3,2}$: zero-TWIST-cost s-orbital outcompetes TWIST-penalised d-orbital |
 
-None of these is ad hoc once the EVP is the foundation. They are all statements
-about RESOLVE closure and isotropic flat occupation in $W(2n-1, 2)$.
+None of these is ad hoc once the EVP is taken as the foundation — they become
+statements about RESOLVE closure and isotropic flat occupation in $W(2n-1,2)$.
+Whether that reformulation *derives* the rules or *restates* them in new
+vocabulary depends entirely on the identification flagged above, and the table
+should be read as a dictionary rather than a set of derivations.
 
 **It explains the shape of the periodic table.** The block structure of the
 periodic table — s-block (2 elements/period), p-block (6), d-block (10),

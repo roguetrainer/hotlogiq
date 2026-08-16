@@ -10,7 +10,7 @@ portfolio: B
 # The ISA Opcodes
 {: .no_toc }
 
-*Five opcodes. Every temperature. One language — for quantum circuits, living cells, financial crises, and unsolved problems in mathematics.*
+*Five opcodes, one vocabulary — a common language for quantum circuits, living cells, financial crises, and problems in mathematics. A working notation, not a proved-minimal basis.*
 
 > **Name change (2026):** This document uses the current canonical names.
 > Mapping from previous names: **ORBIT → RESOLVE**, **LABEL → PROJECT**, **BIND → FUSE**, **MERGE → JOIN**.
@@ -76,7 +76,7 @@ The technical names:
 | **H¹** | TWIST | Interference | Berry phase; connection; obstruction to triviality |
 | **H²** | FUSE | Entanglement | Chern class; non-Abelian holonomy; topological charge |
 
-The ladder H⁰ → H¹ → H² is literally the de Rham sequence with d∘d = 0.
+The ladder H⁰ → H¹ → H² is modelled on the de Rham sequence with d∘d = 0.
 This is also why FUSE∘TWIST ≠ 0 but FUSE∘FUSE = 0 in the ISA — the chain
 complex structure of the opcodes is the same object as the cohomology sequence.
 (See Theorem 3 below.)
@@ -471,7 +471,19 @@ FUSE. Associative phases are FUSE-free; non-associative phases require FUSE.
 
 The canonical definition (Paper 591, Definition 4.1): FUSE $= \alpha_{A,A,A} \neq \mathrm{id}$
 in the ISA magmoidal category. FUSE present $\Leftrightarrow$ pentagon coherence axiom
-fails $\Leftrightarrow$ non-trivial $F$-matrix. *Note:* Fibonacci anyons have non-trivial
+fails $\Leftrightarrow$ non-trivial $F$-matrix.
+
+> **This equivalence is definitional, not a result.** FUSE *is defined as* the
+> non-trivial associator, and a category with a non-trivial associator is
+> magmoidal by definition — so "FUSE requires a magmoidal extension" restates
+> the definition rather than proving anything. The corresponding theorem in
+> Paper 591 is a tautology and is recorded there as one.
+>
+> That does not make the opcode useless: naming the associator, and pinning it
+> to a definite categorical object, is what lets the same term be used across
+> octonions, $F$-matrices and Majorana couplings without ambiguity. But the
+> content is in the **dictionary** below, which is checkable case by case, not
+> in the definitional equivalence above. *Note:* Fibonacci anyons have non-trivial
 $F$-matrices but still satisfy the pentagon (they are a fusion category); they live at
 the $\mathbb{H}$-rung boundary, not the $\mathbb{O}$-rung.
 
@@ -980,22 +992,34 @@ $$\text{free TSMC + Frobenius} \;\subset\; \text{free magmoidal TSMC + Frobenius
 
 The left side generates all H⁰ and H¹ computation. The right side adds H².
 
-#### Why this makes the ISA rigorous
+#### What the categorical foundation does and does not buy
 
-The categorical foundation means:
-1. **The opcodes are universal** — any system described by a monoidal category
-   (which is essentially all of mathematical physics) uses these morphisms.
-2. **The tier assignments are theorems** — the H^k tier of each opcode follows
-   from which level of the categorical hierarchy it requires; this is not a
-   classification imposed from outside.
-3. **The cross-domain appearances are identities** — when the Frobenius axiom
-   appears in angular momentum theory and in finance and in knot theory, it is
-   the *same equation*, not an analogy. The ISA makes this explicit by naming it.
-4. **The failure of classical methods is a theorem** — DFT and Clifford simulation
-   fail at the H¹→H² boundary because they are functors from ribbon categories
-   (H⁰/H¹) and the H² obstruction (the non-trivial associator / FUSE) is not
-   in their image. This is not an empirical observation; it is a consequence of
-   the categorical structure.
+Stated carefully, because the easy version of each of these is circular.
+
+1. **The opcodes are defined, not discovered, to be general.** Each opcode *is* a
+   structure map of a monoidal category, so any system modelled in such a
+   category has them — necessarily, and for the same reason every group has an
+   identity element. This is a statement about the definition, not a finding
+   about the world. What it buys is a **vocabulary that ports**: the value is in
+   the naming and the cross-domain dictionary, not in an empirical claim.
+2. **The tier assignments follow from the definitions.** The H^k tier of each
+   opcode is read off from which level of the categorical hierarchy it requires.
+   That makes the assignment principled rather than arbitrary — but it is
+   bookkeeping internal to the framework, not an independent theorem about
+   physics.
+3. **The cross-domain appearances are genuine identities.** This one is real and
+   is the strongest item on the list. When the Frobenius axiom appears in
+   angular momentum theory, in finance and in knot theory, it is the *same
+   equation*. Naming it makes a real structural coincidence explicit. Note the
+   limit, established by direct test: this transfers **structure and proof
+   technique, not predictions** — see the [glossary](/docs/reference/glossary.html).
+4. **Clifford simulability is a theorem; DFT's limits are not.** The Clifford
+   case is genuine: Gottesman–Knill is a real theorem, and the H¹/H² boundary
+   tracks it. **DFT is a different matter and was previously overstated here.**
+   DFT's failures are approximation-quality failures of exchange-correlation
+   functionals — an active empirical question in computational chemistry, with
+   no derivation from this framework. The two should not be presented as one
+   consequence of the categorical structure.
 
 ### The ISA is semiring-polymorphic
 
@@ -1020,9 +1044,12 @@ the ISA is the *programme*.
 | p-adic | modular fan-out | Gauss sum $\tau_p$ |
 | Adèlic | adèlic fan-out | product of Gauss sums |
 
-This is why the ISA appears in so many domains without modification: nuclear
-spectroscopy, quantum information, financial risk, and protein folding are all
-running the same opcodes, but over different semirings suited to their physics.
+This is why the same ISA vocabulary describes so many domains without
+modification: nuclear spectroscopy, quantum information, financial risk and
+protein folding are all well described by the same opcodes evaluated over
+different semirings. *Described by*, not *executing* — a folding protein is not
+running an instruction set, and the semiring table below is a modelling
+correspondence rather than a claim about mechanism.
 The Clifford group is the ISA's Clifford sector *evaluated in $(\mathbb{C},+,\times)$*;
 tropical optimisation is the same ISA *evaluated in $(\mathbb{R}\cup\{-\infty\},\max,+)$*.
 The Gottesman-Knill theorem says the Clifford sector admits efficient classical
@@ -1207,7 +1234,7 @@ different hardware.
 
 **The ISA foundations:**
 
-- **[The Origami ISA: Eight Derivations of a Universal Instruction Set](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — eight independent routes all forced to the same opcodes; why this gate set is universal at a deeper level than Solovay-Kitaev
+- **[The Origami ISA: Eight Derivations of a Universal Instruction Set](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — eight independent routes arriving at the same opcodes. The title's "universal" is aspirational; no minimality proof exists (see [Why five opcodes?](#why-five-opcodes))
 - **[The Origami Calculus](https://doi.org/10.5281/zenodo.20474914)** (Paper 349) — the diagrammatic framework grounded in the Ponzano–Regge tetrahedron; the mathematical home of the opcode symbols ■ ◇ ▲ △ ↻
 - **[The Magmoidal Origami ISA](https://doi.org/10.5281/zenodo.19916429)** (Paper 258) — original definition; FLIP/FLOP/SPLIT/SPLAT/TWIST/SPIN; the symbol logic (filled = creation, hollow = annihilation; 4-sided = stellar move, 3-sided = bistellar move)
 - **[The Opcode Rosetta Stone](https://doi.org/10.5281/zenodo.20761260)** (Paper 447) — the same seven opcodes identified across twelve exactly-solvable models (Ising, Heisenberg, Kitaev, XXZ, Hubbard, Bethe ansatz, ...); universal ISA dictionary

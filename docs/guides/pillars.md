@@ -63,7 +63,7 @@ Every computation has a cohomological address. The three tiers are a **stratific
 
 **In finance.** Three banks A→B→C→A form an H¹ cycle: bilateral netting cannot dissolve it, but it is not yet catastrophic. The 2008 crisis arrived when those H¹ cycles became globally inconsistent — H² ≠ 0 — and no bilateral deal could fix it. Only a systemic intervention (central bank, not counterparty) operates at H². The Pentagon identity is the no-arbitrage condition; its failure is a financial crisis.
 
-**In machine learning.** Each attention head is an H⁰ orbit. Multi-head attention accumulates H¹ phase across heads. The grokking phenomenon — where a network suddenly generalises after a long plateau — is an H² snap: the loss landscape crosses β* and the circuit topology discretely changes. LLM temperature is literally β⁻¹; sampling at T > 0 is Gibbs sampling at finite β.
+**In machine learning.** Each attention head is an H⁰ orbit. Multi-head attention accumulates H¹ phase across heads. The grokking phenomenon — where a network suddenly generalises after a long plateau — *may* be an H² snap: the loss landscape crossing β* with a discrete change in circuit topology. This is a conjecture, and it competes with established mechanistic explanations in the literature; it has not been tested here. LLM temperature is literally β⁻¹; sampling at T > 0 is Gibbs sampling at finite β.
 
 **The Weyl chamber and magic.** The same cohomological boundary that separates classically simulable (H¹, Clifford) from universal (H², magic) quantum circuits also separates DFT-tractable from DFT-failing molecules. The [Weyl chamber](https://en.wikipedia.org/wiki/Weyl_group) stratification and the Grassmannian angle θ_G are the same geometric object seen from quantum computing and chemistry respectively. This is not analogy: Paper 595 proves they carry the same Bredon H² class (Euler characteristic 2).
 
@@ -85,7 +85,7 @@ Every computation — at any β, in any domain — decomposes into five operatio
 | TWIST 🌀 | ∮ | H¹: gauge transformation / phase / monodromy |
 | FUSE 💎 | ⋈ | H²: Pachner surgery / recoupling / entanglement |
 
-The same five opcodes describe a ribosome, Shor's algorithm, a yield curve, and an enzyme — at twenty orders of magnitude in physical scale. This is not analogy: the 6j symbol is H¹ of the representation sheaf in every case.
+The same five opcodes describe a ribosome, Shor's algorithm, a yield curve, and an enzyme — at twenty orders of magnitude in physical scale. This is more than analogy: the 6j symbol is H¹ of the representation sheaf in every case. What it buys is a shared vocabulary and shared proof technique; direct tests found it does **not** transfer predictions between domains.
 
 *Key papers: 258, 370, 455 (eight derivations), 631 (Origami open ISA manifesto)*
 

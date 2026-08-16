@@ -15,7 +15,7 @@ description: "What HotLogiQ is, why it matters, and the shortest path to the cor
 
 ## The one-paragraph version
 
-Experts in quantum computing, spectroscopy, financial risk, and molecular biology have independently discovered the same three-tier structure — fixed points, local phase corrections, global topological obstructions — and given it different names in each field. **HotLogiQ** makes the common pattern explicit, computable, and transferable. The five opcodes (RESOLVE 🔬 / PROJECT 🎯 / TWIST 🌀 / FUSE 💎 / FLIP ↩️) are not analogies — they are the same categorical morphisms running on different physical substrates. The temperature parameter β is the single dial that interpolates between classical (β→∞), statistical (0<β<∞), and quantum (β=it/ℏ) regimes.
+Experts in quantum computing, spectroscopy, financial risk, and molecular biology have independently discovered the same three-tier structure — fixed points, local phase corrections, global topological obstructions — and given it different names in each field. **HotLogiQ** makes the common pattern explicit, computable, and transferable. The five opcodes (RESOLVE 🔬 / PROJECT 🎯 / TWIST 🌀 / FUSE 💎 / FLIP ↩️) are more than analogies: they name the same categorical morphisms in each domain. What that transfers is structure and proof technique — *not* predictions, which direct tests have confirmed do not carry across. The temperature parameter β is the single dial that interpolates between classical (β→∞), statistical (0<β<∞), and quantum (β=it/ℏ) regimes.
 
 The [Pillars](../guides/pillars) page gives the five load-bearing ideas. The [Origami ISA manifesto](https://doi.org/10.5281/zenodo.21428853) (Paper 631) gives the full technical case.
 
@@ -48,7 +48,7 @@ Five pages that together cover the core of the framework — in reading order:
 1. **[Origami: An Open ISA for Quantum-Classical Systems](https://doi.org/10.5281/zenodo.21428853)** (Paper 631) — the manifesto. Why gate-and-circuit abstraction obscures where quantum advantage actually lives; Shor's algorithm as a case study.
 2. **[The H^k Complexity Ladder](https://doi.org/10.5281/zenodo.20773526)** (Paper 420) — H⁰ = classical, H¹ = stabiliser/Clifford, H² = universal QC. A graded alternative to the P=NP question. *(the χ-based routing algorithm in 420 is unsound — χ cannot determine the Betti numbers; see [cohomological complexity](/docs/applications/cohomological-complexity.html))*
 3. **[The Meld ISA](https://doi.org/10.5281/zenodo.20773563)** (Paper 454) — quantum branch of the framework. QFT as a TWIST 🌀 cascade; FUSE 💎 as the non-Abelian obstruction; why LWE is quantum-resistant.
-4. **[Eight Derivations of a Universal Instruction Set](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — eight independent routes all forced to the same five opcodes. Explains *why* this gate set is universal at a deeper level than Solovay-Kitaev.
+4. **[Eight Derivations of a Universal Instruction Set](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — eight independent routes arriving at the same five opcodes. *(The title's "universal" is aspirational: no minimality or completeness proof exists — see [why five opcodes?](/docs/reference/opcodes.html#why-five-opcodes). This is convergent motivation, not a theorem, and it is not comparable to Solovay-Kitaev, which is a specific approximation result with an explicit error bound.)*
 8. **[The Cookie-Cutter Lifting Programme: Shor as a Clifford Circuit](https://doi.org/10.5281/zenodo.21219704)** (Paper 472) — Shor's algorithm re-derived as a lifted Clifford circuit; a concrete, checkable flagship result.
 
 ---
@@ -87,7 +87,7 @@ Five pages that together cover the core of the framework — in reading order:
 
 ### Mathematics
 
-1. **[Eight Derivations](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — eight routes to the same five generators. Closes an 80-year fragmentation between spectroscopy (Racah 1942), categorical QM (Abramsky-Coecke 2004), and quantum computing (Boykin 1999).
+1. **[Eight Derivations](https://doi.org/10.5281/zenodo.20774076)** (Paper 455) — eight routes to the same five generators, connecting spectroscopy (Racah 1942), categorical QM (Abramsky-Coecke 2004), and quantum computing (Boykin 1999) in one vocabulary.
 2. **[ISA Khovanov Complex](https://doi.org/10.5281/zenodo.21278536)** (Paper 571) — C^k = ⊕ A^{⊗c(v)}, ∂²=0 from the Frobenius axiom, ISA homology recovers Khovanov's categorification of the Jones polynomial.
 5. **[Non-Associative Information Geometry](https://doi.org/10.5281/zenodo.20076498)** (Paper 221) — the Fano-Fisher metric decomposition theorem on G₂; extends information geometry to the non-associative setting.
 
