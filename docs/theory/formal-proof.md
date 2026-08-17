@@ -81,6 +81,10 @@ The one used here is called [Lean](https://en.wikipedia.org/wiki/Lean_(proof_ass
 together with its mathematics library,
 [Mathlib](https://leanprover-community.github.io/).
 
+*If you already write F# or OCaml*, a companion page covers
+[what transfers and what does not](lean-for-fsharp.md) — the ML-family syntax
+carries you through the first afternoon, and then stops.
+
 Think of it as a spellchecker for arguments, with one important difference: you
 cannot click "ignore". If the machine will not accept a step, either the step is
 wrong or you have not said what you meant.
