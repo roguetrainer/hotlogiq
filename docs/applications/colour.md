@@ -108,6 +108,14 @@ This is why the same object appears in Ponzano–Regge quantum gravity as the
 amplitude for a spacetime tetrahedron, and in Racah's theory as the amplitude
 for recoupling four angular momenta. **It is the same symbol.**
 
+*One of those 24 is now machine-checked.* No proof assistant had the 6j symbol
+at all — not Mathlib, not Coq, not Isabelle — so a
+[lesson](../theory/formal-proof.md#a-worked-set) built it from Racah's closed
+formula and proved the column-exchange symmetry, with the definition validated
+against an independent implementation on 2,025 cases. That covers the easiest of
+the 24, and it concerns the formula rather than recoupling itself; the scope is
+set out on that page.
+
 **Four is the threshold.** Two objects combine trivially. Three combine
 associatively, with no choice to make. Four is where recoupling becomes a real
 question with a non-trivial answer — and where a tetrahedron appears to carry it.

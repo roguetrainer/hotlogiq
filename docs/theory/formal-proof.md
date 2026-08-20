@@ -251,8 +251,10 @@ representations, binomial coefficients, Young diagrams. That is enough for point
 groups, character tables, selection rules and microstate counting — the working
 vocabulary of an undergraduate spectroscopy course.
 
-**Absent**: Clebsch–Gordan coefficients, 6*j* symbols, Casimir elements,
-octonions — and, more surprisingly, **crystallographic groups**. The 32 point
+**Absent**: Clebsch–Gordan coefficients, Casimir elements, octonions — and,
+more surprisingly, **crystallographic groups**. (6*j* symbols were absent too
+until the recoupling lesson below built them; see the note there for what that
+does and does not establish.) The 32 point
 groups and the 230 space groups are finite, enumerable objects of exactly the
 kind formalisation suits, and no proof assistant has them.
 
@@ -290,7 +292,7 @@ entered when its confident paraphrase was treated as verified fact.
 
 ## A worked set
 
-Nine lessons exist, each a single file that compiles, written for a reader who
+Eleven lessons exist, each a single file that compiles, written for a reader who
 knows neither the chemistry nor the formal methods:
 
 | lesson | chemistry | what is proved |
@@ -304,6 +306,8 @@ knows neither the chemistry nor the formal methods:
 | Ladder | why angular momentum comes in whole steps | the rungs are evenly spaced, the top is a whole number, and there are exactly 2*j*+1 |
 | Standard triple | "take the standard basis of sl₂" | that it *is* one — a statement Mathlib could not previously make |
 | G₂ asymmetry | why a published formula could not be right | the pairing is not symmetric, so no symmetric formula describes it |
+| Recoupling | the 6*j* symbol — see [colour](../applications/colour.md) | one of its 24 tetrahedral symmetries, **proved** |
+| Puzzles | *(no chemistry)* — a separate track for absolute beginners | that a bad program can be made unwritable rather than merely caught |
 
 The **standard triple** is the one that gives something back. Mathlib defines
 the sl₂ commutation relations abstractly and defines the 2×2 trace-zero
@@ -311,6 +315,28 @@ matrices concretely, but nothing connected the two — so the phrase every physi
 text opens with was not available as a term. It now is. Small, but it was
 missing, and it was still missing when rechecked after the Clebsch–Gordan
 surprise above.
+
+**The recoupling lesson is the one that builds something new, and the one that
+most needs its scope stated.** The 6*j* symbol — the object
+[colour](../applications/colour.md) is built on, whose 24 symmetries are the
+symmetries of a tetrahedron — appears in no proof assistant: not Mathlib, not
+Coq's MathComp, not Isabelle's AFP. The lesson defines it via Racah's closed
+formula (a finite alternating sum of factorial ratios) and proves one of those
+24 symmetries.
+
+Three limits, stated because the temptation to round this up is strong. It
+defines the **square** of the 6*j* symbol, which stays rational and therefore
+computable; the sign is not recovered. It proves facts about *the formula*, not
+about recoupling — connecting the two still needs the representation theory the
+route avoided. And column exchange is the **easiest** of the 24 symmetries;
+whether the harder ones follow as cheaply is untested.
+
+What makes it believable rather than merely compiled is a check Lean cannot
+perform: all 2,025 admissible cases up to doubled argument 4 were evaluated and
+compared against an independent implementation, with zero mismatches. Then the
+same tactic script was pointed at a symmetry that is *false* — it fails to
+compile, and disagrees with the reference on 144 of those cases. A proof that
+cannot fail is not evidence of anything.
 
 None asserts anything the reader must take on trust. Every claim is checked by
 the machine, and the axioms used are the standard three.
