@@ -290,6 +290,30 @@ distributions and return scalars. They **measure** structure; they do not
 **constitute** it. Asking whether the JSD can change the semiring is like asking
 whether the variance can change addition.
 
+**A worked example of the other kind.** The distinction is easier to see
+alongside a good instance of the functional case. Salazar, Saxena, Baker, Kwek &
+Kyaw, *Stabilizer Statistical Mechanics*
+([arXiv:2608.14798](https://arxiv.org/abs/2608.14798), 2026) build a partition
+function over the Pauli spectrum of a quantum state and derive from its free
+energy a magic monotone, the *stabilizer work*. It carries an
+inverse-temperature parameter, and as that parameter runs from high to low the
+monotone interpolates continuously between the stabilizer 2-Rényi entropy and
+the stabilizer nullity — two previously separate measures, recovered as the two
+limits of one object.
+
+That is a β-parameterised family with known quantities at each endpoint, which
+is the same *shape* as the deformation described on this page. But it is a
+family of **functionals over a fixed algebra**, not a deformation of the algebra
+itself: no operation changes, and nothing becomes idempotent. The two are worth
+holding apart, because the surface similarity is strong and the mathematical
+content is different.
+
+Their paper is also unusually careful about the word *temperature* — the
+parameter is repeatedly described as "inverse-temperature-like" and "a
+moment-resolving parameter… rather than a physical temperature." That is the
+correct register for a parameter that indexes a family without being thermal,
+and it applies to β on this page too.
+
 ### Where else does this happen?
 
 The phenomenon is not unique to Maslov. It has a general name — **algebraic

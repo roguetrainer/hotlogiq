@@ -1199,7 +1199,7 @@ than 4 connections because a 5-valent spider would silently invoke associativity
 
 ## Relationship to other graphical calculi
 
-The ISA opcodes did not emerge from nowhere. Two graphical calculi were the direct predecessors.
+The ISA opcodes did not emerge from nowhere. Two graphical calculi were the direct predecessors, and a third recent one is worth comparing against because of the standard it sets.
 
 **ZX calculus** (Coecke and Duncan, 2008) is a complete graphical language for qubit
 quantum mechanics built from two spider generators (Z and X) obeying the Frobenius
@@ -1218,6 +1218,29 @@ foundational papers are:
 - [The 731 Frog Calculus, Part 1](https://doi.org/10.5281/zenodo.19713350) (Paper 207) — three-dimensional spin foams, magmoidal category theory, and non-associative topology
 - [The 731 Frog Calculus, Part 2](https://doi.org/10.5281/zenodo.20139448) (Paper 281) — two-dimensional frog diagrams, ribbon-leg syntax, and $G_2$ spin foam rewriting rules
 
+**Neural circuit diagrams** (Abbott & Zardini, MIT,
+[arXiv:2604.07242](https://arxiv.org/abs/2604.07242), TMLR 2026) formalise deep
+learning architectures in a monoidal category over `BorelStoch` — standard Borel
+spaces and Markov kernels — with novel *axis-stride* and *array-broadcasted*
+categories handling parallel broadcasting.
+
+It is a narrower project than the ISA and deliberately so: one domain, no
+cross-domain claim, no non-associativity. It is included here because of what it
+does that this page does not. Their framework compiles: a categorical term is
+turned into a runnable PyTorch module, and the compiled attention block is
+checked against a hand-written one (`torch.equal → True`). **That is an
+executable semantics with a passing equivalence test**, which is the standard a
+notation earns credibility by meeting, and the Origami ISA does not yet meet it.
+
+Two of their findings bear directly on material here. Their copying morphism is
+**not natural** in `BorelStoch` — copying the output of a random process differs
+from copying the input and running it twice — which is the same obstruction that
+appears whenever a comonoid lacks a compatible monoid. And they keep two notions
+of equality apart: expressions that are mathematically equal but algorithmically
+distinct, because a redundant rearrangement is free in the mathematics and
+expensive on hardware. Any β-parameterised instruction set meant to run on more
+than one substrate needs that distinction.
+
 The containment is strict:
 
 $$\text{ZX calculus} \;\subset\; \text{731 Frog Calculus} \;\subset\; \text{Origami ISA}$$
@@ -1231,6 +1254,14 @@ different hardware.
 ---
 
 ## Further reading
+
+**Other categorical frameworks:**
+
+- Abbott & Zardini, *Weaves, Wires, and Morphisms: Formalizing and Implementing
+  the Algebra of Deep Learning*,
+  [arXiv:2604.07242](https://arxiv.org/abs/2604.07242) (TMLR, 2026) — monoidal
+  categories over `BorelStoch` for deep learning architectures, with compilation
+  to PyTorch verified against a hand-written module.
 
 **The ISA foundations:**
 

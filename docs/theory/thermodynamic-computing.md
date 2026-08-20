@@ -216,6 +216,14 @@ hardware rather than addressed by it.
   (2026) — PSCs and `torx`.
 - Camsari *et al.*, *Phys. Rev. X* **7**, 031014 (2017) — p-bits and invertible
   logic.
+- Salazar, Saxena, Baker, Kwek & Kyaw, *Stabilizer Statistical Mechanics*,
+  [arXiv:2608.14798](https://arxiv.org/abs/2608.14798) (2026) — a partition
+  function over the Pauli spectrum, and a magic monotone interpolating between
+  the stabilizer 2-Rényi entropy and the nullity. Note their caution, which
+  applies to any claim that a molecule "has" a given amount of magic: the value
+  is **not basis-independent**, and in H₂ the peak position, the
+  dissociation-limit behaviour and even the ordering between two geometries all
+  change between STO-3G and 6-31G.
 - Nielsen & Chuang, *Quantum Computation and Quantum Information* (CUP, 2010),
   §8.2 — Kraus representation; the bit-flip and amplitude-damping channels.
 - Wootters & Zurek, *Nature* **299**, 802 (1982) — no-cloning.
